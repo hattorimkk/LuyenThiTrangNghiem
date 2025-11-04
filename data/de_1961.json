@@ -1,0 +1,1504 @@
+{
+    "data": {
+        "id": 139379,
+        "userId": 11311,
+        "examPackId": 558,
+        "examId": 1961,
+        "examCodeId": 139715,
+        "score": 0,
+        "correctQuestion": 0,
+        "inCorrectQuestion": 0,
+        "skipQuestion": 0,
+        "type": 1,
+        "status": 0,
+        "startTime": "2025-11-04T16:48:07.000Z",
+        "completedAt": null,
+        "createdAt": "2025-11-04T16:48:07.000Z",
+        "updatedAt": "2025-11-04T16:48:07.000Z",
+        "user": {
+            "id": 11311,
+            "email": "minhky.work@gmail.com",
+            "username": null,
+            "code": "895245",
+            "phoneNumber": "",
+            "firstName": null,
+            "lastName": null,
+            "image": null,
+            "position": null,
+            "organization": null,
+            "status": 1,
+            "verifyToken": null,
+            "verified": false,
+            "verifiedAt": null,
+            "source": 1,
+            "deletedAt": null,
+            "createdAt": "2025-11-04T16:08:37.000Z",
+            "updatedAt": "2025-11-04T16:32:03.000Z"
+        },
+        "examCode": {
+            "data": {
+                "id": 139715,
+                "examId": 1961,
+                "createdAt": "2025-11-04T16:48:07.000Z",
+                "updatedAt": "2025-11-04T16:48:07.000Z",
+                "questions": {
+                    "data": [
+                        {
+                            "id": 155891,
+                            "question": "<span style=\"font-size:15px;font-weight:bold;color:rgba(255, 0, 0, 1); \"> </span><span style=\"font-weight: bold; font-size:15px;\"> Theo Luật Tổ chức Tòa án nhân dân hiện hành, số lượng Thẩm phán TAND tối cao không công tác tại các Tòa án nhưng được bổ nhiệm theo cơ chế đặc biệt tối đa là bao nhiêu người?</span>",
+                            "categoryId": 1947,
+                            "note": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Căn cứ khoản 3 điều 96 Luật Tổ chức Tòa án nhân dân hiện hành.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "36",
+                            "correctRespondentCount": "19",
+                            "type": 1,
+                            "createdAt": "2025-09-17T15:08:10.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2025-11-04T15:42:16.000Z",
+                            "answers": [
+                                {
+                                    "id": 240887,
+                                    "answer": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">5 người </span>",
+                                    "isCorrect": false,
+                                    "questionId": 155891,
+                                    "createdAt": "2025-09-17T15:08:10.000Z",
+                                    "updatedAt": "2025-09-17T15:08:10.000Z"
+                                },
+                                {
+                                    "id": 240888,
+                                    "answer": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">3 người</span>",
+                                    "isCorrect": true,
+                                    "questionId": 155891,
+                                    "createdAt": "2025-09-17T15:08:10.000Z",
+                                    "updatedAt": "2025-09-17T15:08:10.000Z"
+                                },
+                                {
+                                    "id": 240889,
+                                    "answer": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">10% tổng số Thẩm phán TAND tối cao.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 155891,
+                                    "createdAt": "2025-09-17T15:08:10.000Z",
+                                    "updatedAt": "2025-09-17T15:08:10.000Z"
+                                },
+                                {
+                                    "id": 240890,
+                                    "answer": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">7 người</span>",
+                                    "isCorrect": false,
+                                    "questionId": 155891,
+                                    "createdAt": "2025-09-17T15:08:10.000Z",
+                                    "updatedAt": "2025-09-17T15:08:10.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 155892,
+                            "question": "<span style=\"font-size:15px;font-weight:bold;color:rgba(255, 0, 0, 1); \"> </span><span style=\"font-weight: bold; font-size:15px;\"> Theo Luật Tổ chức Tòa án nhân dân hiện hành, những chủ thể nào trong số sau đây có thể được bổ nhiệm làm Thẩm phán TAND tối cao dù không công tác tại Tòa án?</span>",
+                            "categoryId": 1947,
+                            "note": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Căn cứ khoản 2 điều 96 Luật Tổ chức Tòa án nhân dân hiện hành.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "44",
+                            "correctRespondentCount": "26",
+                            "type": 1,
+                            "createdAt": "2025-09-17T15:08:10.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2025-11-04T15:42:33.000Z",
+                            "answers": [
+                                {
+                                    "id": 240891,
+                                    "answer": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Người giữ chức vụ quan trọng trong các cơ quan trung ương, am hiểu sâu sắc về chính trị, pháp luật, quốc phòng, ngoại giao.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 155892,
+                                    "createdAt": "2025-09-17T15:08:10.000Z",
+                                    "updatedAt": "2025-09-17T15:08:10.000Z"
+                                },
+                                {
+                                    "id": 240892,
+                                    "answer": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Chuyên gia, luật sư, giảng viên đại học, nhà khoa học có trình độ cao về pháp luật.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 155892,
+                                    "createdAt": "2025-09-17T15:08:10.000Z",
+                                    "updatedAt": "2025-09-17T15:08:10.000Z"
+                                },
+                                {
+                                    "id": 240893,
+                                    "answer": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Người mới tốt nghiệp tiến sĩ luật, có công trình nghiên cứu được công bố quốc tế.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 155892,
+                                    "createdAt": "2025-09-17T15:08:10.000Z",
+                                    "updatedAt": "2025-09-17T15:08:10.000Z"
+                                },
+                                {
+                                    "id": 240894,
+                                    "answer": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Cả a và b đúng.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 155892,
+                                    "createdAt": "2025-09-17T15:08:10.000Z",
+                                    "updatedAt": "2025-09-17T15:08:10.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 155893,
+                            "question": "<span style=\"font-size:15px;font-weight:bold;color:rgba(255, 0, 0, 1); \"> </span><span style=\"font-weight: bold; font-size:15px;\"> Theo Luật Tổ chức Tòa án nhân dân hiện hành, chế độ bầu Hội thẩm nhân dân được thực hiện tại cấp nào?</span>",
+                            "categoryId": 1947,
+                            "note": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Căn cứ khoản 1 Điều 124 Luật Tổ chức Tòa án nhân dân hiện hành.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "61",
+                            "correctRespondentCount": "43",
+                            "type": 1,
+                            "createdAt": "2025-09-17T15:08:10.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2025-11-04T16:16:21.000Z",
+                            "answers": [
+                                {
+                                    "id": 240895,
+                                    "answer": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Chỉ tại Tòa án nhân dân tối cao.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 155893,
+                                    "createdAt": "2025-09-17T15:08:10.000Z",
+                                    "updatedAt": "2025-09-17T15:08:10.000Z"
+                                },
+                                {
+                                    "id": 240896,
+                                    "answer": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Chỉ tại Tòa án nhân dân cấp tỉnh.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 155893,
+                                    "createdAt": "2025-09-17T15:08:10.000Z",
+                                    "updatedAt": "2025-09-17T15:08:10.000Z"
+                                },
+                                {
+                                    "id": 240897,
+                                    "answer": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Tại Tòa án nhân dân cấp tỉnh và Tòa án nhân dân khu vực.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 155893,
+                                    "createdAt": "2025-09-17T15:08:10.000Z",
+                                    "updatedAt": "2025-09-17T15:08:10.000Z"
+                                },
+                                {
+                                    "id": 240898,
+                                    "answer": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Tại tất cả các Tòa án nhân dân.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 155893,
+                                    "createdAt": "2025-09-17T15:08:10.000Z",
+                                    "updatedAt": "2025-09-17T15:08:10.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 155894,
+                            "question": "<span style=\"font-size:15px;font-weight:bold;color:rgba(255, 0, 0, 1); \"> </span><span style=\"font-weight: bold; font-size:15px;\"> Theo Luật Tổ chức Tòa án nhân dân hiện hành, Hội thẩm nhân dân thực hiện nhiệm vụ xét xử vụ án thuộc thẩm quyền của Tòa án nhân dân theo sự phân công của chủ thể nào?</span>",
+                            "categoryId": 1947,
+                            "note": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Căn cứ khoản 1 Điều 125 Luật Tổ chức Tòa án nhân dân hiện hành.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "42",
+                            "correctRespondentCount": "37",
+                            "type": 1,
+                            "createdAt": "2025-09-17T15:08:10.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2025-11-04T15:52:48.000Z",
+                            "answers": [
+                                {
+                                    "id": 240899,
+                                    "answer": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Viện trưởng Viện kiểm sát cùng cấp.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 155894,
+                                    "createdAt": "2025-09-17T15:08:10.000Z",
+                                    "updatedAt": "2025-09-17T15:08:10.000Z"
+                                },
+                                {
+                                    "id": 240900,
+                                    "answer": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Chủ tọa phiên tòa.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 155894,
+                                    "createdAt": "2025-09-17T15:08:10.000Z",
+                                    "updatedAt": "2025-09-17T15:08:10.000Z"
+                                },
+                                {
+                                    "id": 240901,
+                                    "answer": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Chánh án Tòa án nơi Hội thẩm được bầu.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 155894,
+                                    "createdAt": "2025-09-17T15:08:10.000Z",
+                                    "updatedAt": "2025-09-17T15:08:10.000Z"
+                                },
+                                {
+                                    "id": 240902,
+                                    "answer": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Ủy ban nhân dân cấp tỉnh.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 155894,
+                                    "createdAt": "2025-09-17T15:08:10.000Z",
+                                    "updatedAt": "2025-09-17T15:08:10.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 155895,
+                            "question": "<span style=\"font-size:15px;font-weight:bold;color:rgba(255, 0, 0, 1); \"> </span><span style=\"font-weight: bold; font-size:15px;\"> Theo Luật Tổ chức Tòa án nhân dân hiện hành,  cơ quan nào có trách nhiệm lựa chọn, giới thiệu người đủ tiêu chuẩn để Hội đồng nhân dân cấp tỉnh bầu làm Hội thẩm nhân dân?</span>",
+                            "categoryId": 1947,
+                            "note": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Căn cứ khoản 1 Điều 127 Luật Tổ chức Tòa án nhân dân hiện hành.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "33",
+                            "correctRespondentCount": "22",
+                            "type": 1,
+                            "createdAt": "2025-09-17T15:08:10.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2025-11-04T15:45:27.000Z",
+                            "answers": [
+                                {
+                                    "id": 240903,
+                                    "answer": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Ủy ban nhân dân cấp tỉnh.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 155895,
+                                    "createdAt": "2025-09-17T15:08:10.000Z",
+                                    "updatedAt": "2025-09-17T15:08:10.000Z"
+                                },
+                                {
+                                    "id": 240904,
+                                    "answer": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Ủy ban Mặt trận Tổ quốc Việt Nam cấp tỉnh.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 155895,
+                                    "createdAt": "2025-09-17T15:08:10.000Z",
+                                    "updatedAt": "2025-09-17T15:08:10.000Z"
+                                },
+                                {
+                                    "id": 240905,
+                                    "answer": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Ban Thường vụ Tỉnh ủy</span>",
+                                    "isCorrect": false,
+                                    "questionId": 155895,
+                                    "createdAt": "2025-09-17T15:08:10.000Z",
+                                    "updatedAt": "2025-09-17T15:08:10.000Z"
+                                },
+                                {
+                                    "id": 240906,
+                                    "answer": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Chánh án Tòa án nhân dân cấp tỉnh.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 155895,
+                                    "createdAt": "2025-09-17T15:08:10.000Z",
+                                    "updatedAt": "2025-09-17T15:08:10.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 155896,
+                            "question": "<span style=\"font-size:15px;font-weight:bold;color:rgba(255, 0, 0, 1); \"> </span><span style=\"font-weight: bold; font-size:15px;\"> Theo Luật Tổ chức Tòa án nhân dân hiện hành, chủ thể nào có thẩm quyền đề nghị Hội đồng nhân dân cấp tỉnh miễn nhiệm, bãi nhiệm Hội thẩm nhân dân?</span>",
+                            "categoryId": 1947,
+                            "note": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Căn cứ khoản 1 Điều 127 Luật Tổ chức Tòa án nhân dân hiện hành.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "29",
+                            "correctRespondentCount": "21",
+                            "type": 1,
+                            "createdAt": "2025-09-17T15:08:10.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2025-11-04T15:57:55.000Z",
+                            "answers": [
+                                {
+                                    "id": 240907,
+                                    "answer": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Viện trưởng Viện kiểm sát nhân dân cấp tỉnh.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 155896,
+                                    "createdAt": "2025-09-17T15:08:10.000Z",
+                                    "updatedAt": "2025-09-17T15:08:10.000Z"
+                                },
+                                {
+                                    "id": 240908,
+                                    "answer": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Chủ tịch Ủy ban nhân dân cấp tỉnh.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 155896,
+                                    "createdAt": "2025-09-17T15:08:10.000Z",
+                                    "updatedAt": "2025-09-17T15:08:10.000Z"
+                                },
+                                {
+                                    "id": 240909,
+                                    "answer": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Chánh án Tòa án nhân dân cấp tỉnh.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 155896,
+                                    "createdAt": "2025-09-17T15:08:10.000Z",
+                                    "updatedAt": "2025-09-17T15:08:10.000Z"
+                                },
+                                {
+                                    "id": 240910,
+                                    "answer": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Ủy ban Mặt trận Tổ quốc Việt Nam cấp tỉnh.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 155896,
+                                    "createdAt": "2025-09-17T15:08:10.000Z",
+                                    "updatedAt": "2025-09-17T15:08:10.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 155897,
+                            "question": "<span style=\"font-size:15px;font-weight:bold;color:rgba(255, 0, 0, 1); \"> </span><span style=\"font-weight: bold; font-size:15px;\"> Theo Luật Tổ chức Tòa án nhân dân hiện hành, nhiệm kỳ của Hội thẩm nhân dân tại Tòa án nhân dân cấp tỉnh và khu vực được xác định như thế nào?</span>",
+                            "categoryId": 1947,
+                            "note": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Căn cứ khoản 1 Điều 128 Luật Tổ chức Tòa án nhân dân hiện hành.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "43",
+                            "correctRespondentCount": "34",
+                            "type": 1,
+                            "createdAt": "2025-09-17T15:08:10.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2025-11-04T15:58:01.000Z",
+                            "answers": [
+                                {
+                                    "id": 240911,
+                                    "answer": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">3 năm</span>",
+                                    "isCorrect": false,
+                                    "questionId": 155897,
+                                    "createdAt": "2025-09-17T15:08:10.000Z",
+                                    "updatedAt": "2025-09-17T15:08:10.000Z"
+                                },
+                                {
+                                    "id": 240912,
+                                    "answer": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">4 năm</span>",
+                                    "isCorrect": false,
+                                    "questionId": 155897,
+                                    "createdAt": "2025-09-17T15:08:10.000Z",
+                                    "updatedAt": "2025-09-17T15:08:10.000Z"
+                                },
+                                {
+                                    "id": 240913,
+                                    "answer": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Theo nhiệm kỳ của Hội đồng nhân dân cấp tỉnh đã bầu ra Hội thẩm nhân dân.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 155897,
+                                    "createdAt": "2025-09-17T15:08:10.000Z",
+                                    "updatedAt": "2025-09-17T15:08:10.000Z"
+                                },
+                                {
+                                    "id": 240914,
+                                    "answer": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">5 năm kể từ ngày được bầu.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 155897,
+                                    "createdAt": "2025-09-17T15:08:10.000Z",
+                                    "updatedAt": "2025-09-17T15:08:10.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 155898,
+                            "question": "<span style=\"font-size:15px;font-weight:bold;color:rgba(255, 0, 0, 1); \"> </span><span style=\"font-weight: bold; font-size:15px;\"> Theo Luật Tổ chức Tòa án nhân dân hiện hành, khi Hội đồng nhân dân cấp tỉnh hết nhiệm kỳ mà chưa bầu Hội thẩm nhân dân mới, thì Hội thẩm nhân dân cũ tiếp tục làm nhiệm vụ đến khi nào?</span>",
+                            "categoryId": 1947,
+                            "note": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Căn cứ khoản 1 Điều 128 Luật Tổ chức Tòa án nhân dân hiện hành.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "26",
+                            "correctRespondentCount": "26",
+                            "type": 1,
+                            "createdAt": "2025-09-17T15:08:10.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2025-11-04T15:58:08.000Z",
+                            "answers": [
+                                {
+                                    "id": 240915,
+                                    "answer": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Đến khi có nghị quyết miễn nhiệm của Hội đồng nhân dân</span>",
+                                    "isCorrect": false,
+                                    "questionId": 155898,
+                                    "createdAt": "2025-09-17T15:08:10.000Z",
+                                    "updatedAt": "2025-09-17T15:08:10.000Z"
+                                },
+                                {
+                                    "id": 240916,
+                                    "answer": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Đến khi Chủ tịch nước có quyết định thay thế.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 155898,
+                                    "createdAt": "2025-09-17T15:08:10.000Z",
+                                    "updatedAt": "2025-09-17T15:08:10.000Z"
+                                },
+                                {
+                                    "id": 240917,
+                                    "answer": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Đến khi Hội đồng nhân dân khóa mới bầu ra Hội thẩm nhân dân mới.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 155898,
+                                    "createdAt": "2025-09-17T15:08:10.000Z",
+                                    "updatedAt": "2025-09-17T15:08:10.000Z"
+                                },
+                                {
+                                    "id": 240918,
+                                    "answer": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Đến khi Ủy ban Thường vụ Quốc hội có nghị quyết điều chỉnh.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 155898,
+                                    "createdAt": "2025-09-17T15:08:10.000Z",
+                                    "updatedAt": "2025-09-17T15:08:10.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 155899,
+                            "question": "<span style=\"font-size:15px;font-weight:bold;color:rgba(255, 0, 0, 1); \"> </span><span style=\"font-weight: bold; font-size:15px;\"> Theo Luật Tổ chức Tòa án nhân dân hiện hành, trong trường hợp Chính phủ và Tòa án nhân dân tối cao không thống nhất về dự toán kinh phí hoạt động của các Tòa án, cơ quan/tổ chức nào có thẩm quyền xem xét, quyết định?</span>",
+                            "categoryId": 1947,
+                            "note": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Căn cứ khoản 2 Điều 147 Luật Tổ chức Tòa án nhân dân hiện hành.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "35",
+                            "correctRespondentCount": "27",
+                            "type": 1,
+                            "createdAt": "2025-09-17T15:08:10.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2025-11-04T15:58:23.000Z",
+                            "answers": [
+                                {
+                                    "id": 240919,
+                                    "answer": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Uỷ ban Thường vụ Quốc hội</span>",
+                                    "isCorrect": false,
+                                    "questionId": 155899,
+                                    "createdAt": "2025-09-17T15:08:10.000Z",
+                                    "updatedAt": "2025-09-17T15:08:10.000Z"
+                                },
+                                {
+                                    "id": 240920,
+                                    "answer": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Chủ tịch nước</span>",
+                                    "isCorrect": false,
+                                    "questionId": 155899,
+                                    "createdAt": "2025-09-17T15:08:10.000Z",
+                                    "updatedAt": "2025-09-17T15:08:10.000Z"
+                                },
+                                {
+                                    "id": 240921,
+                                    "answer": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Quốc hội </span>",
+                                    "isCorrect": true,
+                                    "questionId": 155899,
+                                    "createdAt": "2025-09-17T15:08:10.000Z",
+                                    "updatedAt": "2025-09-17T15:08:10.000Z"
+                                },
+                                {
+                                    "id": 240922,
+                                    "answer": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Chính phủ</span>",
+                                    "isCorrect": false,
+                                    "questionId": 155899,
+                                    "createdAt": "2025-09-17T15:08:10.000Z",
+                                    "updatedAt": "2025-09-17T15:08:10.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 155810,
+                            "question": "<span style=\"font-size:15px;font-weight:bold;\"> </span><span style=\"font-weight: bold; font-size:15px;color: rgba(255, 0, 0, 1); \"> </span><span style=\"font-weight: bold; font-size:15px;\"> Theo Luật Tổ chức Tòa án nhân dân hiện hành, nội dung nào sau đây không thuộc Nhiệm vụ, quyền hạn của Thẩm phán Tòa án nhân dân tối cao?</span>",
+                            "categoryId": 1947,
+                            "note": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Chọn B vì đây là nội dung thuộc Trách nhiệm của Thẩm phán</span>",
+                            "readingContentId": null,
+                            "respondentCount": "71",
+                            "correctRespondentCount": "48",
+                            "type": 1,
+                            "createdAt": "2025-09-17T15:08:07.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2025-11-04T15:58:40.000Z",
+                            "answers": [
+                                {
+                                    "id": 240563,
+                                    "answer": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Thực hiện nhiệm vụ, quyền hạn của thành viên Hội đồng Thẩm phán Tòa án nhân dân tối cao.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 155810,
+                                    "createdAt": "2025-09-17T15:08:07.000Z",
+                                    "updatedAt": "2025-09-17T15:08:07.000Z"
+                                },
+                                {
+                                    "id": 240564,
+                                    "answer": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Tôn trọng Nhân dân, tận tụy phục vụ Nhân dân, liên hệ chặt chẽ với Nhân dân và chịu sự giám sát của Nhân dân</span>",
+                                    "isCorrect": true,
+                                    "questionId": 155810,
+                                    "createdAt": "2025-09-17T15:08:07.000Z",
+                                    "updatedAt": "2025-09-17T15:08:07.000Z"
+                                },
+                                {
+                                    "id": 240565,
+                                    "answer": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Tham gia đào tạo, bồi dưỡng, giảng dạy và nghiên cứu khoa học.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 155810,
+                                    "createdAt": "2025-09-17T15:08:07.000Z",
+                                    "updatedAt": "2025-09-17T15:08:07.000Z"
+                                },
+                                {
+                                    "id": 240566,
+                                    "answer": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Thực hiện nhiệm vụ, quyền hạn khác theo quy định của pháp luật và theo sự phân công của Chánh án Tòa án nhân dân tối cao</span>",
+                                    "isCorrect": false,
+                                    "questionId": 155810,
+                                    "createdAt": "2025-09-17T15:08:07.000Z",
+                                    "updatedAt": "2025-09-17T15:08:07.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 155722,
+                            "question": "<span style=\"font-size:15px;font-weight:bold;color:rgba(255, 0, 0, 1); \"> </span><span style=\"font-weight: bold; font-size:15px;\"> Theo Luật Tổ chức Tòa án nhân dân hiện hành, nội dung nào dưới đây không thuộc nhiệm vụ và quyền hạn của Toà án xét lại bản án, quyết định đã có hiệu lực pháp luật theo thủ tục giám đốc thẩm, tái thẩm?</span>",
+                            "categoryId": 1947,
+                            "note": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Chọn D vì đây là nội dung về nhiệm vụ, quyền hạn của Toà án cấp sơ thẩm (căn cứ khoản 2 Điều 23 Luật Tổ chức Tòa án nhân dân hiện hành)</span>",
+                            "readingContentId": null,
+                            "respondentCount": "94",
+                            "correctRespondentCount": "69",
+                            "type": 1,
+                            "createdAt": "2025-09-17T15:08:01.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2025-11-04T16:14:21.000Z",
+                            "answers": [
+                                {
+                                    "id": 240211,
+                                    "answer": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Thụ lý vụ án, vụ việc để xét xử giám đốc thẩm, tái thẩm</span>",
+                                    "isCorrect": false,
+                                    "questionId": 155722,
+                                    "createdAt": "2025-09-17T15:08:01.000Z",
+                                    "updatedAt": "2025-09-17T15:08:01.000Z"
+                                },
+                                {
+                                    "id": 240212,
+                                    "answer": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Thay đổi, bổ sung, rút kháng nghị giám đốc thẩm, tái thẩm</span>",
+                                    "isCorrect": false,
+                                    "questionId": 155722,
+                                    "createdAt": "2025-09-17T15:08:01.000Z",
+                                    "updatedAt": "2025-09-17T15:08:01.000Z"
+                                },
+                                {
+                                    "id": 240213,
+                                    "answer": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Tổ chức phiên tòa xét xử giám đốc thẩm, tái thẩm</span>",
+                                    "isCorrect": false,
+                                    "questionId": 155722,
+                                    "createdAt": "2025-09-17T15:08:01.000Z",
+                                    "updatedAt": "2025-09-17T15:08:01.000Z"
+                                },
+                                {
+                                    "id": 240214,
+                                    "answer": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Ban hành bản án, quyết định</span>",
+                                    "isCorrect": true,
+                                    "questionId": 155722,
+                                    "createdAt": "2025-09-17T15:08:01.000Z",
+                                    "updatedAt": "2025-09-17T15:08:01.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 155672,
+                            "question": "<span style=\"font-size:15px;font-weight:bold;color:rgba(255, 0, 0, 1); \"> </span><span style=\"font-weight: bold; font-size:15px;\"> Theo Luật Tổ chức Tòa án nhân dân hiện hành, nội dung nào dưới đây thuộc nguyên tắc tổ chức và hoạt động của Toà án nhân dân?</span>",
+                            "categoryId": 1947,
+                            "note": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Căn cứ nội dung khoản 10, Điều 5 Luật Tổ chức Tòa án nhân dân hiện hành</span>",
+                            "readingContentId": null,
+                            "respondentCount": "100",
+                            "correctRespondentCount": "63",
+                            "type": 1,
+                            "createdAt": "2025-09-17T15:07:59.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2025-11-04T15:59:26.000Z",
+                            "answers": [
+                                {
+                                    "id": 240011,
+                                    "answer": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Tòa án chịu sự giám sát của Bộ Tư pháp, Mặt trận Tổ quốc Việt Nam và các tổ chức thành viên của Mặt trận.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 155672,
+                                    "createdAt": "2025-09-17T15:07:59.000Z",
+                                    "updatedAt": "2025-09-17T15:07:59.000Z"
+                                },
+                                {
+                                    "id": 240012,
+                                    "answer": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Tòa án chịu sự giám sát của Nhân dân, Quốc hội, Hội đồng nhân dân, Mặt trận Tổ quốc Việt Nam và các tổ chức thành viên của Mặt trận.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 155672,
+                                    "createdAt": "2025-09-17T15:07:59.000Z",
+                                    "updatedAt": "2025-09-17T15:07:59.000Z"
+                                },
+                                {
+                                    "id": 240013,
+                                    "answer": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Bảo đảm quyền khiếu nại của bị can, bị cáo, quyền bảo vệ quyền và lợi ích hợp pháp của bị hại, đương sự</span>",
+                                    "isCorrect": false,
+                                    "questionId": 155672,
+                                    "createdAt": "2025-09-17T15:07:59.000Z",
+                                    "updatedAt": "2025-09-17T15:07:59.000Z"
+                                },
+                                {
+                                    "id": 240014,
+                                    "answer": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Thực hiện quyền tư pháp kịp thời, công bằng, công khai, vô tư, minh bạch</span>",
+                                    "isCorrect": false,
+                                    "questionId": 155672,
+                                    "createdAt": "2025-09-17T15:07:59.000Z",
+                                    "updatedAt": "2025-09-17T15:07:59.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 155807,
+                            "question": "<span style=\"font-size:15px;font-weight:bold;color:rgba(255, 0, 0, 1); \"> </span><span style=\"font-weight: bold; font-size:15px;\"> Theo Luật Tổ chức Tòa án nhân dân hiện hành, chủ thể nào sau đây quy định cách thức tuyên thệ của Thẩm phán?</span>",
+                            "categoryId": 1947,
+                            "note": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Căn cứ nội dung Điều 89 Luật Tổ chức Tòa án nhân dân hiện hành. </span>",
+                            "readingContentId": null,
+                            "respondentCount": "74",
+                            "correctRespondentCount": "62",
+                            "type": 1,
+                            "createdAt": "2025-09-17T15:08:07.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2025-11-04T15:59:33.000Z",
+                            "answers": [
+                                {
+                                    "id": 240551,
+                                    "answer": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Bộ trưởng Bộ Tư pháp </span>",
+                                    "isCorrect": false,
+                                    "questionId": 155807,
+                                    "createdAt": "2025-09-17T15:08:07.000Z",
+                                    "updatedAt": "2025-09-17T15:08:07.000Z"
+                                },
+                                {
+                                    "id": 240552,
+                                    "answer": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Chủ tịch Quốc hội </span>",
+                                    "isCorrect": false,
+                                    "questionId": 155807,
+                                    "createdAt": "2025-09-17T15:08:07.000Z",
+                                    "updatedAt": "2025-09-17T15:08:07.000Z"
+                                },
+                                {
+                                    "id": 240553,
+                                    "answer": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Chánh án Tòa án nhân dân tối cao</span>",
+                                    "isCorrect": true,
+                                    "questionId": 155807,
+                                    "createdAt": "2025-09-17T15:08:07.000Z",
+                                    "updatedAt": "2025-09-17T15:08:07.000Z"
+                                },
+                                {
+                                    "id": 240554,
+                                    "answer": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Chủ tịch nước</span>",
+                                    "isCorrect": false,
+                                    "questionId": 155807,
+                                    "createdAt": "2025-09-17T15:08:07.000Z",
+                                    "updatedAt": "2025-09-17T15:08:07.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 155784,
+                            "question": "<span style=\"font-size:15px;font-weight:bold;color:rgba(255, 0, 0, 1); \"> </span><span style=\"font-weight: bold; font-size:15px;\"> Theo Luật Tổ chức Tòa án nhân dân hiện hành, nội dung nào sau đây không thuộc nhiệm vụ, quyền hạn của Tòa án quân sự trung ương?</span>",
+                            "categoryId": 1947,
+                            "note": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Chọn B vì đây là nội dung thuộc nhiệm vụ, quyền hạn của Tòa án nhân dân  sơ thẩm chuyên biệt Sở hữu trí tuệ</span>",
+                            "readingContentId": null,
+                            "respondentCount": "69",
+                            "correctRespondentCount": "56",
+                            "type": 1,
+                            "createdAt": "2025-09-17T15:08:05.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2025-11-04T15:59:44.000Z",
+                            "answers": [
+                                {
+                                    "id": 240459,
+                                    "answer": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Phúc thẩm vụ án mà bản án, quyết định sơ thẩm hình sự của Tòa án quân sự quân khu và tương đương chưa có hiệu lực pháp luật bị kháng cáo, kháng nghị theo quy định của luật</span>",
+                                    "isCorrect": false,
+                                    "questionId": 155784,
+                                    "createdAt": "2025-09-17T15:08:05.000Z",
+                                    "updatedAt": "2025-09-17T15:08:05.000Z"
+                                },
+                                {
+                                    "id": 240460,
+                                    "answer": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Sơ thẩm vụ việc về sở hữu trí tuệ theo quy định của Bộ luật Tố tụng dân sự; sơ thẩm vụ án hành chính về sở hữu trí tuệ theo quy định của Luật Tố tụng hành chính</span>",
+                                    "isCorrect": true,
+                                    "questionId": 155784,
+                                    "createdAt": "2025-09-17T15:08:05.000Z",
+                                    "updatedAt": "2025-09-17T15:08:05.000Z"
+                                },
+                                {
+                                    "id": 240461,
+                                    "answer": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Giám đốc thẩm, tái thẩm vụ án mà bản án, quyết định hình sự của Tòa án quân sự quân khu và tương đương, Tòa án quân sự khu vực đã có hiệu lực pháp luật bị kháng nghị theo </span>",
+                                    "isCorrect": false,
+                                    "questionId": 155784,
+                                    "createdAt": "2025-09-17T15:08:05.000Z",
+                                    "updatedAt": "2025-09-17T15:08:05.000Z"
+                                },
+                                {
+                                    "id": 240462,
+                                    "answer": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Thực hiện việc tổng kết thực tiễn xét xử; đề xuất án lệ</span>",
+                                    "isCorrect": false,
+                                    "questionId": 155784,
+                                    "createdAt": "2025-09-17T15:08:05.000Z",
+                                    "updatedAt": "2025-09-17T15:08:05.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 155719,
+                            "question": "<span style=\"font-size:15px;font-weight:bold;color:rgba(255, 0, 0, 1); \"> </span><span style=\"font-weight: bold; font-size:15px;\"> Theo Luật Tổ chức Tòa án nhân dân hiện hành, nội dung nào dưới đây không thuộc nhiệm vụ và quyền hạn của Toà án xét lại bản án, quyết định đã có hiệu lực pháp luật theo thủ tục giám đốc thẩm, tái thẩm? </span>",
+                            "categoryId": 1947,
+                            "note": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Chọn D vì đây là nội dung về nhiệm vụ, quyền hạn của Toà án cấp phúc thẩm (căn cứ khoản 2 Điều 24 Luật Tổ chức Tòa án nhân dân hiện hành)</span>",
+                            "readingContentId": null,
+                            "respondentCount": "96",
+                            "correctRespondentCount": "67",
+                            "type": 1,
+                            "createdAt": "2025-09-17T15:08:01.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2025-11-04T15:59:57.000Z",
+                            "answers": [
+                                {
+                                    "id": 240199,
+                                    "answer": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Nhận, thụ lý, giải quyết đơn đề nghị, kiến nghị, kháng nghị, thông báo đối với bản án, quyết định của Tòa án đã có hiệu lực pháp luật</span>",
+                                    "isCorrect": false,
+                                    "questionId": 155719,
+                                    "createdAt": "2025-09-17T15:08:01.000Z",
+                                    "updatedAt": "2025-09-17T15:08:01.000Z"
+                                },
+                                {
+                                    "id": 240200,
+                                    "answer": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Nghiên cứu, thẩm tra hồ sơ vụ án, vụ việc;</span>",
+                                    "isCorrect": false,
+                                    "questionId": 155719,
+                                    "createdAt": "2025-09-17T15:08:01.000Z",
+                                    "updatedAt": "2025-09-17T15:08:01.000Z"
+                                },
+                                {
+                                    "id": 240201,
+                                    "answer": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Quyết định kháng nghị giám đốc thẩm, tái thẩm hoặc thông báo trả lời đơn</span>",
+                                    "isCorrect": false,
+                                    "questionId": 155719,
+                                    "createdAt": "2025-09-17T15:08:01.000Z",
+                                    "updatedAt": "2025-09-17T15:08:01.000Z"
+                                },
+                                {
+                                    "id": 240202,
+                                    "answer": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Quyết định đưa vụ án ra xét xử phúc thẩm, tạm đình chỉ, đình chỉ xét xử, giải quyết vụ án, vụ việc, hoãn, tạm ngừng phiên tòa, phiên họp phúc thẩm, tiếp tục việc xét xử, giải quyết vụ án, vụ việc theo thủ tục phúc thẩm</span>",
+                                    "isCorrect": true,
+                                    "questionId": 155719,
+                                    "createdAt": "2025-09-17T15:08:01.000Z",
+                                    "updatedAt": "2025-09-17T15:08:01.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 155720,
+                            "question": "<span style=\"font-size:15px;font-weight:bold;\"> </span><span style=\"font-weight: bold; font-size:15px;color: rgba(255, 0, 0, 1); \"> </span><span style=\"font-weight: bold; font-size:15px;\"> Theo Luật Tổ chức Tòa án nhân dân hiện hành, nội dung nào dưới đây không thuộc nhiệm vụ và quyền hạn của Toà án xét lại bản án, quyết định đã có hiệu lực pháp luật theo thủ tục giám đốc thẩm, tái thẩm? </span>",
+                            "categoryId": 1947,
+                            "note": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Chọn B vì đây là nội dung về nhiệm vụ, quyền hạn của Toà án cấp phúc thẩm (căn cứ khoản 2 Điều 24 Luật Tổ chức Tòa án nhân dân hiện hành)</span>",
+                            "readingContentId": null,
+                            "respondentCount": "94",
+                            "correctRespondentCount": "63",
+                            "type": 1,
+                            "createdAt": "2025-09-17T15:08:01.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2025-11-04T16:13:42.000Z",
+                            "answers": [
+                                {
+                                    "id": 240203,
+                                    "answer": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Nhận, thụ lý, giải quyết đơn đề nghị, kiến nghị, kháng nghị, thông báo đối với bản án, quyết định của Tòa án đã có hiệu lực pháp luật</span>",
+                                    "isCorrect": false,
+                                    "questionId": 155720,
+                                    "createdAt": "2025-09-17T15:08:01.000Z",
+                                    "updatedAt": "2025-09-17T15:08:01.000Z"
+                                },
+                                {
+                                    "id": 240204,
+                                    "answer": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Xem xét lại bản án, quyết định hoặc phần bản án, quyết định của Tòa án cấp sơ thẩm có kháng cáo, kháng nghị hoặc nội dung khác theo quy định của luật</span>",
+                                    "isCorrect": true,
+                                    "questionId": 155720,
+                                    "createdAt": "2025-09-17T15:08:01.000Z",
+                                    "updatedAt": "2025-09-17T15:08:01.000Z"
+                                },
+                                {
+                                    "id": 240205,
+                                    "answer": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Quyết định kháng nghị giám đốc thẩm, tái thẩm hoặc thông báo trả lời đơn</span>",
+                                    "isCorrect": false,
+                                    "questionId": 155720,
+                                    "createdAt": "2025-09-17T15:08:01.000Z",
+                                    "updatedAt": "2025-09-17T15:08:01.000Z"
+                                },
+                                {
+                                    "id": 240206,
+                                    "answer": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Hoãn, yêu cầu hoãn, tạm đình chỉ thi hành bản án, quyết định đã có hiệu lực pháp luật theo quy định của luật</span>",
+                                    "isCorrect": false,
+                                    "questionId": 155720,
+                                    "createdAt": "2025-09-17T15:08:01.000Z",
+                                    "updatedAt": "2025-09-17T15:08:01.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 155707,
+                            "question": "<span style=\"font-size:15px;font-weight:bold;color:rgba(255, 0, 0, 1); \"> </span><span style=\"font-weight: bold; font-size:15px;\"> Theo Luật Tổ chức Tòa án nhân dân hiện hành, nội dung nào dưới đây không thuộc nhiệm vụ và quyền hạn của Toà án cấp sơ thẩm?</span>",
+                            "categoryId": 1947,
+                            "note": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Chọn D vì đây là nội dung về nhiệm vụ, quyền hạn của Toà án xét lại bản án, quyết định đã có hiệu lực pháp luật theo thủ tục giám đốc thẩm, tái thẩm (căn cứ khoản 2 Điều 25 Luật Tổ chức Tòa án nhân dân hiện hành)</span>",
+                            "readingContentId": null,
+                            "respondentCount": "89",
+                            "correctRespondentCount": "60",
+                            "type": 1,
+                            "createdAt": "2025-09-17T15:08:00.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2025-11-04T16:00:21.000Z",
+                            "answers": [
+                                {
+                                    "id": 240151,
+                                    "answer": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Giải quyết yêu cầu, đề nghị, kiến nghị, khiếu nại về quyết định, hành vi tố tụng</span>",
+                                    "isCorrect": false,
+                                    "questionId": 155707,
+                                    "createdAt": "2025-09-17T15:08:00.000Z",
+                                    "updatedAt": "2025-09-17T15:08:00.000Z"
+                                },
+                                {
+                                    "id": 240152,
+                                    "answer": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Phát hiện, kiến nghị về tính hợp hiến, hợp pháp của văn bản quy phạm pháp luật trong xét xử, giải quyết vụ án, vụ việc</span>",
+                                    "isCorrect": false,
+                                    "questionId": 155707,
+                                    "createdAt": "2025-09-17T15:08:00.000Z",
+                                    "updatedAt": "2025-09-17T15:08:00.000Z"
+                                },
+                                {
+                                    "id": 240153,
+                                    "answer": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Xem xét, kết luận về tính hợp pháp của tài liệu, chứng cứ do cơ quan, tổ chức, cá nhân thu thập, cung cấp, giao nộp cho Tòa án</span>",
+                                    "isCorrect": false,
+                                    "questionId": 155707,
+                                    "createdAt": "2025-09-17T15:08:00.000Z",
+                                    "updatedAt": "2025-09-17T15:08:00.000Z"
+                                },
+                                {
+                                    "id": 240154,
+                                    "answer": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Hoãn, yêu cầu hoãn, tạm đình chỉ thi hành bản án, quyết định đã có hiệu lực pháp luật theo quy định của luật</span>",
+                                    "isCorrect": true,
+                                    "questionId": 155707,
+                                    "createdAt": "2025-09-17T15:08:00.000Z",
+                                    "updatedAt": "2025-09-17T15:08:00.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 155887,
+                            "question": "<span style=\"font-size:15px;font-weight:bold;color:rgba(255, 0, 0, 1); \"> </span><span style=\"font-weight: bold; font-size:15px;\"> Theo Luật Tổ chức Tòa án nhân dân hiện hành, Thẩm phán TAND tối cao có quyền đề xuất với Chánh án TAND tối cao nội dung nào sau đây?</span>",
+                            "categoryId": 1947,
+                            "note": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Căn cứ khoản 2 Điều 93 Luật Tổ chức Tòa án nhân dân hiện hành.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "60",
+                            "correctRespondentCount": "46",
+                            "type": 1,
+                            "createdAt": "2025-09-17T15:08:10.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2025-11-04T16:00:36.000Z",
+                            "answers": [
+                                {
+                                    "id": 240871,
+                                    "answer": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Bổ nhiệm, miễn nhiệm Thẩm phán cấp huyện.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 155887,
+                                    "createdAt": "2025-09-17T15:08:10.000Z",
+                                    "updatedAt": "2025-09-17T15:08:10.000Z"
+                                },
+                                {
+                                    "id": 240872,
+                                    "answer": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Giải quyết khiếu nại trong hoạt động tố tụng.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 155887,
+                                    "createdAt": "2025-09-17T15:08:10.000Z",
+                                    "updatedAt": "2025-09-17T15:08:10.000Z"
+                                },
+                                {
+                                    "id": 240873,
+                                    "answer": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Thành lập thêm Tòa án nhân dân khu vực.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 155887,
+                                    "createdAt": "2025-09-17T15:08:10.000Z",
+                                    "updatedAt": "2025-09-17T15:08:10.000Z"
+                                },
+                                {
+                                    "id": 240874,
+                                    "answer": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Ban hành nghị quyết liên tịch với Viện kiểm sát nhân dân tối cao.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 155887,
+                                    "createdAt": "2025-09-17T15:08:10.000Z",
+                                    "updatedAt": "2025-09-17T15:08:10.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 155689,
+                            "question": "<span style=\"font-size:15px;font-weight:bold;color:rgba(255, 0, 0, 1); \"> </span><span style=\"font-weight: bold; font-size:15px;\"> Theo Luật Tổ chức Tòa án nhân dân hiện hành, cơ quan, tổ chức, cá nhân có hành vi can thiệp vào việc xét xử, giải quyết vụ án, vụ việc của Thẩm phán, Hội thẩm sẽ bị xử lý như thế nào? </span>",
+                            "categoryId": 1947,
+                            "note": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Cơ quan, tổ chức, cá nhân có hành vi can thiệp vào việc xét xử, giải quyết vụ án, vụ việc của Thẩm phán, Hội thẩm thì tùy theo tính chất, mức độ vi phạm mà bị xử lý kỷ luật, xử phạt vi phạm hành chính hoặc truy cứu trách nhiệm hình sự theo quy định của pháp luật.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "78",
+                            "correctRespondentCount": "71",
+                            "type": 1,
+                            "createdAt": "2025-09-17T15:08:00.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2025-11-04T16:00:40.000Z",
+                            "answers": [
+                                {
+                                    "id": 240079,
+                                    "answer": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Nhắc nhở, khiển trách </span>",
+                                    "isCorrect": false,
+                                    "questionId": 155689,
+                                    "createdAt": "2025-09-17T15:08:00.000Z",
+                                    "updatedAt": "2025-09-17T15:08:00.000Z"
+                                },
+                                {
+                                    "id": 240080,
+                                    "answer": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Xử lý kỷ luật, xử phạt hành chính hoặc truy cứu trách nhiệm hình sự </span>",
+                                    "isCorrect": true,
+                                    "questionId": 155689,
+                                    "createdAt": "2025-09-17T15:08:00.000Z",
+                                    "updatedAt": "2025-09-17T15:08:00.000Z"
+                                },
+                                {
+                                    "id": 240081,
+                                    "answer": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Buộc thôi việc</span>",
+                                    "isCorrect": false,
+                                    "questionId": 155689,
+                                    "createdAt": "2025-09-17T15:08:00.000Z",
+                                    "updatedAt": "2025-09-17T15:08:00.000Z"
+                                },
+                                {
+                                    "id": 240082,
+                                    "answer": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Đình chỉ hoạt động đối với cơ quan, tổ chức </span>",
+                                    "isCorrect": false,
+                                    "questionId": 155689,
+                                    "createdAt": "2025-09-17T15:08:00.000Z",
+                                    "updatedAt": "2025-09-17T15:08:00.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 155861,
+                            "question": "<span style=\"font-size:15px;font-weight:bold;color:rgba(255, 0, 0, 1); \"> </span><span style=\"font-weight: bold; font-size:15px;\"> Theo Luật Tổ chức Tòa án nhân dân hiện hành, Tòa chuyên trách thuộc TAND cấp tỉnh có thẩm quyền sơ thẩm đối với loại vụ án nào?</span>",
+                            "categoryId": 1947,
+                            "note": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Căn cứ nội dung khoản 1 Điều 58 Luật Tổ chức Tòa án nhân dân hiện hành.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "62",
+                            "correctRespondentCount": "51",
+                            "type": 1,
+                            "createdAt": "2025-09-17T15:08:09.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2025-11-04T16:00:45.000Z",
+                            "answers": [
+                                {
+                                    "id": 240767,
+                                    "answer": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Vụ án hành chính.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 155861,
+                                    "createdAt": "2025-09-17T15:08:09.000Z",
+                                    "updatedAt": "2025-09-17T15:08:09.000Z"
+                                },
+                                {
+                                    "id": 240768,
+                                    "answer": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Vụ án hình sự theo quy định của luật.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 155861,
+                                    "createdAt": "2025-09-17T15:08:09.000Z",
+                                    "updatedAt": "2025-09-17T15:08:09.000Z"
+                                },
+                                {
+                                    "id": 240769,
+                                    "answer": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Vụ án dân sự có yếu tố nước ngoài.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 155861,
+                                    "createdAt": "2025-09-17T15:08:09.000Z",
+                                    "updatedAt": "2025-09-17T15:08:09.000Z"
+                                },
+                                {
+                                    "id": 240770,
+                                    "answer": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Vụ án lao động do TAND cấp huyện chuyển lên.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 155861,
+                                    "createdAt": "2025-09-17T15:08:09.000Z",
+                                    "updatedAt": "2025-09-17T15:08:09.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 155652,
+                            "question": "<span style=\"font-size:15px;font-weight:bold;color:rgba(255, 0, 0, 1); \"> </span><span style=\"font-weight: bold; font-size:15px;\"> Theo Luật Tổ chức Tòa án nhân dân hiện hành, nội dung nào sau đây không đúng khi nói về vị trí, chức năng của Toà án nhân dân?</span>",
+                            "categoryId": 1947,
+                            "note": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Nội dung đáp án D thuộc nội dung nhiệm vụ, quyền hạn của Toà án nhân dân (căn cứ nội dung Điều 28. Quyết định những vấn đề liên quan quyền con người, quyền và nghĩa vụ của cơ quan, tổ chức, cá nhân) <br/>Các đáp án còn lại là các đáp án đúng về vị trí, chức năng của Toà án nhân dân (căn cứ vào nội dung Điều 2)</span>",
+                            "readingContentId": null,
+                            "respondentCount": "108",
+                            "correctRespondentCount": "68",
+                            "type": 1,
+                            "createdAt": "2025-09-17T15:07:58.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2025-11-04T16:00:59.000Z",
+                            "answers": [
+                                {
+                                    "id": 239931,
+                                    "answer": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Tòa án nhân dân là cơ quan xét xử của nước Cộng hòa xã hội chủ nghĩa Việt Nam, thực hiện quyền tư pháp</span>",
+                                    "isCorrect": false,
+                                    "questionId": 155652,
+                                    "createdAt": "2025-09-17T15:07:58.000Z",
+                                    "updatedAt": "2025-09-17T15:07:58.000Z"
+                                },
+                                {
+                                    "id": 239932,
+                                    "answer": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Tòa án nhân dân thực hiện quyền tư pháp để thực thi nhiệm vụ bảo vệ công lý, bảo vệ quyền con người, quyền công dân, bảo vệ chế độ xã hội chủ nghĩa, bảo vệ lợi ích của Nhà nước, quyền và lợi ích hợp pháp của tổ chức, cá nhân</span>",
+                                    "isCorrect": false,
+                                    "questionId": 155652,
+                                    "createdAt": "2025-09-17T15:07:58.000Z",
+                                    "updatedAt": "2025-09-17T15:07:58.000Z"
+                                },
+                                {
+                                    "id": 239933,
+                                    "answer": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Tòa án nhân dân nhân danh nước Cộng hòa xã hội chủ nghĩa Việt Nam xét xử, giải quyết các vụ án, vụ việc theo quy định của pháp luật</span>",
+                                    "isCorrect": false,
+                                    "questionId": 155652,
+                                    "createdAt": "2025-09-17T15:07:58.000Z",
+                                    "updatedAt": "2025-09-17T15:07:58.000Z"
+                                },
+                                {
+                                    "id": 239934,
+                                    "answer": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Tòa án có thẩm quyền xem xét, quyết định những vấn đề liên quan đến quyền con người, quyền và nghĩa vụ của cơ quan, tổ chức, cá nhân theo quy định của luật</span>",
+                                    "isCorrect": true,
+                                    "questionId": 155652,
+                                    "createdAt": "2025-09-17T15:07:58.000Z",
+                                    "updatedAt": "2025-09-17T15:07:58.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 155882,
+                            "question": "<span style=\"font-size:15px;font-weight:bold;color:rgba(255, 0, 0, 1); \"> </span><span style=\"font-weight: bold; font-size:15px;\"> Theo Luật Tổ chức Tòa án nhân dân hiện hành, chủ thể nào có thẩm quyền bổ nhiệm, miễn nhiệm, cách chức Phó Chánh án Tòa án nhân dân cấp tỉnh và Tòa án nhân dân khu vực?</span>",
+                            "categoryId": 1947,
+                            "note": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Căn cứ khoản 1 Điều 83 Luật Tổ chức Tòa án nhân dân hiện hành.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "68",
+                            "correctRespondentCount": "62",
+                            "type": 1,
+                            "createdAt": "2025-09-17T15:08:10.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2025-11-04T16:01:18.000Z",
+                            "answers": [
+                                {
+                                    "id": 240851,
+                                    "answer": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Quốc hội</span>",
+                                    "isCorrect": false,
+                                    "questionId": 155882,
+                                    "createdAt": "2025-09-17T15:08:10.000Z",
+                                    "updatedAt": "2025-09-17T15:08:10.000Z"
+                                },
+                                {
+                                    "id": 240852,
+                                    "answer": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Chủ tịch nước</span>",
+                                    "isCorrect": false,
+                                    "questionId": 155882,
+                                    "createdAt": "2025-09-17T15:08:10.000Z",
+                                    "updatedAt": "2025-09-17T15:08:10.000Z"
+                                },
+                                {
+                                    "id": 240853,
+                                    "answer": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Uỷ ban Thường vụ Quốc hội</span>",
+                                    "isCorrect": false,
+                                    "questionId": 155882,
+                                    "createdAt": "2025-09-17T15:08:10.000Z",
+                                    "updatedAt": "2025-09-17T15:08:10.000Z"
+                                },
+                                {
+                                    "id": 240854,
+                                    "answer": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Chánh án Tòa án nhân dân tối cao.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 155882,
+                                    "createdAt": "2025-09-17T15:08:10.000Z",
+                                    "updatedAt": "2025-09-17T15:08:10.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 155721,
+                            "question": "<span style=\"font-size:15px;font-weight:bold;color:rgba(255, 0, 0, 1); \"> </span><span style=\"font-weight: bold; font-size:15px;\"> Theo Luật Tổ chức Tòa án nhân dân hiện hành, nội dung nào dưới đây không thuộc nhiệm vụ và quyền hạn của Toà án xét lại bản án, quyết định đã có hiệu lực pháp luật theo thủ tục giám đốc thẩm, tái thẩm?</span>",
+                            "categoryId": 1947,
+                            "note": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Chọn A vì đây là nội dung về nhiệm vụ, quyền hạn của Toà án cấp phúc thẩm (căn cứ khoản 2 Điều 24 Luật Tổ chức Tòa án nhân dân hiện hành)</span>",
+                            "readingContentId": null,
+                            "respondentCount": "84",
+                            "correctRespondentCount": "63",
+                            "type": 1,
+                            "createdAt": "2025-09-17T15:08:01.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2025-11-04T16:01:39.000Z",
+                            "answers": [
+                                {
+                                    "id": 240207,
+                                    "answer": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Yêu cầu Viện kiểm sát bổ sung tài liệu, chứng cứ mới trong vụ án hình sự</span>",
+                                    "isCorrect": true,
+                                    "questionId": 155721,
+                                    "createdAt": "2025-09-17T15:08:01.000Z",
+                                    "updatedAt": "2025-09-17T15:08:01.000Z"
+                                },
+                                {
+                                    "id": 240208,
+                                    "answer": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Thụ lý vụ án, vụ việc để xét xử giám đốc thẩm, tái thẩm</span>",
+                                    "isCorrect": false,
+                                    "questionId": 155721,
+                                    "createdAt": "2025-09-17T15:08:01.000Z",
+                                    "updatedAt": "2025-09-17T15:08:01.000Z"
+                                },
+                                {
+                                    "id": 240209,
+                                    "answer": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Thay đổi, bổ sung, rút kháng nghị giám đốc thẩm, tái thẩm</span>",
+                                    "isCorrect": false,
+                                    "questionId": 155721,
+                                    "createdAt": "2025-09-17T15:08:01.000Z",
+                                    "updatedAt": "2025-09-17T15:08:01.000Z"
+                                },
+                                {
+                                    "id": 240210,
+                                    "answer": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Tổ chức phiên tòa xét xử giám đốc thẩm, tái thẩm</span>",
+                                    "isCorrect": false,
+                                    "questionId": 155721,
+                                    "createdAt": "2025-09-17T15:08:01.000Z",
+                                    "updatedAt": "2025-09-17T15:08:01.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 155843,
+                            "question": "<span style=\"font-size:15px;font-weight:bold;color:rgba(255, 0, 0, 1); \"> </span><span style=\"font-weight: bold; font-size:15px;\"> Theo Luật Tổ chức Tòa án nhân dân hiện hành, một trong những nhiệm vụ quan trọng của TANDTC là bảo đảm áp dụng thống nhất pháp luật trong xét xử. Nội dung này được thực hiện thông qua hình thức nào?</span>",
+                            "categoryId": 1947,
+                            "note": "<span style=\"font-size:15px;vertical-align:middle;\">Căn cứ nội dung khoản 4, khoản 5 Điều 46 Luật Tổ chức Tòa án nhân dân hiện hành.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "59",
+                            "correctRespondentCount": "53",
+                            "type": 1,
+                            "createdAt": "2025-09-17T15:08:08.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2025-11-04T16:01:45.000Z",
+                            "answers": [
+                                {
+                                    "id": 240695,
+                                    "answer": "<span style=\"font-size:15px;vertical-align:middle;\">Chỉ ban hành nghị quyết hướng dẫn xét xử</span>",
+                                    "isCorrect": false,
+                                    "questionId": 155843,
+                                    "createdAt": "2025-09-17T15:08:08.000Z",
+                                    "updatedAt": "2025-09-17T15:08:08.000Z"
+                                },
+                                {
+                                    "id": 240696,
+                                    "answer": "<span style=\"font-size:15px;vertical-align:middle;\">Phát triển án lệ và tổng kết thực tiễn xét xử</span>",
+                                    "isCorrect": true,
+                                    "questionId": 155843,
+                                    "createdAt": "2025-09-17T15:08:08.000Z",
+                                    "updatedAt": "2025-09-17T15:08:08.000Z"
+                                },
+                                {
+                                    "id": 240697,
+                                    "answer": "<span style=\"font-size:15px;vertical-align:middle;\">Thường xuyên tổ chức tập huấn nghiệp vụ cho Hội thẩm</span>",
+                                    "isCorrect": false,
+                                    "questionId": 155843,
+                                    "createdAt": "2025-09-17T15:08:08.000Z",
+                                    "updatedAt": "2025-09-17T15:08:08.000Z"
+                                },
+                                {
+                                    "id": 240698,
+                                    "answer": "<span style=\"font-size:15px;vertical-align:middle;\">Xây dựng các báo cáo gửi Quốc hội</span>",
+                                    "isCorrect": false,
+                                    "questionId": 155843,
+                                    "createdAt": "2025-09-17T15:08:08.000Z",
+                                    "updatedAt": "2025-09-17T15:08:08.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 155778,
+                            "question": "<span style=\"font-size:15px;font-weight:bold;\"> </span><span style=\"font-weight: bold; font-size:15px;color: rgba(255, 0, 0, 1); \"> </span><span style=\"font-weight: bold; font-size:15px;\"> Theo Luật Tổ chức Tòa án nhân dân hiện hành, Số lượng thành viên Hội đồng Thẩm phán Tòa án nhân dân tối cao tối đa  gồm bao nhiêu người?</span>",
+                            "categoryId": 1947,
+                            "note": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Căn cứ khoản 1 Điều 48 Luật Tổ chức Tòa án nhân dân hiện hành: \" Số lượng thành viên Hội đồng Thẩm phán Tòa án nhân dân tối cao không ít hơn 23 người và không quá 27 người; gồm Chánh án, các Phó Chánh án Tòa án nhân dân tối cao là Thẩm phán Tòa án nhân dân tối cao và các Thẩm phán Tòa án nhân dân tối cao.\"</span>",
+                            "readingContentId": null,
+                            "respondentCount": "60",
+                            "correctRespondentCount": "56",
+                            "type": 1,
+                            "createdAt": "2025-09-17T15:08:05.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2025-11-04T16:01:52.000Z",
+                            "answers": [
+                                {
+                                    "id": 240435,
+                                    "answer": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">25 người </span>",
+                                    "isCorrect": false,
+                                    "questionId": 155778,
+                                    "createdAt": "2025-09-17T15:08:05.000Z",
+                                    "updatedAt": "2025-09-17T15:08:05.000Z"
+                                },
+                                {
+                                    "id": 240436,
+                                    "answer": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">27 người</span>",
+                                    "isCorrect": true,
+                                    "questionId": 155778,
+                                    "createdAt": "2025-09-17T15:08:05.000Z",
+                                    "updatedAt": "2025-09-17T15:08:05.000Z"
+                                },
+                                {
+                                    "id": 240437,
+                                    "answer": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">23 người </span>",
+                                    "isCorrect": false,
+                                    "questionId": 155778,
+                                    "createdAt": "2025-09-17T15:08:05.000Z",
+                                    "updatedAt": "2025-09-17T15:08:05.000Z"
+                                },
+                                {
+                                    "id": 240438,
+                                    "answer": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">29 người</span>",
+                                    "isCorrect": false,
+                                    "questionId": 155778,
+                                    "createdAt": "2025-09-17T15:08:05.000Z",
+                                    "updatedAt": "2025-09-17T15:08:05.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 155781,
+                            "question": "<span style=\"font-size:15px;font-weight:bold;color:rgba(255, 0, 0, 1); \"> </span><span style=\"font-weight: bold; font-size:15px;\">: Theo Luật Tổ chức Tòa án nhân dân hiện hành, Quyết định giám đốc thẩm, tái thẩm của chủ thể nào là quyết định cao nhất, có hiệu lực pháp luật và không bị kháng nghị?</span>",
+                            "categoryId": 1947,
+                            "note": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">: Căn cứ khoản 5 Điều 48 Luật Tổ chức Tòa án nhân dân hiện hành</span>",
+                            "readingContentId": null,
+                            "respondentCount": "64",
+                            "correctRespondentCount": "49",
+                            "type": 1,
+                            "createdAt": "2025-09-17T15:08:05.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2025-11-04T16:01:57.000Z",
+                            "answers": [
+                                {
+                                    "id": 240447,
+                                    "answer": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Chánh án Tòa án nhân dân tối cao</span>",
+                                    "isCorrect": false,
+                                    "questionId": 155781,
+                                    "createdAt": "2025-09-17T15:08:05.000Z",
+                                    "updatedAt": "2025-09-17T15:08:05.000Z"
+                                },
+                                {
+                                    "id": 240448,
+                                    "answer": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Tòa án nhân dân tối cao</span>",
+                                    "isCorrect": false,
+                                    "questionId": 155781,
+                                    "createdAt": "2025-09-17T15:08:05.000Z",
+                                    "updatedAt": "2025-09-17T15:08:05.000Z"
+                                },
+                                {
+                                    "id": 240449,
+                                    "answer": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Hội đồng Thẩm phán Tòa án nhân dân tối cao</span>",
+                                    "isCorrect": true,
+                                    "questionId": 155781,
+                                    "createdAt": "2025-09-17T15:08:05.000Z",
+                                    "updatedAt": "2025-09-17T15:08:05.000Z"
+                                },
+                                {
+                                    "id": 240450,
+                                    "answer": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Viện trưởng Viện kiểm sát nhân dân tối cao</span>",
+                                    "isCorrect": false,
+                                    "questionId": 155781,
+                                    "createdAt": "2025-09-17T15:08:05.000Z",
+                                    "updatedAt": "2025-09-17T15:08:05.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 155654,
+                            "question": "<span style=\"font-size:15px;font-weight:bold;color:rgba(255, 0, 0, 1); \"> </span><span style=\"font-weight: bold; font-size:15px;\"> Theo Luật Tổ chức Tòa án nhân dân hiện hành, nội dung nào dưới đây không thuộc chức năng của Toà án nhân dân?</span>",
+                            "categoryId": 1947,
+                            "note": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Căn cứ khoản 2, Điều 2 Luật Tổ chức Tòa án nhân dân hiện hành, chức năng của Toà án nhân dân là: “ Tòa án nhân dân thực hiện quyền tư pháp để thực thi nhiệm vụ bảo vệ công lý, bảo vệ quyền con người, quyền công dân, bảo vệ chế độ xã hội chủ nghĩa, bảo vệ lợi ích của Nhà nước, quyền và lợi ích hợp pháp của tổ chức, cá nhân; bằng hoạt động của mình, góp phần giáo dục công dân trung thành với Tổ quốc, nghiêm chỉnh chấp hành pháp luật, ý thức đấu tranh phòng, chống tội phạm và các vi phạm pháp luật khác”<br/>Ngoài ra, Toà án nhân dân chỉ thực hiện quyền tư pháp, không phải hành pháp nên đáp án C là đáp án cần chọn.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "100",
+                            "correctRespondentCount": "80",
+                            "type": 1,
+                            "createdAt": "2025-09-17T15:07:58.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2025-11-04T16:08:10.000Z",
+                            "answers": [
+                                {
+                                    "id": 239939,
+                                    "answer": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Thực hiện quyền tư pháp để thực thi nhiệm vụ bảo vệ công lý, bảo vệ quyền con người, quyền công dân</span>",
+                                    "isCorrect": false,
+                                    "questionId": 155654,
+                                    "createdAt": "2025-09-17T15:07:58.000Z",
+                                    "updatedAt": "2025-09-17T15:07:58.000Z"
+                                },
+                                {
+                                    "id": 239940,
+                                    "answer": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Góp  phần giáo dục công dân trung thành với Tổ quốc, nghiêm chỉnh chấp hành pháp luật</span>",
+                                    "isCorrect": false,
+                                    "questionId": 155654,
+                                    "createdAt": "2025-09-17T15:07:58.000Z",
+                                    "updatedAt": "2025-09-17T15:07:58.000Z"
+                                },
+                                {
+                                    "id": 239941,
+                                    "answer": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Thực hiện quyền hành pháp để thực thi nhiệm vụ thức đấu tranh phòng, chống tội phạm và các vi phạm pháp luật khác</span>",
+                                    "isCorrect": true,
+                                    "questionId": 155654,
+                                    "createdAt": "2025-09-17T15:07:58.000Z",
+                                    "updatedAt": "2025-09-17T15:07:58.000Z"
+                                },
+                                {
+                                    "id": 239942,
+                                    "answer": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Thực hiện quyền tư pháp để thực thi nhiệm vụ bảo vệ chế độ xã hội chủ nghĩa, bảo vệ lợi ích của Nhà nước, quyền và lợi ích hợp pháp của tổ chức, cá nhân.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 155654,
+                                    "createdAt": "2025-09-17T15:07:58.000Z",
+                                    "updatedAt": "2025-09-17T15:07:58.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 155763,
+                            "question": "<span style=\"font-size:15px;font-weight:bold;color:rgba(255, 0, 0, 1); \"> </span><span style=\"font-weight: bold; font-size:15px;\"> Theo Luật Tổ chức Tòa án nhân dân hiện hành, Hội đồng tuyển chọn, giám sát Thẩm phán quốc gia hoạt động theo nguyên tắc nào dưới đây? </span>",
+                            "categoryId": 1947,
+                            "note": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Căn cứ theo nội dung khoản 1 Điều 41 Luật Tổ chức Tòa án nhân dân hiện hành. </span>",
+                            "readingContentId": null,
+                            "respondentCount": "81",
+                            "correctRespondentCount": "76",
+                            "type": 1,
+                            "createdAt": "2025-09-17T15:08:04.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2025-11-04T16:17:00.000Z",
+                            "answers": [
+                                {
+                                    "id": 240375,
+                                    "answer": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Hoạt động theo nguyên tắc độc lập và quyết định theo Quốc hội</span>",
+                                    "isCorrect": false,
+                                    "questionId": 155763,
+                                    "createdAt": "2025-09-17T15:08:04.000Z",
+                                    "updatedAt": "2025-09-17T15:08:04.000Z"
+                                },
+                                {
+                                    "id": 240376,
+                                    "answer": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Hoạt động theo nguyên tắc tập thể và quyết định theo đa số</span>",
+                                    "isCorrect": true,
+                                    "questionId": 155763,
+                                    "createdAt": "2025-09-17T15:08:04.000Z",
+                                    "updatedAt": "2025-09-17T15:08:04.000Z"
+                                },
+                                {
+                                    "id": 240377,
+                                    "answer": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Hoạt động theo quyết định của Chánh án Tòa án nhân dân tối cao</span>",
+                                    "isCorrect": false,
+                                    "questionId": 155763,
+                                    "createdAt": "2025-09-17T15:08:04.000Z",
+                                    "updatedAt": "2025-09-17T15:08:04.000Z"
+                                },
+                                {
+                                    "id": 240378,
+                                    "answer": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Hoạt động theo nguyên tắc Bộ Tư pháp</span>",
+                                    "isCorrect": false,
+                                    "questionId": 155763,
+                                    "createdAt": "2025-09-17T15:08:04.000Z",
+                                    "updatedAt": "2025-09-17T15:08:04.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 155813,
+                            "question": "<span style=\"font-size:15px;font-weight:bold;color:rgba(255, 0, 0, 1); \"> </span><span style=\"font-weight: bold; font-size:15px;\"> Theo Luật Tổ chức Tòa án nhân dân hiện hành, Thủ tục đề nghị miễn nhiệm, cách chức Thẩm phán Tòa án nhân dân do chủ thể nào sau đây quy định?</span>",
+                            "categoryId": 1947,
+                            "note": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Căn cứ nội dung khoản 4 Điều 109 Luật Tổ chức Tòa án nhân dân hiện hành. </span>",
+                            "readingContentId": null,
+                            "respondentCount": "63",
+                            "correctRespondentCount": "54",
+                            "type": 1,
+                            "createdAt": "2025-09-17T15:08:07.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2025-11-04T16:02:19.000Z",
+                            "answers": [
+                                {
+                                    "id": 240575,
+                                    "answer": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Bộ trưởng Bộ Tư pháp </span>",
+                                    "isCorrect": false,
+                                    "questionId": 155813,
+                                    "createdAt": "2025-09-17T15:08:07.000Z",
+                                    "updatedAt": "2025-09-17T15:08:07.000Z"
+                                },
+                                {
+                                    "id": 240576,
+                                    "answer": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Chủ tịch Quốc hội </span>",
+                                    "isCorrect": false,
+                                    "questionId": 155813,
+                                    "createdAt": "2025-09-17T15:08:07.000Z",
+                                    "updatedAt": "2025-09-17T15:08:07.000Z"
+                                },
+                                {
+                                    "id": 240577,
+                                    "answer": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Chánh án Tòa án nhân dân tối cao</span>",
+                                    "isCorrect": true,
+                                    "questionId": 155813,
+                                    "createdAt": "2025-09-17T15:08:07.000Z",
+                                    "updatedAt": "2025-09-17T15:08:07.000Z"
+                                },
+                                {
+                                    "id": 240578,
+                                    "answer": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Chủ tịch nước</span>",
+                                    "isCorrect": false,
+                                    "questionId": 155813,
+                                    "createdAt": "2025-09-17T15:08:07.000Z",
+                                    "updatedAt": "2025-09-17T15:08:07.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 155830,
+                            "question": "<span style=\"font-size:15px;font-weight:bold;color:rgba(255, 0, 0, 1); \"> </span><span style=\"font-weight: bold; font-size:15px;\"> Theo Luật Tổ chức Tòa án nhân dân hiện hành, Người tham dự phiên tòa không được phép thực hiện hành vi nào dưới đây?</span>",
+                            "categoryId": 1947,
+                            "note": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Căn cứ nội dung khoản 5 Điều 141 Luật Tổ chức Tòa án nhân dân hiện hành, người tham dự phiên tòa, phiên họp không được truyền phát trực tiếp, trực tuyến; không được thông tin sai sự thật; không được thông tin làm ảnh hưởng đến sự độc lập và chỉ tuân theo pháp luật, vô tư, khách quan trong xét xử, giải quyết vụ án, vụ việc; không được vi phạm quyền con người của bị cáo, bị hại, đương sự, người tham gia tố tụng khác trong vụ án, vụ việc; không được vi phạm quy định về giữ bí mật theo quy định của pháp luật.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "65",
+                            "correctRespondentCount": "55",
+                            "type": 1,
+                            "createdAt": "2025-09-17T15:08:08.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2025-11-04T16:02:27.000Z",
+                            "answers": [
+                                {
+                                    "id": 240643,
+                                    "answer": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Ghi âm lời nói trong phiên tòa với sự đồng ý của Thẩm phán</span>",
+                                    "isCorrect": false,
+                                    "questionId": 155830,
+                                    "createdAt": "2025-09-17T15:08:08.000Z",
+                                    "updatedAt": "2025-09-17T15:08:08.000Z"
+                                },
+                                {
+                                    "id": 240644,
+                                    "answer": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Truyền phát trực tiếp, trực tuyến nội dung phiên tòa</span>",
+                                    "isCorrect": true,
+                                    "questionId": 155830,
+                                    "createdAt": "2025-09-17T15:08:08.000Z",
+                                    "updatedAt": "2025-09-17T15:08:08.000Z"
+                                },
+                                {
+                                    "id": 240645,
+                                    "answer": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Ghi chép diễn biến phiên tòa để làm tư liệu</span>",
+                                    "isCorrect": false,
+                                    "questionId": 155830,
+                                    "createdAt": "2025-09-17T15:08:08.000Z",
+                                    "updatedAt": "2025-09-17T15:08:08.000Z"
+                                },
+                                {
+                                    "id": 240646,
+                                    "answer": "<span style=\"font-size:15px;text-align:left;vertical-align:middle;\">Theo dõi phiên tòa và đóng góp ý kiến theo quy định</span>",
+                                    "isCorrect": false,
+                                    "questionId": 155830,
+                                    "createdAt": "2025-09-17T15:08:08.000Z",
+                                    "updatedAt": "2025-09-17T15:08:08.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        }
+                    ]
+                },
+                "exam": {
+                    "data": {
+                        "id": 1961,
+                        "name": "Đề 05: Luật Tổ chức Tòa án nhân dân 2024 (được sửa đổi, bổ sung 2025)",
+                        "duration": 30,
+                        "retry": 3,
+                        "referencePoint": 5,
+                        "type": 1,
+                        "createdAt": "2025-09-17T15:25:13.000Z",
+                        "updatedAt": "2025-09-17T15:26:13.000Z"
+                    }
+                }
+            }
+        },
+        "testSessionAnswers": []
+    }
+}

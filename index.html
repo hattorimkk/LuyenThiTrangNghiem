@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luyện Thi Trắc Nghiệm</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Luyện Thi Trắc Nghiệm</h1>
+            <!-- TIÊU ĐỀ BỘ ĐỀ SẼ NẰM Ở ĐÂY -->
+            <h2 id="quiz-title" class="hidden"></h2> 
+        </header>
+
+        <main id="main-content">
+            <!-- Màn hình chọn đề thi -->
+            <div id="exam-selection-screen">
+                <h2>Chọn bộ đề để bắt đầu</h2>
+                <div id="exam-list">
+                    <!-- Danh sách các đề thi sẽ được JS chèn vào đây -->
+                </div>
+            </div>
+
+            <!-- Màn hình làm bài thi -->
+            <div id="quiz-screen" class="hidden">
+                <div class="quiz-layout">
+                    <div class="navigation-panel">
+                         <div class="question-map-container">
+                            <h3>Bảng câu hỏi:</h3>
+                            <div id="question-map"></div>
+                        </div>
+                        <div class="timer-container">
+                            <span>Thời gian còn lại:</span>
+                            <div id="timer">60:00</div>
+                        </div>
+                        <button id="submit-btn" class="submit-button">Nộp Bài</button>
+                    </div>
+                    <div class="quiz-body">
+                        <div id="question-container">
+                            <!-- Nội dung câu hỏi và đáp án sẽ được JS chèn vào đây -->
+                        </div>
+                        <div class="pagination">
+                            <button id="prev-btn" disabled>Câu trước</button>
+                            <span id="question-counter">Câu 1 / X</span>
+                            <button id="next-btn">Câu tiếp</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Màn hình kết quả -->
+            <div id="result-screen" class="hidden">
+                <h2>Kết quả bài thi</h2>
+                <div id="score-summary"></div>
+                <div id="result-details"></div>
+                <button id="review-btn">Xem lại bài làm</button>
+                <button id="restart-btn">Làm lại đề khác</button>
+            </div>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
