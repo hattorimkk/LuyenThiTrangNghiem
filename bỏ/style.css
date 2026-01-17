@@ -1,0 +1,259 @@
+:root {
+    --primary-color: #ff9100;
+    --secondary-color: #fff7f0;
+    --text-color: #333;
+    --correct-color: #28a745;
+    --incorrect-color: #dc3545;
+    --light-gray: #f8f9fa;
+    --border-color: #dee2e6;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    background-color: var(--light-gray);
+    color: var(--text-color);
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    min-height: 80vh; /* THAY ĐỔI MỚI: Đảm bảo container có chiều cao tối thiểu */
+    margin: auto;
+    background: #fff;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    color: var(--primary-color);
+    text-align: center;
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 15px;
+    margin-top: 0;
+    margin-bottom: 10px; /* THAY ĐỔI MỚI */
+}
+
+/* THAY ĐỔI MỚI: Style cho tiêu đề bộ đề */
+#quiz-title {
+    text-align: center;
+    color: var(--text-color);
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+
+.hidden {
+    display: none !important;
+}
+
+#exam-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.exam-item {
+    padding: 20px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    text-align: left;
+    font-weight: 500;
+}
+
+.exam-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    border-color: var(--primary-color);
+}
+
+.quiz-layout {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px; /* THAY ĐỔI MỚI: Tăng khoảng cách */
+}
+
+.navigation-panel {
+    flex: 1;
+    min-width: 250px; /* THAY ĐỔI MỚI: Tăng chiều rộng tối thiểu */
+    max-width: 300px;
+    background-color: var(--light-gray);
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    height: fit-content;
+    order: 2;
+}
+
+.quiz-body {
+    flex: 3;
+    min-width: 300px;
+    order: 1;
+}
+
+@media (min-width: 992px) {
+    .navigation-panel { order: 2; }
+    .quiz-body { order: 1; }
+}
+
+.question-map-container h3 {
+    margin-top: 0;
+    font-size: 1.1em;
+    color: var(--primary-color);
+}
+
+#question-map {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(40px, 1fr)); /* THAY ĐỔI MỚI */
+    gap: 10px;
+    max-height: 350px;
+    overflow-y: auto;
+    padding-right: 5px; /* THAY ĐỔI MỚI: Tránh thanh scroll che nút */
+}
+
+.question-map-btn {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ccc;
+    background: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    font-weight: bold;
+    color: var(--text-color);
+    font-size: 1em;
+    /* THAY ĐỔI MỚI: Thêm các dòng này để căn giữa */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0; /* Xóa padding mặc định của button */
+}
+
+.question-map-btn:hover { background-color: #e9ecef; }
+.question-map-btn.current {
+    background-color: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+}
+.question-map-btn.answered {
+    background-color: #d1ecf1;
+    border-color: #0c5460;
+    color: #0c5460;
+}
+
+/* THAY ĐỔI MỚI: Style cho đồng hồ */
+.timer-container {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.1em;
+}
+#timer {
+    font-size: 2em;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.submit-button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+/* THAY ĐỔI MỚI: Bỏ quiz-header vì đã đưa title ra ngoài */
+.quiz-header { display: none; }
+
+#question-container {
+    min-height: 400px; /* THAY ĐỔI MỚI: Set chiều cao tối thiểu để khối không nhảy */
+    border: 1px solid var(--border-color);
+    padding: 20px;
+    border-radius: 8px;
+    background: #fff;
+}
+
+#question-container p {
+    font-size: 1.15em; /* THAY ĐỔI MỚI */
+    font-weight: 500;
+    margin-top: 0; /* THAY ĐỔI MỚI */
+    margin-bottom: 25px; /* THAY ĐỔI MỚI */
+    line-height: 1.7; /* THAY ĐỔI MỚI */
+}
+
+.answer-options { list-style: none; padding: 0; }
+.answer-option {
+    margin-bottom: 12px; /* THAY ĐỔI MỚI */
+    border: 1px solid var(--border-color);
+    border-radius: 8px; /* THAY ĐỔI MỚI */
+    cursor: pointer;
+    transition: background-color 0.2s, border-color 0.2s;
+    font-size: 1.05em; /* THAY ĐỔI MỚI */
+}
+.answer-option label {
+    display: flex;
+    align-items: flex-start;
+    padding: 15px;
+    cursor: pointer;
+}
+.answer-option input { margin-right: 15px; margin-top: 5px; }
+.answer-option:hover { background: var(--secondary-color); }
+.answer-option.selected {
+    border-color: var(--primary-color);
+    background: var(--secondary-color);
+}
+.answer-option.correct {
+    border-color: var(--correct-color);
+    background-color: #d4edda;
+    font-weight: bold;
+}
+.answer-option.incorrect {
+    border-color: var(--incorrect-color);
+    background-color: #f8d7da;
+}
+
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background: var(--primary-color);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+button:disabled { background: #ccc; cursor: not-allowed; }
+#restart-btn { background-color: #6c757d; }
+
+#score-summary {
+    text-align: center;
+    font-size: 1.2em;
+    padding: 20px;
+    background: var(--secondary-color);
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+#result-details .question-review {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+.explanation {
+    margin-top: 15px;
+    padding: 12px;
+    background-color: #f0f0f0;
+    border-left: 4px solid #6c757d;
+    border-radius: 4px;
+    font-size: 0.95em;
+}

@@ -1,67 +1,231 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luyện Thi Trắc Nghiệm</title>
+    <title>Minh Ky CV - Designer & Video Editor</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Space+Grotesk:wght@500;700&display=swap"
+        rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Styles -->
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <div class="container">
-        <header>
-            <h1>Trắc Nghiệm </h1>
-            <!-- TIÊU ĐỀ BỘ ĐỀ SẼ NẰM Ở ĐÂY -->
-            <h2 id="quiz-title" class="hidden"></h2> 
-        </header>
+    <div class="cv-container">
+        <!-- Sidebar / Left Column -->
+        <aside class="sidebar">
+            <div class="profile-section">
+                <div class="profile-img-container">
+                    <!-- Placeholder image - User should replace this -->
+                    <img src="489565547_2711690389221575_2893446986486567053_n.png" alt="Minh Ky Profile"
+                        class="profile-img">
+                </div>
+                <h1 class="name">Minh Ky</h1>
+                <p class="tagline">Designer <span class="accent">|</span> Video Editor</p>
+            </div>
 
-        <main id="main-content">
-            <!-- Màn hình chọn đề thi -->
-            <div id="exam-selection-screen">
-                <h2>Chọn bộ đề để bắt đầu</h2>
-                <div id="exam-list">
-                    <!-- Danh sách các đề thi sẽ được JS chèn vào đây -->
+            <div class="contact-section">
+                <div class="contact-item">
+                    <i class="fa-solid fa-calendar"></i>
+                    <span>August 11, 2002</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fa-solid fa-phone"></i>
+                    <a href="tel:0329506105">0329506105</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>Thanh Cong, Ba Dinh, Hanoi</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <span>Hanoi Law University</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <a href="mailto:minhky.work@gmail.com">minhky.work@gmail.com</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fa-brands fa-facebook"></i>
+                    <a href="https://facebook.com/hattorimk" target="_blank">facebook.com/hattorimk</a>
                 </div>
             </div>
 
-            <!-- Màn hình làm bài thi -->
-            <div id="quiz-screen" class="hidden">
-                <div class="quiz-layout">
-                    <div class="navigation-panel">
-                         <div class="question-map-container">
-                            <h3>Bảng câu hỏi:</h3>
-                            <div id="question-map"></div>
+            <div class="skills-section">
+                <h2>Skills</h2>
+                <div class="skill-category">
+                    <h3>Video Editing</h3>
+                    <p>Professional video cutting, trimming, and sequencing using industry-standard software. Creating
+                        engaging content with <strong>typography animations, motion graphics, and visual effects in
+                            After Effects</strong>. Template customization, color grading, audio synchronization,
+                        intro/outro creation, and basic filming & photography skills.</p>
+                </div>
+                <div class="skill-category">
+                    <h3>Graphic Design</h3>
+                    <p>Photo retouching and manipulation, thumbnail design for social media and YouTube, advanced color
+                        grading and correction. Creating banners, posters, social media content, and marketing
+                        materials. Proficient in sourcing and utilizing stock assets effectively.</p>
+                </div>
+            </div>
+
+            <div class="software-section">
+                <h2>Software</h2>
+                <div class="software-grid">
+                    <div class="software-item">
+                        <div class="sw-header">
+                            <span class="sw-icon sw-pr">Pr</span>
+                            <span class="sw-name-text">Premiere Pro</span>
                         </div>
-                        <div class="timer-container">
-                            <span>Thời gian còn lại:</span>
-                            <div id="timer">60:00</div>
+                        <div class="progress-bar-bg">
+                            <div class="progress-fill" style="width: 90%;"></div>
                         </div>
-                        <button id="submit-btn" class="submit-button">Nộp Bài</button>
                     </div>
-                    <div class="quiz-body">
-                        <div id="question-container">
-                            <!-- Nội dung câu hỏi và đáp án sẽ được JS chèn vào đây -->
+
+                    <div class="software-item">
+                        <div class="sw-header">
+                            <span class="sw-icon sw-ae">Ae</span>
+                            <span class="sw-name-text">After Effects</span>
                         </div>
-                        <div class="pagination">
-                            <button id="prev-btn" disabled>Câu trước</button>
-                            <span id="question-counter">Câu 1 / X</span>
-                            <button id="next-btn">Câu tiếp</button>
+                        <div class="progress-bar-bg">
+                            <div class="progress-fill" style="width: 85%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="software-item">
+                        <div class="sw-header">
+                            <span class="sw-icon sw-ps">Ps</span>
+                            <span class="sw-name-text">Photoshop</span>
+                        </div>
+                        <div class="progress-bar-bg">
+                            <div class="progress-fill" style="width: 80%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="software-item">
+                        <div class="sw-header">
+                            <span class="sw-icon sw-lr">Lr</span>
+                            <span class="sw-name-text">Lightroom</span>
+                        </div>
+                        <div class="progress-bar-bg">
+                            <div class="progress-fill" style="width: 75%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="software-item">
+                        <div class="sw-header">
+                            <span class="sw-icon sw-ai">Ai</span>
+                            <span class="sw-name-text">Illustrator</span>
+                        </div>
+                        <div class="progress-bar-bg">
+                            <div class="progress-fill" style="width: 85%;"></div>
                         </div>
                     </div>
                 </div>
             </div>
+        </aside>
 
-            <!-- Màn hình kết quả -->
-            <div id="result-screen" class="hidden">
-                <h2>Kết quả bài thi</h2>
-                <div id="score-summary"></div>
-                <div id="result-details"></div>
-                <button id="review-btn">Xem lại bài làm</button>
-                <button id="restart-btn">Làm lại đề khác</button>
-            </div>
+        <!-- Main Content / Right Column -->
+        <main class="main-content">
+            <section class="about-section">
+                <h1 class="main-title">DESIGNER <br><span class="highlight">VIDEO EDITOR</span></h1>
+                <div class="about-box">
+                    <h2>About Me</h2>
+                    <p>
+                        I am Minh Ky, currently working as a designer and video editor for various clubs, projects, and
+                        events.
+                        I possess skills in photography, video production, design, and photo editing.
+                        Regarding my personality and work ethic, I am a good communicator, a strong team player,
+                        sociable,
+                        and capable of handling work pressure effectively. I look forward to the opportunity to
+                        collaborate with you.
+                    </p>
+                </div>
+            </section>
+
+            <section class="experience-section">
+                <h2 class="section-header">Experience</h2>
+
+                <div class="timeline">
+                    <!-- Newest first -->
+                    <div class="timeline-item">
+                        <div class="timeline-date">2025 - Present</div>
+                        <div class="timeline-content">
+                            <h3>Freelancer</h3>
+                            <p>Video Editor & Designer</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-date">2023 - 2025</div>
+                        <div class="timeline-content">
+                            <h3>Dermafirm Vietnam</h3>
+                            <p>Media Creator</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-date">2022 - 2023</div>
+                        <div class="timeline-content">
+                            <h3>RadioserCat Media</h3>
+                            <p>Video Editor, Designer</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-date">2021 - 2022</div>
+                        <div class="timeline-content">
+                            <p class="activity-note"><em>(Community & University Activities)</em></p>
+                            <h3>International Law in HLU</h3>
+                            <p>Leader of Media Team, Designer, Video Editor</p>
+                            <h3>Law Youth Media Team</h3>
+                            <p>Leader of Media Team, Designer, Video Editor</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-date">2020 - 2021</div>
+                        <div class="timeline-content">
+                            <p class="activity-note"><em>(Community & University Activities)</em></p>
+                            <h3>KC97ble Free Contest</h3>
+                            <p>Designer, Video Editor</p>
+                            <h3>HLU Club of Event C.E.O.</h3>
+                            <p>Designer, Video Editor</p>
+                            <h3>MagePlaza (Tech Company)</h3>
+                            <p>Video Editor</p>
+                            <h3>HLU Charm of Law 2020 (Event)</h3>
+                            <p>Designer, Video Editor</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-date">2018 - 2020</div>
+                        <div class="timeline-content">
+                            <p class="activity-note"><em>(Community & University Activities)</em></p>
+                            <h3>Connecting Student Club</h3>
+                            <p>Designer, Photographer</p>
+                            <h3>Unicorn Club</h3>
+                            <p>Leader of Media Team, Designer, Video Editor</p>
+                            <h3>CLB Toan 2019</h3>
+                            <p>Designer, Video Editor</p>
+                            <h3>LVC's Giga 2019 (Event)</h3>
+                            <p>Designer, Video Editor</p>
+                            <h3>DCD Club</h3>
+                            <p>Designer</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
     </div>
 
-    <script src="app.js"></script>
 </body>
+
 </html>
