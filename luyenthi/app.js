@@ -2,27 +2,74 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
-    const examFiles = [
-        { id: 1855, name: "Đề 001: Hiến pháp 2013 (sửa đổi, bổ sung theo Nghị quyết số 203/2025/QH15)" },
-        { id: 1856, name: "Đề 002: Hiến pháp 2013 (sửa đổi, bổ sung theo Nghị quyết số 203/2025/QH15)" },
-        { id: 1857, name: "Đề 003: Hiến pháp 2013 (sửa đổi, bổ sung theo Nghị quyết số 203/2025/QH15)" },
-        { id: 1858, name: "Đề 004: Hiến pháp 2013 (sửa đổi, bổ sung theo Nghị quyết số 203/2025/QH15)" },
-        { id: 1859, name: "Đề 005: Hiến pháp 2013 (sửa đổi, bổ sung theo Nghị quyết số 203/2025/QH15)" },
-        { id: 1860, name: "Đề 006: Hiến pháp 2013 (sửa đổi, bổ sung theo Nghị quyết số 203/2025/QH15)" },
-        { id: 1864, name: "Đề 001: Luật Cán bộ, công chức 2025" },
-        { id: 1865, name: "Đề 002: Luật Cán bộ, công chức 2025" },
-        { id: 1866, name: "Đề 003: Luật Cán bộ, công chức 2025" },
-        { id: 1957, name: "Đề 01: Luật Tổ chức Tòa án nhân dân 2024 (được sửa đổi, bổ sung 2025)" },
-        { id: 1958, name: "Đề 02: Luật Tổ chức Tòa án nhân dân 2024 (được sửa đổi, bổ sung 2025)" },
-        { id: 1959, name: "Đề 03: Luật Tổ chức Tòa án nhân dân 2024 (được sửa đổi, bổ sung 2025)" },
-        { id: 1960, name: "Đề 04: Luật Tổ chức Tòa án nhân dân 2024 (được sửa đổi, bổ sung 2025)" },
-        { id: 1961, name: "Đề 05: Luật Tổ chức Tòa án nhân dân 2024 (được sửa đổi, bổ sung 2025)" },
-        { id: 2155, name: "Đề 01: Đề tổng hợp ôn thi Tòa án nhân dân" },
-        { id: 2156, name: "Đề 02: Đề tổng hợp ôn thi Tòa án nhân dân" },
-        { id: 2157, name: "Đề 03: Đề tổng hợp ôn thi Tòa án nhân dân" },
-        { id: 2158, name: "Đề 04: Đề tổng hợp ôn thi Tòa án nhân dân" },
-        { id: 2159, name: "Đề 05: Đề tổng hợp ôn thi Tòa án nhân dân" }
-    ];
+const examFiles = [
+    // --- Hiến pháp ---
+    { id: 1855, name: "Đề 001: Hiến pháp 2013 (sửa đổi, bổ sung theo Nghị quyết số 203/2025/QH15)" },
+    { id: 1856, name: "Đề 002: Hiến pháp 2013 (sửa đổi, bổ sung theo Nghị quyết số 203/2025/QH15)" },
+    { id: 1857, name: "Đề 003: Hiến pháp 2013 (sửa đổi, bổ sung theo Nghị quyết số 203/2025/QH15)" },
+    { id: 1858, name: "Đề 004: Hiến pháp 2013 (sửa đổi, bổ sung theo Nghị quyết số 203/2025/QH15)" },
+    { id: 1859, name: "Đề 005: Hiến pháp 2013 (sửa đổi, bổ sung theo Nghị quyết số 203/2025/QH15)" },
+    { id: 1860, name: "Đề 006: Hiến pháp 2013 (sửa đổi, bổ sung theo Nghị quyết số 203/2025/QH15)" },
+
+    // --- Luật Cán bộ công chức ---
+    { id: 1864, name: "Đề 001: Luật Cán bộ, công chức 2025" },
+    { id: 1865, name: "Đề 002: Luật Cán bộ, công chức 2025" },
+    { id: 1866, name: "Đề 003: Luật Cán bộ, công chức 2025" },
+
+    // --- Nghị định 170 ---
+    { id: 1868, name: "Đề 01: Nghị định số 170/2025/NĐ-CP quy định về tuyển dụng, sử dụng và quản lý công chức" },
+    { id: 1869, name: "Đề 02: Nghị định số 170/2025/NĐ-CP quy định về tuyển dụng, sử dụng và quản lý công chức" },
+    { id: 1870, name: "Đề 03: Nghị định số 170/2025/NĐ-CP quy định về tuyển dụng, sử dụng và quản lý công chức" },
+    { id: 1871, name: "Đề 04: Nghị định số 170/2025/NĐ-CP quy định về tuyển dụng, sử dụng và quản lý công chức" },
+
+    // --- Nghị định 172 ---
+    { id: 1880, name: "Đề 01: Nghị định số 172/2025/NĐ-CP về xử lý kỷ luật cán bộ, công chức" },
+    { id: 1881, name: "Đề 02: Nghị định số 172/2025/NĐ-CP về xử lý kỷ luật cán bộ, công chức" },
+    { id: 1882, name: "Đề 03: Nghị định số 172/2025/NĐ-CP về xử lý kỷ luật cán bộ, công chức" },
+
+    // --- Luật Tổ chức Chính phủ ---
+    { id: 1883, name: "Đề 01: Luật Tổ chức chính phủ 2025" },
+    { id: 1884, name: "Đề 02: Luật Tổ chức chính phủ 2025" },
+    { id: 1885, name: "Đề 03: Luật Tổ chức chính phủ 2025" },
+
+    // --- Luật Ban hành VBQPPL ---
+    { id: 1896, name: "Đề 01: Luật Ban hành văn bản quy phạm pháp luật 2025 (được sửa đổi, bổ sung)" },
+    { id: 1897, name: "Đề 02: Luật Ban hành văn bản quy phạm pháp luật 2025 (được sửa đổi, bổ sung)" },
+    { id: 1898, name: "Đề 03: Luật Ban hành văn bản quy phạm pháp luật 2025 (được sửa đổi, bổ sung)" },
+
+    // --- Nghị định 303 ---
+    { id: 2237, name: "Đề 01: Nghị định số 303/2025/NĐ-CP quy định chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của bộ, cơ quan ngang bộ" },
+    { id: 2238, name: "Đề 02: Nghị định số 303/2025/NĐ-CP quy định chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của bộ, cơ quan ngang bộ" },
+
+    // --- Luật Phòng chống tham nhũng ---
+    { id: 2258, name: "Đề số 01: VBHN số 118 ngày 27/8/2025 của Văn phòng quốc hội: Luật phòng, chống tham nhũng" },
+    { id: 2259, name: "Đề số 02: VBHN số 118 ngày 27/8/2025 của Văn phòng quốc hội: Luật phòng, chống tham nhũng" },
+
+    // --- Nghị định 109 ---
+    { id: 2264, name: "Đề 01: Nghị định 109/2025/NĐ-CP ngày 20/05/2025 quy định chức năng, nhiệm vụ, quyền hạn, cơ cấu tổ chức của thanh tra chính phủ. " },
+
+    // --- Luyện đề tổng hợp TTCP ---
+    { id: 2303, name: "Đề 01: TTCP - Vòng 1 - Luyện đề tổng hợp" },
+    { id: 2304, name: "Đề 02: TTCP - Vòng 1 - Luyện đề tổng hợp" },
+    { id: 2305, name: "Đề 03: TTCP - Vòng 1 - Luyện đề tổng hợp" },
+    { id: 2306, name: "Đề 04: TTCP - Vòng 1 - Luyện đề tổng hợp" },
+    { id: 2307, name: "Đề 05: TTCP - Vòng 1 - Luyện đề tổng hợp" },
+    { id: 2308, name: "Đề 06: TTCP - Vòng 1 - Luyện đề tổng hợp" },
+    { id: 2309, name: "Đề 07: TTCP - Vòng 1 - Luyện đề tổng hợp" },
+    { id: 2310, name: "Đề 08: TTCP - Vòng 1 - Luyện đề tổng hợp" },
+    { id: 2311, name: "Đề 09: TTCP - Vòng 1 - Luyện đề tổng hợp" },
+    { id: 2312, name: "Đề 10: TTCP - Vòng 1 - Luyện đề tổng hợp" },
+    { id: 2313, name: "Đề 11: TTCP - Vòng 1 - Luyện đề tổng hợp" },
+    { id: 2314, name: "Đề 12: TTCP - Vòng 1 - Luyện đề tổng hợp" },
+    { id: 2315, name: "Đề 13: TTCP - Vòng 1 - Luyện đề tổng hợp" },
+    { id: 2316, name: " Đề 14: TTCP - Vòng 1 - Luyện đề tổng hợp" },
+    { id: 2317, name: " Đề 15: TTCP - Vòng 1 - Luyện đề tổng hợp" },
+    { id: 2318, name: " Đề 16: TTCP - Vòng 1 - Luyện đề tổng hợp" },
+    { id: 2319, name: "Đề 17: TTCP - Vòng 1 - Luyện đề tổng hợp" },
+    { id: 2320, name: "Đề 18: TTCP - Vòng 1 - Luyện đề tổng hợp" },
+    { id: 2321, name: "Đề 19: TTCP - Vòng 1 - Luyện đề tổng hợp" },
+    { id: 2322, name: "Đề 20: TTCP - Vòng 1 - Luyện đề tổng hợp" }
+];
 
     const mainContent = document.getElementById('main-content');
     const examSelectionScreen = document.getElementById('exam-selection-screen');
@@ -47,7 +94,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     async function startQuiz(exam) {
         try {
-            const response = await fetch(`./data/de_${exam.id}.json`);
+            const response = await fetch(`./data/ttcp_${exam.id}.json`);
             if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
             const jsonData = await response.json();
             console.log("✅ Dữ liệu từ file JSON đã được đọc thành công:", jsonData);

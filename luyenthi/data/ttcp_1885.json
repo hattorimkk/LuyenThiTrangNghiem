@@ -1,0 +1,1504 @@
+{
+    "data": {
+        "id": 160597,
+        "userId": 13907,
+        "examPackId": 623,
+        "examId": 1885,
+        "examCodeId": 160934,
+        "score": 0,
+        "correctQuestion": 0,
+        "inCorrectQuestion": 0,
+        "skipQuestion": 0,
+        "type": 1,
+        "status": 0,
+        "startTime": "2026-01-25T16:28:57.000Z",
+        "completedAt": null,
+        "createdAt": "2026-01-25T16:28:57.000Z",
+        "updatedAt": "2026-01-25T16:28:57.000Z",
+        "user": {
+            "id": 13907,
+            "email": "truongnguyen@gmail.com",
+            "username": null,
+            "code": "527463",
+            "phoneNumber": "",
+            "firstName": null,
+            "lastName": null,
+            "image": null,
+            "position": null,
+            "organization": null,
+            "status": 1,
+            "verifyToken": null,
+            "verified": false,
+            "verifiedAt": null,
+            "source": 1,
+            "deletedAt": null,
+            "createdAt": "2026-01-25T15:41:40.000Z",
+            "updatedAt": "2026-01-25T15:41:40.000Z"
+        },
+        "examCode": {
+            "data": {
+                "id": 160934,
+                "examId": 1885,
+                "createdAt": "2026-01-25T16:28:57.000Z",
+                "updatedAt": "2026-01-25T16:28:57.000Z",
+                "questions": {
+                    "data": [
+                        {
+                            "id": 153550,
+                            "question": "<span style=\"font-size:15px;font-weight:bold;color:rgba(0, 0, 0, 1); \">[</span><span style=\"font-weight: bold; font-size:15px;color: rgba(255, 0, 0, 1); \">CÔNG CHỨC 247</span><span style=\"font-weight: bold; font-size:15px;color: rgba(0, 0, 0, 1); \">]: Theo quy định tại Luật Tổ chức Chính phủ năm 2025, ai quy định chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của cơ quan thuộc Chính phủ?</span>",
+                            "categoryId": 1923,
+                            "note": "<span style=\"font-size:15px;font-weight:bold;color:rgba(0, 0, 0, 1); \">Giải thích:</span><span style=\"font-size:15px;color: rgba(0, 0, 0, 1); \"> Khoản 2 Điều 24 Luật Tổ chức Chính phủ năm 2025 quy định: </span><span style=\"font-style: italic; font-size:15px;color: rgba(0, 0, 0, 1); \">“Chính phủ quy định chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của cơ quan thuộc Chính phủ”.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "269",
+                            "correctRespondentCount": "143",
+                            "type": 1,
+                            "createdAt": "2025-09-10T08:40:29.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-25T15:39:55.000Z",
+                            "answers": [
+                                {
+                                    "id": 231523,
+                                    "answer": "<span style=\"font-size:15px;color:rgba(0, 0, 0, 1); text-align:justify;vertical-align:middle;\">Quốc hội và Ủy ban Thường vụ Quốc hội</span>",
+                                    "isCorrect": false,
+                                    "questionId": 153550,
+                                    "createdAt": "2025-09-10T08:40:29.000Z",
+                                    "updatedAt": "2025-09-10T08:40:29.000Z"
+                                },
+                                {
+                                    "id": 231524,
+                                    "answer": "<span style=\"font-size:15px;color:rgba(0, 0, 0, 1); text-align:justify;vertical-align:middle;\">Thủ tướng Chính phủ</span>",
+                                    "isCorrect": false,
+                                    "questionId": 153550,
+                                    "createdAt": "2025-09-10T08:40:29.000Z",
+                                    "updatedAt": "2025-09-10T08:40:29.000Z"
+                                },
+                                {
+                                    "id": 231525,
+                                    "answer": "<span style=\"font-size:15px;color:rgba(0, 0, 0, 1); text-align:justify;vertical-align:middle;\">Chủ tịch nước</span>",
+                                    "isCorrect": false,
+                                    "questionId": 153550,
+                                    "createdAt": "2025-09-10T08:40:29.000Z",
+                                    "updatedAt": "2025-09-10T08:40:29.000Z"
+                                },
+                                {
+                                    "id": 231526,
+                                    "answer": "<span style=\"font-size:15px;color:rgba(0, 0, 0, 1); \">Chính phủ</span><span style=\"font-weight: bold; font-size:15px;color: rgba(0, 0, 0, 1); \"> </span>",
+                                    "isCorrect": true,
+                                    "questionId": 153550,
+                                    "createdAt": "2025-09-10T08:40:29.000Z",
+                                    "updatedAt": "2025-09-10T08:40:29.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 153551,
+                            "question": "<span style=\"font-size:15px;font-weight:bold;color:rgba(0, 0, 0, 1); \">[</span><span style=\"font-weight: bold; font-size:15px;color: rgba(255, 0, 0, 1); \">CÔNG CHỨC 247</span><span style=\"font-weight: bold; font-size:15px;color: rgba(0, 0, 0, 1); \">]: Theo quy định tại Luật Tổ chức Chính phủ năm 2025, chế độ làm việc của Chính phủ, các thành viên Chính phủ được thực hiện trên cơ sở nào sau đây?</span>",
+                            "categoryId": 1923,
+                            "note": "<span style=\"font-size:15px;font-weight:bold;color:rgba(0, 0, 0, 1); \">Giải thích:</span><span style=\"font-size:15px;color: rgba(0, 0, 0, 1); \"> Khoản 1 Điều 25 Luật Tổ chức Chính phủ năm 2025 quy định: </span><span style=\"font-style: italic; font-size:15px;color: rgba(0, 0, 0, 1); \">“Chế độ làm việc của Chính phủ, các thành viên Chính phủ được thực hiện trên cơ sở phân định rõ chức năng, nhiệm vụ, quyền hạn và đề cao trách nhiệm của Thủ tướng Chính phủ, từng thành viên Chính phủ theo quy định của pháp luật”.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "233",
+                            "correctRespondentCount": "195",
+                            "type": 1,
+                            "createdAt": "2025-09-10T08:40:29.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-25T16:33:39.000Z",
+                            "answers": [
+                                {
+                                    "id": 231527,
+                                    "answer": "<span style=\"font-size:15px;color:rgba(0, 0, 0, 1); text-align:justify;vertical-align:middle;\">Cơ chế dân chủ đại diện và tập trung quyền lực cho Thủ tướng</span>",
+                                    "isCorrect": false,
+                                    "questionId": 153551,
+                                    "createdAt": "2025-09-10T08:40:29.000Z",
+                                    "updatedAt": "2025-09-10T08:40:29.000Z"
+                                },
+                                {
+                                    "id": 231528,
+                                    "answer": "<span style=\"font-size:15px;color:rgba(0, 0, 0, 1); text-align:justify;vertical-align:middle;\">Phân định rõ chức năng, nhiệm vụ, quyền hạn và đề cao trách nhiệm của Thủ tướng Chính phủ, từng thành viên Chính phủ theo quy định của pháp luật.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 153551,
+                                    "createdAt": "2025-09-10T08:40:29.000Z",
+                                    "updatedAt": "2025-09-10T08:40:29.000Z"
+                                },
+                                {
+                                    "id": 231529,
+                                    "answer": "<span style=\"font-size:15px;color:rgba(0, 0, 0, 1); text-align:justify;vertical-align:middle;\">Nguyên tắc cấp dưới phục tùng cấp trên trong bộ máy hành chính</span>",
+                                    "isCorrect": false,
+                                    "questionId": 153551,
+                                    "createdAt": "2025-09-10T08:40:29.000Z",
+                                    "updatedAt": "2025-09-10T08:40:29.000Z"
+                                },
+                                {
+                                    "id": 231530,
+                                    "answer": "<span style=\"font-size:15px;color:rgba(0, 0, 0, 1); text-align:justify;vertical-align:middle;\">Quyết định theo chỉ đạo của Thủ tướng và Chủ tịch nước</span>",
+                                    "isCorrect": false,
+                                    "questionId": 153551,
+                                    "createdAt": "2025-09-10T08:40:29.000Z",
+                                    "updatedAt": "2025-09-10T08:40:29.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 153552,
+                            "question": "<span style=\"font-size:15px;font-weight:bold;color:rgba(0, 0, 0, 1); \">[</span><span style=\"font-weight: bold; font-size:15px;color: rgba(255, 0, 0, 1); \">CÔNG CHỨC 247</span><span style=\"font-weight: bold; font-size:15px;color: rgba(0, 0, 0, 1); \">]: Theo quy định tại Luật Tổ chức Chính phủ năm 2025, Chính phủ làm việc theo chế độ nào sau đây?</span>",
+                            "categoryId": 1923,
+                            "note": "<span style=\"font-size:15px;font-weight:bold;color:rgba(0, 0, 0, 1); \">Giải thích:</span><span style=\"font-size:15px;color: rgba(0, 0, 0, 1); \"> Khoản 2 Điều 25 Luật Tổ chức Chính phủ năm 2025 quy định: </span><span style=\"font-style: italic; font-size:15px;color: rgba(0, 0, 0, 1); \">“Chính phủ làm việc theo chế độ tập thể, quyết định theo đa số”.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "163",
+                            "correctRespondentCount": "153",
+                            "type": 1,
+                            "createdAt": "2025-09-10T08:40:29.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-25T15:26:19.000Z",
+                            "answers": [
+                                {
+                                    "id": 231531,
+                                    "answer": "<span style=\"font-size:15px;color:rgba(0, 0, 0, 1); text-align:justify;vertical-align:middle;\">Tập thể, đồng thuận tuyệt đối</span>",
+                                    "isCorrect": false,
+                                    "questionId": 153552,
+                                    "createdAt": "2025-09-10T08:40:29.000Z",
+                                    "updatedAt": "2025-09-10T08:40:29.000Z"
+                                },
+                                {
+                                    "id": 231532,
+                                    "answer": "<span style=\"font-size:15px;color:rgba(0, 0, 0, 1); text-align:justify;vertical-align:middle;\">Cá nhân, theo nguyên tắc thủ trưởng</span>",
+                                    "isCorrect": false,
+                                    "questionId": 153552,
+                                    "createdAt": "2025-09-10T08:40:29.000Z",
+                                    "updatedAt": "2025-09-10T08:40:29.000Z"
+                                },
+                                {
+                                    "id": 231533,
+                                    "answer": "<span style=\"font-size:15px;color:rgba(0, 0, 0, 1); text-align:justify;vertical-align:middle;\">Tập thể, quyết định theo đa số</span>",
+                                    "isCorrect": true,
+                                    "questionId": 153552,
+                                    "createdAt": "2025-09-10T08:40:29.000Z",
+                                    "updatedAt": "2025-09-10T08:40:29.000Z"
+                                },
+                                {
+                                    "id": 231534,
+                                    "answer": "<span style=\"font-size:15px;color:rgba(0, 0, 0, 1); text-align:justify;vertical-align:middle;\">Đề xuất cá nhân, thông qua biểu quyết kín</span>",
+                                    "isCorrect": false,
+                                    "questionId": 153552,
+                                    "createdAt": "2025-09-10T08:40:29.000Z",
+                                    "updatedAt": "2025-09-10T08:40:29.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 153553,
+                            "question": "<span style=\"font-size:15px;font-weight:bold;color:rgba(0, 0, 0, 1); \">[</span><span style=\"font-weight: bold; font-size:15px;color: rgba(255, 0, 0, 1); \">CÔNG CHỨC 247</span><span style=\"font-weight: bold; font-size:15px;color: rgba(0, 0, 0, 1); \">]: Theo quy định tại Luật Tổ chức Chính phủ năm 2025, ai ban hành Quy chế làm việc của Chính phủ?</span>",
+                            "categoryId": 1923,
+                            "note": "<span style=\"font-size:15px;font-weight:bold;color:rgba(0, 0, 0, 1); \">Giải thích:</span><span style=\"font-size:15px;color: rgba(0, 0, 0, 1); \"> Khoản 3 Điều 25 Luật Tổ chức Chính phủ năm 2025 quy định: </span><span style=\"font-style: italic; font-size:15px;color: rgba(0, 0, 0, 1); \">“Chính phủ ban hành Quy chế làm việc của Chính phủ”.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "223",
+                            "correctRespondentCount": "122",
+                            "type": 1,
+                            "createdAt": "2025-09-10T08:40:29.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-25T15:26:31.000Z",
+                            "answers": [
+                                {
+                                    "id": 231535,
+                                    "answer": "<span style=\"font-size:15px;color:rgba(0, 0, 0, 1); vertical-align:middle;\">Quốc hội và Ủy ban Thường vụ Quốc hội</span>",
+                                    "isCorrect": false,
+                                    "questionId": 153553,
+                                    "createdAt": "2025-09-10T08:40:29.000Z",
+                                    "updatedAt": "2025-09-10T08:40:29.000Z"
+                                },
+                                {
+                                    "id": 231536,
+                                    "answer": "<span style=\"font-size:15px;color:rgba(0, 0, 0, 1); text-align:justify;vertical-align:middle;\">Thủ tướng Chính phủ</span>",
+                                    "isCorrect": false,
+                                    "questionId": 153553,
+                                    "createdAt": "2025-09-10T08:40:29.000Z",
+                                    "updatedAt": "2025-09-10T08:40:29.000Z"
+                                },
+                                {
+                                    "id": 231537,
+                                    "answer": "<span style=\"font-size:15px;color:rgba(0, 0, 0, 1); text-align:justify;vertical-align:middle;\">Chủ tịch nước</span>",
+                                    "isCorrect": false,
+                                    "questionId": 153553,
+                                    "createdAt": "2025-09-10T08:40:29.000Z",
+                                    "updatedAt": "2025-09-10T08:40:29.000Z"
+                                },
+                                {
+                                    "id": 231538,
+                                    "answer": "<span style=\"font-size:15px;color:rgba(0, 0, 0, 1); \">Chính phủ</span><span style=\"font-weight: bold; font-size:15px;color: rgba(0, 0, 0, 1); \"> </span>",
+                                    "isCorrect": true,
+                                    "questionId": 153553,
+                                    "createdAt": "2025-09-10T08:40:29.000Z",
+                                    "updatedAt": "2025-09-10T08:40:29.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 153554,
+                            "question": "<span style=\"font-size:15px;font-weight:bold;color:rgba(0, 0, 0, 1); \">[</span><span style=\"font-weight: bold; font-size:15px;color: rgba(255, 0, 0, 1); \">CÔNG CHỨC 247</span><span style=\"font-weight: bold; font-size:15px;color: rgba(0, 0, 0, 1); \">]: Theo Luật Tổ chức Chính phủ năm 2025, Chính phủ họp thường kỳ với tần suất như thế nào?</span>",
+                            "categoryId": 1923,
+                            "note": "<span style=\"font-size:15px;font-weight:bold;color:rgba(0, 0, 0, 1); \">Giải thích:</span><span style=\"font-size:15px;color: rgba(0, 0, 0, 1); \"> Khoản 1 Điều 26 Luật Tổ chức Chính phủ năm 2025 quy định: </span><span style=\"font-style: italic; font-size:15px;color: rgba(0, 0, 0, 1); \">“Chính phủ họp thường kỳ mỗi tháng một phiên….”.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "148",
+                            "correctRespondentCount": "129",
+                            "type": 1,
+                            "createdAt": "2025-09-10T08:40:29.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-25T15:26:35.000Z",
+                            "answers": [
+                                {
+                                    "id": 231539,
+                                    "answer": "<span style=\"font-size:15px;color:rgba(0, 0, 0, 1); text-align:justify;vertical-align:middle;\">Mỗi tuần một phiên</span>",
+                                    "isCorrect": false,
+                                    "questionId": 153554,
+                                    "createdAt": "2025-09-10T08:40:29.000Z",
+                                    "updatedAt": "2025-09-10T08:40:29.000Z"
+                                },
+                                {
+                                    "id": 231540,
+                                    "answer": "<span style=\"font-size:15px;color:rgba(0, 0, 0, 1); text-align:justify;vertical-align:middle;\">Mỗi quý một phiên</span>",
+                                    "isCorrect": false,
+                                    "questionId": 153554,
+                                    "createdAt": "2025-09-10T08:40:29.000Z",
+                                    "updatedAt": "2025-09-10T08:40:29.000Z"
+                                },
+                                {
+                                    "id": 231541,
+                                    "answer": "<span style=\"font-size:15px;color:rgba(0, 0, 0, 1); text-align:justify;vertical-align:middle;\">Mỗi tháng một phiên</span>",
+                                    "isCorrect": true,
+                                    "questionId": 153554,
+                                    "createdAt": "2025-09-10T08:40:29.000Z",
+                                    "updatedAt": "2025-09-10T08:40:29.000Z"
+                                },
+                                {
+                                    "id": 231542,
+                                    "answer": "<span style=\"font-size:15px;color:rgba(0, 0, 0, 1); text-align:justify;vertical-align:middle;\">Mỗi năm một phiên</span>",
+                                    "isCorrect": false,
+                                    "questionId": 153554,
+                                    "createdAt": "2025-09-10T08:40:29.000Z",
+                                    "updatedAt": "2025-09-10T08:40:29.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 153555,
+                            "question": "<span style=\"font-size:15px;font-weight:bold;color:rgba(0, 0, 0, 1); \">[</span><span style=\"font-weight: bold; font-size:15px;color: rgba(255, 0, 0, 1); \">CÔNG CHỨC 247</span><span style=\"font-weight: bold; font-size:15px;color: rgba(0, 0, 0, 1); \">]: Trong trường hợp Chính phủ không họp, hình thức lấy ý kiến các thành viên Chính phủ được thực hiện như thế nào?</span>",
+                            "categoryId": 1923,
+                            "note": "<span style=\"font-size:15px;font-weight:bold;color:rgba(0, 0, 0, 1); \">Giải thích:</span><span style=\"font-size:15px;color: rgba(0, 0, 0, 1); \"> Khoản 1 Điều 26 Luật Tổ chức Chính phủ năm 2025 quy định: </span><span style=\"font-style: italic; font-size:15px;color: rgba(0, 0, 0, 1); \">“Chính phủ họp thường kỳ mỗi tháng một phiên….”.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "164",
+                            "correctRespondentCount": "145",
+                            "type": 1,
+                            "createdAt": "2025-09-10T08:40:29.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-25T15:26:42.000Z",
+                            "answers": [
+                                {
+                                    "id": 231543,
+                                    "answer": "<span style=\"font-size:15px;color:rgba(0, 0, 0, 1); text-align:justify;vertical-align:middle;\">Thủ tướng Chính phủ tổ chức họp trực tuyến</span>",
+                                    "isCorrect": false,
+                                    "questionId": 153555,
+                                    "createdAt": "2025-09-10T08:40:29.000Z",
+                                    "updatedAt": "2025-09-10T08:40:29.000Z"
+                                },
+                                {
+                                    "id": 231544,
+                                    "answer": "<span style=\"font-size:15px;color:rgba(0, 0, 0, 1); text-align:justify;vertical-align:middle;\">Thủ tướng Chính phủ quyết định gửi lấy ý kiến các thành viên Chính phủ bằng văn bản</span>",
+                                    "isCorrect": true,
+                                    "questionId": 153555,
+                                    "createdAt": "2025-09-10T08:40:29.000Z",
+                                    "updatedAt": "2025-09-10T08:40:29.000Z"
+                                },
+                                {
+                                    "id": 231545,
+                                    "answer": "<span style=\"font-size:15px;color:rgba(0, 0, 0, 1); text-align:justify;vertical-align:middle;\">Chủ tịch nước lấy ý kiến bằng văn bản</span>",
+                                    "isCorrect": false,
+                                    "questionId": 153555,
+                                    "createdAt": "2025-09-10T08:40:29.000Z",
+                                    "updatedAt": "2025-09-10T08:40:29.000Z"
+                                },
+                                {
+                                    "id": 231546,
+                                    "answer": "<span style=\"font-size:15px;color:rgba(0, 0, 0, 1); text-align:justify;vertical-align:middle;\">Văn phòng Chính phủ tổ chức hội nghị toàn thể</span>",
+                                    "isCorrect": false,
+                                    "questionId": 153555,
+                                    "createdAt": "2025-09-10T08:40:29.000Z",
+                                    "updatedAt": "2025-09-10T08:40:29.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 153556,
+                            "question": "<span style=\"font-size:15px;font-weight:bold;color:rgba(0, 0, 0, 1); \">[</span><span style=\"font-weight: bold; font-size:15px;color: rgba(255, 0, 0, 1); \">CÔNG CHỨC 247</span><span style=\"font-weight: bold; font-size:15px;color: rgba(0, 0, 0, 1); \">]: Khi ban hành quy định thực hiện chính sách dân tộc, Chính phủ phải lấy ý kiến của cơ quan nào sau đây?</span>",
+                            "categoryId": 1923,
+                            "note": "<span style=\"font-size:15px;font-weight:bold;color:rgba(0, 0, 0, 1); \">Giải thích:</span><span style=\"font-size:15px;color: rgba(0, 0, 0, 1); \"> Khoản 3 Điều 26 Luật Tổ chức Chính phủ năm 2025 quy định: </span><span style=\"font-style: italic; font-size:15px;color: rgba(0, 0, 0, 1); \">“Khi ban hành quy định thực hiện chính sách dân tộc, Chính phủ phải lấy ý kiến của Hội đồng Dân tộc của Quốc hội”.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "211",
+                            "correctRespondentCount": "172",
+                            "type": 1,
+                            "createdAt": "2025-09-10T08:40:29.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-25T15:26:48.000Z",
+                            "answers": [
+                                {
+                                    "id": 231547,
+                                    "answer": "<span style=\"font-size:15px;color:rgba(0, 0, 0, 1); text-align:justify;vertical-align:middle;\">Ủy ban Trung ương Mặt trận Tổ quốc Việt Nam</span>",
+                                    "isCorrect": false,
+                                    "questionId": 153556,
+                                    "createdAt": "2025-09-10T08:40:29.000Z",
+                                    "updatedAt": "2025-09-10T08:40:29.000Z"
+                                },
+                                {
+                                    "id": 231548,
+                                    "answer": "<span style=\"font-size:15px;color:rgba(0, 0, 0, 1); text-align:justify;vertical-align:middle;\">Ban Dân vận Trung ương</span>",
+                                    "isCorrect": false,
+                                    "questionId": 153556,
+                                    "createdAt": "2025-09-10T08:40:29.000Z",
+                                    "updatedAt": "2025-09-10T08:40:29.000Z"
+                                },
+                                {
+                                    "id": 231549,
+                                    "answer": "<span style=\"font-size:15px;color:rgba(0, 0, 0, 1); text-align:justify;vertical-align:middle;\">Hội đồng Dân tộc của Quốc hội</span>",
+                                    "isCorrect": true,
+                                    "questionId": 153556,
+                                    "createdAt": "2025-09-10T08:40:29.000Z",
+                                    "updatedAt": "2025-09-10T08:40:29.000Z"
+                                },
+                                {
+                                    "id": 231550,
+                                    "answer": "<span style=\"font-size:15px;color:rgba(0, 0, 0, 1); text-align:justify;vertical-align:middle;\">Ban Tôn giáo Chính phủ</span>",
+                                    "isCorrect": false,
+                                    "questionId": 153556,
+                                    "createdAt": "2025-09-10T08:40:29.000Z",
+                                    "updatedAt": "2025-09-10T08:40:29.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 153557,
+                            "question": "<span style=\"font-size:15px;font-weight:bold;color:rgba(0, 0, 0, 1); \">[</span><span style=\"font-weight: bold; font-size:15px;color: rgba(255, 0, 0, 1); \">CÔNG CHỨC 247</span><span style=\"font-weight: bold; font-size:15px;color: rgba(0, 0, 0, 1); \">]: Theo Luật Tổ chức Chính phủ năm 2025, nội dung nào sau đây thuộc hình thức hoạt động của Chính phủ?</span>",
+                            "categoryId": 1923,
+                            "note": "<span style=\"font-size:15px;font-weight:bold;color:rgba(0, 0, 0, 1); \">Giải thích:</span><span style=\"font-size:15px;color: rgba(0, 0, 0, 1); \"> Khoản 4 Điều 26 Luật Tổ chức Chính phủ năm 2025 quy định: </span><span style=\"font-style: italic; font-size:15px;color: rgba(0, 0, 0, 1); \">“Đổi mới hình thức hoạt động của Chính phủ gắn với đẩy mạnh cải cách thủ tục hành chính, bảo đảm tính linh hoạt, hiệu quả và xây dựng Chính phủ điện tử, Chính phủ số”.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "411",
+                            "correctRespondentCount": "255",
+                            "type": 1,
+                            "createdAt": "2025-09-10T08:40:29.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-25T16:46:13.000Z",
+                            "answers": [
+                                {
+                                    "id": 231551,
+                                    "answer": "<span style=\"font-size:15px;color:rgba(0, 0, 0, 1); text-align:justify;vertical-align:middle;\">Đổi mới hình thức hoạt động của Chính phủ gắn với đẩy mạnh cải cách thủ tục hành chính, bảo đảm tính linh hoạt, hiệu quả và xây dựng Chính phủ điện tử, Chính phủ số</span>",
+                                    "isCorrect": true,
+                                    "questionId": 153557,
+                                    "createdAt": "2025-09-10T08:40:29.000Z",
+                                    "updatedAt": "2025-09-10T08:40:29.000Z"
+                                },
+                                {
+                                    "id": 231552,
+                                    "answer": "<span style=\"font-size:15px;color:rgba(0, 0, 0, 1); text-align:justify;vertical-align:middle;\">Thành viên Chính phủ có trách nhiệm tham dự phiên họp của Chính phủ, nếu vắng mặt trong phiên họp hoặc vắng mặt một số thời gian của phiên họp thì phải được Thủ tướng Chính phủ đồng ý.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 153557,
+                                    "createdAt": "2025-09-10T08:40:29.000Z",
+                                    "updatedAt": "2025-09-10T08:40:29.000Z"
+                                },
+                                {
+                                    "id": 231553,
+                                    "answer": "<span style=\"font-size:15px;color:rgba(0, 0, 0, 1); text-align:justify;vertical-align:middle;\">Khi cần thiết, Thủ trưởng cơ quan thuộc Chính phủ, Chủ tịch Ủy ban nhân dân cấp tỉnh được mời tham dự phiên họp của Chính phủ.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 153557,
+                                    "createdAt": "2025-09-10T08:40:29.000Z",
+                                    "updatedAt": "2025-09-10T08:40:29.000Z"
+                                },
+                                {
+                                    "id": 231554,
+                                    "answer": "<span style=\"font-size:15px;color:rgba(0, 0, 0, 1); text-align:justify;vertical-align:middle;\">Người tham dự phiên họp của Chính phủ không phải là thành viên Chính phủ có quyền phát biểu ý kiến nhưng không có quyền biểu quyết.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 153557,
+                                    "createdAt": "2025-09-10T08:40:29.000Z",
+                                    "updatedAt": "2025-09-10T08:40:29.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 153558,
+                            "question": "<span style=\"font-size:15px;font-weight:bold;color:rgba(0, 0, 0, 1); \">[</span><span style=\"font-weight: bold; font-size:15px;color: rgba(255, 0, 0, 1); \">CÔNG CHỨC 247</span><span style=\"font-weight: bold; font-size:15px;color: rgba(0, 0, 0, 1); \">]: Theo Luật Tổ chức Chính phủ năm 2025, thành viên Chính phủ vắng mặt trong phiên họp Chính phủ phải đáp ứng điều kiện nào?</span>",
+                            "categoryId": 1923,
+                            "note": "<span style=\"font-size:15px;font-weight:bold;color:rgba(0, 0, 0, 1); \">Giải thích:</span><span style=\"font-size:15px;color: rgba(0, 0, 0, 1); \"> Khoản 1 Điều 27 Luật Tổ chức Chính phủ năm 2025 quy định: </span><span style=\"font-style: italic; font-size:15px;color: rgba(0, 0, 0, 1); \">“Thành viên Chính phủ có trách nhiệm tham dự phiên họp của Chính phủ, nếu vắng mặt trong phiên họp hoặc vắng mặt một số thời gian của phiên họp thì phải được Thủ tướng Chính phủ đồng ý.”.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "183",
+                            "correctRespondentCount": "158",
+                            "type": 1,
+                            "createdAt": "2025-09-10T08:40:29.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-25T15:27:15.000Z",
+                            "answers": [
+                                {
+                                    "id": 231555,
+                                    "answer": "<span style=\"font-size:15px;color:rgba(0, 0, 0, 1); text-align:justify;vertical-align:middle;\">Phải báo cáo với Bộ trưởng Bộ Nội vụ</span>",
+                                    "isCorrect": false,
+                                    "questionId": 153558,
+                                    "createdAt": "2025-09-10T08:40:29.000Z",
+                                    "updatedAt": "2025-09-10T08:40:29.000Z"
+                                },
+                                {
+                                    "id": 231556,
+                                    "answer": "<span style=\"font-size:15px;color:rgba(0, 0, 0, 1); text-align:justify;vertical-align:middle;\">Phải được Văn phòng Chính phủ chấp thuận</span>",
+                                    "isCorrect": false,
+                                    "questionId": 153558,
+                                    "createdAt": "2025-09-10T08:40:29.000Z",
+                                    "updatedAt": "2025-09-10T08:40:29.000Z"
+                                },
+                                {
+                                    "id": 231557,
+                                    "answer": "<span style=\"font-size:15px;color:rgba(0, 0, 0, 1); text-align:justify;vertical-align:middle;\">Phải có lý do chính đáng</span>",
+                                    "isCorrect": false,
+                                    "questionId": 153558,
+                                    "createdAt": "2025-09-10T08:40:29.000Z",
+                                    "updatedAt": "2025-09-10T08:40:29.000Z"
+                                },
+                                {
+                                    "id": 231558,
+                                    "answer": "<span style=\"font-size:15px;color:rgba(0, 0, 0, 1); text-align:justify;vertical-align:middle;\">Phải được Thủ tướng Chính phủ đồng ý</span>",
+                                    "isCorrect": true,
+                                    "questionId": 153558,
+                                    "createdAt": "2025-09-10T08:40:29.000Z",
+                                    "updatedAt": "2025-09-10T08:40:29.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 153559,
+                            "question": "<span style=\"font-size:15px;font-weight:bold;color:rgba(0, 0, 0, 1); \">[</span><span style=\"font-weight: bold; font-size:15px;color: rgba(255, 0, 0, 1); \">CÔNG CHỨC 247</span><span style=\"font-weight: bold; font-size:15px;color: rgba(0, 0, 0, 1); \">]: Theo Luật Tổ chức Chính phủ năm 2025, người tham dự phiên họp của Chính phủ không phải là thành viên Chính phủ có quyền nào sau đây?</span>",
+                            "categoryId": 1923,
+                            "note": "<span style=\"font-size:15px;font-weight:bold;color:rgba(0, 0, 0, 1); \">Giải thích:</span><span style=\"font-size:15px;color: rgba(0, 0, 0, 1); \"> Khoản 3 Điều 27 Luật Tổ chức Chính phủ năm 2025 quy định: </span><span style=\"font-style: italic; font-size:15px;color: rgba(0, 0, 0, 1); \">“Người tham dự phiên họp của Chính phủ không phải là thành viên Chính phủ có quyền phát biểu ý kiến nhưng không có quyền biểu quyết”.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "140",
+                            "correctRespondentCount": "126",
+                            "type": 1,
+                            "createdAt": "2025-09-10T08:40:30.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-25T15:27:22.000Z",
+                            "answers": [
+                                {
+                                    "id": 231559,
+                                    "answer": "<span style=\"font-size:15px;color:rgba(0, 0, 0, 1); text-align:justify;vertical-align:middle;\">Có quyền biểu quyết như thành viên Chính phủ</span>",
+                                    "isCorrect": false,
+                                    "questionId": 153559,
+                                    "createdAt": "2025-09-10T08:40:30.000Z",
+                                    "updatedAt": "2025-09-10T08:40:30.000Z"
+                                },
+                                {
+                                    "id": 231560,
+                                    "answer": "<span style=\"font-size:15px;color:rgba(0, 0, 0, 1); text-align:justify;vertical-align:middle;\">Chỉ được quan sát, không được phát biểu</span>",
+                                    "isCorrect": false,
+                                    "questionId": 153559,
+                                    "createdAt": "2025-09-10T08:40:30.000Z",
+                                    "updatedAt": "2025-09-10T08:40:30.000Z"
+                                },
+                                {
+                                    "id": 231561,
+                                    "answer": "<span style=\"font-size:15px;color:rgba(0, 0, 0, 1); vertical-align:middle;\">Có quyền phát biểu ý kiến nhưng không có quyền biểu quyết.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 153559,
+                                    "createdAt": "2025-09-10T08:40:30.000Z",
+                                    "updatedAt": "2025-09-10T08:40:30.000Z"
+                                },
+                                {
+                                    "id": 231562,
+                                    "answer": "<span style=\"font-size:15px;color:rgba(0, 0, 0, 1); text-align:justify;vertical-align:middle;\">Có quyền ký nghị quyết của Chính phủ</span>",
+                                    "isCorrect": false,
+                                    "questionId": 153559,
+                                    "createdAt": "2025-09-10T08:40:30.000Z",
+                                    "updatedAt": "2025-09-10T08:40:30.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 153560,
+                            "question": "<span style=\"font-size:15px;font-weight:bold;color:rgba(0, 0, 0, 1); \">[</span><span style=\"font-weight: bold; font-size:15px;color: rgba(255, 0, 0, 1); \">CÔNG CHỨC 247</span><span style=\"font-weight: bold; font-size:15px;color: rgba(0, 0, 0, 1); \">]: Theo Luật Tổ chức Chính phủ năm 2025, khi cần thiết, những ai được mời tham dự phiên họp của Chính phủ?</span>",
+                            "categoryId": 1923,
+                            "note": "<span style=\"font-size:15px;font-weight:bold;color:rgba(0, 0, 0, 1); \">Giải thích:</span><span style=\"font-size:15px;color: rgba(0, 0, 0, 1); \"> Khoản 2 Điều 27 Luật Tổ chức Chính phủ năm 2025 quy định: </span><span style=\"font-style: italic; font-size:15px;color: rgba(0, 0, 0, 1); \">“Khi cần thiết, Thủ trưởng cơ quan thuộc Chính phủ, Chủ tịch Ủy ban nhân dân cấp tỉnh được mời tham dự phiên họp của Chính phủ”.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "184",
+                            "correctRespondentCount": "148",
+                            "type": 1,
+                            "createdAt": "2025-09-10T08:40:30.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-25T15:27:40.000Z",
+                            "answers": [
+                                {
+                                    "id": 231563,
+                                    "answer": "<span style=\"font-size:15px;color:rgba(0, 0, 0, 1); text-align:justify;vertical-align:middle;\">Thủ trưởng cơ quan thuộc Chính phủ, Chủ tịch Ủy ban nhân dân cấp tỉnh</span>",
+                                    "isCorrect": true,
+                                    "questionId": 153560,
+                                    "createdAt": "2025-09-10T08:40:30.000Z",
+                                    "updatedAt": "2025-09-10T08:40:30.000Z"
+                                },
+                                {
+                                    "id": 231564,
+                                    "answer": "<span style=\"font-size:15px;color:rgba(0, 0, 0, 1); vertical-align:middle;\">Tất cả các cán bộ, công chức thuộc cơ quan ngang Bộ đều có thể tham dự</span>",
+                                    "isCorrect": false,
+                                    "questionId": 153560,
+                                    "createdAt": "2025-09-10T08:40:30.000Z",
+                                    "updatedAt": "2025-09-10T08:40:30.000Z"
+                                },
+                                {
+                                    "id": 231565,
+                                    "answer": "<span style=\"font-size:15px;color:rgba(0, 0, 0, 1); text-align:justify;vertical-align:middle;\">Tất cả các thành viên Ủy ban Thường vụ Quốc hội đều tham dự</span>",
+                                    "isCorrect": false,
+                                    "questionId": 153560,
+                                    "createdAt": "2025-09-10T08:40:30.000Z",
+                                    "updatedAt": "2025-09-10T08:40:30.000Z"
+                                },
+                                {
+                                    "id": 231566,
+                                    "answer": "<span style=\"font-size:15px;color:rgba(0, 0, 0, 1); text-align:justify;vertical-align:middle;\">Chỉ có Bộ trưởng và Thứ trưởng mới được mời tham dự</span>",
+                                    "isCorrect": false,
+                                    "questionId": 153560,
+                                    "createdAt": "2025-09-10T08:40:30.000Z",
+                                    "updatedAt": "2025-09-10T08:40:30.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 153561,
+                            "question": "<span style=\"font-size:15px;font-weight:bold;color:rgba(0, 0, 0, 1); \">[</span><span style=\"font-weight: bold; font-size:15px;color: rgba(255, 0, 0, 1); \">CÔNG CHỨC 247</span><span style=\"font-weight: bold; font-size:15px;color: rgba(0, 0, 0, 1); \">]: Theo Luật Tổ chức Chính phủ năm 2025, phiên họp của Chính phủ chỉ được tiến hành khi nào?</span>",
+                            "categoryId": 1923,
+                            "note": "<span style=\"font-size:15px;font-weight:bold;color:rgba(0, 0, 0, 1); \">Giải thích:</span><span style=\"font-size:15px;color: rgba(0, 0, 0, 1); \"> Khoản 1 Điều 28 Luật Tổ chức Chính phủ năm 2025 quy định: </span><span style=\"font-style: italic; font-size:15px;color: rgba(0, 0, 0, 1); \">“Phiên họp của Chính phủ chỉ được tiến hành khi có ít nhất hai phần ba tổng số thành viên Chính phủ tham dự”.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "210",
+                            "correctRespondentCount": "162",
+                            "type": 1,
+                            "createdAt": "2025-09-10T08:40:30.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-25T15:36:50.000Z",
+                            "answers": [
+                                {
+                                    "id": 231567,
+                                    "answer": "<span style=\"font-size:15px;color:rgba(0, 0, 0, 1); vertical-align:middle;\">Khi có ít nhất 1/3 tổng số thành viên Chính phủ tham dự</span>",
+                                    "isCorrect": false,
+                                    "questionId": 153561,
+                                    "createdAt": "2025-09-10T08:40:30.000Z",
+                                    "updatedAt": "2025-09-10T08:40:30.000Z"
+                                },
+                                {
+                                    "id": 231568,
+                                    "answer": "<span style=\"font-size:15px;color:rgba(0, 0, 0, 1); vertical-align:middle;\">Khi có ít nhất 2/3 tổng số thành viên Chính phủ tham dự</span>",
+                                    "isCorrect": true,
+                                    "questionId": 153561,
+                                    "createdAt": "2025-09-10T08:40:30.000Z",
+                                    "updatedAt": "2025-09-10T08:40:30.000Z"
+                                },
+                                {
+                                    "id": 231569,
+                                    "answer": "<span style=\"font-size:15px;color:rgba(0, 0, 0, 1); text-align:justify;vertical-align:middle;\">Khi có ít nhất 1/2 tổng số thành viên Chính phủ tham dự</span>",
+                                    "isCorrect": false,
+                                    "questionId": 153561,
+                                    "createdAt": "2025-09-10T08:40:30.000Z",
+                                    "updatedAt": "2025-09-10T08:40:30.000Z"
+                                },
+                                {
+                                    "id": 231570,
+                                    "answer": "<span style=\"font-size:15px;color:rgba(0, 0, 0, 1); vertical-align:middle;\">Khi có ít nhất 3/4 tổng số thành viên Chính phủ tham dự</span>",
+                                    "isCorrect": false,
+                                    "questionId": 153561,
+                                    "createdAt": "2025-09-10T08:40:30.000Z",
+                                    "updatedAt": "2025-09-10T08:40:30.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 153562,
+                            "question": "<span style=\"font-size:15px;font-weight:bold;color:rgba(0, 0, 0, 1); \">[</span><span style=\"font-weight: bold; font-size:15px;color: rgba(255, 0, 0, 1); \">CÔNG CHỨC 247</span><span style=\"font-weight: bold; font-size:15px;color: rgba(0, 0, 0, 1); \">]:</span><span style=\"font-size:15px;color: rgba(0, 0, 0, 1); \"> </span><span style=\"font-weight: bold; font-size:15px;color: rgba(0, 0, 0, 1); \">Theo Luật Tổ chức Chính phủ năm 2025, ai là người đề nghị và thông báo nội dung phiên họp của Chính phủ</span><span style=\"font-size:15px;color: rgba(0, 0, 0, 1); \"> </span><span style=\"font-weight: bold; font-size:15px;color: rgba(0, 0, 0, 1); \">đến các thành viên Chính phủ?</span>",
+                            "categoryId": 1923,
+                            "note": "<span style=\"font-size:15px;font-weight:bold;color:rgba(0, 0, 0, 1); \">Giải thích:</span><span style=\"font-size:15px;color: rgba(0, 0, 0, 1); \"> Khoản 2 Điều 28 Luật Tổ chức Chính phủ năm 2025 quy định: </span><span style=\"font-style: italic; font-size:15px;color: rgba(0, 0, 0, 1); \">“Nội dung phiên họp của Chính phủ do Thủ tướng Chính phủ đề nghị và thông báo đến các thành viên Chính phủ”.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "167",
+                            "correctRespondentCount": "131",
+                            "type": 1,
+                            "createdAt": "2025-09-10T08:40:30.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-25T15:28:00.000Z",
+                            "answers": [
+                                {
+                                    "id": 231571,
+                                    "answer": "<span style=\"font-size:15px;color:rgba(0, 0, 0, 1); text-align:justify;vertical-align:middle;\">Chủ tịch nước</span>",
+                                    "isCorrect": false,
+                                    "questionId": 153562,
+                                    "createdAt": "2025-09-10T08:40:30.000Z",
+                                    "updatedAt": "2025-09-10T08:40:30.000Z"
+                                },
+                                {
+                                    "id": 231572,
+                                    "answer": "<span style=\"font-size:15px;color:rgba(0, 0, 0, 1); text-align:justify;vertical-align:middle;\">Chủ nhiệm Văn phòng Chính phủ</span>",
+                                    "isCorrect": false,
+                                    "questionId": 153562,
+                                    "createdAt": "2025-09-10T08:40:30.000Z",
+                                    "updatedAt": "2025-09-10T08:40:30.000Z"
+                                },
+                                {
+                                    "id": 231573,
+                                    "answer": "<span style=\"font-size:15px;color:rgba(0, 0, 0, 1); text-align:justify;vertical-align:middle;\">Thủ tướng Chính phủ</span>",
+                                    "isCorrect": true,
+                                    "questionId": 153562,
+                                    "createdAt": "2025-09-10T08:40:30.000Z",
+                                    "updatedAt": "2025-09-10T08:40:30.000Z"
+                                },
+                                {
+                                    "id": 231574,
+                                    "answer": "<span style=\"font-size:15px;color:rgba(0, 0, 0, 1); text-align:justify;vertical-align:middle;\">Bộ trưởng Bộ Nội vụ</span>",
+                                    "isCorrect": false,
+                                    "questionId": 153562,
+                                    "createdAt": "2025-09-10T08:40:30.000Z",
+                                    "updatedAt": "2025-09-10T08:40:30.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 153563,
+                            "question": "<span style=\"font-size:15px;font-weight:bold;color:rgba(0, 0, 0, 1); \">[</span><span style=\"font-weight: bold; font-size:15px;color: rgba(255, 0, 0, 1); \">CÔNG CHỨC 247</span><span style=\"font-weight: bold; font-size:15px;color: rgba(0, 0, 0, 1); \">]:</span><span style=\"font-size:15px;color: rgba(0, 0, 0, 1); \"> </span><span style=\"font-weight: bold; font-size:15px;color: rgba(0, 0, 0, 1); \">Theo quy định, quyết định của Chính phủ được thông qua</span><span style=\"font-size:15px;color: rgba(0, 0, 0, 1); \"> </span><span style=\"font-weight: bold; font-size:15px;color: rgba(0, 0, 0, 1); \">khi đạt điều kiện nào sau đây?</span>",
+                            "categoryId": 1923,
+                            "note": "<span style=\"font-size:15px;font-weight:bold;color:rgba(0, 0, 0, 1); \">Giải thích:</span><span style=\"font-size:15px;color: rgba(0, 0, 0, 1); \"> Khoản 3 Điều 28 Luật Tổ chức Chính phủ năm 2025 quy định: </span><span style=\"font-style: italic; font-size:15px;color: rgba(0, 0, 0, 1); \">“Quyết định của Chính phủ phải được quá nửa tổng số thành viên Chính phủ biểu quyết tán thành”.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "144",
+                            "correctRespondentCount": "133",
+                            "type": 1,
+                            "createdAt": "2025-09-10T08:40:30.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-25T15:28:06.000Z",
+                            "answers": [
+                                {
+                                    "id": 231575,
+                                    "answer": "<span style=\"font-size:15px;color:rgba(0, 0, 0, 1); text-align:justify;vertical-align:middle;\">Có ít nhất 1/3 số thành viên Chính phủ đồng ý</span>",
+                                    "isCorrect": false,
+                                    "questionId": 153563,
+                                    "createdAt": "2025-09-10T08:40:30.000Z",
+                                    "updatedAt": "2025-09-10T08:40:30.000Z"
+                                },
+                                {
+                                    "id": 231576,
+                                    "answer": "<span style=\"font-size:15px;color:rgba(0, 0, 0, 1); text-align:justify;vertical-align:middle;\">Quá nửa tổng số thành viên Chính phủ biểu quyết tán thành</span>",
+                                    "isCorrect": true,
+                                    "questionId": 153563,
+                                    "createdAt": "2025-09-10T08:40:30.000Z",
+                                    "updatedAt": "2025-09-10T08:40:30.000Z"
+                                },
+                                {
+                                    "id": 231577,
+                                    "answer": "<span style=\"font-size:15px;color:rgba(0, 0, 0, 1); text-align:justify;vertical-align:middle;\">Có tất cả các thành viên Chính phủ nhất trí</span>",
+                                    "isCorrect": false,
+                                    "questionId": 153563,
+                                    "createdAt": "2025-09-10T08:40:30.000Z",
+                                    "updatedAt": "2025-09-10T08:40:30.000Z"
+                                },
+                                {
+                                    "id": 231578,
+                                    "answer": "<span style=\"font-size:15px;color:rgba(0, 0, 0, 1); text-align:justify;vertical-align:middle;\">Có Thủ tướng Chính phủ đồng ý là đủ</span>",
+                                    "isCorrect": false,
+                                    "questionId": 153563,
+                                    "createdAt": "2025-09-10T08:40:30.000Z",
+                                    "updatedAt": "2025-09-10T08:40:30.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 153564,
+                            "question": "<span style=\"font-size:15px;font-weight:bold;color:rgba(0, 0, 0, 1); \">[</span><span style=\"font-weight: bold; font-size:15px;color: rgba(255, 0, 0, 1); \">CÔNG CHỨC 247</span><span style=\"font-weight: bold; font-size:15px;color: rgba(0, 0, 0, 1); \">]:</span><span style=\"font-size:15px;color: rgba(0, 0, 0, 1); \"> </span><span style=\"font-weight: bold; font-size:15px;color: rgba(0, 0, 0, 1); \">Nếu kết quả biểu quyết tại phiên họp Chính phủ bằng nhau, thì quyết định được thực hiện theo ai?</span>",
+                            "categoryId": 1923,
+                            "note": "<span style=\"font-size:15px;font-weight:bold;color:rgba(0, 0, 0, 1); \">Giải thích:</span><span style=\"font-size:15px;color: rgba(0, 0, 0, 1); \"> Khoản 3 Điều 28 Luật Tổ chức Chính phủ năm 2025 quy định: </span><span style=\"font-style: italic; font-size:15px;color: rgba(0, 0, 0, 1); \">“……Trong trường hợp biểu quyết ngang nhau thì thực hiện theo ý kiến mà Thủ tướng Chính phủ đã biểu quyết”.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "142",
+                            "correctRespondentCount": "127",
+                            "type": 1,
+                            "createdAt": "2025-09-10T08:40:30.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-25T09:07:34.000Z",
+                            "answers": [
+                                {
+                                    "id": 231579,
+                                    "answer": "<span style=\"font-size:15px;color:rgba(0, 0, 0, 1); text-align:justify;vertical-align:middle;\">Phó Thủ tướng Thường trực</span>",
+                                    "isCorrect": false,
+                                    "questionId": 153564,
+                                    "createdAt": "2025-09-10T08:40:30.000Z",
+                                    "updatedAt": "2025-09-10T08:40:30.000Z"
+                                },
+                                {
+                                    "id": 231580,
+                                    "answer": "<span style=\"font-size:15px;color:rgba(0, 0, 0, 1); text-align:justify;vertical-align:middle;\">Bộ trưởng Bộ Nội vụ</span>",
+                                    "isCorrect": false,
+                                    "questionId": 153564,
+                                    "createdAt": "2025-09-10T08:40:30.000Z",
+                                    "updatedAt": "2025-09-10T08:40:30.000Z"
+                                },
+                                {
+                                    "id": 231581,
+                                    "answer": "<span style=\"font-size:15px;color:rgba(0, 0, 0, 1); text-align:justify;vertical-align:middle;\">Ý kiến của Chủ nhiệm Văn phòng Chính phủ</span>",
+                                    "isCorrect": false,
+                                    "questionId": 153564,
+                                    "createdAt": "2025-09-10T08:40:30.000Z",
+                                    "updatedAt": "2025-09-10T08:40:30.000Z"
+                                },
+                                {
+                                    "id": 231582,
+                                    "answer": "<span style=\"font-size:15px;color:rgba(0, 0, 0, 1); text-align:justify;vertical-align:middle;\">Ý kiến của Thủ tướng Chính phủ</span>",
+                                    "isCorrect": true,
+                                    "questionId": 153564,
+                                    "createdAt": "2025-09-10T08:40:30.000Z",
+                                    "updatedAt": "2025-09-10T08:40:30.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 153565,
+                            "question": "<span style=\"font-size:15px;font-weight:bold;color:rgba(0, 0, 0, 1); \">[</span><span style=\"font-weight: bold; font-size:15px;color: rgba(255, 0, 0, 1); \">CÔNG CHỨC 247</span><span style=\"font-weight: bold; font-size:15px;color: rgba(0, 0, 0, 1); \">]: Theo Luật Tổ chức Chính phủ năm 2025, ai có quyền tham dự phiên họp của Chính phủ?</span>",
+                            "categoryId": 1923,
+                            "note": "<span style=\"font-size:15px;font-weight:bold;color:rgba(0, 0, 0, 1); \">Giải thích:</span><span style=\"font-size:15px;color: rgba(0, 0, 0, 1); \"> Khoản 1 Điều 29 Luật Tổ chức Chính phủ năm 2025 quy định: </span><span style=\"font-style: italic; font-size:15px;color: rgba(0, 0, 0, 1); \">“Chủ tịch nước có quyền tham dự phiên họp của Chính phủ”.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "170",
+                            "correctRespondentCount": "123",
+                            "type": 1,
+                            "createdAt": "2025-09-10T08:40:30.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-25T15:28:19.000Z",
+                            "answers": [
+                                {
+                                    "id": 231583,
+                                    "answer": "<span style=\"font-size:15px;color:rgba(0, 0, 0, 1); text-align:justify;vertical-align:middle;\">Chủ tịch Ủy ban trung ương Mặt trận Tổ quốc Việt Nam</span>",
+                                    "isCorrect": false,
+                                    "questionId": 153565,
+                                    "createdAt": "2025-09-10T08:40:30.000Z",
+                                    "updatedAt": "2025-09-10T08:40:30.000Z"
+                                },
+                                {
+                                    "id": 231584,
+                                    "answer": "<span style=\"font-size:15px;color:rgba(0, 0, 0, 1); text-align:justify;vertical-align:middle;\">Chủ tịch Quốc hội</span>",
+                                    "isCorrect": false,
+                                    "questionId": 153565,
+                                    "createdAt": "2025-09-10T08:40:30.000Z",
+                                    "updatedAt": "2025-09-10T08:40:30.000Z"
+                                },
+                                {
+                                    "id": 231585,
+                                    "answer": "<span style=\"font-size:15px;color:rgba(0, 0, 0, 1); text-align:justify;vertical-align:middle;\">Chủ tịch nước</span>",
+                                    "isCorrect": true,
+                                    "questionId": 153565,
+                                    "createdAt": "2025-09-10T08:40:30.000Z",
+                                    "updatedAt": "2025-09-10T08:40:30.000Z"
+                                },
+                                {
+                                    "id": 231586,
+                                    "answer": "<span style=\"font-size:15px;color:rgba(0, 0, 0, 1); text-align:justify;vertical-align:middle;\">Chủ tịch Hội đồng Dân tộc của Quốc hội</span>",
+                                    "isCorrect": false,
+                                    "questionId": 153565,
+                                    "createdAt": "2025-09-10T08:40:30.000Z",
+                                    "updatedAt": "2025-09-10T08:40:30.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 153566,
+                            "question": "<span style=\"font-size:15px;font-weight:bold;color:rgba(0, 0, 0, 1); \">[</span><span style=\"font-weight: bold; font-size:15px;color: rgba(255, 0, 0, 1); \">CÔNG CHỨC 247</span><span style=\"font-weight: bold; font-size:15px;color: rgba(0, 0, 0, 1); \">]:</span><span style=\"font-size:15px;color: rgba(0, 0, 0, 1); \"> </span><span style=\"font-weight: bold; font-size:15px;color: rgba(0, 0, 0, 1); \">Khi</span><span style=\"font-size:15px;color: rgba(0, 0, 0, 1); \"> </span><span style=\"font-weight: bold; font-size:15px;color: rgba(0, 0, 0, 1); \">Chính phủ bàn về việc thực hiện chính sách dân tộc</span><span style=\"font-size:15px;color: rgba(0, 0, 0, 1); \">, </span><span style=\"font-weight: bold; font-size:15px;color: rgba(0, 0, 0, 1); \">thì ai sau đây được</span><span style=\"font-size:15px;color: rgba(0, 0, 0, 1); \"> </span><span style=\"font-weight: bold; font-size:15px;color: rgba(0, 0, 0, 1); \">mời tham dự phiên họp</span><span style=\"font-size:15px;color: rgba(0, 0, 0, 1); \">?</span>",
+                            "categoryId": 1923,
+                            "note": "<span style=\"font-size:15px;font-weight:bold;color:rgba(0, 0, 0, 1); \">Giải thích:</span><span style=\"font-size:15px;color: rgba(0, 0, 0, 1); \"> Khoản 2 Điều 29 Luật Tổ chức Chính phủ năm 2025 quy định: </span><span style=\"font-style: italic; font-size:15px;color: rgba(0, 0, 0, 1); \">“Chính phủ mời Chủ tịch Hội đồng Dân tộc của Quốc hội tham dự phiên họp của Chính phủ khi bàn về việc thực hiện chính sách dân tộc”.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "164",
+                            "correctRespondentCount": "131",
+                            "type": 1,
+                            "createdAt": "2025-09-10T08:40:30.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-25T15:28:29.000Z",
+                            "answers": [
+                                {
+                                    "id": 231587,
+                                    "answer": "<span style=\"font-size:15px;color:rgba(0, 0, 0, 1); text-align:justify;vertical-align:middle;\">Chủ tịch Hội đồng Dân tộc của Quốc hội</span>",
+                                    "isCorrect": true,
+                                    "questionId": 153566,
+                                    "createdAt": "2025-09-10T08:40:30.000Z",
+                                    "updatedAt": "2025-09-10T08:40:30.000Z"
+                                },
+                                {
+                                    "id": 231588,
+                                    "answer": "<span style=\"font-size:15px;color:rgba(0, 0, 0, 1); text-align:justify;vertical-align:middle;\">Bộ trưởng Bộ Nội vụ</span>",
+                                    "isCorrect": false,
+                                    "questionId": 153566,
+                                    "createdAt": "2025-09-10T08:40:30.000Z",
+                                    "updatedAt": "2025-09-10T08:40:30.000Z"
+                                },
+                                {
+                                    "id": 231589,
+                                    "answer": "<span style=\"font-size:15px;color:rgba(0, 0, 0, 1); text-align:justify;vertical-align:middle;\">Chủ tịch Ủy ban Dân tộc</span>",
+                                    "isCorrect": false,
+                                    "questionId": 153566,
+                                    "createdAt": "2025-09-10T08:40:30.000Z",
+                                    "updatedAt": "2025-09-10T08:40:30.000Z"
+                                },
+                                {
+                                    "id": 231590,
+                                    "answer": "<span style=\"font-size:15px;color:rgba(0, 0, 0, 1); text-align:justify;vertical-align:middle;\">Chủ nhiệm Văn phòng Chính phủ</span>",
+                                    "isCorrect": false,
+                                    "questionId": 153566,
+                                    "createdAt": "2025-09-10T08:40:30.000Z",
+                                    "updatedAt": "2025-09-10T08:40:30.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 153567,
+                            "question": "<span style=\"font-size:15px;font-weight:bold;color:rgba(0, 0, 0, 1); \">[</span><span style=\"font-weight: bold; font-size:15px;color: rgba(255, 0, 0, 1); \">CÔNG CHỨC 247</span><span style=\"font-weight: bold; font-size:15px;color: rgba(0, 0, 0, 1); \">]:</span><span style=\"font-size:15px;color: rgba(0, 0, 0, 1); \"> </span><span style=\"font-weight: bold; font-size:15px;color: rgba(0, 0, 0, 1); \">Theo Luật Tổ chức Chính phủ năm 2025, ai sau đây</span><span style=\"font-size:15px;color: rgba(0, 0, 0, 1); \"> </span><span style=\"font-weight: bold; font-size:15px;color: rgba(0, 0, 0, 1); \">được mời tham dự phiên họp của Chính phủ khi bàn các vấn đề có liên quan</span><span style=\"font-size:15px;color: rgba(0, 0, 0, 1); \">?</span>",
+                            "categoryId": 1923,
+                            "note": "<span style=\"font-size:15px;font-weight:bold;color:rgba(0, 0, 0, 1); \">Giải thích:</span><span style=\"font-size:15px;color: rgba(0, 0, 0, 1); \"> Khoản 3 Điều 29 Luật Tổ chức Chính phủ năm 2025 quy định: </span><span style=\"font-style: italic; font-size:15px;color: rgba(0, 0, 0, 1); \">“Chính phủ mời Chủ tịch Ủy ban trung ương Mặt trận Tổ quốc Việt Nam và người đứng đầu cơ quan trung ương của tổ chức chính trị - xã hội tham dự phiên họp của Chính phủ khi bàn các vấn đề có liên quan”.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "135",
+                            "correctRespondentCount": "129",
+                            "type": 1,
+                            "createdAt": "2025-09-10T08:40:30.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-25T15:28:35.000Z",
+                            "answers": [
+                                {
+                                    "id": 231591,
+                                    "answer": "<span style=\"font-size:15px;color:rgba(0, 0, 0, 1); text-align:justify;vertical-align:middle;\">Tổng thư ký Quốc hội</span>",
+                                    "isCorrect": false,
+                                    "questionId": 153567,
+                                    "createdAt": "2025-09-10T08:40:30.000Z",
+                                    "updatedAt": "2025-09-10T08:40:30.000Z"
+                                },
+                                {
+                                    "id": 231592,
+                                    "answer": "<span style=\"font-size:15px;color:rgba(0, 0, 0, 1); text-align:justify;vertical-align:middle;\">Chánh án Tòa án nhân dân tối cao</span>",
+                                    "isCorrect": false,
+                                    "questionId": 153567,
+                                    "createdAt": "2025-09-10T08:40:30.000Z",
+                                    "updatedAt": "2025-09-10T08:40:30.000Z"
+                                },
+                                {
+                                    "id": 231593,
+                                    "answer": "<span style=\"font-size:15px;color:rgba(0, 0, 0, 1); text-align:justify;vertical-align:middle;\">Chủ tịch Ủy ban trung ương Mặt trận Tổ quốc Việt Nam và người đứng đầu cơ quan trung ương của tổ chức chính trị - xã hội</span>",
+                                    "isCorrect": true,
+                                    "questionId": 153567,
+                                    "createdAt": "2025-09-10T08:40:30.000Z",
+                                    "updatedAt": "2025-09-10T08:40:30.000Z"
+                                },
+                                {
+                                    "id": 231594,
+                                    "answer": "<span style=\"font-size:15px;color:rgba(0, 0, 0, 1); text-align:justify;vertical-align:middle;\">Chủ tịch Hội đồng Lý luận Trung ương</span>",
+                                    "isCorrect": false,
+                                    "questionId": 153567,
+                                    "createdAt": "2025-09-10T08:40:30.000Z",
+                                    "updatedAt": "2025-09-10T08:40:30.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 153568,
+                            "question": "<span style=\"font-size:15px;font-weight:bold;color:rgba(0, 0, 0, 1); \">[</span><span style=\"font-weight: bold; font-size:15px;color: rgba(255, 0, 0, 1); \">CÔNG CHỨC 247</span><span style=\"font-weight: bold; font-size:15px;color: rgba(0, 0, 0, 1); \">]:</span><span style=\"font-size:15px;color: rgba(0, 0, 0, 1); \"> </span><span style=\"font-weight: bold; font-size:15px;color: rgba(0, 0, 0, 1); \">Theo Luật Tổ chức Chính phủ năm 2025,</span><span style=\"font-size:15px;color: rgba(0, 0, 0, 1); \"> </span><span style=\"font-weight: bold; font-size:15px;color: rgba(0, 0, 0, 1); \">kinh phí hoạt động của Chính phủ</span><span style=\"font-size:15px;color: rgba(0, 0, 0, 1); \"> </span><span style=\"font-weight: bold; font-size:15px;color: rgba(0, 0, 0, 1); \">do ai quyết định từ ngân sách nhà nước?</span>",
+                            "categoryId": 1923,
+                            "note": "<span style=\"font-size:15px;font-weight:bold;color:rgba(0, 0, 0, 1); \">Giải thích:</span><span style=\"font-size:15px;color: rgba(0, 0, 0, 1); \"> Điều 30 Luật Tổ chức Chính phủ năm 2025 quy định: </span><span style=\"font-style: italic; font-size:15px;color: rgba(0, 0, 0, 1); \">\" Kinh phí hoạt động của Chính phủ do Quốc hội quyết định từ ngân sách nhà nước.\"</span>",
+                            "readingContentId": null,
+                            "respondentCount": "506",
+                            "correctRespondentCount": "391",
+                            "type": 1,
+                            "createdAt": "2025-09-10T08:40:30.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-25T16:38:25.000Z",
+                            "answers": [
+                                {
+                                    "id": 231595,
+                                    "answer": "<span style=\"font-size:15px;color:rgba(0, 0, 0, 1); text-align:justify;vertical-align:middle;\">Chính phủ</span>",
+                                    "isCorrect": false,
+                                    "questionId": 153568,
+                                    "createdAt": "2025-09-10T08:40:30.000Z",
+                                    "updatedAt": "2025-09-10T08:40:30.000Z"
+                                },
+                                {
+                                    "id": 231596,
+                                    "answer": "<span style=\"font-size:15px;color:rgba(0, 0, 0, 1); text-align:justify;vertical-align:middle;\">Thủ tướng Chính phủ</span>",
+                                    "isCorrect": false,
+                                    "questionId": 153568,
+                                    "createdAt": "2025-09-10T08:40:30.000Z",
+                                    "updatedAt": "2025-09-10T08:40:30.000Z"
+                                },
+                                {
+                                    "id": 231597,
+                                    "answer": "<span style=\"font-size:15px;color:rgba(0, 0, 0, 1); text-align:justify;vertical-align:middle;\">Bộ Tài chính</span>",
+                                    "isCorrect": false,
+                                    "questionId": 153568,
+                                    "createdAt": "2025-09-10T08:40:30.000Z",
+                                    "updatedAt": "2025-09-10T08:40:30.000Z"
+                                },
+                                {
+                                    "id": 231598,
+                                    "answer": "<span style=\"font-size:15px;color:rgba(0, 0, 0, 1); text-align:justify;vertical-align:middle;\">Quốc hội</span>",
+                                    "isCorrect": true,
+                                    "questionId": 153568,
+                                    "createdAt": "2025-09-10T08:40:30.000Z",
+                                    "updatedAt": "2025-09-10T08:40:30.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 153569,
+                            "question": "<span style=\"font-size:15px;font-weight:bold;color:rgba(0, 0, 0, 1); \">[</span><span style=\"font-weight: bold; font-size:15px;color: rgba(255, 0, 0, 1); \">CÔNG CHỨC 247</span><span style=\"font-weight: bold; font-size:15px;color: rgba(0, 0, 0, 1); \">]: Theo Luật Tổ chức Chính phủ năm 2025, Chính phủ báo cáo công tác của Chính phủ với Quốc hội, Ủy ban Thường vụ Quốc hội và Chủ tịch nước với tần suất như thế nào?</span>",
+                            "categoryId": 1923,
+                            "note": "<span style=\"font-size:15px;font-weight:bold;color:rgba(0, 0, 0, 1); \">Giải thích:</span><span style=\"font-size:15px;color: rgba(0, 0, 0, 1); \"> Theo khoản 2 Điều 11 Luật Tổ chức Chính phủ năm 2025: </span><span style=\"font-style: italic; font-size:15px;color: rgba(0, 0, 0, 1); \">“Chính phủ báo cáo công tác của Chính phủ với Quốc hội, Ủy ban Thường vụ Quốc hội, Chủ tịch nước một năm hai lần.”</span>",
+                            "readingContentId": null,
+                            "respondentCount": "193",
+                            "correctRespondentCount": "158",
+                            "type": 1,
+                            "createdAt": "2025-09-10T08:40:30.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-25T15:42:06.000Z",
+                            "answers": [
+                                {
+                                    "id": 231599,
+                                    "answer": "<span style=\"font-size:15px;color:rgba(0, 0, 0, 1); text-align:justify;vertical-align:middle;\">Mỗi quý một lần</span>",
+                                    "isCorrect": false,
+                                    "questionId": 153569,
+                                    "createdAt": "2025-09-10T08:40:30.000Z",
+                                    "updatedAt": "2025-09-10T08:40:30.000Z"
+                                },
+                                {
+                                    "id": 231600,
+                                    "answer": "<span style=\"font-size:15px;color:rgba(0, 0, 0, 1); text-align:justify;vertical-align:middle;\">Một năm một lần</span>",
+                                    "isCorrect": false,
+                                    "questionId": 153569,
+                                    "createdAt": "2025-09-10T08:40:30.000Z",
+                                    "updatedAt": "2025-09-10T08:40:30.000Z"
+                                },
+                                {
+                                    "id": 231601,
+                                    "answer": "<span style=\"font-size:15px;color:rgba(0, 0, 0, 1); text-align:justify;vertical-align:middle;\">Một năm hai lần</span>",
+                                    "isCorrect": true,
+                                    "questionId": 153569,
+                                    "createdAt": "2025-09-10T08:40:30.000Z",
+                                    "updatedAt": "2025-09-10T08:40:30.000Z"
+                                },
+                                {
+                                    "id": 231602,
+                                    "answer": "<span style=\"font-size:15px;color:rgba(0, 0, 0, 1); text-align:justify;vertical-align:middle;\">Khi có yêu cầu của Quốc hội</span>",
+                                    "isCorrect": false,
+                                    "questionId": 153569,
+                                    "createdAt": "2025-09-10T08:40:30.000Z",
+                                    "updatedAt": "2025-09-10T08:40:30.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 153570,
+                            "question": "<span style=\"font-size:15px;font-weight:bold;color:rgba(0, 0, 0, 1); \">[</span><span style=\"font-weight: bold; font-size:15px;color: rgba(255, 0, 0, 1); \">CÔNG CHỨC 247</span><span style=\"font-weight: bold; font-size:15px;color: rgba(0, 0, 0, 1); \">]:</span><span style=\"font-size:15px;color: rgba(0, 0, 0, 1); \"> </span><span style=\"font-weight: bold; font-size:15px;color: rgba(0, 0, 0, 1); \">Theo Luật Tổ chức Chính phủ năm 2025, “quy định khung số lượng, tổ chức các cơ quan chuyên môn thuộc Ủy ban nhân dân; tiêu chí thành lập, số lượng cấp phó tối đa của người đứng đầu cơ quan chuyên môn và tổ chức, đơn vị thuộc cơ quan chuyên môn thuộc Ủy ban nhân dân” thuộc nhiệm vụ, quyền hạn của cơ quan nào sau đây?</span>",
+                            "categoryId": 1923,
+                            "note": "<span style=\"font-size:15px;font-weight:bold;color:rgba(0, 0, 0, 1); \">Giải thích:</span><span style=\"font-size:15px;color: rgba(0, 0, 0, 1); \"> Theo điểm e khoản 8 Điều 10 Luật Tổ chức Chính phủ năm 2025: </span><span style=\"font-style: italic; font-size:15px;color: rgba(0, 0, 0, 1); \">“Chính phủ quy định khung số lượng, tổ chức các cơ quan chuyên môn thuộc Ủy ban nhân dân; tiêu chí thành lập, số lượng cấp phó tối đa của người đứng đầu cơ quan chuyên môn và tổ chức, đơn vị thuộc cơ quan chuyên môn thuộc Ủy ban nhân dân.”</span>",
+                            "readingContentId": null,
+                            "respondentCount": "190",
+                            "correctRespondentCount": "119",
+                            "type": 1,
+                            "createdAt": "2025-09-10T08:40:30.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-25T15:29:01.000Z",
+                            "answers": [
+                                {
+                                    "id": 231603,
+                                    "answer": "<span style=\"font-size:15px;color:rgba(0, 0, 0, 1); text-align:justify;vertical-align:middle;\">Chính phủ</span>",
+                                    "isCorrect": true,
+                                    "questionId": 153570,
+                                    "createdAt": "2025-09-10T08:40:30.000Z",
+                                    "updatedAt": "2025-10-11T04:00:00.000Z"
+                                },
+                                {
+                                    "id": 231604,
+                                    "answer": "<span style=\"font-size:15px;color:rgba(0, 0, 0, 1); text-align:justify;vertical-align:middle;\">Thủ tướng Chính phủ</span>",
+                                    "isCorrect": false,
+                                    "questionId": 153570,
+                                    "createdAt": "2025-09-10T08:40:30.000Z",
+                                    "updatedAt": "2025-10-11T04:00:00.000Z"
+                                },
+                                {
+                                    "id": 231605,
+                                    "answer": "<span style=\"font-size:15px;color:rgba(0, 0, 0, 1); text-align:justify;vertical-align:middle;\">Bộ Tài chính</span>",
+                                    "isCorrect": false,
+                                    "questionId": 153570,
+                                    "createdAt": "2025-09-10T08:40:30.000Z",
+                                    "updatedAt": "2025-10-11T04:00:00.000Z"
+                                },
+                                {
+                                    "id": 231606,
+                                    "answer": "<span style=\"font-size:15px;color:rgba(0, 0, 0, 1); text-align:justify;vertical-align:middle;\">Quốc hội</span>",
+                                    "isCorrect": false,
+                                    "questionId": 153570,
+                                    "createdAt": "2025-09-10T08:40:30.000Z",
+                                    "updatedAt": "2025-10-11T04:00:00.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 153571,
+                            "question": "<span style=\"font-size:15px;font-weight:bold;color:rgba(0, 0, 0, 1); \">[</span><span style=\"font-weight: bold; font-size:15px;color: rgba(255, 0, 0, 1); \">CÔNG CHỨC 247</span><span style=\"font-weight: bold; font-size:15px;color: rgba(0, 0, 0, 1); \">]:</span><span style=\"font-size:15px;color: rgba(0, 0, 0, 1); \"> </span><span style=\"font-weight: bold; font-size:15px;color: rgba(0, 0, 0, 1); \">Theo Luật Tổ chức Chính phủ năm 2025, “quy định khung số lượng, tổ chức các cơ quan chuyên môn thuộc Ủy ban nhân dân; tiêu chí thành lập, số lượng cấp phó tối đa của người đứng đầu cơ quan chuyên môn và tổ chức, đơn vị thuộc cơ quan chuyên môn thuộc Ủy ban nhân dân” thuộc nhiệm vụ, quyền hạn của cơ quan nào sau đây?</span>",
+                            "categoryId": 1923,
+                            "note": "<span style=\"font-size:15px;font-weight:bold;color:rgba(0, 0, 0, 1); \">Giải thích:</span><span style=\"font-size:15px;color: rgba(0, 0, 0, 1); \"> Theo điểm e khoản 8 Điều 10 Luật Tổ chức Chính phủ năm 2025: </span><span style=\"font-style: italic; font-size:15px;color: rgba(0, 0, 0, 1); \">“Chính phủ quy định khung số lượng, tổ chức các cơ quan chuyên môn thuộc Ủy ban nhân dân; tiêu chí thành lập, số lượng cấp phó tối đa của người đứng đầu cơ quan chuyên môn và tổ chức, đơn vị thuộc cơ quan chuyên môn thuộc Ủy ban nhân dân.”</span>",
+                            "readingContentId": null,
+                            "respondentCount": "172",
+                            "correctRespondentCount": "143",
+                            "type": 1,
+                            "createdAt": "2025-09-10T08:40:30.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-25T15:29:11.000Z",
+                            "answers": [
+                                {
+                                    "id": 231607,
+                                    "answer": "<span style=\"font-size:15px;color:rgba(0, 0, 0, 1); text-align:justify;vertical-align:middle;\">Chính phủ</span>",
+                                    "isCorrect": true,
+                                    "questionId": 153571,
+                                    "createdAt": "2025-09-10T08:40:30.000Z",
+                                    "updatedAt": "2025-09-10T08:40:30.000Z"
+                                },
+                                {
+                                    "id": 231608,
+                                    "answer": "<span style=\"font-size:15px;color:rgba(0, 0, 0, 1); text-align:justify;vertical-align:middle;\">Thủ tướng Chính phủ</span>",
+                                    "isCorrect": false,
+                                    "questionId": 153571,
+                                    "createdAt": "2025-09-10T08:40:30.000Z",
+                                    "updatedAt": "2025-09-10T08:40:30.000Z"
+                                },
+                                {
+                                    "id": 231609,
+                                    "answer": "<span style=\"font-size:15px;color:rgba(0, 0, 0, 1); text-align:justify;vertical-align:middle;\">Ủy ban Thường vụ Quốc hội</span>",
+                                    "isCorrect": false,
+                                    "questionId": 153571,
+                                    "createdAt": "2025-09-10T08:40:30.000Z",
+                                    "updatedAt": "2025-09-10T08:40:30.000Z"
+                                },
+                                {
+                                    "id": 231610,
+                                    "answer": "<span style=\"font-size:15px;color:rgba(0, 0, 0, 1); text-align:justify;vertical-align:middle;\">Quốc hội</span>",
+                                    "isCorrect": false,
+                                    "questionId": 153571,
+                                    "createdAt": "2025-09-10T08:40:30.000Z",
+                                    "updatedAt": "2025-09-10T08:40:30.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 153572,
+                            "question": "<span style=\"font-size:15px;font-weight:bold;color:rgba(0, 0, 0, 1); \">[</span><span style=\"font-weight: bold; font-size:15px;color: rgba(255, 0, 0, 1); \">CÔNG CHỨC 247</span><span style=\"font-weight: bold; font-size:15px;color: rgba(0, 0, 0, 1); \">]: Theo Luật Tổ chức Chính phủ năm 2025, “trình Hội đồng quốc phòng và an ninh quyết định việc lực lượng vũ trang nhân dân tham gia hoạt động góp phần bảo vệ hòa bình ở khu vực và trên thế giới;” thuộc nhiệm vụ, quyền hạn của cơ quan nào sau đây?</span>",
+                            "categoryId": 1923,
+                            "note": "<span style=\"font-size:15px;font-weight:bold;color:rgba(0, 0, 0, 1); \">Giải thích:</span><span style=\"font-size:15px;color: rgba(0, 0, 0, 1); \"> Theo điểm b khoản 8 Điều 10 Luật Tổ chức Chính phủ năm 2025: </span><span style=\"font-style: italic; font-size:15px;color: rgba(0, 0, 0, 1); \">“Trình Hội đồng quốc phòng và an ninh quyết định việc lực lượng vũ trang nhân dân tham gia hoạt động góp phần bảo vệ hòa bình ở khu vực và trên thế giới”.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "186",
+                            "correctRespondentCount": "135",
+                            "type": 1,
+                            "createdAt": "2025-09-10T08:40:30.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-25T15:29:23.000Z",
+                            "answers": [
+                                {
+                                    "id": 231611,
+                                    "answer": "<span style=\"font-size:15px;color:rgba(0, 0, 0, 1); text-align:justify;vertical-align:middle;\">Chính phủ</span>",
+                                    "isCorrect": true,
+                                    "questionId": 153572,
+                                    "createdAt": "2025-09-10T08:40:30.000Z",
+                                    "updatedAt": "2025-09-10T08:40:30.000Z"
+                                },
+                                {
+                                    "id": 231612,
+                                    "answer": "<span style=\"font-size:15px;color:rgba(0, 0, 0, 1); text-align:justify;vertical-align:middle;\">Thủ tướng Chính phủ</span>",
+                                    "isCorrect": false,
+                                    "questionId": 153572,
+                                    "createdAt": "2025-09-10T08:40:30.000Z",
+                                    "updatedAt": "2025-09-10T08:40:30.000Z"
+                                },
+                                {
+                                    "id": 231613,
+                                    "answer": "<span style=\"font-size:15px;color:rgba(0, 0, 0, 1); text-align:justify;vertical-align:middle;\">Ủy ban Thường vụ Quốc hội</span>",
+                                    "isCorrect": false,
+                                    "questionId": 153572,
+                                    "createdAt": "2025-09-10T08:40:30.000Z",
+                                    "updatedAt": "2025-09-10T08:40:30.000Z"
+                                },
+                                {
+                                    "id": 231614,
+                                    "answer": "<span style=\"font-size:15px;color:rgba(0, 0, 0, 1); text-align:justify;vertical-align:middle;\">Quốc hội</span>",
+                                    "isCorrect": false,
+                                    "questionId": 153572,
+                                    "createdAt": "2025-09-10T08:40:30.000Z",
+                                    "updatedAt": "2025-09-10T08:40:30.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 153573,
+                            "question": "<span style=\"font-size:15px;font-weight:bold;color:rgba(0, 0, 0, 1); \">[</span><span style=\"font-weight: bold; font-size:15px;color: rgba(255, 0, 0, 1); \">CÔNG CHỨC 247</span><span style=\"font-weight: bold; font-size:15px;color: rgba(0, 0, 0, 1); \">]:</span><span style=\"font-size:15px;color: rgba(0, 0, 0, 1); \"> </span><span style=\"font-weight: bold; font-size:15px;color: rgba(0, 0, 0, 1); \">Theo Luật Tổ chức Chính phủ năm 2025, “ Quyết định các chính sách phát triển ngành, lĩnh vực, vùng, địa phương, trừ những chính sách thuộc thẩm quyền quyết định của Quốc hội và chính quyền địa phương, bảo đảm phù hợp với chủ trương của Đảng, chiến lược và kế hoạch phát triển kinh tế - xã hội của đất nước trong từng thời kỳ và các mục tiêu, chỉ tiêu, chính sách, nhiệm vụ cơ bản phát triển kinh tế - xã hội đã được Quốc hội thông qua” thuộc nhiệm vụ, quyền hạn của cơ quan nào sau đây?</span>",
+                            "categoryId": 1923,
+                            "note": "<span style=\"font-size:15px;font-weight:bold;color:rgba(0, 0, 0, 1); \">Giải thích:</span><span style=\"font-size:15px;color: rgba(0, 0, 0, 1); \"> Theo khoản 7 Điều 10 Luật Tổ chức Chính phủ năm 2025: </span><span style=\"font-style: italic; font-size:15px;color: rgba(0, 0, 0, 1); \">“.......Quyết định các chính sách phát triển ngành, lĩnh vực, vùng, địa phương, trừ những chính sách thuộc thẩm quyền quyết định của Quốc hội và chính quyền địa phương, bảo đảm phù hợp với chủ trương của Đảng, chiến lược và kế hoạch phát triển kinh tế - xã hội của đất nước trong từng thời kỳ và các mục tiêu, chỉ tiêu, chính sách, nhiệm vụ cơ bản phát triển kinh tế - xã hội đã được Quốc hội thông qua”.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "162",
+                            "correctRespondentCount": "123",
+                            "type": 1,
+                            "createdAt": "2025-09-10T08:40:30.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-25T15:29:34.000Z",
+                            "answers": [
+                                {
+                                    "id": 231615,
+                                    "answer": "<span style=\"font-size:15px;color:rgba(0, 0, 0, 1); text-align:justify;vertical-align:middle;\">Chính phủ</span>",
+                                    "isCorrect": true,
+                                    "questionId": 153573,
+                                    "createdAt": "2025-09-10T08:40:30.000Z",
+                                    "updatedAt": "2025-09-10T08:40:30.000Z"
+                                },
+                                {
+                                    "id": 231616,
+                                    "answer": "<span style=\"font-size:15px;color:rgba(0, 0, 0, 1); text-align:justify;vertical-align:middle;\">Thủ tướng Chính phủ</span>",
+                                    "isCorrect": false,
+                                    "questionId": 153573,
+                                    "createdAt": "2025-09-10T08:40:30.000Z",
+                                    "updatedAt": "2025-09-10T08:40:30.000Z"
+                                },
+                                {
+                                    "id": 231617,
+                                    "answer": "<span style=\"font-size:15px;color:rgba(0, 0, 0, 1); text-align:justify;vertical-align:middle;\">Ủy ban Thường vụ Quốc hội</span>",
+                                    "isCorrect": false,
+                                    "questionId": 153573,
+                                    "createdAt": "2025-09-10T08:40:30.000Z",
+                                    "updatedAt": "2025-09-10T08:40:30.000Z"
+                                },
+                                {
+                                    "id": 231618,
+                                    "answer": "<span style=\"font-size:15px;color:rgba(0, 0, 0, 1); text-align:justify;vertical-align:middle;\">Quốc hội</span>",
+                                    "isCorrect": false,
+                                    "questionId": 153573,
+                                    "createdAt": "2025-09-10T08:40:30.000Z",
+                                    "updatedAt": "2025-09-10T08:40:30.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 153574,
+                            "question": "<span style=\"font-size:15px;font-weight:bold;color:rgba(0, 0, 0, 1); \">[</span><span style=\"font-weight: bold; font-size:15px;color: rgba(255, 0, 0, 1); \">CÔNG CHỨC 247</span><span style=\"font-weight: bold; font-size:15px;color: rgba(0, 0, 0, 1); \">]: Theo Luật Tổ chức Chính phủ năm 2025, Chính phủ thực hiện báo cáo công tác đột xuất trong trường hợp nào sau đây?</span>",
+                            "categoryId": 1923,
+                            "note": "<span style=\"font-size:15px;font-weight:bold;color:rgba(0, 0, 0, 1); \">Giải thích:</span><span style=\"font-size:15px;color: rgba(0, 0, 0, 1); \"> Theo khoản 2 Điều 11 Luật Tổ chức Chính phủ năm 2025: </span><span style=\"font-style: italic; font-size:15px;color: rgba(0, 0, 0, 1); \">“Chính phủ báo cáo công tác đột xuất theo yêu cầu của Quốc hội, Ủy ban Thường vụ Quốc hội, Chủ tịch nước.”</span>",
+                            "readingContentId": null,
+                            "respondentCount": "141",
+                            "correctRespondentCount": "137",
+                            "type": 1,
+                            "createdAt": "2025-09-10T08:40:30.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-25T15:29:40.000Z",
+                            "answers": [
+                                {
+                                    "id": 231619,
+                                    "answer": "<span style=\"font-size:15px;color:rgba(0, 0, 0, 1); text-align:justify;vertical-align:middle;\">Theo có yêu cầu của Bộ trưởng Bộ Nội vụ</span>",
+                                    "isCorrect": false,
+                                    "questionId": 153574,
+                                    "createdAt": "2025-09-10T08:40:30.000Z",
+                                    "updatedAt": "2025-09-10T08:40:30.000Z"
+                                },
+                                {
+                                    "id": 231620,
+                                    "answer": "<span style=\"font-size:15px;color:rgba(0, 0, 0, 1); text-align:justify;vertical-align:middle;\">Theo yêu cầu của Quốc hội, Ủy ban Thường vụ Quốc hội hoặc Chủ tịch nước</span>",
+                                    "isCorrect": true,
+                                    "questionId": 153574,
+                                    "createdAt": "2025-09-10T08:40:30.000Z",
+                                    "updatedAt": "2025-09-10T08:40:30.000Z"
+                                },
+                                {
+                                    "id": 231621,
+                                    "answer": "<span style=\"font-size:15px;color:rgba(0, 0, 0, 1); vertical-align:middle;\">Khi Chính phủ tự thấy cần thiết</span>",
+                                    "isCorrect": false,
+                                    "questionId": 153574,
+                                    "createdAt": "2025-09-10T08:40:30.000Z",
+                                    "updatedAt": "2025-09-10T08:40:30.000Z"
+                                },
+                                {
+                                    "id": 231622,
+                                    "answer": "<span style=\"font-size:15px;color:rgba(0, 0, 0, 1); text-align:justify;vertical-align:middle;\">Khi có yêu cầu của Kiểm toán Nhà nước</span>",
+                                    "isCorrect": false,
+                                    "questionId": 153574,
+                                    "createdAt": "2025-09-10T08:40:30.000Z",
+                                    "updatedAt": "2025-09-10T08:40:30.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 153575,
+                            "question": "<span style=\"font-size:15px;font-weight:bold;color:rgba(0, 0, 0, 1); \">[</span><span style=\"font-weight: bold; font-size:15px;color: rgba(255, 0, 0, 1); \">CÔNG CHỨC 247</span><span style=\"font-weight: bold; font-size:15px;color: rgba(0, 0, 0, 1); \">]: Theo Luật Tổ chức Chính phủ năm 2025, nội dung nào sau đây thuộc nhiệm vụ, quyền hạn của Thủ tướng Chính phủ về “Lãnh đạo và chịu trách nhiệm về hoạt động của hệ thống hành chính nhà nước từ trung ương đến địa phương”?</span>",
+                            "categoryId": 1923,
+                            "note": "<span style=\"font-size:15px;font-weight:bold;color:rgba(0, 0, 0, 1); \">Giải thích:</span><span style=\"font-size:15px;color: rgba(0, 0, 0, 1); \"> Vì nội dung này thuộc quy định tại điểm c khoản 5 Điều 13 Luật Tổ chức Chính phủ năm 2025: </span><span style=\"font-style: italic; font-size:15px;color: rgba(0, 0, 0, 1); \">“Lãnh đạo, chỉ đạo, tổ chức thanh tra, kiểm tra hoạt động thực thi công vụ của cán bộ, công chức trong hệ thống hành chính nhà nước”.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "453",
+                            "correctRespondentCount": "241",
+                            "type": 1,
+                            "createdAt": "2025-09-10T08:40:30.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-25T16:45:40.000Z",
+                            "answers": [
+                                {
+                                    "id": 231623,
+                                    "answer": "<span style=\"font-size:15px;color:rgba(0, 0, 0, 1); text-align:justify;vertical-align:middle;\">Lãnh đạo, chỉ đạo, tổ chức thanh tra, kiểm tra hoạt động thực thi công vụ của cán bộ, công chức trong hệ thống hành chính nhà nước</span>",
+                                    "isCorrect": true,
+                                    "questionId": 153575,
+                                    "createdAt": "2025-09-10T08:40:30.000Z",
+                                    "updatedAt": "2025-09-10T08:40:30.000Z"
+                                },
+                                {
+                                    "id": 231624,
+                                    "answer": "<span style=\"font-size:15px;color:rgba(0, 0, 0, 1); text-align:justify;vertical-align:middle;\">Triệu tập và chủ trì các phiên họp của Chính phủ, quyết định chương trình công tác của Chính phủ, Thủ tướng Chính phủ</span>",
+                                    "isCorrect": false,
+                                    "questionId": 153575,
+                                    "createdAt": "2025-09-10T08:40:30.000Z",
+                                    "updatedAt": "2025-09-10T08:40:30.000Z"
+                                },
+                                {
+                                    "id": 231625,
+                                    "answer": "<span style=\"font-size:15px;color:rgba(0, 0, 0, 1); vertical-align:middle;\">Lãnh đạo, chỉ đạo xây dựng văn bản pháp luật và chiến lược, quy hoạch, kế hoạch, chính sách và dự án khác thuộc thẩm quyền quyết định của Chính phủ, Thủ tướng Chính phủ</span>",
+                                    "isCorrect": false,
+                                    "questionId": 153575,
+                                    "createdAt": "2025-09-10T08:40:30.000Z",
+                                    "updatedAt": "2025-09-10T08:40:30.000Z"
+                                },
+                                {
+                                    "id": 231626,
+                                    "answer": "<span style=\"font-size:15px;color:rgba(0, 0, 0, 1); text-align:justify;vertical-align:middle;\">Chỉ đạo, điều hòa, phối hợp hoạt động giữa các thành viên Chính phủ; quyết định các vấn đề khi còn có ý kiến khác nhau giữa các Bộ trưởng, Thủ trưởng cơ quan ngang Bộ</span>",
+                                    "isCorrect": false,
+                                    "questionId": 153575,
+                                    "createdAt": "2025-09-10T08:40:30.000Z",
+                                    "updatedAt": "2025-09-10T08:40:30.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 153576,
+                            "question": "<span style=\"font-size:15px;font-weight:bold;color:rgba(0, 0, 0, 1); \">[</span><span style=\"font-weight: bold; font-size:15px;color: rgba(255, 0, 0, 1); \">CÔNG CHỨC 247</span><span style=\"font-weight: bold; font-size:15px;color: rgba(0, 0, 0, 1); \">]: Theo Luật Tổ chức Chính phủ năm 2025, nội dung nào sau đây thuộc nhiệm vụ, quyền hạn của Thủ tướng Chính phủ về “Lãnh đạo và chịu trách nhiệm về hoạt động của hệ thống hành chính nhà nước từ trung ương đến địa phương”?</span>",
+                            "categoryId": 1923,
+                            "note": "<span style=\"font-size:15px;font-weight:bold;color:rgba(0, 0, 0, 1); \">Giải thích:</span><span style=\"font-size:15px;color: rgba(0, 0, 0, 1); \"> Vì nội dung này thuộc quy định tại điểm d khoản 5 Điều 13 Luật Tổ chức Chính phủ năm 2025: </span><span style=\"font-style: italic; font-size:15px;color: rgba(0, 0, 0, 1); \">“Lãnh đạo, chỉ đạo việc quản lý, điều hành toàn bộ cơ sở vật chất, tài chính và nguồn ngân sách nhà nước để phục vụ cho sự vận hành của bộ máy nhà nước”.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "210",
+                            "correctRespondentCount": "132",
+                            "type": 1,
+                            "createdAt": "2025-09-10T08:40:31.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-25T15:30:49.000Z",
+                            "answers": [
+                                {
+                                    "id": 231627,
+                                    "answer": "<span style=\"font-size:15px;color:rgba(0, 0, 0, 1); text-align:justify;vertical-align:middle;\">Chỉ đạo, điều hòa, phối hợp hoạt động giữa các thành viên Chính phủ; quyết định các vấn đề khi còn có ý kiến khác nhau giữa các Bộ trưởng, Thủ trưởng cơ quan ngang Bộ</span>",
+                                    "isCorrect": false,
+                                    "questionId": 153576,
+                                    "createdAt": "2025-09-10T08:40:31.000Z",
+                                    "updatedAt": "2025-09-10T08:40:31.000Z"
+                                },
+                                {
+                                    "id": 231628,
+                                    "answer": "<span style=\"font-size:15px;color:rgba(0, 0, 0, 1); text-align:justify;vertical-align:middle;\">Lãnh đạo, chỉ đạo việc quản lý, điều hành toàn bộ cơ sở vật chất, tài chính và nguồn ngân sách nhà nước để phục vụ cho sự vận hành của bộ máy nhà nước</span>",
+                                    "isCorrect": true,
+                                    "questionId": 153576,
+                                    "createdAt": "2025-09-10T08:40:31.000Z",
+                                    "updatedAt": "2025-09-10T08:40:31.000Z"
+                                },
+                                {
+                                    "id": 231629,
+                                    "answer": "<span style=\"font-size:15px;color:rgba(0, 0, 0, 1); text-align:justify;vertical-align:middle;\">Chính phủ tạo điều kiện thuận lợi để Ủy ban trung ương Mặt trận Tổ quốc Việt Nam và cơ quan trung ương của tổ chức chính trị - xã hội tuyên truyền, phổ biến pháp luật trong Nhân dân, động viên, tổ chức Nhân dân tham gia xây dựng và củng cố chính quyền nhân dân, tổ chức thực hiện các chủ trương, chính sách, pháp luật của Nhà nước, bảo đảm quyền làm chủ của Nhân dân, phản biện xã hội, giám sát hoạt động của cơ quan nhà nước, đại biểu dân cử, cán bộ, công chức và viên chức.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 153576,
+                                    "createdAt": "2025-09-10T08:40:31.000Z",
+                                    "updatedAt": "2025-09-10T08:40:31.000Z"
+                                },
+                                {
+                                    "id": 231630,
+                                    "answer": "<span style=\"font-size:15px;color:rgba(0, 0, 0, 1); text-align:justify;vertical-align:middle;\">Chính phủ có trách nhiệm nghiên cứu, giải quyết và trả lời các kiến nghị của Ủy ban trung ương Mặt trận Tổ quốc Việt Nam và cơ quan trung ương của tổ chức chính trị - xã hội.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 153576,
+                                    "createdAt": "2025-09-10T08:40:31.000Z",
+                                    "updatedAt": "2025-09-10T08:40:31.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 153490,
+                            "question": "<span style=\"font-size:15px;font-weight:bold;color:rgba(0, 0, 0, 1); \">[</span><span style=\"font-weight: bold; font-size:15px;color: rgba(255, 0, 0, 1); \">CÔNG CHỨC 247</span><span style=\"font-weight: bold; font-size:15px;color: rgba(0, 0, 0, 1); \">]: Theo Luật Tổ chức Chính phủ năm 2025, nội dung nào sau đây thể hiện quan hệ của Chính phủ với Ủy ban trung ương Mặt trận Tổ quốc Việt Nam và cơ quan trung ương của tổ chức chính trị - xã hội ?</span>",
+                            "categoryId": 1923,
+                            "note": "<span style=\"font-size:15px;font-weight:bold;color:rgba(0, 0, 0, 1); \">Giải thích:</span><span style=\"font-size:15px;color: rgba(0, 0, 0, 1); \"> Vì nội dung này được quy định tại Điều 12 Luật Tổ chức Chính phủ năm 2025: </span><span style=\"font-style: italic; font-size:15px;color: rgba(0, 0, 0, 1); \">“Chính phủ phối hợp với Ủy ban trung ương Mặt trận Tổ quốc Việt Nam và cơ quan trung ương của tổ chức chính trị - xã hội trong việc thực hiện nhiệm vụ và quyền hạn của mình…..”.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "417",
+                            "correctRespondentCount": "267",
+                            "type": 1,
+                            "createdAt": "2025-09-10T08:40:26.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-25T15:31:09.000Z",
+                            "answers": [
+                                {
+                                    "id": 231283,
+                                    "answer": "<span style=\"font-size:15px;color:rgba(0, 0, 0, 1); text-align:justify;vertical-align:middle;\">Chính phủ phối hợp với Ủy ban trung ương Mặt trận Tổ quốc Việt Nam và cơ quan trung ương của tổ chức chính trị - xã hội trong việc thực hiện nhiệm vụ và quyền hạn của mình.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 153490,
+                                    "createdAt": "2025-09-10T08:40:25.000Z",
+                                    "updatedAt": "2025-09-10T08:40:26.000Z"
+                                },
+                                {
+                                    "id": 231284,
+                                    "answer": "<span style=\"font-size:15px;color:rgba(0, 0, 0, 1); text-align:justify;vertical-align:middle;\">Chính phủ và Ủy ban trung ương Mặt trận Tổ quốc Việt Nam, cơ quan trung ương của tổ chức chính trị - xã hội đẩy mạnh việc phối hợp công tác.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 153490,
+                                    "createdAt": "2025-09-10T08:40:25.000Z",
+                                    "updatedAt": "2025-09-10T08:40:26.000Z"
+                                },
+                                {
+                                    "id": 231285,
+                                    "answer": "<span style=\"font-size:15px;color:rgba(0, 0, 0, 1); text-align:justify;vertical-align:middle;\">Chính phủ có trách nhiệm cung cấp thông tin cho Ủy ban trung ương Mặt trận Tổ quốc Việt Nam và cơ quan trung ương của tổ chức chính trị - xã hội về tình hình kinh tế - xã hội và các quyết định, chủ trương quan trọng của Chính phủ liên quan đến nhiều tầng lớp nhân dân.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 153490,
+                                    "createdAt": "2025-09-10T08:40:25.000Z",
+                                    "updatedAt": "2025-09-10T08:40:26.000Z"
+                                },
+                                {
+                                    "id": 231286,
+                                    "answer": "<span style=\"font-size:15px;color:rgba(0, 0, 0, 1); text-align:justify;vertical-align:middle;\">Chính phủ chủ trì giải quyết và trả lời các kiến nghị của Ủy ban trung ương Mặt trận Tổ quốc Việt Nam và cơ quan trung ương của tổ chức chính trị - xã hội.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 153490,
+                                    "createdAt": "2025-09-10T08:40:25.000Z",
+                                    "updatedAt": "2025-09-10T08:40:26.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 153495,
+                            "question": "<span style=\"font-size:15px;font-weight:bold;color:rgba(0, 0, 0, 1); \">[</span><span style=\"font-weight: bold; font-size:15px;color: rgba(255, 0, 0, 1); \">CÔNG CHỨC 247</span><span style=\"font-weight: bold; font-size:15px;color: rgba(0, 0, 0, 1); \">]: Nội dung nào sau đây thuộc nhiệm vụ, quyền hạn của Thủ tướng Chính phủ theo Luật Tổ chức Chính phủ năm 2025?</span>",
+                            "categoryId": 1923,
+                            "note": "<span style=\"font-size:15px;font-weight:bold;color:rgba(0, 0, 0, 1); \">Giải thích:</span><span style=\"font-size:15px;color: rgba(0, 0, 0, 1); \"> Vì nội dung này được quy định tại khoản 1 Điều 13 Luật Tổ chức Chính phủ năm 2025: </span><span style=\"font-style: italic; font-size:15px;color: rgba(0, 0, 0, 1); \">“Trình Quốc hội phê chuẩn đề nghị bổ nhiệm, miễn nhiệm, cách chức Phó Thủ tướng Chính phủ, Bộ trưởng và Thủ trưởng cơ quan ngang Bộ; trong thời gian Quốc hội không họp, trình Chủ tịch nước quyết định tạm đình chỉ công tác của Phó Thủ tướng Chính phủ, Bộ trưởng và Thủ trưởng cơ quan ngang Bộ”.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "374",
+                            "correctRespondentCount": "311",
+                            "type": 1,
+                            "createdAt": "2025-09-10T08:40:26.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-25T15:31:30.000Z",
+                            "answers": [
+                                {
+                                    "id": 231303,
+                                    "answer": "<span style=\"font-size:15px;color:rgba(0, 0, 0, 1); text-align:justify;vertical-align:middle;\">Chính phủ và Ủy ban trung ương Mặt trận Tổ quốc Việt Nam, cơ quan trung ương của tổ chức chính trị - xã hội xây dựng quy chế phối hợp công tác.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 153495,
+                                    "createdAt": "2025-09-10T08:40:26.000Z",
+                                    "updatedAt": "2025-09-10T08:40:26.000Z"
+                                },
+                                {
+                                    "id": 231304,
+                                    "answer": "<span style=\"font-size:15px;color:rgba(0, 0, 0, 1); text-align:justify;vertical-align:middle;\">Chính phủ thường xuyên thông báo cho Ủy ban trung ương Mặt trận Tổ quốc Việt Nam và cơ quan trung ương của tổ chức chính trị - xã hội về tình hình kinh tế - xã hội và các quyết định, chủ trương quan trọng của Chính phủ liên quan đến nhiều tầng lớp nhân dân.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 153495,
+                                    "createdAt": "2025-09-10T08:40:26.000Z",
+                                    "updatedAt": "2025-09-10T08:40:26.000Z"
+                                },
+                                {
+                                    "id": 231305,
+                                    "answer": "<span style=\"font-size:15px;color:rgba(0, 0, 0, 1); text-align:justify;vertical-align:middle;\">Trình Quốc hội phê chuẩn đề nghị bổ nhiệm, miễn nhiệm, cách chức Phó Thủ tướng Chính phủ, Bộ trưởng và Thủ trưởng cơ quan ngang Bộ; trong thời gian Quốc hội không họp, trình Chủ tịch nước quyết định tạm đình chỉ công tác của Phó Thủ tướng Chính phủ, Bộ trưởng và Thủ trưởng cơ quan ngang Bộ</span>",
+                                    "isCorrect": true,
+                                    "questionId": 153495,
+                                    "createdAt": "2025-09-10T08:40:26.000Z",
+                                    "updatedAt": "2025-09-10T08:40:26.000Z"
+                                },
+                                {
+                                    "id": 231306,
+                                    "answer": "<span style=\"font-size:15px;color:rgba(0, 0, 0, 1); text-align:justify;vertical-align:middle;\">Chính phủ có trách nhiệm nghiên cứu, giải quyết và trả lời các kiến nghị của Ủy ban trung ương Mặt trận Tổ quốc Việt Nam và cơ quan trung ương của tổ chức chính trị - xã hội.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 153495,
+                                    "createdAt": "2025-09-10T08:40:26.000Z",
+                                    "updatedAt": "2025-09-10T08:40:26.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 153504,
+                            "question": "<span style=\"font-size:15px;font-weight:bold;color:rgba(0, 0, 0, 1); \">[</span><span style=\"font-weight: bold; font-size:15px;color: rgba(255, 0, 0, 1); \">CÔNG CHỨC 247</span><span style=\"font-weight: bold; font-size:15px;color: rgba(0, 0, 0, 1); \">]: Theo Luật Tổ chức Chính phủ năm 2025, Thủ tướng Chính phủ lãnh đạo và chịu trách nhiệm về hoạt động của hệ thống hành chính nhà nước ở phạm vi nào sau đây?</span>",
+                            "categoryId": 1923,
+                            "note": "<span style=\"font-size:15px;font-weight:bold;color:rgba(0, 0, 0, 1); \">Giải thích:</span><span style=\"font-size:15px;color: rgba(0, 0, 0, 1); \"> Vì nội dung này được quy định tại khoản 5 Điều 13 Luật Tổ chức Chính phủ năm 2025: </span><span style=\"font-style: italic; font-size:15px;color: rgba(0, 0, 0, 1); \">“Lãnh đạo và chịu trách nhiệm về hoạt động của hệ thống hành chính nhà nước từ trung ương đến địa phương….”.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "367",
+                            "correctRespondentCount": "321",
+                            "type": 1,
+                            "createdAt": "2025-09-10T08:40:26.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-25T16:32:16.000Z",
+                            "answers": [
+                                {
+                                    "id": 231339,
+                                    "answer": "<span style=\"font-size:15px;color:rgba(0, 0, 0, 1); text-align:justify;vertical-align:middle;\">Từ cấp huyện trở lên</span>",
+                                    "isCorrect": false,
+                                    "questionId": 153504,
+                                    "createdAt": "2025-09-10T08:40:26.000Z",
+                                    "updatedAt": "2025-09-10T08:40:26.000Z"
+                                },
+                                {
+                                    "id": 231340,
+                                    "answer": "<span style=\"font-size:15px;color:rgba(0, 0, 0, 1); text-align:justify;vertical-align:middle;\">Từ trung ương đến địa phương</span>",
+                                    "isCorrect": true,
+                                    "questionId": 153504,
+                                    "createdAt": "2025-09-10T08:40:26.000Z",
+                                    "updatedAt": "2025-09-10T08:40:26.000Z"
+                                },
+                                {
+                                    "id": 231341,
+                                    "answer": "<span style=\"font-size:15px;color:rgba(0, 0, 0, 1); text-align:justify;vertical-align:middle;\">Trong các bộ, ngành trung ương</span>",
+                                    "isCorrect": false,
+                                    "questionId": 153504,
+                                    "createdAt": "2025-09-10T08:40:26.000Z",
+                                    "updatedAt": "2025-09-10T08:40:26.000Z"
+                                },
+                                {
+                                    "id": 231342,
+                                    "answer": "<span style=\"font-size:15px;color:rgba(0, 0, 0, 1); text-align:justify;vertical-align:middle;\">Ở các địa phương cấp tỉnh</span>",
+                                    "isCorrect": false,
+                                    "questionId": 153504,
+                                    "createdAt": "2025-09-10T08:40:26.000Z",
+                                    "updatedAt": "2025-09-10T08:40:26.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        }
+                    ]
+                },
+                "exam": {
+                    "data": {
+                        "id": 1885,
+                        "name": "Đề 03: Luật Tổ chức chính phủ 2025",
+                        "duration": 30,
+                        "retry": 3,
+                        "referencePoint": 5,
+                        "type": 1,
+                        "createdAt": "2025-09-10T08:49:22.000Z",
+                        "updatedAt": "2025-09-10T08:50:34.000Z"
+                    }
+                }
+            }
+        },
+        "testSessionAnswers": []
+    }
+}

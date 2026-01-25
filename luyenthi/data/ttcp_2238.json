@@ -1,0 +1,1984 @@
+{
+    "data": {
+        "id": 160609,
+        "userId": 13907,
+        "examPackId": 623,
+        "examId": 2238,
+        "examCodeId": 160946,
+        "score": 0,
+        "correctQuestion": 0,
+        "inCorrectQuestion": 0,
+        "skipQuestion": 0,
+        "type": 1,
+        "status": 0,
+        "startTime": "2026-01-25T16:29:06.000Z",
+        "completedAt": null,
+        "createdAt": "2026-01-25T16:29:05.000Z",
+        "updatedAt": "2026-01-25T16:29:05.000Z",
+        "user": {
+            "id": 13907,
+            "email": "truongnguyen@gmail.com",
+            "username": null,
+            "code": "527463",
+            "phoneNumber": "",
+            "firstName": null,
+            "lastName": null,
+            "image": null,
+            "position": null,
+            "organization": null,
+            "status": 1,
+            "verifyToken": null,
+            "verified": false,
+            "verifiedAt": null,
+            "source": 1,
+            "deletedAt": null,
+            "createdAt": "2026-01-25T15:41:40.000Z",
+            "updatedAt": "2026-01-25T15:41:40.000Z"
+        },
+        "examCode": {
+            "data": {
+                "id": 160946,
+                "examId": 2238,
+                "createdAt": "2026-01-25T16:29:05.000Z",
+                "updatedAt": "2026-01-25T16:29:05.000Z",
+                "questions": {
+                    "data": [
+                        {
+                            "id": 167593,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]</span><span style=\"font-weight: bold; font-size:16px;\">: Theo Nghị định 303/2025/NĐ-CP ngày 19/11/2025 của Chính phủ, đâu không phải tiêu chí thành lập cục?</span>",
+                            "categoryId": 2336,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Giải thích: căn cứ khoản 4 Điều 9<br/>“4. Tiêu chí thành lập cục<br/>a) Có đối tượng quản lý về chuyên ngành, lĩnh vực thuộc phạm vi quản lý nhà nước của bộ theo quy định của pháp luật chuyên ngành;<br/>b) Được phân cấp của Bộ trưởng để quyết định các vấn đề thuộc phạm vi quản lý nhà nước về chuyên ngành, lĩnh vực theo phân công của Chính phủ;<br/>c) Khối lượng công việc yêu cầu phải bố trí từ 30 biên chế công chức trở lên.”<br/>-Đáp án A sai “20 biên chế công chức”<br/></span>",
+                            "readingContentId": null,
+                            "respondentCount": "37",
+                            "correctRespondentCount": "33",
+                            "type": 1,
+                            "createdAt": "2026-01-17T04:11:15.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-25T14:05:34.000Z",
+                            "answers": [
+                                {
+                                    "id": 284879,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Khối lượng công việc yêu cầu phải bố trí từ 20 biên chế công chức trở lên.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 167593,
+                                    "createdAt": "2026-01-17T04:11:15.000Z",
+                                    "updatedAt": "2026-01-17T04:11:15.000Z"
+                                },
+                                {
+                                    "id": 284880,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Có đối tượng quản lý về chuyên ngành, lĩnh vực thuộc phạm vi quản lý nhà nước của bộ theo quy định của pháp luật chuyên ngành</span>",
+                                    "isCorrect": false,
+                                    "questionId": 167593,
+                                    "createdAt": "2026-01-17T04:11:15.000Z",
+                                    "updatedAt": "2026-01-17T04:11:15.000Z"
+                                },
+                                {
+                                    "id": 284881,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Được phân cấp của Bộ trưởng để quyết định các vấn đề thuộc phạm vi quản lý nhà nước về chuyên ngành, lĩnh vực theo phân công của Chính phủ</span>",
+                                    "isCorrect": false,
+                                    "questionId": 167593,
+                                    "createdAt": "2026-01-17T04:11:15.000Z",
+                                    "updatedAt": "2026-01-17T04:11:15.000Z"
+                                },
+                                {
+                                    "id": 284882,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Khối lượng công việc yêu cầu phải bố trí từ 30 biên chế công chức trở lên.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 167593,
+                                    "createdAt": "2026-01-17T04:11:15.000Z",
+                                    "updatedAt": "2026-01-17T04:11:15.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 167594,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]</span><span style=\"font-weight: bold; font-size:16px;\">: Theo Nghị định 303/2025/NĐ-CP ngày 19/11/2025 của Chính phủ, cơ cấu tổ chức của cục gồm bao nhiêu đơn vị?</span>",
+                            "categoryId": 2336,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Giải thích: căn cứ khoản 5 Điều 9<br/>5. Cơ cấu tổ chức của cục, gồm:<br/>a) Ban (đối với cục loại 1) hoặc phòng (đối với cục loại 2);<br/>b) Văn phòng (nếu có);<br/>c) Thanh tra (nếu có);<br/>d) Chi cục và tương đương (nếu có);<br/>đ) Đơn vị sự nghiệp công lập (nếu có).<br/></span>",
+                            "readingContentId": null,
+                            "respondentCount": "86",
+                            "correctRespondentCount": "66",
+                            "type": 1,
+                            "createdAt": "2026-01-17T04:11:15.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-25T15:55:03.000Z",
+                            "answers": [
+                                {
+                                    "id": 284883,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">4</span>",
+                                    "isCorrect": false,
+                                    "questionId": 167594,
+                                    "createdAt": "2026-01-17T04:11:15.000Z",
+                                    "updatedAt": "2026-01-17T04:11:15.000Z"
+                                },
+                                {
+                                    "id": 284884,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">5</span>",
+                                    "isCorrect": true,
+                                    "questionId": 167594,
+                                    "createdAt": "2026-01-17T04:11:15.000Z",
+                                    "updatedAt": "2026-01-17T04:11:15.000Z"
+                                },
+                                {
+                                    "id": 284885,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">6</span>",
+                                    "isCorrect": false,
+                                    "questionId": 167594,
+                                    "createdAt": "2026-01-17T04:11:15.000Z",
+                                    "updatedAt": "2026-01-17T04:11:15.000Z"
+                                },
+                                {
+                                    "id": 284886,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">7</span>",
+                                    "isCorrect": false,
+                                    "questionId": 167594,
+                                    "createdAt": "2026-01-17T04:11:15.000Z",
+                                    "updatedAt": "2026-01-17T04:11:15.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 167595,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]</span><span style=\"font-weight: bold; font-size:16px;\">: Theo Nghị định 303/2025/NĐ-CP ngày 19/11/2025 của Chính phủ, cơ cấu tổ chức của cục không bao gồm?</span>",
+                            "categoryId": 2336,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Giải thích: căn cứ khoản 5 Điều 9<br/>“5. Cơ cấu tổ chức của cục, gồm:<br/>a) Ban (đối với cục loại 1) hoặc phòng (đối với cục loại 2);<br/>b) Văn phòng (nếu có);<br/>c) Thanh tra (nếu có);<br/>d) Chi cục và tương đương (nếu có);<br/>đ) Đơn vị sự nghiệp công lập (nếu có)”<br/>- Đáp án A,B,D thuộc nội dung khoản 5 Điều 9<br/>- Đáp án C: Cơ cấu tổ chức của bộ<br/></span>",
+                            "readingContentId": null,
+                            "respondentCount": "55",
+                            "correctRespondentCount": "38",
+                            "type": 1,
+                            "createdAt": "2026-01-17T04:11:15.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-25T14:05:49.000Z",
+                            "answers": [
+                                {
+                                    "id": 284887,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Ban (đối với cục loại 1) hoặc phòng (đối với cục loại 2);</span>",
+                                    "isCorrect": false,
+                                    "questionId": 167595,
+                                    "createdAt": "2026-01-17T04:11:15.000Z",
+                                    "updatedAt": "2026-01-17T04:11:15.000Z"
+                                },
+                                {
+                                    "id": 284888,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\"> Văn phòng (nếu có);</span>",
+                                    "isCorrect": false,
+                                    "questionId": 167595,
+                                    "createdAt": "2026-01-17T04:11:15.000Z",
+                                    "updatedAt": "2026-01-17T04:11:15.000Z"
+                                },
+                                {
+                                    "id": 284889,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Cục và tương đương (sau đây gọi chung là cục)</span>",
+                                    "isCorrect": true,
+                                    "questionId": 167595,
+                                    "createdAt": "2026-01-17T04:11:15.000Z",
+                                    "updatedAt": "2026-01-17T04:11:15.000Z"
+                                },
+                                {
+                                    "id": 284890,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Chi cục và tương đương (nếu có);</span>",
+                                    "isCorrect": false,
+                                    "questionId": 167595,
+                                    "createdAt": "2026-01-17T04:11:15.000Z",
+                                    "updatedAt": "2026-01-17T04:11:15.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 167596,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]</span><span style=\"font-weight: bold; font-size:16px;\">: Theo Nghị định 303/2025/NĐ-CP ngày 19/11/2025 của Chính phủ, khẳng định nào sau đây đúng?</span>",
+                            "categoryId": 2336,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Giải thích: căn cứ khoản 1 Điều 9: “Cục là tổ chức thuộc bộ, thực hiện chức năng tham mưu, giúp Bộ trưởng quản lý nhà nước và tổ chức thực thi pháp luật đối với ngành, lĩnh vực”<br/>-Đáp án A sai thiếu “thuộc bộ”<br/>-Đáp án B sai thiếu “tham mưu”, sai “giúp việc”<br/>-Đáp án C sai “tham mưu hoặc giúp việc”</span>",
+                            "readingContentId": null,
+                            "respondentCount": "123",
+                            "correctRespondentCount": "74",
+                            "type": 1,
+                            "createdAt": "2026-01-17T04:11:15.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-25T15:49:02.000Z",
+                            "answers": [
+                                {
+                                    "id": 284891,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Cục là tổ chức thực hiện chức năng tham mưu, giúp Bộ trưởng quản lý nhà nước và tổ chức thực thi pháp luật đối với ngành, lĩnh vực.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 167596,
+                                    "createdAt": "2026-01-17T04:11:15.000Z",
+                                    "updatedAt": "2026-01-17T04:11:15.000Z"
+                                },
+                                {
+                                    "id": 284892,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Cục là tổ chức thuộc bộ, thực hiện chức năng giúp việc Bộ trưởng quản lý nhà nước và tổ chức thực thi pháp luật đối với ngành, lĩnh vực.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 167596,
+                                    "createdAt": "2026-01-17T04:11:15.000Z",
+                                    "updatedAt": "2026-01-17T04:11:15.000Z"
+                                },
+                                {
+                                    "id": 284893,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Cục là tổ chức thuộc bộ, thực hiện chức năng tham mưu hoặc giúp việc Bộ trưởng quản lý nhà nước và tổ chức thực thi pháp luật đối với ngành, lĩnh vực.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 167596,
+                                    "createdAt": "2026-01-17T04:11:15.000Z",
+                                    "updatedAt": "2026-01-17T04:11:15.000Z"
+                                },
+                                {
+                                    "id": 284894,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Cục là tổ chức thuộc bộ, thực hiện chức năng tham mưu, giúp Bộ trưởng quản lý nhà nước và tổ chức thực thi pháp luật đối với ngành, lĩnh vực.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 167596,
+                                    "createdAt": "2026-01-17T04:11:15.000Z",
+                                    "updatedAt": "2026-01-17T04:11:15.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 167597,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]</span><span style=\"font-weight: bold; font-size:16px;\">: Theo Nghị định 303/2025/NĐ-CP ngày 19/11/2025 của Chính phủ, cơ cấu tổ chức của Cục có thể bao gồm những đơn vị nào sau đây?</span>",
+                            "categoryId": 2336,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Giải thích: Chọn đáp án A<br/>Giải thích: Căn cứ khoản 5 Điều 9 Nghị định 303/2025/NĐ-CP.<br/> \"5. Cơ cấu tổ chức của cục, gồm: a) Ban (đối với cục loại 1) hoặc phòng (đối với cục loại 2); b) Văn phòng (nếu có); c) Thanh tra (nếu có); d) Chi cục và tương đương (nếu có); đ) Đơn vị sự nghiệp công lập (nếu có).\" <br/>Phân tích: Đáp án A nêu đúng tên gọi các đơn vị tham mưu trong Cục loại 1 và Cục loại 2. Các Đáp án khác không có trong cơ cấu tổ chức của Cục theo quy định này.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "55",
+                            "correctRespondentCount": "55",
+                            "type": 1,
+                            "createdAt": "2026-01-17T04:11:15.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-25T16:45:32.000Z",
+                            "answers": [
+                                {
+                                    "id": 284895,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\"> Ban (đối với cục loại 1) hoặc phòng (đối với cục loại 2) </span>",
+                                    "isCorrect": true,
+                                    "questionId": 167597,
+                                    "createdAt": "2026-01-17T04:11:15.000Z",
+                                    "updatedAt": "2026-01-17T04:11:15.000Z"
+                                },
+                                {
+                                    "id": 284896,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\"> Sở </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167597,
+                                    "createdAt": "2026-01-17T04:11:15.000Z",
+                                    "updatedAt": "2026-01-17T04:11:15.000Z"
+                                },
+                                {
+                                    "id": 284897,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Tổng đội </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167597,
+                                    "createdAt": "2026-01-17T04:11:15.000Z",
+                                    "updatedAt": "2026-01-17T04:11:15.000Z"
+                                },
+                                {
+                                    "id": 284898,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Viện </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167597,
+                                    "createdAt": "2026-01-17T04:11:15.000Z",
+                                    "updatedAt": "2026-01-17T04:11:15.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 167598,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]</span><span style=\"font-weight: bold; font-size:16px;\">: Theo Nghị định 303/2025/NĐ-CP ngày 19/11/2025 của Chính phủ, trường hợp nào bộ được thành lập cục thuộc bộ để thực hiện chức năng quản trị nội bộ?</span>",
+                            "categoryId": 2336,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Giải thích: Căn cứ khoản 2 Điều 9 Nghị định 303/2025/NĐ-CP.<br/>\"Trường hợp bộ quản lý cơ sở vật chất kỹ thuật lớn có tính hệ thống đặt ở nhiều địa phương thì được thành lập cục thuộc bộ để thực hiện chức năng quản trị nội bộ.\"</span>",
+                            "readingContentId": null,
+                            "respondentCount": "38",
+                            "correctRespondentCount": "33",
+                            "type": 1,
+                            "createdAt": "2026-01-17T04:11:15.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-25T14:06:50.000Z",
+                            "answers": [
+                                {
+                                    "id": 284899,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\"> Khi bộ quản lý nhiều đơn vị sự nghiệp công lập. </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167598,
+                                    "createdAt": "2026-01-17T04:11:15.000Z",
+                                    "updatedAt": "2026-01-17T04:11:15.000Z"
+                                },
+                                {
+                                    "id": 284900,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Khi bộ có quy mô lớn với số lượng biên chế trên 1000 người. </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167598,
+                                    "createdAt": "2026-01-17T04:11:15.000Z",
+                                    "updatedAt": "2026-01-17T04:11:15.000Z"
+                                },
+                                {
+                                    "id": 284901,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Khi bộ quản lý cơ sở vật chất kỹ thuật lớn có tính hệ thống đặt ở nhiều địa phương. </span>",
+                                    "isCorrect": true,
+                                    "questionId": 167598,
+                                    "createdAt": "2026-01-17T04:11:15.000Z",
+                                    "updatedAt": "2026-01-17T04:11:15.000Z"
+                                },
+                                {
+                                    "id": 284902,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Khi bộ thực hiện các nhiệm vụ có tính chất đặc thù theo quy định của Chính phủ. </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167598,
+                                    "createdAt": "2026-01-17T04:11:15.000Z",
+                                    "updatedAt": "2026-01-17T04:11:15.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 167599,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]</span><span style=\"font-weight: bold; font-size:16px;\">: Theo Nghị định 303/2025/NĐ-CP ngày 19/11/2025 của Chính phủ, Cục loại 2 thuộc bộ thực hiện chức năng nào sau đây?</span>",
+                            "categoryId": 2336,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Giải thích: Căn cứ điểm b khoản 2 Điều 9 Nghị định 303/2025/NĐ-CP. Trích dẫn: \"b) Cục loại 2 là tổ chức thuộc bộ, thực hiện chức năng tham mưu và giải quyết các vấn đề cụ thể trong một hoặc một số lĩnh vực, giúp Bộ trưởng quản lý nhà nước và tổ chức thực thi pháp luật về ngành, lĩnh vực theo phân cấp của Bộ trưởng.\" <br/>-Đáp án A sai “tham mưu hoặc giải quyết”<br/>-Đáp án C sai “giúp Chính phủ quản lý nhà nước”<br/>-Đáp án D sai “tất cả các lĩnh vực”</span>",
+                            "readingContentId": null,
+                            "respondentCount": "73",
+                            "correctRespondentCount": "50",
+                            "type": 1,
+                            "createdAt": "2026-01-17T04:11:15.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-25T15:00:13.000Z",
+                            "answers": [
+                                {
+                                    "id": 284903,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Thực hiện chức năng tham mưu hoặc giải quyết các vấn đề cụ thể trong một hoặc một số lĩnh vực, giúp Bộ trưởng quản lý nhà nước và tổ chức thực thi pháp luật về ngành, lĩnh vực theo phân cấp của Bộ trưởng.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 167599,
+                                    "createdAt": "2026-01-17T04:11:15.000Z",
+                                    "updatedAt": "2026-01-17T04:11:15.000Z"
+                                },
+                                {
+                                    "id": 284904,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Thực hiện chức năng tham mưu và giải quyết các vấn đề cụ thể trong một hoặc một số lĩnh vực, giúp Bộ trưởng quản lý nhà nước và tổ chức thực thi pháp luật về ngành, lĩnh vực theo phân cấp của Bộ trưởng.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 167599,
+                                    "createdAt": "2026-01-17T04:11:15.000Z",
+                                    "updatedAt": "2026-01-17T04:11:15.000Z"
+                                },
+                                {
+                                    "id": 284905,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Thực hiện chức năng tham mưu và giải quyết các vấn đề cụ thể trong một hoặc một số lĩnh vực, giúp Chính phủ quản lý nhà nước và tổ chức thực thi pháp luật về ngành, lĩnh vực theo phân cấp của Bộ trưởng.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 167599,
+                                    "createdAt": "2026-01-17T04:11:15.000Z",
+                                    "updatedAt": "2026-01-17T04:11:15.000Z"
+                                },
+                                {
+                                    "id": 284906,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Thực hiện chức năng tham mưu và giải quyết các vấn đề cụ thể trong tất cả các lĩnh vực, giúp Bộ trưởng quản lý nhà nước và tổ chức thực thi pháp luật về ngành, lĩnh vực theo phân cấp của Bộ trưởng.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 167599,
+                                    "createdAt": "2026-01-17T04:11:15.000Z",
+                                    "updatedAt": "2026-01-17T04:11:15.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 167600,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]</span><span style=\"font-weight: bold; font-size:16px;\">: Theo Nghị định 303/2025/NĐ-CP ngày 19/11/2025 của Chính phủ, trường hợp đặc biệt nào cho phép thành lập phòng trong vụ?</span>",
+                            "categoryId": 2336,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Giải thích: Căn cứ khoản 1 Điều 10 Nghị định 303/2025/NĐ CP. <br/>\"1. Không tổ chức phòng trong vụ. Trường hợp đặc biệt, đối với vụ thuộc bộ mới sáp nhập, hợp nhất từ 03 đầu mối cấp vụ trở lên hoặc vụ có số biên chế công chức lớn (từ 45 biên chế công chức trở lên được cấp có thẩm quyền giao) thì có thể xem xét thành lập phòng (mỗi phòng phải có đủ 15 biên chế công chức trở lên) và số lượng phòng trong vụ thuộc bộ (nếu có) phải được quy định tại Nghị định quy định chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của bộ.\" <br/>Phân tích: Đáp án C nêu đúng một trong hai trường hợp đặc biệt được quy định. Đáp án A sai số lượng biên chế. Đáp án B sai số lượng đầu mối sáp nhập (phải từ 03 trở lên), Đáp án D sai.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "47",
+                            "correctRespondentCount": "39",
+                            "type": 1,
+                            "createdAt": "2026-01-17T04:11:15.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-25T15:56:04.000Z",
+                            "answers": [
+                                {
+                                    "id": 284907,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Vụ có từ 30 biên chế công chức trở lên được cấp có thẩm quyền giao. </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167600,
+                                    "createdAt": "2026-01-17T04:11:15.000Z",
+                                    "updatedAt": "2026-01-17T04:11:15.000Z"
+                                },
+                                {
+                                    "id": 284908,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Vụ thuộc bộ mới sáp nhập, hợp nhất từ 02 đầu mối cấp vụ trở lên. </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167600,
+                                    "createdAt": "2026-01-17T04:11:15.000Z",
+                                    "updatedAt": "2026-01-17T04:11:15.000Z"
+                                },
+                                {
+                                    "id": 284909,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Vụ có số biên chế công chức lớn từ 45 biên chế công chức trở lên được cấp có thẩm quyền giao. </span>",
+                                    "isCorrect": true,
+                                    "questionId": 167600,
+                                    "createdAt": "2026-01-17T04:11:15.000Z",
+                                    "updatedAt": "2026-01-17T04:11:15.000Z"
+                                },
+                                {
+                                    "id": 284910,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Vụ thực hiện nhiệm vụ có tính chất phức tạp, nhạy cảm. </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167600,
+                                    "createdAt": "2026-01-17T04:11:15.000Z",
+                                    "updatedAt": "2026-01-17T04:11:15.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 167601,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]</span><span style=\"font-weight: bold; font-size:16px;\">: Theo Nghị định 303/2025/NĐ-CP ngày 19/11/2025 của Chính phủ, tiêu chí về khối lượng công việc để thành lập phòng thuộc văn phòng, thanh tra thuộc bộ là khi khối lượng công việc yêu cầu phải phải bố trí từ bao nhiêu biên chế công chức trở lên?</span>",
+                            "categoryId": 2336,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Giải thích: Căn cứ điểm b khoản 2 Điều 10 Nghị định 303/2025/NĐ-CP. Trích dẫn: \"2. Tiêu chí thành lập phòng thuộc văn phòng, thanh tra thuộc bộ ... b) Khối lượng công việc yêu cầu phải bố trí từ 07 biên chế công chức trở lên.\" </span>",
+                            "readingContentId": null,
+                            "respondentCount": "47",
+                            "correctRespondentCount": "33",
+                            "type": 1,
+                            "createdAt": "2026-01-17T04:11:15.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-25T14:08:13.000Z",
+                            "answers": [
+                                {
+                                    "id": 284911,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">05 biên chế công chức </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167601,
+                                    "createdAt": "2026-01-17T04:11:15.000Z",
+                                    "updatedAt": "2026-01-17T04:11:15.000Z"
+                                },
+                                {
+                                    "id": 284912,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">07 biên chế công chức </span>",
+                                    "isCorrect": true,
+                                    "questionId": 167601,
+                                    "createdAt": "2026-01-17T04:11:15.000Z",
+                                    "updatedAt": "2026-01-17T04:11:15.000Z"
+                                },
+                                {
+                                    "id": 284913,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">10 biên chế công chức </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167601,
+                                    "createdAt": "2026-01-17T04:11:15.000Z",
+                                    "updatedAt": "2026-01-17T04:11:15.000Z"
+                                },
+                                {
+                                    "id": 284914,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">15 biên chế công chức </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167601,
+                                    "createdAt": "2026-01-17T04:11:15.000Z",
+                                    "updatedAt": "2026-01-17T04:11:15.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 167602,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]</span><span style=\"font-weight: bold; font-size:16px;\">: Theo Nghị định 303/2025/NĐ-CP ngày 19/11/2025 của Chính phủ, tiêu chí về khối lượng công việc để thành lập ban, văn phòng thuộc cục loại 1 là khi khối lượng công việc yêu cầu phải bố trí từ bao nhiêu biên chế công chức trở lên?</span>",
+                            "categoryId": 2336,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Giải thích: Căn cứ điểm b khoản 3 Điều 10 Nghị định 303/2025/NĐ-CP.<br/>\"3. Tiêu chí thành lập ban, văn phòng thuộc cục loại 1 ... b) Khối lượng công việc yêu cầu phải bố trí từ 15 biên chế công chức trở lên.\" </span>",
+                            "readingContentId": null,
+                            "respondentCount": "43",
+                            "correctRespondentCount": "40",
+                            "type": 1,
+                            "createdAt": "2026-01-17T04:11:16.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-25T14:39:49.000Z",
+                            "answers": [
+                                {
+                                    "id": 284915,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">10 biên chế công chức </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167602,
+                                    "createdAt": "2026-01-17T04:11:15.000Z",
+                                    "updatedAt": "2026-01-17T04:11:16.000Z"
+                                },
+                                {
+                                    "id": 284916,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">12 biên chế công chức </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167602,
+                                    "createdAt": "2026-01-17T04:11:15.000Z",
+                                    "updatedAt": "2026-01-17T04:11:16.000Z"
+                                },
+                                {
+                                    "id": 284917,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">15 biên chế công chức </span>",
+                                    "isCorrect": true,
+                                    "questionId": 167602,
+                                    "createdAt": "2026-01-17T04:11:15.000Z",
+                                    "updatedAt": "2026-01-17T04:11:16.000Z"
+                                },
+                                {
+                                    "id": 284918,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">20 biên chế công chức </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167602,
+                                    "createdAt": "2026-01-17T04:11:15.000Z",
+                                    "updatedAt": "2026-01-17T04:11:16.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 167603,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]</span><span style=\"font-weight: bold; font-size:16px;\">: Theo Nghị định 303/2025/NĐ-CP ngày 19/11/2025 của Chính phủ, tiêu chí về khối lượng công việc để thành lập phòng, văn phòng thuộc cục loại 2 là khi khối lượng công việc yêu cầu phải bố trí từ bao nhiêu biên chế công chức trở lên?</span>",
+                            "categoryId": 2336,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Giải thích: Căn cứ điểm b khoản 5 Điều 10 Nghị định 303/2025/NĐ-CP.<br/>\"5. Tiêu chí thành lập phòng, văn phòng thuộc cục loại 2 ... b) Khối lượng công việc yêu cầu phải bố trí từ 07 biên chế công chức trở lên.\" </span>",
+                            "readingContentId": null,
+                            "respondentCount": "39",
+                            "correctRespondentCount": "32",
+                            "type": 1,
+                            "createdAt": "2026-01-17T04:11:16.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-25T14:09:29.000Z",
+                            "answers": [
+                                {
+                                    "id": 284919,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\"> 05 biên chế công chức </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167603,
+                                    "createdAt": "2026-01-17T04:11:16.000Z",
+                                    "updatedAt": "2026-01-17T04:11:16.000Z"
+                                },
+                                {
+                                    "id": 284920,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">07 biên chế công chức </span>",
+                                    "isCorrect": true,
+                                    "questionId": 167603,
+                                    "createdAt": "2026-01-17T04:11:16.000Z",
+                                    "updatedAt": "2026-01-17T04:11:16.000Z"
+                                },
+                                {
+                                    "id": 284921,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">09 biên chế công chức </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167603,
+                                    "createdAt": "2026-01-17T04:11:16.000Z",
+                                    "updatedAt": "2026-01-17T04:11:16.000Z"
+                                },
+                                {
+                                    "id": 284922,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">10 biên chế công chức </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167603,
+                                    "createdAt": "2026-01-17T04:11:16.000Z",
+                                    "updatedAt": "2026-01-17T04:11:16.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 167604,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]</span><span style=\"font-weight: bold; font-size:16px;\">: Theo Nghị định 303/2025/NĐ-CP ngày 19/11/2025 của Chính phủ, tiêu chí về khối lượng công việc để thành lập chi cục thuộc cục loại 1 là khi khối lượng công việc yêu cầu phải bố trí từ bao nhiêu biên chế công chức trở lên?</span>",
+                            "categoryId": 2336,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Giải thích: Căn cứ điểm c khoản 6 Điều 10 Nghị định 303/2025/NĐ-CP.<br/>\"6. Tiêu chí thành lập chi cục thuộc cục loại 1 ... c) Khối lượng công việc yêu cầu phải bố trí từ 30 biên chế công chức trở lên.\" </span>",
+                            "readingContentId": null,
+                            "respondentCount": "40",
+                            "correctRespondentCount": "31",
+                            "type": 1,
+                            "createdAt": "2026-01-17T04:11:16.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-25T14:09:34.000Z",
+                            "answers": [
+                                {
+                                    "id": 284923,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">15 biên chế công chức </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167604,
+                                    "createdAt": "2026-01-17T04:11:16.000Z",
+                                    "updatedAt": "2026-01-17T04:11:16.000Z"
+                                },
+                                {
+                                    "id": 284924,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">20 biên chế công chức </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167604,
+                                    "createdAt": "2026-01-17T04:11:16.000Z",
+                                    "updatedAt": "2026-01-17T04:11:16.000Z"
+                                },
+                                {
+                                    "id": 284925,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">25 biên chế công chức </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167604,
+                                    "createdAt": "2026-01-17T04:11:16.000Z",
+                                    "updatedAt": "2026-01-17T04:11:16.000Z"
+                                },
+                                {
+                                    "id": 284926,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">30 biên chế công chức </span>",
+                                    "isCorrect": true,
+                                    "questionId": 167604,
+                                    "createdAt": "2026-01-17T04:11:16.000Z",
+                                    "updatedAt": "2026-01-17T04:11:16.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 167605,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]</span><span style=\"font-weight: bold; font-size:16px;\">: Theo Nghị định 303/2025/NĐ-CP ngày 19/11/2025 của Chính phủ, tiêu chí về khối lượng công việc để thành lập chi cục thuộc cục loại 2 là khi khối lượng công việc yêu cầu phải bố trí từ bao nhiêu biên chế công chức trở lên?</span>",
+                            "categoryId": 2336,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Giải thích: Căn cứ điểm c khoản 7 Điều 10 Nghị định 303/2025/NĐ-CP.<br/>\"7. Tiêu chí thành lập chi cục thuộc cục loại 2 ... c) Khối lượng công việc yêu cầu phải bố trí từ 15 biên chế công chức trở lên.\" </span>",
+                            "readingContentId": null,
+                            "respondentCount": "56",
+                            "correctRespondentCount": "49",
+                            "type": 1,
+                            "createdAt": "2026-01-17T04:11:16.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-25T14:57:56.000Z",
+                            "answers": [
+                                {
+                                    "id": 284927,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">15 biên chế công chức </span>",
+                                    "isCorrect": true,
+                                    "questionId": 167605,
+                                    "createdAt": "2026-01-17T04:11:16.000Z",
+                                    "updatedAt": "2026-01-17T04:11:16.000Z"
+                                },
+                                {
+                                    "id": 284928,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">20 biên chế công chức </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167605,
+                                    "createdAt": "2026-01-17T04:11:16.000Z",
+                                    "updatedAt": "2026-01-17T04:11:16.000Z"
+                                },
+                                {
+                                    "id": 284929,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">25 biên chế công chức </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167605,
+                                    "createdAt": "2026-01-17T04:11:16.000Z",
+                                    "updatedAt": "2026-01-17T04:11:16.000Z"
+                                },
+                                {
+                                    "id": 284930,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">30 biên chế công chức </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167605,
+                                    "createdAt": "2026-01-17T04:11:16.000Z",
+                                    "updatedAt": "2026-01-17T04:11:16.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 167606,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]</span><span style=\"font-weight: bold; font-size:16px;\">: Theo Nghị định 303/2025/NĐ-CP ngày 19/11/2025 của Chính phủ, tiêu chí về khối lượng công việc để thành lập phòng thuộc chi cục thuộc cục loại 1 là khi khối lượng công việc yêu cầu phải bố trí từ bao nhiêu biên chế công chức trở lên?</span>",
+                            "categoryId": 2336,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Giải thích: Căn cứ điểm b khoản 8 Điều 10 Nghị định 303/2025/NĐ-CP.<br/>\"8. Tiêu chí thành lập phòng thuộc chi cục thuộc cục loại 1 ... b) Khối lượng công việc yêu cầu phải bố trí từ 07 biên chế công chức trở lên.\"</span>",
+                            "readingContentId": null,
+                            "respondentCount": "46",
+                            "correctRespondentCount": "42",
+                            "type": 1,
+                            "createdAt": "2026-01-17T04:11:16.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-25T14:09:54.000Z",
+                            "answers": [
+                                {
+                                    "id": 284931,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">05 biên chế công chức </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167606,
+                                    "createdAt": "2026-01-17T04:11:16.000Z",
+                                    "updatedAt": "2026-01-17T04:11:16.000Z"
+                                },
+                                {
+                                    "id": 284932,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">07 biên chế công chức </span>",
+                                    "isCorrect": true,
+                                    "questionId": 167606,
+                                    "createdAt": "2026-01-17T04:11:16.000Z",
+                                    "updatedAt": "2026-01-17T04:11:16.000Z"
+                                },
+                                {
+                                    "id": 284933,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">09 biên chế công chức </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167606,
+                                    "createdAt": "2026-01-17T04:11:16.000Z",
+                                    "updatedAt": "2026-01-17T04:11:16.000Z"
+                                },
+                                {
+                                    "id": 284934,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">10 biên chế công chức </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167606,
+                                    "createdAt": "2026-01-17T04:11:16.000Z",
+                                    "updatedAt": "2026-01-17T04:11:16.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 167607,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]</span><span style=\"font-weight: bold; font-size:16px;\">: Theo Nghị định 303/2025/NĐ-CP ngày 19/11/2025 của Chính phủ, tiêu chí về khối lượng công việc để thành lập phòng thuộc chi cục thuộc cục loại 2 là khi khối lượng công việc yêu cầu phải bố trí từ bao nhiêu biên chế công chức trở lên?</span>",
+                            "categoryId": 2336,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Giải thích: Căn cứ điểm b khoản 9 Điều 10 Nghị định 303/2025/NĐ-CP.<br/>\"9. Tiêu chí thành lập phòng thuộc chi cục thuộc cục loại 2 ... b) Khối lượng công việc yêu cầu phải bố trí từ 05 biên chế công chức trở lên.\" </span>",
+                            "readingContentId": null,
+                            "respondentCount": "45",
+                            "correctRespondentCount": "36",
+                            "type": 1,
+                            "createdAt": "2026-01-17T04:11:16.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-25T14:09:57.000Z",
+                            "answers": [
+                                {
+                                    "id": 284935,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">05 biên chế công chức </span>",
+                                    "isCorrect": true,
+                                    "questionId": 167607,
+                                    "createdAt": "2026-01-17T04:11:16.000Z",
+                                    "updatedAt": "2026-01-17T04:11:16.000Z"
+                                },
+                                {
+                                    "id": 284936,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">07 biên chế công chức </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167607,
+                                    "createdAt": "2026-01-17T04:11:16.000Z",
+                                    "updatedAt": "2026-01-17T04:11:16.000Z"
+                                },
+                                {
+                                    "id": 284937,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">08 biên chế công chức </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167607,
+                                    "createdAt": "2026-01-17T04:11:16.000Z",
+                                    "updatedAt": "2026-01-17T04:11:16.000Z"
+                                },
+                                {
+                                    "id": 284938,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">10 biên chế công chức </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167607,
+                                    "createdAt": "2026-01-17T04:11:16.000Z",
+                                    "updatedAt": "2026-01-17T04:11:16.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 167608,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]</span><span style=\"font-weight: bold; font-size:16px;\">: Theo Nghị định 303/2025/NĐ-CP ngày 19/11/2025 của Chính phủ, tiêu chí thành lập đội thuộc chi cục thuộc cục loại 1 được thực hiện theo quy định về tiêu chí thành lập của tổ chức nào?</span>",
+                            "categoryId": 2336,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Giải thích: Căn cứ khoản 10 Điều 10 Nghị định 303/2025/NĐ-CP.<br/>\"10. Đội là tổ chức thuộc chi cục thuộc cục loại 1. Tiêu chí thành lập đội thuộc chi cục thuộc cục loại 1 được thực hiện theo quy định về tiêu chí thành lập chi cục thuộc cục loại 2 quy định tại khoản 7 Điều này.\"</span>",
+                            "readingContentId": null,
+                            "respondentCount": "60",
+                            "correctRespondentCount": "34",
+                            "type": 1,
+                            "createdAt": "2026-01-17T04:11:16.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-25T16:46:18.000Z",
+                            "answers": [
+                                {
+                                    "id": 284939,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Phòng thuộc chi cục thuộc cục loại 1 </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167608,
+                                    "createdAt": "2026-01-17T04:11:16.000Z",
+                                    "updatedAt": "2026-01-17T04:11:16.000Z"
+                                },
+                                {
+                                    "id": 284940,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Phòng thuộc chi cục thuộc cục loại 2 </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167608,
+                                    "createdAt": "2026-01-17T04:11:16.000Z",
+                                    "updatedAt": "2026-01-17T04:11:16.000Z"
+                                },
+                                {
+                                    "id": 284941,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Chi cục thuộc cục loại 1 </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167608,
+                                    "createdAt": "2026-01-17T04:11:16.000Z",
+                                    "updatedAt": "2026-01-17T04:11:16.000Z"
+                                },
+                                {
+                                    "id": 284942,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Chi cục thuộc cục loại 2 </span>",
+                                    "isCorrect": true,
+                                    "questionId": 167608,
+                                    "createdAt": "2026-01-17T04:11:16.000Z",
+                                    "updatedAt": "2026-01-17T04:11:16.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 167609,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]</span><span style=\"font-weight: bold; font-size:16px;\">: Theo Nghị định 303/2025/NĐ-CP ngày 19/11/2025 của Chính phủ, trường hợp vụ có số biên chế công chức lớn (từ 45 biên chế công chức trở lên được cấp có thẩm quyền giao), để được xem xét thành lập phòng thì mỗi phòng phải có đủ từ bao nhiêu biên chế công chức trở lên?</span>",
+                            "categoryId": 2336,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Giải thích: Căn cứ khoản 1 Điều 10 Nghị định 303/2025/NĐ-CP. <br/>\" vụ có số biên chế công chức lớn (từ 45 biên chế công chức trở lên được cấp có thẩm quyền giao) thì có thể xem xét thành lập phòng (mỗi phòng phải có đủ 15 biên chế công chức trở lên)...\" </span>",
+                            "readingContentId": null,
+                            "respondentCount": "91",
+                            "correctRespondentCount": "69",
+                            "type": 1,
+                            "createdAt": "2026-01-17T04:11:16.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-25T15:47:34.000Z",
+                            "answers": [
+                                {
+                                    "id": 284943,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">07 biên chế công chức </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167609,
+                                    "createdAt": "2026-01-17T04:11:16.000Z",
+                                    "updatedAt": "2026-01-17T04:11:16.000Z"
+                                },
+                                {
+                                    "id": 284944,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">10 biên chế công chức </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167609,
+                                    "createdAt": "2026-01-17T04:11:16.000Z",
+                                    "updatedAt": "2026-01-17T04:11:16.000Z"
+                                },
+                                {
+                                    "id": 284945,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">15 biên chế công chức </span>",
+                                    "isCorrect": true,
+                                    "questionId": 167609,
+                                    "createdAt": "2026-01-17T04:11:16.000Z",
+                                    "updatedAt": "2026-01-17T04:11:16.000Z"
+                                },
+                                {
+                                    "id": 284946,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">20 biên chế công chức </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167609,
+                                    "createdAt": "2026-01-17T04:11:16.000Z",
+                                    "updatedAt": "2026-01-17T04:11:16.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 167610,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]</span><span style=\"font-weight: bold; font-size:16px;\">: Theo Nghị định 303/2025/NĐ-CP ngày 19/11/2025 của Chính phủ, Đội là tổ chức thuộc đơn vị nào?</span>",
+                            "categoryId": 2336,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Giải thích: Căn cứ khoản 10 Điều 10 Nghị định 303/2025/NĐ-CP. Trích dẫn: \"10. Đội là tổ chức thuộc chi cục thuộc cục loại 1.\"</span>",
+                            "readingContentId": null,
+                            "respondentCount": "45",
+                            "correctRespondentCount": "33",
+                            "type": 1,
+                            "createdAt": "2026-01-17T04:11:16.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-25T14:10:34.000Z",
+                            "answers": [
+                                {
+                                    "id": 284947,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Chi cục thuộc cục loại 1 </span>",
+                                    "isCorrect": true,
+                                    "questionId": 167610,
+                                    "createdAt": "2026-01-17T04:11:16.000Z",
+                                    "updatedAt": "2026-01-17T04:11:16.000Z"
+                                },
+                                {
+                                    "id": 284948,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Chi cục thuộc cục loại 2 </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167610,
+                                    "createdAt": "2026-01-17T04:11:16.000Z",
+                                    "updatedAt": "2026-01-17T04:11:16.000Z"
+                                },
+                                {
+                                    "id": 284949,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Cục loại 1 </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167610,
+                                    "createdAt": "2026-01-17T04:11:16.000Z",
+                                    "updatedAt": "2026-01-17T04:11:16.000Z"
+                                },
+                                {
+                                    "id": 284950,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\"> Cục loại 2 </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167610,
+                                    "createdAt": "2026-01-17T04:11:16.000Z",
+                                    "updatedAt": "2026-01-17T04:11:16.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 167611,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]</span><span style=\"font-weight: bold; font-size:16px;\">: Theo Nghị định 303/2025/NĐ-CP ngày 19/11/2025 của Chính phủ, số lượng cấp phó của người đứng đầu vụ, văn phòng, thanh tra, cục loại 2, đơn vị sự nghiệp công lập thuộc cơ cấu tổ chức của bộ được bố trí bình quân không quá bao nhiêu người trên một đơn vị?</span>",
+                            "categoryId": 2336,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Giải thích: Căn cứ khoản 1 Điều 11 Nghị định 303/2025/NĐ-CP.<br/>\"1. Số lượng cấp phó của người đứng đầu vụ, văn phòng, thanh tra, cục loại 2, đơn vị sự nghiệp công lập thuộc cơ cấu tổ chức của bộ được bố trí bình quân không quá 03 người trên một đơn vị.”</span>",
+                            "readingContentId": null,
+                            "respondentCount": "34",
+                            "correctRespondentCount": "30",
+                            "type": 1,
+                            "createdAt": "2026-01-17T04:11:16.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-25T14:10:44.000Z",
+                            "answers": [
+                                {
+                                    "id": 284951,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">02 người </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167611,
+                                    "createdAt": "2026-01-17T04:11:16.000Z",
+                                    "updatedAt": "2026-01-17T04:11:16.000Z"
+                                },
+                                {
+                                    "id": 284952,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">03 người </span>",
+                                    "isCorrect": true,
+                                    "questionId": 167611,
+                                    "createdAt": "2026-01-17T04:11:16.000Z",
+                                    "updatedAt": "2026-01-17T04:11:16.000Z"
+                                },
+                                {
+                                    "id": 284953,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">04 người </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167611,
+                                    "createdAt": "2026-01-17T04:11:16.000Z",
+                                    "updatedAt": "2026-01-17T04:11:16.000Z"
+                                },
+                                {
+                                    "id": 284954,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">05 người </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167611,
+                                    "createdAt": "2026-01-17T04:11:16.000Z",
+                                    "updatedAt": "2026-01-17T04:11:16.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 167612,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]</span><span style=\"font-weight: bold; font-size:16px;\">: Theo Nghị định 303/2025/NĐ-CP ngày 19/11/2025 của Chính phủ, số lượng cấp phó của người đứng đầu cục loại 1 được bố trí bình quân không quá bao nhiêu người trên một cục?</span>",
+                            "categoryId": 2336,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Giải thích: Căn cứ khoản 3 Điều 11 Nghị định 303/2025/NĐ-CP.<br/>\"3. Số lượng cấp phó của người đứng đầu cục loại 1 được bố trí bình quân không quá 04 người trên một cục.\" </span>",
+                            "readingContentId": null,
+                            "respondentCount": "52",
+                            "correctRespondentCount": "34",
+                            "type": 1,
+                            "createdAt": "2026-01-17T04:11:16.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-25T16:46:57.000Z",
+                            "answers": [
+                                {
+                                    "id": 284955,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">03 người </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167612,
+                                    "createdAt": "2026-01-17T04:11:16.000Z",
+                                    "updatedAt": "2026-01-17T04:11:16.000Z"
+                                },
+                                {
+                                    "id": 284956,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">04 người </span>",
+                                    "isCorrect": true,
+                                    "questionId": 167612,
+                                    "createdAt": "2026-01-17T04:11:16.000Z",
+                                    "updatedAt": "2026-01-17T04:11:16.000Z"
+                                },
+                                {
+                                    "id": 284957,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">05 người </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167612,
+                                    "createdAt": "2026-01-17T04:11:16.000Z",
+                                    "updatedAt": "2026-01-17T04:11:16.000Z"
+                                },
+                                {
+                                    "id": 284958,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">06 người </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167612,
+                                    "createdAt": "2026-01-17T04:11:16.000Z",
+                                    "updatedAt": "2026-01-17T04:11:16.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 167613,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]</span><span style=\"font-weight: bold; font-size:16px;\">: Theo Nghị định 303/2025/NĐ-CP ngày 19/11/2025 của Chính phủ, trường hợp vụ, văn phòng, cục loại 2 được thành lập trên cơ sở hợp nhất, sáp nhập từ 03 cơ quan trở lên thì số lượng cấp phó được tăng thêm bao nhiêu người so với quy định chung?</span>",
+                            "categoryId": 2336,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Giải thích: Căn cứ khoản 2 Điều 11 Nghị định 303/2025/NĐ-CP. <br/>\"...vụ, văn phòng, cục loại 2 được thành lập trên cơ sở hợp nhất, sáp nhập từ 03 cơ quan trở lên thì số lượng cấp phó được tăng thêm 02 người so với số lượng cấp phó quy định tại khoản 1 Điều này...\" </span>",
+                            "readingContentId": null,
+                            "respondentCount": "41",
+                            "correctRespondentCount": "32",
+                            "type": 1,
+                            "createdAt": "2026-01-17T04:11:16.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-25T14:11:56.000Z",
+                            "answers": [
+                                {
+                                    "id": 284959,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Tăng thêm 01 người </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167613,
+                                    "createdAt": "2026-01-17T04:11:16.000Z",
+                                    "updatedAt": "2026-01-17T04:11:16.000Z"
+                                },
+                                {
+                                    "id": 284960,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\"> Tăng thêm 02 người </span>",
+                                    "isCorrect": true,
+                                    "questionId": 167613,
+                                    "createdAt": "2026-01-17T04:11:16.000Z",
+                                    "updatedAt": "2026-01-17T04:11:16.000Z"
+                                },
+                                {
+                                    "id": 284961,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Tăng thêm 03 người </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167613,
+                                    "createdAt": "2026-01-17T04:11:16.000Z",
+                                    "updatedAt": "2026-01-17T04:11:16.000Z"
+                                },
+                                {
+                                    "id": 284962,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Không được tăng thêm </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167613,
+                                    "createdAt": "2026-01-17T04:11:16.000Z",
+                                    "updatedAt": "2026-01-17T04:11:16.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 167614,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]</span><span style=\"font-weight: bold; font-size:16px;\">: Theo Nghị định 303/2025/NĐ-CP ngày 19/11/2025 của Chính phủ, trường hợp vụ, văn phòng, thanh tra, cục loại 2 tiếp nhận chức năng, nhiệm vụ, tổ chức theo quyết định của cấp có thẩm quyền thì số lượng cấp phó được tăng thêm bao nhiêu người so với quy định chung?</span>",
+                            "categoryId": 2336,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Giải thích: Căn cứ khoản 2 Điều 11 Nghị định 303/2025/NĐ-CP.<br/>\"...vụ, văn phòng, thanh tra, cục loại 2 tiếp nhận chức năng, nhiệm vụ, tổ chức theo quyết định của cấp có thẩm quyền thì số lượng cấp phó được tăng thêm 01 người so với số lượng cấp phó quy định tại khoản 1 Điều này.\" </span>",
+                            "readingContentId": null,
+                            "respondentCount": "34",
+                            "correctRespondentCount": "30",
+                            "type": 1,
+                            "createdAt": "2026-01-17T04:11:16.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-25T14:11:10.000Z",
+                            "answers": [
+                                {
+                                    "id": 284963,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Tăng thêm 01 người </span>",
+                                    "isCorrect": true,
+                                    "questionId": 167614,
+                                    "createdAt": "2026-01-17T04:11:16.000Z",
+                                    "updatedAt": "2026-01-17T04:11:16.000Z"
+                                },
+                                {
+                                    "id": 284964,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Tăng thêm 02 người </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167614,
+                                    "createdAt": "2026-01-17T04:11:16.000Z",
+                                    "updatedAt": "2026-01-17T04:11:16.000Z"
+                                },
+                                {
+                                    "id": 284965,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Tăng thêm 03 người </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167614,
+                                    "createdAt": "2026-01-17T04:11:16.000Z",
+                                    "updatedAt": "2026-01-17T04:11:16.000Z"
+                                },
+                                {
+                                    "id": 284966,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Không được tăng thêm </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167614,
+                                    "createdAt": "2026-01-17T04:11:16.000Z",
+                                    "updatedAt": "2026-01-17T04:11:16.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 167615,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]</span><span style=\"font-weight: bold; font-size:16px;\">: Theo Nghị định 303/2025/NĐ-CP ngày 19/11/2025 của Chính phủ, trường hợp vụ, văn phòng, cục loại 2 được thành lập trên cơ sở hợp nhất, sáp nhập từ 02 cơ quan thì số lượng cấp phó được tăng thêm bao nhiêu người so với quy định?</span>",
+                            "categoryId": 2336,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Giải thích: Căn cứ khoản 2 Điều 11 Nghị định 303/2025/NĐ-CP. Trích dẫn: \"Trường hợp vụ, văn phòng, cục loại 2 được thành lập trên cơ sở hợp nhất, sáp nhập từ 02 cơ quan thì số lượng cấp phó được tăng thêm 01 người so với số lượng cấp phó quy định tại khoản 1 Điều này...\" </span>",
+                            "readingContentId": null,
+                            "respondentCount": "43",
+                            "correctRespondentCount": "40",
+                            "type": 1,
+                            "createdAt": "2026-01-17T04:11:16.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-25T15:55:13.000Z",
+                            "answers": [
+                                {
+                                    "id": 284967,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Tăng thêm 01 người </span>",
+                                    "isCorrect": true,
+                                    "questionId": 167615,
+                                    "createdAt": "2026-01-17T04:11:16.000Z",
+                                    "updatedAt": "2026-01-17T04:11:16.000Z"
+                                },
+                                {
+                                    "id": 284968,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Tăng thêm 02 người </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167615,
+                                    "createdAt": "2026-01-17T04:11:16.000Z",
+                                    "updatedAt": "2026-01-17T04:11:16.000Z"
+                                },
+                                {
+                                    "id": 284969,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Tăng thêm 03 người </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167615,
+                                    "createdAt": "2026-01-17T04:11:16.000Z",
+                                    "updatedAt": "2026-01-17T04:11:16.000Z"
+                                },
+                                {
+                                    "id": 284970,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Không được tăng thêm </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167615,
+                                    "createdAt": "2026-01-17T04:11:16.000Z",
+                                    "updatedAt": "2026-01-17T04:11:16.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 167616,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]</span><span style=\"font-weight: bold; font-size:16px;\">: Theo Nghị định 303/2025/NĐ-CP ngày 19/11/2025 của Chính phủ, số lượng cấp phó của người đứng đầu phòng thuộc vụ được bố trí không quá bao nhiêu người?</span>",
+                            "categoryId": 2336,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Giải thích: Căn cứ điểm a khoản 1 Điều 12 Nghị định 303/2025/NĐ-CP.<br/>\"a) Số lượng cấp phó của người đứng đầu phòng thuộc vụ được bố trí không quá 03 người;\" </span>",
+                            "readingContentId": null,
+                            "respondentCount": "35",
+                            "correctRespondentCount": "29",
+                            "type": 1,
+                            "createdAt": "2026-01-17T04:11:16.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-25T14:12:26.000Z",
+                            "answers": [
+                                {
+                                    "id": 284971,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">02 người </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167616,
+                                    "createdAt": "2026-01-17T04:11:16.000Z",
+                                    "updatedAt": "2026-01-17T04:11:16.000Z"
+                                },
+                                {
+                                    "id": 284972,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">03 người </span>",
+                                    "isCorrect": true,
+                                    "questionId": 167616,
+                                    "createdAt": "2026-01-17T04:11:16.000Z",
+                                    "updatedAt": "2026-01-17T04:11:16.000Z"
+                                },
+                                {
+                                    "id": 284973,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">04 người </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167616,
+                                    "createdAt": "2026-01-17T04:11:16.000Z",
+                                    "updatedAt": "2026-01-17T04:11:16.000Z"
+                                },
+                                {
+                                    "id": 284974,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">05 người </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167616,
+                                    "createdAt": "2026-01-17T04:11:16.000Z",
+                                    "updatedAt": "2026-01-17T04:11:16.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 167617,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]</span><span style=\"font-weight: bold; font-size:16px;\">: Theo Nghị định 303/2025/NĐ-CP ngày 19/11/2025 của Chính phủ, phòng thuộc thanh tra, văn phòng thuộc bộ có từ 07 đến 09 biên chế công chức được bố trí bao nhiêu cấp phó?</span>",
+                            "categoryId": 2336,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Giải thích: Căn cứ điểm b khoản 1 Điều 12 Nghị định 303/2025/NĐ-CP.<br/>\"b) Phòng thuộc thanh tra, văn phòng thuộc bộ có từ 07 đến 09 biên chế công chức được bố trí 01 cấp phó...\" </span>",
+                            "readingContentId": null,
+                            "respondentCount": "47",
+                            "correctRespondentCount": "40",
+                            "type": 1,
+                            "createdAt": "2026-01-17T04:11:16.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-25T14:50:34.000Z",
+                            "answers": [
+                                {
+                                    "id": 284975,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">01 cấp phó </span>",
+                                    "isCorrect": true,
+                                    "questionId": 167617,
+                                    "createdAt": "2026-01-17T04:11:16.000Z",
+                                    "updatedAt": "2026-01-17T04:11:16.000Z"
+                                },
+                                {
+                                    "id": 284976,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">02 cấp phó </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167617,
+                                    "createdAt": "2026-01-17T04:11:16.000Z",
+                                    "updatedAt": "2026-01-17T04:11:16.000Z"
+                                },
+                                {
+                                    "id": 284977,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Không quá 02 cấp phó </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167617,
+                                    "createdAt": "2026-01-17T04:11:16.000Z",
+                                    "updatedAt": "2026-01-17T04:11:16.000Z"
+                                },
+                                {
+                                    "id": 284978,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Không quá 03 cấp phó </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167617,
+                                    "createdAt": "2026-01-17T04:11:16.000Z",
+                                    "updatedAt": "2026-01-17T04:11:16.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 167618,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]</span><span style=\"font-weight: bold; font-size:16px;\">: Theo Nghị định 303/2025/NĐ-CP ngày 19/11/2025 của Chính phủ, phòng thuộc thanh tra, văn phòng thuộc bộ có từ 16 biên chế công chức trở lên được bố trí không quá bao nhiêu cấp phó?</span>",
+                            "categoryId": 2336,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Giải thích: Căn cứ điểm b khoản 1 Điều 12 Nghị định 303/2025/NĐ-CP. Trích dẫn: \"b) Phòng thuộc thanh tra, văn phòng thuộc bộ ... có từ 16 biên chế công chức trở lên được bố trí không quá 03 cấp phó.\" </span>",
+                            "readingContentId": null,
+                            "respondentCount": "39",
+                            "correctRespondentCount": "36",
+                            "type": 1,
+                            "createdAt": "2026-01-17T04:11:16.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-25T14:13:02.000Z",
+                            "answers": [
+                                {
+                                    "id": 284979,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">01 cấp phó </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167618,
+                                    "createdAt": "2026-01-17T04:11:16.000Z",
+                                    "updatedAt": "2026-01-17T04:11:16.000Z"
+                                },
+                                {
+                                    "id": 284980,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">02 cấp phó </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167618,
+                                    "createdAt": "2026-01-17T04:11:16.000Z",
+                                    "updatedAt": "2026-01-17T04:11:16.000Z"
+                                },
+                                {
+                                    "id": 284981,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">03 cấp phó </span>",
+                                    "isCorrect": true,
+                                    "questionId": 167618,
+                                    "createdAt": "2026-01-17T04:11:16.000Z",
+                                    "updatedAt": "2026-01-17T04:11:16.000Z"
+                                },
+                                {
+                                    "id": 284982,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">04 cấp phó </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167618,
+                                    "createdAt": "2026-01-17T04:11:16.000Z",
+                                    "updatedAt": "2026-01-17T04:11:16.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 167619,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]</span><span style=\"font-weight: bold; font-size:16px;\">: Theo Nghị định 303/2025/NĐ-CP ngày 19/11/2025 của Chính phủ, số lượng cấp phó của người đứng đầu ban, văn phòng, thanh tra thuộc cục loại 1 được bố trí bình quân không quá bao nhiêu người trên một đơn vị?</span>",
+                            "categoryId": 2336,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Giải thích: Căn cứ khoản 2 Điều 12 Nghị định 303/2025/NĐ-CP.<br/> \"2. Số lượng cấp phó của người đứng đầu ban, văn phòng, thanh tra thuộc cục loại 1 được bố trí bình quân không quá 03 người trên một đơn vị.\"</span>",
+                            "readingContentId": null,
+                            "respondentCount": "43",
+                            "correctRespondentCount": "32",
+                            "type": 1,
+                            "createdAt": "2026-01-17T04:11:16.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-25T14:13:26.000Z",
+                            "answers": [
+                                {
+                                    "id": 284983,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">02 người </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167619,
+                                    "createdAt": "2026-01-17T04:11:16.000Z",
+                                    "updatedAt": "2026-01-17T04:11:16.000Z"
+                                },
+                                {
+                                    "id": 284984,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">03 người </span>",
+                                    "isCorrect": true,
+                                    "questionId": 167619,
+                                    "createdAt": "2026-01-17T04:11:16.000Z",
+                                    "updatedAt": "2026-01-17T04:11:16.000Z"
+                                },
+                                {
+                                    "id": 284985,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">04 người </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167619,
+                                    "createdAt": "2026-01-17T04:11:16.000Z",
+                                    "updatedAt": "2026-01-17T04:11:16.000Z"
+                                },
+                                {
+                                    "id": 284986,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">05 người </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167619,
+                                    "createdAt": "2026-01-17T04:11:16.000Z",
+                                    "updatedAt": "2026-01-17T04:11:16.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 167620,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]</span><span style=\"font-weight: bold; font-size:16px;\">: Theo Nghị định 303/2025/NĐ-CP ngày 19/11/2025 của Chính phủ, phòng, văn phòng, thanh tra thuộc cục loại 2 thuộc bộ có từ 10 đến 15 biên chế công chức được bố trí không quá bao nhiêu cấp phó?</span>",
+                            "categoryId": 2336,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Giải thích: Chọn đáp án B. <br/>Giải thích: Căn cứ khoản 3 Điều 12 Nghị định 303/2025/NĐ-CP.<br/>\"3. Phòng, văn phòng, thanh tra thuộc cục loại 2 thuộc bộ ... có từ 10 đến 15 biên chế công chức được bố trí không quá 02 cấp phó...\" </span>",
+                            "readingContentId": null,
+                            "respondentCount": "81",
+                            "correctRespondentCount": "71",
+                            "type": 1,
+                            "createdAt": "2026-01-17T04:11:17.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-25T15:48:20.000Z",
+                            "answers": [
+                                {
+                                    "id": 284987,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">01 cấp phó </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167620,
+                                    "createdAt": "2026-01-17T04:11:17.000Z",
+                                    "updatedAt": "2026-01-17T04:11:17.000Z"
+                                },
+                                {
+                                    "id": 284988,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">02 cấp phó </span>",
+                                    "isCorrect": true,
+                                    "questionId": 167620,
+                                    "createdAt": "2026-01-17T04:11:17.000Z",
+                                    "updatedAt": "2026-01-17T04:11:17.000Z"
+                                },
+                                {
+                                    "id": 284989,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">03 cấp phó </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167620,
+                                    "createdAt": "2026-01-17T04:11:17.000Z",
+                                    "updatedAt": "2026-01-17T04:11:17.000Z"
+                                },
+                                {
+                                    "id": 284990,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">04 cấp phó </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167620,
+                                    "createdAt": "2026-01-17T04:11:17.000Z",
+                                    "updatedAt": "2026-01-17T04:11:17.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 167621,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]</span><span style=\"font-weight: bold; font-size:16px;\">: Theo Nghị định 303/2025/NĐ-CP ngày 19/11/2025 của Chính phủ, trường hợp chi cục thuộc cục tiếp nhận chức năng, nhiệm vụ, tổ chức hoặc được thành lập mới trên cơ sở tổ chức lại thì số lượng cấp phó được bố trí bình quân không quá bao nhiêu người trên một chi cục?</span>",
+                            "categoryId": 2336,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Giải thích: Căn cứ khoản 4 Điều 12 Nghị định 303/2025/NĐ-CP.<br/>\"...trường hợp chi cục tiếp nhận chức năng, nhiệm vụ, tổ chức hoặc được thành lập mới trên cơ sở tổ chức lại thì số lượng cấp phó được bố trí bình quân không quá 04 người trên một chi cục.\" </span>",
+                            "readingContentId": null,
+                            "respondentCount": "60",
+                            "correctRespondentCount": "38",
+                            "type": 1,
+                            "createdAt": "2026-01-17T04:11:17.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-25T14:56:29.000Z",
+                            "answers": [
+                                {
+                                    "id": 284991,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">03 người </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167621,
+                                    "createdAt": "2026-01-17T04:11:17.000Z",
+                                    "updatedAt": "2026-01-17T04:11:17.000Z"
+                                },
+                                {
+                                    "id": 284992,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">04 người </span>",
+                                    "isCorrect": true,
+                                    "questionId": 167621,
+                                    "createdAt": "2026-01-17T04:11:17.000Z",
+                                    "updatedAt": "2026-01-17T04:11:17.000Z"
+                                },
+                                {
+                                    "id": 284993,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">05 người </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167621,
+                                    "createdAt": "2026-01-17T04:11:17.000Z",
+                                    "updatedAt": "2026-01-17T04:11:17.000Z"
+                                },
+                                {
+                                    "id": 284994,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">06 người </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167621,
+                                    "createdAt": "2026-01-17T04:11:17.000Z",
+                                    "updatedAt": "2026-01-17T04:11:17.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 167622,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]</span><span style=\"font-weight: bold; font-size:16px;\">: Theo Nghị định 303/2025/NĐ-CP ngày 19/11/2025 của Chính phủ, chi cục thuộc cục loại 2 có từ 04 phòng trở lên được bố trí không quá bao nhiêu cấp phó?</span>",
+                            "categoryId": 2336,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Giải thích: Căn cứ điểm a khoản 5 Điều 12 Nghị định 303/2025/NĐ-CP.<br/>\"a) Chi cục có từ 01 đến 03 phòng được bố trí 01 người; có từ 04 phòng trở lên được bố trí không quá 02 người;\" </span>",
+                            "readingContentId": null,
+                            "respondentCount": "46",
+                            "correctRespondentCount": "36",
+                            "type": 1,
+                            "createdAt": "2026-01-17T04:11:17.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-25T14:14:51.000Z",
+                            "answers": [
+                                {
+                                    "id": 284995,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">01 người </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167622,
+                                    "createdAt": "2026-01-17T04:11:17.000Z",
+                                    "updatedAt": "2026-01-17T04:11:17.000Z"
+                                },
+                                {
+                                    "id": 284996,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">02 người </span>",
+                                    "isCorrect": true,
+                                    "questionId": 167622,
+                                    "createdAt": "2026-01-17T04:11:17.000Z",
+                                    "updatedAt": "2026-01-17T04:11:17.000Z"
+                                },
+                                {
+                                    "id": 284997,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">03 người </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167622,
+                                    "createdAt": "2026-01-17T04:11:17.000Z",
+                                    "updatedAt": "2026-01-17T04:11:17.000Z"
+                                },
+                                {
+                                    "id": 284998,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">04 người</span>",
+                                    "isCorrect": false,
+                                    "questionId": 167622,
+                                    "createdAt": "2026-01-17T04:11:17.000Z",
+                                    "updatedAt": "2026-01-17T04:11:17.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 167623,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]</span><span style=\"font-weight: bold; font-size:16px;\">: Theo Nghị định 303/2025/NĐ-CP ngày 19/11/2025 của Chính phủ, chi cục thuộc cục loại 2 không có phòng được bố trí không quá bao nhiêu cấp phó?</span>",
+                            "categoryId": 2336,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Giải thích: Căn cứ điểm b khoản 5 Điều 12 Nghị định 303/2025/NĐ-CP.<br/>\"b) Chi cục không có phòng được bố trí không quá 02 người;\" </span>",
+                            "readingContentId": null,
+                            "respondentCount": "38",
+                            "correctRespondentCount": "24",
+                            "type": 1,
+                            "createdAt": "2026-01-17T04:11:17.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-25T14:14:56.000Z",
+                            "answers": [
+                                {
+                                    "id": 284999,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">01 người </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167623,
+                                    "createdAt": "2026-01-17T04:11:17.000Z",
+                                    "updatedAt": "2026-01-17T04:11:17.000Z"
+                                },
+                                {
+                                    "id": 285000,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">02 người </span>",
+                                    "isCorrect": true,
+                                    "questionId": 167623,
+                                    "createdAt": "2026-01-17T04:11:17.000Z",
+                                    "updatedAt": "2026-01-17T04:11:17.000Z"
+                                },
+                                {
+                                    "id": 285001,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">03 người </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167623,
+                                    "createdAt": "2026-01-17T04:11:17.000Z",
+                                    "updatedAt": "2026-01-17T04:11:17.000Z"
+                                },
+                                {
+                                    "id": 285002,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Không được bố trí cấp phó </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167623,
+                                    "createdAt": "2026-01-17T04:11:17.000Z",
+                                    "updatedAt": "2026-01-17T04:11:17.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 167624,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]</span><span style=\"font-weight: bold; font-size:16px;\">: Theo Nghị định 303/2025/NĐ-CP ngày 19/11/2025 của Chính phủ, phòng thuộc chi cục thuộc cục loại 1 có từ 16 biên chế công chức trở lên được bố trí không quá bao nhiêu cấp phó?</span>",
+                            "categoryId": 2336,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Giải thích: Căn cứ khoản 6 Điều 12 Nghị định 303/2025/NĐ-CP.<br/>\"6. Phòng thuộc chi cục thuộc cục loại 1... có từ 16 biên chế công chức trở lên được bố trí không quá 03 cấp phó.\"</span>",
+                            "readingContentId": null,
+                            "respondentCount": "43",
+                            "correctRespondentCount": "40",
+                            "type": 1,
+                            "createdAt": "2026-01-17T04:11:17.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-25T15:55:21.000Z",
+                            "answers": [
+                                {
+                                    "id": 285003,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">01 cấp phó </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167624,
+                                    "createdAt": "2026-01-17T04:11:17.000Z",
+                                    "updatedAt": "2026-01-17T04:11:17.000Z"
+                                },
+                                {
+                                    "id": 285004,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">02 cấp phó </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167624,
+                                    "createdAt": "2026-01-17T04:11:17.000Z",
+                                    "updatedAt": "2026-01-17T04:11:17.000Z"
+                                },
+                                {
+                                    "id": 285005,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">03 cấp phó </span>",
+                                    "isCorrect": true,
+                                    "questionId": 167624,
+                                    "createdAt": "2026-01-17T04:11:17.000Z",
+                                    "updatedAt": "2026-01-17T04:11:17.000Z"
+                                },
+                                {
+                                    "id": 285006,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">04 cấp phó </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167624,
+                                    "createdAt": "2026-01-17T04:11:17.000Z",
+                                    "updatedAt": "2026-01-17T04:11:17.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 167625,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]</span><span style=\"font-weight: bold; font-size:16px;\">: Theo Nghị định 303/2025/NĐ-CP ngày 19/11/2025 của Chính phủ, phòng thuộc chi cục thuộc cục loại 2 có từ 05 đến 07 biên chế công chức được bố trí bao nhiêu cấp phó?</span>",
+                            "categoryId": 2336,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Giải thích: Căn cứ khoản 7 Điều 12 Nghị định 303/2025/NĐ-CP.<br/> \"7. Phòng thuộc chi cục thuộc cục loại 2 thuộc bộ có từ 05 đến 07 biên chế công chức được bố trí 01 cấp phó...\"</span>",
+                            "readingContentId": null,
+                            "respondentCount": "59",
+                            "correctRespondentCount": "46",
+                            "type": 1,
+                            "createdAt": "2026-01-17T04:11:17.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-25T16:46:36.000Z",
+                            "answers": [
+                                {
+                                    "id": 285007,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">01 cấp phó </span>",
+                                    "isCorrect": true,
+                                    "questionId": 167625,
+                                    "createdAt": "2026-01-17T04:11:17.000Z",
+                                    "updatedAt": "2026-01-17T04:11:17.000Z"
+                                },
+                                {
+                                    "id": 285008,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">02 cấp phó </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167625,
+                                    "createdAt": "2026-01-17T04:11:17.000Z",
+                                    "updatedAt": "2026-01-17T04:11:17.000Z"
+                                },
+                                {
+                                    "id": 285009,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Không quá 02 cấp phó </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167625,
+                                    "createdAt": "2026-01-17T04:11:17.000Z",
+                                    "updatedAt": "2026-01-17T04:11:17.000Z"
+                                },
+                                {
+                                    "id": 285010,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Không được bố trí cấp phó</span>",
+                                    "isCorrect": false,
+                                    "questionId": 167625,
+                                    "createdAt": "2026-01-17T04:11:17.000Z",
+                                    "updatedAt": "2026-01-17T04:11:17.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 167626,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]</span><span style=\"font-weight: bold; font-size:16px;\">: Theo Nghị định 303/2025/NĐ-CP ngày 19/11/2025 của Chính phủ, phòng thuộc chi cục thuộc cục loại 2 có từ 08 biên chế công chức trở lên được bố trí không quá bao nhiêu cấp phó?</span>",
+                            "categoryId": 2336,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Giải thích: Căn cứ khoản 7 Điều 12 Nghị định 303/2025/NĐ-CP.<br/>\"7. Phòng thuộc chi cục thuộc cục loại 2 thuộc bộ... có từ 08 biên chế công chức trở lên được bố trí không quá 02 cấp phó.\"</span>",
+                            "readingContentId": null,
+                            "respondentCount": "104",
+                            "correctRespondentCount": "76",
+                            "type": 1,
+                            "createdAt": "2026-01-17T04:11:17.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-25T15:49:05.000Z",
+                            "answers": [
+                                {
+                                    "id": 285011,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">01 cấp phó </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167626,
+                                    "createdAt": "2026-01-17T04:11:17.000Z",
+                                    "updatedAt": "2026-01-17T04:11:17.000Z"
+                                },
+                                {
+                                    "id": 285012,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">02 cấp phó </span>",
+                                    "isCorrect": true,
+                                    "questionId": 167626,
+                                    "createdAt": "2026-01-17T04:11:17.000Z",
+                                    "updatedAt": "2026-01-17T04:11:17.000Z"
+                                },
+                                {
+                                    "id": 285013,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">03 cấp phó </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167626,
+                                    "createdAt": "2026-01-17T04:11:17.000Z",
+                                    "updatedAt": "2026-01-17T04:11:17.000Z"
+                                },
+                                {
+                                    "id": 285014,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">04 cấp phó </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167626,
+                                    "createdAt": "2026-01-17T04:11:17.000Z",
+                                    "updatedAt": "2026-01-17T04:11:17.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 167627,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]</span><span style=\"font-weight: bold; font-size:16px;\">: Theo Nghị định 303/2025/NĐ-CP ngày 19/11/2025 của Chính phủ, chi cục thuộc cục loại 2 có từ 01 đến 03 phòng được bố trí bao nhiêu người cấp phó?</span>",
+                            "categoryId": 2336,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Giải thích: Căn cứ điểm a khoản 5 Điều 12 Nghị định 303/2025/NĐ-CP. <br/>\"a) Chi cục có từ 01 đến 03 phòng được bố trí 01 người; có từ 04 phòng trở lên được bố trí không quá 02 người;\" </span>",
+                            "readingContentId": null,
+                            "respondentCount": "52",
+                            "correctRespondentCount": "39",
+                            "type": 1,
+                            "createdAt": "2026-01-17T04:11:17.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-25T16:45:41.000Z",
+                            "answers": [
+                                {
+                                    "id": 285015,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">01 người </span>",
+                                    "isCorrect": true,
+                                    "questionId": 167627,
+                                    "createdAt": "2026-01-17T04:11:17.000Z",
+                                    "updatedAt": "2026-01-17T04:11:17.000Z"
+                                },
+                                {
+                                    "id": 285016,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">02 người </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167627,
+                                    "createdAt": "2026-01-17T04:11:17.000Z",
+                                    "updatedAt": "2026-01-17T04:11:17.000Z"
+                                },
+                                {
+                                    "id": 285017,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Không quá 02 người </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167627,
+                                    "createdAt": "2026-01-17T04:11:17.000Z",
+                                    "updatedAt": "2026-01-17T04:11:17.000Z"
+                                },
+                                {
+                                    "id": 285018,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Không quá 03 người </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167627,
+                                    "createdAt": "2026-01-17T04:11:17.000Z",
+                                    "updatedAt": "2026-01-17T04:11:17.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 167628,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]</span><span style=\"font-weight: bold; font-size:16px;\">: Theo Nghị định 303/2025/NĐ-CP ngày 19/11/2025 của Chính phủ, một chi cục thuộc cục loại 2 được bố trí bình quân không quá 03 người cấp phó nếu đáp ứng tiêu chí nào sau đây?</span>",
+                            "categoryId": 2336,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Giải thích: Căn cứ điểm c khoản 5 Điều 12 Nghị định 303/2025/NĐ-CP. <br/>\"c) Đối với chi cục đáp ứng một trong các tiêu chí sau đây thì được bố trí bình quân không quá 03 người trên một chi cục, cụ thể như sau: <br/>Thực hiện nhiệm vụ giải quyết thủ tục hành chính 24/24 giờ trong ngày theo quy định của pháp luật, phải bố trí công chức (trong đó có lãnh đạo chi cục) làm việc 3 ca/ngày và được giao từ 60 biên chế công chức trở lên. <br/>Được giao quản lý theo khu vực liên tỉnh và có từ 09 phòng hoặc tổ chức tương đương trở lên thuộc cơ cấu tổ chức của chi cục theo quy định của pháp luật.\" </span>",
+                            "readingContentId": null,
+                            "respondentCount": "41",
+                            "correctRespondentCount": "28",
+                            "type": 1,
+                            "createdAt": "2026-01-17T04:11:17.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-25T14:15:57.000Z",
+                            "answers": [
+                                {
+                                    "id": 285019,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Thực hiện nhiệm vụ giải quyết thủ tục hành chính 24/24 giờ trong ngày theo quy định của pháp luật, phải bố trí công chức (trong đó có lãnh đạo chi cục) làm việc 5 ca/ngày và được giao từ 50 biên chế công chức trở lên.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 167628,
+                                    "createdAt": "2026-01-17T04:11:17.000Z",
+                                    "updatedAt": "2026-01-17T04:11:17.000Z"
+                                },
+                                {
+                                    "id": 285020,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Thực hiện nhiệm vụ giải quyết thủ tục hành chính 24/24 giờ trong ngày theo quy định của pháp luật, phải bố trí công chức (trong đó có lãnh đạo chi cục) làm việc 3 ca/ngày và được giao từ 50 biên chế công chức trở lên.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 167628,
+                                    "createdAt": "2026-01-17T04:11:17.000Z",
+                                    "updatedAt": "2026-01-17T04:11:17.000Z"
+                                },
+                                {
+                                    "id": 285021,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Thực hiện nhiệm vụ giải quyết thủ tục hành chính 24/24 giờ trong ngày theo quy định của pháp luật, phải bố trí công chức (trong đó có lãnh đạo chi cục) làm việc 5 ca/ngày và được giao từ 60 biên chế công chức trở lên.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 167628,
+                                    "createdAt": "2026-01-17T04:11:17.000Z",
+                                    "updatedAt": "2026-01-17T04:11:17.000Z"
+                                },
+                                {
+                                    "id": 285022,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Thực hiện nhiệm vụ giải quyết thủ tục hành chính 24/24 giờ trong ngày theo quy định của pháp luật, phải bố trí công chức (trong đó có lãnh đạo chi cục) làm việc 3 ca/ngày và được giao từ 60 biên chế công chức trở lên.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 167628,
+                                    "createdAt": "2026-01-17T04:11:17.000Z",
+                                    "updatedAt": "2026-01-17T04:11:17.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 167629,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]</span><span style=\"font-weight: bold; font-size:16px;\">: Theo Nghị định 303/2025/NĐ-CP ngày 19/11/2025 của Chính phủ, phòng thuộc chi cục thuộc cục loại 1 có từ 10 đến 15 biên chế công chức được bố trí không quá bao nhiêu cấp phó?</span>",
+                            "categoryId": 2336,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Giải thích: Căn cứ khoản 6 Điều 12 Nghị định 303/2025/NĐ-CP.<br/> \"6. Phòng thuộc chi cục thuộc cục loại 1... có từ 10 đến 15 biên chế công chức được bố trí không quá 02 cấp phó;\"</span>",
+                            "readingContentId": null,
+                            "respondentCount": "34",
+                            "correctRespondentCount": "34",
+                            "type": 1,
+                            "createdAt": "2026-01-17T04:11:17.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-25T14:16:07.000Z",
+                            "answers": [
+                                {
+                                    "id": 285023,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">01 cấp phó </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167629,
+                                    "createdAt": "2026-01-17T04:11:17.000Z",
+                                    "updatedAt": "2026-01-17T04:11:17.000Z"
+                                },
+                                {
+                                    "id": 285024,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\"> 02 cấp phó </span>",
+                                    "isCorrect": true,
+                                    "questionId": 167629,
+                                    "createdAt": "2026-01-17T04:11:17.000Z",
+                                    "updatedAt": "2026-01-17T04:11:17.000Z"
+                                },
+                                {
+                                    "id": 285025,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">03 cấp phó </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167629,
+                                    "createdAt": "2026-01-17T04:11:17.000Z",
+                                    "updatedAt": "2026-01-17T04:11:17.000Z"
+                                },
+                                {
+                                    "id": 285026,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">04 cấp phó </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167629,
+                                    "createdAt": "2026-01-17T04:11:17.000Z",
+                                    "updatedAt": "2026-01-17T04:11:17.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 167630,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]</span><span style=\"font-weight: bold; font-size:16px;\">: Theo Nghị định 303/2025/NĐ-CP ngày 19/11/2025 của Chính phủ, phòng thuộc chi cục thuộc cục loại 2 có từ 08 biên chế công chức trở lên được bố trí không quá bao nhiêu cấp phó?</span>",
+                            "categoryId": 2336,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Giải thích: Căn cứ khoản 7 Điều 12 Nghị định 303/2025/NĐ-CP.<br/>7. Phòng thuộc chi cục thuộc cục loại 2 thuộc bộ có từ 05 đến 07 biên chế công chức được bố trí 01 cấp phó; có từ 08 biên chế công chức trở lên được bố trí không quá 02 cấp phó.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "39",
+                            "correctRespondentCount": "33",
+                            "type": 1,
+                            "createdAt": "2026-01-17T04:11:17.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-25T14:50:02.000Z",
+                            "answers": [
+                                {
+                                    "id": 285027,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">01 cấp phó </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167630,
+                                    "createdAt": "2026-01-17T04:11:17.000Z",
+                                    "updatedAt": "2026-01-17T04:11:17.000Z"
+                                },
+                                {
+                                    "id": 285028,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">02 cấp phó </span>",
+                                    "isCorrect": true,
+                                    "questionId": 167630,
+                                    "createdAt": "2026-01-17T04:11:17.000Z",
+                                    "updatedAt": "2026-01-17T04:11:17.000Z"
+                                },
+                                {
+                                    "id": 285029,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">03 cấp phó </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167630,
+                                    "createdAt": "2026-01-17T04:11:17.000Z",
+                                    "updatedAt": "2026-01-17T04:11:17.000Z"
+                                },
+                                {
+                                    "id": 285030,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">04 cấp phó </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167630,
+                                    "createdAt": "2026-01-17T04:11:17.000Z",
+                                    "updatedAt": "2026-01-17T04:11:17.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 167631,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]</span><span style=\"font-weight: bold; font-size:16px;\">: Theo Nghị định 303/2025/NĐ-CP ngày 19/11/2025 của Chính phủ, nội dung nào sau đây là đúng khi nói về đơn vị sự nghiệp công lập thuộc bộ?</span>",
+                            "categoryId": 2336,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Giải thích: Căn cứ khoản 3 Điều 13 Nghị định 303/2025/NĐ-CP.<br/> \"3. Đơn vị sự nghiệp công lập thực hiện cơ chế tự chủ về nhiệm vụ, tổ chức bộ máy, nhân sự và tài chính theo quy định của pháp luật.\" <br/>Phân tích: Đáp án A sai, đơn vị sự nghiệp công lập không có chức năng quản lý nhà nước (khoản 2 Điều 13). Đáp án B và D sai, đơn vị sự nghiệp công lập có tư cách pháp nhân, con dấu và tài khoản riêng (khoản 4 Điều 13).</span>",
+                            "readingContentId": null,
+                            "respondentCount": "50",
+                            "correctRespondentCount": "36",
+                            "type": 1,
+                            "createdAt": "2026-01-17T04:11:17.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-25T14:16:27.000Z",
+                            "answers": [
+                                {
+                                    "id": 285031,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\"> Đơn vị sự nghiệp công lập có chức năng quản lý nhà nước. </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167631,
+                                    "createdAt": "2026-01-17T04:11:17.000Z",
+                                    "updatedAt": "2026-01-17T04:11:17.000Z"
+                                },
+                                {
+                                    "id": 285032,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Đơn vị sự nghiệp công lập không có tư cách pháp nhân. </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167631,
+                                    "createdAt": "2026-01-17T04:11:17.000Z",
+                                    "updatedAt": "2026-01-17T04:11:17.000Z"
+                                },
+                                {
+                                    "id": 285033,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Đơn vị sự nghiệp công lập thực hiện cơ chế tự chủ về nhiệm vụ, tổ chức bộ máy, nhân sự và tài chính theo quy định của pháp luật. </span>",
+                                    "isCorrect": true,
+                                    "questionId": 167631,
+                                    "createdAt": "2026-01-17T04:11:17.000Z",
+                                    "updatedAt": "2026-01-17T04:11:17.000Z"
+                                },
+                                {
+                                    "id": 285034,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Đơn vị sự nghiệp công lập không có con dấu và tài khoản riêng. </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167631,
+                                    "createdAt": "2026-01-17T04:11:17.000Z",
+                                    "updatedAt": "2026-01-17T04:11:17.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 167632,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]</span><span style=\"font-weight: bold; font-size:16px;\">: Theo Nghị định 303/2025/NĐ-CP ngày 19/11/2025 của Chính phủ, nội dung nào sau đây là sai khi nói về đơn vị sự nghiệp công lập thuộc bộ?</span>",
+                            "categoryId": 2336,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Giải thích: Căn cứ khoản 2 Điều 13 Nghị định 303/2025/NĐ-CP. <br/>\"2. Đơn vị sự nghiệp công lập không có chức năng quản lý nhà nước.\" <br/>Phân tích: Chức năng tham mưu quản lý nhà nước thuộc về các tổ chức hành chính như Vụ, Cục. Đơn vị sự nghiệp công lập cung cấp dịch vụ công, phục vụ quản lý nhà nước nhưng không trực tiếp thực hiện chức năng quản lý nhà nước. Các Đáp án A, B, D là các quy định đúng.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "70",
+                            "correctRespondentCount": "38",
+                            "type": 1,
+                            "createdAt": "2026-01-17T04:11:17.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-25T14:40:09.000Z",
+                            "answers": [
+                                {
+                                    "id": 285035,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Có tư cách pháp nhân, con dấu và tài khoản riêng. </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167632,
+                                    "createdAt": "2026-01-17T04:11:17.000Z",
+                                    "updatedAt": "2026-01-17T04:11:17.000Z"
+                                },
+                                {
+                                    "id": 285036,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Việc thành lập, tổ chức lại, giải thể thực hiện theo quy định của Chính phủ. </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167632,
+                                    "createdAt": "2026-01-17T04:11:17.000Z",
+                                    "updatedAt": "2026-01-17T04:11:17.000Z"
+                                },
+                                {
+                                    "id": 285037,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Có chức năng tham mưu, giúp Bộ trưởng quản lý nhà nước về ngành, lĩnh vực. </span>",
+                                    "isCorrect": true,
+                                    "questionId": 167632,
+                                    "createdAt": "2026-01-17T04:11:17.000Z",
+                                    "updatedAt": "2026-01-17T04:11:17.000Z"
+                                },
+                                {
+                                    "id": 285038,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Thực hiện cơ chế tự chủ về nhiệm vụ, tổ chức bộ máy, nhân sự và tài chính. </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167632,
+                                    "createdAt": "2026-01-17T04:11:17.000Z",
+                                    "updatedAt": "2026-01-17T04:11:17.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        }
+                    ]
+                },
+                "exam": {
+                    "data": {
+                        "id": 2238,
+                        "name": "Đề 02: Nghị định số 303/2025/NĐ-CP quy định chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của bộ, cơ quan ngang bộ",
+                        "duration": 40,
+                        "retry": 3,
+                        "referencePoint": 5,
+                        "type": 1,
+                        "createdAt": "2026-01-13T03:03:29.000Z",
+                        "updatedAt": "2026-01-17T04:15:48.000Z"
+                    }
+                }
+            }
+        },
+        "testSessionAnswers": []
+    }
+}

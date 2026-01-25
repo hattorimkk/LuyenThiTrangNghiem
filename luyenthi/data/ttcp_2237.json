@@ -1,0 +1,1984 @@
+{
+    "data": {
+        "id": 160608,
+        "userId": 13907,
+        "examPackId": 623,
+        "examId": 2237,
+        "examCodeId": 160945,
+        "score": 0,
+        "correctQuestion": 0,
+        "inCorrectQuestion": 0,
+        "skipQuestion": 0,
+        "type": 1,
+        "status": 0,
+        "startTime": "2026-01-25T16:29:05.000Z",
+        "completedAt": null,
+        "createdAt": "2026-01-25T16:29:04.000Z",
+        "updatedAt": "2026-01-25T16:29:04.000Z",
+        "user": {
+            "id": 13907,
+            "email": "truongnguyen@gmail.com",
+            "username": null,
+            "code": "527463",
+            "phoneNumber": "",
+            "firstName": null,
+            "lastName": null,
+            "image": null,
+            "position": null,
+            "organization": null,
+            "status": 1,
+            "verifyToken": null,
+            "verified": false,
+            "verifiedAt": null,
+            "source": 1,
+            "deletedAt": null,
+            "createdAt": "2026-01-25T15:41:40.000Z",
+            "updatedAt": "2026-01-25T15:41:40.000Z"
+        },
+        "examCode": {
+            "data": {
+                "id": 160945,
+                "examId": 2237,
+                "createdAt": "2026-01-25T16:29:04.000Z",
+                "updatedAt": "2026-01-25T16:29:04.000Z",
+                "questions": {
+                    "data": [
+                        {
+                            "id": 167553,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]</span><span style=\"font-weight: bold; font-size:16px;\">: Theo Nghị định 303+A2:C72/2025/NĐ-CP ngày 19/11/2025 của Chính phủ, đâu là khẳng định đúng khi nói về Bộ, cơ quan ngang Bộ?</span>",
+                            "categoryId": 2336,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Giải thích: Căn cứ Điều 2: “Vị trí và chức năng của bộ thực hiện theo quy định tại Điều 22, Điều 23 Luật Tổ chức Chính phủ”<br/>Khoản 1, Điều 22. Bộ, cơ quan ngang Bộ: Bộ, cơ quan ngang Bộ là cơ quan của Chính phủ thực hiện chức năng quản lý nhà nước về một hoặc một số ngành, lĩnh vực và dịch vụ công thuộc ngành, lĩnh vực được phân công trong phạm vi toàn quốc.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "85",
+                            "correctRespondentCount": "52",
+                            "type": 1,
+                            "createdAt": "2026-01-17T04:11:11.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-25T15:17:47.000Z",
+                            "answers": [
+                                {
+                                    "id": 284719,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Bộ, cơ quan ngang Bộ là cơ quan thực hiện chức năng quản lý nhà nước về một hoặc một số ngành, lĩnh vực và dịch vụ công thuộc ngành, lĩnh vực được phân công trong phạm vi toàn quốc.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 167553,
+                                    "createdAt": "2026-01-17T04:11:11.000Z",
+                                    "updatedAt": "2026-01-17T04:11:11.000Z"
+                                },
+                                {
+                                    "id": 284720,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Bộ, cơ quan ngang Bộ là cơ quan của Chính phủ thực hiện chức năng quản lý nhà nước về một hoặc một số ngành, lĩnh vực và dịch vụ công thuộc ngành, lĩnh vực được phân công trong phạm vi toàn quốc.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 167553,
+                                    "createdAt": "2026-01-17T04:11:11.000Z",
+                                    "updatedAt": "2026-01-17T04:11:11.000Z"
+                                },
+                                {
+                                    "id": 284721,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Bộ, cơ quan ngang Bộ là cơ quan thực hiện chức năng quản lý nhà nước về các ngành, lĩnh vực và dịch vụ công thuộc ngành, lĩnh vực được phân công trong phạm vi toàn quốc.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 167553,
+                                    "createdAt": "2026-01-17T04:11:11.000Z",
+                                    "updatedAt": "2026-01-17T04:11:11.000Z"
+                                },
+                                {
+                                    "id": 284722,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Bộ, cơ quan ngang Bộ là cơ quan của Chính phủ thực hiện chức năng quản lý nhà nước về một số ngành, lĩnh vực và dịch vụ công thuộc ngành, lĩnh vực được phân công trong phạm vi cả nước.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 167553,
+                                    "createdAt": "2026-01-17T04:11:11.000Z",
+                                    "updatedAt": "2026-01-17T04:11:11.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 167554,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]</span><span style=\"font-weight: bold; font-size:16px;\">: Theo Nghị định 303/2025/NĐ-CP ngày 19/11/2025 của Chính phủ, chủ thể nào quy định cụ thể chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của từng Bộ, cơ quan ngang Bộ?</span>",
+                            "categoryId": 2336,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Giải thích: Căn cứ Điều 2: “Vị trí và chức năng của bộ thực hiện theo quy định tại Điều 22, Điều 23 Luật Tổ chức Chính phủ”<br/>Khoản 2 Điều 22 quy định: Chính phủ quy định cụ thể chức năng, nhiệm vụ, quyền hạn và cơ cấu tồ chức của từng Bộ, cơ quan ngang Bộ.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "49",
+                            "correctRespondentCount": "43",
+                            "type": 1,
+                            "createdAt": "2026-01-17T04:11:11.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-25T15:17:56.000Z",
+                            "answers": [
+                                {
+                                    "id": 284723,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Chính phủ</span>",
+                                    "isCorrect": true,
+                                    "questionId": 167554,
+                                    "createdAt": "2026-01-17T04:11:11.000Z",
+                                    "updatedAt": "2026-01-17T04:11:11.000Z"
+                                },
+                                {
+                                    "id": 284724,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\"> Văn phòng chính phủ</span>",
+                                    "isCorrect": false,
+                                    "questionId": 167554,
+                                    "createdAt": "2026-01-17T04:11:11.000Z",
+                                    "updatedAt": "2026-01-17T04:11:11.000Z"
+                                },
+                                {
+                                    "id": 284725,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Chủ nhiệm Văn phòng Chính phủ</span>",
+                                    "isCorrect": false,
+                                    "questionId": 167554,
+                                    "createdAt": "2026-01-17T04:11:11.000Z",
+                                    "updatedAt": "2026-01-17T04:11:11.000Z"
+                                },
+                                {
+                                    "id": 284726,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Quốc hội</span>",
+                                    "isCorrect": false,
+                                    "questionId": 167554,
+                                    "createdAt": "2026-01-17T04:11:11.000Z",
+                                    "updatedAt": "2026-01-17T04:11:11.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 167555,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]</span><span style=\"font-weight: bold; font-size:16px;\">: Theo Nghị định 303/2025/NĐ-CP ngày 19/11/2025 của Chính phủ, đâu là khẳng định đúng khi nói về Văn phòng Chính phủ?</span>",
+                            "categoryId": 2336,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Giải thích: Căn cứ Điều 2: “Vị trí và chức năng của bộ thực hiện theo quy định tại Điều 22, Điều 23 Luật Tổ chức Chính phủ”<br/>Khoản 1 Điều 23 quy định: Văn phòng Chính phủ là bộ máy giúp việc của Chính phủ, Thủ tướng Chính phủ, có chức năng tham mưu tổng hợp, giúp việc cho Chính phủ, Thủ tướng Chính phủ thực hiện nhiệm vụ và quyền hạn theo quy định của Chính phủ.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "73",
+                            "correctRespondentCount": "58",
+                            "type": 1,
+                            "createdAt": "2026-01-17T04:11:11.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-25T16:46:23.000Z",
+                            "answers": [
+                                {
+                                    "id": 284727,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Văn phòng Chính phủ là bộ máy giúp việc của Chính phủ, Thủ tướng Chính phủ, có chức năng tham mưu tổng hợp, giúp việc cho Chính phủ, Thủ tướng Chính phủ thực hiện nhiệm vụ và quyền hạn theo quy định của Chính phủ.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 167555,
+                                    "createdAt": "2026-01-17T04:11:11.000Z",
+                                    "updatedAt": "2026-01-17T04:11:11.000Z"
+                                },
+                                {
+                                    "id": 284728,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Văn phòng Chính phủ là bộ máy giúp việc của Thủ tướng Chính phủ, có chức năng tham mưu tổng hợp, giúp việc cho Chính phủ, Thủ tướng Chính phủ thực hiện nhiệm vụ và quyền hạn theo quy định của Chính phủ.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 167555,
+                                    "createdAt": "2026-01-17T04:11:11.000Z",
+                                    "updatedAt": "2026-01-17T04:11:11.000Z"
+                                },
+                                {
+                                    "id": 284729,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Văn phòng Chính phủ là bộ máy giúp việc của Thủ tướng Chính phủ và Chính phủ có chức năng tổng hợp, giúp việc cho Chính phủ, Thủ tướng Chính phủ thực hiện nhiệm vụ và quyền hạn theo quy định của Chính phủ.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 167555,
+                                    "createdAt": "2026-01-17T04:11:11.000Z",
+                                    "updatedAt": "2026-01-17T04:11:11.000Z"
+                                },
+                                {
+                                    "id": 284730,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Văn phòng Chính phủ là tổ chức giúp việc của Chính phủ và Thủ tướng Chính phủ, có chức năng tham mưu tổng hợp, giúp việc cho Chính phủ, Thủ tướng Chính phủ thực hiện nhiệm vụ và quyền hạn theo quy định của Chính phủ.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 167555,
+                                    "createdAt": "2026-01-17T04:11:11.000Z",
+                                    "updatedAt": "2026-01-17T04:11:11.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 167556,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]</span><span style=\"font-weight: bold; font-size:16px;\">: Theo Nghị định 303/2025/NĐ-CP ngày 19/11/2025 của Chính phủ, đâu là chủ thể đứng đầu Văn phòng Chính phủ?</span>",
+                            "categoryId": 2336,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Giải thích: Căn cứ Điều 2: “Vị trí và chức năng của bộ thực hiện theo quy định tại Điều 22, Điều 23 Luật Tổ chức Chính phủ”<br/>Khoản 2 Điều 23 quy định: 2. Văn phòng Chính phủ do Bộ trưởng, Chủ nhiệm Văn phòng Chính phủ đứng đầu.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "62",
+                            "correctRespondentCount": "37",
+                            "type": 1,
+                            "createdAt": "2026-01-17T04:11:11.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-25T15:18:26.000Z",
+                            "answers": [
+                                {
+                                    "id": 284731,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Bộ Trưởng</span>",
+                                    "isCorrect": false,
+                                    "questionId": 167556,
+                                    "createdAt": "2026-01-17T04:11:11.000Z",
+                                    "updatedAt": "2026-01-17T04:11:11.000Z"
+                                },
+                                {
+                                    "id": 284732,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Chủ nhiệm Văn phòng Chính Phủ</span>",
+                                    "isCorrect": false,
+                                    "questionId": 167556,
+                                    "createdAt": "2026-01-17T04:11:11.000Z",
+                                    "updatedAt": "2026-01-17T04:11:11.000Z"
+                                },
+                                {
+                                    "id": 284733,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Chính Phủ</span>",
+                                    "isCorrect": false,
+                                    "questionId": 167556,
+                                    "createdAt": "2026-01-17T04:11:11.000Z",
+                                    "updatedAt": "2026-01-17T04:11:11.000Z"
+                                },
+                                {
+                                    "id": 284734,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Bộ trưởng, Chủ nhiệm Văn phòng Chính phủ</span>",
+                                    "isCorrect": true,
+                                    "questionId": 167556,
+                                    "createdAt": "2026-01-17T04:11:11.000Z",
+                                    "updatedAt": "2026-01-17T04:11:11.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 167557,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]</span><span style=\"font-weight: bold; font-size:16px;\">: Theo Nghị định 303/2025/NĐ-CP ngày 19/11/2025 của Chính phủ, có bao nhiêu nguyên tắc tổ chức và hoạt động của bộ?</span>",
+                            "categoryId": 2336,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Giải thích: Căn cứ Điều 3. Quy định 6 nguyên tắc tổ chức và hoạt động của bộ, bao gồm:<br/>1. Phân định rõ nhiệm vụ, quyền hạn và trách nhiệm của bộ, Bộ trưởng, Thủ trưởng cơ quan ngang bộ (sau đây gọi chung là Bộ trưởng); Bộ trưởng chịu trách nhiệm toàn diện về mọi hoạt động của bộ.<br/>2. Tổ chức bộ máy của bộ theo hướng quản lý đa ngành, đa lĩnh vực, tinh gọn, hiệu năng, hiệu lực, hiệu quả.<br/>3. Xác định số lượng cấp phó trong cơ quan, tổ chức phải bảo đảm nguyên tắc số lượng cấp phó trong một tổ chức trực thuộc tối đa không vượt quá số lượng cấp phó của tổ chức cấp trên trực tiếp. Các cơ quan, tổ chức cùng cấp thì số lượng cấp phó của cơ quan, tổ chức không có tổ chức bên trong tối đa không vượt quá số lượng cấp phó của cơ quan, tổ chức có tổ chức bên trong. Trường hợp cần tăng số lượng cấp phó so với quy định của cấp có thẩm quyền thì báo cáo cấp có thẩm quyền xem xét, quyết định.<br/>4. Đẩy mạnh phân cấp, ủy quyền trong tổ chức và hoạt động của bộ theo quy định của pháp luật.<br/>5. Tổ chức, đơn vị trực thuộc bộ thực hiện nhiệm vụ, quyền hạn quản lý nhà nước được phân cấp theo quy định của pháp luật; thực hiện nhiệm vụ, quyền hạn được ủy quyền theo quy định của pháp luật và quy chế làm việc của cơ quan, tổ chức, đơn vị.<br/>6. Công khai, minh bạch và hiện đại hóa hoạt động của bộ. </span>",
+                            "readingContentId": null,
+                            "respondentCount": "48",
+                            "correctRespondentCount": "42",
+                            "type": 1,
+                            "createdAt": "2026-01-17T04:11:11.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-25T15:18:44.000Z",
+                            "answers": [
+                                {
+                                    "id": 284735,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">4 nguyên tắc </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167557,
+                                    "createdAt": "2026-01-17T04:11:11.000Z",
+                                    "updatedAt": "2026-01-17T04:11:11.000Z"
+                                },
+                                {
+                                    "id": 284736,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">5 nguyên tắc </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167557,
+                                    "createdAt": "2026-01-17T04:11:11.000Z",
+                                    "updatedAt": "2026-01-17T04:11:11.000Z"
+                                },
+                                {
+                                    "id": 284737,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">6 nguyên tắc </span>",
+                                    "isCorrect": true,
+                                    "questionId": 167557,
+                                    "createdAt": "2026-01-17T04:11:11.000Z",
+                                    "updatedAt": "2026-01-17T04:11:11.000Z"
+                                },
+                                {
+                                    "id": 284738,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">7 nguyên tắc </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167557,
+                                    "createdAt": "2026-01-17T04:11:11.000Z",
+                                    "updatedAt": "2026-01-17T04:11:11.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 167558,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]</span><span style=\"font-weight: bold; font-size:16px;\">: Theo Nghị định 303/2025/NĐ-CP ngày 19/11/2025 của Chính phủ, đâu không phải là một trong những nguyên tắc tổ chức và hoạt động của bộ?</span>",
+                            "categoryId": 2336,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Giải thích: Căn cứ khoản 2 Điều 3. \"2. Tổ chức bộ máy của bộ theo hướng quản lý đa ngành, đa lĩnh vực, tinh gọn, hiệu năng, hiệu lực, hiệu quả.\" <br/>Phân tích: Nguyên tắc đúng là tổ chức bộ máy theo hướng \"quản lý đa ngành, đa lĩnh vực\", không phải \"quản lý chuyên ngành, chuyên sâu\". Các Đáp án A, C, D là các nguyên tắc được quy định tại khoản 1, 4, 6 Điều 3.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "58",
+                            "correctRespondentCount": "41",
+                            "type": 1,
+                            "createdAt": "2026-01-17T04:11:11.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-25T15:18:51.000Z",
+                            "answers": [
+                                {
+                                    "id": 284739,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Phân định rõ nhiệm vụ, quyền hạn và trách nhiệm của bộ, Bộ trưởng, Thủ trưởng cơ quan ngang bộ.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 167558,
+                                    "createdAt": "2026-01-17T04:11:11.000Z",
+                                    "updatedAt": "2026-01-17T04:11:11.000Z"
+                                },
+                                {
+                                    "id": 284740,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Tổ chức bộ máy của bộ theo hướng quản lý chuyên ngành, chuyên sâu. </span>",
+                                    "isCorrect": true,
+                                    "questionId": 167558,
+                                    "createdAt": "2026-01-17T04:11:11.000Z",
+                                    "updatedAt": "2026-01-17T04:11:11.000Z"
+                                },
+                                {
+                                    "id": 284741,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Đẩy mạnh phân cấp, ủy quyền trong tổ chức và hoạt động của bộ theo quy định của pháp luật.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 167558,
+                                    "createdAt": "2026-01-17T04:11:11.000Z",
+                                    "updatedAt": "2026-01-17T04:11:11.000Z"
+                                },
+                                {
+                                    "id": 284742,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Công khai, minh bạch và hiện đại hóa hoạt động của bộ. </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167558,
+                                    "createdAt": "2026-01-17T04:11:11.000Z",
+                                    "updatedAt": "2026-01-17T04:11:11.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 167559,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]</span><span style=\"font-weight: bold; font-size:16px;\">: Theo Nghị định 303/2025/NĐ-CP ngày 19/11/2025 của Chính phủ, nội dung nào sau đây là đúng khi nói về nguyên tắc xác định số lượng cấp phó trong cơ quan, tổ chức?</span>",
+                            "categoryId": 2336,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Giải thích: Căn cứ khoản 3 Điều 3. \"3. Xác định số lượng cấp phó trong cơ quan, tổ chức phải bảo đảm nguyên tắc số lượng cấp phó trong một tổ chức trực thuộc tối đa không vượt quá số lượng cấp phó của tổ chức cấp trên trực tiếp. Các cơ quan, tổ chức cùng cấp thì số lượng cấp phó của cơ quan, tổ chức không có tổ chức bên trong tối đa không vượt quá số lượng cấp phó của cơ quan, tổ chức có tổ chức bên trong. Trường hợp cần tăng số lượng cấp phó so với quy định của cấp có thẩm quyền thì báo cáo cấp có thẩm quyền xem xét, quyết định.\" <br/>Phân tích: Đáp án D thể hiện đúng quy định về trường hợp đặc biệt cần tăng số lượng cấp phó. <br/>Đáp án A sai: “có thể vượt quá”<br/>Đáp án B sai “tối thiểu” <br/>Đáp án C là sai “tự chủ quyết định”</span>",
+                            "readingContentId": null,
+                            "respondentCount": "69",
+                            "correctRespondentCount": "34",
+                            "type": 1,
+                            "createdAt": "2026-01-17T04:11:12.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-25T15:55:44.000Z",
+                            "answers": [
+                                {
+                                    "id": 284743,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Số lượng cấp phó trong một tổ chức trực thuộc có thể vượt số lượng cấp phó của tổ chức cấp trên trực tiếp. </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167559,
+                                    "createdAt": "2026-01-17T04:11:11.000Z",
+                                    "updatedAt": "2026-01-17T04:11:12.000Z"
+                                },
+                                {
+                                    "id": 284744,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Các cơ quan, tổ chức cùng cấp thì số lượng cấp phó của cơ quan, tổ chức không có tổ chức bên trong tối thiểu không vượt quá số lượng cấp phó của cơ quan, tổ chức có tổ chức bên trong.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 167559,
+                                    "createdAt": "2026-01-17T04:11:11.000Z",
+                                    "updatedAt": "2026-01-17T04:11:12.000Z"
+                                },
+                                {
+                                    "id": 284745,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Trường hợp cần tăng số lượng cấp phó so với quy định của cấp có thẩm quyển cơ quan chủ quản có quyền tự chủ quyết định theo quy định của pháp luật</span>",
+                                    "isCorrect": false,
+                                    "questionId": 167559,
+                                    "createdAt": "2026-01-17T04:11:12.000Z",
+                                    "updatedAt": "2026-01-17T04:11:12.000Z"
+                                },
+                                {
+                                    "id": 284746,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Trường hợp cần tăng số lượng cấp phó so với quy định của cấp có thẩm quyền thì báo cáo cấp có thẩm quyền xem xét, quyết định. </span>",
+                                    "isCorrect": true,
+                                    "questionId": 167559,
+                                    "createdAt": "2026-01-17T04:11:12.000Z",
+                                    "updatedAt": "2026-01-17T04:11:13.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 167560,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]</span><span style=\"font-weight: bold; font-size:16px;\">: Theo Nghị định 303/2025/NĐ-CP ngày 19/11/2025 của Chính phủ, chủ thể nào chịu trách nhiệm toàn diện về mọi hoạt động của bộ?</span>",
+                            "categoryId": 2336,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Giải thích: Căn cứ khoản 1 Điều 3 Nghị định 303/2025/NĐ-CP. \"1. Phân định rõ nhiệm vụ, quyền hạn và trách nhiệm của bộ, Bộ trưởng, Thủ trưởng cơ quan ngang bộ (sau đây gọi chung là Bộ trưởng); Bộ trưởng chịu trách nhiệm toàn diện về mọi hoạt động của bộ.\" </span>",
+                            "readingContentId": null,
+                            "respondentCount": "66",
+                            "correctRespondentCount": "54",
+                            "type": 1,
+                            "createdAt": "2026-01-17T04:11:13.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-25T15:55:56.000Z",
+                            "answers": [
+                                {
+                                    "id": 284747,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Chính phủ </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167560,
+                                    "createdAt": "2026-01-17T04:11:13.000Z",
+                                    "updatedAt": "2026-01-17T04:11:13.000Z"
+                                },
+                                {
+                                    "id": 284748,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Thủ tướng Chính phủ </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167560,
+                                    "createdAt": "2026-01-17T04:11:13.000Z",
+                                    "updatedAt": "2026-01-17T04:11:13.000Z"
+                                },
+                                {
+                                    "id": 284749,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Bộ trưởng </span>",
+                                    "isCorrect": true,
+                                    "questionId": 167560,
+                                    "createdAt": "2026-01-17T04:11:13.000Z",
+                                    "updatedAt": "2026-01-17T04:11:13.000Z"
+                                },
+                                {
+                                    "id": 284750,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Tập thể lãnh đạo bộ </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167560,
+                                    "createdAt": "2026-01-17T04:11:13.000Z",
+                                    "updatedAt": "2026-01-17T04:11:13.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 167561,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]</span><span style=\"font-weight: bold; font-size:16px;\">: Theo Nghị định 303/2025/NĐ-CP ngày 19/11/2025 của Chính phủ, “Tổ chức, đơn vị trực thuộc bộ thực hiện nhiệm vụ, quyền hạn quản lý nhà nước được phân cấp theo quy định của pháp luật; thực hiện nhiệm vụ, quyền hạn được ủy quyền theo quy định của pháp luật và quy chế làm việc của cơ quan, tổ chức, đơn vị” là nguyên tắc thứ mấy trong nguyên tắc tổ chức và hoạt động của bộ?</span>",
+                            "categoryId": 2336,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Giải thích: Căn cứ Điều 3 Nghị định 303/2025/NĐ-CP<br/>1. Phân định rõ nhiệm vụ, quyền hạn và trách nhiệm của bộ, Bộ trưởng, Thủ trưởng cơ quan ngang bộ (sau đây gọi chung là Bộ trưởng); Bộ trưởng chịu trách nhiệm toàn diện về mọi hoạt động của bộ.<br/>2. Tổ chức bộ máy của bộ theo hướng quản lý đa ngành, đa lĩnh vực, tinh gọn, hiệu năng, hiệu lực, hiệu quả.<br/>3. Xác định số lượng cấp phó trong cơ quan, tổ chức phải bảo đảm nguyên tắc số lượng cấp phó trong một tổ chức trực thuộc tối đa không vượt quá số lượng cấp phó của tổ chức cấp trên trực tiếp. Các cơ quan, tổ chức cùng cấp thì số lượng cấp phó của cơ quan, tổ chức không có tổ chức bên trong tối đa không vượt quá số lượng cấp phó của cơ quan, tổ chức có tổ chức bên trong. Trường hợp cần tăng số lượng cấp phó so với quy định của cấp có thẩm quyền thì báo cáo cấp có thẩm quyền xem xét, quyết định.<br/>4. Đẩy mạnh phân cấp, ủy quyền trong tổ chức và hoạt động của bộ theo quy định của pháp luật.<br/>5. Tổ chức, đơn vị trực thuộc bộ thực hiện nhiệm vụ, quyền hạn quản lý nhà nước được phân cấp theo quy định của pháp luật; thực hiện nhiệm vụ, quyền hạn được ủy quyền theo quy định của pháp luật và quy chế làm việc của cơ quan, tổ chức, đơn vị.<br/>6. Công khai, minh bạch và hiện đại hóa hoạt động của bộ.<br/>Vậy nguyên tắc “Tổ chức, đơn vi...” là nguyên tắc thứ 5</span>",
+                            "readingContentId": null,
+                            "respondentCount": "59",
+                            "correctRespondentCount": "43",
+                            "type": 1,
+                            "createdAt": "2026-01-17T04:11:13.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-25T15:19:56.000Z",
+                            "answers": [
+                                {
+                                    "id": 284751,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Nguyên tắc 3</span>",
+                                    "isCorrect": false,
+                                    "questionId": 167561,
+                                    "createdAt": "2026-01-17T04:11:13.000Z",
+                                    "updatedAt": "2026-01-17T04:11:13.000Z"
+                                },
+                                {
+                                    "id": 284752,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Nguyên tắc 4</span>",
+                                    "isCorrect": false,
+                                    "questionId": 167561,
+                                    "createdAt": "2026-01-17T04:11:13.000Z",
+                                    "updatedAt": "2026-01-17T04:11:13.000Z"
+                                },
+                                {
+                                    "id": 284753,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Nguyên tắc 5</span>",
+                                    "isCorrect": true,
+                                    "questionId": 167561,
+                                    "createdAt": "2026-01-17T04:11:13.000Z",
+                                    "updatedAt": "2026-01-17T04:11:13.000Z"
+                                },
+                                {
+                                    "id": 284754,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Nguyên tắc 6</span>",
+                                    "isCorrect": false,
+                                    "questionId": 167561,
+                                    "createdAt": "2026-01-17T04:11:13.000Z",
+                                    "updatedAt": "2026-01-17T04:11:13.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 167562,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]</span><span style=\"font-weight: bold; font-size:16px;\">: Theo Nghị định 303/2025/NĐ-CP ngày 19/11/2025 của Chính phủ, “Công khai, minh bạch và hiện đại hóa hoạt động của bộ” là nguyên tắc thứ mấy trong nguyên tắc tổ chức và hoạt động của bộ?</span>",
+                            "categoryId": 2336,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Giải thích: Căn cứ Điều 3 Nghị định 303/2025/NĐ-CP<br/>1. Phân định rõ nhiệm vụ, quyền hạn và trách nhiệm của bộ, Bộ trưởng, Thủ trưởng cơ quan ngang bộ (sau đây gọi chung là Bộ trưởng); Bộ trưởng chịu trách nhiệm toàn diện về mọi hoạt động của bộ.<br/>2. Tổ chức bộ máy của bộ theo hướng quản lý đa ngành, đa lĩnh vực, tinh gọn, hiệu năng, hiệu lực, hiệu quả.<br/>3. Xác định số lượng cấp phó trong cơ quan, tổ chức phải bảo đảm nguyên tắc số lượng cấp phó trong một tổ chức trực thuộc tối đa không vượt quá số lượng cấp phó của tổ chức cấp trên trực tiếp. Các cơ quan, tổ chức cùng cấp thì số lượng cấp phó của cơ quan, tổ chức không có tổ chức bên trong tối đa không vượt quá số lượng cấp phó của cơ quan, tổ chức có tổ chức bên trong. Trường hợp cần tăng số lượng cấp phó so với quy định của cấp có thẩm quyền thì báo cáo cấp có thẩm quyền xem xét, quyết định.<br/>4. Đẩy mạnh phân cấp, ủy quyền trong tổ chức và hoạt động của bộ theo quy định của pháp luật.<br/>5. Tổ chức, đơn vị trực thuộc bộ thực hiện nhiệm vụ, quyền hạn quản lý nhà nước được phân cấp theo quy định của pháp luật; thực hiện nhiệm vụ, quyền hạn được ủy quyền theo quy định của pháp luật và quy chế làm việc của cơ quan, tổ chức, đơn vị.<br/>6. Công khai, minh bạch và hiện đại hóa hoạt động của bộ.<br/>Vậy nguyên tắc “Công khai, minh bạch và hiện đại hóa hoạt động của bộ” là nguyên tắc thứ 6</span>",
+                            "readingContentId": null,
+                            "respondentCount": "41",
+                            "correctRespondentCount": "38",
+                            "type": 1,
+                            "createdAt": "2026-01-17T04:11:13.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-25T15:20:00.000Z",
+                            "answers": [
+                                {
+                                    "id": 284755,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Nguyên tắc 3</span>",
+                                    "isCorrect": false,
+                                    "questionId": 167562,
+                                    "createdAt": "2026-01-17T04:11:13.000Z",
+                                    "updatedAt": "2026-01-17T04:11:13.000Z"
+                                },
+                                {
+                                    "id": 284756,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Nguyên tắc 4</span>",
+                                    "isCorrect": false,
+                                    "questionId": 167562,
+                                    "createdAt": "2026-01-17T04:11:13.000Z",
+                                    "updatedAt": "2026-01-17T04:11:13.000Z"
+                                },
+                                {
+                                    "id": 284757,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Nguyên tắc 5</span>",
+                                    "isCorrect": false,
+                                    "questionId": 167562,
+                                    "createdAt": "2026-01-17T04:11:13.000Z",
+                                    "updatedAt": "2026-01-17T04:11:13.000Z"
+                                },
+                                {
+                                    "id": 284758,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Nguyên tắc 6</span>",
+                                    "isCorrect": true,
+                                    "questionId": 167562,
+                                    "createdAt": "2026-01-17T04:11:13.000Z",
+                                    "updatedAt": "2026-01-17T04:11:13.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 167563,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]</span><span style=\"font-weight: bold; font-size:16px;\">: Theo Nghị định 303/2025/NĐ-CP ngày 19/11/2025 của Chính phủ, đâu là nguyên tắc tổ chức và hoạt động của bộ</span>",
+                            "categoryId": 2336,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Giải thích: Căn cứ Điều 3 Nguyên tắc tổ chức và hoạt động của bộ<br/>Đáp án B đúng theo quy định<br/>Đáp án A sai: thiếu cụm “toàn diện về mọi” trong “Bộ trưởng chịu trách nhiệm toàn diện về mọi hoạt động của bộ”<br/>Đáp án C sai: thừa “phân quyền”<br/>Đáp  án D sai: thừa “hiệu quả”</span>",
+                            "readingContentId": null,
+                            "respondentCount": "148",
+                            "correctRespondentCount": "53",
+                            "type": 1,
+                            "createdAt": "2026-01-17T04:11:13.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-25T15:48:04.000Z",
+                            "answers": [
+                                {
+                                    "id": 284759,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Phân định rõ nhiệm vụ, quyền hạn và trách nhiệm của bộ, Bộ trưởng, Thủ trưởng cơ quan ngang bộ (sau đây gọi chung là Bộ trưởng); Bộ trưởng chịu trách nhiệm hoạt động của bộ.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 167563,
+                                    "createdAt": "2026-01-17T04:11:13.000Z",
+                                    "updatedAt": "2026-01-17T04:11:13.000Z"
+                                },
+                                {
+                                    "id": 284760,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Tổ chức bộ máy của bộ theo hướng quản lý đa ngành, đa lĩnh vực, tinh gọn, hiệu năng, hiệu lực, hiệu quả.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 167563,
+                                    "createdAt": "2026-01-17T04:11:13.000Z",
+                                    "updatedAt": "2026-01-17T04:11:13.000Z"
+                                },
+                                {
+                                    "id": 284761,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Đẩy mạnh phân cấp, phân quyền, ủy quyền trong tổ chức và hoạt động của bộ theo quy định của pháp luật</span>",
+                                    "isCorrect": false,
+                                    "questionId": 167563,
+                                    "createdAt": "2026-01-17T04:11:13.000Z",
+                                    "updatedAt": "2026-01-17T04:11:13.000Z"
+                                },
+                                {
+                                    "id": 284762,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Công khai, minh bạch, hiệu quả và hiện đại hóa hoạt động của bộ.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 167563,
+                                    "createdAt": "2026-01-17T04:11:13.000Z",
+                                    "updatedAt": "2026-01-17T04:11:13.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 167564,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]</span><span style=\"font-weight: bold; font-size:16px;\">: Theo Nghị định 303/2025/NĐ-CP ngày 19/11/2025 của Chính phủ, một trong những nguyên tắc tổ chức và hoạt động của bộ là tổ chức bộ máy theo hướng nào?</span>",
+                            "categoryId": 2336,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Giải thích: Căn cứ khoản 2 Điều 3 Nghị định 303/2025/NĐ-CP.<br/> \"2. Tổ chức bộ máy của bộ theo hướng quản lý đa ngành, đa lĩnh vực, tinh gọn, hiệu năng, hiệu lực, hiệu quả.\"</span>",
+                            "readingContentId": null,
+                            "respondentCount": "57",
+                            "correctRespondentCount": "49",
+                            "type": 1,
+                            "createdAt": "2026-01-17T04:11:13.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-25T15:21:25.000Z",
+                            "answers": [
+                                {
+                                    "id": 284763,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Quản lý đa ngành, đa lĩnh vực, tinh gọn, hiệu năng, hiệu lực, hiệu quả. </span>",
+                                    "isCorrect": true,
+                                    "questionId": 167564,
+                                    "createdAt": "2026-01-17T04:11:13.000Z",
+                                    "updatedAt": "2026-01-17T04:11:13.000Z"
+                                },
+                                {
+                                    "id": 284764,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Quản lý chuyên ngành, tập trung, thống nhất, liên tục, thông suốt, chuyên nghiệp</span>",
+                                    "isCorrect": false,
+                                    "questionId": 167564,
+                                    "createdAt": "2026-01-17T04:11:13.000Z",
+                                    "updatedAt": "2026-01-17T04:11:13.000Z"
+                                },
+                                {
+                                    "id": 284765,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Mở rộng quy mô, tăng cường phân cấp. </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167564,
+                                    "createdAt": "2026-01-17T04:11:13.000Z",
+                                    "updatedAt": "2026-01-17T04:11:13.000Z"
+                                },
+                                {
+                                    "id": 284766,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Tinh giản biên chế, hiện đại hóa hành chính.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 167564,
+                                    "createdAt": "2026-01-17T04:11:13.000Z",
+                                    "updatedAt": "2026-01-17T04:11:13.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 167565,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]</span><span style=\"font-weight: bold; font-size:16px;\">: Theo Nghị định 303/2025/NĐ-CP ngày 19/11/2025 của Chính phủ, đâu là nhiệm vụ, quyền hạn của bộ?</span>",
+                            "categoryId": 2336,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Giải thích: Căn cứ khoản 4 Điều 4 Nghị định 303/2025/NĐ-CP. \"4. Chỉ đạo và tổ chức thực hiện công tác tuyên truyền, phổ biến, giáo dục pháp luật thuộc phạm vi quản lý nhà nước của bộ.\" <br/>Phân tích:<br/>Đáp án A sai: thẩm quyền “Trình Hội đồng nhân dân” đúng phải trình Chính phủ, Thủ tướng Chính phủ. <br/>Đáp án C sai: “đối tượng quản lý” đúng phạm vi quản lý <br/>Đáp án D sai: “Bộ” đúng phân công của Chính phủ.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "59",
+                            "correctRespondentCount": "39",
+                            "type": 1,
+                            "createdAt": "2026-01-17T04:11:13.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-25T15:21:44.000Z",
+                            "answers": [
+                                {
+                                    "id": 284767,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Trình Hội đồng nhân dân cấp tỉnh xem xét, quyết định các vấn đề thuộc phạm vi quản lý nhà nước về ngành, lĩnh vực. </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167565,
+                                    "createdAt": "2026-01-17T04:11:13.000Z",
+                                    "updatedAt": "2026-01-17T04:11:13.000Z"
+                                },
+                                {
+                                    "id": 284768,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Chỉ đạo và tổ chức thực hiện công tác tuyên truyền, phổ biến, giáo dục pháp luật thuộc phạm vi quản lý nhà nước của bộ. </span>",
+                                    "isCorrect": true,
+                                    "questionId": 167565,
+                                    "createdAt": "2026-01-17T04:11:13.000Z",
+                                    "updatedAt": "2026-01-17T04:11:13.000Z"
+                                },
+                                {
+                                    "id": 284769,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Quyết định theo thẩm quyền các vấn đề thuộc đối tượng quản lý nhà nước của bộ.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 167565,
+                                    "createdAt": "2026-01-17T04:11:13.000Z",
+                                    "updatedAt": "2026-01-17T04:11:13.000Z"
+                                },
+                                {
+                                    "id": 284770,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Thực hiện nhiệm vụ, quyền hạn theo quy định của pháp luật về ngành, lĩnh vực thuộc phạm vi quản lý và phân công của Bộ.<br/>Đáp  án đúng: Chọn đáp án B. </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167565,
+                                    "createdAt": "2026-01-17T04:11:13.000Z",
+                                    "updatedAt": "2026-01-17T04:11:13.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 167566,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]</span><span style=\"font-weight: bold; font-size:16px;\">: Theo Nghị định 303/2025/NĐ-CP ngày 19/11/2025 của Chính phủ, có bao nhiêu nhiệm vụ, quyền hạn của Bộ?</span>",
+                            "categoryId": 2336,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Giải thích: Căn cứ khoản 4 Điều 4 Nghị định 303/2025/NĐ-CP<br/>1. Trình Chính phủ, Thủ tướng Chính phủ xem xét, quyết định theo thẩm quyền hoặc trình cấp có thẩm quyền quyết định các vấn đề thuộc phạm vi quản lý nhà nước về ngành, lĩnh vực theo phân công của Chính phủ, Thủ tướng Chính phủ.<br/>2. Trình cấp có thẩm quyền ban hành chiến lược, quy hoạch, kế hoạch, chính sách phát triển ngành, lĩnh vực được phân công theo quy định của pháp luật và tổ chức triển khai thực hiện chiến lược, quy hoạch, kế hoạch, chương trình, dự án đã được phê duyệt, nhiệm vụ của bộ được Chính phủ, Thủ tướng Chính phủ giao.<br/>3. Quyết định theo thẩm quyền các vấn đề thuộc phạm vi quản lý nhà nước của bộ.<br/>4. Chỉ đạo và tổ chức thực hiện công tác tuyên truyền, phổ biến, giáo dục pháp luật thuộc phạm vi quản lý nhà nước của bộ.<br/>5. Hướng dẫn và kiểm tra, phối hợp với các cơ quan liên quan thực hiện nhiệm vụ công tác thuộc ngành, lĩnh vực được phân công.<br/>6. Quản lý tài chính, tài sản, quản lý cán bộ, công chức, viên chức, tổ chức bộ máy, biên chế, cải cách hành chính và các công việc thuộc chức năng, nhiệm vụ, quyền hạn của bộ theo quy định của pháp luật.<br/>7. Thực hiện nhiệm vụ, quyền hạn theo quy định của pháp luật về ngành, lĩnh vực thuộc phạm vi quản lý và phân công của Chính phủ.<br/>Từ 1 đến 7 => 7 nhiệm vụ, quyền hạn</span>",
+                            "readingContentId": null,
+                            "respondentCount": "47",
+                            "correctRespondentCount": "43",
+                            "type": 1,
+                            "createdAt": "2026-01-17T04:11:13.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-25T15:22:03.000Z",
+                            "answers": [
+                                {
+                                    "id": 284771,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">5</span>",
+                                    "isCorrect": false,
+                                    "questionId": 167566,
+                                    "createdAt": "2026-01-17T04:11:13.000Z",
+                                    "updatedAt": "2026-01-17T04:11:13.000Z"
+                                },
+                                {
+                                    "id": 284772,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">6</span>",
+                                    "isCorrect": false,
+                                    "questionId": 167566,
+                                    "createdAt": "2026-01-17T04:11:13.000Z",
+                                    "updatedAt": "2026-01-17T04:11:13.000Z"
+                                },
+                                {
+                                    "id": 284773,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">7</span>",
+                                    "isCorrect": true,
+                                    "questionId": 167566,
+                                    "createdAt": "2026-01-17T04:11:13.000Z",
+                                    "updatedAt": "2026-01-17T04:11:13.000Z"
+                                },
+                                {
+                                    "id": 284774,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">8</span>",
+                                    "isCorrect": false,
+                                    "questionId": 167566,
+                                    "createdAt": "2026-01-17T04:11:13.000Z",
+                                    "updatedAt": "2026-01-17T04:11:13.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 167567,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]</span><span style=\"font-weight: bold; font-size:16px;\">: Theo Nghị định 303/2025/NĐ-CP ngày 19/11/2025 của Chính phủ, đâu không phải là nhiệm vụ, quyền hạn của bộ?</span>",
+                            "categoryId": 2336,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Căn cứ Điều 4 Nghị định 303/2025/NĐ-CP<br/>- Đáp án A,B,C đúng theo quy định về nhiệm vụ, quyền hạn của bộ<br/>- Đáp án D Nguyên tắc tổ chức và hoạt động của bộ<br/></span>",
+                            "readingContentId": null,
+                            "respondentCount": "61",
+                            "correctRespondentCount": "41",
+                            "type": 1,
+                            "createdAt": "2026-01-17T04:11:13.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-25T15:22:13.000Z",
+                            "answers": [
+                                {
+                                    "id": 284775,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Quyết định theo thẩm quyền các vấn đề thuộc phạm vi quản lý nhà nước của bộ.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 167567,
+                                    "createdAt": "2026-01-17T04:11:13.000Z",
+                                    "updatedAt": "2026-01-17T04:11:13.000Z"
+                                },
+                                {
+                                    "id": 284776,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Chỉ đạo và tổ chức thực hiện công tác tuyên truyền, phổ biến, giáo dục pháp luật thuộc phạm vi quản lý nhà nước của bộ.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 167567,
+                                    "createdAt": "2026-01-17T04:11:13.000Z",
+                                    "updatedAt": "2026-01-17T04:11:13.000Z"
+                                },
+                                {
+                                    "id": 284777,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Hướng dẫn và kiểm tra, phối hợp với các cơ quan liên quan thực hiện nhiệm vụ công tác thuộc ngành, lĩnh vực được phân công.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 167567,
+                                    "createdAt": "2026-01-17T04:11:13.000Z",
+                                    "updatedAt": "2026-01-17T04:11:13.000Z"
+                                },
+                                {
+                                    "id": 284778,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Đẩy mạnh phân cấp, ủy quyền trong tổ chức và hoạt động của bộ theo quy định của pháp luật.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 167567,
+                                    "createdAt": "2026-01-17T04:11:13.000Z",
+                                    "updatedAt": "2026-01-17T04:11:13.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 167568,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]</span><span style=\"font-weight: bold; font-size:16px;\">: Theo Nghị định 303/2025/NĐ-CP ngày 19/11/2025 của Chính phủ, nhiệm vụ “Chỉ đạo và tổ chức thực hiện công tác tuyên truyền, phổ biến, giáo dục pháp luật” là nhiệm vụ, quyền hạn thứ mấy của bộ?<br/></span>",
+                            "categoryId": 2336,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Theo thứ tự tại Khoản 4 Điều 4 Nghị định 303/2025/NĐ-CP, nội dung liên quan đến tuyên truyền, phổ biến pháp luật được xác định là nhiệm vụ, quyền hạn thứ 4.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "49",
+                            "correctRespondentCount": "39",
+                            "type": 1,
+                            "createdAt": "2026-01-17T04:11:13.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-25T15:22:31.000Z",
+                            "answers": [
+                                {
+                                    "id": 284779,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Thứ 2</span>",
+                                    "isCorrect": false,
+                                    "questionId": 167568,
+                                    "createdAt": "2026-01-17T04:11:13.000Z",
+                                    "updatedAt": "2026-01-17T04:11:13.000Z"
+                                },
+                                {
+                                    "id": 284780,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Thứ 3</span>",
+                                    "isCorrect": false,
+                                    "questionId": 167568,
+                                    "createdAt": "2026-01-17T04:11:13.000Z",
+                                    "updatedAt": "2026-01-17T04:11:13.000Z"
+                                },
+                                {
+                                    "id": 284781,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Thứ 4</span>",
+                                    "isCorrect": true,
+                                    "questionId": 167568,
+                                    "createdAt": "2026-01-17T04:11:13.000Z",
+                                    "updatedAt": "2026-01-17T04:11:13.000Z"
+                                },
+                                {
+                                    "id": 284782,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Thứ 5</span>",
+                                    "isCorrect": false,
+                                    "questionId": 167568,
+                                    "createdAt": "2026-01-17T04:11:13.000Z",
+                                    "updatedAt": "2026-01-17T04:11:13.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 167569,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]</span><span style=\"font-weight: bold; font-size:16px;\">: Theo Nghị định 303/2025/NĐ-CP ngày 19/11/2025 của Chính phủ, đâu là nội dung không thuộc nhiệm vụ, quyền hạn của bộ?</span>",
+                            "categoryId": 2336,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Căn cứ khoản 6 Điều 4 Nghị định 303/2025/NĐ-CP<br/>- Đáp án A,B,C đúng theo quy định về nhiệm vụ, quyền hạn quản lý của bộ<br/>- Đáp án D nội dung về nguyên tắc tổ chức và hoạt động của bộ<br/></span>",
+                            "readingContentId": null,
+                            "respondentCount": "105",
+                            "correctRespondentCount": "50",
+                            "type": 1,
+                            "createdAt": "2026-01-17T04:11:13.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-25T15:22:42.000Z",
+                            "answers": [
+                                {
+                                    "id": 284783,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Quản lý tài chính, tài sản</span>",
+                                    "isCorrect": false,
+                                    "questionId": 167569,
+                                    "createdAt": "2026-01-17T04:11:13.000Z",
+                                    "updatedAt": "2026-01-17T04:11:13.000Z"
+                                },
+                                {
+                                    "id": 284784,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Quản lý cán bộ, công chức, viên chức, tổ chức bộ máy, biên chế, cải cách hành chính</span>",
+                                    "isCorrect": false,
+                                    "questionId": 167569,
+                                    "createdAt": "2026-01-17T04:11:13.000Z",
+                                    "updatedAt": "2026-01-17T04:11:13.000Z"
+                                },
+                                {
+                                    "id": 284785,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Các công việc thuộc chức năng, nhiệm vụ, quyền hạn của bộ theo quy định của pháp luật</span>",
+                                    "isCorrect": false,
+                                    "questionId": 167569,
+                                    "createdAt": "2026-01-17T04:11:13.000Z",
+                                    "updatedAt": "2026-01-17T04:11:13.000Z"
+                                },
+                                {
+                                    "id": 284786,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Xác định số lượng cấp phó trong cơ quan, tổ chức phải bảo đảm nguyên tắc số lượng cấp phó trong một tổ chức trực thuộc tối đa không vượt quá số lượng cấp phó của tổ chức cấp trên trực tiếp. </span>",
+                                    "isCorrect": true,
+                                    "questionId": 167569,
+                                    "createdAt": "2026-01-17T04:11:13.000Z",
+                                    "updatedAt": "2026-01-17T04:11:13.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 167570,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]</span><span style=\"font-weight: bold; font-size:16px;\">: Theo Nghị định 303/2025/NĐ-CP ngày 19/11/2025 của Chính phủ, đâu là nhiệm vụ của Bộ liên quan đến công tác tuyên truyền?<br/><br/><br/><br/></span>",
+                            "categoryId": 2336,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Căn cứ khoản 4 Điều 4 quy định nhiệm vụ, quyền hạn của Bộ: Chỉ đạo và tổ chức thực hiện công tác tuyên truyền, phổ biến, giáo dục pháp luật trong phạm vi quản lý của mình.<br/>- Đáp án A sai vì đề cập đến “tuyên truyền chính sách đối ngoại” — đó là chức năng của cơ quan phụ trách đối ngoại (ví dụ Bộ Ngoại giao) chứ không phải nhiệm vụ chung của bộ theo Điều 4.<br/>- Đáp án C sai “ban hành văn bản hướng dẫn hoạt động tuyên truyền và quản lý pháp luật”<br/>- Đáp án D sai nội dung<br/></span>",
+                            "readingContentId": null,
+                            "respondentCount": "61",
+                            "correctRespondentCount": "42",
+                            "type": 1,
+                            "createdAt": "2026-01-17T04:11:13.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-25T15:22:55.000Z",
+                            "answers": [
+                                {
+                                    "id": 284787,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Chỉ đạo và tổ chức thực hiện tuyên truyền chính sách đối ngoại thuộc phạm vi quản lý của Bộ.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 167570,
+                                    "createdAt": "2026-01-17T04:11:13.000Z",
+                                    "updatedAt": "2026-01-17T04:11:13.000Z"
+                                },
+                                {
+                                    "id": 284788,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Chỉ đạo và tổ chức thực hiện công tác tuyên truyền, phổ biến, giáo dục pháp luật thuộc phạm vi quản lý của Bộ.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 167570,
+                                    "createdAt": "2026-01-17T04:11:13.000Z",
+                                    "updatedAt": "2026-01-17T04:11:13.000Z"
+                                },
+                                {
+                                    "id": 284789,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Chỉ đạo và ban hành văn bản hướng dẫn hoạt động tuyên truyền và quản lý pháp luật trong phạm vi quản lý của Bộ.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 167570,
+                                    "createdAt": "2026-01-17T04:11:13.000Z",
+                                    "updatedAt": "2026-01-17T04:11:13.000Z"
+                                },
+                                {
+                                    "id": 284790,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Phối hợp với cơ quan truyền thông trung ương tổ chức chương trình, hoạt động phổ biến pháp luật thuộc phạm vi quản lý nhà nước của bộ.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 167570,
+                                    "createdAt": "2026-01-17T04:11:13.000Z",
+                                    "updatedAt": "2026-01-17T04:11:13.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 167571,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]</span><span style=\"font-weight: bold; font-size:16px;\">: Theo Nghị định 303/2025/NĐ-CP ngày 19/11/2025 của Chính phủ, đâu không phải là một trong các nhiệm vụ, quyền hạn của bộ?</span>",
+                            "categoryId": 2336,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Giải thích: Chọn đáp án C. <br/>Giải thích: Căn cứ khoản 6 Điều 4 Nghị định 303/2025/NĐ-CP<br/>\" 6. Quản lý tài chính, tài sản, quản lý cán bộ, công chức, viên chức, tổ chức bộ máy, biên chế, cải cách hành chính và các công việc thuộc chức năng, nhiệm vụ, quyền hạn của bộ theo quy định của pháp luật.”<br/>-Đáp án C sai “quản trị cán bộ...”</span>",
+                            "readingContentId": null,
+                            "respondentCount": "88",
+                            "correctRespondentCount": "40",
+                            "type": 1,
+                            "createdAt": "2026-01-17T04:11:14.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-25T15:23:42.000Z",
+                            "answers": [
+                                {
+                                    "id": 284791,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Quyết định theo thẩm quyền các vấn đề thuộc phạm vi quản lý nhà nước của bộ. </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167571,
+                                    "createdAt": "2026-01-17T04:11:14.000Z",
+                                    "updatedAt": "2026-01-17T04:11:14.000Z"
+                                },
+                                {
+                                    "id": 284792,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Hướng dẫn và kiểm tra, phối hợp với các cơ quan liên quan thực hiện nhiệm vụ công tác thuộc ngành, lĩnh vực được phân công.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 167571,
+                                    "createdAt": "2026-01-17T04:11:14.000Z",
+                                    "updatedAt": "2026-01-17T04:11:14.000Z"
+                                },
+                                {
+                                    "id": 284793,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Quản lý tài chính, tài sản, quản trị cán bộ, công chức, viên chức, tổ chức bộ máy, biên chế, cải cách hành chính và các công việc thuộc chức năng, nhiệm vụ, quyền hạn của bộ theo quy định của pháp luật.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 167571,
+                                    "createdAt": "2026-01-17T04:11:14.000Z",
+                                    "updatedAt": "2026-01-17T04:11:14.000Z"
+                                },
+                                {
+                                    "id": 284794,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Chỉ đạo và tổ chức thực hiện công tác tuyên truyền, phổ biến, giáo dục pháp luật thuộc phạm vi quản lý nhà nước của bộ.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 167571,
+                                    "createdAt": "2026-01-17T04:11:14.000Z",
+                                    "updatedAt": "2026-01-17T04:11:14.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 167572,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]</span><span style=\"font-weight: bold; font-size:16px;\">: Theo Nghị định 303/2025/NĐ-CP ngày 19/11/2025 của Chính phủ, đâu không phải là đơn vị thuộc cơ cấu tổ chức của bộ?</span>",
+                            "categoryId": 2336,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Giải thích: Căn cứ khoản 1 Điều 5 Nghị định 303/2025/NĐ-CP. <br/>1. Cơ cấu tổ chức của bộ gồm:  a) Vụ và tương đương (sau đây gọi chung là vụ);<br/>b) Văn phòng (nếu có);<br/>c) Thanh tra (nếu có);<br/>d) Cục và tương đương (sau đây gọi chung là cục);<br/>đ) Đơn vị sự nghiệp công lập.<br/>Phân tích: Nghị định này không còn quy định Tổng cục là một đơn vị trong cơ cấu tổ chức của bộ. Các Đáp án A, C, D đều được liệt kê tại Điều 5.<br/></span>",
+                            "readingContentId": null,
+                            "respondentCount": "46",
+                            "correctRespondentCount": "42",
+                            "type": 1,
+                            "createdAt": "2026-01-17T04:11:14.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-25T15:23:47.000Z",
+                            "answers": [
+                                {
+                                    "id": 284795,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Vụ <br/></span>",
+                                    "isCorrect": false,
+                                    "questionId": 167572,
+                                    "createdAt": "2026-01-17T04:11:14.000Z",
+                                    "updatedAt": "2026-01-17T04:11:14.000Z"
+                                },
+                                {
+                                    "id": 284796,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Tổng cục <br/></span>",
+                                    "isCorrect": true,
+                                    "questionId": 167572,
+                                    "createdAt": "2026-01-17T04:11:14.000Z",
+                                    "updatedAt": "2026-01-17T04:11:14.000Z"
+                                },
+                                {
+                                    "id": 284797,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Cục <br/></span>",
+                                    "isCorrect": false,
+                                    "questionId": 167572,
+                                    "createdAt": "2026-01-17T04:11:14.000Z",
+                                    "updatedAt": "2026-01-17T04:11:14.000Z"
+                                },
+                                {
+                                    "id": 284798,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Đơn vị sự nghiệp công lập <br/></span>",
+                                    "isCorrect": false,
+                                    "questionId": 167572,
+                                    "createdAt": "2026-01-17T04:11:14.000Z",
+                                    "updatedAt": "2026-01-17T04:11:14.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 167573,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]</span><span style=\"font-weight: bold; font-size:16px;\">: Theo Nghị định 303/2025/NĐ-CP ngày 19/11/2025 của Chính phủ, đâu không phải là đơn vị thuộc cơ cấu tổ chức của bộ?</span>",
+                            "categoryId": 2336,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Căn cứ khoản 1 Điều 5 Nghị định 303/2025/NĐ-CP. <br/>1. Cơ cấu tổ chức của bộ gồm:<br/>a) Vụ và tương đương (sau đây gọi chung là vụ);<br/>b) Văn phòng (nếu có);<br/>c) Thanh tra (nếu có);<br/>d) Cục và tương đương (sau đây gọi chung là cục);<br/>đ) Đơn vị sự nghiệp công lập.<br/>Phân tích: Nghị định này không có quy định chi cục là một đơn vị trong cơ cấu tổ chức của bộ. Các Đáp án A, C, D đều được liệt kê tại Điều 5.<br/></span>",
+                            "readingContentId": null,
+                            "respondentCount": "56",
+                            "correctRespondentCount": "47",
+                            "type": 1,
+                            "createdAt": "2026-01-17T04:11:14.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-25T15:23:53.000Z",
+                            "answers": [
+                                {
+                                    "id": 284799,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Vụ <br/></span>",
+                                    "isCorrect": false,
+                                    "questionId": 167573,
+                                    "createdAt": "2026-01-17T04:11:14.000Z",
+                                    "updatedAt": "2026-01-17T04:11:14.000Z"
+                                },
+                                {
+                                    "id": 284800,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Chi cục <br/></span>",
+                                    "isCorrect": true,
+                                    "questionId": 167573,
+                                    "createdAt": "2026-01-17T04:11:14.000Z",
+                                    "updatedAt": "2026-01-17T04:11:14.000Z"
+                                },
+                                {
+                                    "id": 284801,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Văn phòng<br/></span>",
+                                    "isCorrect": false,
+                                    "questionId": 167573,
+                                    "createdAt": "2026-01-17T04:11:14.000Z",
+                                    "updatedAt": "2026-01-17T04:11:14.000Z"
+                                },
+                                {
+                                    "id": 284802,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Thanh tra<br/></span>",
+                                    "isCorrect": false,
+                                    "questionId": 167573,
+                                    "createdAt": "2026-01-17T04:11:14.000Z",
+                                    "updatedAt": "2026-01-17T04:11:14.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 167574,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]</span><span style=\"font-weight: bold; font-size:16px;\">: Theo Nghị định 303/2025/NĐ-CP ngày 19/11/2025 của Chính phủ, cơ cấu tổ chức của Bộ gồm bao nhiêu đơn vị?</span>",
+                            "categoryId": 2336,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Khoản 1 Điều 5 liệt kê 5 đơn vị trong cơ cấu tổ chức của Bộ, gồm:<br/>a) Vụ và tương đương (sau đây gọi chung là vụ); <br/>b) Văn phòng (nếu có); <br/>c) Thanh tra (nếu có); <br/>d) Cục và tương đương (sau đây gọi chung là cục); <br/>đ) Đơn vị sự nghiệp công lập.<br/></span>",
+                            "readingContentId": null,
+                            "respondentCount": "44",
+                            "correctRespondentCount": "41",
+                            "type": 1,
+                            "createdAt": "2026-01-17T04:11:14.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-25T15:24:02.000Z",
+                            "answers": [
+                                {
+                                    "id": 284803,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">4</span>",
+                                    "isCorrect": false,
+                                    "questionId": 167574,
+                                    "createdAt": "2026-01-17T04:11:14.000Z",
+                                    "updatedAt": "2026-01-17T04:11:14.000Z"
+                                },
+                                {
+                                    "id": 284804,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">5</span>",
+                                    "isCorrect": true,
+                                    "questionId": 167574,
+                                    "createdAt": "2026-01-17T04:11:14.000Z",
+                                    "updatedAt": "2026-01-17T04:11:14.000Z"
+                                },
+                                {
+                                    "id": 284805,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">6</span>",
+                                    "isCorrect": false,
+                                    "questionId": 167574,
+                                    "createdAt": "2026-01-17T04:11:14.000Z",
+                                    "updatedAt": "2026-01-17T04:11:14.000Z"
+                                },
+                                {
+                                    "id": 284806,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">7</span>",
+                                    "isCorrect": false,
+                                    "questionId": 167574,
+                                    "createdAt": "2026-01-17T04:11:14.000Z",
+                                    "updatedAt": "2026-01-17T04:11:14.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 167575,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]</span><span style=\"font-weight: bold; font-size:16px;\">: Theo Nghị định 303/2025/NĐ-CP ngày 19/11/2025 của Chính phủ, đơn vị sự nghiệp công lập nào sau đây được quy định trong cơ cấu tổ chức của từng bộ?</span>",
+                            "categoryId": 2336,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Căn cứ điểm b khoản 2 Điều 5 Nghị định 303/2025/NĐ-CP. <br/>\"2. Các đơn vị sự nghiệp công lập được quy định tại Nghị định quy định chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của từng bộ, gồm: <br/>a) Các đơn vị nghiên cứu chiến lược, chính sách về ngành, lĩnh vực; <br/>b) Báo, tạp chí; Trung tâm Thông tin; <br/>c) Trường, Trung tâm hoặc Học viện thực hiện chức năng đào tạo, bồi dưỡng cán bộ, công chức, viên chức.\" <br/></span>",
+                            "readingContentId": null,
+                            "respondentCount": "65",
+                            "correctRespondentCount": "39",
+                            "type": 1,
+                            "createdAt": "2026-01-17T04:11:14.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-25T15:24:08.000Z",
+                            "answers": [
+                                {
+                                    "id": 284807,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Viện kiểm nghiệm quốc gia. </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167575,
+                                    "createdAt": "2026-01-17T04:11:14.000Z",
+                                    "updatedAt": "2026-01-17T04:11:14.000Z"
+                                },
+                                {
+                                    "id": 284808,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Bệnh viện trực thuộc bộ. </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167575,
+                                    "createdAt": "2026-01-17T04:11:14.000Z",
+                                    "updatedAt": "2026-01-17T04:11:14.000Z"
+                                },
+                                {
+                                    "id": 284809,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Trung tâm Thông tin</span>",
+                                    "isCorrect": true,
+                                    "questionId": 167575,
+                                    "createdAt": "2026-01-17T04:11:14.000Z",
+                                    "updatedAt": "2026-01-17T04:11:14.000Z"
+                                },
+                                {
+                                    "id": 284810,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Trung tâm hỗ trợ đào tạo và cung ứng nhân lực</span>",
+                                    "isCorrect": false,
+                                    "questionId": 167575,
+                                    "createdAt": "2026-01-17T04:11:14.000Z",
+                                    "updatedAt": "2026-01-17T04:11:14.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 167576,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]</span><span style=\"font-weight: bold; font-size:16px;\">: Theo Nghị định 303/2025/NĐ-CP ngày 19/11/2025 của Chính phủ, đơn vị sự nghiệp công lập nào sau đây không được quy định trong cơ cấu tổ chức của từng bộ?</span>",
+                            "categoryId": 2336,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Giải thích: Căn cứ khoản 2 Điều 5 Nghị định 303/2025/NĐ-CP. <br/>\"2. Các đơn vị sự nghiệp công lập được quy định tại Nghị định quy định chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của từng bộ, gồm: <br/>a) Các đơn vị nghiên cứu chiến lược, chính sách về ngành, lĩnh vực; <br/>b) Báo, tạp chí; Trung tâm Thông tin; <br/>c) Trường, Trung tâm hoặc Học viện thực hiện chức năng đào tạo, bồi dưỡng cán bộ, công chức, viên chức.\" <br/></span>",
+                            "readingContentId": null,
+                            "respondentCount": "55",
+                            "correctRespondentCount": "40",
+                            "type": 1,
+                            "createdAt": "2026-01-17T04:11:14.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-25T15:24:36.000Z",
+                            "answers": [
+                                {
+                                    "id": 284811,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Các đơn vị nghiên cứu chiến lược, chính sách về ngành, lĩnh vực;</span>",
+                                    "isCorrect": false,
+                                    "questionId": 167576,
+                                    "createdAt": "2026-01-17T04:11:14.000Z",
+                                    "updatedAt": "2026-01-17T04:11:14.000Z"
+                                },
+                                {
+                                    "id": 284812,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Bệnh viện trực thuộc bộ. </span>",
+                                    "isCorrect": true,
+                                    "questionId": 167576,
+                                    "createdAt": "2026-01-17T04:11:14.000Z",
+                                    "updatedAt": "2026-01-17T04:11:14.000Z"
+                                },
+                                {
+                                    "id": 284813,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Báo, tạp chí; Trung tâm Thông tin;</span>",
+                                    "isCorrect": false,
+                                    "questionId": 167576,
+                                    "createdAt": "2026-01-17T04:11:14.000Z",
+                                    "updatedAt": "2026-01-17T04:11:14.000Z"
+                                },
+                                {
+                                    "id": 284814,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Trường, Trung tâm hoặc Học viện thực hiện chức năng đào tạo, bồi dưỡng cán bộ, công chức, viên chức.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 167576,
+                                    "createdAt": "2026-01-17T04:11:14.000Z",
+                                    "updatedAt": "2026-01-17T04:11:14.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 167577,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]</span><span style=\"font-weight: bold; font-size:16px;\">: Theo Nghị định 303/2025/NĐ-CP ngày 19/11/2025 của Chính phủ, có bao nhiêu đơn vị sự nghiệp công lập được quy định tại Nghị định quy định chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của từng bộ?</span>",
+                            "categoryId": 2336,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Khoản 2 Điều 5 liệt kê 3 đơn vị sự nghiệp công lập trong cơ cấu tổ chức của Bộ, gồm:<br/>a) Các đơn vị nghiên cứu chiến lược, chính sách về ngành, lĩnh vực;<br/>b) Báo, tạp chí; Trung tâm Thông tin;<br/>c) Trường, Trung tâm hoặc Học viện thực hiện chức năng đào tạo, bồi dưỡng cán bộ, công chức, viên chức.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "51",
+                            "correctRespondentCount": "43",
+                            "type": 1,
+                            "createdAt": "2026-01-17T04:11:14.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-25T15:25:05.000Z",
+                            "answers": [
+                                {
+                                    "id": 284815,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">2</span>",
+                                    "isCorrect": false,
+                                    "questionId": 167577,
+                                    "createdAt": "2026-01-17T04:11:14.000Z",
+                                    "updatedAt": "2026-01-17T04:11:14.000Z"
+                                },
+                                {
+                                    "id": 284816,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">3</span>",
+                                    "isCorrect": true,
+                                    "questionId": 167577,
+                                    "createdAt": "2026-01-17T04:11:14.000Z",
+                                    "updatedAt": "2026-01-17T04:11:14.000Z"
+                                },
+                                {
+                                    "id": 284817,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">4</span>",
+                                    "isCorrect": false,
+                                    "questionId": 167577,
+                                    "createdAt": "2026-01-17T04:11:14.000Z",
+                                    "updatedAt": "2026-01-17T04:11:14.000Z"
+                                },
+                                {
+                                    "id": 284818,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">5</span>",
+                                    "isCorrect": false,
+                                    "questionId": 167577,
+                                    "createdAt": "2026-01-17T04:11:14.000Z",
+                                    "updatedAt": "2026-01-17T04:11:14.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 167578,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]</span><span style=\"font-weight: bold; font-size:16px;\">: Theo Nghị định 303/2025/NĐ-CP ngày 19/11/2025 của Chính phủ, nội dung nào sau đây là đúng khi nói về Vụ thuộc bộ?</span>",
+                            "categoryId": 2336,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Giải thích: Căn cứ khoản 3 Điều 6 Nghị định 303/2025/NĐ-CP. <br/>\"3. Vụ hoạt động theo chế độ thủ trưởng kết hợp với chế độ chuyên viên.\" <br/>Phân tích: <br/>Đáp án A sai, Vụ không có tư cách pháp nhân, con dấu, tài khoản (khoản 2 Điều 6). <br/>Đáp án B sai, Vụ trưởng được ký thừa lệnh, không phải thừa ủy quyền và chỉ ký văn bản hướng dẫn chuyên môn, nghiệp vụ (khoản 2 Điều 6). <br/>Đáp án D sai, yêu cầu là từ 15 biên chế công chức trở lên (điểm a khoản 4 Điều 6).</span>",
+                            "readingContentId": null,
+                            "respondentCount": "62",
+                            "correctRespondentCount": "45",
+                            "type": 1,
+                            "createdAt": "2026-01-17T04:11:14.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-25T15:25:15.000Z",
+                            "answers": [
+                                {
+                                    "id": 284819,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Vụ có tư cách pháp nhân, có con dấu và tài khoản riêng. </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167578,
+                                    "createdAt": "2026-01-17T04:11:14.000Z",
+                                    "updatedAt": "2026-01-17T04:11:14.000Z"
+                                },
+                                {
+                                    "id": 284820,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Vụ trưởng được ký thừa ủy quyền Bộ trưởng các văn bản quy phạm pháp luật. </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167578,
+                                    "createdAt": "2026-01-17T04:11:14.000Z",
+                                    "updatedAt": "2026-01-17T04:11:14.000Z"
+                                },
+                                {
+                                    "id": 284821,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Vụ hoạt động theo chế độ thủ trưởng kết hợp với chế độ chuyên viên. </span>",
+                                    "isCorrect": true,
+                                    "questionId": 167578,
+                                    "createdAt": "2026-01-17T04:11:14.000Z",
+                                    "updatedAt": "2026-01-17T04:11:14.000Z"
+                                },
+                                {
+                                    "id": 284822,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Vụ được thành lập khi có khối lượng công việc yêu cầu bố trí từ 20 biên chế công chức trở lên. </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167578,
+                                    "createdAt": "2026-01-17T04:11:14.000Z",
+                                    "updatedAt": "2026-01-17T04:11:14.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 167579,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]</span><span style=\"font-weight: bold; font-size:16px;\">: Theo Nghị định 303/2025/NĐ-CP ngày 19/11/2025 của Chính phủ, Vụ thuộc bộ được thành lập khi có khối lượng công việc yêu cầu phải bố trí từ bao nhiêu biên chế công chức trở lên?</span>",
+                            "categoryId": 2336,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Giải thích: Căn cứ điểm a và điểm b khoản 4 Điều 6 Nghị định 303/2025/NĐ-CP. <br/>\"a) Vụ được thành lập khi đáp ứng đủ các tiêu chí sau: ...Khối lượng công việc yêu cầu phải bố trí từ 15 biên chế công chức trở lên.”<br/>“b) Vụ thực hiện chức năng, nhiệm vụ tham mưu về công tác quản trị nội bộ được thành lập khi khối lượng công việc yêu cầu phải bố trí từ 15 biên chế công chức trở lên.\" </span>",
+                            "readingContentId": null,
+                            "respondentCount": "50",
+                            "correctRespondentCount": "49",
+                            "type": 1,
+                            "createdAt": "2026-01-17T04:11:14.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-25T15:25:24.000Z",
+                            "answers": [
+                                {
+                                    "id": 284823,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">10 biên chế công chức </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167579,
+                                    "createdAt": "2026-01-17T04:11:14.000Z",
+                                    "updatedAt": "2026-01-17T04:11:14.000Z"
+                                },
+                                {
+                                    "id": 284824,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">15 biên chế công chức</span>",
+                                    "isCorrect": true,
+                                    "questionId": 167579,
+                                    "createdAt": "2026-01-17T04:11:14.000Z",
+                                    "updatedAt": "2026-01-17T04:11:14.000Z"
+                                },
+                                {
+                                    "id": 284825,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">20 biên chế công chức </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167579,
+                                    "createdAt": "2026-01-17T04:11:14.000Z",
+                                    "updatedAt": "2026-01-17T04:11:14.000Z"
+                                },
+                                {
+                                    "id": 284826,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">25 biên chế công chức </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167579,
+                                    "createdAt": "2026-01-17T04:11:14.000Z",
+                                    "updatedAt": "2026-01-17T04:11:14.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 167580,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]</span><span style=\"font-weight: bold; font-size:16px;\">: Theo Nghị định 303/2025/NĐ-CP ngày 19/11/2025 của Chính phủ, đâu không phải tiêu chí thành lập vụ?</span>",
+                            "categoryId": 2336,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Điều 6, vụ được thành lập khi đáp ứng 03 tiêu chí, gồm:<br/>1.Có chức năng, nhiệm vụ tham mưu về quản lý nhà nước đối với ngành, lĩnh vực.<br/>2.Có phạm vi, đối tượng quản lý theo ngành, lĩnh vực.<br/>3.Khối lượng công việc yêu cầu bố trí từ 15 biên chế công chức trở lên.<br/>-Đáp án B thuộc nội dung khoản 2 Điều 6<br/></span>",
+                            "readingContentId": null,
+                            "respondentCount": "65",
+                            "correctRespondentCount": "37",
+                            "type": 1,
+                            "createdAt": "2026-01-17T04:11:14.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-25T15:25:34.000Z",
+                            "answers": [
+                                {
+                                    "id": 284827,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Có chức năng, nhiệm vụ tham mưu về quản lý nhà nước đối với ngành, lĩnh vực thuộc chức năng, nhiệm vụ của bộ. </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167580,
+                                    "createdAt": "2026-01-17T04:11:14.000Z",
+                                    "updatedAt": "2026-01-17T04:11:14.000Z"
+                                },
+                                {
+                                    "id": 284828,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Vụ trưởng được ký thừa lệnh Bộ trưởng các văn bản hướng dẫn, giải quyết các vấn đề liên quan đến chuyên môn, nghiệp vụ thuộc chức năng, nhiệm vụ của vụ. </span>",
+                                    "isCorrect": true,
+                                    "questionId": 167580,
+                                    "createdAt": "2026-01-17T04:11:14.000Z",
+                                    "updatedAt": "2026-01-17T04:11:14.000Z"
+                                },
+                                {
+                                    "id": 284829,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Có phạm vi, đối tượng quản lý theo ngành, lĩnh vực.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 167580,
+                                    "createdAt": "2026-01-17T04:11:14.000Z",
+                                    "updatedAt": "2026-01-17T04:11:14.000Z"
+                                },
+                                {
+                                    "id": 284830,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Khối lượng công việc yêu cầu phải bố trí từ 15 biên chế công chức trở lên.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 167580,
+                                    "createdAt": "2026-01-17T04:11:14.000Z",
+                                    "updatedAt": "2026-01-17T04:11:14.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 167581,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]</span><span style=\"font-weight: bold; font-size:16px;\">: Theo Nghị định 303/2025/NĐ-CP ngày 19/11/2025 của Chính phủ, đâu là khẳng định đúng?</span>",
+                            "categoryId": 2336,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Khoản 1 Điều 6 Theo quy định, Vụ là tổ chức hành chính thuộc Bộ, có nhiệm vụ tham mưu tổng hợp hoặc chuyên sâu về quản lý nhà nước đối với ngành, lĩnh vực, hoặc tham mưu về công tác quản trị nội bộ của Bộ.<br/>-Đáp án A sai vì nói “tham mưu tất cả ngành, lĩnh vực” và “đảm nhiệm toàn bộ quản trị nội bộ” — vượt quá phạm vi thực tế của một Vụ.<br/>-Đáp án C sai vì gọi Vụ là đơn vị sự nghiệp công lập, trong khi Vụ là đơn vị hành chính, không phải sự nghiệp.<br/>-Đáp án D sai thừa cụm “cơ quan ngang bộ”<br/></span>",
+                            "readingContentId": null,
+                            "respondentCount": "94",
+                            "correctRespondentCount": "68",
+                            "type": 1,
+                            "createdAt": "2026-01-17T04:11:14.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-25T15:26:08.000Z",
+                            "answers": [
+                                {
+                                    "id": 284831,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Vụ là tổ chức thuộc Bộ, thực hiện chức năng tham mưu chung về quản lý nhà nước ở tất cả các ngành, lĩnh vực và đảm nhiệm toàn bộ công tác quản trị nội bộ của Bộ.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 167581,
+                                    "createdAt": "2026-01-17T04:11:14.000Z",
+                                    "updatedAt": "2026-01-17T04:11:14.000Z"
+                                },
+                                {
+                                    "id": 284832,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Vụ là tổ chức thuộc Bộ, thực hiện chức năng tham mưu tổng hợp hoặc chuyên sâu về quản lý nhà nước đối với ngành, lĩnh vực hoặc tham mưu về công tác quản trị nội bộ của Bộ</span>",
+                                    "isCorrect": true,
+                                    "questionId": 167581,
+                                    "createdAt": "2026-01-17T04:11:14.000Z",
+                                    "updatedAt": "2026-01-17T04:11:14.000Z"
+                                },
+                                {
+                                    "id": 284833,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Vụ là đơn vị sự nghiệp công lập thuộc Bộ, chịu trách nhiệm nghiên cứu và đào tạo phục vụ công tác quản lý nhà nước của Bộ.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 167581,
+                                    "createdAt": "2026-01-17T04:11:14.000Z",
+                                    "updatedAt": "2026-01-17T04:11:14.000Z"
+                                },
+                                {
+                                    "id": 284834,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Vụ là tổ chức thuộc bộ, thực hiện chức năng tham mưu tổng hợp hoặc chuyên sâu về quản lý nhà nước đối với ngành, lĩnh vực hoặc tham mưu về công tác quản trị nội bộ của bộ, cơ quan ngang bộ.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 167581,
+                                    "createdAt": "2026-01-17T04:11:14.000Z",
+                                    "updatedAt": "2026-01-17T04:11:14.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 167582,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]</span><span style=\"font-weight: bold; font-size:16px;\">: Theo Nghị định 303/2025/NĐ-CP ngày 19/11/2025 của Chính phủ, đâu không phải là tiêu chí thành lập vụ?</span>",
+                            "categoryId": 2336,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Giải thích: khoản 4 Điều 6 Nghị định 303/2025/NĐ-CP.<br/> \"a) Vụ được thành lập khi đáp ứng đủ các tiêu chí sau: <br/>Có chức năng, nhiệm vụ tham mưu về quản lý nhà nước đối với ngành, lĩnh vực thuộc chức năng, nhiệm vụ của bộ. <br/>Có phạm vi, đối tượng quản lý theo ngành, lĩnh vực. <br/>Khối lượng công việc yêu cầu phải bố trí từ 15 biên chế công chức trở lên.\" <br/>-Đáp án A thuộc Khoản 3 Điều 6</span>",
+                            "readingContentId": null,
+                            "respondentCount": "62",
+                            "correctRespondentCount": "40",
+                            "type": 1,
+                            "createdAt": "2026-01-17T04:11:14.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-25T15:26:19.000Z",
+                            "answers": [
+                                {
+                                    "id": 284835,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Vụ hoạt động theo chế độ thủ trưởng kết hợp với chế độ chuyên viên.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 167582,
+                                    "createdAt": "2026-01-17T04:11:14.000Z",
+                                    "updatedAt": "2026-01-17T04:11:14.000Z"
+                                },
+                                {
+                                    "id": 284836,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Có chức năng, nhiệm vụ tham mưu về quản lý nhà nước đối với ngành, lĩnh vực thuộc chức năng, nhiệm vụ của bộ.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 167582,
+                                    "createdAt": "2026-01-17T04:11:14.000Z",
+                                    "updatedAt": "2026-01-17T04:11:14.000Z"
+                                },
+                                {
+                                    "id": 284837,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Có phạm vi, đối tượng quản lý theo ngành, lĩnh vực.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 167582,
+                                    "createdAt": "2026-01-17T04:11:14.000Z",
+                                    "updatedAt": "2026-01-17T04:11:14.000Z"
+                                },
+                                {
+                                    "id": 284838,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Khối lượng công việc yêu cầu phải bố trí từ 15 biên chế công chức trở lên.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 167582,
+                                    "createdAt": "2026-01-17T04:11:14.000Z",
+                                    "updatedAt": "2026-01-17T04:11:14.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 167583,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]</span><span style=\"font-weight: bold; font-size:16px;\">: Theo Nghị định 303/2025/NĐ-CP ngày 19/11/2025 của Chính phủ, Vụ thuộc bộ có đặc điểm nào về địa vị pháp lý?</span>",
+                            "categoryId": 2336,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Giải thích: Căn cứ khoản 2 Điều 6 Nghị định 303/2025/NĐ-CP<br/>\"2. Vụ không có tư cách pháp nhân, không có con dấu, không có tài khoản.\" </span>",
+                            "readingContentId": null,
+                            "respondentCount": "49",
+                            "correctRespondentCount": "43",
+                            "type": 1,
+                            "createdAt": "2026-01-17T04:11:14.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-25T15:26:30.000Z",
+                            "answers": [
+                                {
+                                    "id": 284839,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Có tư cách pháp nhân nhưng không có con dấu riêng. </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167583,
+                                    "createdAt": "2026-01-17T04:11:14.000Z",
+                                    "updatedAt": "2026-01-17T04:11:14.000Z"
+                                },
+                                {
+                                    "id": 284840,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Không có tư cách pháp nhân, không có con dấu, không có tài khoản. </span>",
+                                    "isCorrect": true,
+                                    "questionId": 167583,
+                                    "createdAt": "2026-01-17T04:11:14.000Z",
+                                    "updatedAt": "2026-01-17T04:11:14.000Z"
+                                },
+                                {
+                                    "id": 284841,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Không có tư cách pháp nhân nhưng có con dấu và tài khoản riêng. </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167583,
+                                    "createdAt": "2026-01-17T04:11:14.000Z",
+                                    "updatedAt": "2026-01-17T04:11:14.000Z"
+                                },
+                                {
+                                    "id": 284842,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Có tư cách pháp nhân, con dấu và tài khoản riêng như Cục. </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167583,
+                                    "createdAt": "2026-01-17T04:11:14.000Z",
+                                    "updatedAt": "2026-01-17T04:11:14.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 167584,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]</span><span style=\"font-weight: bold; font-size:16px;\">: Theo Nghị định 303/2025/NĐ-CP ngày 19/11/2025 của Chính phủ, Vụ thuộc bộ hoạt động theo chế độ nào?</span>",
+                            "categoryId": 2336,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Giải thích: Căn cứ khoản 3 Điều 6 Nghị định 303/2025/NĐ-CP.<br/> \"3. Vụ hoạt động theo chế độ thủ trưởng kết hợp với chế độ chuyên viên.\"</span>",
+                            "readingContentId": null,
+                            "respondentCount": "69",
+                            "correctRespondentCount": "56",
+                            "type": 1,
+                            "createdAt": "2026-01-17T04:11:14.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-25T15:56:13.000Z",
+                            "answers": [
+                                {
+                                    "id": 284843,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Chế độ thủ trưởng kết hợp với cá nhân</span>",
+                                    "isCorrect": false,
+                                    "questionId": 167584,
+                                    "createdAt": "2026-01-17T04:11:14.000Z",
+                                    "updatedAt": "2026-01-17T04:11:14.000Z"
+                                },
+                                {
+                                    "id": 284844,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Chế độ chuyên viên kết hợp với chế độ thủ trưởng</span>",
+                                    "isCorrect": false,
+                                    "questionId": 167584,
+                                    "createdAt": "2026-01-17T04:11:14.000Z",
+                                    "updatedAt": "2026-01-17T04:11:14.000Z"
+                                },
+                                {
+                                    "id": 284845,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Chế độ thủ trưởng kết hợp với chế độ chuyên viên </span>",
+                                    "isCorrect": true,
+                                    "questionId": 167584,
+                                    "createdAt": "2026-01-17T04:11:14.000Z",
+                                    "updatedAt": "2026-01-17T04:11:14.000Z"
+                                },
+                                {
+                                    "id": 284846,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Chế độ tập thể lãnh đạo kết hợp với cá nhân chịu trách nhiệm</span>",
+                                    "isCorrect": false,
+                                    "questionId": 167584,
+                                    "createdAt": "2026-01-17T04:11:14.000Z",
+                                    "updatedAt": "2026-01-17T04:11:14.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 167585,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]</span><span style=\"font-weight: bold; font-size:16px;\">: Theo Nghị định 303/2025/NĐ-CP ngày 19/11/2025 của Chính phủ, đâu không phải là chức năng của Văn phòng thuộc bộ?</span>",
+                            "categoryId": 2336,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Giải thích: Căn cứ Khoản 1 Điều 7 Nghị định 303/2025/NĐ-CP. <br/>Quy định chức năng của Văn phòng, bao gồm: \" thực hiện chức năng tham mưu tổng hợp về chương trình, kế hoạch công tác và phục vụ các hoạt động của bộ; giúp Bộ trưởng tổng hợp, theo dõi, đôn đốc các tổ chức, đơn vị thuộc bộ thực hiện chương trình, kế hoạch công tác của bộ; thực hiện các nhiệm vụ liên quan đến công tác hành chính, văn thư, lưu trữ; kiểm soát thủ tục hành chính, cải cách thủ tục hành chính, tổ chức triển khai thực hiện cơ chế một cửa, một cửa liên thông trong giải quyết thủ tục hành chính thuộc thẩm quyền giải quyết của bộ; thực hiện công tác quản trị nội bộ, quản lý cơ sở vật chất - kỹ thuật, tài sản, kinh phí hoạt động, bảo đảm phương tiện, điều kiện làm việc theo phân công của Bộ trưởng; thực hiện các nhiệm vụ khác do pháp luật quy định hoặc do Bộ trưởng giao”<br/>Phân tích: Công tác thanh tra chuyên ngành là chức năng của Thanh tra bộ hoặc Thanh tra Cục, không phải của Văn phòng bộ. Các Đáp án A, B, D là các chức năng của Văn phòng.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "63",
+                            "correctRespondentCount": "43",
+                            "type": 1,
+                            "createdAt": "2026-01-17T04:11:14.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-25T15:26:50.000Z",
+                            "answers": [
+                                {
+                                    "id": 284847,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Tham mưu tổng hợp về chương trình, kế hoạch công tác và phục vụ các hoạt động của bộ. </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167585,
+                                    "createdAt": "2026-01-17T04:11:14.000Z",
+                                    "updatedAt": "2026-01-17T04:11:14.000Z"
+                                },
+                                {
+                                    "id": 284848,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Giúp Bộ trưởng tổng hợp, theo dõi, đôn đốc các tổ chức, đơn vị thuộc bộ thực hiện chương trình, kế hoạch công tác của bộ.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 167585,
+                                    "createdAt": "2026-01-17T04:11:14.000Z",
+                                    "updatedAt": "2026-01-17T04:11:14.000Z"
+                                },
+                                {
+                                    "id": 284849,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Thực hiện công tác thanh tra chuyên ngành đối với các lĩnh vực thuộc phạm vi quản lý của bộ. </span>",
+                                    "isCorrect": true,
+                                    "questionId": 167585,
+                                    "createdAt": "2026-01-17T04:11:14.000Z",
+                                    "updatedAt": "2026-01-17T04:11:14.000Z"
+                                },
+                                {
+                                    "id": 284850,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Thực hiện các nhiệm vụ liên quan đến công tác hành chính, văn thư, lưu trữ.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 167585,
+                                    "createdAt": "2026-01-17T04:11:14.000Z",
+                                    "updatedAt": "2026-01-17T04:11:14.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 167586,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]</span><span style=\"font-weight: bold; font-size:16px;\">: Theo Nghị định 303/2025/NĐ-CP ngày 19/11/2025 của Chính phủ, đâu là chức năng của Văn phòng thuộc bộ?</span>",
+                            "categoryId": 2336,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Giải thích: Căn cứ Khoản 1 Điều 7 Nghị định 303/2025/NĐ-CP. <br/>Đáp án A sai từ “Kiểm tra” đúng “Kiểm soát”<br/>Đáp án B sai từ “quản lý nội bộ” đúng “quản trị nội bộ”<br/>Đáp án C sai từ “Thực hiện các nghĩa vụ” đúng “Thực hiện các nhiệm vụ”</span>",
+                            "readingContentId": null,
+                            "respondentCount": "89",
+                            "correctRespondentCount": "29",
+                            "type": 1,
+                            "createdAt": "2026-01-17T04:11:14.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-25T15:27:37.000Z",
+                            "answers": [
+                                {
+                                    "id": 284851,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Kiểm tra thủ tục hành chính, cải cách thủ tục hành chính, tổ chức triển khai thực hiện cơ chế một cửa, một cửa liên thông trong giải quyết thủ tục hành chính thuộc thẩm quyền giải quyết của bộ</span>",
+                                    "isCorrect": false,
+                                    "questionId": 167586,
+                                    "createdAt": "2026-01-17T04:11:14.000Z",
+                                    "updatedAt": "2026-01-17T04:11:14.000Z"
+                                },
+                                {
+                                    "id": 284852,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Thực hiện công tác quản lý nội bộ, quản lý cơ sở vật chất - kỹ thuật, tài sản, kinh phí hoạt động, bảo đảm phương tiện, điều kiện làm việc theo phân công của Bộ trưởng</span>",
+                                    "isCorrect": false,
+                                    "questionId": 167586,
+                                    "createdAt": "2026-01-17T04:11:14.000Z",
+                                    "updatedAt": "2026-01-17T04:11:14.000Z"
+                                },
+                                {
+                                    "id": 284853,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Thực hiện các nghĩa vụ liên quan đến công tác hành chính, văn thư, lưu trữ</span>",
+                                    "isCorrect": false,
+                                    "questionId": 167586,
+                                    "createdAt": "2026-01-17T04:11:14.000Z",
+                                    "updatedAt": "2026-01-17T04:11:14.000Z"
+                                },
+                                {
+                                    "id": 284854,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Tham mưu tổng hợp về chương trình, kế hoạch công tác và phục vụ các hoạt động của bộ</span>",
+                                    "isCorrect": true,
+                                    "questionId": 167586,
+                                    "createdAt": "2026-01-17T04:11:14.000Z",
+                                    "updatedAt": "2026-01-17T04:11:14.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 167587,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]</span><span style=\"font-weight: bold; font-size:16px;\">: Theo Nghị định 303/2025/NĐ-CP ngày 19/11/2025 của Chính phủ, cơ cấu tổ chức của Văn phòng Bộ gồm bao nhiêu đơn vị?</span>",
+                            "categoryId": 2336,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Căn cứ Khoản 2 Điều 7<br/>Cơ cấu tổ chức của văn phòng, gồm:<br/>a) Phòng và tương đương (sau đây gọi chung là phòng);<br/>b) Đơn vị sự nghiệp công lập (nếu có).<br/></span>",
+                            "readingContentId": null,
+                            "respondentCount": "62",
+                            "correctRespondentCount": "41",
+                            "type": 1,
+                            "createdAt": "2026-01-17T04:11:15.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-25T15:27:53.000Z",
+                            "answers": [
+                                {
+                                    "id": 284855,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">1 đơn vị</span>",
+                                    "isCorrect": false,
+                                    "questionId": 167587,
+                                    "createdAt": "2026-01-17T04:11:14.000Z",
+                                    "updatedAt": "2026-01-17T04:11:15.000Z"
+                                },
+                                {
+                                    "id": 284856,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">2 đơn vị</span>",
+                                    "isCorrect": true,
+                                    "questionId": 167587,
+                                    "createdAt": "2026-01-17T04:11:14.000Z",
+                                    "updatedAt": "2026-01-17T04:11:15.000Z"
+                                },
+                                {
+                                    "id": 284857,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">3 đơn vị</span>",
+                                    "isCorrect": false,
+                                    "questionId": 167587,
+                                    "createdAt": "2026-01-17T04:11:15.000Z",
+                                    "updatedAt": "2026-01-17T04:11:15.000Z"
+                                },
+                                {
+                                    "id": 284858,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">4 đơn vị</span>",
+                                    "isCorrect": false,
+                                    "questionId": 167587,
+                                    "createdAt": "2026-01-17T04:11:15.000Z",
+                                    "updatedAt": "2026-01-17T04:11:15.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 167588,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]</span><span style=\"font-weight: bold; font-size:16px;\">: Theo Nghị định 303/2025/NĐ-CP ngày 19/11/2025 của Chính phủ, khẳng định nào sau đây sai về nội dung văn phòng thuộc bộ?</span>",
+                            "categoryId": 2336,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Giải thích: Căn cứ: khoản 3 Điều 7 <br/>“3. Văn phòng có con dấu và tài khoản riêng; Chánh văn phòng được ký thừa lệnh Bộ trưởng các văn bản hành chính khi được Bộ trưởng giao; Chánh văn phòng ký các văn bản và đóng dấu văn phòng đối với các vấn đề thuộc thẩm quyền của văn phòng bộ”<br/>Đáp án A,B,D đúng theo quy định<br/>Đáp án C là nội dung tại Khoản 3 Điều 6 Vụ thuộc bộ “3. Vụ hoạt động theo chế độ thủ trưởng kết hợp với chế độ chuyên viên”</span>",
+                            "readingContentId": null,
+                            "respondentCount": "79",
+                            "correctRespondentCount": "55",
+                            "type": 1,
+                            "createdAt": "2026-01-17T04:11:15.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-25T15:28:05.000Z",
+                            "answers": [
+                                {
+                                    "id": 284859,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Văn phòng có con dấu và tài khoản riêng</span>",
+                                    "isCorrect": false,
+                                    "questionId": 167588,
+                                    "createdAt": "2026-01-17T04:11:15.000Z",
+                                    "updatedAt": "2026-01-17T04:11:15.000Z"
+                                },
+                                {
+                                    "id": 284860,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Chánh văn phòng được ký thừa lệnh Bộ trưởng các văn bản hành chính khi được Bộ trưởng giao</span>",
+                                    "isCorrect": false,
+                                    "questionId": 167588,
+                                    "createdAt": "2026-01-17T04:11:15.000Z",
+                                    "updatedAt": "2026-01-17T04:11:15.000Z"
+                                },
+                                {
+                                    "id": 284861,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Hoạt động theo chế độ thủ trưởng kết hợp với chế độ chuyên viên.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 167588,
+                                    "createdAt": "2026-01-17T04:11:15.000Z",
+                                    "updatedAt": "2026-01-17T04:11:15.000Z"
+                                },
+                                {
+                                    "id": 284862,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Chánh văn phòng ký các văn bản và đóng dấu văn phòng đối với các vấn đề thuộc thẩm quyền của văn phòng bộ.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 167588,
+                                    "createdAt": "2026-01-17T04:11:15.000Z",
+                                    "updatedAt": "2026-01-17T04:11:15.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 167589,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]</span><span style=\"font-weight: bold; font-size:16px;\">: Theo Nghị định 303/2025/NĐ-CP ngày 19/11/2025 của Chính phủ, chủ thể nào được ký thừa lệnh Bộ trưởng các văn bản hành chính khi được Bộ trưởng giao?</span>",
+                            "categoryId": 2336,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Giải thích: Căn cứ khoản 3 Điều 7 Nghị định 303/2025/NĐ-CP.<br/> \"3. Văn phòng có con dấu và tài khoản riêng; Chánh văn phòng được ký thừa lệnh Bộ trưởng các văn bản hành chính khi được Bộ trưởng giao...\" </span>",
+                            "readingContentId": null,
+                            "respondentCount": "62",
+                            "correctRespondentCount": "49",
+                            "type": 1,
+                            "createdAt": "2026-01-17T04:11:15.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-25T15:28:16.000Z",
+                            "answers": [
+                                {
+                                    "id": 284863,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Vụ trưởng </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167589,
+                                    "createdAt": "2026-01-17T04:11:15.000Z",
+                                    "updatedAt": "2026-01-17T04:11:15.000Z"
+                                },
+                                {
+                                    "id": 284864,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Cục trưởng </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167589,
+                                    "createdAt": "2026-01-17T04:11:15.000Z",
+                                    "updatedAt": "2026-01-17T04:11:15.000Z"
+                                },
+                                {
+                                    "id": 284865,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Chánh Văn phòng </span>",
+                                    "isCorrect": true,
+                                    "questionId": 167589,
+                                    "createdAt": "2026-01-17T04:11:15.000Z",
+                                    "updatedAt": "2026-01-17T04:11:15.000Z"
+                                },
+                                {
+                                    "id": 284866,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Chánh Thanh tra </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167589,
+                                    "createdAt": "2026-01-17T04:11:15.000Z",
+                                    "updatedAt": "2026-01-17T04:11:15.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 167590,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]</span><span style=\"font-weight: bold; font-size:16px;\">: Theo Nghị định 303/2025/NĐ-CP ngày 19/11/2025 của Chính phủ, Cục loại 1 là tổ chức thuộc bộ thực hiện chức năng nào?</span>",
+                            "categoryId": 2336,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Giải thích: Căn cứ điểm a khoản 2 Điều 9 Nghị định 303/2025/NĐ-CP. <br/>\"a) Cục loại 1 là tổ chức thuộc bộ, thực hiện chức năng tham mưu, giúp Bộ trưởng quản lý nhà nước và tổ chức thực thi pháp luật đối với chuyên ngành, lĩnh vực được quản lý tập trung, thống nhất ở trung ương, không phân cấp cho địa phương quản lý theo quy định của pháp luật;\" <br/>Phân tích: <br/>Đáp án A là chức năng của Cục loại 2. <br/>Đáp án C là trường hợp đặc biệt để thành lập cục quản trị nội bộ. <br/>Đáp án D tiêu chí thành lập cục</span>",
+                            "readingContentId": null,
+                            "respondentCount": "122",
+                            "correctRespondentCount": "78",
+                            "type": 1,
+                            "createdAt": "2026-01-17T04:11:15.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-25T15:48:43.000Z",
+                            "answers": [
+                                {
+                                    "id": 284867,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Tham mưu và giải quyết các vấn đề cụ thể trong một hoặc một số lĩnh vực hoặc một số lĩnh vực, giúp Bộ trưởng quản lý nhà nước và tổ chức thực thi pháp luật về ngành, lĩnh vực theo phân cấp của Bộ trưởng.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 167590,
+                                    "createdAt": "2026-01-17T04:11:15.000Z",
+                                    "updatedAt": "2026-01-17T04:11:15.000Z"
+                                },
+                                {
+                                    "id": 284868,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Tham mưu, giúp Bộ trưởng quản lý nhà nước và tổ chức thực thi pháp luật đối với chuyên ngành, lĩnh vực được quản lý tập trung, thống nhất ở trung ương, không phân cấp cho địa phương quản lý theo quy định của pháp luật.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 167590,
+                                    "createdAt": "2026-01-17T04:11:15.000Z",
+                                    "updatedAt": "2026-01-17T04:11:15.000Z"
+                                },
+                                {
+                                    "id": 284869,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Quản lý cơ sở vật chất kỹ thuật lớn có tính hệ thống đặt ở nhiều địa phương. </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167590,
+                                    "createdAt": "2026-01-17T04:11:15.000Z",
+                                    "updatedAt": "2026-01-17T04:11:15.000Z"
+                                },
+                                {
+                                    "id": 284870,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Có đối tượng quản lý về chuyên ngành, lĩnh vực thuộc phạm vi quản lý nhà nước của bộ theo quy định của pháp luật chuyên ngành.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 167590,
+                                    "createdAt": "2026-01-17T04:11:15.000Z",
+                                    "updatedAt": "2026-01-17T04:11:15.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 167591,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]</span><span style=\"font-weight: bold; font-size:16px;\">: Theo Nghị định 303/2025/NĐ-CP ngày 19/11/2025 của Chính phủ, nội dung nào sau đây là sai khi nói về Cục thuộc bộ?</span>",
+                            "categoryId": 2336,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Giải thích: Căn cứ khoản 3 Điều 9 Nghị định 303/2025/NĐ-CP. <br/>\"3. Cục có tư cách pháp nhân, con dấu và tài khoản riêng; Cục trưởng được ban hành văn bản hướng dẫn chuyên môn, nghiệp vụ về chuyên ngành, lĩnh vực thuộc phạm vi quản lý của cục.\" <br/>Phân tích: Cục trưởng chỉ được ban hành \"văn bản hướng dẫn chuyên môn, nghiệp vụ\", không phải \"văn bản quy phạm pháp luật\". Các Đáp án A, C, D đều là các quy định đúng về Cục tại Điều 9.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "78",
+                            "correctRespondentCount": "46",
+                            "type": 1,
+                            "createdAt": "2026-01-17T04:11:15.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-25T15:29:12.000Z",
+                            "answers": [
+                                {
+                                    "id": 284871,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Cục có tư cách pháp nhân, con dấu và tài khoản riêng. </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167591,
+                                    "createdAt": "2026-01-17T04:11:15.000Z",
+                                    "updatedAt": "2026-01-17T04:11:15.000Z"
+                                },
+                                {
+                                    "id": 284872,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Cục trưởng được ban hành văn bản quy phạm pháp luật để hướng dẫn chuyên môn. </span>",
+                                    "isCorrect": true,
+                                    "questionId": 167591,
+                                    "createdAt": "2026-01-17T04:11:15.000Z",
+                                    "updatedAt": "2026-01-17T04:11:15.000Z"
+                                },
+                                {
+                                    "id": 284873,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Cục được thành lập khi có khối lượng công việc yêu cầu bố trí từ 30 biên chế công chức trở lên. </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167591,
+                                    "createdAt": "2026-01-17T04:11:15.000Z",
+                                    "updatedAt": "2026-01-17T04:11:15.000Z"
+                                },
+                                {
+                                    "id": 284874,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Trường hợp bộ quản lý cơ sở vật chất kỹ thuật lớn có tính hệ thống đặt ở nhiều địa phương thì được thành lập cục thuộc bộ để thực hiện chức năng quản trị nội bộ</span>",
+                                    "isCorrect": false,
+                                    "questionId": 167591,
+                                    "createdAt": "2026-01-17T04:11:15.000Z",
+                                    "updatedAt": "2026-01-17T04:11:15.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 167592,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]</span><span style=\"font-weight: bold; font-size:16px;\">: </span><span style=\"font-weight: bold; font-size:16px;\">Theo Nghị định 303/2025/NĐ-CP ngày 19/11/2025 của Chính phủ, một trong các tiêu chí thành lập Cục thuộc bộ là khối lượng công việc yêu cầu phải bố trí từ bao nhiêu biên chế công chức trở lên?</span>",
+                            "categoryId": 2336,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">Giải thích: Căn cứ điểm c khoản 4 Điều 9 Nghị định 303/2025/NĐ-CP. <br/> \"4. Tiêu chí thành lập cục ... c) Khối lượng công việc yêu cầu phải bố trí từ 30 biên chế công chức trở lên.\" </span>",
+                            "readingContentId": null,
+                            "respondentCount": "51",
+                            "correctRespondentCount": "48",
+                            "type": 1,
+                            "createdAt": "2026-01-17T04:11:15.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-25T16:45:27.000Z",
+                            "answers": [
+                                {
+                                    "id": 284875,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">20 biên chế công chức </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167592,
+                                    "createdAt": "2026-01-17T04:11:15.000Z",
+                                    "updatedAt": "2026-01-17T04:11:15.000Z"
+                                },
+                                {
+                                    "id": 284876,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">25 biên chế công chức </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167592,
+                                    "createdAt": "2026-01-17T04:11:15.000Z",
+                                    "updatedAt": "2026-01-17T04:11:15.000Z"
+                                },
+                                {
+                                    "id": 284877,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">30 biên chế công chức </span>",
+                                    "isCorrect": true,
+                                    "questionId": 167592,
+                                    "createdAt": "2026-01-17T04:11:15.000Z",
+                                    "updatedAt": "2026-01-17T04:11:15.000Z"
+                                },
+                                {
+                                    "id": 284878,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:middle;\">35 biên chế công chức </span>",
+                                    "isCorrect": false,
+                                    "questionId": 167592,
+                                    "createdAt": "2026-01-17T04:11:15.000Z",
+                                    "updatedAt": "2026-01-17T04:11:15.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        }
+                    ]
+                },
+                "exam": {
+                    "data": {
+                        "id": 2237,
+                        "name": "Đề 01: Nghị định số 303/2025/NĐ-CP quy định chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của bộ, cơ quan ngang bộ",
+                        "duration": 40,
+                        "retry": 3,
+                        "referencePoint": 5,
+                        "type": 1,
+                        "createdAt": "2026-01-13T03:00:07.000Z",
+                        "updatedAt": "2026-01-17T04:14:42.000Z"
+                    }
+                }
+            }
+        },
+        "testSessionAnswers": []
+    }
+}
