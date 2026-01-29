@@ -213,7 +213,7 @@ body {
 
 /* Mobile Toggle Button */
 .mobile-toggle-btn {
-    display: none;
+    display: none !important;
     /* Hidden on desktop */
 }
 
@@ -296,7 +296,7 @@ body {
 
     /* Mobile Toggle Button */
     .mobile-toggle-btn {
-        display: block;
+        display: block !important;
         position: fixed;
         bottom: 20px;
         right: 20px;
