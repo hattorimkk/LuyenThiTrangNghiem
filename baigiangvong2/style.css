@@ -1,0 +1,261 @@
+:root {
+    --primary-color: #ff9100;
+    --secondary-color: #fff7f0;
+    --text-color: #333;
+    --correct-color: #28a745;
+    --incorrect-color: #dc3545;
+    --light-gray: #f8f9fa;
+    --border-color: #dee2e6;
+    --sidebar-width: 350px;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    background-color: var(--light-gray);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+    /* Prevent body scroll, handle inside containers */
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #aaa;
+}
+
+.course-layout {
+    display: flex;
+    height: 100vh;
+    background: #fff;
+}
+
+/* Video Section (Left/Top) */
+.video-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    background-color: #000;
+    /* Dark background for video focus */
+}
+
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    /* 16:9 Aspect Ratio */
+    height: 0;
+    background: #000;
+    width: 100%;
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.lesson-info {
+    padding: 20px;
+    background: #fff;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.course-title-header {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.current-lesson-title {
+    font-size: 1.5rem;
+    color: var(--text-color);
+    margin: 0 0 10px 0;
+    font-weight: 700;
+}
+
+.course-description {
+    margin-top: 20px;
+    padding: 20px;
+    background: #fff;
+    color: #555;
+    line-height: 1.8;
+}
+
+/* Sidebar (Right/Bottom) */
+.sidebar {
+    width: var(--sidebar-width);
+    border-left: 1px solid var(--border-color);
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    flex-shrink: 0;
+}
+
+.sidebar-header {
+    padding: 15px 20px;
+    border-bottom: 1px solid var(--border-color);
+    background: var(--light-gray);
+}
+
+.sidebar-header h3 {
+    margin: 0;
+    font-size: 1.1rem;
+    color: var(--text-color);
+}
+
+.sidebar-content {
+    overflow-y: auto;
+    flex: 1;
+}
+
+/* Chapter Styles */
+.chapter-item {
+    border-bottom: 1px solid var(--border-color);
+}
+
+.chapter-header {
+    padding: 15px 20px;
+    background: #fdfdfd;
+    cursor: pointer;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background 0.2s;
+    user-select: none;
+}
+
+.chapter-header:hover {
+    background: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.chapter-header.active {
+    background: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.chapter-lessons {
+    display: none;
+    background: #fff;
+}
+
+.chapter-lessons.open {
+    display: block;
+}
+
+/* Lesson Items */
+.lesson-item {
+    padding: 12px 20px 12px 35px;
+    /* Indent for hierarchy */
+    cursor: pointer;
+    border-left: 3px solid transparent;
+    transition: all 0.2s;
+    font-size: 0.95rem;
+    color: #555;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.lesson-item:hover {
+    background: #fafafa;
+    color: var(--primary-color);
+}
+
+.lesson-item.active {
+    background: var(--secondary-color);
+    border-left-color: var(--primary-color);
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.lesson-icon {
+    font-size: 0.8rem;
+    width: 20px;
+    text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .course-layout {
+        flex-direction: column;
+        overflow: auto;
+        /* Allow full page scroll on mobile */
+    }
+
+    .video-section {
+        flex: none;
+        overflow: visible;
+        width: 100%;
+        min-height: auto;
+        /* Reset min-height */
+    }
+
+    .video-wrapper {
+        /* User requested video to be smaller/allow more description visibility */
+        /* Removed sticky to allow scrolling past video to read full text */
+        position: relative;
+        width: 100%;
+        padding-bottom: 56.25%;
+        background: #000;
+    }
+
+    .lesson-info {
+        padding: 15px;
+        /* Compact padding */
+    }
+
+    .current-lesson-title {
+        font-size: 1.25rem;
+        /* Smaller title for mobile */
+        margin-bottom: 5px;
+    }
+
+    .course-title-header {
+        font-size: 1rem;
+    }
+
+    .course-description {
+        padding: 15px;
+        margin-top: 10px;
+        font-size: 0.95rem;
+        /* Readable but compact font */
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        border-left: none;
+        border-top: 1px solid var(--border-color);
+        margin-top: 0;
+    }
+
+    .sidebar-content {
+        max-height: none;
+        /* Let sidebar expand naturally or set a limit if needed */
+        /* If we want the sidebar to be scrollable within the page flow: */
+        max-height: 500px;
+    }
+}

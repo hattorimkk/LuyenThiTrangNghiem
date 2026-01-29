@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khóa Học Online</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="course-layout">
+        <!-- Main Content Area: Video & Description -->
+        <div class="video-section">
+            <div class="video-wrapper">
+                <iframe id="video-frame" src=""
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+
+            <div class="lesson-info">
+                <div class="course-title-header" id="course-name">Loading...</div>
+                <h1 class="current-lesson-title" id="lesson-title">Chọn một bài học để bắt đầu</h1>
+                <div class="course-description" id="course-description">
+                    <!-- Description content will be injected here -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Sidebar: Course Content -->
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <h3>Nội dung khóa học</h3>
+            </div>
+            <div class="sidebar-content" id="sidebar-content">
+                <!-- Chapters and Lessons will be injected here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
