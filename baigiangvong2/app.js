@@ -612,10 +612,39 @@ const courseData = {
 };
 
 document.addEventListener('DOMContentLoaded', () => {
-    initCourse();
+    setupEventListeners();
+    try {
+        initCourse();
+    } catch (e) {
+        console.error("Error initializing course:", e);
+    }
 });
 
 let currentLessonId = null;
+
+function setupEventListeners() {
+    // Mobile Sidebar Toggle Logic
+    const toggleBtn = document.getElementById('mobile-sidebar-toggle');
+    const closeBtn = document.getElementById('close-sidebar-mobile');
+    const sidebar = document.getElementById('sidebar');
+
+    if (toggleBtn && sidebar) {
+        toggleBtn.addEventListener('click', (e) => {
+            e.preventDefault(); // Prevent default behavior
+            e.stopPropagation(); // Stop propagation just in case
+            console.log("Toggle button clicked"); // Debug log for user
+            sidebar.classList.add('open');
+        });
+    } else {
+        console.error("Toggle button or sidebar not found in DOM");
+    }
+
+    if (closeBtn && sidebar) {
+        closeBtn.addEventListener('click', () => {
+            sidebar.classList.remove('open');
+        });
+    }
+}
 
 function initCourse() {
     const course = courseData.data;
@@ -639,21 +668,6 @@ function initCourse() {
             toggleChapter(firstChapterHeader);
         }
     }
-    // Mobile Sidebar Toggle Logic
-    const toggleBtn = document.getElementById('mobile-sidebar-toggle');
-    const closeBtn = document.getElementById('close-sidebar-mobile');
-    const sidebar = document.getElementById('sidebar');
-
-    toggleBtn.addEventListener('click', () => {
-        sidebar.classList.add('open');
-    });
-
-    closeBtn.addEventListener('click', () => {
-        sidebar.classList.remove('open');
-    });
-
-    // Close sidebar when clicking outside (optional but good for UX)
-    // or when selecting a lesson on mobile
 }
 
 function renderSidebar(chapters) {
