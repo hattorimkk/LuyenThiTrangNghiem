@@ -619,7 +619,7 @@ let currentLessonId = null;
 
 function initCourse() {
     const course = courseData.data;
-    
+
     // Set Course Info
     document.getElementById('course-name').textContent = course.name;
     document.getElementById('course-description').innerHTML = course.description;
@@ -632,18 +632,33 @@ function initCourse() {
     if (firstChapter && firstChapter.lessons.data.length > 0) {
         const firstLesson = firstChapter.lessons.data[0];
         playLesson(firstLesson);
-        
+
         // Open the first chapter in sidebar
         const firstChapterHeader = document.querySelector(`.chapter-header[data-chapter-id="${firstChapter.id}"]`);
         if (firstChapterHeader) {
             toggleChapter(firstChapterHeader);
         }
     }
+    // Mobile Sidebar Toggle Logic
+    const toggleBtn = document.getElementById('mobile-sidebar-toggle');
+    const closeBtn = document.getElementById('close-sidebar-mobile');
+    const sidebar = document.getElementById('sidebar');
+
+    toggleBtn.addEventListener('click', () => {
+        sidebar.classList.add('open');
+    });
+
+    closeBtn.addEventListener('click', () => {
+        sidebar.classList.remove('open');
+    });
+
+    // Close sidebar when clicking outside (optional but good for UX)
+    // or when selecting a lesson on mobile
 }
 
 function renderSidebar(chapters) {
     const sidebarContent = document.getElementById('sidebar-content');
-    
+
     chapters.forEach((chapter, index) => {
         const chapterDiv = document.createElement('div');
         chapterDiv.className = 'chapter-item';
@@ -665,7 +680,13 @@ function renderSidebar(chapters) {
             const lessonItem = document.createElement('div');
             lessonItem.className = 'lesson-item';
             lessonItem.setAttribute('data-lesson-id', lesson.id);
-            lessonItem.onclick = () => playLesson(lesson);
+            lessonItem.onclick = () => {
+                playLesson(lesson);
+                // Close sidebar on mobile after selection
+                if (window.innerWidth <= 900) {
+                    document.getElementById('sidebar').classList.remove('open');
+                }
+            };
             lessonItem.innerHTML = `
                 <div class="lesson-icon"><i class="fas fa-play-circle"></i></div>
                 <span>${lesson.name}</span>
@@ -682,11 +703,11 @@ function renderSidebar(chapters) {
 function toggleChapter(headerElement) {
     // Toggle active state for style
     headerElement.classList.toggle('active');
-    
+
     // Find the next sibling which is the lessons container
     const content = headerElement.nextElementSibling;
     content.classList.toggle('open');
-    
+
     // Rotate icon
     const icon = headerElement.querySelector('i');
     if (content.classList.contains('open')) {
@@ -711,7 +732,7 @@ function playLesson(lesson) {
         item.classList.remove('active');
         if (parseInt(item.getAttribute('data-lesson-id')) === lesson.id) {
             item.classList.add('active');
-            
+
             // Ensure parent chapter is open
             const chapterContent = item.parentElement;
             if (!chapterContent.classList.contains('open')) {

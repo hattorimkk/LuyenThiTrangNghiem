@@ -31,9 +31,16 @@
         </div>
 
         <!-- Sidebar: Course Content -->
-        <div class="sidebar">
+
+        <!-- Mobile Toggle Button -->
+        <button id="mobile-sidebar-toggle" class="mobile-toggle-btn">
+            <i class="fas fa-list"></i> Danh sách bài học
+        </button>
+
+        <div class="sidebar" id="sidebar">
             <div class="sidebar-header">
                 <h3>Nội dung khóa học</h3>
+                <button id="close-sidebar-mobile" class="close-sidebar-btn"><i class="fas fa-times"></i></button>
             </div>
             <div class="sidebar-content" id="sidebar-content">
                 <!-- Chapters and Lessons will be injected here -->

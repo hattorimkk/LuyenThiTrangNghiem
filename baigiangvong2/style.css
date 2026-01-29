@@ -110,18 +110,32 @@ body {
     flex-direction: column;
     height: 100%;
     flex-shrink: 0;
+    z-index: 1000;
+    /* Ensure it stays above other content if positioned */
 }
 
 .sidebar-header {
     padding: 15px 20px;
     border-bottom: 1px solid var(--border-color);
     background: var(--light-gray);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .sidebar-header h3 {
     margin: 0;
     font-size: 1.1rem;
     color: var(--text-color);
+}
+
+.close-sidebar-btn {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    color: #666;
+    cursor: pointer;
 }
 
 .sidebar-content {
@@ -197,6 +211,12 @@ body {
     text-align: center;
 }
 
+/* Mobile Toggle Button */
+.mobile-toggle-btn {
+    display: none;
+    /* Hidden on desktop */
+}
+
 /* Responsive */
 @media (max-width: 900px) {
     .course-layout {
@@ -210,12 +230,9 @@ body {
         overflow: visible;
         width: 100%;
         min-height: auto;
-        /* Reset min-height */
     }
 
     .video-wrapper {
-        /* User requested video to be smaller/allow more description visibility */
-        /* Removed sticky to allow scrolling past video to read full text */
         position: relative;
         width: 100%;
         padding-bottom: 56.25%;
@@ -224,12 +241,10 @@ body {
 
     .lesson-info {
         padding: 15px;
-        /* Compact padding */
     }
 
     .current-lesson-title {
         font-size: 1.25rem;
-        /* Smaller title for mobile */
         margin-bottom: 5px;
     }
 
@@ -241,21 +256,63 @@ body {
         padding: 15px;
         margin-top: 10px;
         font-size: 0.95rem;
-        /* Readable but compact font */
+        /* Padding bottom to avoid content being hidden behind the fixed toggle button */
+        padding-bottom: 80px;
     }
 
+    /* Sidebar Mobile Styles: Slide-up Bottom Sheet */
     .sidebar {
+        position: fixed;
+        bottom: 0;
+        left: 0;
         width: 100%;
-        height: auto;
-        border-left: none;
-        border-top: 1px solid var(--border-color);
-        margin-top: 0;
+        height: 70vh;
+        /* Takes up 70% of screen height */
+        box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.2);
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        transform: translateY(110%);
+        /* Hidden by default */
+        transition: transform 0.3s ease-out;
+    }
+
+    .sidebar.open {
+        transform: translateY(0);
+        /* Slide up */
+    }
+
+    .close-sidebar-btn {
+        display: block;
+    }
+
+    .sidebar-header {
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
     }
 
     .sidebar-content {
         max-height: none;
-        /* Let sidebar expand naturally or set a limit if needed */
-        /* If we want the sidebar to be scrollable within the page flow: */
-        max-height: 500px;
+    }
+
+    /* Mobile Toggle Button */
+    .mobile-toggle-btn {
+        display: block;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background: var(--primary-color);
+        color: white;
+        border: none;
+        padding: 12px 20px;
+        border-radius: 50px;
+        font-weight: bold;
+        box-shadow: 0 4px 10px rgba(255, 145, 0, 0.4);
+        z-index: 999;
+        cursor: pointer;
+        transition: transform 0.2s;
+    }
+
+    .mobile-toggle-btn:active {
+        transform: scale(0.95);
     }
 }
