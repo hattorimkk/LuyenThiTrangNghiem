@@ -1,0 +1,2464 @@
+{
+    "data": {
+        "id": 164208,
+        "userId": 14083,
+        "examPackId": 643,
+        "examId": 2362,
+        "examCodeId": 164545,
+        "score": 0,
+        "correctQuestion": 0,
+        "inCorrectQuestion": 0,
+        "skipQuestion": 0,
+        "type": 1,
+        "status": 0,
+        "startTime": "2026-01-30T19:32:55.000Z",
+        "completedAt": null,
+        "createdAt": "2026-01-30T19:32:55.000Z",
+        "updatedAt": "2026-01-30T19:32:55.000Z",
+        "user": {
+            "id": 14083,
+            "email": "nguyennhattruong@gmail.com",
+            "username": null,
+            "code": "586280",
+            "phoneNumber": "",
+            "firstName": null,
+            "lastName": null,
+            "image": null,
+            "position": null,
+            "organization": null,
+            "status": 1,
+            "verifyToken": null,
+            "verified": false,
+            "verifiedAt": null,
+            "source": 1,
+            "deletedAt": null,
+            "createdAt": "2026-01-30T19:31:03.000Z",
+            "updatedAt": "2026-01-30T19:31:03.000Z"
+        },
+        "examCode": {
+            "data": {
+                "id": 164545,
+                "examId": 2362,
+                "createdAt": "2026-01-30T19:32:55.000Z",
+                "updatedAt": "2026-01-30T19:32:55.000Z",
+                "questions": {
+                    "data": [
+                        {
+                            "id": 169800,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]:</span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \"> Theo Luật Tiếp công dân số 42/2013/QH13, hoạt động tiếp công dân bao gồm những hình thức nào?</span>",
+                            "categoryId": 2358,
+                            "note": "<span style=\"font-size:16px;vertical-align:top;\">Giải thích Chọn đáp án a. Bởi: Căn cứ Khoản 1 Điều 2 Luật Tiếp công dân số 42/2013/QH13 quy định: \"Tiếp công dân bao gồm tiếp công dân thường xuyên, tiếp công dân định kỳ và tiếp công dân đột xuất.\"<br/></span>",
+                            "readingContentId": null,
+                            "respondentCount": "2",
+                            "correctRespondentCount": "1",
+                            "type": 1,
+                            "createdAt": "2026-01-27T03:54:57.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-30T15:25:14.000Z",
+                            "answers": [
+                                {
+                                    "id": 293747,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">a) Tiếp công dân thường xuyên, tiếp công dân định kỳ và tiếp công dân đột xuất.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 169800,
+                                    "createdAt": "2026-01-27T03:54:57.000Z",
+                                    "updatedAt": "2026-01-27T03:54:57.000Z"
+                                },
+                                {
+                                    "id": 293748,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">b) Tiếp công dân định kỳ, tiếp công dân hàng ngày và tiếp công dân theo yêu cầu.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169800,
+                                    "createdAt": "2026-01-27T03:54:57.000Z",
+                                    "updatedAt": "2026-01-27T03:54:57.000Z"
+                                },
+                                {
+                                    "id": 293749,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">c) Tiếp công dân thường xuyên, tiếp công dân theo lịch và tiếp công dân khẩn cấp.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169800,
+                                    "createdAt": "2026-01-27T03:54:57.000Z",
+                                    "updatedAt": "2026-01-27T03:54:57.000Z"
+                                },
+                                {
+                                    "id": 293750,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">d) Tiếp công dân hàng tuần, tiếp công dân hàng tháng và tiếp công dân đột xuất.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169800,
+                                    "createdAt": "2026-01-27T03:54:57.000Z",
+                                    "updatedAt": "2026-01-27T03:54:57.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 169801,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]:</span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \"> Đâu là định nghĩa đúng về “Kiến nghị, phản ánh” theo quy định của Luật Tiếp công dân số 42/2013/QH13?</span>",
+                            "categoryId": 2358,
+                            "note": "<span style=\"font-size:16px;vertical-align:top;\">Giải thích Chọn đáp án c. Bởi: Căn cứ Khoản 2 Điều 2 Luật Tiếp công dân số 42/2013/QH13 quy định: \"Kiến nghị, phản ánh là việc công dân cung cấp thông tin, trình bày ý kiến, nguyện vọng, đề xuất giải pháp với cơ quan, tổ chức, đơn vị, cá nhân có thẩm quyền về những vấn đề liên quan đến việc thực hiện chủ trương, đường lối, chính sách, pháp luật, công tác quản lý trong các lĩnh vực đời sống xã hội thuộc trách nhiệm của cơ quan, tổ chức, đơn vị, cá nhân đó.\"</span>",
+                            "readingContentId": null,
+                            "respondentCount": "1",
+                            "correctRespondentCount": "0",
+                            "type": 1,
+                            "createdAt": "2026-01-27T03:54:57.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-30T15:25:31.000Z",
+                            "answers": [
+                                {
+                                    "id": 293751,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">a) Là việc công dân báo cho cơ quan có thẩm quyền biết về hành vi vi phạm pháp luật của bất cứ cơ quan, tổ chức, cá nhân nào gây thiệt hại.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169801,
+                                    "createdAt": "2026-01-27T03:54:57.000Z",
+                                    "updatedAt": "2026-01-27T03:54:57.000Z"
+                                },
+                                {
+                                    "id": 293752,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">b) Là việc công dân đề nghị cơ quan có thẩm quyền xem xét lại quyết định hành chính khi có căn cứ cho rằng quyết định đó là trái pháp luật.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169801,
+                                    "createdAt": "2026-01-27T03:54:57.000Z",
+                                    "updatedAt": "2026-01-27T03:54:57.000Z"
+                                },
+                                {
+                                    "id": 293753,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">c) Là việc công dân cung cấp thông tin, trình bày ý kiến, nguyện vọng, đề xuất giải pháp với cơ quan có thẩm quyền về những vấn đề liên quan đến thực hiện chủ trương, chính sách.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 169801,
+                                    "createdAt": "2026-01-27T03:54:57.000Z",
+                                    "updatedAt": "2026-01-27T03:54:57.000Z"
+                                },
+                                {
+                                    "id": 293754,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">d) Là việc công dân yêu cầu cơ quan nhà nước thực hiện các biện pháp khẩn cấp để bảo vệ quyền lợi hợp pháp của mình trong các tranh chấp dân sự.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169801,
+                                    "createdAt": "2026-01-27T03:54:57.000Z",
+                                    "updatedAt": "2026-01-27T03:54:57.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 169802,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]:</span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \"> Theo Luật Tiếp công dân số 42/2013/QH13, nơi tiếp công dân phải đảm bảo yêu cầu nào sau đây?</span>",
+                            "categoryId": 2358,
+                            "note": "<span style=\"font-size:16px;vertical-align:top;\">Giải thích Chọn đáp án b. Bởi: Căn cứ Khoản 3 Điều 2 Luật Tiếp công dân số 42/2013/QH13 quy định: \"Nơi tiếp công dân bao gồm Trụ sở tiếp công dân, địa điểm tiếp công dân hoặc nơi làm việc khác do cơ quan, tổ chức, đơn vị có trách nhiệm tiếp công dân bố trí và phải được thông báo công khai hoặc thông báo trước cho người được tiếp.\"<br/></span>",
+                            "readingContentId": null,
+                            "respondentCount": "2",
+                            "correctRespondentCount": "1",
+                            "type": 1,
+                            "createdAt": "2026-01-27T03:54:57.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-30T15:25:51.000Z",
+                            "answers": [
+                                {
+                                    "id": 293755,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">a) Phải đặt tại trụ sở chính của cơ quan và chỉ tiếp người đã có lịch hẹn trước.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169802,
+                                    "createdAt": "2026-01-27T03:54:57.000Z",
+                                    "updatedAt": "2026-01-27T03:54:57.000Z"
+                                },
+                                {
+                                    "id": 293756,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">b) Phải được thông báo công khai hoặc thông báo trước cho người được tiếp.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 169802,
+                                    "createdAt": "2026-01-27T03:54:57.000Z",
+                                    "updatedAt": "2026-01-27T03:54:57.000Z"
+                                },
+                                {
+                                    "id": 293757,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">c) Phải là phòng họp riêng biệt và tuyệt đối không được tiếp tại nơi làm việc khác.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169802,
+                                    "createdAt": "2026-01-27T03:54:57.000Z",
+                                    "updatedAt": "2026-01-27T03:54:57.000Z"
+                                },
+                                {
+                                    "id": 293758,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">d) Phải được đặt tại vị trí bảo mật để đảm bảo an toàn cho cán bộ tiếp dân.<br/></span>",
+                                    "isCorrect": false,
+                                    "questionId": 169802,
+                                    "createdAt": "2026-01-27T03:54:57.000Z",
+                                    "updatedAt": "2026-01-27T03:54:57.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 169803,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]:</span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \"> Đâu không phải là nguyên tắc trong tiếp công dân theo Luật Tiếp công dân số 42/2013/QH13?</span>",
+                            "categoryId": 2358,
+                            "note": "<span style=\"font-size:16px;vertical-align:top;\">Giải thích Chọn đáp án d. Bởi: Đáp án a, b, c được quy định tại Khoản 1, 2 Điều 3 Luật Tiếp công dân số 42/2013/QH13. Đáp án d sai vì Khoản 2 Điều 3 quy định nguyên tắc: \"bảo đảm khách quan, bình đẳng, không phân biệt đối xử trong khi tiếp công dân.\"</span>",
+                            "readingContentId": null,
+                            "respondentCount": "1",
+                            "correctRespondentCount": "1",
+                            "type": 1,
+                            "createdAt": "2026-01-27T03:54:57.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-30T15:25:59.000Z",
+                            "answers": [
+                                {
+                                    "id": 293759,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">a) Việc tiếp công dân phải được tiến hành tại nơi tiếp công dân của cơ quan, tổ chức, đơn vị.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169803,
+                                    "createdAt": "2026-01-27T03:54:57.000Z",
+                                    "updatedAt": "2026-01-27T03:54:57.000Z"
+                                },
+                                {
+                                    "id": 293760,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">b) Bảo đảm công khai, dân chủ, kịp thời; thủ tục đơn giản, thuận tiện.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169803,
+                                    "createdAt": "2026-01-27T03:54:57.000Z",
+                                    "updatedAt": "2026-01-27T03:54:57.000Z"
+                                },
+                                {
+                                    "id": 293761,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">c) Giữ bí mật và bảo đảm an toàn cho người tố cáo theo quy định của pháp luật.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169803,
+                                    "createdAt": "2026-01-27T03:54:57.000Z",
+                                    "updatedAt": "2026-01-27T03:54:57.000Z"
+                                },
+                                {
+                                    "id": 293762,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">d) Ưu tiên tiếp những người có chức vụ, địa vị xã hội cao trước để xử lý nhanh chóng.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 169803,
+                                    "createdAt": "2026-01-27T03:54:57.000Z",
+                                    "updatedAt": "2026-01-27T03:54:57.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 169804,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]:</span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \"> Nội dung nào sau đây là một trong các nguyên tắc tiếp công dân được quy định tại Luật Tiếp công dân số 42/2013/QH13?</span>",
+                            "categoryId": 2358,
+                            "note": "<span style=\"font-size:16px;vertical-align:top;\">Giải thích Chọn đáp án a. Bởi: Căn cứ Khoản 3 Điều 3 Luật Tiếp công dân số 42/2013/QH13 quy định nguyên tắc: \"Tôn trọng, tạo điều kiện thuận lợi cho công dân thực hiện việc khiếu nại, tố cáo, kiến nghị, phản ánh theo quy định của pháp luật.\"</span>",
+                            "readingContentId": null,
+                            "respondentCount": "3",
+                            "correctRespondentCount": "3",
+                            "type": 1,
+                            "createdAt": "2026-01-27T03:54:57.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-30T15:26:05.000Z",
+                            "answers": [
+                                {
+                                    "id": 293763,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">a) Tôn trọng, tạo điều kiện thuận lợi cho công dân thực hiện việc khiếu nại, tố cáo, kiến nghị, phản ánh theo quy định của pháp luật.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 169804,
+                                    "createdAt": "2026-01-27T03:54:57.000Z",
+                                    "updatedAt": "2026-01-27T03:54:57.000Z"
+                                },
+                                {
+                                    "id": 293764,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">b) Phải giải quyết dứt điểm các vụ việc ngay tại buổi tiếp công dân đầu tiên.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169804,
+                                    "createdAt": "2026-01-27T03:54:57.000Z",
+                                    "updatedAt": "2026-01-27T03:54:57.000Z"
+                                },
+                                {
+                                    "id": 293765,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">c) Người tiếp công dân có quyền từ chối tiếp nếu công dân không cung cấp đơn bằng văn bản.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169804,
+                                    "createdAt": "2026-01-27T03:54:57.000Z",
+                                    "updatedAt": "2026-01-27T03:54:57.000Z"
+                                },
+                                {
+                                    "id": 293766,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">d) Chỉ tiếp công dân khi có sự đồng ý của người đứng đầu cơ quan bằng văn bản.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169804,
+                                    "createdAt": "2026-01-27T03:54:57.000Z",
+                                    "updatedAt": "2026-01-27T03:54:57.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 169805,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]:</span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \"> Theo Luật Tiếp công dân số 42/2013/QH13, cơ quan nào sau đây có trách nhiệm tổ chức tiếp công dân?</span>",
+                            "categoryId": 2358,
+                            "note": "<span style=\"font-size:16px;vertical-align:top;\">Giải thích Chọn đáp án c. Bởi: Căn cứ Điểm g Khoản 1 Điều 4 Luật Tiếp công dân số 42/2013/QH13 quy định các cơ quan nhà nước có trách nhiệm tổ chức tiếp công dân bao gồm: \"Tòa án nhân dân, Viện kiểm sát nhân dân, Kiểm toán nhà nước.\"</span>",
+                            "readingContentId": null,
+                            "respondentCount": "1",
+                            "correctRespondentCount": "1",
+                            "type": 1,
+                            "createdAt": "2026-01-27T03:54:57.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-30T15:26:15.000Z",
+                            "answers": [
+                                {
+                                    "id": 293767,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">a) Các doanh nghiệp nhà nước có vốn điều lệ trên 500 tỷ đồng.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169805,
+                                    "createdAt": "2026-01-27T03:54:57.000Z",
+                                    "updatedAt": "2026-01-27T03:54:57.000Z"
+                                },
+                                {
+                                    "id": 293768,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">b) Các tổ chức phi chính phủ đang hoạt động tại Việt Nam.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169805,
+                                    "createdAt": "2026-01-27T03:54:57.000Z",
+                                    "updatedAt": "2026-01-27T03:54:57.000Z"
+                                },
+                                {
+                                    "id": 293769,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">c) Viện kiểm sát nhân dân, Tòa án nhân dân, Kiểm toán nhà nước.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 169805,
+                                    "createdAt": "2026-01-27T03:54:57.000Z",
+                                    "updatedAt": "2026-01-27T03:54:57.000Z"
+                                },
+                                {
+                                    "id": 293770,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">d) Các hiệp hội nghề nghiệp tự nguyện của công dân.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169805,
+                                    "createdAt": "2026-01-27T03:54:57.000Z",
+                                    "updatedAt": "2026-01-27T03:54:57.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 169806,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]:</span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \"> Đâu là quy định đúng về trách nhiệm tiếp công dân của Đại biểu Quốc hội theo Luật Tiếp công dân số 42/2013/QH13?</span>",
+                            "categoryId": 2358,
+                            "note": "<span style=\"font-size:16px;vertical-align:top;\">Giải thích Chọn đáp án b. Bởi: Căn cứ Khoản 2 Điều 4 Luật Tiếp công dân số 42/2013/QH13 quy định: \"Đại biểu Quốc hội, đại biểu Hội đồng nhân dân các cấp có trách nhiệm tiếp công dân theo quy định của Luật này và các văn bản quy phạm pháp luật khác có liên quan.\"</span>",
+                            "readingContentId": null,
+                            "respondentCount": "1",
+                            "correctRespondentCount": "1",
+                            "type": 1,
+                            "createdAt": "2026-01-27T03:54:57.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-30T15:26:25.000Z",
+                            "answers": [
+                                {
+                                    "id": 293771,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">a) Chỉ tiếp công dân khi có yêu cầu trực tiếp từ Chủ tịch Quốc hội.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169806,
+                                    "createdAt": "2026-01-27T03:54:57.000Z",
+                                    "updatedAt": "2026-01-27T03:54:57.000Z"
+                                },
+                                {
+                                    "id": 293772,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">b) Tiếp công dân theo quy định của Luật Tiếp công dân và các văn bản quy phạm pháp luật khác có liên quan.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 169806,
+                                    "createdAt": "2026-01-27T03:54:57.000Z",
+                                    "updatedAt": "2026-01-27T03:54:57.000Z"
+                                },
+                                {
+                                    "id": 293773,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">c) Không có trách nhiệm trực tiếp tiếp công dân mà chỉ nhận đơn qua đường bưu điện.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169806,
+                                    "createdAt": "2026-01-27T03:54:57.000Z",
+                                    "updatedAt": "2026-01-27T03:54:57.000Z"
+                                },
+                                {
+                                    "id": 293774,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">d) Chỉ tiếp công dân tại Trụ sở tiếp công dân ở Trung ương tại Hà Nội.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169806,
+                                    "createdAt": "2026-01-27T03:54:57.000Z",
+                                    "updatedAt": "2026-01-27T03:54:57.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 169807,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]:</span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \"> Theo Luật Tiếp công dân số 42/2013/QH13, tổ chức nào sau đây quy định về việc tiếp công dân trong cơ quan, tổ chức thuộc hệ thống mình?</span>",
+                            "categoryId": 2358,
+                            "note": "<span style=\"font-size:16px;vertical-align:top;\">Giải thích Chọn đáp án b. Bởi: Căn cứ Khoản 3 Điều 4 Luật Tiếp công dân số 42/2013/QH13 quy định: \"Căn cứ vào quy định của Luật này, cơ quan trung ương của tổ chức chính trị, Ủy ban Mặt trận Tổ quốc Việt Nam, tổ chức chính trị - xã hội quy định về việc tiếp công dân trong cơ quan, tổ chức thuộc hệ thống mình\".</span>",
+                            "readingContentId": null,
+                            "respondentCount": "2",
+                            "correctRespondentCount": "0",
+                            "type": 1,
+                            "createdAt": "2026-01-27T03:54:57.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-30T15:26:39.000Z",
+                            "answers": [
+                                {
+                                    "id": 293775,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">a) Ủy ban nhân dân các cấp.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169807,
+                                    "createdAt": "2026-01-27T03:54:57.000Z",
+                                    "updatedAt": "2026-01-27T03:54:57.000Z"
+                                },
+                                {
+                                    "id": 293776,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">b) Cơ quan trung ương của tổ chức chính trị, Ủy ban Mặt trận Tổ quốc Việt Nam.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 169807,
+                                    "createdAt": "2026-01-27T03:54:57.000Z",
+                                    "updatedAt": "2026-01-27T03:54:57.000Z"
+                                },
+                                {
+                                    "id": 293777,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">c) Thanh tra Chính phủ.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169807,
+                                    "createdAt": "2026-01-27T03:54:57.000Z",
+                                    "updatedAt": "2026-01-27T03:54:57.000Z"
+                                },
+                                {
+                                    "id": 293778,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">d) Bộ Nội vụ.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169807,
+                                    "createdAt": "2026-01-27T03:54:57.000Z",
+                                    "updatedAt": "2026-01-27T03:54:57.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 169808,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]:</span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \"> Cơ quan nào thống nhất quản lý nhà nước về công tác tiếp công dân theo Luật Tiếp công dân số 42/2013/QH13?</span>",
+                            "categoryId": 2358,
+                            "note": "<span style=\"font-size:16px;vertical-align:top;\">Giải thích Chọn đáp án b. Bởi: Căn cứ Khoản 1 Điều 5 Luật Tiếp công dân số 42/2013/QH13 quy định: \"Chính phủ thống nhất quản lý nhà nước về công tác tiếp công dân; trực tiếp quản lý công tác tiếp công dân của các cơ quan hành chính nhà nước ở trung ương và địa phương.\"</span>",
+                            "readingContentId": null,
+                            "respondentCount": "1",
+                            "correctRespondentCount": "0",
+                            "type": 1,
+                            "createdAt": "2026-01-27T03:54:58.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-30T15:27:09.000Z",
+                            "answers": [
+                                {
+                                    "id": 293779,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">a) Quốc hội.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169808,
+                                    "createdAt": "2026-01-27T03:54:58.000Z",
+                                    "updatedAt": "2026-01-27T03:54:58.000Z"
+                                },
+                                {
+                                    "id": 293780,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">b) Chính phủ.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 169808,
+                                    "createdAt": "2026-01-27T03:54:58.000Z",
+                                    "updatedAt": "2026-01-27T03:54:58.000Z"
+                                },
+                                {
+                                    "id": 293781,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">c) Thanh tra Chính phủ.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169808,
+                                    "createdAt": "2026-01-27T03:54:58.000Z",
+                                    "updatedAt": "2026-01-27T03:54:58.000Z"
+                                },
+                                {
+                                    "id": 293782,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">d) Bộ Tư pháp.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169808,
+                                    "createdAt": "2026-01-27T03:54:58.000Z",
+                                    "updatedAt": "2026-01-27T03:54:58.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 169809,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]:</span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \"> Theo Luật Tiếp công dân số 42/2013/QH13, Thanh tra Chính phủ chịu trách nhiệm trước ai trong việc thực hiện quản lý nhà nước về tiếp công dân?</span>",
+                            "categoryId": 2358,
+                            "note": "<span style=\"font-size:16px;vertical-align:top;\">Giải thích Chọn đáp án c. Bởi: Căn cứ Khoản 1 Điều 5 Luật Tiếp công dân số 42/2013/QH13 quy định: \"Thanh tra Chính phủ chịu trách nhiệm trước Chính phủ thực hiện quản lý nhà nước về công tác tiếp công dân.\"</span>",
+                            "readingContentId": null,
+                            "respondentCount": "1",
+                            "correctRespondentCount": "1",
+                            "type": 1,
+                            "createdAt": "2026-01-27T03:54:58.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-30T15:27:17.000Z",
+                            "answers": [
+                                {
+                                    "id": 293783,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">a) Quốc hội.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169809,
+                                    "createdAt": "2026-01-27T03:54:58.000Z",
+                                    "updatedAt": "2026-01-27T03:54:58.000Z"
+                                },
+                                {
+                                    "id": 293784,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">b) Chủ tịch nước.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169809,
+                                    "createdAt": "2026-01-27T03:54:58.000Z",
+                                    "updatedAt": "2026-01-27T03:54:58.000Z"
+                                },
+                                {
+                                    "id": 293785,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">c) Chính phủ.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 169809,
+                                    "createdAt": "2026-01-27T03:54:58.000Z",
+                                    "updatedAt": "2026-01-27T03:54:58.000Z"
+                                },
+                                {
+                                    "id": 293786,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">d) Ủy ban Thường vụ Quốc hội.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169809,
+                                    "createdAt": "2026-01-27T03:54:58.000Z",
+                                    "updatedAt": "2026-01-27T03:54:58.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 169810,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]:</span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \"> Cơ quan nào có trách nhiệm chỉ đạo, điều hòa, phối hợp việc tổ chức hoạt động tiếp công dân của các cơ quan của Quốc hội?</span>",
+                            "categoryId": 2358,
+                            "note": "<span style=\"font-size:16px;vertical-align:top;\">Giải thích Chọn đáp án b. Bởi: Căn cứ Khoản 2 Điều 5 Luật Tiếp công dân số 42/2013/QH13 quy định: \"Ủy ban thường vụ Quốc hội có trách nhiệm chỉ đạo, điều hòa, phối hợp việc tổ chức hoạt động tiếp công dân của các cơ quan của Quốc hội, đại biểu Quốc hội.\"</span>",
+                            "readingContentId": null,
+                            "respondentCount": "2",
+                            "correctRespondentCount": "1",
+                            "type": 1,
+                            "createdAt": "2026-01-27T03:54:58.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-30T15:27:40.000Z",
+                            "answers": [
+                                {
+                                    "id": 293787,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">a) Ban Dân nguyện.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169810,
+                                    "createdAt": "2026-01-27T03:54:58.000Z",
+                                    "updatedAt": "2026-01-27T03:54:58.000Z"
+                                },
+                                {
+                                    "id": 293788,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">b) Ủy ban Thường vụ Quốc hội.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 169810,
+                                    "createdAt": "2026-01-27T03:54:58.000Z",
+                                    "updatedAt": "2026-01-27T03:54:58.000Z"
+                                },
+                                {
+                                    "id": 293789,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">c) Văn phòng Quốc hội.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169810,
+                                    "createdAt": "2026-01-27T03:54:58.000Z",
+                                    "updatedAt": "2026-01-27T03:54:58.000Z"
+                                },
+                                {
+                                    "id": 293790,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">d) Hội đồng Dân tộc.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169810,
+                                    "createdAt": "2026-01-27T03:54:58.000Z",
+                                    "updatedAt": "2026-01-27T03:54:58.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 169811,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]:</span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \"> Đâu là hành vi bị nghiêm cấm đối với người tiếp công dân theo Luật Tiếp công dân số 42/2013/QH13?</span>",
+                            "categoryId": 2358,
+                            "note": "<span style=\"font-size:16px;vertical-align:top;\">Giải thích Chọn đáp án c. Bởi: Căn cứ Khoản 3 Điều 6 Luật Tiếp công dân số 42/2013/QH13 quy định hành vi bị nghiêm cấm: \"Phân biệt đối xử trong khi tiếp công dân.\" Các phương án khác là trách nhiệm hoặc quyền hợp pháp của người tiếp dân.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "1",
+                            "correctRespondentCount": "1",
+                            "type": 1,
+                            "createdAt": "2026-01-27T03:54:58.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-30T15:27:55.000Z",
+                            "answers": [
+                                {
+                                    "id": 293791,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">a) Yêu cầu người đến khiếu nại, tố cáo xuất trình giấy tờ tùy thân.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169811,
+                                    "createdAt": "2026-01-27T03:54:58.000Z",
+                                    "updatedAt": "2026-01-27T03:54:58.000Z"
+                                },
+                                {
+                                    "id": 293792,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">b) Giải thích cho công dân về quyền và nghĩa vụ khi khiếu nại, tố cáo.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169811,
+                                    "createdAt": "2026-01-27T03:54:58.000Z",
+                                    "updatedAt": "2026-01-27T03:54:58.000Z"
+                                },
+                                {
+                                    "id": 293793,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">c) Phân biệt đối xử trong khi tiếp công dân.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 169811,
+                                    "createdAt": "2026-01-27T03:54:58.000Z",
+                                    "updatedAt": "2026-01-27T03:54:58.000Z"
+                                },
+                                {
+                                    "id": 293794,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">d) Từ chối tiếp người đang trong tình trạng say rượu.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169811,
+                                    "createdAt": "2026-01-27T03:54:58.000Z",
+                                    "updatedAt": "2026-01-27T03:54:58.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 169812,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]:</span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \"> Theo Luật Tiếp công dân số 42/2013/QH13, nội dung nào sau đây là hành vi bị nghiêm cấm đối với công dân?</span>",
+                            "categoryId": 2358,
+                            "note": "<span style=\"font-size:16px;vertical-align:top;\">Giải thích Chọn đáp án c. Bởi: Căn cứ Khoản 7 Điều 6 Luật Tiếp công dân số 42/2013/QH13 quy định hành vi bị nghiêm cấm: \"Kích động, cưỡng ép, dụ dỗ, lôi kéo, mua chuộc người khác tập trung đông người tại nơi tiếp công dân.\"</span>",
+                            "readingContentId": null,
+                            "respondentCount": "1",
+                            "correctRespondentCount": "1",
+                            "type": 1,
+                            "createdAt": "2026-01-27T03:54:58.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-30T15:28:00.000Z",
+                            "answers": [
+                                {
+                                    "id": 293795,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">a) Đưa ra các kiến nghị về việc sửa đổi chính sách thuế.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169812,
+                                    "createdAt": "2026-01-27T03:54:58.000Z",
+                                    "updatedAt": "2026-01-27T03:54:58.000Z"
+                                },
+                                {
+                                    "id": 293796,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">b) Ký xác nhận nội dung trình bày đã được người tiếp công dân ghi chép.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169812,
+                                    "createdAt": "2026-01-27T03:54:58.000Z",
+                                    "updatedAt": "2026-01-27T03:54:58.000Z"
+                                },
+                                {
+                                    "id": 293797,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">c) Kích động, cưỡng ép, dụ dỗ người khác tập trung đông người tại nơi tiếp công dân.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 169812,
+                                    "createdAt": "2026-01-27T03:54:58.000Z",
+                                    "updatedAt": "2026-01-27T03:54:58.000Z"
+                                },
+                                {
+                                    "id": 293798,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">d) Yêu cầu người tiếp công dân ghi nhận đầy đủ ý kiến của mình.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169812,
+                                    "createdAt": "2026-01-27T03:54:58.000Z",
+                                    "updatedAt": "2026-01-27T03:54:58.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 169813,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]:</span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \"> Hành vi nào sau đây bị nghiêm cấm trong hoạt động tiếp công dân theo Luật Tiếp công dân số 42/2013/QH13?</span>",
+                            "categoryId": 2358,
+                            "note": "<span style=\"font-size:16px;vertical-align:top;\">Giải thích Chọn đáp án b. Bởi: Căn cứ Khoản 2 Điều 6 Luật Tiếp công dân số 42/2013/QH13 quy định hành vi bị nghiêm cấm: \"Thiếu trách nhiệm trong việc tiếp công dân; làm mất hoặc làm sai lệch thông tin, tài liệu do người khiếu nại, tố cáo, kiến nghị, phản ánh cung cấp.\"</span>",
+                            "readingContentId": null,
+                            "respondentCount": "1",
+                            "correctRespondentCount": "1",
+                            "type": 1,
+                            "createdAt": "2026-01-27T03:54:58.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-30T15:28:04.000Z",
+                            "answers": [
+                                {
+                                    "id": 293799,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">a) Lưu trữ thông tin tài liệu do người khiếu nại cung cấp.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169813,
+                                    "createdAt": "2026-01-27T03:54:58.000Z",
+                                    "updatedAt": "2026-01-27T03:54:58.000Z"
+                                },
+                                {
+                                    "id": 293800,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">b) Thiếu trách nhiệm trong việc tiếp công dân; làm mất hoặc làm sai lệch thông tin cung cấp.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 169813,
+                                    "createdAt": "2026-01-27T03:54:58.000Z",
+                                    "updatedAt": "2026-01-27T03:54:58.000Z"
+                                },
+                                {
+                                    "id": 293801,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">c) Hướng dẫn công dân đến đúng cơ quan có thẩm quyền giải quyết.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169813,
+                                    "createdAt": "2026-01-27T03:54:58.000Z",
+                                    "updatedAt": "2026-01-27T03:54:58.000Z"
+                                },
+                                {
+                                    "id": 293802,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">d) Đề nghị công dân giữ trật tự tại nơi tiếp công dân.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169813,
+                                    "createdAt": "2026-01-27T03:54:58.000Z",
+                                    "updatedAt": "2026-01-27T03:54:58.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 169814,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]:</span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \"> Đâu là hành vi bị nghiêm cấm liên quan đến quyền khiếu nại, tố cáo tại Luật Tiếp công dân số 42/2013/QH13?</span>",
+                            "categoryId": 2358,
+                            "note": "<span style=\"font-size:16px;vertical-align:top;\">Giải thích Chọn đáp án b. Bởi: Căn cứ Khoản 4 Điều 6 Luật Tiếp công dân số 42/2013/QH13 quy định hành vi bị nghiêm cấm: \"Lợi dụng quyền khiếu nại, tố cáo, kiến nghị, phản ánh để gây rối trật tự công cộng.\"</span>",
+                            "readingContentId": null,
+                            "respondentCount": "3",
+                            "correctRespondentCount": "3",
+                            "type": 1,
+                            "createdAt": "2026-01-27T03:54:58.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-30T15:28:10.000Z",
+                            "answers": [
+                                {
+                                    "id": 293803,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">a) Thực hiện quyền khiếu nại đúng thời hạn quy định.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169814,
+                                    "createdAt": "2026-01-27T03:54:58.000Z",
+                                    "updatedAt": "2026-01-27T03:54:58.000Z"
+                                },
+                                {
+                                    "id": 293804,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">b) Lợi dụng quyền khiếu nại, tố cáo, kiến nghị, phản ánh để gây rối trật tự công cộng.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 169814,
+                                    "createdAt": "2026-01-27T03:54:58.000Z",
+                                    "updatedAt": "2026-01-27T03:54:58.000Z"
+                                },
+                                {
+                                    "id": 293805,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">c) Cung cấp chứng cứ chứng minh cho nội dung khiếu nại.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169814,
+                                    "createdAt": "2026-01-27T03:54:58.000Z",
+                                    "updatedAt": "2026-01-27T03:54:58.000Z"
+                                },
+                                {
+                                    "id": 293806,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">d) Ủy quyền cho luật sư thực hiện việc khiếu nại.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169814,
+                                    "createdAt": "2026-01-27T03:54:58.000Z",
+                                    "updatedAt": "2026-01-27T03:54:58.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 169815,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]:</span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \"> Theo Luật Tiếp công dân số 42/2013/QH13, khi đến nơi tiếp công dân, người khiếu nại, tố cáo có quyền nào sau đây?</span>",
+                            "categoryId": 2358,
+                            "note": "<span style=\"font-size:16px;vertical-align:top;\">Giải thích Chọn đáp án b. Bởi: Căn cứ Điểm d Khoản 1 Điều 7 Luật Tiếp công dân số 42/2013/QH13 quy định người khiếu nại, tố cáo có quyền: \"Nhận thông báo về việc tiếp nhận, kết quả xử lý khiếu nại, tố cáo, kiến nghị, phản ánh\".</span>",
+                            "readingContentId": null,
+                            "respondentCount": "1",
+                            "correctRespondentCount": "1",
+                            "type": 1,
+                            "createdAt": "2026-01-27T03:54:58.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-30T15:28:16.000Z",
+                            "answers": [
+                                {
+                                    "id": 293807,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">a) Được tự ý ghi âm, ghi hình cán bộ tiếp dân mà không cần xin phép.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169815,
+                                    "createdAt": "2026-01-27T03:54:58.000Z",
+                                    "updatedAt": "2026-01-27T03:54:58.000Z"
+                                },
+                                {
+                                    "id": 293808,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">b) Nhận thông báo về việc tiếp nhận, kết quả xử lý khiếu nại, tố cáo, kiến nghị, phản ánh.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 169815,
+                                    "createdAt": "2026-01-27T03:54:58.000Z",
+                                    "updatedAt": "2026-01-27T03:54:58.000Z"
+                                },
+                                {
+                                    "id": 293809,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">c) Yêu cầu người tiếp công dân phải giải quyết dứt điểm vụ việc ngay lập tức.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169815,
+                                    "createdAt": "2026-01-27T03:54:58.000Z",
+                                    "updatedAt": "2026-01-27T03:54:58.000Z"
+                                },
+                                {
+                                    "id": 293810,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">d) Truy cập vào toàn bộ hồ sơ mật của cơ quan đang giải quyết vụ việc.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169815,
+                                    "createdAt": "2026-01-27T03:54:58.000Z",
+                                    "updatedAt": "2026-01-27T03:54:58.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 169816,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]:</span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \"> Người khiếu nại, tố cáo không sử dụng thông thạo tiếng Việt khi đến nơi tiếp công dân thì có quyền gì theo Luật Tiếp công dân số 42/2013/QH13?</span>",
+                            "categoryId": 2358,
+                            "note": "<span style=\"font-size:16px;vertical-align:top;\">Giải thích Chọn đáp án b. Bởi: Căn cứ Điểm đ Khoản 1 Điều 7 Luật Tiếp công dân số 42/2013/QH13 quy định: \"Trường hợp người khiếu nại, tố cáo, kiến nghị, phản ánh không sử dụng thông thạo tiếng Việt thì có quyền sử dụng người phiên dịch\".</span>",
+                            "readingContentId": null,
+                            "respondentCount": "1",
+                            "correctRespondentCount": "1",
+                            "type": 1,
+                            "createdAt": "2026-01-27T03:54:58.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-30T15:28:23.000Z",
+                            "answers": [
+                                {
+                                    "id": 293811,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">a) Có quyền yêu cầu hoãn buổi tiếp dân vô thời hạn.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169816,
+                                    "createdAt": "2026-01-27T03:54:58.000Z",
+                                    "updatedAt": "2026-01-27T03:54:58.000Z"
+                                },
+                                {
+                                    "id": 293812,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">b) Có quyền sử dụng người phiên dịch.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 169816,
+                                    "createdAt": "2026-01-27T03:54:58.000Z",
+                                    "updatedAt": "2026-01-27T03:54:58.000Z"
+                                },
+                                {
+                                    "id": 293813,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">c) Có quyền yêu cầu cán bộ tiếp dân phải nói được tiếng dân tộc của mình.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169816,
+                                    "createdAt": "2026-01-27T03:54:58.000Z",
+                                    "updatedAt": "2026-01-27T03:54:58.000Z"
+                                },
+                                {
+                                    "id": 293814,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">d) Có quyền từ chối cung cấp thông tin cá nhân.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169816,
+                                    "createdAt": "2026-01-27T03:54:58.000Z",
+                                    "updatedAt": "2026-01-27T03:54:58.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 169817,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]:</span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \"> Theo Luật Tiếp công dân số 42/2013/QH13, đâu là nghĩa vụ của người đến khiếu nại, tố cáo?</span>",
+                            "categoryId": 2358,
+                            "note": "<span style=\"font-size:16px;vertical-align:top;\">Giải thích Chọn đáp án c. Bởi: Căn cứ Điểm d Khoản 2 Điều 7 Luật Tiếp công dân số 42/2013/QH13 quy định người khiếu nại, tố cáo có nghĩa vụ: \"Nghiêm chỉnh chấp hành nội quy tiếp công dân và hướng dẫn của người tiếp công dân.\"</span>",
+                            "readingContentId": null,
+                            "respondentCount": "1",
+                            "correctRespondentCount": "1",
+                            "type": 1,
+                            "createdAt": "2026-01-27T03:54:58.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-30T15:28:31.000Z",
+                            "answers": [
+                                {
+                                    "id": 293815,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">a) Phải nộp một khoản phí tiếp dân theo quy định của cơ quan.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169817,
+                                    "createdAt": "2026-01-27T03:54:58.000Z",
+                                    "updatedAt": "2026-01-27T03:54:58.000Z"
+                                },
+                                {
+                                    "id": 293816,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">b) Phải có luật sư đi cùng mới được vào nơi tiếp công dân.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169817,
+                                    "createdAt": "2026-01-27T03:54:58.000Z",
+                                    "updatedAt": "2026-01-27T03:54:58.000Z"
+                                },
+                                {
+                                    "id": 293817,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">c) Nghiêm chỉnh chấp hành nội quy tiếp công dân và hướng dẫn của người tiếp công dân.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 169817,
+                                    "createdAt": "2026-01-27T03:54:58.000Z",
+                                    "updatedAt": "2026-01-27T03:54:58.000Z"
+                                },
+                                {
+                                    "id": 293818,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">d) Phải tự chuẩn bị máy ghi âm để ghi lại toàn bộ buổi làm việc.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169817,
+                                    "createdAt": "2026-01-27T03:54:58.000Z",
+                                    "updatedAt": "2026-01-27T03:54:58.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 169818,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]:</span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \"> Khi nhiều người cùng khiếu nại về một nội dung, họ có nghĩa vụ gì theo Luật Tiếp công dân số 42/2013/QH13?</span>",
+                            "categoryId": 2358,
+                            "note": "<span style=\"font-size:16px;vertical-align:top;\">Giải thích Chọn đáp án d. Bởi: Căn cứ Điểm đ Khoản 2 Điều 7 Luật Tiếp công dân số 42/2013/QH13 quy định nghĩa vụ: \"Trường hợp nhiều người cùng khiếu nại, tố cáo, kiến nghị, phản ánh về một nội dung thì phải cử người đại diện để trình bày nội dung khiếu nại, tố cáo, kiến nghị, phản ánh\".</span>",
+                            "readingContentId": null,
+                            "respondentCount": "1",
+                            "correctRespondentCount": "1",
+                            "type": 1,
+                            "createdAt": "2026-01-27T03:54:58.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-30T15:28:43.000Z",
+                            "answers": [
+                                {
+                                    "id": 293819,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">a) Tất cả mọi người cùng vào phòng tiếp dân để tạo áp lực.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169818,
+                                    "createdAt": "2026-01-27T03:54:58.000Z",
+                                    "updatedAt": "2026-01-27T03:54:58.000Z"
+                                },
+                                {
+                                    "id": 293820,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">b) Không được phép đến nơi tiếp dân cùng một lúc.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169818,
+                                    "createdAt": "2026-01-27T03:54:58.000Z",
+                                    "updatedAt": "2026-01-27T03:54:58.000Z"
+                                },
+                                {
+                                    "id": 293821,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">c) Mỗi người phải trình bày nội dung theo một cách khác nhau.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169818,
+                                    "createdAt": "2026-01-27T03:54:58.000Z",
+                                    "updatedAt": "2026-01-27T03:54:58.000Z"
+                                },
+                                {
+                                    "id": 293822,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">d) Phải cử người đại diện để trình bày nội dung khiếu nại, tố cáo.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 169818,
+                                    "createdAt": "2026-01-27T03:54:58.000Z",
+                                    "updatedAt": "2026-01-27T03:54:58.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 169819,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]:</span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \"> Khi tiếp công dân, người tiếp công dân phải đảm bảo yêu cầu nào về trang phục theo Luật Tiếp công dân số 42/2013/QH13?</span>",
+                            "categoryId": 2358,
+                            "note": "<span style=\"font-size:16px;vertical-align:top;\">Giải thích Chọn đáp án c. Bởi: Căn cứ Khoản 1 Điều 8 Luật Tiếp công dân số 42/2013/QH13 quy định: \"Khi tiếp công dân, người tiếp công dân phải bảo đảm trang phục chỉnh tề, có đeo thẻ công chức, viên chức hoặc phù hiệu theo quy định.\"</span>",
+                            "readingContentId": null,
+                            "respondentCount": "1",
+                            "correctRespondentCount": "1",
+                            "type": 1,
+                            "createdAt": "2026-01-27T03:54:58.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-30T15:28:49.000Z",
+                            "answers": [
+                                {
+                                    "id": 293823,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">a) Chỉ cần mặc trang phục lịch sự theo sở thích cá nhân.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169819,
+                                    "createdAt": "2026-01-27T03:54:58.000Z",
+                                    "updatedAt": "2026-01-27T03:54:58.000Z"
+                                },
+                                {
+                                    "id": 293824,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">b) Phải mặc quân phục đối với mọi cơ quan tiếp dân.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169819,
+                                    "createdAt": "2026-01-27T03:54:58.000Z",
+                                    "updatedAt": "2026-01-27T03:54:58.000Z"
+                                },
+                                {
+                                    "id": 293825,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">c) Bảo đảm trang phục chỉnh tề, có đeo thẻ công chức, viên chức hoặc phù hiệu.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 169819,
+                                    "createdAt": "2026-01-27T03:54:58.000Z",
+                                    "updatedAt": "2026-01-27T03:54:58.000Z"
+                                },
+                                {
+                                    "id": 293826,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">d) Phải mặc lễ phục trong tất cả các buổi tiếp dân thường xuyên.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169819,
+                                    "createdAt": "2026-01-27T03:54:58.000Z",
+                                    "updatedAt": "2026-01-27T03:54:58.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 169820,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]:</span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \"> Nội dung nào sau đây là trách nhiệm của người tiếp công dân theo Luật Tiếp công dân số 42/2013/QH13?</span>",
+                            "categoryId": 2358,
+                            "note": "<span style=\"font-size:16px;vertical-align:top;\">Giải thích Chọn đáp án d. Bởi: Căn cứ Khoản 3 Điều 8 Luật Tiếp công dân số 42/2013/QH13 quy định: \"Có thái độ đứng mực, tôn trọng công dân, lắng nghe, tiếp nhận đơn khiếu nại, tố cáo, kiến nghị, phản ánh hoặc ghi chép đầy đủ, chính xác nội dung mà người đến khiếu nại, tố cáo, kiến nghị, phản ánh trình bày.\"</span>",
+                            "readingContentId": null,
+                            "respondentCount": "1",
+                            "correctRespondentCount": "1",
+                            "type": 1,
+                            "createdAt": "2026-01-27T03:54:58.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-30T15:28:59.000Z",
+                            "answers": [
+                                {
+                                    "id": 293827,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">a) Tự mình quyết định giải quyết ngay các nội dung tố cáo mà không cần báo cáo.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169820,
+                                    "createdAt": "2026-01-27T03:54:58.000Z",
+                                    "updatedAt": "2026-01-27T03:54:58.000Z"
+                                },
+                                {
+                                    "id": 293828,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">b) Yêu cầu công dân phải nộp bản gốc các loại giấy tờ tùy thân để lưu giữ.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169820,
+                                    "createdAt": "2026-01-27T03:54:58.000Z",
+                                    "updatedAt": "2026-01-27T03:54:58.000Z"
+                                },
+                                {
+                                    "id": 293829,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">c) Từ chối nhận đơn nếu thấy nội dung khiếu nại quá phức tạp.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169820,
+                                    "createdAt": "2026-01-27T03:54:58.000Z",
+                                    "updatedAt": "2026-01-27T03:54:58.000Z"
+                                },
+                                {
+                                    "id": 293830,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">d) Có thái độ đúng mực, tôn trọng công dân, lắng nghe, tiếp nhận đơn hoặc ghi chép đầy đủ nội dung.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 169820,
+                                    "createdAt": "2026-01-27T03:54:58.000Z",
+                                    "updatedAt": "2026-01-27T03:54:58.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 169821,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]:</span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \"> Theo Luật Tiếp công dân số 42/2013/QH13, người tiếp công dân có trách nhiệm gì khi công dân khiếu nại sai cơ quan có thẩm quyền?</span>",
+                            "categoryId": 2358,
+                            "note": "<span style=\"font-size:16px;vertical-align:top;\">Giải thích Chọn đáp án c. Bởi: Căn cứ Khoản 4 Điều 8 Luật Tiếp công dân số 42/2013/QH13 quy định trách nhiệm: \"hướng dẫn người khiếu nại, tố cáo, kiến nghị, phản ánh đến đúng cơ quan hoặc người có thẩm quyền giải quyết.\"</span>",
+                            "readingContentId": null,
+                            "respondentCount": "1",
+                            "correctRespondentCount": "1",
+                            "type": 1,
+                            "createdAt": "2026-01-27T03:54:58.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-30T15:29:03.000Z",
+                            "answers": [
+                                {
+                                    "id": 293831,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">a) Trả lại đơn và không cần giải thích gì thêm.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169821,
+                                    "createdAt": "2026-01-27T03:54:58.000Z",
+                                    "updatedAt": "2026-01-27T03:54:58.000Z"
+                                },
+                                {
+                                    "id": 293832,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">b) Nhận đơn và cất giữ cho đến khi công dân tự tìm được cơ quan đúng.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169821,
+                                    "createdAt": "2026-01-27T03:54:58.000Z",
+                                    "updatedAt": "2026-01-27T03:54:58.000Z"
+                                },
+                                {
+                                    "id": 293833,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">c) Hướng dẫn người khiếu nại, tố cáo đến đúng cơ quan hoặc người có thẩm quyền giải quyết.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 169821,
+                                    "createdAt": "2026-01-27T03:54:58.000Z",
+                                    "updatedAt": "2026-01-27T03:54:58.000Z"
+                                },
+                                {
+                                    "id": 293834,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">d) Yêu cầu công dân phải tự tìm hiểu luật pháp trước khi đến khiếu nại.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169821,
+                                    "createdAt": "2026-01-27T03:54:58.000Z",
+                                    "updatedAt": "2026-01-27T03:54:58.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 169822,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]:</span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \"> Trường hợp nào sau đây người tiếp công dân được từ chối tiếp người đến nơi tiếp công dân theo Luật Tiếp công dân số 42/2013/QH13?</span>",
+                            "categoryId": 2358,
+                            "note": "<span style=\"font-size:16px;vertical-align:top;\">Giải thích Chọn đáp án a. Bởi: Căn cứ Khoản 1 Điều 9 Luật Tiếp công dân số 42/2013/QH13 quy định trường hợp được từ chối tiếp: \"Người trong tình trạng say do dùng chất kích thích, người mắc bệnh tâm thần hoặc một bệnh khác làm mất khả năng nhận thức hoặc khả năng điều khiển hành vi của mình\".</span>",
+                            "readingContentId": null,
+                            "respondentCount": "1",
+                            "correctRespondentCount": "1",
+                            "type": 1,
+                            "createdAt": "2026-01-27T03:54:58.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-30T15:29:06.000Z",
+                            "answers": [
+                                {
+                                    "id": 293835,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">a) Người trong tình trạng say do dùng chất kích thích.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 169822,
+                                    "createdAt": "2026-01-27T03:54:58.000Z",
+                                    "updatedAt": "2026-01-27T03:54:58.000Z"
+                                },
+                                {
+                                    "id": 293836,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">b) Công dân đến khiếu nại vào ngày mưa bão.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169822,
+                                    "createdAt": "2026-01-27T03:54:58.000Z",
+                                    "updatedAt": "2026-01-27T03:54:58.000Z"
+                                },
+                                {
+                                    "id": 293837,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">c) Công dân đi cùng với người phiên dịch.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169822,
+                                    "createdAt": "2026-01-27T03:54:58.000Z",
+                                    "updatedAt": "2026-01-27T03:54:58.000Z"
+                                },
+                                {
+                                    "id": 293838,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">d) Người khiếu nại là người nước ngoài.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169822,
+                                    "createdAt": "2026-01-27T03:54:58.000Z",
+                                    "updatedAt": "2026-01-27T03:54:58.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 169823,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]:</span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \"> Theo Luật Tiếp công dân số 42/2013/QH13, người tiếp công dân được từ chối tiếp trong trường hợp nào?</span>",
+                            "categoryId": 2358,
+                            "note": "<span style=\"font-size:16px;vertical-align:top;\">Giải thích Chọn đáp án a. Bởi: Căn cứ Khoản 2 Điều 9 Luật Tiếp công dân số 42/2013/QH13 quy định trường hợp từ chối tiếp: \"Người có hành vi đe dọa, xúc phạm cơ quan, tổ chức, đơn vị, người tiếp công dân, người thi hành công vụ hoặc có hành vi khác vi phạm nội quy nơi tiếp công dân\".</span>",
+                            "readingContentId": null,
+                            "respondentCount": "1",
+                            "correctRespondentCount": "1",
+                            "type": 1,
+                            "createdAt": "2026-01-27T03:54:58.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-30T15:29:11.000Z",
+                            "answers": [
+                                {
+                                    "id": 293839,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">a) Người có hành vi đe dọa, xúc phạm cơ quan, tổ chức, người tiếp công dân.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 169823,
+                                    "createdAt": "2026-01-27T03:54:58.000Z",
+                                    "updatedAt": "2026-01-27T03:54:58.000Z"
+                                },
+                                {
+                                    "id": 293840,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">b) Người khiếu nại trình bày nội dung quá dài dòng.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169823,
+                                    "createdAt": "2026-01-27T03:54:58.000Z",
+                                    "updatedAt": "2026-01-27T03:54:58.000Z"
+                                },
+                                {
+                                    "id": 293841,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">c) Người khiếu nại mang theo nhiều tài liệu, chứng cứ.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169823,
+                                    "createdAt": "2026-01-27T03:54:58.000Z",
+                                    "updatedAt": "2026-01-27T03:54:58.000Z"
+                                },
+                                {
+                                    "id": 293842,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">d) Công dân đến khiếu nại lần đầu tiên về một vụ việc.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169823,
+                                    "createdAt": "2026-01-27T03:54:58.000Z",
+                                    "updatedAt": "2026-01-27T03:54:58.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 169824,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]:</span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \"> Đâu là trường hợp được từ chối tiếp công dân quy định tại Luật Tiếp công dân số 42/2013/QH13 liên quan đến vụ việc đã giải quyết?</span>",
+                            "categoryId": 2358,
+                            "note": "<span style=\"font-size:16px;vertical-align:top;\">Giải thích Chọn đáp án c. Bởi: Căn cứ Khoản 3 Điều 9 Luật Tiếp công dân số 42/2013/QH13 quy định trường hợp từ chối tiếp: \"Người khiếu nại, tố cáo về vụ việc đã giải quyết đúng chính sách, pháp luật, được cơ quan nhà nước có thẩm quyền kiểm tra, rà soát, thông báo bằng văn bản và đã được tiếp, giải thích, hướng dẫn nhưng vẫn cố tình khiếu nại, tố cáo kéo dài\".</span>",
+                            "readingContentId": null,
+                            "respondentCount": "2",
+                            "correctRespondentCount": "1",
+                            "type": 1,
+                            "createdAt": "2026-01-27T03:54:58.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-30T15:29:20.000Z",
+                            "answers": [
+                                {
+                                    "id": 293843,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">a) Người khiếu nại về vụ việc đang trong quá trình xác minh thông tin.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169824,
+                                    "createdAt": "2026-01-27T03:54:58.000Z",
+                                    "updatedAt": "2026-01-27T03:54:58.000Z"
+                                },
+                                {
+                                    "id": 293844,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">b) Người khiếu nại về vụ việc đã có kết luận thanh tra nhưng công dân chưa đồng ý.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169824,
+                                    "createdAt": "2026-01-27T03:54:58.000Z",
+                                    "updatedAt": "2026-01-27T03:54:58.000Z"
+                                },
+                                {
+                                    "id": 293845,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">c) Người khiếu nại về vụ việc đã giải quyết đúng pháp luật, được cơ quan thẩm quyền rà soát, thông báo bằng văn bản và đã được giải thích nhưng vẫn cố tình khiếu nại kéo dài.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 169824,
+                                    "createdAt": "2026-01-27T03:54:58.000Z",
+                                    "updatedAt": "2026-01-27T03:54:58.000Z"
+                                },
+                                {
+                                    "id": 293846,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">d) Người khiếu nại về vụ việc mới được tiếp nhận đơn và chưa có văn bản trả lời chính thức.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169824,
+                                    "createdAt": "2026-01-27T03:54:58.000Z",
+                                    "updatedAt": "2026-01-27T03:54:58.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 169825,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]:</span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \"> Theo Luật Tiếp công dân số 42/2013/QH13, Trụ sở tiếp công dân là nơi để công dân trực tiếp đến khiếu nại, tố cáo với đối tượng nào?</span>",
+                            "categoryId": 2358,
+                            "note": "<span style=\"font-size:16px;vertical-align:top;\">Giải thích Chọn đáp án a. Bởi: Căn cứ Khoản 1 Điều 10 Luật Tiếp công dân số 42/2013/QH13 quy định: \"Trụ sở tiếp công dân là nơi để công dân trực tiếp đến khiếu nại, tố cáo, kiến nghị, phản ánh với lãnh đạo Đảng, Nhà nước ở trung ương hoặc lãnh đạo Đảng, chính quyền ở địa phương...\"</span>",
+                            "readingContentId": null,
+                            "respondentCount": "1",
+                            "correctRespondentCount": "1",
+                            "type": 1,
+                            "createdAt": "2026-01-27T03:54:58.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-30T15:29:29.000Z",
+                            "answers": [
+                                {
+                                    "id": 293847,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">a) Lãnh đạo Đảng, Nhà nước ở trung ương hoặc lãnh đạo Đảng, chính quyền ở địa phương.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 169825,
+                                    "createdAt": "2026-01-27T03:54:58.000Z",
+                                    "updatedAt": "2026-01-27T03:54:58.000Z"
+                                },
+                                {
+                                    "id": 293848,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">b) Lãnh đạo các doanh nghiệp tư nhân trên địa bàn.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169825,
+                                    "createdAt": "2026-01-27T03:54:58.000Z",
+                                    "updatedAt": "2026-01-27T03:54:58.000Z"
+                                },
+                                {
+                                    "id": 293849,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">c) Các tổ chức quốc tế có trụ sở tại Việt Nam.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169825,
+                                    "createdAt": "2026-01-27T03:54:58.000Z",
+                                    "updatedAt": "2026-01-27T03:54:58.000Z"
+                                },
+                                {
+                                    "id": 293850,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">d) Các phóng viên báo chí và cơ quan truyền thông.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169825,
+                                    "createdAt": "2026-01-27T03:54:58.000Z",
+                                    "updatedAt": "2026-01-27T03:54:58.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 169826,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]:</span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \"> Đâu là khẳng định đúng khi nói về trụ sở tiếp công dân theo Luật Tiếp công dân số 42/2013/QH13?</span>",
+                            "categoryId": 2358,
+                            "note": "<span style=\"font-size:16px;vertical-align:top;\">Giải thích Chọn đáp án b. Bởi: Căn cứ Khoản 2 Điều 10 Luật Tiếp công dân số 42/2013/QH13 quy định Trụ sở tiếp công dân bao gồm: \"a) Trụ sở tiếp công dân ở trung ương; b) Trụ sở tiếp công dân ở tỉnh, thành phố trực thuộc trung ương; c) Trụ sở tiếp công dân ở quận, huyện, thành phố, thị xã thuộc tỉnh.\"</span>",
+                            "readingContentId": null,
+                            "respondentCount": "5",
+                            "correctRespondentCount": "3",
+                            "type": 1,
+                            "createdAt": "2026-01-27T03:54:58.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-30T15:29:59.000Z",
+                            "answers": [
+                                {
+                                    "id": 293851,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">a) Có trụ sở tiếp công dân ở tất cả các cơ quan chuyên môn của nhà nước.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169826,
+                                    "createdAt": "2026-01-27T03:54:58.000Z",
+                                    "updatedAt": "2026-01-27T03:54:58.000Z"
+                                },
+                                {
+                                    "id": 293852,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">b) Có trụ sở tiếp công dân ở Trung ương; Trụ sở tiếp công dân ở tỉnh, thành phố trực thuộc trung ương.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 169826,
+                                    "createdAt": "2026-01-27T03:54:58.000Z",
+                                    "updatedAt": "2026-01-27T03:54:58.000Z"
+                                },
+                                {
+                                    "id": 293853,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">c) Có trụ sở tiếp công dân ở các Bộ và Trụ sở tiếp công dân ở các Tổng cục.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169826,
+                                    "createdAt": "2026-01-27T03:54:58.000Z",
+                                    "updatedAt": "2026-01-27T03:54:58.000Z"
+                                },
+                                {
+                                    "id": 293854,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">d) Có trụ sở tiếp công dân ở các cơ quan hành chính và Trụ sở tiếp công dân các cơ quan tư pháp.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169826,
+                                    "createdAt": "2026-01-27T03:54:58.000Z",
+                                    "updatedAt": "2026-01-27T03:54:58.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 169827,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]:</span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \"> Ban tiếp công dân được thành lập nhằm mục đích gì theo Luật Tiếp công dân số 42/2013/QH13?</span>",
+                            "categoryId": 2358,
+                            "note": "<span style=\"font-size:16px;vertical-align:top;\">Giải thích Chọn đáp án b. Bởi: Căn cứ Khoản 3 Điều 10 Luật Tiếp công dân số 42/2013/QH13 quy định: \"Ban tiếp công dân được thành lập để trực tiếp quản lý Trụ sở tiếp công dân ở mỗi cấp; phối hợp cùng đại diện cơ quan, tổ chức hữu quan tổ chức, thực hiện việc tiếp công dân thường xuyên tại Trụ sở tiếp công dân...\"</span>",
+                            "readingContentId": null,
+                            "respondentCount": "1",
+                            "correctRespondentCount": "1",
+                            "type": 1,
+                            "createdAt": "2026-01-27T03:54:58.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-30T15:30:05.000Z",
+                            "answers": [
+                                {
+                                    "id": 293855,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">a) Để thanh tra các cán bộ tiếp dân vi phạm kỷ luật.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169827,
+                                    "createdAt": "2026-01-27T03:54:58.000Z",
+                                    "updatedAt": "2026-01-27T03:54:58.000Z"
+                                },
+                                {
+                                    "id": 293856,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">b) Để trực tiếp quản lý Trụ sở tiếp công dân ở mỗi cấp và tổ chức tiếp công dân thường xuyên.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 169827,
+                                    "createdAt": "2026-01-27T03:54:58.000Z",
+                                    "updatedAt": "2026-01-27T03:54:58.000Z"
+                                },
+                                {
+                                    "id": 293857,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">c) Để thay mặt Tòa án nhân dân xét xử các vụ khiếu kiện hành chính.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169827,
+                                    "createdAt": "2026-01-27T03:54:58.000Z",
+                                    "updatedAt": "2026-01-27T03:54:58.000Z"
+                                },
+                                {
+                                    "id": 293858,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">d) Để soạn thảo các dự luật về dân sự cho Quốc hội.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169827,
+                                    "createdAt": "2026-01-27T03:54:58.000Z",
+                                    "updatedAt": "2026-01-27T03:54:58.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 169828,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]:</span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \"> Đâu là nhiệm vụ của Ban tiếp công dân được quy định tại Luật Tiếp công dân số 42/2013/QH13?</span>",
+                            "categoryId": 2358,
+                            "note": "<span style=\"font-size:16px;vertical-align:top;\">Giải thích Chọn đáp án c. Bởi: Căn cứ Điểm c Khoản 3 Điều 10 Luật Tiếp công dân số 42/2013/QH13 quy định nhiệm vụ của Ban tiếp công dân: \"Phân loại, xử lý đơn khiếu nại, tố cáo, kiến nghị, phản ánh được tiếp nhận tại Trụ sở tiếp công dân...\"</span>",
+                            "readingContentId": null,
+                            "respondentCount": "1",
+                            "correctRespondentCount": "1",
+                            "type": 1,
+                            "createdAt": "2026-01-27T03:54:58.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-30T15:30:12.000Z",
+                            "answers": [
+                                {
+                                    "id": 293859,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">a) Ra quyết định cưỡng chế đối với người khiếu nại sai sự thật.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169828,
+                                    "createdAt": "2026-01-27T03:54:58.000Z",
+                                    "updatedAt": "2026-01-27T03:54:58.000Z"
+                                },
+                                {
+                                    "id": 293860,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">b) Trực tiếp giải quyết mọi khiếu nại, tố cáo của công dân tại chỗ. </span>",
+                                    "isCorrect": false,
+                                    "questionId": 169828,
+                                    "createdAt": "2026-01-27T03:54:58.000Z",
+                                    "updatedAt": "2026-01-27T03:54:58.000Z"
+                                },
+                                {
+                                    "id": 293861,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">c) Phân loại, xử lý đơn khiếu nại, tố cáo, kiến nghị, phản ánh được tiếp nhận tại Trụ sở tiếp công dân.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 169828,
+                                    "createdAt": "2026-01-27T03:54:58.000Z",
+                                    "updatedAt": "2026-01-27T03:54:58.000Z"
+                                },
+                                {
+                                    "id": 293862,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">d) Thay mặt người dân đi khiếu kiện tại các cơ quan chức năng khác.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169828,
+                                    "createdAt": "2026-01-27T03:54:58.000Z",
+                                    "updatedAt": "2026-01-27T03:54:58.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 169829,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]:</span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \"> Theo Luật Tiếp công dân số 42/2013/QH13, cơ quan nào quy định chi tiết về nhiệm vụ, quyền hạn, cơ cấu tổ chức của các Ban tiếp công dân?</span>",
+                            "categoryId": 2358,
+                            "note": "<span style=\"font-size:16px;vertical-align:top;\">Giải thích Chọn đáp án b. Bởi: Căn cứ Khoản 5 Điều 10 Luật Tiếp công dân số 42/2013/QH13 quy định: \"Chính phủ quy định chi tiết nhiệm vụ, quyền hạn, cơ cấu tổ chức của các Ban tiếp công dân; việc bố trí cơ sở vật chất của Trụ sở tiếp công dân; quy chế phối hợp hoạt động tiếp công dân tại Trụ sở tiếp công dân.\"</span>",
+                            "readingContentId": null,
+                            "respondentCount": "2",
+                            "correctRespondentCount": "1",
+                            "type": 1,
+                            "createdAt": "2026-01-27T03:54:58.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-30T15:30:30.000Z",
+                            "answers": [
+                                {
+                                    "id": 293863,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">a) Quốc hội.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169829,
+                                    "createdAt": "2026-01-27T03:54:58.000Z",
+                                    "updatedAt": "2026-01-27T03:54:58.000Z"
+                                },
+                                {
+                                    "id": 293864,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">b) Chính phủ.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 169829,
+                                    "createdAt": "2026-01-27T03:54:58.000Z",
+                                    "updatedAt": "2026-01-27T03:54:58.000Z"
+                                },
+                                {
+                                    "id": 293865,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">c) Thanh tra Chính phủ.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169829,
+                                    "createdAt": "2026-01-27T03:54:58.000Z",
+                                    "updatedAt": "2026-01-27T03:54:58.000Z"
+                                },
+                                {
+                                    "id": 293866,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">d) Bộ Nội vụ.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169829,
+                                    "createdAt": "2026-01-27T03:54:58.000Z",
+                                    "updatedAt": "2026-01-27T03:54:58.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 169830,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]:</span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \"> Theo Luật Tiếp công dân số 42/2013/QH13, đâu là địa điểm đặt Trụ sở tiếp công dân ở trung ương?</span>",
+                            "categoryId": 2358,
+                            "note": "<span style=\"font-size:16px;vertical-align:top;\">Giải thích Chọn đáp án c. Bởi: Căn cứ Khoản 1 Điều 11 Luật Tiếp công dân số 42/2013/QH13 quy định: \"Trụ sở tiếp công dân ở trung ương được đặt tại Hà Nội và thành phố Hồ Chí Minh, là nơi tiếp công dân đến khiếu nại, tố cáo, kiến nghị, phản ánh với các cơ quan trung ương của Đảng, Chủ tịch nước, các cơ quan của Quốc hội, Chính phủ.\"</span>",
+                            "readingContentId": null,
+                            "respondentCount": "1",
+                            "correctRespondentCount": "1",
+                            "type": 1,
+                            "createdAt": "2026-01-27T03:54:58.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-30T15:30:39.000Z",
+                            "answers": [
+                                {
+                                    "id": 293867,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">a) Chỉ đặt tại Thủ đô Hà Nội.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169830,
+                                    "createdAt": "2026-01-27T03:54:58.000Z",
+                                    "updatedAt": "2026-01-27T03:54:58.000Z"
+                                },
+                                {
+                                    "id": 293868,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">b) Đặt tại Hà Nội và thành phố Đà Nẵng.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169830,
+                                    "createdAt": "2026-01-27T03:54:58.000Z",
+                                    "updatedAt": "2026-01-27T03:54:58.000Z"
+                                },
+                                {
+                                    "id": 293869,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">c) Đặt tại Hà Nội và thành phố Hồ Chí Minh.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 169830,
+                                    "createdAt": "2026-01-27T03:54:58.000Z",
+                                    "updatedAt": "2026-01-27T03:54:58.000Z"
+                                },
+                                {
+                                    "id": 293870,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">d) Đặt tại ba miền Bắc, Trung, Nam.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169830,
+                                    "createdAt": "2026-01-27T03:54:58.000Z",
+                                    "updatedAt": "2026-01-27T03:54:58.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 169831,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]:</span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \"> Theo Luật Tiếp công dân số 42/2013/QH13, cơ quan nào chịu trách nhiệm trực tiếp quản lý các Trụ sở tiếp công dân ở trung ương?</span>",
+                            "categoryId": 2358,
+                            "note": "<span style=\"font-size:16px;vertical-align:top;\">Giải thích Chọn đáp án c. Bởi: Căn cứ Khoản 2 Điều 11 Luật Tiếp công dân số 42/2013/QH13 quy định: \"Ban tiếp công dân trung ương thuộc Thanh tra Chính phủ, chịu trách nhiệm trực tiếp quản lý các Trụ sở tiếp công dân ở trung ương.\"<br/></span>",
+                            "readingContentId": null,
+                            "respondentCount": "1",
+                            "correctRespondentCount": "0",
+                            "type": 1,
+                            "createdAt": "2026-01-27T03:54:58.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-30T15:30:51.000Z",
+                            "answers": [
+                                {
+                                    "id": 293871,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">a) Văn phòng Chính phủ.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169831,
+                                    "createdAt": "2026-01-27T03:54:58.000Z",
+                                    "updatedAt": "2026-01-27T03:54:58.000Z"
+                                },
+                                {
+                                    "id": 293872,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">b) Thanh tra Chính phủ.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169831,
+                                    "createdAt": "2026-01-27T03:54:58.000Z",
+                                    "updatedAt": "2026-01-27T03:54:58.000Z"
+                                },
+                                {
+                                    "id": 293873,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">c) Ban tiếp công dân trung ương thuộc Thanh tra Chính phủ.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 169831,
+                                    "createdAt": "2026-01-27T03:54:58.000Z",
+                                    "updatedAt": "2026-01-27T03:54:58.000Z"
+                                },
+                                {
+                                    "id": 293874,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">d) Ban dân nguyện thuộc Ủy ban thường vụ Quốc hội.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169831,
+                                    "createdAt": "2026-01-27T03:54:58.000Z",
+                                    "updatedAt": "2026-01-27T03:54:58.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 169832,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]:</span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \"> Đâu không phải là cơ quan cử đại diện phối hợp cùng Ban tiếp công dân trung ương thực hiện việc tiếp công dân thường xuyên tại Trụ sở tiếp công dân ở trung ương theo Luật Tiếp công dân số 42/2013/QH13?</span>",
+                            "categoryId": 2358,
+                            "note": "<span style=\"font-size:16px;vertical-align:top;\">Giải thích Chọn đáp án c. Bởi: Căn cứ Khoản 3 Điều 11 Luật Tiếp công dân số 42/2013/QH13, các cơ quan phối hợp gồm: \"Văn phòng Trung ương Đảng, Ủy ban Kiểm tra Trung ương, Ban Nội chính Trung ương, Văn phòng Chủ tịch nước, Văn phòng Chính phủ, Ban dân nguyện thuộc Ủy ban thường vụ Quốc hội\". Luật quy định là \"Ban dân nguyện thuộc Ủy ban thường vụ Quốc hội\" chứ không phải \"Văn phòng Quốc hội\".</span>",
+                            "readingContentId": null,
+                            "respondentCount": "4",
+                            "correctRespondentCount": "1",
+                            "type": 1,
+                            "createdAt": "2026-01-27T03:54:58.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-30T15:31:08.000Z",
+                            "answers": [
+                                {
+                                    "id": 293875,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">a) Ban Nội chính Trung ương.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169832,
+                                    "createdAt": "2026-01-27T03:54:58.000Z",
+                                    "updatedAt": "2026-01-27T03:54:58.000Z"
+                                },
+                                {
+                                    "id": 293876,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">b) Ủy ban Kiểm tra Trung ương.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169832,
+                                    "createdAt": "2026-01-27T03:54:58.000Z",
+                                    "updatedAt": "2026-01-27T03:54:58.000Z"
+                                },
+                                {
+                                    "id": 293877,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">c) Văn phòng Quốc hội.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 169832,
+                                    "createdAt": "2026-01-27T03:54:58.000Z",
+                                    "updatedAt": "2026-01-27T03:54:58.000Z"
+                                },
+                                {
+                                    "id": 293878,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">d) Ban dân nguyện thuộc Ủy ban thường vụ Quốc hội.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169832,
+                                    "createdAt": "2026-01-27T03:54:58.000Z",
+                                    "updatedAt": "2026-01-27T03:54:58.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 169833,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]:</span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \"> Nội dung nào sau đây là đúng về phạm vi tiếp nhận, xử lý khiếu nại, tố cáo của đại diện Văn phòng Trung ương Đảng tại Trụ sở tiếp công dân ở trung ương theo Luật Tiếp công dân số 42/2013/QH13?</span>",
+                            "categoryId": 2358,
+                            "note": "<span style=\"font-size:16px;vertical-align:top;\">Giải thích Chọn đáp án b. Bởi: Căn cứ điểm a Khoản 4 Điều 11 Luật Tiếp công dân số 42/2013/QH13 quy định đại diện Văn phòng Trung ương Đảng: \"tiếp nhận, xử lý kiến nghị, phản ánh về chủ trương, đường lối, chính sách của Đảng; tiếp nhận, xử lý khiếu nại, tố cáo về công tác xây dựng Đảng và những vấn đề khác thuộc nhiệm vụ, quyền hạn của các ban đảng trung ương, trừ các nội dung quy định tại điểm b và điểm c khoản này\".<br/></span>",
+                            "readingContentId": null,
+                            "respondentCount": "1",
+                            "correctRespondentCount": "1",
+                            "type": 1,
+                            "createdAt": "2026-01-27T03:54:58.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-30T15:31:22.000Z",
+                            "answers": [
+                                {
+                                    "id": 293879,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">a) Tiếp nhận, xử lý khiếu nại, tố cáo về lĩnh vực nội chính và phòng, chống tham nhũng.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169833,
+                                    "createdAt": "2026-01-27T03:54:58.000Z",
+                                    "updatedAt": "2026-01-27T03:54:58.000Z"
+                                },
+                                {
+                                    "id": 293880,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">b) Tiếp nhận, xử lý khiếu nại, tố cáo về công tác xây dựng Đảng và những vấn đề khác thuộc nhiệm vụ, quyền hạn của các ban đảng trung ương.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 169833,
+                                    "createdAt": "2026-01-27T03:54:58.000Z",
+                                    "updatedAt": "2026-01-27T03:54:58.000Z"
+                                },
+                                {
+                                    "id": 293881,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">c) Tiếp nhận, xử lý khiếu nại, tố cáo liên quan đến kỷ luật Đảng, phẩm chất cán bộ, đảng viên.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169833,
+                                    "createdAt": "2026-01-27T03:54:58.000Z",
+                                    "updatedAt": "2026-01-27T03:54:58.000Z"
+                                },
+                                {
+                                    "id": 293882,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">d) Tiếp nhận, xử lý khiếu nại, tố cáo liên quan đến chủ trương, chính sách của Chính phủ.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169833,
+                                    "createdAt": "2026-01-27T03:54:58.000Z",
+                                    "updatedAt": "2026-01-27T03:54:58.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 169834,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]:</span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \"> Theo Luật Tiếp công dân số 42/2013/QH13, đại diện cơ quan nào tại Trụ sở tiếp công dân ở trung ương có trách nhiệm tiếp nhận, xử lý khiếu nại, tố cáo về lĩnh vực nội chính và phòng, chống tham nhũng?</span>",
+                            "categoryId": 2358,
+                            "note": "<span style=\"font-size:16px;vertical-align:top;\">Giải thích Chọn đáp án c. Bởi: Căn cứ điểm c Khoản 4 Điều 11 Luật Tiếp công dân số 42/2013/QH13 quy định: \"Đại diện Ban Nội chính Trung ương tiếp nhận, xử lý kiến nghị, phản ánh liên quan đến chức năng, nhiệm vụ, quyền hạn của Ban Nội chính các cấp; tiếp nhận, xử lý khiếu nại, tố cáo về lĩnh vực nội chính và phòng, chống tham nhũng\".<br/></span>",
+                            "readingContentId": null,
+                            "respondentCount": "1",
+                            "correctRespondentCount": "1",
+                            "type": 1,
+                            "createdAt": "2026-01-27T03:54:58.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-30T15:31:45.000Z",
+                            "answers": [
+                                {
+                                    "id": 293883,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">a) Đại diện Ủy ban Kiểm tra Trung ương.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169834,
+                                    "createdAt": "2026-01-27T03:54:58.000Z",
+                                    "updatedAt": "2026-01-27T03:54:58.000Z"
+                                },
+                                {
+                                    "id": 293884,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">b) Đại diện Văn phòng Chính phủ.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169834,
+                                    "createdAt": "2026-01-27T03:54:58.000Z",
+                                    "updatedAt": "2026-01-27T03:54:58.000Z"
+                                },
+                                {
+                                    "id": 293885,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">c) Đại diện Ban Nội chính Trung ương.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 169834,
+                                    "createdAt": "2026-01-27T03:54:58.000Z",
+                                    "updatedAt": "2026-01-27T03:54:58.000Z"
+                                },
+                                {
+                                    "id": 293886,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">d) Đại diện Ban dân nguyện thuộc Ủy ban thường vụ Quốc hội.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169834,
+                                    "createdAt": "2026-01-27T03:54:58.000Z",
+                                    "updatedAt": "2026-01-27T03:54:58.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 169835,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]:</span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \"> Theo Luật Tiếp công dân số 42/2013/QH13, Tổng Thanh tra Chính phủ trực tiếp tiếp công dân tại Trụ sở tiếp công dân ở trung ương với tần suất như thế nào?</span>",
+                            "categoryId": 2358,
+                            "note": "<span style=\"font-size:16px;vertical-align:top;\">Giải thích Chọn đáp án c. Bởi: Căn cứ Khoản 5 Điều 11 Luật Tiếp công dân số 42/2013/QH13 quy định: \"Tổng Thanh tra Chính phủ, Chủ nhiệm Văn phòng Chính phủ trực tiếp tiếp công dân tại Trụ sở tiếp công dân ở trung ương ít nhất 01 ngày trong 01 tháng\".</span>",
+                            "readingContentId": null,
+                            "respondentCount": "1",
+                            "correctRespondentCount": "1",
+                            "type": 1,
+                            "createdAt": "2026-01-27T03:54:58.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-30T15:31:57.000Z",
+                            "answers": [
+                                {
+                                    "id": 293887,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">a) Ít nhất 01 ngày trong 01 tuần.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169835,
+                                    "createdAt": "2026-01-27T03:54:58.000Z",
+                                    "updatedAt": "2026-01-27T03:54:58.000Z"
+                                },
+                                {
+                                    "id": 293888,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">b) Ít nhất 02 ngày trong 01 tháng.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169835,
+                                    "createdAt": "2026-01-27T03:54:58.000Z",
+                                    "updatedAt": "2026-01-27T03:54:58.000Z"
+                                },
+                                {
+                                    "id": 293889,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">c) Ít nhất 01 ngày trong 01 tháng.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 169835,
+                                    "createdAt": "2026-01-27T03:54:58.000Z",
+                                    "updatedAt": "2026-01-27T03:54:58.000Z"
+                                },
+                                {
+                                    "id": 293890,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">d) Ít nhất 01 ngày trong 01 quý.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169835,
+                                    "createdAt": "2026-01-27T03:54:58.000Z",
+                                    "updatedAt": "2026-01-27T03:54:58.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 169836,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]:</span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \"> Theo Luật Tiếp công dân số 42/2013/QH13, Ban tiếp công dân cấp tỉnh do cơ quan nào thành lập và trực thuộc cơ quan nào?</span>",
+                            "categoryId": 2358,
+                            "note": "<span style=\"font-size:16px;vertical-align:top;\">Giải thích Chọn đáp án c. Bởi: Căn cứ Khoản 2 Điều 12 Luật Tiếp công dân số 42/2013/QH13 quy định: \"Ban tiếp công dân cấp tỉnh do Ủy ban nhân dân cấp tỉnh thành lập, trực thuộc Văn phòng Ủy ban nhân dân cấp tỉnh\".<br/></span>",
+                            "readingContentId": null,
+                            "respondentCount": "1",
+                            "correctRespondentCount": "0",
+                            "type": 1,
+                            "createdAt": "2026-01-27T03:54:59.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-30T15:32:08.000Z",
+                            "answers": [
+                                {
+                                    "id": 293891,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">a) Do Hội đồng nhân dân tỉnh thành lập, trực thuộc Văn phòng Hội đồng nhân dân.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169836,
+                                    "createdAt": "2026-01-27T03:54:58.000Z",
+                                    "updatedAt": "2026-01-27T03:54:59.000Z"
+                                },
+                                {
+                                    "id": 293892,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">b) Do Ủy ban nhân dân cấp tỉnh thành lập, trực thuộc Thanh tra tỉnh.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169836,
+                                    "createdAt": "2026-01-27T03:54:58.000Z",
+                                    "updatedAt": "2026-01-27T03:54:59.000Z"
+                                },
+                                {
+                                    "id": 293893,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">c) Do Ủy ban nhân dân cấp tỉnh thành lập, trực thuộc Văn phòng Ủy ban nhân dân cấp tỉnh.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 169836,
+                                    "createdAt": "2026-01-27T03:54:58.000Z",
+                                    "updatedAt": "2026-01-27T03:54:59.000Z"
+                                },
+                                {
+                                    "id": 293894,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">d) Do Chủ tịch Ủy ban nhân dân cấp tỉnh thành lập, trực thuộc Sở Nội vụ.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169836,
+                                    "createdAt": "2026-01-27T03:54:58.000Z",
+                                    "updatedAt": "2026-01-27T03:54:59.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 169837,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]:</span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \"> Theo Luật Tiếp công dân số 42/2013/QH13, ai là người phụ trách Ban tiếp công dân cấp tỉnh?</span>",
+                            "categoryId": 2358,
+                            "note": "<span style=\"font-size:16px;vertical-align:top;\">Giải thích Chọn đáp án b. Bởi: Căn cứ Khoản 2 Điều 12 Luật Tiếp công dân số 42/2013/QH13 quy định Ban tiếp công dân cấp tỉnh: \"do một Phó Chánh Văn phòng phụ trách, chịu trách nhiệm trực tiếp quản lý Trụ sở tiếp công dân cấp tỉnh.\"<br/></span>",
+                            "readingContentId": null,
+                            "respondentCount": "1",
+                            "correctRespondentCount": "0",
+                            "type": 1,
+                            "createdAt": "2026-01-27T03:54:59.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-30T15:32:20.000Z",
+                            "answers": [
+                                {
+                                    "id": 293895,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">a) Chánh Văn phòng Ủy ban nhân dân cấp tỉnh.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169837,
+                                    "createdAt": "2026-01-27T03:54:59.000Z",
+                                    "updatedAt": "2026-01-27T03:54:59.000Z"
+                                },
+                                {
+                                    "id": 293896,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">b) Một Phó Chánh Văn phòng Ủy ban nhân dân cấp tỉnh.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 169837,
+                                    "createdAt": "2026-01-27T03:54:59.000Z",
+                                    "updatedAt": "2026-01-27T03:54:59.000Z"
+                                },
+                                {
+                                    "id": 293897,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">c) Phó Chủ tịch Ủy ban nhân dân cấp tỉnh.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169837,
+                                    "createdAt": "2026-01-27T03:54:59.000Z",
+                                    "updatedAt": "2026-01-27T03:54:59.000Z"
+                                },
+                                {
+                                    "id": 293898,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">d) Chánh Thanh tra tỉnh.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169837,
+                                    "createdAt": "2026-01-27T03:54:59.000Z",
+                                    "updatedAt": "2026-01-27T03:54:59.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 169838,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]:</span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \"> Đâu là phạm vi tiếp nhận, xử lý của đại diện Ủy ban Kiểm tra Tỉnh ủy tại Trụ sở tiếp công dân cấp tỉnh theo Luật Tiếp công dân số 42/2013/QH13?</span>",
+                            "categoryId": 2358,
+                            "note": "<span style=\"font-size:16px;vertical-align:top;\">Giải thích Chọn đáp án c. Bởi: Căn cứ điểm b Khoản 4 Điều 12 Luật Tiếp công dân số 42/2013/QH13 quy định đại diện Ủy ban Kiểm tra Tỉnh ủy: \"tiếp nhận, xử lý khiếu nại, tố cáo về những vấn đề liên quan đến kỷ luật Đảng, phẩm chất cán bộ, đảng viên, về sinh hoạt trong nội bộ tổ chức Đảng thuộc thẩm quyền của Ủy ban Kiểm tra Tỉnh ủy\".<br/></span>",
+                            "readingContentId": null,
+                            "respondentCount": "1",
+                            "correctRespondentCount": "1",
+                            "type": 1,
+                            "createdAt": "2026-01-27T03:54:59.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-30T15:32:54.000Z",
+                            "answers": [
+                                {
+                                    "id": 293899,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">a) Tiếp nhận khiếu nại, tố cáo về lĩnh vực nội chính và phòng, chống tham nhũng.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169838,
+                                    "createdAt": "2026-01-27T03:54:59.000Z",
+                                    "updatedAt": "2026-01-27T03:54:59.000Z"
+                                },
+                                {
+                                    "id": 293900,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">b) Tiếp nhận khiếu nại, tố cáo liên quan đến việc thực hiện nhiệm vụ của Đoàn đại biểu Quốc hội.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169838,
+                                    "createdAt": "2026-01-27T03:54:59.000Z",
+                                    "updatedAt": "2026-01-27T03:54:59.000Z"
+                                },
+                                {
+                                    "id": 293901,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">c) Tiếp nhận khiếu nại, tố cáo về những vấn đề liên quan đến kỷ luật Đảng, phẩm chất cán bộ, đảng viên thuộc thẩm quyền.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 169838,
+                                    "createdAt": "2026-01-27T03:54:59.000Z",
+                                    "updatedAt": "2026-01-27T03:54:59.000Z"
+                                },
+                                {
+                                    "id": 293902,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">d) Tiếp nhận khiếu nại, tố cáo liên quan đến trách nhiệm của Chủ tịch Ủy ban nhân dân cấp tỉnh.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169838,
+                                    "createdAt": "2026-01-27T03:54:59.000Z",
+                                    "updatedAt": "2026-01-27T03:54:59.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 169839,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]:</span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \"> Theo Luật Tiếp công dân số 42/2013/QH13, nội dung nào sau đây là sai khi nói về trách nhiệm cử đại diện phối hợp tại Trụ sở tiếp công dân cấp tỉnh?</span>",
+                            "categoryId": 2358,
+                            "note": "<span style=\"font-size:16px;vertical-align:top;\">Giải thích Chọn đáp án d. Bởi: Căn cứ Khoản 3 Điều 12 Luật Tiếp công dân số 42/2013/QH13, các cơ quan cử đại diện gồm: \"Văn phòng Tỉnh ủy, Ủy ban Kiểm tra Tỉnh ủy, Ban Nội chính Tỉnh ủy, Văn phòng Đoàn đại biểu Quốc hội và Hội đồng nhân dân cấp tỉnh\". Sở Tư pháp không nằm trong danh sách các cơ quan cử đại diện tiếp công dân thường xuyên tại Trụ sở này.<br/></span>",
+                            "readingContentId": null,
+                            "respondentCount": "1",
+                            "correctRespondentCount": "0",
+                            "type": 1,
+                            "createdAt": "2026-01-27T03:54:59.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-30T15:33:17.000Z",
+                            "answers": [
+                                {
+                                    "id": 293903,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">a) Văn phòng Tỉnh ủy cử đại diện phối hợp.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169839,
+                                    "createdAt": "2026-01-27T03:54:59.000Z",
+                                    "updatedAt": "2026-01-27T03:54:59.000Z"
+                                },
+                                {
+                                    "id": 293904,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">b) Ban Nội chính Tỉnh ủy cử đại diện phối hợp.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169839,
+                                    "createdAt": "2026-01-27T03:54:59.000Z",
+                                    "updatedAt": "2026-01-27T03:54:59.000Z"
+                                },
+                                {
+                                    "id": 293905,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">c) Văn phòng Đoàn đại biểu Quốc hội và Hội đồng nhân dân cấp tỉnh cử đại diện phối hợp.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169839,
+                                    "createdAt": "2026-01-27T03:54:59.000Z",
+                                    "updatedAt": "2026-01-27T03:54:59.000Z"
+                                },
+                                {
+                                    "id": 293906,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">d) Sở Tư pháp cử đại diện phối hợp thực hiện việc tiếp công dân thường xuyên.<br/></span>",
+                                    "isCorrect": true,
+                                    "questionId": 169839,
+                                    "createdAt": "2026-01-27T03:54:59.000Z",
+                                    "updatedAt": "2026-01-27T03:54:59.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 169840,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]:</span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \"> Theo Luật Tiếp công dân số 42/2013/QH13, Chủ tịch Ủy ban nhân dân cấp tỉnh trực tiếp tiếp công dân tại Trụ sở tiếp công dân cấp tỉnh ít nhất bao nhiêu ngày trong một tháng?</span>",
+                            "categoryId": 2358,
+                            "note": "<span style=\"font-size:16px;vertical-align:top;\">Giải thích Chọn đáp án a. Bởi: Căn cứ Khoản 5 Điều 12 Luật Tiếp công dân số 42/2013/QH13 quy định: \"Chủ tịch Ủy ban nhân dân cấp tỉnh trực tiếp tiếp công dân tại Trụ sở tiếp công dân cấp tỉnh ít nhất 01 ngày trong 01 tháng\".</span>",
+                            "readingContentId": null,
+                            "respondentCount": "1",
+                            "correctRespondentCount": "1",
+                            "type": 1,
+                            "createdAt": "2026-01-27T03:54:59.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-30T15:33:27.000Z",
+                            "answers": [
+                                {
+                                    "id": 293907,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">a) Ít nhất 01 ngày trong 01 tháng.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 169840,
+                                    "createdAt": "2026-01-27T03:54:59.000Z",
+                                    "updatedAt": "2026-01-27T03:54:59.000Z"
+                                },
+                                {
+                                    "id": 293908,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">b) Ít nhất 02 ngày trong 01 tháng.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169840,
+                                    "createdAt": "2026-01-27T03:54:59.000Z",
+                                    "updatedAt": "2026-01-27T03:54:59.000Z"
+                                },
+                                {
+                                    "id": 293909,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">c) Ít nhất 01 ngày trong 01 tuần.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169840,
+                                    "createdAt": "2026-01-27T03:54:59.000Z",
+                                    "updatedAt": "2026-01-27T03:54:59.000Z"
+                                },
+                                {
+                                    "id": 293910,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">d) Ít nhất 04 ngày trong 01 tháng.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169840,
+                                    "createdAt": "2026-01-27T03:54:59.000Z",
+                                    "updatedAt": "2026-01-27T03:54:59.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 169841,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]:</span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \"> Đâu là nhiệm vụ của Trưởng Ban tiếp công dân trong việc điều hành hoạt động tại Trụ sở tiếp công dân theo Luật Tiếp công dân số 42/2013/QH13?</span>",
+                            "categoryId": 2358,
+                            "note": "<span style=\"font-size:16px;vertical-align:top;\">Giải thích Chọn đáp án b. Bởi: Căn cứ Khoản 1 Điều 14 Luật Tiếp công dân số 42/2013/QH13 quy định Trưởng Ban tiếp công dân có nhiệm vụ: \"Quản lý, điều hành hoạt động tại Trụ sở tiếp công dân; điều hành, đánh giá việc thực hiện nhiệm vụ của người tiếp công dân của cơ quan, tổ chức tham gia tiếp công dân thường xuyên tại Trụ sở tiếp công dân.\"</span>",
+                            "readingContentId": null,
+                            "respondentCount": "1",
+                            "correctRespondentCount": "1",
+                            "type": 1,
+                            "createdAt": "2026-01-27T03:54:59.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-30T15:33:34.000Z",
+                            "answers": [
+                                {
+                                    "id": 293911,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">a) Trực tiếp giải quyết các đơn khiếu nại, tố cáo của công dân.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169841,
+                                    "createdAt": "2026-01-27T03:54:59.000Z",
+                                    "updatedAt": "2026-01-27T03:54:59.000Z"
+                                },
+                                {
+                                    "id": 293912,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">b) Đánh giá việc thực hiện nhiệm vụ của người tiếp công dân của cơ quan tham gia tiếp công dân thường xuyên tại Trụ sở.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 169841,
+                                    "createdAt": "2026-01-27T03:54:59.000Z",
+                                    "updatedAt": "2026-01-27T03:54:59.000Z"
+                                },
+                                {
+                                    "id": 293913,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">c) Quyết định việc thụ lý hoặc không thụ lý tất cả các đơn khiếu nại gửi đến Trụ sở.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169841,
+                                    "createdAt": "2026-01-27T03:54:59.000Z",
+                                    "updatedAt": "2026-01-27T03:54:59.000Z"
+                                },
+                                {
+                                    "id": 293914,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">d) Thay mặt lãnh đạo Đảng và Nhà nước ký văn bản trả lời công dân.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169841,
+                                    "createdAt": "2026-01-27T03:54:59.000Z",
+                                    "updatedAt": "2026-01-27T03:54:59.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 169842,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]:</span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \"> Theo Luật Tiếp công dân số 42/2013/QH13, Trưởng Ban tiếp công dân có quyền hạn gì khi có vụ việc phức tạp xảy ra tại Trụ sở tiếp công dân?</span>",
+                            "categoryId": 2358,
+                            "note": "<span style=\"font-size:16px;vertical-align:top;\">Giải thích Chọn đáp án b. Bởi: Căn cứ Khoản 4 Điều 14 Luật Tiếp công dân số 42/2013/QH13 quy định Trưởng Ban tiếp công dân có quyền: \"Yêu cầu hoặc đề nghị cơ quan, tổ chức, đơn vị có liên quan cử người có trách nhiệm đến Trụ sở tiếp công dân để phối hợp tham gia tiếp công dân khi có vụ việc phức tạp hoặc trong trường hợp cần thiết khác.\"</span>",
+                            "readingContentId": null,
+                            "respondentCount": "1",
+                            "correctRespondentCount": "1",
+                            "type": 1,
+                            "createdAt": "2026-01-27T03:54:59.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-30T15:34:05.000Z",
+                            "answers": [
+                                {
+                                    "id": 293915,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">a) Yêu cầu cơ quan công an cưỡng chế công dân rời khỏi trụ sở ngay lập tức.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169842,
+                                    "createdAt": "2026-01-27T03:54:59.000Z",
+                                    "updatedAt": "2026-01-27T03:54:59.000Z"
+                                },
+                                {
+                                    "id": 293916,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">b) Yêu cầu hoặc đề nghị cơ quan, tổ chức, đơn vị có liên quan cử người có trách nhiệm đến phối hợp tham gia tiếp công dân.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 169842,
+                                    "createdAt": "2026-01-27T03:54:59.000Z",
+                                    "updatedAt": "2026-01-27T03:54:59.000Z"
+                                },
+                                {
+                                    "id": 293917,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">c) Ra quyết định xử phạt vi phạm hành chính đối với người khiếu nại.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169842,
+                                    "createdAt": "2026-01-27T03:54:59.000Z",
+                                    "updatedAt": "2026-01-27T03:54:59.000Z"
+                                },
+                                {
+                                    "id": 293918,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">d) Tạm dừng toàn bộ hoạt động của Trụ sở tiếp công dân cho đến khi giải quyết xong vụ việc.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169842,
+                                    "createdAt": "2026-01-27T03:54:59.000Z",
+                                    "updatedAt": "2026-01-27T03:54:59.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 169843,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]:</span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \"> Theo Luật Tiếp công dân số 42/2013/QH13, Trưởng Ban tiếp công dân có quyền hạn nào đối với người vi phạm nội quy tiếp công dân?</span>",
+                            "categoryId": 2358,
+                            "note": "<span style=\"font-size:16px;vertical-align:top;\">Giải thích Chọn đáp án b. Bởi: Căn cứ Khoản 5 Điều 14 Luật Tiếp công dân số 42/2013/QH13 quy định Trưởng Ban tiếp công dân có quyền: \"Yêu cầu hoặc đề nghị cơ quan, tổ chức, đơn vị, người có thẩm quyền xử lý đối với người có hành vi vi phạm pháp luật về tiếp công dân, nội quy, quy chế tiếp công dân.\"</span>",
+                            "readingContentId": null,
+                            "respondentCount": "1",
+                            "correctRespondentCount": "1",
+                            "type": 1,
+                            "createdAt": "2026-01-27T03:54:59.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-30T15:34:18.000Z",
+                            "answers": [
+                                {
+                                    "id": 293919,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">a) Trực tiếp ra quyết định kỷ luật người vi phạm.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169843,
+                                    "createdAt": "2026-01-27T03:54:59.000Z",
+                                    "updatedAt": "2026-01-27T03:54:59.000Z"
+                                },
+                                {
+                                    "id": 293920,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">b) Yêu cầu hoặc đề nghị cơ quan, tổ chức, đơn vị, người có thẩm quyền xử lý.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 169843,
+                                    "createdAt": "2026-01-27T03:54:59.000Z",
+                                    "updatedAt": "2026-01-27T03:54:59.000Z"
+                                },
+                                {
+                                    "id": 293921,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">c) Tịch thu các giấy tờ tùy thân của người vi phạm.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169843,
+                                    "createdAt": "2026-01-27T03:54:59.000Z",
+                                    "updatedAt": "2026-01-27T03:54:59.000Z"
+                                },
+                                {
+                                    "id": 293922,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">d) Cấm người đó không được khiếu nại, tố cáo vĩnh viễn.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169843,
+                                    "createdAt": "2026-01-27T03:54:59.000Z",
+                                    "updatedAt": "2026-01-27T03:54:59.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 169844,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]:</span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \"> Việc tiếp công dân của cấp ủy, Hội đồng nhân dân, Ủy ban nhân dân cấp xã được thực hiện tại đâu theo Luật Tiếp công dân số 42/2013/QH13?</span>",
+                            "categoryId": 2358,
+                            "note": "<span style=\"font-size:16px;vertical-align:top;\">Giải thích Chọn đáp án c. Bởi: Căn cứ Khoản 1 Điều 15 Luật Tiếp công dân số 42/2013/QH13 quy định: \"Việc tiếp công dân của cấp ủy, Hội đồng nhân dân, Ủy ban nhân dân xã, phường, thị trấn được thực hiện tại trụ sở Ủy ban nhân dân xã, phường, thị trấn\".</span>",
+                            "readingContentId": null,
+                            "respondentCount": "1",
+                            "correctRespondentCount": "1",
+                            "type": 1,
+                            "createdAt": "2026-01-27T03:54:59.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-30T15:34:29.000Z",
+                            "answers": [
+                                {
+                                    "id": 293923,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">a) Tại Trụ sở tiếp công dân cấp huyện.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169844,
+                                    "createdAt": "2026-01-27T03:54:59.000Z",
+                                    "updatedAt": "2026-01-27T03:54:59.000Z"
+                                },
+                                {
+                                    "id": 293924,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">b) Tại nhà văn hóa thôn, bản, tổ dân phố.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169844,
+                                    "createdAt": "2026-01-27T03:54:59.000Z",
+                                    "updatedAt": "2026-01-27T03:54:59.000Z"
+                                },
+                                {
+                                    "id": 293925,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">c) Tại trụ sở Ủy ban nhân dân xã, phường, thị trấn.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 169844,
+                                    "createdAt": "2026-01-27T03:54:59.000Z",
+                                    "updatedAt": "2026-01-27T03:54:59.000Z"
+                                },
+                                {
+                                    "id": 293926,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">d) Tại văn phòng Đảng ủy xã.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169844,
+                                    "createdAt": "2026-01-27T03:54:59.000Z",
+                                    "updatedAt": "2026-01-27T03:54:59.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 169845,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]:</span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \"> Theo Luật Tiếp công dân số 42/2013/QH13, ai là người trực tiếp phụ trách công tác tiếp công dân ở cấp xã?</span>",
+                            "categoryId": 2358,
+                            "note": "<span style=\"font-size:16px;vertical-align:top;\">Giải thích Chọn đáp án c. Bởi: Căn cứ Khoản 2 Điều 15 Luật Tiếp công dân số 42/2013/QH13 quy định: \"Chủ tịch Ủy ban nhân dân cấp xã trực tiếp phụ trách công tác tiếp công dân ở cấp xã\".</span>",
+                            "readingContentId": null,
+                            "respondentCount": "1",
+                            "correctRespondentCount": "1",
+                            "type": 1,
+                            "createdAt": "2026-01-27T03:54:59.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-30T15:34:35.000Z",
+                            "answers": [
+                                {
+                                    "id": 293927,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">a) Bí thư Đảng ủy cấp xã.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169845,
+                                    "createdAt": "2026-01-27T03:54:59.000Z",
+                                    "updatedAt": "2026-01-27T03:54:59.000Z"
+                                },
+                                {
+                                    "id": 293928,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">b) Chủ tịch Hội đồng nhân dân cấp xã.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169845,
+                                    "createdAt": "2026-01-27T03:54:59.000Z",
+                                    "updatedAt": "2026-01-27T03:54:59.000Z"
+                                },
+                                {
+                                    "id": 293929,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">c) Chủ tịch Ủy ban nhân dân cấp xã.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 169845,
+                                    "createdAt": "2026-01-27T03:54:59.000Z",
+                                    "updatedAt": "2026-01-27T03:54:59.000Z"
+                                },
+                                {
+                                    "id": 293930,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">d) Trưởng Công an cấp xã.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169845,
+                                    "createdAt": "2026-01-27T03:54:59.000Z",
+                                    "updatedAt": "2026-01-27T03:54:59.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 169846,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]:</span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \"> Chủ tịch Ủy ban nhân dân cấp xã trực tiếp tiếp công dân tại trụ sở Ủy ban nhân dân cấp xã ít nhất bao nhiêu ngày theo Luật Tiếp công dân số 42/2013/QH13?</span>",
+                            "categoryId": 2358,
+                            "note": "<span style=\"font-size:16px;vertical-align:top;\">Giải thích Chọn đáp án a. Bởi: Căn cứ điểm d Khoản 2 Điều 15 Luật Tiếp công dân số 42/2013/QH13 quy định Chủ tịch UBND cấp xã: \"Trực tiếp tiếp công dân tại trụ sở Ủy ban nhân dân cấp xã ít nhất 01 ngày trong 01 tuần\".</span>",
+                            "readingContentId": null,
+                            "respondentCount": "3",
+                            "correctRespondentCount": "1",
+                            "type": 1,
+                            "createdAt": "2026-01-27T03:54:59.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-30T15:34:42.000Z",
+                            "answers": [
+                                {
+                                    "id": 293931,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">a) Ít nhất 01 ngày trong 01 tuần.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 169846,
+                                    "createdAt": "2026-01-27T03:54:59.000Z",
+                                    "updatedAt": "2026-01-27T03:54:59.000Z"
+                                },
+                                {
+                                    "id": 293932,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">b) Ít nhất 02 ngày trong 01 tuần.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169846,
+                                    "createdAt": "2026-01-27T03:54:59.000Z",
+                                    "updatedAt": "2026-01-27T03:54:59.000Z"
+                                },
+                                {
+                                    "id": 293933,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">c) Ít nhất 03 ngày trong 01 tháng.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169846,
+                                    "createdAt": "2026-01-27T03:54:59.000Z",
+                                    "updatedAt": "2026-01-27T03:54:59.000Z"
+                                },
+                                {
+                                    "id": 293934,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">d) Tiếp công dân vào tất cả các ngày làm việc trong tuần.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169846,
+                                    "createdAt": "2026-01-27T03:54:59.000Z",
+                                    "updatedAt": "2026-01-27T03:54:59.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 169847,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]:</span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \"> Đâu không phải là nhiệm vụ của Chủ tịch Ủy ban nhân dân cấp xã trong công tác tiếp công dân theo Luật Tiếp công dân số 42/2013/QH13?</span>",
+                            "categoryId": 2358,
+                            "note": "<span style=\"font-size:16px;vertical-align:top;\">Giải thích Chọn đáp án c. Bởi: Căn cứ Khoản 2 Điều 15 Luật Tiếp công dân số 42/2013/QH13, Chủ tịch UBND cấp xã có các nhiệm vụ tại điểm a, b, d; Luật không quy định việc thành lập \"Ban tiếp công dân cấp xã\".</span>",
+                            "readingContentId": null,
+                            "respondentCount": "1",
+                            "correctRespondentCount": "0",
+                            "type": 1,
+                            "createdAt": "2026-01-27T03:54:59.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-30T15:34:59.000Z",
+                            "answers": [
+                                {
+                                    "id": 293935,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">a) Ban hành nội quy tiếp công dân.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169847,
+                                    "createdAt": "2026-01-27T03:54:59.000Z",
+                                    "updatedAt": "2026-01-27T03:54:59.000Z"
+                                },
+                                {
+                                    "id": 293936,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">b) Phân công người tiếp công dân.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169847,
+                                    "createdAt": "2026-01-27T03:54:59.000Z",
+                                    "updatedAt": "2026-01-27T03:54:59.000Z"
+                                },
+                                {
+                                    "id": 293937,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">c) Thành lập Ban tiếp công dân cấp xã trực thuộc Văn phòng UBND cấp xã.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 169847,
+                                    "createdAt": "2026-01-27T03:54:59.000Z",
+                                    "updatedAt": "2026-01-27T03:54:59.000Z"
+                                },
+                                {
+                                    "id": 293938,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">d) Bố trí địa điểm thuận lợi cho việc tiếp công dân tại Trụ sở UBND cấp xã.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169847,
+                                    "createdAt": "2026-01-27T03:54:59.000Z",
+                                    "updatedAt": "2026-01-27T03:54:59.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 169848,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]:</span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \"> Theo Luật Tiếp công dân số 42/2013/QH13, Bộ, cơ quan ngang bộ thành lập bộ phận tiếp công dân hoặc bố trí công chức thuộc tổ chức nào làm công tác tiếp công dân?</span>",
+                            "categoryId": 2358,
+                            "note": "<span style=\"font-size:16px;vertical-align:top;\">Giải thích Chọn đáp án c. Bởi: Căn cứ Khoản 1 Điều 16 Luật Tiếp công dân số 42/2013/QH13 quy định: \"Bộ, cơ quan ngang bộ thành lập bộ phận tiếp công dân hoặc bố trí công chức thuộc Thanh tra bộ làm công tác tiếp công dân.\"</span>",
+                            "readingContentId": null,
+                            "respondentCount": "4",
+                            "correctRespondentCount": "0",
+                            "type": 1,
+                            "createdAt": "2026-01-27T03:54:59.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-30T15:35:25.000Z",
+                            "answers": [
+                                {
+                                    "id": 293939,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">a) Văn phòng Bộ.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169848,
+                                    "createdAt": "2026-01-27T03:54:59.000Z",
+                                    "updatedAt": "2026-01-27T03:54:59.000Z"
+                                },
+                                {
+                                    "id": 293940,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">b) Vụ Pháp chế.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169848,
+                                    "createdAt": "2026-01-27T03:54:59.000Z",
+                                    "updatedAt": "2026-01-27T03:54:59.000Z"
+                                },
+                                {
+                                    "id": 293941,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">c) Thanh tra bộ.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 169848,
+                                    "createdAt": "2026-01-27T03:54:59.000Z",
+                                    "updatedAt": "2026-01-27T03:54:59.000Z"
+                                },
+                                {
+                                    "id": 293942,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">d) Cục Quản lý hành chính.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169848,
+                                    "createdAt": "2026-01-27T03:54:59.000Z",
+                                    "updatedAt": "2026-01-27T03:54:59.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 169849,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]:</span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \"> Theo Luật Tiếp công dân số 42/2013/QH13, cơ quan chuyên môn thuộc Ủy ban nhân dân cấp tỉnh bố trí công chức thuộc tổ chức nào làm công tác tiếp công dân?</span>",
+                            "categoryId": 2358,
+                            "note": "<span style=\"font-size:16px;vertical-align:top;\">Giải thích Chọn đáp án b. Bởi: Căn cứ Khoản 2 Điều 16 Luật Tiếp công dân số 42/2013/QH13 quy định: \"Cơ quan chuyên môn thuộc Ủy ban nhân dân cấp tỉnh bố trí công chức thuộc Thanh tra cơ quan làm công tác tiếp công dân.\"</span>",
+                            "readingContentId": null,
+                            "respondentCount": "1",
+                            "correctRespondentCount": "0",
+                            "type": 1,
+                            "createdAt": "2026-01-27T03:54:59.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-30T15:35:30.000Z",
+                            "answers": [
+                                {
+                                    "id": 293943,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">a) Văn phòng Sở.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169849,
+                                    "createdAt": "2026-01-27T03:54:59.000Z",
+                                    "updatedAt": "2026-01-27T03:54:59.000Z"
+                                },
+                                {
+                                    "id": 293944,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">b) Thanh tra cơ quan.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 169849,
+                                    "createdAt": "2026-01-27T03:54:59.000Z",
+                                    "updatedAt": "2026-01-27T03:54:59.000Z"
+                                },
+                                {
+                                    "id": 293945,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">c) Phòng chuyên môn nghiệp vụ.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169849,
+                                    "createdAt": "2026-01-27T03:54:59.000Z",
+                                    "updatedAt": "2026-01-27T03:54:59.000Z"
+                                },
+                                {
+                                    "id": 293946,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:top;\">d) Ban tiếp công dân của Sở.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169849,
+                                    "createdAt": "2026-01-27T03:54:59.000Z",
+                                    "updatedAt": "2026-01-27T03:54:59.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        }
+                    ]
+                },
+                "exam": {
+                    "data": {
+                        "id": 2362,
+                        "name": "Đề 01: Luật Tiếp công dân",
+                        "duration": 50,
+                        "retry": 3,
+                        "referencePoint": 5,
+                        "type": 1,
+                        "createdAt": "2026-01-27T03:56:02.000Z",
+                        "updatedAt": "2026-01-27T03:57:28.000Z"
+                    }
+                }
+            }
+        },
+        "testSessionAnswers": []
+    }
+}

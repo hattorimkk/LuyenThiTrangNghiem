@@ -1,0 +1,2464 @@
+{
+    "data": {
+        "id": 164207,
+        "userId": 14083,
+        "examPackId": 643,
+        "examId": 2361,
+        "examCodeId": 164544,
+        "score": 0,
+        "correctQuestion": 0,
+        "inCorrectQuestion": 0,
+        "skipQuestion": 0,
+        "type": 1,
+        "status": 0,
+        "startTime": "2026-01-30T19:32:53.000Z",
+        "completedAt": null,
+        "createdAt": "2026-01-30T19:32:53.000Z",
+        "updatedAt": "2026-01-30T19:32:53.000Z",
+        "user": {
+            "id": 14083,
+            "email": "nguyennhattruong@gmail.com",
+            "username": null,
+            "code": "586280",
+            "phoneNumber": "",
+            "firstName": null,
+            "lastName": null,
+            "image": null,
+            "position": null,
+            "organization": null,
+            "status": 1,
+            "verifyToken": null,
+            "verified": false,
+            "verifiedAt": null,
+            "source": 1,
+            "deletedAt": null,
+            "createdAt": "2026-01-30T19:31:03.000Z",
+            "updatedAt": "2026-01-30T19:31:03.000Z"
+        },
+        "examCode": {
+            "data": {
+                "id": 164544,
+                "examId": 2361,
+                "createdAt": "2026-01-30T19:32:53.000Z",
+                "updatedAt": "2026-01-30T19:32:53.000Z",
+                "questions": {
+                    "data": [
+                        {
+                            "id": 169750,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]:</span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \"> Đâu là hành vi vi phạm trong ban hành, thực hiện và kiểm tra định mức theo Luật Thực hành tiết kiệm, chống lãng phí?</span>",
+                            "categoryId": 2357,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Giải thích<br/>Chọn đáp án b. Bởi: Căn cứ điểm a khoản 1 Điều 16 Luật Thực hành tiết kiệm, chống lãng phí quy định hành vi vi phạm gồm: \"a) Ban hành định mức, tiêu chuẩn, chế độ trái với nguyên tắc quy định tại Điều 12 của Luật này;\". Các đáp án khác là hành vi đúng hoặc được khuyến khích.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "0",
+                            "correctRespondentCount": "0",
+                            "type": 1,
+                            "createdAt": "2026-01-27T03:35:02.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-27T03:35:02.000Z",
+                            "answers": [
+                                {
+                                    "id": 293547,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Ban hành định mức phù hợp với tình hình phát triển kinh tế xã hội.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169750,
+                                    "createdAt": "2026-01-27T03:35:02.000Z",
+                                    "updatedAt": "2026-01-27T03:35:02.000Z"
+                                },
+                                {
+                                    "id": 293548,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Ban hành định mức, tiêu chuẩn, chế độ trái với các nguyên tắc quy định</span>",
+                                    "isCorrect": true,
+                                    "questionId": 169750,
+                                    "createdAt": "2026-01-27T03:35:02.000Z",
+                                    "updatedAt": "2026-01-27T03:35:02.000Z"
+                                },
+                                {
+                                    "id": 293549,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Tổ chức thảo luận quy chế chi tiêu nội bộ có sự tham gia của Công đoàn.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169750,
+                                    "createdAt": "2026-01-27T03:35:02.000Z",
+                                    "updatedAt": "2026-01-27T03:35:02.000Z"
+                                },
+                                {
+                                    "id": 293550,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Thực hiện định mức thấp hơn mức quy định nhưng vẫn đạt được mục tiêu đề ra.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169750,
+                                    "createdAt": "2026-01-27T03:35:02.000Z",
+                                    "updatedAt": "2026-01-27T03:35:02.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 169751,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]:</span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \"> Hành vi nào sau đây bị coi là vi phạm quy định về định mức theo Luật Thực hành tiết kiệm, chống lãng phí?</span>",
+                            "categoryId": 2357,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Giải thích<br/>Chọn đáp án b. Bởi: Căn cứ điểm b khoản 1 Điều 16 Luật Thực hành tiết kiệm, chống lãng phí quy định hành vi vi phạm gồm: \"b) Thực hiện vượt định mức, tiêu chuẩn, chế độ do cơ quan có thẩm quyền ban hành theo quy định của pháp luật hoặc không đạt mục tiêu đã định;\".</span>",
+                            "readingContentId": null,
+                            "respondentCount": "0",
+                            "correctRespondentCount": "0",
+                            "type": 1,
+                            "createdAt": "2026-01-27T03:35:02.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-27T03:35:02.000Z",
+                            "answers": [
+                                {
+                                    "id": 293551,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Thực hiện đúng định mức và đạt được mục tiêu đã đề ra.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169751,
+                                    "createdAt": "2026-01-27T03:35:02.000Z",
+                                    "updatedAt": "2026-01-27T03:35:02.000Z"
+                                },
+                                {
+                                    "id": 293552,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Thực hiện vượt định mức, tiêu chuẩn, chế độ do cơ quan có thẩm quyền ban hành theo quy định của pháp luật hoặc không đạt mục tiêu đã định.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 169751,
+                                    "createdAt": "2026-01-27T03:35:02.000Z",
+                                    "updatedAt": "2026-01-27T03:35:02.000Z"
+                                },
+                                {
+                                    "id": 293553,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Rà soát và đề nghị sửa đổi định mức khi thấy không còn phù hợp thực tế.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169751,
+                                    "createdAt": "2026-01-27T03:35:02.000Z",
+                                    "updatedAt": "2026-01-27T03:35:02.000Z"
+                                },
+                                {
+                                    "id": 293554,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Thực hiện tự kiểm tra định mức hàng quý tại cơ quan.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169751,
+                                    "createdAt": "2026-01-27T03:35:02.000Z",
+                                    "updatedAt": "2026-01-27T03:35:02.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 169752,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]:</span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \"> Đâu là hành vi vi phạm trong công tác kiểm tra định mức theo Luật Thực hành tiết kiệm, chống lãng phí?</span>",
+                            "categoryId": 2357,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Giải thích<br/>Chọn đáp án a. Bởi: Căn cứ điểm c khoản 1 Điều 16 Luật Thực hành tiết kiệm, chống lãng phí quy định hành vi vi phạm: \"...không xử lý hoặc báo cáo cơ quan nhà nước có thẩm quyền xử lý kịp thời đối với trường hợp thực hiện không đúng định mức, tiêu chuẩn, chế độ.\"</span>",
+                            "readingContentId": null,
+                            "respondentCount": "0",
+                            "correctRespondentCount": "0",
+                            "type": 1,
+                            "createdAt": "2026-01-27T03:35:03.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-27T03:35:03.000Z",
+                            "answers": [
+                                {
+                                    "id": 293555,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Không xử lý kịp thời đối với trường hợp thực hiện không đúng định mức, tiêu chuẩn, chế độ khi phát hiện.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 169752,
+                                    "createdAt": "2026-01-27T03:35:02.000Z",
+                                    "updatedAt": "2026-01-27T03:35:03.000Z"
+                                },
+                                {
+                                    "id": 293556,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Báo cáo trung thực kết quả kiểm tra cho cơ quan quản lý cấp trên.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169752,
+                                    "createdAt": "2026-01-27T03:35:02.000Z",
+                                    "updatedAt": "2026-01-27T03:35:03.000Z"
+                                },
+                                {
+                                    "id": 293557,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Thực hiện thanh tra đột xuất khi có dấu hiệu lãng phí.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169752,
+                                    "createdAt": "2026-01-27T03:35:02.000Z",
+                                    "updatedAt": "2026-01-27T03:35:03.000Z"
+                                },
+                                {
+                                    "id": 293558,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Yêu cầu giải trình về các khoản chi vượt định mức.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169752,
+                                    "createdAt": "2026-01-27T03:35:02.000Z",
+                                    "updatedAt": "2026-01-27T03:35:03.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 169753,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]:</span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \"> Việc lập, thẩm định, phê duyệt quyết toán ngân sách nhà nước phải đảm bảo yêu cầu nào theo Luật Thực hành tiết kiệm, chống lãng phí?</span>",
+                            "categoryId": 2357,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Giải thích<br/>Chọn đáp án a. Bởi: Căn cứ khoản 2 Điều 17 Luật Thực hành tiết kiệm, chống lãng phí quy định: \"2. Việc lập, thẩm định, phê duyệt quyết toán ngân sách nhà nước phải bảo đảm tính chính xác, trung thực; phải căn cứ vào định mức, tiêu chuẩn, chế độ... và theo đúng quy định của pháp luật về ngân sách nhà nước.\"</span>",
+                            "readingContentId": null,
+                            "respondentCount": "0",
+                            "correctRespondentCount": "0",
+                            "type": 1,
+                            "createdAt": "2026-01-27T03:35:03.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-27T03:35:03.000Z",
+                            "answers": [
+                                {
+                                    "id": 293559,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Phải bảo đảm tính chính xác, trung thực; căn cứ vào định mức, tiêu chuẩn, chế độ và theo đúng quy định của pháp luật về ngân sách nhà nước.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 169753,
+                                    "createdAt": "2026-01-27T03:35:03.000Z",
+                                    "updatedAt": "2026-01-27T03:35:03.000Z"
+                                },
+                                {
+                                    "id": 293560,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Đảm bảo số liệu khớp giữa sổ sách và thực tế tiền mặt, không cần xét đến định mức.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169753,
+                                    "createdAt": "2026-01-27T03:35:03.000Z",
+                                    "updatedAt": "2026-01-27T03:35:03.000Z"
+                                },
+                                {
+                                    "id": 293561,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Phải ưu tiên hoàn thành đúng thời hạn, dù có thể sai sót một số định mức nhỏ.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169753,
+                                    "createdAt": "2026-01-27T03:35:03.000Z",
+                                    "updatedAt": "2026-01-27T03:35:03.000Z"
+                                },
+                                {
+                                    "id": 293562,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Chỉ thực hiện quyết toán đối với các khoản chi bằng tiền mặt.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169753,
+                                    "createdAt": "2026-01-27T03:35:03.000Z",
+                                    "updatedAt": "2026-01-27T03:35:03.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 169754,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]:</span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \"> Cơ quan quản lý kinh phí ngân sách nhà nước có trách nhiệm gì để bảo đảm tiết kiệm hiệu quả theo Luật Thực hành tiết kiệm, chống lãng phí?</span>",
+                            "categoryId": 2357,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Giải thích<br/>Chọn đáp án b. Bởi: Căn cứ điểm a khoản 2 Điều 18 Luật Thực hành tiết kiệm, chống lãng phí quy định trách nhiệm cơ quan quản lý: \"a) Xây dựng Chương trình thực hành tiết kiệm, chống lãng phí, xác định cụ thể mục tiêu, chỉ tiêu tiết kiệm và yêu cầu chống lãng phí để giao cho cơ quan, tổ chức sử dụng thực hiện...\".</span>",
+                            "readingContentId": null,
+                            "respondentCount": "0",
+                            "correctRespondentCount": "0",
+                            "type": 1,
+                            "createdAt": "2026-01-27T03:35:03.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-27T03:35:03.000Z",
+                            "answers": [
+                                {
+                                    "id": 293563,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Chỉ thực hiện cấp phát tiền khi đơn vị sử dụng có yêu cầu bằng văn bản.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169754,
+                                    "createdAt": "2026-01-27T03:35:03.000Z",
+                                    "updatedAt": "2026-01-27T03:35:03.000Z"
+                                },
+                                {
+                                    "id": 293564,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Xây dựng Chương trình thực hành tiết kiệm, chống lãng phí, xác định cụ thể mục tiêu, chỉ tiêu tiết kiệm để giao cho cơ quan sử dụng thực hiện.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 169754,
+                                    "createdAt": "2026-01-27T03:35:03.000Z",
+                                    "updatedAt": "2026-01-27T03:35:03.000Z"
+                                },
+                                {
+                                    "id": 293565,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Không cần thực hiện kiểm tra định kỳ vì đã có đơn vị sử dụng tự chịu trách nhiệm.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169754,
+                                    "createdAt": "2026-01-27T03:35:03.000Z",
+                                    "updatedAt": "2026-01-27T03:35:03.000Z"
+                                },
+                                {
+                                    "id": 293566,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Cắt giảm đồng loạt 10% kinh phí của tất cả các đơn vị không cần lý do.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169754,
+                                    "createdAt": "2026-01-27T03:35:03.000Z",
+                                    "updatedAt": "2026-01-27T03:35:03.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 169755,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]:</span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \"> Theo Luật Thực hành tiết kiệm, chống lãng phí, cơ quan quản lý kinh phí ngân sách nhà nước phải thực hiện công tác nào sau đây?</span>",
+                            "categoryId": 2357,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Giải thích<br/>Chọn đáp án a. Bởi: Căn cứ điểm c khoản 2 Điều 18 Luật Thực hành tiết kiệm, chống lãng phí quy định trách nhiệm: \"c) Thực hiện kiểm tra, thanh tra, kiểm toán việc sử dụng kinh phí ngân sách nhà nước theo quy định của pháp luật.\"</span>",
+                            "readingContentId": null,
+                            "respondentCount": "0",
+                            "correctRespondentCount": "0",
+                            "type": 1,
+                            "createdAt": "2026-01-27T03:35:03.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-27T03:35:03.000Z",
+                            "answers": [
+                                {
+                                    "id": 293567,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Thực hiện kiểm tra, thanh tra, kiểm toán việc sử dụng kinh phí ngân sách nhà nước theo quy định của pháp luật.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 169755,
+                                    "createdAt": "2026-01-27T03:35:03.000Z",
+                                    "updatedAt": "2026-01-27T03:35:03.000Z"
+                                },
+                                {
+                                    "id": 293568,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Chỉ thực hiện kiểm tra khi có sự cho phép của đơn vị được kiểm tra.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169755,
+                                    "createdAt": "2026-01-27T03:35:03.000Z",
+                                    "updatedAt": "2026-01-27T03:35:03.000Z"
+                                },
+                                {
+                                    "id": 293569,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Chỉ thanh tra đối với các khoản chi ngoài dự toán.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169755,
+                                    "createdAt": "2026-01-27T03:35:03.000Z",
+                                    "updatedAt": "2026-01-27T03:35:03.000Z"
+                                },
+                                {
+                                    "id": 293570,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Ủy quyền toàn bộ việc kiểm tra cho các công ty kiểm toán tư nhân.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169755,
+                                    "createdAt": "2026-01-27T03:35:03.000Z",
+                                    "updatedAt": "2026-01-27T03:35:03.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 169756,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]:</span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \"> Việc sử dụng kinh phí ngân sách nhà nước phải đảm bảo các điều kiện gì theo Luật Thực hành tiết kiệm, chống lãng phí?</span>",
+                            "categoryId": 2357,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Giải thích<br/>Chọn đáp án b. Bởi: Căn cứ khoản 1 Điều 19 Luật Thực hành tiết kiệm, chống lãng phí quy định: \"1. Sử dụng kinh phí ngân sách nhà nước phải bảo đảm đúng mục đích, đối tượng, định mức, tiêu chuẩn, chế độ trong phạm vi dự toán được giao, gắn với việc hoàn thành nhiệm vụ của cơ quan, tổ chức.\"</span>",
+                            "readingContentId": null,
+                            "respondentCount": "0",
+                            "correctRespondentCount": "0",
+                            "type": 1,
+                            "createdAt": "2026-01-27T03:35:03.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-27T03:35:03.000Z",
+                            "answers": [
+                                {
+                                    "id": 293571,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Chỉ cần đúng mục đích, không cần quan tâm đến dự toán được giao.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169756,
+                                    "createdAt": "2026-01-27T03:35:03.000Z",
+                                    "updatedAt": "2026-01-27T03:35:03.000Z"
+                                },
+                                {
+                                    "id": 293572,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Bảo đảm đúng mục đích, đối tượng, định mức, tiêu chuẩn, chế độ trong phạm vi dự toán được giao, gắn với việc hoàn thành nhiệm vụ.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 169756,
+                                    "createdAt": "2026-01-27T03:35:03.000Z",
+                                    "updatedAt": "2026-01-27T03:35:03.000Z"
+                                },
+                                {
+                                    "id": 293573,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Có thể sử dụng sai đối tượng nếu mục tiêu cuối cùng vẫn mang lại lợi ích cho cơ quan.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169756,
+                                    "createdAt": "2026-01-27T03:35:03.000Z",
+                                    "updatedAt": "2026-01-27T03:35:03.000Z"
+                                },
+                                {
+                                    "id": 293574,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Có quyền vượt định mức nếu thấy nhiệm vụ được giao quá nặng nề.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169756,
+                                    "createdAt": "2026-01-27T03:35:03.000Z",
+                                    "updatedAt": "2026-01-27T03:35:03.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 169757,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]:</span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \"> Người đứng đầu cơ quan sử dụng kinh phí ngân sách nhà nước có trách nhiệm gì theo Luật Thực hành tiết kiệm, chống lãng phí?</span>",
+                            "categoryId": 2357,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Giải thích<br/>Chọn đáp án a. Bởi: Căn cứ khoản 3 Điều 19 Luật Thực hành tiết kiệm, chống lãng phí quy định: \"3. Người đứng đầu cơ quan, tổ chức thường xuyên đánh giá kết quả thực hiện mục tiêu, chỉ tiêu tiết kiệm và yêu cầu chống lãng phí được giao...\".</span>",
+                            "readingContentId": null,
+                            "respondentCount": "0",
+                            "correctRespondentCount": "0",
+                            "type": 1,
+                            "createdAt": "2026-01-27T03:35:03.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-27T03:35:03.000Z",
+                            "answers": [
+                                {
+                                    "id": 293575,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Thường xuyên đánh giá kết quả thực hiện mục tiêu, chỉ tiêu tiết kiệm và yêu cầu chống lãng phí được giao.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 169757,
+                                    "createdAt": "2026-01-27T03:35:03.000Z",
+                                    "updatedAt": "2026-01-27T03:35:03.000Z"
+                                },
+                                {
+                                    "id": 293576,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Chỉ chịu trách nhiệm khi đơn vị xảy ra thất thoát tài sản lớn trên 1 tỷ đồng.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169757,
+                                    "createdAt": "2026-01-27T03:35:03.000Z",
+                                    "updatedAt": "2026-01-27T03:35:03.000Z"
+                                },
+                                {
+                                    "id": 293577,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Ủy quyền toàn bộ việc đánh giá tiết kiệm cho kế toán trưởng.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169757,
+                                    "createdAt": "2026-01-27T03:35:03.000Z",
+                                    "updatedAt": "2026-01-27T03:35:03.000Z"
+                                },
+                                {
+                                    "id": 293578,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Không phải giải trình nếu các khoản chi đều có hóa đơn hợp lệ dù vượt định mức.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169757,
+                                    "createdAt": "2026-01-27T03:35:03.000Z",
+                                    "updatedAt": "2026-01-27T03:35:03.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 169758,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]:</span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \"> Cơ quan, cá nhân sử dụng kinh phí chương trình mục tiêu quốc gia có trách nhiệm nào sau đây theo Luật Thực hành tiết kiệm, chống lãng phí?</span>",
+                            "categoryId": 2357,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Giải thích<br/>Chọn đáp án b. Bởi: Căn cứ điểm c khoản 2 Điều 20 Luật Thực hành tiết kiệm, chống lãng phí quy định trách nhiệm: \"c) Kiểm tra, kiểm toán nội bộ, đánh giá tình hình thực hiện chương trình và mục tiêu, chỉ tiêu tiết kiệm, yêu cầu chống lãng phí hàng năm; kịp thời phát hiện các trường hợp lãng phí để xử lý...\".</span>",
+                            "readingContentId": null,
+                            "respondentCount": "0",
+                            "correctRespondentCount": "0",
+                            "type": 1,
+                            "createdAt": "2026-01-27T03:35:03.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-27T03:35:03.000Z",
+                            "answers": [
+                                {
+                                    "id": 293579,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Chỉ cần sử dụng hết kinh phí trong năm để đảm bảo không bị cắt giảm năm sau.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169758,
+                                    "createdAt": "2026-01-27T03:35:03.000Z",
+                                    "updatedAt": "2026-01-27T03:35:03.000Z"
+                                },
+                                {
+                                    "id": 293580,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Kiểm tra, kiểm toán nội bộ, đánh giá tình hình thực hiện chương trình và mục tiêu, chỉ tiêu tiết kiệm hàng năm.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 169758,
+                                    "createdAt": "2026-01-27T03:35:03.000Z",
+                                    "updatedAt": "2026-01-27T03:35:03.000Z"
+                                },
+                                {
+                                    "id": 293581,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Có quyền điều chuyển kinh phí chương trình sang các hoạt động lễ kỷ niệm của cơ quan.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169758,
+                                    "createdAt": "2026-01-27T03:35:03.000Z",
+                                    "updatedAt": "2026-01-27T03:35:03.000Z"
+                                },
+                                {
+                                    "id": 293582,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Không cần xây dựng chỉ tiêu tiết kiệm riêng vì đây là kinh phí đặc thù.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169758,
+                                    "createdAt": "2026-01-27T03:35:03.000Z",
+                                    "updatedAt": "2026-01-27T03:35:03.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 169759,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]:</span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \"> Kinh phí chương trình mục tiêu quốc gia chỉ được quyết toán khi nào theo Luật Thực hành tiết kiệm, chống lãng phí?</span>",
+                            "categoryId": 2357,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Giải thích<br/>Chọn đáp án b. Bởi: Căn cứ khoản 3 Điều 20 Luật Thực hành tiết kiệm, chống lãng phí quy định: \"3. Kinh phí chương trình mục tiêu quốc gia, chương trình quốc gia chỉ được quyết toán sau khi đã được nghiệm thu kết quả thực hiện;...\".</span>",
+                            "readingContentId": null,
+                            "respondentCount": "0",
+                            "correctRespondentCount": "0",
+                            "type": 1,
+                            "createdAt": "2026-01-27T03:35:03.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-27T03:35:03.000Z",
+                            "answers": [
+                                {
+                                    "id": 293583,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Ngay sau khi kinh phí được giải ngân hoàn toàn từ kho bạc.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169759,
+                                    "createdAt": "2026-01-27T03:35:03.000Z",
+                                    "updatedAt": "2026-01-27T03:35:03.000Z"
+                                },
+                                {
+                                    "id": 293584,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Sau khi đã được nghiệm thu kết quả thực hiện.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 169759,
+                                    "createdAt": "2026-01-27T03:35:03.000Z",
+                                    "updatedAt": "2026-01-27T03:35:03.000Z"
+                                },
+                                {
+                                    "id": 293585,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Khi chương trình đã thực hiện được 50% thời gian theo kế hoạch.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169759,
+                                    "createdAt": "2026-01-27T03:35:03.000Z",
+                                    "updatedAt": "2026-01-27T03:35:03.000Z"
+                                },
+                                {
+                                    "id": 293586,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Chỉ cần có xác nhận của người đứng đầu đơn vị sử dụng mà không cần nghiệm thu.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169759,
+                                    "createdAt": "2026-01-27T03:35:03.000Z",
+                                    "updatedAt": "2026-01-27T03:35:03.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 169760,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]:</span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \"> Đâu không phải là yêu cầu khi thành lập quỹ có nguồn từ ngân sách nhà nước theo Luật Thực hành tiết kiệm, chống lãng phí?</span>",
+                            "categoryId": 2357,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Giải thích<br/>Chọn đáp án d. Bởi:<br/>Căn cứ Khoản 1, Điều 24, Luật Thực hành tiết kiệm, chống lãng phí.<br/>Trích dẫn nội dung các yêu cầu bao gồm: \"a) Có đề án...; b) Phù hợp với khả năng của ngân sách nhà nước; c) Không trùng lặp về mục đích, tôn chỉ của quỹ; d) Bảo đảm thành lập theo đúng trình tự...\"<br/>Phân tích: Luật không quy định về sự đóng góp của doanh nghiệp nhà nước như một điều kiện bắt buộc để thành lập quỹ ngân sách.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "0",
+                            "correctRespondentCount": "0",
+                            "type": 1,
+                            "createdAt": "2026-01-27T03:35:03.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-27T03:35:03.000Z",
+                            "answers": [
+                                {
+                                    "id": 293587,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Phù hợp với khả năng của ngân sách nhà nước.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169760,
+                                    "createdAt": "2026-01-27T03:35:03.000Z",
+                                    "updatedAt": "2026-01-27T03:35:03.000Z"
+                                },
+                                {
+                                    "id": 293588,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Có đề án thành lập quỹ nêu rõ cơ sở pháp lý và tính không thay thế được.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169760,
+                                    "createdAt": "2026-01-27T03:35:03.000Z",
+                                    "updatedAt": "2026-01-27T03:35:03.000Z"
+                                },
+                                {
+                                    "id": 293589,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Không trùng lặp về mục đích, tôn chỉ của quỹ.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169760,
+                                    "createdAt": "2026-01-27T03:35:03.000Z",
+                                    "updatedAt": "2026-01-27T03:35:03.000Z"
+                                },
+                                {
+                                    "id": 293590,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Có sự đóng góp bằng tiền mặt của ít nhất 05 doanh nghiệp nhà nước.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 169760,
+                                    "createdAt": "2026-01-27T03:35:03.000Z",
+                                    "updatedAt": "2026-01-27T03:35:03.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 169761,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]:</span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \"> Theo Luật Thực hành tiết kiệm, chống lãng phí, nguyên tắc nào sau đây phải được tuân thủ khi quản lý và sử dụng quỹ có nguồn từ ngân sách?</span>",
+                            "categoryId": 2357,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Giải thích<br/>Chọn đáp án b. Bởi:<br/>Căn cứ Khoản 2, Điều 24, Luật Thực hành tiết kiệm, chống lãng phí.<br/>Trích dẫn nội dung: \"Việc quản lý, sử dụng quỹ có nguồn từ ngân sách nhà nước phải bảo đảm các nguyên tắc sau đây... b) Thực hiện đúng quy chế hoạt động và cơ chế tài chính của quỹ;...\"<br/>Phân tích: Tuân thủ quy chế và cơ chế tài chính là bắt buộc để đảm bảo quỹ hoạt động đúng mục tiêu tiết kiệm.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "0",
+                            "correctRespondentCount": "0",
+                            "type": 1,
+                            "createdAt": "2026-01-27T03:35:03.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-27T03:35:03.000Z",
+                            "answers": [
+                                {
+                                    "id": 293591,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Được tự chủ hoàn toàn về cơ chế tài chính mà không cần theo quy định ngân sách.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169761,
+                                    "createdAt": "2026-01-27T03:35:03.000Z",
+                                    "updatedAt": "2026-01-27T03:35:03.000Z"
+                                },
+                                {
+                                    "id": 293592,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Thực hiện đúng quy chế hoạt động và cơ chế tài chính của quỹ.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 169761,
+                                    "createdAt": "2026-01-27T03:35:03.000Z",
+                                    "updatedAt": "2026-01-27T03:35:03.000Z"
+                                },
+                                {
+                                    "id": 293593,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Ưu tiên sử dụng quỹ cho các hoạt động phúc lợi nội bộ của cơ quan quản lý.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169761,
+                                    "createdAt": "2026-01-27T03:35:03.000Z",
+                                    "updatedAt": "2026-01-27T03:35:03.000Z"
+                                },
+                                {
+                                    "id": 293594,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Chỉ thực hiện báo cáo khi có yêu cầu trực tiếp từ cơ quan thanh tra.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169761,
+                                    "createdAt": "2026-01-27T03:35:03.000Z",
+                                    "updatedAt": "2026-01-27T03:35:03.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 169762,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]:</span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \"> Quỹ có nguồn từ ngân sách nhà nước phải thực hiện công khai nội dung nào sau đây theo Luật Thực hành tiết kiệm, chống lãng phí?</span>",
+                            "categoryId": 2357,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Giải thích<br/>Chọn đáp án b. Bởi:<br/>Căn cứ Khoản 3, Điều 24, Luật Thực hành tiết kiệm, chống lãng phí.<br/>Trích dẫn nội dung: \"Quỹ có nguồn từ ngân sách nhà nước phải công khai các nội dung sau đây... b) Kế hoạch tài chính hàng năm... c) Kết quả hoạt động của quỹ;...\"<br/>Phân tích: Công khai tài chính và kết quả hoạt động là biện pháp giám sát hữu hiệu chống lãng phí.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "0",
+                            "correctRespondentCount": "0",
+                            "type": 1,
+                            "createdAt": "2026-01-27T03:35:03.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-27T03:35:03.000Z",
+                            "answers": [
+                                {
+                                    "id": 293595,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Danh sách chi tiết địa chỉ của những người điều hành quỹ.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169762,
+                                    "createdAt": "2026-01-27T03:35:03.000Z",
+                                    "updatedAt": "2026-01-27T03:35:03.000Z"
+                                },
+                                {
+                                    "id": 293596,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Kế hoạch tài chính hàng năm và kết quả hoạt động của quỹ.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 169762,
+                                    "createdAt": "2026-01-27T03:35:03.000Z",
+                                    "updatedAt": "2026-01-27T03:35:03.000Z"
+                                },
+                                {
+                                    "id": 293597,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Quy trình tuyển dụng nhân sự của quỹ.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169762,
+                                    "createdAt": "2026-01-27T03:35:03.000Z",
+                                    "updatedAt": "2026-01-27T03:35:03.000Z"
+                                },
+                                {
+                                    "id": 293598,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Biên bản các cuộc họp nội bộ của quỹ.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169762,
+                                    "createdAt": "2026-01-27T03:35:03.000Z",
+                                    "updatedAt": "2026-01-27T03:35:03.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 169763,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]:</span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \"> Theo Luật Thực hành tiết kiệm, chống lãng phí, trường hợp nào sau đây người có thẩm quyền phải giải thể quỹ có nguồn từ ngân sách?</span>",
+                            "categoryId": 2357,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Giải thích<br/>Chọn đáp án b. Bởi:<br/>Căn cứ Khoản 4, Điều 24, Luật Thực hành tiết kiệm, chống lãng phí.<br/>Trích dẫn nội dung: \"...nếu hoạt động không đúng tôn chỉ, mục đích hoặc đã hoàn thành mục tiêu, nhiệm vụ hoặc không hiệu quả thì người có thẩm quyền thành lập quỹ có trách nhiệm giải thể hoặc trình cấp có thẩm quyền giải thể...\"<br/>Phân tích: Việc giải thể các quỹ không hiệu quả là một hành động thực hành tiết kiệm quyết liệt được quy định trong Luật.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "0",
+                            "correctRespondentCount": "0",
+                            "type": 1,
+                            "createdAt": "2026-01-27T03:35:03.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-27T03:35:03.000Z",
+                            "answers": [
+                                {
+                                    "id": 293599,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Khi quỹ đã hoạt động được trên 10 năm liên tục nhưng không hiệu quả.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169763,
+                                    "createdAt": "2026-01-27T03:35:03.000Z",
+                                    "updatedAt": "2026-01-27T03:35:03.000Z"
+                                },
+                                {
+                                    "id": 293600,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Khi quỹ hoạt động không đúng tôn chỉ, mục đích hoặc không hiệu quả.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 169763,
+                                    "createdAt": "2026-01-27T03:35:03.000Z",
+                                    "updatedAt": "2026-01-27T03:35:03.000Z"
+                                },
+                                {
+                                    "id": 293601,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Khi quỹ có số dư tiền mặt vượt quá dự kiến ban đầu.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169763,
+                                    "createdAt": "2026-01-27T03:35:03.000Z",
+                                    "updatedAt": "2026-01-27T03:35:03.000Z"
+                                },
+                                {
+                                    "id": 293602,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Khi quỹ thay đổi người đứng đầu cơ quan quản lý trực tiếp.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169763,
+                                    "createdAt": "2026-01-27T03:35:03.000Z",
+                                    "updatedAt": "2026-01-27T03:35:03.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 169764,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]:</span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \"> Theo Luật Thực hành tiết kiệm, chống lãng phí, người đứng đầu cơ quan có trách nhiệm gì trong việc sử dụng kinh phí tổ chức hội nghị, bồi dưỡng cán bộ?</span>",
+                            "categoryId": 2357,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Giải thích<br/>Chọn đáp án b. Bởi:<br/>Căn cứ Khoản 2, Điều 25, Luật Thực hành tiết kiệm, chống lãng phí.<br/>Trích dẫn nội dung: \"người đứng đầu cơ quan, tổ chức có thẩm quyền có trách nhiệm: a) Ban hành quy chế quản lý, giao mục tiêu, chỉ tiêu tiết kiệm và yêu cầu chống lãng phí đến từng bộ phận, cá nhân để thực hiện;...\"<br/>Phân tích: Luật đề cao trách nhiệm của người đứng đầu trong việc cụ thể hóa các mục tiêu tiết kiệm tại đơn vị.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "0",
+                            "correctRespondentCount": "0",
+                            "type": 1,
+                            "createdAt": "2026-01-27T03:35:03.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-27T03:35:03.000Z",
+                            "answers": [
+                                {
+                                    "id": 293603,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Có quyền quyết định mức chi cao hơn định mức nếu thấy cần thiết cho công việc.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169764,
+                                    "createdAt": "2026-01-27T03:35:03.000Z",
+                                    "updatedAt": "2026-01-27T03:35:03.000Z"
+                                },
+                                {
+                                    "id": 293604,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Ban hành quy chế quản lý, giao mục tiêu, chỉ tiêu tiết kiệm đến từng bộ phận, cá nhân.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 169764,
+                                    "createdAt": "2026-01-27T03:35:03.000Z",
+                                    "updatedAt": "2026-01-27T03:35:03.000Z"
+                                },
+                                {
+                                    "id": 293605,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Chỉ chịu trách nhiệm khi có đoàn thanh tra đến làm việc và phát hiện sai phạm.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169764,
+                                    "createdAt": "2026-01-27T03:35:03.000Z",
+                                    "updatedAt": "2026-01-27T03:35:03.000Z"
+                                },
+                                {
+                                    "id": 293606,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Ủy quyền toàn bộ việc quyết định chi tiêu cho kế toán trưởng.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169764,
+                                    "createdAt": "2026-01-27T03:35:03.000Z",
+                                    "updatedAt": "2026-01-27T03:35:03.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 169765,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]:</span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \"> Nội dung nào sau đây là giải pháp được khuyến khích áp dụng để bảo đảm hiệu quả sử dụng ngân sách theo Luật Thực hành tiết kiệm, chống lãng phí?</span>",
+                            "categoryId": 2357,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Giải thích<br/>Chọn đáp án a. Bởi:<br/>Căn cứ Khoản 2, Điều 25, Luật Thực hành tiết kiệm, chống lãng phí.<br/>Trích dẫn nội dung: \"c) Tùy theo tính chất chỉ tiêu, thực hiện khoán đến người sử dụng các khoản kinh phí hoạt động nếu đủ điều kiện theo quy định của pháp luật để bảo đảm hiệu quả và phù hợp với yêu cầu công việc;\"<br/>Phân tích: Cơ chế khoán kinh phí giúp người sử dụng có ý thức tự tiết kiệm để tăng thu nhập hoặc nâng cao hiệu quả công việc.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "0",
+                            "correctRespondentCount": "0",
+                            "type": 1,
+                            "createdAt": "2026-01-27T03:35:03.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-27T03:35:03.000Z",
+                            "answers": [
+                                {
+                                    "id": 293607,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Thực hiện khoán đến người sử dụng các khoản kinh phí hoạt động nếu đủ điều kiện.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 169765,
+                                    "createdAt": "2026-01-27T03:35:03.000Z",
+                                    "updatedAt": "2026-01-27T03:35:03.000Z"
+                                },
+                                {
+                                    "id": 293608,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Tăng cường huy động vốn từ các cá nhân trong cơ quan để tổ chức lễ kỷ niệm.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169765,
+                                    "createdAt": "2026-01-27T03:35:03.000Z",
+                                    "updatedAt": "2026-01-27T03:35:03.000Z"
+                                },
+                                {
+                                    "id": 293609,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Cắt giảm tối đa số lượng cán bộ đi công tác dù có nhiệm vụ cần thiết.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169765,
+                                    "createdAt": "2026-01-27T03:35:03.000Z",
+                                    "updatedAt": "2026-01-27T03:35:03.000Z"
+                                },
+                                {
+                                    "id": 293610,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Sử dụng kinh phí dự phòng của năm sau để chi cho các cuộc hội thảo năm nay.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169765,
+                                    "createdAt": "2026-01-27T03:35:03.000Z",
+                                    "updatedAt": "2026-01-27T03:35:03.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 169766,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]:</span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \"> Theo Luật Thực hành tiết kiệm, chống lãng phí, việc giao tự chủ về tài chính cho các cơ quan hoạt động bằng ngân sách dựa trên căn cứ nào?</span>",
+                            "categoryId": 2357,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Giải thích<br/>Chọn đáp án b. Bởi:<br/>Căn cứ Khoản 2, Điều 26, Luật Thực hành tiết kiệm, chống lãng phí.<br/>Trích dẫn nội dung: \"Việc giao tự chủ, tự chịu trách nhiệm về tài chính phải căn cứ vào chức năng, nhiệm vụ và trên cơ sở đánh giá tình hình sử dụng kinh phí ngân sách thực tế của cơ quan, tổ chức...\"<br/>Phân tích: Sự đánh giá thực tế đảm bảo việc giao tự chủ phù hợp với năng lực quản lý và yêu cầu tiết kiệm.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "0",
+                            "correctRespondentCount": "0",
+                            "type": 1,
+                            "createdAt": "2026-01-27T03:35:03.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-27T03:35:03.000Z",
+                            "answers": [
+                                {
+                                    "id": 293611,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Dựa trên thâm niên công tác của người đứng đầu cơ quan.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169766,
+                                    "createdAt": "2026-01-27T03:35:03.000Z",
+                                    "updatedAt": "2026-01-27T03:35:03.000Z"
+                                },
+                                {
+                                    "id": 293612,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Căn cứ vào chức năng, nhiệm vụ và trên cơ sở đánh giá thực tế sử dụng kinh phí.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 169766,
+                                    "createdAt": "2026-01-27T03:35:03.000Z",
+                                    "updatedAt": "2026-01-27T03:35:03.000Z"
+                                },
+                                {
+                                    "id": 293613,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Dựa trên quy mô trụ sở làm việc của cơ quan đó.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169766,
+                                    "createdAt": "2026-01-27T03:35:03.000Z",
+                                    "updatedAt": "2026-01-27T03:35:03.000Z"
+                                },
+                                {
+                                    "id": 293614,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Căn cứ vào số lượng đơn khiếu nại, tố cáo mà cơ quan đó đã giải quyết.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169766,
+                                    "createdAt": "2026-01-27T03:35:03.000Z",
+                                    "updatedAt": "2026-01-27T03:35:03.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 169767,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]:</span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \"> Cơ quan, tổ chức được giao tự chủ tài chính có trách nhiệm gì theo Luật Thực hành tiết kiệm, chống lãng phí?</span>",
+                            "categoryId": 2357,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Giải thích<br/>Chọn đáp án b. Bởi:<br/>Căn cứ Khoản 3, Điều 26, Luật Thực hành tiết kiệm, chống lãng phí.<br/>Trích dẫn nội dung: \"Cơ quan, tổ chức được giao tự chủ, tự chịu trách nhiệm về tài chính phải thực hiện đúng quy định của pháp luật, bảo đảm thực hiện tốt chức năng, nhiệm vụ được giao và mục tiêu khi được giao khoán kinh phí hoạt động, được giao tự chủ tài chính.\"<br/>Phân tích: Tự chủ tài chính đi đôi với trách nhiệm hoàn thành nhiệm vụ và tuân thủ pháp luật.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "0",
+                            "correctRespondentCount": "0",
+                            "type": 1,
+                            "createdAt": "2026-01-27T03:35:03.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-27T03:35:03.000Z",
+                            "answers": [
+                                {
+                                    "id": 293615,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Có quyền thay đổi mục tiêu hoạt động của đơn vị để tăng doanh thu.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169767,
+                                    "createdAt": "2026-01-27T03:35:03.000Z",
+                                    "updatedAt": "2026-01-27T03:35:03.000Z"
+                                },
+                                {
+                                    "id": 293616,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Thực hiện đúng quy định pháp luật, bảo đảm mục tiêu khi được giao khoán và tự chủ.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 169767,
+                                    "createdAt": "2026-01-27T03:35:03.000Z",
+                                    "updatedAt": "2026-01-27T03:35:03.000Z"
+                                },
+                                {
+                                    "id": 293617,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Được phép không thực hiện các quy định chung về định mức của Nhà nước.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169767,
+                                    "createdAt": "2026-01-27T03:35:03.000Z",
+                                    "updatedAt": "2026-01-27T03:35:03.000Z"
+                                },
+                                {
+                                    "id": 293618,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Chỉ cần báo cáo kết quả tài chính mà không cần báo cáo kết quả thực hiện nhiệm vụ.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169767,
+                                    "createdAt": "2026-01-27T03:35:03.000Z",
+                                    "updatedAt": "2026-01-27T03:35:03.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 169768,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]:</span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \"> Đâu là hành vi gây lãng phí trong lập, thẩm định dự toán ngân sách nhà nước theo Luật Thực hành tiết kiệm, chống lãng phí?</span>",
+                            "categoryId": 2357,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Giải thích<br/>Chọn đáp án b. Bởi:<br/>Căn cứ Khoản 1, Điều 27, Luật Thực hành tiết kiệm, chống lãng phí.<br/>Trích dẫn nội dung: \"Lập, thẩm định, phê duyệt, phân bổ và giao dự toán không đúng thẩm quyền, trình tự, nội dung và thời gian, không đúng đối tượng, vượt định mức, tiêu chuẩn, chế độ.\"<br/>Phân tích: Việc vượt định mức ngay từ khâu lập dự toán là hành vi lãng phí đầu tiên trong chu trình ngân sách.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "0",
+                            "correctRespondentCount": "0",
+                            "type": 1,
+                            "createdAt": "2026-01-27T03:35:03.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-27T03:35:03.000Z",
+                            "answers": [
+                                {
+                                    "id": 293619,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Lập dự toán dựa trên nhu cầu thực tế của các đơn vị trực thuộc.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169768,
+                                    "createdAt": "2026-01-27T03:35:03.000Z",
+                                    "updatedAt": "2026-01-27T03:35:03.000Z"
+                                },
+                                {
+                                    "id": 293620,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Lập, thẩm định và giao dự toán vượt định mức, tiêu chuẩn, chế độ.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 169768,
+                                    "createdAt": "2026-01-27T03:35:03.000Z",
+                                    "updatedAt": "2026-01-27T03:35:03.000Z"
+                                },
+                                {
+                                    "id": 293621,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Công khai dự toán trên cổng thông tin điện tử của cơ quan.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169768,
+                                    "createdAt": "2026-01-27T03:35:03.000Z",
+                                    "updatedAt": "2026-01-27T03:35:03.000Z"
+                                },
+                                {
+                                    "id": 293622,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Chỉnh sửa dự toán theo hướng dẫn của cơ quan tài chính cấp trên.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169768,
+                                    "createdAt": "2026-01-27T03:35:03.000Z",
+                                    "updatedAt": "2026-01-27T03:35:03.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 169769,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]:</span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \"> Theo Luật Thực hành tiết kiệm, chống lãng phí, hành vi lãng phí trong quyết toán chi ngân sách bao gồm nội dung nào?</span>",
+                            "categoryId": 2357,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Giải thích<br/>Chọn đáp án b. Bởi:<br/>Căn cứ Khoản 3, Điều 27, Luật Thực hành tiết kiệm, chống lãng phí.<br/>Trích dẫn nội dung: \"Quyết toán chi ngân sách nhà nước không đúng thủ tục, sai nội dung, đối tượng, vượt định mức, tiêu chuẩn, chế độ; duyệt quyết toán chậm, trì hoãn quyết toán sai quy định của pháp luật.\"<br/>Phân tích: Các hành vi làm sai lệch kết quả quyết toán đều được coi là gây lãng phí.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "0",
+                            "correctRespondentCount": "0",
+                            "type": 1,
+                            "createdAt": "2026-01-27T03:35:03.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-27T03:35:03.000Z",
+                            "answers": [
+                                {
+                                    "id": 293623,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Nộp hồ sơ quyết toán đúng thời hạn quy định.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169769,
+                                    "createdAt": "2026-01-27T03:35:03.000Z",
+                                    "updatedAt": "2026-01-27T03:35:03.000Z"
+                                },
+                                {
+                                    "id": 293624,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Quyết toán chi ngân sách sai nội dung, đối tượng hoặc vượt định mức.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 169769,
+                                    "createdAt": "2026-01-27T03:35:03.000Z",
+                                    "updatedAt": "2026-01-27T03:35:03.000Z"
+                                },
+                                {
+                                    "id": 293625,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Giải trình đầy đủ các khoản chi vượt dự toán do nguyên nhân khách quan.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169769,
+                                    "createdAt": "2026-01-27T03:35:03.000Z",
+                                    "updatedAt": "2026-01-27T03:35:03.000Z"
+                                },
+                                {
+                                    "id": 293626,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Thực hiện đối chiếu số liệu với kho bạc nhà nước hàng tháng.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169769,
+                                    "createdAt": "2026-01-27T03:35:03.000Z",
+                                    "updatedAt": "2026-01-27T03:35:03.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 169770,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]:</span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \"> Cơ quan quản lý, sử dụng phương tiện đi lại có trách nhiệm nào sau đây theo Luật Thực hành tiết kiệm, chống lãng phí?</span>",
+                            "categoryId": 2357,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Giải thích<br/>Chọn đáp án b. Bởi:<br/>Căn cứ Khoản 3, Điều 28, Luật Thực hành tiết kiệm, chống lãng phí.<br/>Trích dẫn nội dung: \"Cơ quan, tổ chức được giao quản lý, sử dụng phương tiện đi lại có trách nhiệm: ...b) Hàng năm, xây dựng kế hoạch mua sắm, trang bị mới, sửa chữa phương tiện đi lại hoặc thực hiện điều chuyển từ nơi thừa sang nơi thiếu...\"<br/>Phân tích: Điều chuyển tài sản từ nơi thừa sang nơi thiếu là biện pháp tiết kiệm nguồn lực của Nhà nước.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "0",
+                            "correctRespondentCount": "0",
+                            "type": 1,
+                            "createdAt": "2026-01-27T03:35:03.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-27T03:35:03.000Z",
+                            "answers": [
+                                {
+                                    "id": 293627,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Được phép cho cá nhân thuê lại phương tiện khi cơ quan không có nhu cầu sử dụng.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169770,
+                                    "createdAt": "2026-01-27T03:35:03.000Z",
+                                    "updatedAt": "2026-01-27T03:35:03.000Z"
+                                },
+                                {
+                                    "id": 293628,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Hàng năm xây dựng kế hoạch mua sắm hoặc điều chuyển từ nơi thừa sang nơi thiếu.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 169770,
+                                    "createdAt": "2026-01-27T03:35:03.000Z",
+                                    "updatedAt": "2026-01-27T03:35:03.000Z"
+                                },
+                                {
+                                    "id": 293629,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Tự ý thay đổi biển số xe công thành xe tư để phục vụ mục đích cá nhân.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169770,
+                                    "createdAt": "2026-01-27T03:35:03.000Z",
+                                    "updatedAt": "2026-01-27T03:35:03.000Z"
+                                },
+                                {
+                                    "id": 293630,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Giữ kín các thông tin về định mức tiêu hao nhiên liệu của phương tiện.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169770,
+                                    "createdAt": "2026-01-27T03:35:03.000Z",
+                                    "updatedAt": "2026-01-27T03:35:03.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 169771,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]:</span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \"> Cơ quan quản lý phương tiện làm việc có trách nhiệm gì đối với thiết bị sử dụng không hiệu quả theo Luật Thực hành tiết kiệm, chống lãng phí?</span>",
+                            "categoryId": 2357,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Giải thích<br/>Chọn đáp án b. Bởi:<br/>Căn cứ Khoản 2, Điều 30, Luật Thực hành tiết kiệm, chống lãng phí.<br/>Trích dẫn nội dung: \"c) Xử lý theo thẩm quyền hoặc báo cáo cơ quan, tổ chức có thẩm quyền xử lý phương tiện, thiết bị làm việc không cần sử dụng, sử dụng không hiệu quả... bằng hình thức điều chuyển, thu hồi, thanh lý hoặc bán...\"<br/>Phân tích: Thu hồi và điều chuyển là cách tốt nhất để tối ưu hóa giá trị sử dụng của tài sản nhà nước.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "0",
+                            "correctRespondentCount": "0",
+                            "type": 1,
+                            "createdAt": "2026-01-27T03:35:03.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-27T03:35:03.000Z",
+                            "answers": [
+                                {
+                                    "id": 293631,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Giữ lại trong kho để chờ hết thời hạn khấu hao mới được xử lý.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169771,
+                                    "createdAt": "2026-01-27T03:35:03.000Z",
+                                    "updatedAt": "2026-01-27T03:35:03.000Z"
+                                },
+                                {
+                                    "id": 293632,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Báo cáo cấp thẩm quyền để điều chuyển, thu hồi, thanh lý hoặc bán.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 169771,
+                                    "createdAt": "2026-01-27T03:35:03.000Z",
+                                    "updatedAt": "2026-01-27T03:35:03.000Z"
+                                },
+                                {
+                                    "id": 293633,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Tự ý tiêu hủy để giải phóng diện tích kho bãi của cơ quan.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169771,
+                                    "createdAt": "2026-01-27T03:35:03.000Z",
+                                    "updatedAt": "2026-01-27T03:35:03.000Z"
+                                },
+                                {
+                                    "id": 293634,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Cho phép nhân viên trong cơ quan mang về nhà sử dụng cá nhân.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169771,
+                                    "createdAt": "2026-01-27T03:35:03.000Z",
+                                    "updatedAt": "2026-01-27T03:35:03.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 169772,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]:</span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \"> Theo Luật Thực hành tiết kiệm, chống lãng phí, phương tiện thông tin, liên lạc tại trụ sở làm việc chỉ được sử dụng vào mục đích nào sau đây?</span>",
+                            "categoryId": 2357,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Giải thích<br/>Chọn đáp án b. Bởi:<br/>• Căn cứ Khoản 1 Điều 31 Luật Thực hành tiết kiệm, chống lãng phí: \"1. Mua sắm, trang bị phương tiện thông tin, liên lạc tại trụ sở làm việc phải theo yêu cầu công việc, không vượt định mức, tiêu chuẩn, chế độ do cơ quan nhà nước có thẩm quyền ban hành. Phương tiện thông tin, liên lạc tại trụ sở làm việc chỉ được sử dụng vào mục đích công vụ.\"<br/>• Phân tích: Luật quy định cứng nhắc mục đích sử dụng phương tiện thông tin tại trụ sở là \"chỉ được sử dụng vào mục đích công vụ\", các phương án còn lại đều đưa thêm các mục đích ngoài công vụ là sai quy định.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "0",
+                            "correctRespondentCount": "0",
+                            "type": 1,
+                            "createdAt": "2026-01-27T03:35:03.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-27T03:35:03.000Z",
+                            "answers": [
+                                {
+                                    "id": 293635,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Phục vụ nhu cầu trao đổi thông tin cá nhân của cán bộ.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169772,
+                                    "createdAt": "2026-01-27T03:35:03.000Z",
+                                    "updatedAt": "2026-01-27T03:35:03.000Z"
+                                },
+                                {
+                                    "id": 293636,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Phục vụ mục đích công vụ.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 169772,
+                                    "createdAt": "2026-01-27T03:35:03.000Z",
+                                    "updatedAt": "2026-01-27T03:35:03.000Z"
+                                },
+                                {
+                                    "id": 293637,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Phục vụ các hoạt động kinh doanh dịch vụ của cơ quan.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169772,
+                                    "createdAt": "2026-01-27T03:35:03.000Z",
+                                    "updatedAt": "2026-01-27T03:35:03.000Z"
+                                },
+                                {
+                                    "id": 293638,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Phục vụ mục đích công vụ và các hoạt động xã hội tự phát.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169772,
+                                    "createdAt": "2026-01-27T03:35:03.000Z",
+                                    "updatedAt": "2026-01-27T03:35:03.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 169773,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]:</span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \"> Theo Luật Thực hành tiết kiệm, chống lãng phí, cơ quan được giao quản lý phương tiện thông tin, liên lạc có trách nhiệm nào sau đây để thực hành tiết kiệm?</span>",
+                            "categoryId": 2357,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Giải thích<br/>Chọn đáp án c. Bởi:<br/>• Căn cứ Điểm b Khoản 3 Điều 31 Luật Thực hành tiết kiệm, chống lãng phí: \"3. Cơ quan, tổ chức được giao quản lý, sử dụng phương tiện thông tin, liên lạc có trách nhiệm: ... b) Rà soát toàn bộ phương tiện thông tin, liên lạc thuộc phạm vi quản lý, thu hồi những phương tiện được trang bị không đúng đối tượng và lập kế hoạch trang bị, điều chuyển phương tiện thông tin, liên lạc phù hợp với yêu cầu công việc, tiết kiệm và hiệu quả.\"<br/>• Phân tích: Trách nhiệm quan trọng nhất là rà soát và thu hồi phương tiện sai đối tượng để đảm bảo đúng định mức.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "0",
+                            "correctRespondentCount": "0",
+                            "type": 1,
+                            "createdAt": "2026-01-27T03:35:03.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-27T03:35:03.000Z",
+                            "answers": [
+                                {
+                                    "id": 293639,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Thanh lý toàn bộ phương tiện thông tin, liên lạc cũ để mua mới hàng năm.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169773,
+                                    "createdAt": "2026-01-27T03:35:03.000Z",
+                                    "updatedAt": "2026-01-27T03:35:03.000Z"
+                                },
+                                {
+                                    "id": 293640,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Cho phép cán bộ sử dụng phương tiện thông tin tại trụ sở cho mục đích cá nhân để tiết kiệm chi phí riêng.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169773,
+                                    "createdAt": "2026-01-27T03:35:03.000Z",
+                                    "updatedAt": "2026-01-27T03:35:03.000Z"
+                                },
+                                {
+                                    "id": 293641,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Rà soát toàn bộ phương tiện, thu hồi những phương tiện trang bị không đúng đối tượng.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 169773,
+                                    "createdAt": "2026-01-27T03:35:03.000Z",
+                                    "updatedAt": "2026-01-27T03:35:03.000Z"
+                                },
+                                {
+                                    "id": 293642,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Tự ý điều chuyển phương tiện thông tin giữa các cơ quan mà không cần lập kế hoạch.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169773,
+                                    "createdAt": "2026-01-27T03:35:03.000Z",
+                                    "updatedAt": "2026-01-27T03:35:03.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 169774,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]:</span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \"> Đâu là hành vi gây lãng phí trong mua sắm, trang bị phương tiện đi lại, phương tiện làm việc và phương tiện thông tin, liên lạc theo Luật Thực hành tiết kiệm, chống lãng phí?</span>",
+                            "categoryId": 2357,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Giải thích<br/>Chọn đáp án a. Bởi:<br/>• Căn cứ Khoản 1 Điều 32 Luật Thực hành tiết kiệm, chống lãng phí: \"1. Phê duyệt mua sắm, trang bị phương tiện đi lại, phương tiện, thiết bị làm việc và phương tiện thông tin, liên lạc không đúng đối tượng; vượt định mức, tiêu chuẩn, chế độ do cơ quan nhà nước có thẩm quyền ban hành.\"<br/>• Phân tích: Hành vi phê duyệt \"vượt định mức\" là một trong những hành vi gây lãng phí bị nghiêm cấm.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "0",
+                            "correctRespondentCount": "0",
+                            "type": 1,
+                            "createdAt": "2026-01-27T03:35:03.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-27T03:35:03.000Z",
+                            "answers": [
+                                {
+                                    "id": 293643,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Phê duyệt mua sắm phương tiện đúng đối tượng nhưng vượt định mức do cơ quan có thẩm quyền ban hành.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 169774,
+                                    "createdAt": "2026-01-27T03:35:03.000Z",
+                                    "updatedAt": "2026-01-27T03:35:03.000Z"
+                                },
+                                {
+                                    "id": 293644,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Mua sắm phương tiện phục vụ thiết thực cho công việc theo dự toán được phê duyệt.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169774,
+                                    "createdAt": "2026-01-27T03:35:03.000Z",
+                                    "updatedAt": "2026-01-27T03:35:03.000Z"
+                                },
+                                {
+                                    "id": 293645,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Sử dụng phương tiện thông tin tại trụ sở làm việc vào mục đích công vụ.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169774,
+                                    "createdAt": "2026-01-27T03:35:03.000Z",
+                                    "updatedAt": "2026-01-27T03:35:03.000Z"
+                                },
+                                {
+                                    "id": 293646,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Xây dựng biện pháp để thực hiện mục tiêu, chỉ tiêu tiết kiệm trong cơ quan.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169774,
+                                    "createdAt": "2026-01-27T03:35:03.000Z",
+                                    "updatedAt": "2026-01-27T03:35:03.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 169775,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]:</span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \"> Theo Luật Thực hành tiết kiệm, chống lãng phí, việc lập, thẩm định và phê duyệt quy hoạch trong hệ thống quy hoạch quốc gia phải phù hợp với nội dung nào sau đây?</span>",
+                            "categoryId": 2357,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Giải thích<br/>Chọn đáp án b. Bởi:<br/>• Căn cứ Khoản 1 Điều 33 Luật Thực hành tiết kiệm, chống lãng phí: \"1. Việc lập, thẩm định và phê duyệt quy hoạch trong hệ thống quy hoạch quốc gia; kế hoạch phát triển kinh tế - xã hội; kế hoạch phát triển ngành, vùng, lĩnh vực và sản phẩm; kế hoạch sử dụng đất phải phù hợp với định hướng, chiến lược phát triển kinh tế - xã hội và khả năng của nền kinh tế.\"<br/>• Phân tích: Quy hoạch phải bám sát chiến lược và khả năng kinh tế để tránh tình trạng \"quy hoạch treo\" gây lãng phí.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "0",
+                            "correctRespondentCount": "0",
+                            "type": 1,
+                            "createdAt": "2026-01-27T03:35:04.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-27T03:35:04.000Z",
+                            "answers": [
+                                {
+                                    "id": 293647,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Phù hợp với nhu cầu của các doanh nghiệp trên địa bàn.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169775,
+                                    "createdAt": "2026-01-27T03:35:03.000Z",
+                                    "updatedAt": "2026-01-27T03:35:04.000Z"
+                                },
+                                {
+                                    "id": 293648,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Phù hợp với định hướng, chiến lược phát triển kinh tế - xã hội và khả năng của nền kinh tế.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 169775,
+                                    "createdAt": "2026-01-27T03:35:03.000Z",
+                                    "updatedAt": "2026-01-27T03:35:04.000Z"
+                                },
+                                {
+                                    "id": 293649,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Phù hợp với mong muốn của người đứng đầu cơ quan phê duyệt.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169775,
+                                    "createdAt": "2026-01-27T03:35:03.000Z",
+                                    "updatedAt": "2026-01-27T03:35:04.000Z"
+                                },
+                                {
+                                    "id": 293650,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Phù hợp với tất cả các dự án đầu tư đã được cấp phép trước đó.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169775,
+                                    "createdAt": "2026-01-27T03:35:03.000Z",
+                                    "updatedAt": "2026-01-27T03:35:04.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 169776,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]:</span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \"> Theo Luật Thực hành tiết kiệm, chống lãng phí, việc phê duyệt dự án đầu tư phải đảm bảo sự cân đối giữa yếu tố nào?</span>",
+                            "categoryId": 2357,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Giải thích<br/>Chọn đáp án b. Bởi:<br/>• Căn cứ Khoản 2 Điều 34 Luật Thực hành tiết kiệm, chống lãng phí năm 2013: \"2. Phê duyệt dự án đầu tư phải phù hợp với khả năng bố trí nguồn vốn; bảo đảm cân đối giữa nguồn vật tư, nguyên liệu với năng lực sản xuất và thị trường tiêu thụ; đạt hiệu quả kinh tế - xã hội và bảo vệ môi trường sinh thái.\"<br/>• Phân tích: Sự cân đối giữa nguyên liệu, năng lực sản xuất và thị trường là điều kiện tiên quyết để dự án hoạt động hiệu quả, tránh lãng phí nguồn lực.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "0",
+                            "correctRespondentCount": "0",
+                            "type": 1,
+                            "createdAt": "2026-01-27T03:35:04.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-27T03:35:04.000Z",
+                            "answers": [
+                                {
+                                    "id": 293651,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Cân đối giữa nguồn vốn ngân sách và vốn vay từ nước ngoài.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169776,
+                                    "createdAt": "2026-01-27T03:35:04.000Z",
+                                    "updatedAt": "2026-01-27T03:35:04.000Z"
+                                },
+                                {
+                                    "id": 293652,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Cân đối giữa nguồn vật tư, nguyên liệu với năng lực sản xuất và thị trường tiêu thụ.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 169776,
+                                    "createdAt": "2026-01-27T03:35:04.000Z",
+                                    "updatedAt": "2026-01-27T03:35:04.000Z"
+                                },
+                                {
+                                    "id": 293653,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Cân đối giữa lợi ích của chủ đầu tư và nhà thầu thi công.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169776,
+                                    "createdAt": "2026-01-27T03:35:04.000Z",
+                                    "updatedAt": "2026-01-27T03:35:04.000Z"
+                                },
+                                {
+                                    "id": 293654,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Cân đối giữa số lượng lao động và trang thiết bị máy móc dự kiến mua sắm.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169776,
+                                    "createdAt": "2026-01-27T03:35:04.000Z",
+                                    "updatedAt": "2026-01-27T03:35:04.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 169777,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]:</span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \"> Theo Luật Thực hành tiết kiệm, chống lãng phí, dự án đầu tư trước khi quyết định đầu tư phải thực hiện nội dung nào sau đây để tránh lãng phí?</span>",
+                            "categoryId": 2357,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Giải thích<br/>Chọn đáp án a. Bởi:<br/>• Căn cứ Khoản 3 Điều 34 Luật Thực hành tiết kiệm, chống lãng phí năm 2013: \"3. Dự án đầu tư trước khi quyết định đầu tư phải chứng minh rõ nguồn vốn đầu tư, bảo đảm cân đối đủ nguồn vốn để thực hiện dự án đúng tiến độ.\"<br/>• Phân tích: Việc không làm rõ nguồn vốn trước khi quyết định đầu tư thường dẫn đến dự án bị đình trệ, dở dang, gây lãng phí lớn.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "0",
+                            "correctRespondentCount": "0",
+                            "type": 1,
+                            "createdAt": "2026-01-27T03:35:04.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-27T03:35:04.000Z",
+                            "answers": [
+                                {
+                                    "id": 293655,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Phải chứng minh rõ nguồn vốn đầu tư, bảo đảm cân đối đủ nguồn vốn để thực hiện dự án đúng tiến độ.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 169777,
+                                    "createdAt": "2026-01-27T03:35:04.000Z",
+                                    "updatedAt": "2026-01-27T03:35:04.000Z"
+                                },
+                                {
+                                    "id": 293656,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Phải thực hiện ký kết hợp đồng với các nhà cung cấp nguyên liệu trước.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169777,
+                                    "createdAt": "2026-01-27T03:35:04.000Z",
+                                    "updatedAt": "2026-01-27T03:35:04.000Z"
+                                },
+                                {
+                                    "id": 293657,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Phải tổ chức lễ khởi công để kêu gọi thêm vốn đầu tư xã hội.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169777,
+                                    "createdAt": "2026-01-27T03:35:04.000Z",
+                                    "updatedAt": "2026-01-27T03:35:04.000Z"
+                                },
+                                {
+                                    "id": 293658,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Phải tuyển dụng đủ đội ngũ nhân sự quản lý dự án.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169777,
+                                    "createdAt": "2026-01-27T03:35:04.000Z",
+                                    "updatedAt": "2026-01-27T03:35:04.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 169778,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]:</span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \"> Theo Luật Thực hành tiết kiệm, chống lãng phí, dự án đầu tư không nằm trong quy hoạch, kế hoạch thì phải xử lý như thế nào?</span>",
+                            "categoryId": 2357,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Giải thích<br/>Chọn đáp án b. Bởi:<br/>• Căn cứ Khoản 1 Điều 38 Luật Thực hành tiết kiệm, chống lãng phí năm 2013: \"1. Dự án đầu tư chỉ được thực hiện, công trình chỉ được thi công khi đã được cơ quan nhà nước có thẩm quyền phê duyệt. Dự án đầu tư, công trình không nằm trong quy hoạch, kế hoạch, không bảo đảm các điều kiện quy định, không đúng quy trình, thủ tục đầu tư phải bị đình chỉ hoặc hủy bỏ.\"<br/>• Phân tích: Tính tuân thủ quy hoạch là bắt buộc; nếu sai quy hoạch thì biện pháp xử lý mạnh nhất là đình chỉ hoặc hủy bỏ.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "0",
+                            "correctRespondentCount": "0",
+                            "type": 1,
+                            "createdAt": "2026-01-27T03:35:04.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-27T03:35:04.000Z",
+                            "answers": [
+                                {
+                                    "id": 293659,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Cho phép tiếp tục thực hiện nếu có văn bản giải trình của chủ đầu tư.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169778,
+                                    "createdAt": "2026-01-27T03:35:04.000Z",
+                                    "updatedAt": "2026-01-27T03:35:04.000Z"
+                                },
+                                {
+                                    "id": 293660,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Phải bị đình chỉ hoặc hủy bỏ.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 169778,
+                                    "createdAt": "2026-01-27T03:35:04.000Z",
+                                    "updatedAt": "2026-01-27T03:35:04.000Z"
+                                },
+                                {
+                                    "id": 293661,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Được điều chỉnh bổ sung vào quy hoạch sau khi đã hoàn thành thi công.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169778,
+                                    "createdAt": "2026-01-27T03:35:04.000Z",
+                                    "updatedAt": "2026-01-27T03:35:04.000Z"
+                                },
+                                {
+                                    "id": 293662,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Chỉ được thực hiện khi có cam kết về hiệu quả kinh tế.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169778,
+                                    "createdAt": "2026-01-27T03:35:04.000Z",
+                                    "updatedAt": "2026-01-27T03:35:04.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 169779,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]:</span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \"> Nội dung nào sau đây là yêu cầu đối với việc bồi thường, hỗ trợ và tái định cư khi Nhà nước thu hồi đất thực hiện dự án theo Luật Thực hành tiết kiệm, chống lãng phí?</span>",
+                            "categoryId": 2357,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Giải thích<br/>Chọn đáp án c. Bởi:<br/>• Căn cứ Khoản 2 Điều 38 Luật Thực hành tiết kiệm, chống lãng phí năm 2013: \"2. Giải phóng mặt bằng để thực hiện dự án đầu tư xây dựng phải bảo đảm tiến độ thực hiện dự án. Việc bồi thường, hỗ trợ và tái định cư khi Nhà nước thu hồi đất để thực hiện dự án đầu tư xây dựng phải bảo đảm dân chủ, khách quan, công khai, minh bạch, kịp thời và đúng quy định của pháp luật.\"<br/>• Phân tích: Công khai, minh bạch trong bồi thường đất đai giúp giảm thiểu khiếu nại, giúp dự án đúng tiến độ, tránh lãng phí thời gian và tiền bạc.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "0",
+                            "correctRespondentCount": "0",
+                            "type": 1,
+                            "createdAt": "2026-01-27T03:35:04.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-27T03:35:04.000Z",
+                            "answers": [
+                                {
+                                    "id": 293663,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Bảo đảm nhanh chóng, công khai, minh bạch, kịp thời và đúng quy trình.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169779,
+                                    "createdAt": "2026-01-27T03:35:04.000Z",
+                                    "updatedAt": "2026-01-27T03:35:04.000Z"
+                                },
+                                {
+                                    "id": 293664,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Bảo đảm bí mật thông tin về giá bồi thường, công khai, minh bạch, kịp thời và đúng quy trình.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169779,
+                                    "createdAt": "2026-01-27T03:35:04.000Z",
+                                    "updatedAt": "2026-01-27T03:35:04.000Z"
+                                },
+                                {
+                                    "id": 293665,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Bảo đảm dân chủ, khách quan, công khai, minh bạch, kịp thời và đúng quy định của pháp luật.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 169779,
+                                    "createdAt": "2026-01-27T03:35:04.000Z",
+                                    "updatedAt": "2026-01-27T03:35:04.000Z"
+                                },
+                                {
+                                    "id": 293666,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Bảo đảm ưu tiên bồi thường cho các hộ gia đình có trẻ nhỏ, người già và công khai, minh bạch, kịp thời và đúng quy trình.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169779,
+                                    "createdAt": "2026-01-27T03:35:04.000Z",
+                                    "updatedAt": "2026-01-27T03:35:04.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 169780,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]:</span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \"> Theo Luật Thực hành tiết kiệm, chống lãng phí, nhà ở công vụ bố trí không đúng đối tượng hoặc sử dụng không đúng mục đích thì phải bị xử lý như thế nào?</span>",
+                            "categoryId": 2357,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Giải thích<br/>Chọn đáp án b. Bởi:<br/>• Căn cứ Khoản 1 Điều 43 Luật Thực hành tiết kiệm, chống lãng phí năm 2013: \"1. Nhà ở công vụ được bố trí cho cán bộ, công chức để ở trong thời gian thực thi công vụ theo đúng đối tượng, định mức, tiêu chuẩn, chế độ do cơ quan nhà nước có thẩm quyền ban hành. Nhà ở công vụ bố trí không đúng đối tượng, sử dụng không đúng mục đích, không sử dụng hoặc đã hết thời hạn sử dụng theo hợp đồng phải bị thu hồi.\"<br/>• Phân tích: Nhà công vụ là tài sản công phục vụ công tác, khi sai đối tượng hoặc mục đích thì việc thu hồi là bắt buộc để đảm bảo công bằng.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "0",
+                            "correctRespondentCount": "0",
+                            "type": 1,
+                            "createdAt": "2026-01-27T03:35:04.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-27T03:35:04.000Z",
+                            "answers": [
+                                {
+                                    "id": 293667,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Cho phép người đang ở được tiếp tục ở đến khi nghỉ hưu.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169780,
+                                    "createdAt": "2026-01-27T03:35:04.000Z",
+                                    "updatedAt": "2026-01-27T03:35:04.000Z"
+                                },
+                                {
+                                    "id": 293668,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Phải bị thu hồi.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 169780,
+                                    "createdAt": "2026-01-27T03:35:04.000Z",
+                                    "updatedAt": "2026-01-27T03:35:04.000Z"
+                                },
+                                {
+                                    "id": 293669,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Chuyển sang hình thức cho thuê theo giá thị trường.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169780,
+                                    "createdAt": "2026-01-27T03:35:04.000Z",
+                                    "updatedAt": "2026-01-27T03:35:04.000Z"
+                                },
+                                {
+                                    "id": 293670,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Phạt tiền người sử dụng và cho phép họ tiếp tục sử dụng.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169780,
+                                    "createdAt": "2026-01-27T03:35:04.000Z",
+                                    "updatedAt": "2026-01-27T03:35:04.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 169781,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]:</span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \"> Người được giao sử dụng nhà ở công vụ không được thực hiện hành vi nào sau đây theo Luật Thực hành tiết kiệm, chống lãng phí?</span>",
+                            "categoryId": 2357,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Giải thích<br/>Chọn đáp án c. Bởi:<br/>• Căn cứ Khoản 3 Điều 43 Luật Thực hành tiết kiệm, chống lãng phí năm 2013: \"3. Người được giao sử dụng nhà ở công vụ ... không được tự ý cải tạo, sửa chữa, làm thay đổi kết cấu, công năng của nhà ở công vụ; không được chuyển đổi hoặc cho thuê lại dưới bất kỳ hình thức nào...\"<br/>• Phân tích: Việc tự ý thay đổi kết cấu làm giảm giá trị và công năng tài sản nhà nước, gây lãng phí trong việc khắc phục, sửa chữa sau này.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "0",
+                            "correctRespondentCount": "0",
+                            "type": 1,
+                            "createdAt": "2026-01-27T03:35:04.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-27T03:35:04.000Z",
+                            "answers": [
+                                {
+                                    "id": 293671,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Giữ gìn nhà ở và tài sản khác theo hồ sơ giao nhận.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169781,
+                                    "createdAt": "2026-01-27T03:35:04.000Z",
+                                    "updatedAt": "2026-01-27T03:35:04.000Z"
+                                },
+                                {
+                                    "id": 293672,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Trả lại nhà cho cơ quan quản lý khi không còn thuộc đối tượng được thuê.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169781,
+                                    "createdAt": "2026-01-27T03:35:04.000Z",
+                                    "updatedAt": "2026-01-27T03:35:04.000Z"
+                                },
+                                {
+                                    "id": 293673,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Tự ý cải tạo, sửa chữa, làm thay đổi kết cấu, công năng của nhà ở công vụ.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 169781,
+                                    "createdAt": "2026-01-27T03:35:04.000Z",
+                                    "updatedAt": "2026-01-27T03:35:04.000Z"
+                                },
+                                {
+                                    "id": 293674,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Sử dụng đúng mục đích theo hợp đồng đã ký.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169781,
+                                    "createdAt": "2026-01-27T03:35:04.000Z",
+                                    "updatedAt": "2026-01-27T03:35:04.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 169782,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]:</span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \"> Theo Luật Thực hành tiết kiệm, chống lãng phí, việc quản lý, khai thác khoáng sản phải thực hiện yêu cầu nào sau đây để chống lãng phí?</span>",
+                            "categoryId": 2357,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Giải thích<br/>Chọn đáp án b. Bởi:<br/>Căn cứ Khoản 1 Điều 49 Luật Thực hành tiết kiệm, chống lãng phí năm 2013: \"1. Việc quản lý, khai thác, sử dụng khoáng sản ... phải bảo đảm: ... d) Thực hiện tận thu triệt để trong khai thác khoáng sản và sử dụng hiệu quả các sản phẩm phụ hữu ích của hoạt động khai thác khoáng sản.\" </span>",
+                            "readingContentId": null,
+                            "respondentCount": "0",
+                            "correctRespondentCount": "0",
+                            "type": 1,
+                            "createdAt": "2026-01-27T03:35:04.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-27T03:35:04.000Z",
+                            "answers": [
+                                {
+                                    "id": 293675,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Việc khai thác khoáng sản phải được ưu tiên đối với các loại khoáng sản có giá trị kinh tế cao nhằm nâng cao hiệu quả sử dụng tài nguyên quốc gia.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169782,
+                                    "createdAt": "2026-01-27T03:35:04.000Z",
+                                    "updatedAt": "2026-01-27T03:35:04.000Z"
+                                },
+                                {
+                                    "id": 293676,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Thực hiện tận thu triệt để trong khai thác khoáng sản và sử dụng hiệu quả các sản phẩm phụ hữu ích.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 169782,
+                                    "createdAt": "2026-01-27T03:35:04.000Z",
+                                    "updatedAt": "2026-01-27T03:35:04.000Z"
+                                },
+                                {
+                                    "id": 293677,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Khoáng sản khai thác được phép xuất khẩu dưới dạng nguyên khai để nhanh chóng thu hồi vốn và tăng nguồn thu ngoại tệ cho ngân sách nhà nước.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169782,
+                                    "createdAt": "2026-01-27T03:35:04.000Z",
+                                    "updatedAt": "2026-01-27T03:35:04.000Z"
+                                },
+                                {
+                                    "id": 293678,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Trường hợp phát hiện mỏ khoáng sản có tiềm năng lớn, tổ chức, cá nhân được phép khai thác vượt trữ lượng ghi trong giấy phép nhằm tránh lãng phí tài nguyên.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169782,
+                                    "createdAt": "2026-01-27T03:35:04.000Z",
+                                    "updatedAt": "2026-01-27T03:35:04.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 169783,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]:</span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \"> Trách nhiệm của cơ quan, cá nhân được giao khai thác khoáng sản theo quy định tại Luật Thực hành tiết kiệm, chống lãng phí bao gồm nội dung nào?</span>",
+                            "categoryId": 2357,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Giải thích<br/>Chọn đáp án b. Bởi:<br/>Căn cứ Khoản 2 Điều 49 Luật Thực hành tiết kiệm, chống lãng phí năm 2013: \"2. Cơ quan, tổ chức, cá nhân được giao quản lý, khai thác, sử dụng khoáng sản có trách nhiệm: ... c) ... thực hiện cải tạo, phục hồi môi trường sau khi khai thác khoáng sản;\"<br/>Phân tích: Phục hồi môi trường là trách nhiệm hoàn trả lại giá trị cho tự nhiên, tránh để lại hệ lụy lãng phí nguồn lực để xử lý ô nhiễm sau này.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "0",
+                            "correctRespondentCount": "0",
+                            "type": 1,
+                            "createdAt": "2026-01-27T03:35:04.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-27T03:35:04.000Z",
+                            "answers": [
+                                {
+                                    "id": 293679,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Chủ động điều chỉnh biện pháp, công nghệ khai thác nhằm tiết giảm chi phí sản xuất, bảo đảm hiệu quả kinh tế của hoạt động khai thác khoáng sản.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169783,
+                                    "createdAt": "2026-01-27T03:35:04.000Z",
+                                    "updatedAt": "2026-01-27T03:35:04.000Z"
+                                },
+                                {
+                                    "id": 293680,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Thực hiện cải tạo, phục hồi môi trường sau khi khai thác khoáng sản.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 169783,
+                                    "createdAt": "2026-01-27T03:35:04.000Z",
+                                    "updatedAt": "2026-01-27T03:35:04.000Z"
+                                },
+                                {
+                                    "id": 293681,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Trường hợp đã thực hiện đầy đủ nghĩa vụ tài chính đối với Nhà nước thì không bắt buộc phải xác định mục tiêu, chỉ tiêu tiết kiệm trong khai thác khoáng sản.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169783,
+                                    "createdAt": "2026-01-27T03:35:04.000Z",
+                                    "updatedAt": "2026-01-27T03:35:04.000Z"
+                                },
+                                {
+                                    "id": 293682,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Thực hiện khai thác đúng chủng loại khoáng sản được cấp phép, không bắt buộc phải tuân thủ nghiêm ngặt trữ lượng đã được phê duyệt.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169783,
+                                    "createdAt": "2026-01-27T03:35:04.000Z",
+                                    "updatedAt": "2026-01-27T03:35:04.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 169784,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]:</span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \"> Đâu là trách nhiệm của người đứng đầu cơ quan nhà nước trong quản lý lao động theo Luật Thực hành tiết kiệm, chống lãng phí?</span>",
+                            "categoryId": 2357,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Giải thích<br/>Chọn đáp án a. Bởi: Căn cứ Khoản 4, Điều 55, Luật Thực hành tiết kiệm, chống lãng phí quy định: “Cơ quan, tổ chức, người đứng đầu cơ quan, tổ chức phải xây dựng kế hoạch đào tạo, bồi dưỡng, đánh giá cán bộ, công chức theo quy định của pháp luật về cán bộ, công chức; xây dựng kế hoạch sử dụng thời gian lao động, xử lý công việc phù hợp...”.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "2",
+                            "correctRespondentCount": "1",
+                            "type": 1,
+                            "createdAt": "2026-01-27T03:35:04.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-29T18:12:43.000Z",
+                            "answers": [
+                                {
+                                    "id": 293683,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Phải xây dựng kế hoạch đào tạo, bồi dưỡng, đánh giá cán bộ, công chức theo quy định của pháp luật.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 169784,
+                                    "createdAt": "2026-01-27T03:35:04.000Z",
+                                    "updatedAt": "2026-01-27T03:35:04.000Z"
+                                },
+                                {
+                                    "id": 293684,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Được quyền tự ý nâng ngạch cho cán bộ có thành tích xuất sắc mà không cần thông qua thi tuyển.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169784,
+                                    "createdAt": "2026-01-27T03:35:04.000Z",
+                                    "updatedAt": "2026-01-27T03:35:04.000Z"
+                                },
+                                {
+                                    "id": 293685,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Phải ưu tiên dành thời gian làm việc chính thức để tổ chức các hoạt động giao lưu văn hóa, thể thao.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169784,
+                                    "createdAt": "2026-01-27T03:35:04.000Z",
+                                    "updatedAt": "2026-01-27T03:35:04.000Z"
+                                },
+                                {
+                                    "id": 293686,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Có quyền tuyển dụng thêm lao động vượt mức biên chế nếu thấy khối lượng công việc phát sinh quá nhiều.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169784,
+                                    "createdAt": "2026-01-27T03:35:04.000Z",
+                                    "updatedAt": "2026-01-27T03:35:04.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 169785,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]:</span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \"> Việc đào tạo nguồn lực, bố trí, sử dụng cán bộ, công chức theo Luật Thực hành tiết kiệm, chống lãng phí phải căn cứ vào nội dung nào?</span>",
+                            "categoryId": 2357,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Giải thích<br/>Chọn đáp án a. Bởi: Căn cứ Khoản 2, Điều 55, Luật Thực hành tiết kiệm, chống lãng phí quy định: “Đào tạo nguồn lực, bố trí, sử dụng cán bộ, công chức phải căn cứ vào kế hoạch phát triển nguồn nhân lực, yêu cầu của vị trí công việc, trình độ đào tạo, năng lực chuyên môn, ngạch cán bộ, công chức”.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "0",
+                            "correctRespondentCount": "0",
+                            "type": 1,
+                            "createdAt": "2026-01-27T03:35:04.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-27T03:35:04.000Z",
+                            "answers": [
+                                {
+                                    "id": 293687,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Phải căn cứ vào kế hoạch phát triển nguồn nhân lực, yêu cầu của vị trí công việc, trình độ đào tạo, năng lực chuyên môn, ngạch cán bộ, công chức.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 169785,
+                                    "createdAt": "2026-01-27T03:35:04.000Z",
+                                    "updatedAt": "2026-01-27T03:35:04.000Z"
+                                },
+                                {
+                                    "id": 293688,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Căn cứ chủ yếu vào nguyện vọng, sở trường cá nhân của cán bộ, công chức nhằm bảo đảm sự phù hợp trong quá trình bố trí, sử dụng.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169785,
+                                    "createdAt": "2026-01-27T03:35:04.000Z",
+                                    "updatedAt": "2026-01-27T03:35:04.000Z"
+                                },
+                                {
+                                    "id": 293689,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Căn cứ vào tình hình thiếu hụt biên chế thực tế của cơ quan để bố trí cán bộ, công chức vào các vị trí công tác còn trống.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169785,
+                                    "createdAt": "2026-01-27T03:35:04.000Z",
+                                    "updatedAt": "2026-01-27T03:35:04.000Z"
+                                },
+                                {
+                                    "id": 293690,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Căn cứ vào thâm niên công tác và thời gian gắn bó với cơ quan để ưu tiên bố trí, sử dụng vào các vị trí lãnh đạo, quản lý.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169785,
+                                    "createdAt": "2026-01-27T03:35:04.000Z",
+                                    "updatedAt": "2026-01-27T03:35:04.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 169786,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]:</span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \"> Theo Luật Thực hành tiết kiệm, chống lãng phí, tuyển dụng viên chức trong đơn vị sự nghiệp công lập phải dựa trên cơ sở nào?</span>",
+                            "categoryId": 2357,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Giải thích<br/>Chọn đáp án a. Bởi: Căn cứ Khoản 1, Điều 56, Luật Thực hành tiết kiệm, chống lãng phí quy định: “Tuyển dụng viên chức trong đơn vị sự nghiệp công lập phải trên cơ sở tiêu chuẩn chức danh nghề nghiệp, vị trí việc làm và yêu cầu công việc; bảo đảm công khai, minh bạch, công bằng, khách quan...”. </span>",
+                            "readingContentId": null,
+                            "respondentCount": "3",
+                            "correctRespondentCount": "0",
+                            "type": 1,
+                            "createdAt": "2026-01-27T03:35:04.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-29T18:11:55.000Z",
+                            "answers": [
+                                {
+                                    "id": 293691,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Tiêu chuẩn chức danh nghề nghiệp, vị trí việc làm và yêu cầu công việc.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 169786,
+                                    "createdAt": "2026-01-27T03:35:04.000Z",
+                                    "updatedAt": "2026-01-27T03:35:04.000Z"
+                                },
+                                {
+                                    "id": 293692,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Căn cứ vào khả năng cân đối, chi trả tiền lương từ nguồn thu sự nghiệp của đơn vị tại từng thời kỳ.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169786,
+                                    "createdAt": "2026-01-27T03:35:04.000Z",
+                                    "updatedAt": "2026-01-27T03:35:04.000Z"
+                                },
+                                {
+                                    "id": 293693,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Thực hiện tuyển dụng trên cơ sở đề xuất, giới thiệu của các tổ chức chính trị – xã hội, đoàn thể trong và ngoài đơn vị nhằm bảo đảm yếu tố kế thừa nguồn nhân lực.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169786,
+                                    "createdAt": "2026-01-27T03:35:04.000Z",
+                                    "updatedAt": "2026-01-27T03:35:04.000Z"
+                                },
+                                {
+                                    "id": 293694,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Căn cứ vào nhu cầu giải quyết việc làm đối với người thân của cán bộ, viên chức đang công tác tại đơn vị để ổn định tổ chức bộ máy.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169786,
+                                    "createdAt": "2026-01-27T03:35:04.000Z",
+                                    "updatedAt": "2026-01-27T03:35:04.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 169787,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]:</span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \"> Nội dung nào sau đây là yêu cầu đối với việc đào tạo, bồi dưỡng lao động trong đơn vị sự nghiệp công lập theo Luật Thực hành tiết kiệm, chống lãng phí?</span>",
+                            "categoryId": 2357,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Giải thích<br/>Chọn đáp án b. Bởi: Căn cứ Khoản 2, Điều 56, Luật Thực hành tiết kiệm, chống lãng phí quy định: “Đào tạo, bồi dưỡng lao động trong đơn vị sự nghiệp công lập phải căn cứ vào tiêu chuẩn chức vụ quản lý, chức danh nghề nghiệp, yêu cầu cập nhật kiến thức, kỹ năng nghề nghiệp”.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "0",
+                            "correctRespondentCount": "0",
+                            "type": 1,
+                            "createdAt": "2026-01-27T03:35:04.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-27T03:35:04.000Z",
+                            "answers": [
+                                {
+                                    "id": 293695,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Đơn vị phải xây dựng kế hoạch đào tạo, bồi dưỡng hằng năm bao quát tất cả các lĩnh vực chuyên môn đang triển khai, bảo đảm tất cả người lao động đều được tham gia.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169787,
+                                    "createdAt": "2026-01-27T03:35:04.000Z",
+                                    "updatedAt": "2026-01-27T03:35:04.000Z"
+                                },
+                                {
+                                    "id": 293696,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Phải căn cứ vào tiêu chuẩn chức vụ quản lý, chức danh nghề nghiệp, yêu cầu cập nhật kiến thức, kỹ năng nghề nghiệp.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 169787,
+                                    "createdAt": "2026-01-27T03:35:04.000Z",
+                                    "updatedAt": "2026-01-27T03:35:04.000Z"
+                                },
+                                {
+                                    "id": 293697,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Việc đào tạo, bồi dưỡng được ưu tiên thực hiện đối với người lao động có kết quả đánh giá, phân loại ở mức chưa hoàn thành nhiệm vụ nhằm nâng cao chất lượng nguồn nhân lực.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169787,
+                                    "createdAt": "2026-01-27T03:35:04.000Z",
+                                    "updatedAt": "2026-01-27T03:35:04.000Z"
+                                },
+                                {
+                                    "id": 293698,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Kinh phí đào tạo, bồi dưỡng được phân bổ trọng tâm cho đội ngũ giữ chức vụ quản lý, lãnh đạo để đáp ứng yêu cầu điều hành, quản lý đơn vị.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169787,
+                                    "createdAt": "2026-01-27T03:35:04.000Z",
+                                    "updatedAt": "2026-01-27T03:35:04.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 169788,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]:</span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \"> Đơn vị sự nghiệp công lập có trách nhiệm gì trong việc sử dụng lao động theo quy định của Luật Thực hành tiết kiệm, chống lãng phí?</span>",
+                            "categoryId": 2357,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Giải thích<br/>Chọn đáp án b. Bởi: Căn cứ Khoản 3, Điều 56, Luật Thực hành tiết kiệm, chống lãng phí quy định: “Đơn vị sự nghiệp công lập phải tổ chức công việc hợp lý, khoa học, gắn với yêu cầu nâng cao chất lượng phục vụ và hiệu quả hoạt động sự nghiệp”.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "0",
+                            "correctRespondentCount": "0",
+                            "type": 1,
+                            "createdAt": "2026-01-27T03:35:04.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-27T03:35:04.000Z",
+                            "answers": [
+                                {
+                                    "id": 293699,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Được chủ động lựa chọn loại hợp đồng lao động phù hợp với nhu cầu sử dụng nhân lực của đơn vị, không phân biệt thời hạn hợp đồng.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169788,
+                                    "createdAt": "2026-01-27T03:35:04.000Z",
+                                    "updatedAt": "2026-01-27T03:35:04.000Z"
+                                },
+                                {
+                                    "id": 293700,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Phải tổ chức công việc hợp lý, khoa học, gắn với yêu cầu nâng cao chất lượng phục vụ và hiệu quả hoạt động sự nghiệp.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 169788,
+                                    "createdAt": "2026-01-27T03:35:04.000Z",
+                                    "updatedAt": "2026-01-27T03:35:04.000Z"
+                                },
+                                {
+                                    "id": 293701,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Chủ động xác định và điều chỉnh định mức biên chế của đơn vị trên cơ sở yêu cầu nhiệm vụ, không bắt buộc phải báo cáo cơ quan nhà nước có thẩm quyền.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169788,
+                                    "createdAt": "2026-01-27T03:35:04.000Z",
+                                    "updatedAt": "2026-01-27T03:35:04.000Z"
+                                },
+                                {
+                                    "id": 293702,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Ưu tiên sử dụng lao động thủ công thay cho đầu tư máy móc, công nghệ nhằm tiết kiệm chi phí ngân sách nhà nước.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169788,
+                                    "createdAt": "2026-01-27T03:35:04.000Z",
+                                    "updatedAt": "2026-01-27T03:35:04.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 169789,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]:</span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \"> Đâu là hành vi gây lãng phí trong quản lý, sử dụng lao động trong khu vực nhà nước theo Luật Thực hành tiết kiệm, chống lãng phí?</span>",
+                            "categoryId": 2357,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Giải thích<br/>Chọn đáp án a. Bởi: Căn cứ Khoản 1, Điều 58, Luật Thực hành tiết kiệm, chống lãng phí quy định hành vi gây lãng phí gồm: “Tuyển dụng công chức vượt quá chỉ tiêu biên chế theo quyết định của cơ quan có thẩm quyền; tuyển dụng sai đối tượng, không đúng quy định hoặc thẩm quyền”. Các phương án b, c, d là hoạt động đúng quy định.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "0",
+                            "correctRespondentCount": "0",
+                            "type": 1,
+                            "createdAt": "2026-01-27T03:35:04.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-27T03:35:04.000Z",
+                            "answers": [
+                                {
+                                    "id": 293703,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Tuyển dụng công chức vượt quá chỉ tiêu biên chế theo quyết định của cơ quan có thẩm quyền.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 169789,
+                                    "createdAt": "2026-01-27T03:35:04.000Z",
+                                    "updatedAt": "2026-01-27T03:35:04.000Z"
+                                },
+                                {
+                                    "id": 293704,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Bố trí cán bộ, công chức căn cứ vào đúng trình độ đào tạo và năng lực chuyên môn.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169789,
+                                    "createdAt": "2026-01-27T03:35:04.000Z",
+                                    "updatedAt": "2026-01-27T03:35:04.000Z"
+                                },
+                                {
+                                    "id": 293705,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Sử dụng thời gian lao động vào việc thực hiện các nhiệm vụ cải cách hành chính được giao.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169789,
+                                    "createdAt": "2026-01-27T03:35:04.000Z",
+                                    "updatedAt": "2026-01-27T03:35:04.000Z"
+                                },
+                                {
+                                    "id": 293706,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Thực hiện bồi dưỡng cán bộ theo đúng kế hoạch đã được cơ quan cấp trên phê duyệt.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169789,
+                                    "createdAt": "2026-01-27T03:35:04.000Z",
+                                    "updatedAt": "2026-01-27T03:35:04.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 169790,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]:</span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \"> Theo Luật Thực hành tiết kiệm, chống lãng phí, hành vi nào sau đây gây lãng phí về thời gian lao động?</span>",
+                            "categoryId": 2357,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Giải thích<br/>Chọn đáp án b. Bởi: Căn cứ Khoản 6, Điều 58, Luật Thực hành tiết kiệm, chống lãng phí quy định hành vi gây lãng phí là: “Sử dụng thời gian lao động vào việc riêng, sử dụng thời gian lao động không hiệu quả”.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "0",
+                            "correctRespondentCount": "0",
+                            "type": 1,
+                            "createdAt": "2026-01-27T03:35:04.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-27T03:35:04.000Z",
+                            "answers": [
+                                {
+                                    "id": 293707,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Sử dụng thời gian lao động để tập trung xử lý các văn bản đến đúng hạn quy định.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169790,
+                                    "createdAt": "2026-01-27T03:35:04.000Z",
+                                    "updatedAt": "2026-01-27T03:35:04.000Z"
+                                },
+                                {
+                                    "id": 293708,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Sử dụng thời gian lao động vào việc riêng, sử dụng thời gian lao động không hiệu quả.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 169790,
+                                    "createdAt": "2026-01-27T03:35:04.000Z",
+                                    "updatedAt": "2026-01-27T03:35:04.000Z"
+                                },
+                                {
+                                    "id": 293709,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Tăng ca để hoàn thành dự án trọng điểm quốc gia theo kế hoạch đã được phê duyệt.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169790,
+                                    "createdAt": "2026-01-27T03:35:04.000Z",
+                                    "updatedAt": "2026-01-27T03:35:04.000Z"
+                                },
+                                {
+                                    "id": 293710,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Tham gia đầy đủ các cuộc họp triển khai nhiệm vụ chuyên môn của đơn vị.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169790,
+                                    "createdAt": "2026-01-27T03:35:04.000Z",
+                                    "updatedAt": "2026-01-27T03:35:04.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 169791,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]:</span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \"> Đâu là hành vi gây lãng phí trong việc tuyển dụng lao động theo Luật Thực hành tiết kiệm, chống lãng phí?</span>",
+                            "categoryId": 2357,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Giải thích<br/>Chọn đáp án a. Bởi: Căn cứ Khoản 2, Điều 58, Luật Thực hành tiết kiệm, chống lãng phí quy định hành vi gây lãng phí: “Tuyển dụng vào biên chế, ký hợp đồng lao động xác định thời hạn hoặc hợp đồng lao động không xác định thời hạn đối với những công việc có thể áp dụng hình thức hợp đồng lao động theo mùa vụ hoặc theo một công việc nhất định có thời hạn dưới 12 tháng hoặc tuyển dụng theo hình thức ngược lại”.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "0",
+                            "correctRespondentCount": "0",
+                            "type": 1,
+                            "createdAt": "2026-01-27T03:35:04.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-27T03:35:04.000Z",
+                            "answers": [
+                                {
+                                    "id": 293711,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Tuyển dụng vào biên chế đối với những công việc có thể áp dụng hình thức hợp đồng lao động theo mùa vụ hoặc dưới 12 tháng.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 169791,
+                                    "createdAt": "2026-01-27T03:35:04.000Z",
+                                    "updatedAt": "2026-01-27T03:35:04.000Z"
+                                },
+                                {
+                                    "id": 293712,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Tuyển dụng viên chức căn cứ vào vị trí việc làm, nhu cầu thực tế và khả năng cân đối quỹ tiền lương của đơn vị sự nghiệp công lập.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169791,
+                                    "createdAt": "2026-01-27T03:35:04.000Z",
+                                    "updatedAt": "2026-01-27T03:35:04.000Z"
+                                },
+                                {
+                                    "id": 293713,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Thực hiện tuyển dụng công chức thông qua hình thức thi tuyển bảo đảm công khai, minh bạch, cạnh tranh theo quy định của pháp luật.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169791,
+                                    "createdAt": "2026-01-27T03:35:04.000Z",
+                                    "updatedAt": "2026-01-27T03:35:04.000Z"
+                                },
+                                {
+                                    "id": 293714,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Ký hợp đồng lao động đối với các công việc chuyên môn có yêu cầu trình độ cao, phù hợp với vị trí việc làm đã được phê duyệt.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169791,
+                                    "createdAt": "2026-01-27T03:35:04.000Z",
+                                    "updatedAt": "2026-01-27T03:35:04.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 169792,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]:</span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \"> Việc quản lý, sử dụng vốn nhà nước tại doanh nghiệp theo Luật Thực hành tiết kiệm, chống lãng phí phải dựa trên cơ sở nào?</span>",
+                            "categoryId": 2357,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Giải thích<br/>Chọn đáp án a. Bởi: Căn cứ Khoản 1, Điều 59, Luật Thực hành tiết kiệm, chống lãng phí quy định: “Việc quản lý, sử dụng vốn nhà nước tại doanh nghiệp phải trên cơ sở hiệu quả sử dụng, đa dạng hóa nguồn vốn, có cơ cấu vốn hợp lý, tiết kiệm; đúng mục đích, chế độ theo quy định của pháp luật và điều lệ doanh nghiệp”.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "0",
+                            "correctRespondentCount": "0",
+                            "type": 1,
+                            "createdAt": "2026-01-27T03:35:04.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-27T03:35:04.000Z",
+                            "answers": [
+                                {
+                                    "id": 293715,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Trên cơ sở hiệu quả sử dụng, đa dạng hóa nguồn vốn, có cơ cấu vốn hợp lý, tiết kiệm; đúng mục đích, chế độ.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 169792,
+                                    "createdAt": "2026-01-27T03:35:04.000Z",
+                                    "updatedAt": "2026-01-27T03:35:04.000Z"
+                                },
+                                {
+                                    "id": 293716,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Ưu tiên phân bổ vốn cho các dự án có mức sinh lời cao, chấp nhận rủi ro lớn nhằm tối đa hóa lợi nhuận cho doanh nghiệp.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169792,
+                                    "createdAt": "2026-01-27T03:35:04.000Z",
+                                    "updatedAt": "2026-01-27T03:35:04.000Z"
+                                },
+                                {
+                                    "id": 293717,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Bố trí vốn trước hết cho các hoạt động phúc lợi, chăm lo đời sống người lao động, sau đó mới xem xét đầu tư vào hoạt động sản xuất, kinh doanh.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169792,
+                                    "createdAt": "2026-01-27T03:35:04.000Z",
+                                    "updatedAt": "2026-01-27T03:35:04.000Z"
+                                },
+                                {
+                                    "id": 293718,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Sử dụng vốn nhà nước theo nguồn ngân sách được cấp, hạn chế huy động các nguồn vốn hợp pháp khác để bảo đảm an toàn tài chính.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169792,
+                                    "createdAt": "2026-01-27T03:35:04.000Z",
+                                    "updatedAt": "2026-01-27T03:35:04.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 169793,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]:</span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \"> Theo Luật Thực hành tiết kiệm, chống lãng phí, người đại diện phần vốn góp của Nhà nước tại doanh nghiệp có trách nhiệm gì?</span>",
+                            "categoryId": 2357,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Giải thích<br/>Chọn đáp án b. Bởi: Căn cứ Khoản 2, Điều 59, Luật Thực hành tiết kiệm, chống lãng phí quy định: “Người đại diện theo ủy quyền phần vốn góp của Nhà nước tại doanh nghiệp có trách nhiệm theo dõi, giám sát tình hình hoạt động, kinh doanh của doanh nghiệp liên quan đến hiệu quả của vốn góp, kịp thời phát hiện các sai phạm phát sinh, tình trạng sử dụng vốn kém hiệu quả, nguy cơ mất vốn, báo cáo kịp thời chủ sở hữu”.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "0",
+                            "correctRespondentCount": "0",
+                            "type": 1,
+                            "createdAt": "2026-01-27T03:35:04.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-27T03:35:04.000Z",
+                            "answers": [
+                                {
+                                    "id": 293719,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Tự quyết định việc đầu tư vốn vào các công ty con mà không cần báo cáo chủ sở hữu.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169793,
+                                    "createdAt": "2026-01-27T03:35:04.000Z",
+                                    "updatedAt": "2026-01-27T03:35:04.000Z"
+                                },
+                                {
+                                    "id": 293720,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Theo dõi, giám sát tình hình hoạt động, kinh doanh liên quan đến hiệu quả vốn góp, kịp thời phát hiện sai phạm, nguy cơ mất vốn.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 169793,
+                                    "createdAt": "2026-01-27T03:35:04.000Z",
+                                    "updatedAt": "2026-01-27T03:35:04.000Z"
+                                },
+                                {
+                                    "id": 293721,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Chỉ chịu trách nhiệm khi doanh nghiệp tuyên bố phá sản hoặc mất toàn bộ vốn nhà nước.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169793,
+                                    "createdAt": "2026-01-27T03:35:04.000Z",
+                                    "updatedAt": "2026-01-27T03:35:04.000Z"
+                                },
+                                {
+                                    "id": 293722,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Có quyền sử dụng phần vốn góp của nhà nước để bảo lãnh cho các khoản vay cá nhân.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169793,
+                                    "createdAt": "2026-01-27T03:35:04.000Z",
+                                    "updatedAt": "2026-01-27T03:35:04.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 169794,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]:</span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \"> Nội dung nào sau đây là trách nhiệm của người quản lý doanh nghiệp trong việc sử dụng đất và tài sản nhà nước theo Luật Thực hành tiết kiệm, chống lãng phí?</span>",
+                            "categoryId": 2357,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Giải thích<br/>Chọn đáp án b. Bởi: Căn cứ Điểm a, Khoản 2, Điều 60, Luật Thực hành tiết kiệm, chống lãng phí quy định người quản lý doanh nghiệp có trách nhiệm: “Xây dựng quy chế quản lý, sử dụng hiệu quả đất và tài sản nhà nước tại doanh nghiệp”.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "0",
+                            "correctRespondentCount": "0",
+                            "type": 1,
+                            "createdAt": "2026-01-27T03:35:04.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-27T03:35:04.000Z",
+                            "answers": [
+                                {
+                                    "id": 293723,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Được quyền cho thuê lại toàn bộ diện tích đất được Nhà nước giao để khai thác nguồn thu, bảo đảm hiệu quả sử dụng đất của doanh nghiệp.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169794,
+                                    "createdAt": "2026-01-27T03:35:04.000Z",
+                                    "updatedAt": "2026-01-27T03:35:04.000Z"
+                                },
+                                {
+                                    "id": 293724,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Xây dựng quy chế quản lý, sử dụng hiệu quả đất và tài sản nhà nước tại doanh nghiệp.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 169794,
+                                    "createdAt": "2026-01-27T03:35:04.000Z",
+                                    "updatedAt": "2026-01-27T03:35:04.000Z"
+                                },
+                                {
+                                    "id": 293725,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Chủ động chuyển đổi mục đích sử dụng đất trụ sở sang mục đích kinh doanh thương mại để phù hợp với nhu cầu phát triển sản xuất, kinh doanh của doanh nghiệp.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169794,
+                                    "createdAt": "2026-01-27T03:35:04.000Z",
+                                    "updatedAt": "2026-01-27T03:35:04.000Z"
+                                },
+                                {
+                                    "id": 293726,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Thực hiện kiểm kê đất đai, tài sản nhà nước theo yêu cầu của cơ quan thanh tra, kiểm tra có thẩm quyền.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169794,
+                                    "createdAt": "2026-01-27T03:35:04.000Z",
+                                    "updatedAt": "2026-01-27T03:35:04.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 169795,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]:</span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \"> Theo Luật Thực hành tiết kiệm, chống lãng phí, đâu là trách nhiệm bổ sung của doanh nghiệp nhà nước trong thực hành tiết kiệm?</span>",
+                            "categoryId": 2357,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Giải thích<br/>Chọn đáp án b. Bởi: Căn cứ Điểm b, Khoản 1, Điều 61, Luật Thực hành tiết kiệm, chống lãng phí quy định doanh nghiệp nhà nước phải: “Xác định và xây dựng đồng bộ các giải pháp thực hiện mục tiêu, chỉ tiêu tiết kiệm và yêu cầu chống lãng phí trong quản lý, sử dụng vốn, các quỹ, tài sản trong doanh nghiệp”.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "0",
+                            "correctRespondentCount": "0",
+                            "type": 1,
+                            "createdAt": "2026-01-27T03:35:04.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-27T03:35:04.000Z",
+                            "answers": [
+                                {
+                                    "id": 293727,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Thực hiện chế độ báo cáo tài chính định kỳ theo quy định của Bộ Tài chính để phục vụ công tác quản lý nhà nước.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169795,
+                                    "createdAt": "2026-01-27T03:35:04.000Z",
+                                    "updatedAt": "2026-01-27T03:35:04.000Z"
+                                },
+                                {
+                                    "id": 293728,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Xác định và xây dựng đồng bộ các giải pháp thực hiện mục tiêu, chỉ tiêu tiết kiệm và yêu cầu chống lãng phí trong quản lý, sử dụng vốn, các quỹ.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 169795,
+                                    "createdAt": "2026-01-27T03:35:04.000Z",
+                                    "updatedAt": "2026-01-27T03:35:04.000Z"
+                                },
+                                {
+                                    "id": 293729,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Không áp dụng hình thức khen thưởng đối với cá nhân phát hiện, phản ánh hành vi lãng phí trong nội bộ doanh nghiệp nhằm bảo đảm ổn định hoạt động quản lý.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169795,
+                                    "createdAt": "2026-01-27T03:35:04.000Z",
+                                    "updatedAt": "2026-01-27T03:35:04.000Z"
+                                },
+                                {
+                                    "id": 293730,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Rút gọn các khâu kiểm tra, giám sát tài chính nội bộ để tạo điều kiện đẩy nhanh tiến độ sản xuất, kinh doanh.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169795,
+                                    "createdAt": "2026-01-27T03:35:04.000Z",
+                                    "updatedAt": "2026-01-27T03:35:04.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 169796,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]:</span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \"> Người đứng đầu doanh nghiệp nhà nước có trách nhiệm gì trong việc thực hiện mục tiêu tiết kiệm theo Luật Thực hành tiết kiệm, chống lãng phí?</span>",
+                            "categoryId": 2357,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Giải thích<br/>Chọn đáp án b. Bởi: Căn cứ Điểm a, Khoản 2, Điều 61, Luật Thực hành tiết kiệm, chống lãng phí quy định người đứng đầu doanh nghiệp nhà nước có trách nhiệm: “Xây dựng, đăng ký với chủ sở hữu mục tiêu, chỉ tiêu cụ thể về tiết kiệm, tiết giảm chi phí sản xuất, kinh doanh hàng năm và dài hạn của doanh nghiệp”.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "0",
+                            "correctRespondentCount": "0",
+                            "type": 1,
+                            "createdAt": "2026-01-27T03:35:04.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-27T03:35:04.000Z",
+                            "answers": [
+                                {
+                                    "id": 293731,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Chủ động quyết định các mục tiêu, chỉ tiêu tiết kiệm của doanh nghiệp trên cơ sở tình hình sản xuất, kinh doanh thực tế mà không bắt buộc phải đăng ký với chủ sở hữu.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169796,
+                                    "createdAt": "2026-01-27T03:35:04.000Z",
+                                    "updatedAt": "2026-01-27T03:35:04.000Z"
+                                },
+                                {
+                                    "id": 293732,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Xây dựng, đăng ký với chủ sở hữu mục tiêu, chỉ tiêu cụ thể về tiết kiệm, tiết giảm chi phí sản xuất, kinh doanh hàng năm và dài hạn.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 169796,
+                                    "createdAt": "2026-01-27T03:35:04.000Z",
+                                    "updatedAt": "2026-01-27T03:35:04.000Z"
+                                },
+                                {
+                                    "id": 293733,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Công khai các biện pháp, chỉ tiêu tiết kiệm trong phạm vi đội ngũ lãnh đạo, quản lý chủ chốt của doanh nghiệp để thuận tiện cho công tác điều hành.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169796,
+                                    "createdAt": "2026-01-27T03:35:04.000Z",
+                                    "updatedAt": "2026-01-27T03:35:04.000Z"
+                                },
+                                {
+                                    "id": 293734,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Trường hợp doanh nghiệp hoạt động có lãi thì không bắt buộc phải báo cáo riêng kết quả thực hiện mục tiêu, chỉ tiêu tiết kiệm.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169796,
+                                    "createdAt": "2026-01-27T03:35:04.000Z",
+                                    "updatedAt": "2026-01-27T03:35:04.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 169797,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]:</span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \"> Đâu là hành vi gây lãng phí trong quản lý, sử dụng vốn nhà nước tại doanh nghiệp theo Luật Thực hành tiết kiệm, chống lãng phí?</span>",
+                            "categoryId": 2357,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Giải thích<br/>Chọn đáp án b. Bởi: Căn cứ Điểm c, Khoản 1, Điều 62, Luật Thực hành tiết kiệm, chống lãng phí quy định hành vi gây lãng phí là: “Trích lập và quản lý, sử dụng các quỹ không đúng mục đích, chế độ do cơ quan nhà nước có thẩm quyền ban hành”. Các đáp án còn lại là việc làm đúng pháp luật.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "0",
+                            "correctRespondentCount": "0",
+                            "type": 1,
+                            "createdAt": "2026-01-27T03:35:04.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-27T03:35:04.000Z",
+                            "answers": [
+                                {
+                                    "id": 293735,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Quản lý, sử dụng vốn nhà nước mang lại hiệu quả kinh tế cao và bảo toàn được vốn.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169797,
+                                    "createdAt": "2026-01-27T03:35:04.000Z",
+                                    "updatedAt": "2026-01-27T03:35:04.000Z"
+                                },
+                                {
+                                    "id": 293736,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Trích lập và quản lý, sử dụng các quỹ không đúng mục đích, chế độ do cơ quan nhà nước có thẩm quyền ban hành.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 169797,
+                                    "createdAt": "2026-01-27T03:35:04.000Z",
+                                    "updatedAt": "2026-01-27T03:35:04.000Z"
+                                },
+                                {
+                                    "id": 293737,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Sử dụng tài sản nhà nước đúng mục đích ghi trong quyết định giao tài sản.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169797,
+                                    "createdAt": "2026-01-27T03:35:04.000Z",
+                                    "updatedAt": "2026-01-27T03:35:04.000Z"
+                                },
+                                {
+                                    "id": 293738,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Tổ chức xây dựng đầy đủ các giải pháp thực hiện mục tiêu tiết kiệm trong quản lý vốn.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169797,
+                                    "createdAt": "2026-01-27T03:35:04.000Z",
+                                    "updatedAt": "2026-01-27T03:35:04.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 169798,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]:</span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \"> Theo Luật Thực hành tiết kiệm, chống lãng phí, trường hợp người đại diện vốn nhà nước không thực hiện đúng quy định giám sát để xảy ra lãng phí thì bị xử lý như thế nào?</span>",
+                            "categoryId": 2357,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Giải thích<br/>Chọn đáp án b. Bởi: Căn cứ Khoản 2, Điều 62, Luật Thực hành tiết kiệm, chống lãng phí quy định: “Người đại diện theo ủy quyền đối với phần vốn góp của Nhà nước tại doanh nghiệp không thực hiện hoặc thực hiện không đúng quy định... để xảy ra lãng phí thì xử lý như sau: a) Có trách nhiệm giải trình theo yêu cầu của chủ sở hữu; b) Tùy theo mức độ vi phạm bị xử lý kỷ luật hoặc truy cứu trách nhiệm hình sự theo quy định của pháp luật”.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "0",
+                            "correctRespondentCount": "0",
+                            "type": 1,
+                            "createdAt": "2026-01-27T03:35:04.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-27T03:35:04.000Z",
+                            "answers": [
+                                {
+                                    "id": 293739,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Bị xử phạt vi phạm hành chính theo quy định và tiếp tục thực hiện nhiệm vụ đại diện vốn nhà nước tại doanh nghiệp.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169798,
+                                    "createdAt": "2026-01-27T03:35:04.000Z",
+                                    "updatedAt": "2026-01-27T03:35:04.000Z"
+                                },
+                                {
+                                    "id": 293740,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Có trách nhiệm giải trình theo yêu cầu của chủ sở hữu; tùy mức độ vi phạm bị xử lý kỷ luật hoặc truy cứu trách nhiệm hình sự.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 169798,
+                                    "createdAt": "2026-01-27T03:35:04.000Z",
+                                    "updatedAt": "2026-01-27T03:35:04.000Z"
+                                },
+                                {
+                                    "id": 293741,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Được xem xét miễn trừ trách nhiệm trong trường hợp lãng phí phát sinh do biến động khách quan của thị trường và không xuất phát từ ý chí chủ quan của người đại diện.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169798,
+                                    "createdAt": "2026-01-27T03:35:04.000Z",
+                                    "updatedAt": "2026-01-27T03:35:04.000Z"
+                                },
+                                {
+                                    "id": 293742,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Chỉ bị xử lý trong trường hợp người đại diện trực tiếp ký quyết định hoặc phê duyệt hành vi dẫn đến lãng phí tại doanh nghiệp.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169798,
+                                    "createdAt": "2026-01-27T03:35:04.000Z",
+                                    "updatedAt": "2026-01-27T03:35:04.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 169799,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]:</span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \"> Theo Luật Thực hành tiết kiệm, chống lãng phí, đâu là nguyên tắc khi cơ quan thanh tra thực hiện thanh tra về thực hành tiết kiệm, chống lãng phí?</span>",
+                            "categoryId": 2357,
+                            "note": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Giải thích<br/>Chọn đáp án b. Bởi: Căn cứ Điểm a, Khoản 1, Điều 73, Luật Thực hành tiết kiệm, chống lãng phí quy định nguyên tắc: “Thanh tra thực hành tiết kiệm, chống lãng phí được thực hiện trên cơ sở quy định của pháp luật và định mức, tiêu chuẩn, chế độ do cơ quan có thẩm quyền ban hành”. Đáp án a sai vì vi phạm điểm b; đáp án c sai vì vi phạm điểm c; đáp án d sai vì vi phạm khoản 3 cùng Điều này.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "0",
+                            "correctRespondentCount": "0",
+                            "type": 1,
+                            "createdAt": "2026-01-27T03:35:04.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-27T03:35:04.000Z",
+                            "answers": [
+                                {
+                                    "id": 293743,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Trong quá trình thanh tra, cơ quan thanh tra được quyền tạm thời đình chỉ hoạt động thường xuyên của cơ quan, tổ chức được thanh tra để phục vụ việc kiểm tra, đối chiếu số liệu.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169799,
+                                    "createdAt": "2026-01-27T03:35:04.000Z",
+                                    "updatedAt": "2026-01-27T03:35:04.000Z"
+                                },
+                                {
+                                    "id": 293744,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Thanh tra thực hành tiết kiệm, chống lãng phí được thực hiện trên cơ sở quy định của pháp luật và định mức, tiêu chuẩn, chế độ.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 169799,
+                                    "createdAt": "2026-01-27T03:35:04.000Z",
+                                    "updatedAt": "2026-01-27T03:35:04.000Z"
+                                },
+                                {
+                                    "id": 293745,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Thanh tra thực hành tiết kiệm, chống lãng phí chỉ được tiến hành theo hình thức đột xuất khi có phản ánh, tố cáo; không thực hiện theo chương trình, kế hoạch đã được phê duyệt.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169799,
+                                    "createdAt": "2026-01-27T03:35:04.000Z",
+                                    "updatedAt": "2026-01-27T03:35:04.000Z"
+                                },
+                                {
+                                    "id": 293746,
+                                    "answer": "<span style=\"font-size:16px;text-align:left;vertical-align:top;\">Kết luận thanh tra về thực hành tiết kiệm, chống lãng phí chỉ cần thông báo trong nội bộ đơn vị được thanh tra để phục vụ công tác chấn chỉnh, không bắt buộc phải công khai.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 169799,
+                                    "createdAt": "2026-01-27T03:35:04.000Z",
+                                    "updatedAt": "2026-01-27T03:35:04.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        }
+                    ]
+                },
+                "exam": {
+                    "data": {
+                        "id": 2361,
+                        "name": "Đề 02: Luật Thực hành tiết kiệm, chống lãng phí",
+                        "duration": 50,
+                        "retry": 3,
+                        "referencePoint": 5,
+                        "type": 1,
+                        "createdAt": "2026-01-27T03:38:23.000Z",
+                        "updatedAt": "2026-01-27T03:51:40.000Z"
+                    }
+                }
+            }
+        },
+        "testSessionAnswers": []
+    }
+}

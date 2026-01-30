@@ -1,0 +1,2464 @@
+{
+    "data": {
+        "id": 164199,
+        "userId": 14083,
+        "examPackId": 643,
+        "examId": 2266,
+        "examCodeId": 164536,
+        "score": 0,
+        "correctQuestion": 0,
+        "inCorrectQuestion": 0,
+        "skipQuestion": 0,
+        "type": 1,
+        "status": 0,
+        "startTime": "2026-01-30T19:32:43.000Z",
+        "completedAt": null,
+        "createdAt": "2026-01-30T19:32:43.000Z",
+        "updatedAt": "2026-01-30T19:32:43.000Z",
+        "user": {
+            "id": 14083,
+            "email": "nguyennhattruong@gmail.com",
+            "username": null,
+            "code": "586280",
+            "phoneNumber": "",
+            "firstName": null,
+            "lastName": null,
+            "image": null,
+            "position": null,
+            "organization": null,
+            "status": 1,
+            "verifyToken": null,
+            "verified": false,
+            "verifiedAt": null,
+            "source": 1,
+            "deletedAt": null,
+            "createdAt": "2026-01-30T19:31:03.000Z",
+            "updatedAt": "2026-01-30T19:31:03.000Z"
+        },
+        "examCode": {
+            "data": {
+                "id": 164536,
+                "examId": 2266,
+                "createdAt": "2026-01-30T19:32:43.000Z",
+                "updatedAt": "2026-01-30T19:32:43.000Z",
+                "questions": {
+                    "data": [
+                        {
+                            "id": 166589,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]: </span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \">Theo Luật Thanh tra số 84/2025/QH15, ai là người thực hiện việc thẩm định dự thảo kết luận thanh tra?</span>",
+                            "categoryId": 2333,
+                            "note": "<span style=\"font-size:16px;vertical-align:middle;\">Giải thích<br/>Chọn đáp án B. Bởi: Căn cứ khoản 2 Điều 35 Luật Thanh tra số 84/2025/QH15 quy định: \"2. Người ra quyết định thanh tra xem xét, phân công đơn vị hoặc cá nhân thực hiện việc thẩm định dự thảo kết luận thanh tra (gọi chung là người thẩm định) để bảo đảm mục đích, yêu cầu và các nội dung theo quyết định thanh tra và kế hoạch tiến hành thanh tra được phê duyệt.\" Phân tích: Việc thẩm định do người ra quyết định thanh tra phân công cho một đơn vị hoặc cá nhân cụ thể, gọi chung là \"người thẩm định\".</span>",
+                            "readingContentId": null,
+                            "respondentCount": "20",
+                            "correctRespondentCount": "15",
+                            "type": 1,
+                            "createdAt": "2026-01-16T07:57:13.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-30T16:35:54.000Z",
+                            "answers": [
+                                {
+                                    "id": 280863,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Người ra quyết định thanh tra.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166589,
+                                    "createdAt": "2026-01-16T07:57:13.000Z",
+                                    "updatedAt": "2026-01-16T07:57:13.000Z"
+                                },
+                                {
+                                    "id": 280864,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Cơ quan, tổ chức, cá nhân do người ra quyết định thanh tra giao.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 166589,
+                                    "createdAt": "2026-01-16T07:57:13.000Z",
+                                    "updatedAt": "2026-01-16T07:57:13.000Z"
+                                },
+                                {
+                                    "id": 280865,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Trưởng đoàn thanh tra và các thành viên.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166589,
+                                    "createdAt": "2026-01-16T07:57:13.000Z",
+                                    "updatedAt": "2026-01-16T07:57:13.000Z"
+                                },
+                                {
+                                    "id": 280866,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Thủ trưởng cơ quan quản lý nhà nước cùng cấp.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166589,
+                                    "createdAt": "2026-01-16T07:57:13.000Z",
+                                    "updatedAt": "2026-01-16T07:57:13.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 166590,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]: </span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \">Theo Luật Thanh tra số 84/2025/QH15, trong thời hạn bao nhiêu ngày kể từ ngày nhận được dự thảo kết luận thanh tra, người ra quyết định thanh tra phải ký ban hành kết luận thanh tra?</span>",
+                            "categoryId": 2333,
+                            "note": "<span style=\"font-size:16px;vertical-align:middle;\">Giải thích<br/>Chọn đáp án B. Bởi: Căn cứ khoản 1 Điều 36 Luật Thanh tra số 84/2025/QH15 quy định: \"1. Trong thời hạn 15 ngày kể từ ngày nhận được dự thảo kết luận thanh tra, người ra quyết định thanh tra ký ban hành kết luận thanh tra và chịu trách nhiệm về kết luận, kiến nghị của mình.\" Phân tích: Thời hạn để người ra quyết định thanh tra xem xét và ký ban hành kết luận là 15 ngày.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "22",
+                            "correctRespondentCount": "15",
+                            "type": 1,
+                            "createdAt": "2026-01-16T07:57:13.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-30T16:36:04.000Z",
+                            "answers": [
+                                {
+                                    "id": 280867,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">10 ngày.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166590,
+                                    "createdAt": "2026-01-16T07:57:13.000Z",
+                                    "updatedAt": "2026-01-16T07:57:13.000Z"
+                                },
+                                {
+                                    "id": 280868,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">15 ngày.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 166590,
+                                    "createdAt": "2026-01-16T07:57:13.000Z",
+                                    "updatedAt": "2026-01-16T07:57:13.000Z"
+                                },
+                                {
+                                    "id": 280869,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">20 ngày.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166590,
+                                    "createdAt": "2026-01-16T07:57:13.000Z",
+                                    "updatedAt": "2026-01-16T07:57:13.000Z"
+                                },
+                                {
+                                    "id": 280870,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">30 ngày.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166590,
+                                    "createdAt": "2026-01-16T07:57:13.000Z",
+                                    "updatedAt": "2026-01-16T07:57:13.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 166591,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]: </span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \">Theo Luật Thanh tra số 84/2025/QH15, nội dung nào sau đây không bắt buộc phải có trong kết luận thanh tra?</span>",
+                            "categoryId": 2333,
+                            "note": "<span style=\"font-size:16px;vertical-align:middle;\">Giải thích<br/>Chọn đáp án D. Bởi: Căn cứ khoản 2 Điều 36 Luật Thanh tra số 84/2025/QH15 quy định về nội dung kết luận thanh tra: \"a) Đánh giá việc thực hiện chính sách, pháp luật, nhiệm vụ, quyền hạn được giao của đối tượng thanh tra; b) Kết luận về nội dung thanh tra; c) Xác định rõ tính chất, mức độ, hậu quả của hành vi vi phạm; nguyên nhân, trách nhiệm của cơ quan, tổ chức, cá nhân có hành vi vi phạm pháp luật (nếu có); d) Biện pháp xử lý theo thẩm quyền và kiến nghị giải pháp, biện pháp xử lý, khắc phục hậu quả (nếu có) để bảo đảm lợi ích của Nhà nước, quyền và lợi ích hợp pháp của đối tượng thanh tra, của cơ quan, tổ chức, cá nhân có liên quan; đ) Hạn chế, bất cập của cơ chế quản lý, chính sách, pháp luật có liên quan và kiến nghị khắc phục.\" Phân tích: Kết luận thanh tra là văn bản của cơ quan thanh tra. Ý kiến giải trình của đối tượng thanh tra được xem xét trong quá trình thanh tra nhưng không phải là một mục bắt buộc trong văn bản kết luận cuối cùng.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "23",
+                            "correctRespondentCount": "15",
+                            "type": 1,
+                            "createdAt": "2026-01-16T07:57:13.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-30T16:36:44.000Z",
+                            "answers": [
+                                {
+                                    "id": 280871,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Đánh giá việc thực hiện chính sách, pháp luật, nhiệm vụ, quyền hạn được giao của đối tượng thanh tra.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166591,
+                                    "createdAt": "2026-01-16T07:57:13.000Z",
+                                    "updatedAt": "2026-01-16T07:57:13.000Z"
+                                },
+                                {
+                                    "id": 280872,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Kết luận về nội dung thanh tra.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166591,
+                                    "createdAt": "2026-01-16T07:57:13.000Z",
+                                    "updatedAt": "2026-01-16T07:57:13.000Z"
+                                },
+                                {
+                                    "id": 280873,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Hạn chế, bất cập của cơ chế quản lý, chính sách, pháp luật có liên quan.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166591,
+                                    "createdAt": "2026-01-16T07:57:13.000Z",
+                                    "updatedAt": "2026-01-16T07:57:13.000Z"
+                                },
+                                {
+                                    "id": 280874,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Ý kiến giải trình của đối tượng thanh tra.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 166591,
+                                    "createdAt": "2026-01-16T07:57:13.000Z",
+                                    "updatedAt": "2026-01-16T07:57:13.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 166592,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]: </span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \">Theo Luật Thanh tra số 84/2025/QH15, hãy cho biết thời hạn ban hành kết luận thanh tra dối với dự thảo kết luận thanh tra của Thanh tra Chính phủ?</span>",
+                            "categoryId": 2333,
+                            "note": "<span style=\"font-size:16px;vertical-align:middle;\">Giải thích<br/>Chọn đáp án D. Bởi: Căn cứ khoản 1 Điều 36 Luật Thanh tra số 84/2025/QH15 quy định: <br/>1. Trong thời hạn 15 ngày kể từ ngày nhận được dự thảo kết luận thanh tra, người ra quyết định thanh tra ký ban hành kết luận thanh tra và chịu trách nhiệm về kết luận, kiến nghị của mình. Đối với dự thảo kết luận thanh tra của Thanh tra Chính phủ, thời hạn có thể dài hơn nhưng không quá 30 ngày kể từ ngày nhận được dự thảo kết luận thanh tra.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "19",
+                            "correctRespondentCount": "14",
+                            "type": 1,
+                            "createdAt": "2026-01-16T07:57:13.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-30T16:37:02.000Z",
+                            "answers": [
+                                {
+                                    "id": 280875,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Không quá 10 ngày</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166592,
+                                    "createdAt": "2026-01-16T07:57:13.000Z",
+                                    "updatedAt": "2026-01-16T07:57:13.000Z"
+                                },
+                                {
+                                    "id": 280876,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Không quá 15 ngày</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166592,
+                                    "createdAt": "2026-01-16T07:57:13.000Z",
+                                    "updatedAt": "2026-01-16T07:57:13.000Z"
+                                },
+                                {
+                                    "id": 280877,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Không quá 20 ngày</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166592,
+                                    "createdAt": "2026-01-16T07:57:13.000Z",
+                                    "updatedAt": "2026-01-16T07:57:13.000Z"
+                                },
+                                {
+                                    "id": 280878,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Không quá 30 ngày</span>",
+                                    "isCorrect": true,
+                                    "questionId": 166592,
+                                    "createdAt": "2026-01-16T07:57:13.000Z",
+                                    "updatedAt": "2026-01-16T07:57:13.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 166593,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]: </span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \">Theo Luật Thanh tra số 84/2025/QH15, đâu không phải là hình thức công khai kết luận thanh tra?</span>",
+                            "categoryId": 2333,
+                            "note": "<span style=\"font-size:16px;vertical-align:middle;\">Giải thích<br/>Chọn đáp án C. Bởi: Căn cứ khoản 3 Điều 37 Luật Thanh tra số 84/2025/QH15 quy định các hình thức công khai: \"a) Tổ chức cuộc họp công bố kết luận thanh tra với thành phần bao gồm người ra quyết định thanh tra, Đoàn thanh tra, đối tượng thanh tra, cơ quan, tổ chức, cá nhân có liên quan hoặc tổ chức họp báo; b) Đăng tải trên Cổng thông tin điện tử của cơ quan thanh tra hoặc cơ quan quản lý nhà nước cùng cấp; c) Thông báo trên ít nhất một phương tiện thông tin đại chúng tại nơi tiến hành thanh tra; d) Niêm yết tại trụ sở làm việc của cơ quan, tổ chức là đối tượng thanh tra.\" Phân tích: Việc \"gửi kết luận thanh tra\" là thủ tục, không được liệt kê là một \"hình thức công khai\" theo quy định tại khoản này.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "18",
+                            "correctRespondentCount": "14",
+                            "type": 1,
+                            "createdAt": "2026-01-16T07:57:13.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-30T16:37:20.000Z",
+                            "answers": [
+                                {
+                                    "id": 280879,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Tổ chức cuộc họp công bố kết luận thanh tra.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166593,
+                                    "createdAt": "2026-01-16T07:57:13.000Z",
+                                    "updatedAt": "2026-01-16T07:57:13.000Z"
+                                },
+                                {
+                                    "id": 280880,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Đăng tải trên Cổng thông tin điện tử của cơ quan thanh tra hoặc cơ quan quản lý nhà nước cùng cấp.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166593,
+                                    "createdAt": "2026-01-16T07:57:13.000Z",
+                                    "updatedAt": "2026-01-16T07:57:13.000Z"
+                                },
+                                {
+                                    "id": 280881,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Gửi kết luận thanh tra cho đối tượng thanh tra và các cơ quan liên quan.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 166593,
+                                    "createdAt": "2026-01-16T07:57:13.000Z",
+                                    "updatedAt": "2026-01-16T07:57:13.000Z"
+                                },
+                                {
+                                    "id": 280882,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Niêm yết tại trụ sở làm việc của cơ quan, tổ chức là đối tượng thanh tra.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166593,
+                                    "createdAt": "2026-01-16T07:57:13.000Z",
+                                    "updatedAt": "2026-01-16T07:57:13.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 166594,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]: </span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \">Theo Luật Thanh tra số 84/2025/QH15, người ra quyết định thanh tra có quyền hạn nào sau đây?</span>",
+                            "categoryId": 2333,
+                            "note": "<span style=\"font-size:16px;vertical-align:middle;\">Giải thích<br/>Chọn đáp án A. Bởi: Căn cứ Điều 38 Luật Thanh tra số 84/2025/QH15 quy định quyền hạn của người ra quyết định thanh tra: <br/>i) Kiến nghị người có thẩm quyền tạm đình chỉ việc thi hành quyết định kỷ luật, chuyển công tác, cho thôi việc, cho nghỉ hưu đối với đối tượng thanh tra hoặc người cung cấp thông tin, tài liệu về nội dung thanh tra nếu có căn cứ cho rằng việc thi hành quyết định đó gây trở ngại cho hoạt động thanh tra;<br/>k) Kiến nghị người có thẩm quyền tạm đình chỉ công tác và xử lý đối với cán bộ, công chức, viên chức cố ý cản trở hoạt động thanh tra hoặc không thực hiện yêu cầu, kiến nghị, quyết định thanh tra;<br/>=> Có quyền kiến nghị để tạm đình chỉ chứ không phải tự thực hiện công tác này. Do đó đáp án B,C là sai. <br/>Đáp án D là nhiệm vụ, quyền hạn của Trưởng đoàn thanh tra.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "32",
+                            "correctRespondentCount": "13",
+                            "type": 1,
+                            "createdAt": "2026-01-16T07:57:13.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-30T16:39:31.000Z",
+                            "answers": [
+                                {
+                                    "id": 280883,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Quyết định trưng cầu giám định về vấn đề liên quan đến nội dung thanh tra.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 166594,
+                                    "createdAt": "2026-01-16T07:57:13.000Z",
+                                    "updatedAt": "2026-01-16T07:57:13.000Z"
+                                },
+                                {
+                                    "id": 280884,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Tạm đình chỉ việc thi hành quyết định kỷ luật, chuyển công tác, cho thôi việc, cho nghỉ hưu đối với đối tượng thanh tra hoặc người cung cấp thông tin, tài liệu về nội dung thanh tra nếu có căn cứ cho rằng việc thi hành quyết định đó gây trở ngại cho hoạt động thanh tra</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166594,
+                                    "createdAt": "2026-01-16T07:57:13.000Z",
+                                    "updatedAt": "2026-01-16T07:57:13.000Z"
+                                },
+                                {
+                                    "id": 280885,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Tạm đình chỉ công tác và xử lý đối với cán bộ, công chức, viên chức cố ý cản trở hoạt động thanh tra hoặc không thực hiện yêu cầu, kiến nghị, quyết định thanh tra.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166594,
+                                    "createdAt": "2026-01-16T07:57:13.000Z",
+                                    "updatedAt": "2026-01-16T07:57:13.000Z"
+                                },
+                                {
+                                    "id": 280886,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Tổ chức, chỉ đạo các thành viên Đoàn thanh tra thực hiện đúng nội dung quyết định thanh tra, kế hoạch tiến hành thanh tra đã được phê duyệt</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166594,
+                                    "createdAt": "2026-01-16T07:57:13.000Z",
+                                    "updatedAt": "2026-01-16T07:57:13.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 166595,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]: </span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \">Theo Luật Thanh tra số 84/2025/QH15, ai có quyền quyết định tạm giữ tài sản, giấy phép, chứng chỉ hành nghề bị sử dụng trái pháp luật?</span>",
+                            "categoryId": 2333,
+                            "note": "<span style=\"font-size:16px;vertical-align:middle;\">Giải thích<br/>Chọn đáp án A. Bởi: Căn cứ điểm d khoản 1 Điều 38 Luật Thanh tra số 84/2025/QH15 quy định người ra quyết định thanh tra có quyền hạn: \"d) Quyết định hoặc yêu cầu người có thẩm quyền quyết định tạm giữ tài sản, giấy phép, chứng chỉ hành nghề bị sử dụng trái pháp luật;\" Phân tích: Thẩm quyền này thuộc về người ra quyết định thanh tra, thể hiện vai trò chỉ đạo và quyết định các biện pháp ngăn chặn quan trọng.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "22",
+                            "correctRespondentCount": "18",
+                            "type": 1,
+                            "createdAt": "2026-01-16T07:57:14.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-30T16:40:18.000Z",
+                            "answers": [
+                                {
+                                    "id": 280887,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Người ra quyết định thanh tra.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 166595,
+                                    "createdAt": "2026-01-16T07:57:14.000Z",
+                                    "updatedAt": "2026-01-16T07:57:14.000Z"
+                                },
+                                {
+                                    "id": 280888,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Trưởng đoàn thanh tra.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166595,
+                                    "createdAt": "2026-01-16T07:57:14.000Z",
+                                    "updatedAt": "2026-01-16T07:57:14.000Z"
+                                },
+                                {
+                                    "id": 280889,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Thành viên đoàn thanh tra.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166595,
+                                    "createdAt": "2026-01-16T07:57:14.000Z",
+                                    "updatedAt": "2026-01-16T07:57:14.000Z"
+                                },
+                                {
+                                    "id": 280890,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Thủ trưởng cơ quan thanh tra.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166595,
+                                    "createdAt": "2026-01-16T07:57:14.000Z",
+                                    "updatedAt": "2026-01-16T07:57:14.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 166596,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]: </span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \">Theo Luật Thanh tra số 84/2025/QH15, Trưởng đoàn thanh tra có quyền hạn nào sau đây?</span>",
+                            "categoryId": 2333,
+                            "note": "<span style=\"font-size:16px;vertical-align:middle;\">Giải thích<br/>Chọn đáp án B. Bởi: Căn cứ điểm e khoản 1 Điều 39 Luật Thanh tra số 84/2025/QH15 quy định Trưởng đoàn thanh tra có quyền hạn: \"e) Quyết định niêm phong tài liệu;\" Phân tích: Niêm phong tài liệu là một biện pháp nghiệp vụ trực tiếp tại hiện trường, do đó được giao cho Trưởng đoàn thanh tra quyết định. Các quyền hạn ở đáp án a, c, d thuộc về người ra quyết định thanh tra.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "22",
+                            "correctRespondentCount": "18",
+                            "type": 1,
+                            "createdAt": "2026-01-16T07:57:14.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-30T16:40:44.000Z",
+                            "answers": [
+                                {
+                                    "id": 280891,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Quyết định thu hồi tài sản bị chiếm đoạt, chiếm giữ, sử dụng trái pháp luật hoặc bị thất thoát.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166596,
+                                    "createdAt": "2026-01-16T07:57:14.000Z",
+                                    "updatedAt": "2026-01-16T07:57:14.000Z"
+                                },
+                                {
+                                    "id": 280892,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Quyết định niêm phong tài liệu của đối tượng thanh tra.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 166596,
+                                    "createdAt": "2026-01-16T07:57:14.000Z",
+                                    "updatedAt": "2026-01-16T07:57:14.000Z"
+                                },
+                                {
+                                    "id": 280893,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Đình chỉ, thay đổi Trưởng đoàn thanh tra, thành viên Đoàn thanh tra.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166596,
+                                    "createdAt": "2026-01-16T07:57:14.000Z",
+                                    "updatedAt": "2026-01-16T07:57:14.000Z"
+                                },
+                                {
+                                    "id": 280894,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Ban hành kết luận thanh tra.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166596,
+                                    "createdAt": "2026-01-16T07:57:14.000Z",
+                                    "updatedAt": "2026-01-16T07:57:14.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 166597,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]: </span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \">Theo Luật Thanh tra số 84/2025/QH15, ai có quyền yêu cầu đối tượng thanh tra cung cấp thông tin, tài liệu liên quan đến nội dung thanh tra?</span>",
+                            "categoryId": 2333,
+                            "note": "<span style=\"font-size:16px;vertical-align:middle;\">Giải thích<br/>Chọn đáp án C. Bởi:<br/>Căn cứ điểm c khoản 1 Điều 39 Luật Thanh tra số 84/2025/QH15, Trưởng đoàn thanh tra có quyền: \"Yêu cầu đối tượng thanh tra cung cấp thông tin, tài liệu và báo cáo, giải trình về vấn đề liên quan đến nội dung thanh tra...\"<br/>Căn cứ điểm b khoản 1 Điều 40 Luật Thanh tra số 84/2025/QH15, thành viên Đoàn thanh tra có quyền: \"Yêu cầu đối tượng thanh tra cung cấp thông tin, tài liệu và báo cáo, giải trình về vấn đề liên quan đến nội dung thanh tra...\" Phân tích: Cả Trưởng đoàn và thành viên Đoàn thanh tra đều có quyền này để thực hiện nhiệm vụ thu thập chứng cứ.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "15",
+                            "correctRespondentCount": "14",
+                            "type": 1,
+                            "createdAt": "2026-01-16T07:57:14.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-30T16:40:54.000Z",
+                            "answers": [
+                                {
+                                    "id": 280895,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Chỉ người ra quyết định thanh tra.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166597,
+                                    "createdAt": "2026-01-16T07:57:14.000Z",
+                                    "updatedAt": "2026-01-16T07:57:14.000Z"
+                                },
+                                {
+                                    "id": 280896,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Chỉ Trưởng đoàn thanh tra.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166597,
+                                    "createdAt": "2026-01-16T07:57:14.000Z",
+                                    "updatedAt": "2026-01-16T07:57:14.000Z"
+                                },
+                                {
+                                    "id": 280897,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Cả Trưởng đoàn thanh tra và thành viên Đoàn thanh tra.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 166597,
+                                    "createdAt": "2026-01-16T07:57:14.000Z",
+                                    "updatedAt": "2026-01-16T07:57:14.000Z"
+                                },
+                                {
+                                    "id": 280898,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Chỉ Thủ trưởng cơ quan thanh tra.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166597,
+                                    "createdAt": "2026-01-16T07:57:14.000Z",
+                                    "updatedAt": "2026-01-16T07:57:14.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 166598,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]: </span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \">Theo Luật Thanh tra số 84/2025/QH15, thành viên Đoàn thanh tra có nhiệm vụ, quyền hạn nào sau đây?</span>",
+                            "categoryId": 2333,
+                            "note": "<span style=\"font-size:16px;vertical-align:middle;\">Giải thích<br/>Chọn đáp án C. Bởi: Căn cứ điểm d khoản 1 Điều 40 Luật Thanh tra số 84/2025/QH15 quy định nhiệm vụ của thành viên Đoàn thanh tra: \"d) Báo cáo Trưởng đoàn thanh tra về kết quả thực hiện nhiệm vụ được giao, chịu trách nhiệm trước Trưởng đoàn thanh tra và trước pháp luật về tính chính xác, trung thực, khách quan của nội dung đã báo cáo;\" Phân tích: Đây là nhiệm vụ cơ bản, thể hiện cơ chế làm việc và trách nhiệm của thành viên trong Đoàn thanh tra. Các quyền hạn ở các đáp án khác thuộc về Trưởng đoàn hoặc người ra quyết định thanh tra.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "20",
+                            "correctRespondentCount": "15",
+                            "type": 1,
+                            "createdAt": "2026-01-16T07:57:14.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-30T16:41:05.000Z",
+                            "answers": [
+                                {
+                                    "id": 280899,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Ra quyết định xử phạt vi phạm hành chính.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166598,
+                                    "createdAt": "2026-01-16T07:57:14.000Z",
+                                    "updatedAt": "2026-01-16T07:57:14.000Z"
+                                },
+                                {
+                                    "id": 280900,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Quyết định kiểm kê tài sản.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166598,
+                                    "createdAt": "2026-01-16T07:57:14.000Z",
+                                    "updatedAt": "2026-01-16T07:57:14.000Z"
+                                },
+                                {
+                                    "id": 280901,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Báo cáo Trưởng đoàn thanh tra về kết quả thực hiện nhiệm vụ được giao.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 166598,
+                                    "createdAt": "2026-01-16T07:57:14.000Z",
+                                    "updatedAt": "2026-01-16T07:57:14.000Z"
+                                },
+                                {
+                                    "id": 280902,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Yêu cầu cơ quan có thẩm quyền tạm giữ tài sản.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166598,
+                                    "createdAt": "2026-01-16T07:57:14.000Z",
+                                    "updatedAt": "2026-01-16T07:57:14.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 166599,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]: </span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \">Theo Luật Thanh tra số 84/2025/QH15, điền từ còn thiếu vào chỗ trống sau: “Thời hạn niêm phong tài liệu không được __________ thời gian tiến hành thanh tra trực tiếp tại nơi được thanh tra. Việc khai thác, sử dụng tài liệu niêm phong phải được sự đồng ý của ____________.”</span>",
+                            "categoryId": 2333,
+                            "note": "<span style=\"font-size:16px;vertical-align:middle;\">Giải thích<br/>Chọn đáp án B. Bởi: Căn cứ khoản 2 Điều 43 Luật Thanh tra quy định:<br/>2. Thời hạn niêm phong tài liệu không được dài hơn thời gian tiến hành thanh tra trực tiếp tại nơi được thanh tra. Việc khai thác, sử dụng tài liệu niêm phong phải được sự đồng ý của Trưởng đoàn thanh tra.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "21",
+                            "correctRespondentCount": "18",
+                            "type": 1,
+                            "createdAt": "2026-01-16T07:57:14.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-30T16:41:37.000Z",
+                            "answers": [
+                                {
+                                    "id": 280903,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Dài hơn, Người ra quyết định thanh tra</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166599,
+                                    "createdAt": "2026-01-16T07:57:14.000Z",
+                                    "updatedAt": "2026-01-16T07:57:14.000Z"
+                                },
+                                {
+                                    "id": 280904,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Dài hơn; Trưởng đoàn thanh tra</span>",
+                                    "isCorrect": true,
+                                    "questionId": 166599,
+                                    "createdAt": "2026-01-16T07:57:14.000Z",
+                                    "updatedAt": "2026-01-16T07:57:14.000Z"
+                                },
+                                {
+                                    "id": 280905,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Ngắn hơn, Người ra quyết định thanh tra</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166599,
+                                    "createdAt": "2026-01-16T07:57:14.000Z",
+                                    "updatedAt": "2026-01-16T07:57:14.000Z"
+                                },
+                                {
+                                    "id": 280906,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Ngắn hơn; Trưởng đoàn thanh tra</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166599,
+                                    "createdAt": "2026-01-16T07:57:14.000Z",
+                                    "updatedAt": "2026-01-16T07:57:14.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 166600,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]: </span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \">Theo Luật Thanh tra số 84/2025/QH15, tài liệu niêm phong phải được lập thành biên bản có chữ ký của ai?</span>",
+                            "categoryId": 2333,
+                            "note": "<span style=\"font-size:16px;vertical-align:middle;\">Giải thích<br/>Chọn đáp án A. Bởi: Căn cứ khoản 1 Điều 43 Luật Thanh tra số 84/2025/QH15 quy định: \"...Tài liệu niêm phong phải được lập thành biên bản có chữ ký của đại diện Đoàn thanh tra và đại diện đối tượng thanh tra.\" Phân tích: Việc ký biên bản của cả hai bên đảm bảo tính khách quan, minh bạch và là bằng chứng pháp lý cho việc niêm phong.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "15",
+                            "correctRespondentCount": "11",
+                            "type": 1,
+                            "createdAt": "2026-01-16T07:57:14.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-30T16:42:35.000Z",
+                            "answers": [
+                                {
+                                    "id": 280907,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Đại diện Đoàn thanh tra và đại diện đối tượng thanh tra.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 166600,
+                                    "createdAt": "2026-01-16T07:57:14.000Z",
+                                    "updatedAt": "2026-01-16T07:57:14.000Z"
+                                },
+                                {
+                                    "id": 280908,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Trưởng đoàn thanh tra và thủ trưởng cơ quan của đối tượng thanh tra.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166600,
+                                    "createdAt": "2026-01-16T07:57:14.000Z",
+                                    "updatedAt": "2026-01-16T07:57:14.000Z"
+                                },
+                                {
+                                    "id": 280909,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Người ra quyết định niêm phong và người quản lý tài liệu.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166600,
+                                    "createdAt": "2026-01-16T07:57:14.000Z",
+                                    "updatedAt": "2026-01-16T07:57:14.000Z"
+                                },
+                                {
+                                    "id": 280910,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Thành viên đoàn thanh tra, đại diện đối tượng thanh tra và người chứng kiến.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166600,
+                                    "createdAt": "2026-01-16T07:57:14.000Z",
+                                    "updatedAt": "2026-01-16T07:57:14.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 166601,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]: </span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \">Theo Luật Thanh tra số 84/2025/QH15, ai có thẩm quyền quyết định kiểm kê tài sản của đối tượng thanh tra?</span>",
+                            "categoryId": 2333,
+                            "note": "<span style=\"font-size:16px;vertical-align:middle;\">Giải thích<br/>Chọn đáp án B. Bởi: khoản 1 Điều 44 Luật Thanh tra số 84/2025/QH15 quy định: <br/>1. Người ra quyết định thanh tra, Trưởng đoàn thanh tra quyết định kiểm kê tài sản của đối tượng thanh tra có liên quan đến nội dung thanh tra khi phát hiện giữa sổ sách, chứng từ với thực tế có chênh lệch, bất hợp lý hoặc có dấu hiệu, có hành vi chiếm dụng, chiếm đoạt tài sản.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "25",
+                            "correctRespondentCount": "17",
+                            "type": 1,
+                            "createdAt": "2026-01-16T07:57:14.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-30T16:42:48.000Z",
+                            "answers": [
+                                {
+                                    "id": 280911,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Trưởng đoàn thanh tra</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166601,
+                                    "createdAt": "2026-01-16T07:57:14.000Z",
+                                    "updatedAt": "2026-01-16T07:57:14.000Z"
+                                },
+                                {
+                                    "id": 280912,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Người ra quyết định thanh tra, Trưởng đoàn thanh tra</span>",
+                                    "isCorrect": true,
+                                    "questionId": 166601,
+                                    "createdAt": "2026-01-16T07:57:14.000Z",
+                                    "updatedAt": "2026-01-16T07:57:14.000Z"
+                                },
+                                {
+                                    "id": 280913,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Người ra quyết định thanh tra</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166601,
+                                    "createdAt": "2026-01-16T07:57:14.000Z",
+                                    "updatedAt": "2026-01-16T07:57:14.000Z"
+                                },
+                                {
+                                    "id": 280914,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Thành viên đoàn thanh tra</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166601,
+                                    "createdAt": "2026-01-16T07:57:14.000Z",
+                                    "updatedAt": "2026-01-16T07:57:14.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 166602,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]: </span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \">Theo Luật Thanh tra số 84/2025/QH15, kinh phí cho hoạt động trưng cầu giám định do cơ quan nào chi trả?</span>",
+                            "categoryId": 2333,
+                            "note": "<span style=\"font-size:16px;vertical-align:middle;\">Giải thích<br/>Chọn đáp án B. Bởi: Căn cứ khoản 3 Điều 45 Luật Thanh tra số 84/2025/QH15 quy định: \"3. Kinh phí trưng cầu giám định do cơ quan thanh tra chi trả. Trường hợp đối tượng thanh tra có sai phạm thì kinh phí giám định do đối tượng thanh tra chi trả, trừ trường hợp pháp luật có quy định khác.\" Phân tích: Ban đầu, cơ quan thanh tra sẽ chi trả kinh phí này. Nếu sau đó kết luận đối tượng thanh tra có sai phạm, thì đối tượng thanh tra phải hoàn trả lại khoản kinh phí này.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "26",
+                            "correctRespondentCount": "12",
+                            "type": 1,
+                            "createdAt": "2026-01-16T07:57:14.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-30T16:44:31.000Z",
+                            "answers": [
+                                {
+                                    "id": 280915,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Đối tượng thanh tra.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166602,
+                                    "createdAt": "2026-01-16T07:57:14.000Z",
+                                    "updatedAt": "2026-01-16T07:57:14.000Z"
+                                },
+                                {
+                                    "id": 280916,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Cơ quan tiến hành thanh tra.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 166602,
+                                    "createdAt": "2026-01-16T07:57:14.000Z",
+                                    "updatedAt": "2026-01-16T07:57:14.000Z"
+                                },
+                                {
+                                    "id": 280917,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Cơ quan được trưng cầu giám định.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166602,
+                                    "createdAt": "2026-01-16T07:57:14.000Z",
+                                    "updatedAt": "2026-01-16T07:57:14.000Z"
+                                },
+                                {
+                                    "id": 280918,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Ngân sách nhà nước.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166602,
+                                    "createdAt": "2026-01-16T07:57:14.000Z",
+                                    "updatedAt": "2026-01-16T07:57:14.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 166603,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]: </span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \">Theo Luật Thanh tra số 84/2025/QH15, khi phát hiện có hành vi vi phạm gây thiệt hại nghiêm trọng đến lợi ích của Nhà nước, quyền và lợi ích hợp pháp của cơ quan, tổ chức, cá nhân thì ai có quyền ra quyết định đình chỉ hành vi vi phạm?</span>",
+                            "categoryId": 2333,
+                            "note": "<span style=\"font-size:16px;vertical-align:middle;\">Giải thích<br/>Chọn đáp án C. Bởi: Căn cứ khoản 1 Điều 46 Luật Thanh tra số 84/2025/QH15 quy định: \"1. Trong quá trình thanh tra, khi phát hiện có hành vi vi phạm gây thiệt hại nghiêm trọng đến lợi ích của Nhà nước, quyền và lợi ích hợp pháp của cơ quan, tổ chức, cá nhân thì người ra quyết định thanh tra, Trưởng đoàn thanh tra ra quyết định đình chỉ hành vi vi phạm hoặc kiến nghị người có thẩm quyền ra quyết định đình chỉ hành vi vi phạm.\" Phân tích: Cả hai chủ thể là người ra quyết định thanh tra và Trưởng đoàn thanh tra đều có thẩm quyền này.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "28",
+                            "correctRespondentCount": "3",
+                            "type": 1,
+                            "createdAt": "2026-01-16T07:57:14.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-30T16:45:40.000Z",
+                            "answers": [
+                                {
+                                    "id": 280919,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Người ra quyết định thanh tra.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166603,
+                                    "createdAt": "2026-01-16T07:57:14.000Z",
+                                    "updatedAt": "2026-01-16T07:57:14.000Z"
+                                },
+                                {
+                                    "id": 280920,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Trưởng đoàn thanh tra.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 166603,
+                                    "createdAt": "2026-01-16T07:57:14.000Z",
+                                    "updatedAt": "2026-01-16T07:57:14.000Z"
+                                },
+                                {
+                                    "id": 280921,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Cả Người ra quyết định thanh tra và Trưởng đoàn thanh tra.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166603,
+                                    "createdAt": "2026-01-16T07:57:14.000Z",
+                                    "updatedAt": "2026-01-16T07:57:14.000Z"
+                                },
+                                {
+                                    "id": 280922,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Thủ trưởng cơ quan quản lý nhà nước.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166603,
+                                    "createdAt": "2026-01-16T07:57:14.000Z",
+                                    "updatedAt": "2026-01-16T07:57:14.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 166604,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]: </span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \">Theo Luật Thanh tra số 84/2025/QH15, điền từ còn thiếu vào chỗ trống sau: “Trong quá trình thanh tra, khi phát hiện việc sử dụng trái pháp luật tài sản, giấy phép, chứng chỉ hành nghề mà cần phải ngăn chặn ngay hoặc để xác minh tình tiết làm chứng cứ cho việc kết luận, xử lý thì ___________ đề nghị _________ hoặc người có thẩm quyền quyết định tạm giữ tài sản, giấy phép, chứng chỉ hành nghề.”</span>",
+                            "categoryId": 2333,
+                            "note": "<span style=\"font-size:16px;vertical-align:middle;\">Giải thích<br/>Chọn đáp án D. Bởi: Căn cứ khoản 1 Điều 47 Luật Thanh tra số 84/2025/QH15 quy định: <br/>1. Trong quá trình thanh tra, khi phát hiện việc sử dụng trái pháp luật tài sản, giấy phép, chứng chỉ hành nghề mà cần phải ngăn chặn ngay hoặc để xác minh tình tiết làm chứng cứ cho việc kết luận, xử lý thì Trưởng đoàn thanh tra đề nghị người ra quyết định thanh tra hoặc người có thẩm quyền quyết định tạm giữ tài sản, giấy phép, chứng chỉ hành nghề.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "20",
+                            "correctRespondentCount": "13",
+                            "type": 1,
+                            "createdAt": "2026-01-16T07:57:14.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-30T16:46:12.000Z",
+                            "answers": [
+                                {
+                                    "id": 280923,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Thành viên đoàn thanh tra, Trưởng đoàn thanh tra</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166604,
+                                    "createdAt": "2026-01-16T07:57:14.000Z",
+                                    "updatedAt": "2026-01-16T07:57:14.000Z"
+                                },
+                                {
+                                    "id": 280924,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Thành viên đoàn thanh tra, người ra quyết định thanh tra.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166604,
+                                    "createdAt": "2026-01-16T07:57:14.000Z",
+                                    "updatedAt": "2026-01-16T07:57:14.000Z"
+                                },
+                                {
+                                    "id": 280925,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Người ra quyết định thanh tra, Trưởng đoàn thanh tra.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166604,
+                                    "createdAt": "2026-01-16T07:57:14.000Z",
+                                    "updatedAt": "2026-01-16T07:57:14.000Z"
+                                },
+                                {
+                                    "id": 280926,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Trưởng đoàn thanh tra, người ra quyết định thanh tra</span>",
+                                    "isCorrect": true,
+                                    "questionId": 166604,
+                                    "createdAt": "2026-01-16T07:57:14.000Z",
+                                    "updatedAt": "2026-01-16T07:57:14.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 166605,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]: </span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \">Theo Luật Thanh tra số 84/2025/QH15, đâu không phải là quyền của đối tượng thanh tra?</span>",
+                            "categoryId": 2333,
+                            "note": "<span style=\"font-size:16px;vertical-align:middle;\">Giải thích<br/>Chọn đáp án C. Bởi: Căn cứ khoản 1 Điều 50 Luật Thanh tra số 84/2025/QH15 quy định về quyền của đối tượng thanh tra. Trong khi đó, khoản 2 Điều 50 quy định về nghĩa vụ của đối tượng thanh tra, trong đó có: \"b) Cung cấp kịp thời, đầy đủ, chính xác thông tin, tài liệu theo yêu cầu của người tiến hành thanh tra và chịu trách nhiệm trước pháp luật về tính chính xác, trung thực của thông tin, tài liệu đã cung cấp;\". Việc \"từ chối\" không phải là quyền mà có thể là hành vi vi phạm nghĩa vụ.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "19",
+                            "correctRespondentCount": "14",
+                            "type": 1,
+                            "createdAt": "2026-01-16T07:57:14.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-30T16:46:58.000Z",
+                            "answers": [
+                                {
+                                    "id": 280927,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Giải trình về vấn đề có liên quan đến nội dung thanh tra.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166605,
+                                    "createdAt": "2026-01-16T07:57:14.000Z",
+                                    "updatedAt": "2026-01-16T07:57:14.000Z"
+                                },
+                                {
+                                    "id": 280928,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Khiếu nại về quyết định, hành vi của người tiến hành thanh tra.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166605,
+                                    "createdAt": "2026-01-16T07:57:14.000Z",
+                                    "updatedAt": "2026-01-16T07:57:14.000Z"
+                                },
+                                {
+                                    "id": 280929,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Từ chối cung cấp thông tin, tài liệu không liên quan đến nội dung thanh tra.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 166605,
+                                    "createdAt": "2026-01-16T07:57:14.000Z",
+                                    "updatedAt": "2026-01-16T07:57:14.000Z"
+                                },
+                                {
+                                    "id": 280930,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Yêu cầu bồi thường thiệt hại, khôi phục quyền, lợi ích hợp pháp khác.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166605,
+                                    "createdAt": "2026-01-16T07:57:14.000Z",
+                                    "updatedAt": "2026-01-16T07:57:14.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 166606,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]: </span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \">Theo Luật Thanh tra số 84/2025/QH15, đâu là nghĩa vụ của đối tượng thanh tra?</span>",
+                            "categoryId": 2333,
+                            "note": "<span style=\"font-size:16px;vertical-align:middle;\">Giải thích<br/>Chọn đáp án A. Bởi: Căn cứ điểm a khoản 2 Điều 50 Luật Thanh tra số 84/2025/QH15 quy định nghĩa vụ của đối tượng thanh tra: \"a) Chấp hành quyết định thanh tra;\" Phân tích: Đây là nghĩa vụ cơ bản và đầu tiên của đối tượng thanh tra khi có quyết định thanh tra.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "18",
+                            "correctRespondentCount": "13",
+                            "type": 1,
+                            "createdAt": "2026-01-16T07:57:14.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-30T16:47:16.000Z",
+                            "answers": [
+                                {
+                                    "id": 280931,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Chấp hành quyết định thanh tra.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 166606,
+                                    "createdAt": "2026-01-16T07:57:14.000Z",
+                                    "updatedAt": "2026-01-16T07:57:14.000Z"
+                                },
+                                {
+                                    "id": 280932,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Yêu cầu giám định, thẩm định về những vấn đề liên quan đến nội dung thanh tra.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166606,
+                                    "createdAt": "2026-01-16T07:57:14.000Z",
+                                    "updatedAt": "2026-01-16T07:57:14.000Z"
+                                },
+                                {
+                                    "id": 280933,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Chống đối người tiến hành thanh tra.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166606,
+                                    "createdAt": "2026-01-16T07:57:14.000Z",
+                                    "updatedAt": "2026-01-16T07:57:14.000Z"
+                                },
+                                {
+                                    "id": 280934,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Chỉnh sửa về nội dung trong kết luận thanh tra khi cho rằng nội dung đó chưa chính xác.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166606,
+                                    "createdAt": "2026-01-16T07:57:14.000Z",
+                                    "updatedAt": "2026-01-16T07:57:14.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 166607,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]: </span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \">Theo Luật Thanh tra số 84/2025/QH15, việc giải quyết khiếu nại đối với quyết định của Trưởng đoàn thanh tra do ai giải quyết?</span>",
+                            "categoryId": 2333,
+                            "note": "<span style=\"font-size:16px;vertical-align:middle;\">Giải thích<br/>Chọn đáp án A. Bởi: Căn cứ điểm a khoản 1 Điều 51 Luật Thanh tra số 84/2025/QH15 quy định: \"a) Thủ trưởng cơ quan thanh tra giải quyết khiếu nại đối với các quyết định, hành vi của mình, của Trưởng đoàn thanh tra, thành viên Đoàn thanh tra theo quy định của Chính phủ;\" Phân tích: Thẩm quyền giải quyết khiếu nại đối với Trưởng đoàn thanh tra thuộc về Thủ trưởng cơ quan thanh tra.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "15",
+                            "correctRespondentCount": "7",
+                            "type": 1,
+                            "createdAt": "2026-01-16T07:57:14.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-30T16:47:37.000Z",
+                            "answers": [
+                                {
+                                    "id": 280935,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Thủ trưởng cơ quan thanh tra.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 166607,
+                                    "createdAt": "2026-01-16T07:57:14.000Z",
+                                    "updatedAt": "2026-01-16T07:57:14.000Z"
+                                },
+                                {
+                                    "id": 280936,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Thủ trưởng cơ quan quản lý nhà nước.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166607,
+                                    "createdAt": "2026-01-16T07:57:14.000Z",
+                                    "updatedAt": "2026-01-16T07:57:14.000Z"
+                                },
+                                {
+                                    "id": 280937,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Người ra quyết định thanh tra.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166607,
+                                    "createdAt": "2026-01-16T07:57:14.000Z",
+                                    "updatedAt": "2026-01-16T07:57:14.000Z"
+                                },
+                                {
+                                    "id": 280938,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Chính phủ.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166607,
+                                    "createdAt": "2026-01-16T07:57:14.000Z",
+                                    "updatedAt": "2026-01-16T07:57:14.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 166608,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]: </span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \">Theo Luật Thanh tra số 84/2025/QH15, Thủ trưởng cơ quan thanh tra có trách nhiệm gì đối với việc thực hiện kết luận thanh tra?</span>",
+                            "categoryId": 2333,
+                            "note": "<span style=\"font-size:16px;vertical-align:middle;\">Giải thích<br/>Chọn đáp án C. Bởi: Căn cứ khoản 1 Điều 52 Luật Thanh tra số 84/2025/QH15 quy định: \"1. Thủ trưởng cơ quan thanh tra phải có văn bản kiến nghị Thủ trưởng cơ quan quản lý nhà nước cùng cấp để chỉ đạo việc thực hiện nội dung kết luận thanh tra theo quy định ...\" Phân tích: Cơ quan thanh tra ra kết luận, kiến nghị, còn trách nhiệm chỉ đạo thực hiện thuộc về cơ quan quản lý nhà nước. Do đó, Thủ trưởng cơ quan thanh tra phải có văn bản kiến nghị.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "22",
+                            "correctRespondentCount": "14",
+                            "type": 1,
+                            "createdAt": "2026-01-16T07:57:14.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-30T16:48:26.000Z",
+                            "answers": [
+                                {
+                                    "id": 280939,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Trực tiếp tổ chức thực hiện kết luận thanh tra.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166608,
+                                    "createdAt": "2026-01-16T07:57:14.000Z",
+                                    "updatedAt": "2026-01-16T07:57:14.000Z"
+                                },
+                                {
+                                    "id": 280940,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Chỉ đạo việc thực hiện nội dung kết luận thanh tra do cơ quan mình ban hành.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166608,
+                                    "createdAt": "2026-01-16T07:57:14.000Z",
+                                    "updatedAt": "2026-01-16T07:57:14.000Z"
+                                },
+                                {
+                                    "id": 280941,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Có văn bản kiến nghị Thủ trưởng cơ quan quản lý nhà nước cùng cấp để chỉ đạo việc thực hiện.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 166608,
+                                    "createdAt": "2026-01-16T07:57:14.000Z",
+                                    "updatedAt": "2026-01-16T07:57:14.000Z"
+                                },
+                                {
+                                    "id": 280942,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Giám sát, đôn đốc đối tượng thanh tra thực hiện kết luận.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166608,
+                                    "createdAt": "2026-01-16T07:57:14.000Z",
+                                    "updatedAt": "2026-01-16T07:57:14.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 166609,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]: </span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \">Theo Luật Thanh tra số 84/2025/QH15, trong thời hạn bao nhiêu ngày kể từ ngày nhận được kết luận thanh tra, Thủ trưởng cơ quan quản lý nhà nước cùng cấp phải ban hành văn bản chỉ đạo thực hiện kết luận thanh tra?</span>",
+                            "categoryId": 2333,
+                            "note": "<span style=\"font-size:16px;vertical-align:middle;\">Giải thích<br/>Chọn đáp án B. Bởi: Căn cứ điểm a khoản 1 Điều 53 Luật Thanh tra số 84/2025/QH15 quy định: \"a) Trong thời hạn 15 ngày kể từ ngày ban hành được kết luận thanh tra, Thủ trưởng cơ quan quản lý nhà nước cùng cấp phải ban hành văn bản chỉ đạo thực hiện kết luận thanh tra...\" Phân tích: Luật quy định thời hạn 15 ngày để Thủ trưởng cơ quan quản lý nhà nước ra văn bản chỉ đạo.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "19",
+                            "correctRespondentCount": "14",
+                            "type": 1,
+                            "createdAt": "2026-01-16T07:57:14.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-30T16:49:26.000Z",
+                            "answers": [
+                                {
+                                    "id": 280943,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">10 ngày.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166609,
+                                    "createdAt": "2026-01-16T07:57:14.000Z",
+                                    "updatedAt": "2026-01-16T07:57:14.000Z"
+                                },
+                                {
+                                    "id": 280944,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">15 ngày.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 166609,
+                                    "createdAt": "2026-01-16T07:57:14.000Z",
+                                    "updatedAt": "2026-01-16T07:57:14.000Z"
+                                },
+                                {
+                                    "id": 280945,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">20 ngày.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166609,
+                                    "createdAt": "2026-01-16T07:57:14.000Z",
+                                    "updatedAt": "2026-01-16T07:57:14.000Z"
+                                },
+                                {
+                                    "id": 280946,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">30 ngày.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166609,
+                                    "createdAt": "2026-01-16T07:57:14.000Z",
+                                    "updatedAt": "2026-01-16T07:57:14.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 166610,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]: </span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \">Theo Luật Thanh tra số 84/2025/QH15, văn bản chỉ đạo thực hiện kết luận thanh tra không có nội dung nào sau đây?</span>",
+                            "categoryId": 2333,
+                            "note": "<span style=\"font-size:16px;vertical-align:middle;\">Giải thích<br/>Chọn đáp án C. Bởi: Căn cứ khoản 2 Điều 53 Luật Thanh tra số 84/2025/QH15 quy định nội dung của văn bản chỉ đạo thực hiện kết luận thanh tra: \"a) Xử lý hoặc yêu cầu, kiến nghị cơ quan, người có thẩm quyền xử lý sai phạm về kinh tế; b) Xử lý hoặc yêu cầu, kiến nghị cơ quan, người có thẩm quyền xử lý cơ quan, tổ chức, cá nhân có hành vi vi phạm pháp luật; c) Áp dụng hoặc yêu cầu, kiến nghị cơ quan, người có thẩm quyền áp dụng biện pháp khắc phục hoặc biện pháp chế tài, chính sách, pháp luật.\" Phân tích: Văn bản chỉ đạo \"xử lý hoặc yêu cầu xử lý\" người có hành vi vi phạm, chứ không trực tiếp \"xử lý kỷ luật\". Việc xử lý kỷ luật là một quy trình riêng theo pháp luật về cán bộ, công chức, viên chức.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "19",
+                            "correctRespondentCount": "8",
+                            "type": 1,
+                            "createdAt": "2026-01-16T07:57:14.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-30T16:49:59.000Z",
+                            "answers": [
+                                {
+                                    "id": 280947,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Xử lý hoặc yêu cầu, kiến nghị cơ quan, người có thẩm quyền xử lý sai phạm về kinh tế.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166610,
+                                    "createdAt": "2026-01-16T07:57:14.000Z",
+                                    "updatedAt": "2026-01-16T07:57:14.000Z"
+                                },
+                                {
+                                    "id": 280948,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Áp dụng hoặc yêu cầu, kiến nghị người có thẩm quyền áp dụng biện pháp khắc phục.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166610,
+                                    "createdAt": "2026-01-16T07:57:14.000Z",
+                                    "updatedAt": "2026-01-16T07:57:14.000Z"
+                                },
+                                {
+                                    "id": 280949,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Xử lý kỷ luật đối với người có hành vi vi phạm.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 166610,
+                                    "createdAt": "2026-01-16T07:57:14.000Z",
+                                    "updatedAt": "2026-01-16T07:57:14.000Z"
+                                },
+                                {
+                                    "id": 280950,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Áp dụng biện pháp pháp chế, chính sách, pháp luật.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166610,
+                                    "createdAt": "2026-01-16T07:57:14.000Z",
+                                    "updatedAt": "2026-01-16T07:57:14.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 166611,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]: </span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \">Theo Luật Thanh tra số 84/2025/QH15, đối với những nội dung trong kết luận thanh tra mà chưa thực hiện được ngay, đối tượng thanh tra có trách nhiệm báo cáo bằng văn bản trong thời hạn bao nhiêu ngày kể từ ngày công khai kết luận thanh tra?</span>",
+                            "categoryId": 2333,
+                            "note": "<span style=\"font-size:16px;vertical-align:middle;\">Giải thích<br/>Chọn đáp án A. Bởi: Căn cứ khoản 1 Điều 54 Luật Thanh tra số 84/2025/QH15 quy định: \"...Đối với những nội dung trong kết luận thanh tra mà chưa thực hiện được ngay, trong thời hạn 10 ngày kể từ ngày công khai kết luận thanh tra, đối tượng thanh tra phải báo cáo người có thẩm quyền, trong đó nêu rõ tiến độ và giải thích lý do.\" Phân tích: Đối với các nội dung chưa thể thực hiện ngay, đối tượng thanh tra phải báo cáo trong vòng 10 ngày.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "14",
+                            "correctRespondentCount": "11",
+                            "type": 1,
+                            "createdAt": "2026-01-16T07:57:14.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-30T16:50:14.000Z",
+                            "answers": [
+                                {
+                                    "id": 280951,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">10 ngày.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 166611,
+                                    "createdAt": "2026-01-16T07:57:14.000Z",
+                                    "updatedAt": "2026-01-16T07:57:14.000Z"
+                                },
+                                {
+                                    "id": 280952,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">15 ngày.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166611,
+                                    "createdAt": "2026-01-16T07:57:14.000Z",
+                                    "updatedAt": "2026-01-16T07:57:14.000Z"
+                                },
+                                {
+                                    "id": 280953,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">20 ngày.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166611,
+                                    "createdAt": "2026-01-16T07:57:14.000Z",
+                                    "updatedAt": "2026-01-16T07:57:14.000Z"
+                                },
+                                {
+                                    "id": 280954,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">30 ngày.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166611,
+                                    "createdAt": "2026-01-16T07:57:14.000Z",
+                                    "updatedAt": "2026-01-16T07:57:14.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 166612,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]: </span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \">Theo Luật Thanh tra số 84/2025/QH15, ai có trách nhiệm chỉ đạo việc theo dõi, đôn đốc, kiểm tra việc thực hiện kết luận thanh tra?</span>",
+                            "categoryId": 2333,
+                            "note": "<span style=\"font-size:16px;vertical-align:middle;\">Giải thích<br/>Chọn đáp án A. Bởi: Căn cứ khoản 1 Điều 55 Luật Thanh tra số 84/2025/QH15 quy định: \"1. Trong phạm vi nhiệm vụ, quyền hạn của mình, Thủ trưởng cơ quan thanh tra, Thủ trưởng cơ quan quản lý nhà nước cùng cấp có trách nhiệm chỉ đạo việc theo dõi, đôn đốc, kiểm tra việc thực hiện kết luận thanh tra và xử lý kịp thời vấn đề phát sinh.\" Phân tích: Cả Thủ trưởng cơ quan thanh tra và Thủ trưởng cơ quan quản lý nhà nước đều có trách nhiệm này. Tuy nhiên, trách nhiệm chính yếu và trực tiếp thuộc về Thủ trưởng cơ quan thanh tra đối với kết luận do cơ quan mình ban hành.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "22",
+                            "correctRespondentCount": "10",
+                            "type": 1,
+                            "createdAt": "2026-01-16T07:57:14.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-30T16:50:56.000Z",
+                            "answers": [
+                                {
+                                    "id": 280955,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Thủ trưởng cơ quan thanh tra.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 166612,
+                                    "createdAt": "2026-01-16T07:57:14.000Z",
+                                    "updatedAt": "2026-01-16T07:57:14.000Z"
+                                },
+                                {
+                                    "id": 280956,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Cơ quan quản lý nhà nước.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166612,
+                                    "createdAt": "2026-01-16T07:57:14.000Z",
+                                    "updatedAt": "2026-01-16T07:57:14.000Z"
+                                },
+                                {
+                                    "id": 280957,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Người ra quyết định thanh tra.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166612,
+                                    "createdAt": "2026-01-16T07:57:14.000Z",
+                                    "updatedAt": "2026-01-16T07:57:14.000Z"
+                                },
+                                {
+                                    "id": 280958,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Trưởng đoàn thanh tra.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166612,
+                                    "createdAt": "2026-01-16T07:57:14.000Z",
+                                    "updatedAt": "2026-01-16T07:57:14.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 166613,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]: </span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \">Theo Luật Thanh tra số 84/2025/QH15, khi phát hiện nội dung, phạm vi thanh tra có chồng chéo, trùng lặp với cơ quan kiểm toán nhà nước, cơ quan nào có trách nhiệm chủ trì, phối hợp xử lý?</span>",
+                            "categoryId": 2333,
+                            "note": "<span style=\"font-size:16px;vertical-align:middle;\">Giải thích<br/>Chọn đáp án D. Bởi: Căn cứ khoản 2 Điều 56 Luật Thanh tra số 84/2025/QH15 quy định: \"2. Tổng Thanh tra Chính phủ và Tổng Kiểm toán nhà nước chỉ đạo phối hợp trong quá trình xây dựng, thực hiện kế hoạch thanh tra, kiểm toán; xử lý chồng chéo, trùng lặp giữa hoạt động thanh tra và hoạt động kiểm toán nhà nước...\" Phân tích: Ở cấp trung ương, việc xử lý chồng chéo giữa hai ngành thanh tra và kiểm toán do Tổng Thanh tra Chính phủ và Tổng Kiểm toán nhà nước phối hợp chỉ đạo.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "18",
+                            "correctRespondentCount": "9",
+                            "type": 1,
+                            "createdAt": "2026-01-16T07:57:14.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-30T16:51:58.000Z",
+                            "answers": [
+                                {
+                                    "id": 280959,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Cơ quan thanh tra, cơ quan kiểm toán nhà nước.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166613,
+                                    "createdAt": "2026-01-16T07:57:14.000Z",
+                                    "updatedAt": "2026-01-16T07:57:14.000Z"
+                                },
+                                {
+                                    "id": 280960,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Cơ quan ban hành quyết định thanh tra.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166613,
+                                    "createdAt": "2026-01-16T07:57:14.000Z",
+                                    "updatedAt": "2026-01-16T07:57:14.000Z"
+                                },
+                                {
+                                    "id": 280961,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Thủ trưởng cơ quan quản lý nhà nước cấp trên.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166613,
+                                    "createdAt": "2026-01-16T07:57:14.000Z",
+                                    "updatedAt": "2026-01-16T07:57:14.000Z"
+                                },
+                                {
+                                    "id": 280962,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Tổng Thanh tra Chính phủ và Tổng kiểm toán nhà nước.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 166613,
+                                    "createdAt": "2026-01-16T07:57:14.000Z",
+                                    "updatedAt": "2026-01-16T07:57:14.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 166614,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]: </span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \">Theo Luật Thanh tra số 84/2025/QH15, cơ quan thanh tra có quyền sử dụng thông tin, số liệu, kết luận trong báo cáo kiểm toán của cơ quan kiểm toán nhà nước để làm gì?</span>",
+                            "categoryId": 2333,
+                            "note": "<span style=\"font-size:16px;vertical-align:middle;\">Giải thích<br/>Chọn đáp án B. Bởi: Căn cứ khoản 4 Điều 56 Luật Thanh tra số 84/2025/QH15 quy định: \"Cơ quan thanh tra có quyền sử dụng thông tin, số liệu, kết luận trong báo cáo kiểm toán của kiểm toán nhà nước để phục vụ cho việc kết luận thanh tra.\" Phân tích: Kết quả của kiểm toán nhà nước là nguồn thông tin, tài liệu quan trọng mà cơ quan thanh tra có thể sử dụng để củng cố và đưa ra kết luận thanh tra của mình.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "21",
+                            "correctRespondentCount": "7",
+                            "type": 1,
+                            "createdAt": "2026-01-16T07:57:14.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-30T16:52:33.000Z",
+                            "answers": [
+                                {
+                                    "id": 280963,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Làm căn cứ để ban hành quyết định thanh tra.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166614,
+                                    "createdAt": "2026-01-16T07:57:14.000Z",
+                                    "updatedAt": "2026-01-16T07:57:14.000Z"
+                                },
+                                {
+                                    "id": 280964,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Phục vụ cho việc kết luận thanh tra.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 166614,
+                                    "createdAt": "2026-01-16T07:57:14.000Z",
+                                    "updatedAt": "2026-01-16T07:57:14.000Z"
+                                },
+                                {
+                                    "id": 280965,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Làm bằng chứng trực tiếp để xử phạt vi phạm hành chính.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166614,
+                                    "createdAt": "2026-01-16T07:57:14.000Z",
+                                    "updatedAt": "2026-01-16T07:57:14.000Z"
+                                },
+                                {
+                                    "id": 280966,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Tham khảo trong quá trình xây dựng kế hoạch thanh tra.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166614,
+                                    "createdAt": "2026-01-16T07:57:14.000Z",
+                                    "updatedAt": "2026-01-16T07:57:14.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 166615,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]: </span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \">Theo Luật Thanh tra số 84/2025/QH15, khi phát hiện vụ việc có dấu hiệu tội phạm trong quá trình thanh tra, cơ quan thanh tra có trách nhiệm gì?</span>",
+                            "categoryId": 2333,
+                            "note": "<span style=\"font-size:16px;vertical-align:middle;\">Giải thích<br/>Chọn đáp án B. Bởi: Căn cứ khoản 2 Điều 57 Luật Thanh tra số 84/2025/QH15 quy định: \"2. Cơ quan điều tra có trách nhiệm tiếp nhận văn bản kiến nghị khởi tố, hồ sơ, thông tin về vụ việc do cơ quan thanh tra chuyển đến để xử lý theo quy định của pháp luật về tố tụng hình sự.\" Phân tích: Khi có dấu hiệu tội phạm, cơ quan thanh tra không có thẩm quyền điều tra hình sự. Nhiệm vụ của cơ quan thanh tra là phải chuyển hồ sơ cho cơ quan điều tra có thẩm quyền để xử lý theo quy định của pháp luật tố tụng hình sự.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "17",
+                            "correctRespondentCount": "13",
+                            "type": 1,
+                            "createdAt": "2026-01-16T07:57:14.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-30T16:52:50.000Z",
+                            "answers": [
+                                {
+                                    "id": 280967,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Tạm dừng cuộc thanh tra và báo cáo cơ quan điều tra.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166615,
+                                    "createdAt": "2026-01-16T07:57:14.000Z",
+                                    "updatedAt": "2026-01-16T07:57:14.000Z"
+                                },
+                                {
+                                    "id": 280968,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Chuyển ngay hồ sơ vụ việc và tài liệu có liên quan cho cơ quan điều tra.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 166615,
+                                    "createdAt": "2026-01-16T07:57:14.000Z",
+                                    "updatedAt": "2026-01-16T07:57:14.000Z"
+                                },
+                                {
+                                    "id": 280969,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Tiếp tục thanh tra để làm rõ thêm các tình tiết.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166615,
+                                    "createdAt": "2026-01-16T07:57:14.000Z",
+                                    "updatedAt": "2026-01-16T07:57:14.000Z"
+                                },
+                                {
+                                    "id": 280970,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Phối hợp với cơ quan điều tra để cùng tiến hành điều tra.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166615,
+                                    "createdAt": "2026-01-16T07:57:14.000Z",
+                                    "updatedAt": "2026-01-16T07:57:14.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 166616,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]: </span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \">Theo Luật Thanh tra số 84/2025/QH15, trong trường hợp có sự chồng chéo, trùng lặp khi tiến hành hoạt động thanh tra và hoạt động kiểm tra mà không thống nhất được phương án xử lý, cơ quan nào sẽ tiến hành thanh tra?</span>",
+                            "categoryId": 2333,
+                            "note": "<span style=\"font-size:16px;vertical-align:middle;\">Giải thích<br/>Chọn đáp án B. Bởi: Căn cứ khoản 2 Điều 58 Luật Thanh tra số 84/2025/QH15 quy định: \"2. Khi tiến hành hoạt động thanh tra, kiểm tra, trường hợp có có sự chồng chéo, trùng lặp thì cơ quan thanh tra và cơ quan thực hiện kiểm tra phối hợp để xử lý; trường hợp không thống nhất được thì cơ quan thanh tra tiến hành thanh tra.\" Phân tích: Luật ưu tiên hoạt động thanh tra trong trường hợp có sự chồng chéo không thể giải quyết được giữa hoạt động thanh tra và kiểm tra.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "12",
+                            "correctRespondentCount": "10",
+                            "type": 1,
+                            "createdAt": "2026-01-16T07:57:14.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-30T16:53:07.000Z",
+                            "answers": [
+                                {
+                                    "id": 280971,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Cơ quan kiểm tra.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166616,
+                                    "createdAt": "2026-01-16T07:57:14.000Z",
+                                    "updatedAt": "2026-01-16T07:57:14.000Z"
+                                },
+                                {
+                                    "id": 280972,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Cơ quan thanh tra.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 166616,
+                                    "createdAt": "2026-01-16T07:57:14.000Z",
+                                    "updatedAt": "2026-01-16T07:57:14.000Z"
+                                },
+                                {
+                                    "id": 280973,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Cả hai cơ quan cùng tiến hành nhưng phân định rõ nội dung.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166616,
+                                    "createdAt": "2026-01-16T07:57:14.000Z",
+                                    "updatedAt": "2026-01-16T07:57:14.000Z"
+                                },
+                                {
+                                    "id": 280974,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Cơ quan cấp trên quyết định.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166616,
+                                    "createdAt": "2026-01-16T07:57:14.000Z",
+                                    "updatedAt": "2026-01-16T07:57:14.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 166617,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]: </span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \">Theo Luật Thanh tra số 84/2025/QH15, nội dung nào sau đây là đúng khi nói về \"Giám sát hoạt động của Đoàn thanh tra\"?</span>",
+                            "categoryId": 2333,
+                            "note": "<span style=\"font-size:16px;vertical-align:middle;\">Giải thích<br/>Chọn đáp án B. Bởi: Căn cứ khoản 11 Điều 2 Luật Thanh tra số 84/2025/QH15 quy định: \"11. Giám sát hoạt động của Đoàn thanh tra là việc theo dõi, xem xét, đánh giá việc chấp hành pháp luật, tuân thủ chuẩn mực đạo đức, quy tắc ứng xử, ý thức kỷ luật và việc thực hiện nhiệm vụ được giao của Trưởng đoàn thanh tra, thành viên Đoàn thanh tra trong thời hạn thanh tra.\" Phân tích: Định nghĩa này bao gồm nhiều yếu tố: chấp hành pháp luật, đạo đức, kỷ luật và việc thực hiện nhiệm vụ được giao. Đáp án B là đầy đủ và chính xác nhất.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "12",
+                            "correctRespondentCount": "12",
+                            "type": 1,
+                            "createdAt": "2026-01-16T07:57:14.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-30T16:53:16.000Z",
+                            "answers": [
+                                {
+                                    "id": 280975,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Là việc xem xét, đánh giá hoạt động của Đoàn thanh tra có tuân thủ pháp luật, chuẩn mực đạo đức, quy tắc ứng xử, ý thức kỷ luật hay không.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166617,
+                                    "createdAt": "2026-01-16T07:57:14.000Z",
+                                    "updatedAt": "2026-01-16T07:57:14.000Z"
+                                },
+                                {
+                                    "id": 280976,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Là việc theo dõi, xem xét, đánh giá việc chấp hành pháp luật, tuân thủ chuẩn mực đạo đức, quy tắc ứng xử, ý thức kỷ luật và việc thực hiện nhiệm vụ được giao của Trưởng đoàn thanh tra, thành viên Đoàn thanh tra trong thời hạn thanh tra.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 166617,
+                                    "createdAt": "2026-01-16T07:57:14.000Z",
+                                    "updatedAt": "2026-01-16T07:57:14.000Z"
+                                },
+                                {
+                                    "id": 280977,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Là việc theo dõi, xem xét, đánh giá hoạt động của Đoàn thanh tra trong suốt quá trình tiến hành thanh tra.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166617,
+                                    "createdAt": "2026-01-16T07:57:14.000Z",
+                                    "updatedAt": "2026-01-16T07:57:14.000Z"
+                                },
+                                {
+                                    "id": 280978,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Là việc theo dõi, kiểm tra việc chấp hành pháp luật của Đoàn thanh tra trong thời gian thanh tra trực tiếp.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166617,
+                                    "createdAt": "2026-01-16T07:57:14.000Z",
+                                    "updatedAt": "2026-01-16T07:57:14.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 166618,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]: </span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \">Theo Luật Thanh tra số 84/2025/QH15, \"Thẩm định dự thảo kết luận thanh tra\" là gì?</span>",
+                            "categoryId": 2333,
+                            "note": "<span style=\"font-size:16px;vertical-align:middle;\">Giải thích<br/>Chọn đáp án A. Bởi: Căn cứ khoản 12 Điều 2 Luật Thanh tra số 84/2025/QH15 quy định: \"12. Thẩm định dự thảo kết luận thanh tra là việc xem xét, đánh giá để đưa ra nhận xét, kiến nghị nhằm hoàn thiện dự thảo kết luận thanh tra.\" Phân tích: Mục đích chính của việc thẩm định là \"hoàn thiện\" dự thảo kết luận, chứ không chỉ dừng lại ở việc đánh giá tính pháp lý hay đối chiếu thông tin.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "16",
+                            "correctRespondentCount": "12",
+                            "type": 1,
+                            "createdAt": "2026-01-16T07:57:14.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-30T16:53:49.000Z",
+                            "answers": [
+                                {
+                                    "id": 280979,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Là việc xem xét, đánh giá để đưa ra nhận xét, kiến nghị nhằm hoàn thiện dự thảo kết luận thanh tra.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 166618,
+                                    "createdAt": "2026-01-16T07:57:14.000Z",
+                                    "updatedAt": "2026-01-16T07:57:14.000Z"
+                                },
+                                {
+                                    "id": 280980,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Là việc xem xét, đánh giá tính pháp lý và tính khả thi của dự thảo kết luận thanh tra.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166618,
+                                    "createdAt": "2026-01-16T07:57:14.000Z",
+                                    "updatedAt": "2026-01-16T07:57:14.000Z"
+                                },
+                                {
+                                    "id": 280981,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Là việc kiểm tra, đối chiếu nội dung dự thảo kết luận thanh tra với báo cáo kết quả thanh tra.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166618,
+                                    "createdAt": "2026-01-16T07:57:14.000Z",
+                                    "updatedAt": "2026-01-16T07:57:14.000Z"
+                                },
+                                {
+                                    "id": 280982,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Là việc xem xét, đánh giá nội dung dự thảo kết luận thanh tra để bảo đảm tính chính xác, khách quan.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166618,
+                                    "createdAt": "2026-01-16T07:57:14.000Z",
+                                    "updatedAt": "2026-01-16T07:57:14.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 166619,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]: </span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \">Theo Luật Thanh tra số 84/2025/QH15, \"Kết luận thanh tra\" được hiểu là gì?</span>",
+                            "categoryId": 2333,
+                            "note": "<span style=\"font-size:16px;vertical-align:middle;\">Giải thích<br/>Chọn đáp án B. Bởi: Căn cứ khoản 13 Điều 2 Luật Thanh tra số 84/2025/QH15 quy định: \"13. Kết luận thanh tra là văn bản do người ra quyết định thanh tra ký ban hành để đánh giá, kết luận và kiến nghị về nội dung đã thanh tra.\" Phân tích: Thẩm quyền ký ban hành kết luận thanh tra thuộc về \"người ra quyết định thanh tra\", không phải Trưởng đoàn hay cơ quan thanh tra nói chung.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "18",
+                            "correctRespondentCount": "16",
+                            "type": 1,
+                            "createdAt": "2026-01-16T07:57:14.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-30T16:54:17.000Z",
+                            "answers": [
+                                {
+                                    "id": 280983,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Là văn bản do Trưởng đoàn thanh tra ban hành để đánh giá, kết luận và kiến nghị về nội dung đã thanh tra.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166619,
+                                    "createdAt": "2026-01-16T07:57:14.000Z",
+                                    "updatedAt": "2026-01-16T07:57:14.000Z"
+                                },
+                                {
+                                    "id": 280984,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Là văn bản do người ra quyết định thanh tra ký ban hành để đánh giá, kết luận và kiến nghị về nội dung đã thanh tra.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 166619,
+                                    "createdAt": "2026-01-16T07:57:14.000Z",
+                                    "updatedAt": "2026-01-16T07:57:14.000Z"
+                                },
+                                {
+                                    "id": 280985,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Là văn bản do cơ quan thanh tra ban hành để đánh giá, kết luận và kiến nghị về nội dung đã thanh tra.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166619,
+                                    "createdAt": "2026-01-16T07:57:14.000Z",
+                                    "updatedAt": "2026-01-16T07:57:14.000Z"
+                                },
+                                {
+                                    "id": 280986,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Là văn bản do Thủ trưởng cơ quan quản lý nhà nước ký ban hành để đánh giá, kết luận về nội dung đã thanh tra.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166619,
+                                    "createdAt": "2026-01-16T07:57:14.000Z",
+                                    "updatedAt": "2026-01-16T07:57:14.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 166620,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]: </span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \">Theo Luật Thanh tra số 84/2025/QH15, đâu không phải là một trong những nguyên tắc hoạt động thanh tra?</span>",
+                            "categoryId": 2333,
+                            "note": "<span style=\"font-size:16px;vertical-align:middle;\">Giải thích<br/>Chọn đáp án C. Bởi: Căn cứ Điều 4 Luật Thanh tra số 84/2025/QH15 quy định 3 nguyên tắc hoạt động thanh tra: \"1. Tuân theo pháp luật; dân chủ, công khai, khách quan, kịp thời, chính xác. 2. Không làm cản trở hoạt động bình thường của đối tượng thanh tra và của cơ quan, tổ chức, cá nhân khác. 3. Không trùng lặp về phạm vi, thời gian giữa các cơ quan thanh tra, giữa cơ quan thanh tra với cơ quan kiểm toán nhà nước; không trùng lặp trong việc thực hiện quyền khi tiến hành thanh tra.\" Phân tích: \"Chịu sự giám sát của Nhân dân\" là một nguyên tắc chung trong hoạt động của cơ quan nhà nước nhưng không được liệt kê là một nguyên tắc riêng trong hoạt động thanh tra tại Điều 4 của Luật này.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "13",
+                            "correctRespondentCount": "12",
+                            "type": 1,
+                            "createdAt": "2026-01-16T07:57:14.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-30T16:54:29.000Z",
+                            "answers": [
+                                {
+                                    "id": 280987,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Tuân theo pháp luật; dân chủ, công khai, khách quan, kịp thời, chính xác.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166620,
+                                    "createdAt": "2026-01-16T07:57:14.000Z",
+                                    "updatedAt": "2026-01-16T07:57:14.000Z"
+                                },
+                                {
+                                    "id": 280988,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Không làm cản trở hoạt động bình thường của đối tượng thanh tra.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166620,
+                                    "createdAt": "2026-01-16T07:57:14.000Z",
+                                    "updatedAt": "2026-01-16T07:57:14.000Z"
+                                },
+                                {
+                                    "id": 280989,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Chịu sự giám sát của Nhân dân.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 166620,
+                                    "createdAt": "2026-01-16T07:57:14.000Z",
+                                    "updatedAt": "2026-01-16T07:57:14.000Z"
+                                },
+                                {
+                                    "id": 280990,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Không trùng lặp về phạm vi, thời gian giữa các cơ quan thanh tra.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166620,
+                                    "createdAt": "2026-01-16T07:57:14.000Z",
+                                    "updatedAt": "2026-01-16T07:57:14.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 166621,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]: </span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \">Theo Luật Thanh tra số 84/2025/QH15, hãy điền từ còn thiếu vào chỗ trống sau: “__________ không ra quyết định thanh tra khi phát hiện có dấu hiệu vi phạm pháp luật mà theo quy định của pháp luật phải tiến hành thanh tra; thanh tra không đúng thẩm quyền, không đúng với nội dung quyết định thanh tra, kế hoạch tiến hành thanh tra đã được phê duyệt.”</span>",
+                            "categoryId": 2333,
+                            "note": "<span style=\"font-size:16px;vertical-align:middle;\">Giải thích<br/>Chọn đáp án A. Bởi: Căn cứ khoản 1 Điều 6 Luật Thanh tra số 84/2025/QH15 quy định một trong các hành vi bị nghiêm cấm là: <br/>1. Cố ý không ra quyết định thanh tra khi phát hiện có dấu hiệu vi phạm pháp luật mà theo quy định của pháp luật phải tiến hành thanh tra; thanh tra không đúng thẩm quyền, không đúng với nội dung quyết định thanh tra, kế hoạch tiến hành thanh tra đã được phê duyệt.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "16",
+                            "correctRespondentCount": "14",
+                            "type": 1,
+                            "createdAt": "2026-01-16T07:57:14.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-30T16:54:49.000Z",
+                            "answers": [
+                                {
+                                    "id": 280991,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Cố ý</span>",
+                                    "isCorrect": true,
+                                    "questionId": 166621,
+                                    "createdAt": "2026-01-16T07:57:14.000Z",
+                                    "updatedAt": "2026-01-16T07:57:14.000Z"
+                                },
+                                {
+                                    "id": 280992,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Vô ý</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166621,
+                                    "createdAt": "2026-01-16T07:57:14.000Z",
+                                    "updatedAt": "2026-01-16T07:57:14.000Z"
+                                },
+                                {
+                                    "id": 280993,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Cố tình</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166621,
+                                    "createdAt": "2026-01-16T07:57:14.000Z",
+                                    "updatedAt": "2026-01-16T07:57:14.000Z"
+                                },
+                                {
+                                    "id": 280994,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Quyết định</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166621,
+                                    "createdAt": "2026-01-16T07:57:14.000Z",
+                                    "updatedAt": "2026-01-16T07:57:14.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 166622,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]: </span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \">Theo Luật Thanh tra số 84/2025/QH15, hành vi nào sau đây không bị nghiêm cấm trong hoạt động thanh tra?</span>",
+                            "categoryId": 2333,
+                            "note": "<span style=\"font-size:16px;vertical-align:middle;\">Giải thích<br/>Chọn đáp án C. Bởi: Căn cứ Điều 6 Luật Thanh tra số 84/2025/QH15 quy định: <br/>Các hành vi bị nghiêm cấm trong hoạt động thanh tra <br/>1. Cố ý không ra quyết định thanh tra khi phát hiện có dấu hiệu vi phạm pháp luật mà theo quy định của pháp luật phải tiến hành thanh tra; thanh tra không đúng thẩm quyền, không đúng với nội dung quyết định thanh tra, kế hoạch tiến hành thanh tra đã được phê duyệt.<br/>2. Nhận hối lộ, môi giới hối lộ, đưa hối lộ trong hoạt động thanh tra; lợi dụng chức vụ, quyền hạn thanh tra để thực hiện hành vi trái pháp luật, sách nhiễu, gây khó khăn, phiền hà cho đối tượng thanh tra và cơ quan, tổ chức, cá nhân khác; lạm quyền trong quá trình tiến hành thanh tra.<br/>3. Bao che, cố ý bỏ lọt hành vi vi phạm pháp luật, tham nhũng, lãng phí, tiêu cực; cố ý kết luận sai sự thật, không có căn cứ pháp luật; cố ý quyết định, xử lý trái pháp luật; không kiến nghị khởi tố và chuyển hồ sơ vụ việc có dấu hiệu tội phạm được phát hiện qua thanh tra đến cơ quan điều tra theo quy định; không xử lý hoặc kiến nghị xử lý đối với cơ quan, tổ chức, cá nhân có hành vi vi phạm pháp luật, tham nhũng, lãng phí, tiêu cực; không xử lý hoặc kiến nghị xử lý, thu hồi tiền, tài sản bị chiếm đoạt, thất thoát, lãng phí được phát hiện qua thanh tra theo quy định.<br/>4. Tiết lộ thông tin, tài liệu liên quan đến cuộc thanh tra khi kết luận thanh tra chưa được công khai.<br/>5. Can thiệp trái pháp luật vào hoạt động thanh tra; tác động làm sai lệch kết quả thanh tra, kết luận, kiến nghị thanh tra.<br/>6. Không cung cấp thông tin, tài liệu hoặc cung cấp không kịp thời, không đầy đủ, không trung thực, thiếu chính xác; chiếm đoạt, tiêu hủy, làm sai lệch tài liệu, vật chứng liên quan đến nội dung thanh tra.<br/>7. Chống đối, cản trở, mua chuộc, đe dọa, trả thù, trù dập người tiến hành thanh tra, người giám sát, người thẩm định, người cung cấp thông tin, tài liệu cho cơ quan thanh tra; gây khó khăn cho hoạt động thanh tra.<br/>8. Hành vi khác bị nghiêm cấm theo quy định của luật.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "12",
+                            "correctRespondentCount": "12",
+                            "type": 1,
+                            "createdAt": "2026-01-16T07:57:15.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-30T16:55:05.000Z",
+                            "answers": [
+                                {
+                                    "id": 280995,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Nhận hối lộ, môi giới hối lộ, đưa hối lộ trong hoạt động thanh tra; lợi dụng chức vụ, quyền hạn thanh tra để thực hiện hành vi trái pháp luật, sách nhiễu, gây khó khăn, phiền hà cho đối tượng thanh tra và cơ quan, tổ chức, cá nhân khác; lạm quyền trong quá trình tiến hành thanh tra.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166622,
+                                    "createdAt": "2026-01-16T07:57:14.000Z",
+                                    "updatedAt": "2026-01-16T07:57:15.000Z"
+                                },
+                                {
+                                    "id": 280996,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Bao che, cố ý bỏ lọt hành vi vi phạm pháp luật, tham nhũng, lãng phí, tiêu cực; cố ý kết luận sai sự thật, không có căn cứ pháp luật; cố ý quyết định, xử lý trái pháp luật; không kiến nghị khởi tố và chuyển hồ sơ vụ việc có dấu hiệu tội phạm được phát hiện qua thanh tra đến cơ quan điều tra theo quy định; không xử lý hoặc kiến nghị xử lý đối với cơ quan, tổ chức, cá nhân có hành vi vi phạm pháp luật, tham nhũng, lãng phí, tiêu cực; không xử lý hoặc kiến nghị xử lý, thu hồi tiền, tài sản bị chiếm đoạt, thất thoát, lãng phí được phát hiện qua thanh tra theo quy định.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166622,
+                                    "createdAt": "2026-01-16T07:57:14.000Z",
+                                    "updatedAt": "2026-01-16T07:57:15.000Z"
+                                },
+                                {
+                                    "id": 280997,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Công khai kết luận thanh tra theo quy định.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 166622,
+                                    "createdAt": "2026-01-16T07:57:14.000Z",
+                                    "updatedAt": "2026-01-16T07:57:15.000Z"
+                                },
+                                {
+                                    "id": 280998,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Không cung cấp thông tin, tài liệu hoặc cung cấp không kịp thời, không đầy đủ, không trung thực, thiếu chính xác; chiếm đoạt, tiêu hủy, làm sai lệch tài liệu, vật chứng liên quan đến nội dung thanh tra.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166622,
+                                    "createdAt": "2026-01-16T07:57:14.000Z",
+                                    "updatedAt": "2026-01-16T07:57:15.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 166623,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]: </span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \">Theo Luật Thanh tra số 84/2025/QH15, Tổng Thanh tra Chính phủ là thành viên của cơ quan nào?</span>",
+                            "categoryId": 2333,
+                            "note": "<span style=\"font-size:16px;vertical-align:middle;\">Giải thích<br/>Chọn đáp án C. Bởi: Căn cứ khoản 1 Điều 11 Luật Thanh tra số 84/2025/QH15 quy định: \"1. Tổng Thanh tra Chính phủ là thành viên Chính phủ, chịu trách nhiệm trước Quốc hội, Chính phủ, Thủ tướng Chính phủ về công tác thanh tra, tiếp công dân, giải quyết khiếu nại, tố cáo và phòng, chống tham nhũng, tiêu cực.\" Phân tích: Vị trí của Tổng Thanh tra Chính phủ được xác định là một thành viên của Chính phủ.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "12",
+                            "correctRespondentCount": "12",
+                            "type": 1,
+                            "createdAt": "2026-01-16T07:57:15.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-30T16:55:23.000Z",
+                            "answers": [
+                                {
+                                    "id": 280999,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Ủy ban Thường vụ Quốc hội.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166623,
+                                    "createdAt": "2026-01-16T07:57:15.000Z",
+                                    "updatedAt": "2026-01-16T07:57:15.000Z"
+                                },
+                                {
+                                    "id": 281000,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Ban Bí thư Trung ương Đảng.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166623,
+                                    "createdAt": "2026-01-16T07:57:15.000Z",
+                                    "updatedAt": "2026-01-16T07:57:15.000Z"
+                                },
+                                {
+                                    "id": 281001,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Chính phủ.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 166623,
+                                    "createdAt": "2026-01-16T07:57:15.000Z",
+                                    "updatedAt": "2026-01-16T07:57:15.000Z"
+                                },
+                                {
+                                    "id": 281002,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Ban Chấp hành Trung ương Đảng.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166623,
+                                    "createdAt": "2026-01-16T07:57:15.000Z",
+                                    "updatedAt": "2026-01-16T07:57:15.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 166624,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]: </span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \">Theo Luật Thanh tra số 84/2025/QH15, đâu không phải là nhiệm vụ, quyền hạn của Thanh tra Chính phủ?</span>",
+                            "categoryId": 2333,
+                            "note": "<span style=\"font-size:16px;vertical-align:middle;\">Giải thích<br/>Chọn đáp án B. Bởi: Các đáp án A,C,D được quy định tại Điều 10 về Nhiệm vụ, quyền hạn của Thanh tra Chính phủ. Đáp án B là nhiệm vụ, quyền hạn của Tổng thanh tra Chính phủ:<br/>o) Đề nghị Bộ trưởng, Thủ trưởng cơ quan ngang Bộ, Thủ trưởng cơ quan thuộc Chính phủ, Chủ tịch Ủy ban nhân dân cấp tỉnh xem xét, chấn chỉnh, khắc phục sai phạm trong ngành, lĩnh vực, địa bàn thuộc phạm vi quản lý do Thanh tra Chính phủ phát hiện qua thanh tra</span>",
+                            "readingContentId": null,
+                            "respondentCount": "21",
+                            "correctRespondentCount": "12",
+                            "type": 1,
+                            "createdAt": "2026-01-16T07:57:15.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-30T16:57:44.000Z",
+                            "answers": [
+                                {
+                                    "id": 281003,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Xây dựng Định hướng chương trình thanh tra trình Thủ tướng Chính phủ phê duyệt</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166624,
+                                    "createdAt": "2026-01-16T07:57:15.000Z",
+                                    "updatedAt": "2026-01-16T07:57:15.000Z"
+                                },
+                                {
+                                    "id": 281004,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Đề nghị Bộ trưởng, Thủ trưởng cơ quan ngang Bộ, Thủ trưởng cơ quan thuộc Chính phủ, Chủ tịch Ủy ban nhân dân cấp tỉnh xem xét, chấn chỉnh, khắc phục sai phạm trong ngành, lĩnh vực, địa bàn thuộc phạm vi quản lý do Thanh tra Chính phủ phát hiện qua thanh tra;</span>",
+                                    "isCorrect": true,
+                                    "questionId": 166624,
+                                    "createdAt": "2026-01-16T07:57:15.000Z",
+                                    "updatedAt": "2026-01-16T07:57:15.000Z"
+                                },
+                                {
+                                    "id": 281005,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Xây dựng và tổ chức thực hiện kế hoạch thanh tra của Thanh tra Chính phủ; hướng dẫn Thanh tra Bộ Quốc phòng, Thanh tra Bộ Công an, Thanh tra Ngân hàng Nhà nước, Thanh tra Cơ yếu, Thanh tra được thành lập theo điều ước quốc tế, Thanh tra tỉnh xây dựng kế hoạch thanh tra và đôn đốc, kiểm tra việc thực hiện kế hoạch thanh tra</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166624,
+                                    "createdAt": "2026-01-16T07:57:15.000Z",
+                                    "updatedAt": "2026-01-16T07:57:15.000Z"
+                                },
+                                {
+                                    "id": 281006,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Thanh tra việc thực hiện chính sách, pháp luật, nhiệm vụ, quyền hạn của Bộ, cơ quan ngang Bộ, cơ quan thuộc Chính phủ, Ủy ban nhân dân cấp tỉnh; thanh tra việc thực hiện chính sách, pháp luật, nhiệm vụ, quyền hạn của cơ quan, tổ chức, đơn vị, cá nhân thuộc quyền quản lý của Bộ không có Thanh tra Bộ.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166624,
+                                    "createdAt": "2026-01-16T07:57:15.000Z",
+                                    "updatedAt": "2026-01-16T07:57:15.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 166625,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]: </span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \">Theo Luật Thanh tra số 84/2025/QH15, đâu là nhiệm vụ, quyền hạn của Thanh tra chính phủ?</span>",
+                            "categoryId": 2333,
+                            "note": "<span style=\"font-size:16px;vertical-align:middle;\">Giải thích<br/>Chọn đáp án C. Bởi: Căn cứ điểm m khoản 1 Điều 10 Luật Thanh tra số 84/2025/QH15 quy định nhiệm vụ, quyền hạn của Thanh tra Chính phủ: <br/>m) Thanh tra lại vụ việc đã có kết luận thanh tra của Thanh tra Bộ Quốc phòng, Thanh tra Bộ Công an, Thanh tra Ngân hàng Nhà nước, Thanh tra Cơ yếu, Thanh tra được thành lập theo điều ước quốc tế, Thanh tra tỉnh khi phát hiện có dấu hiệu vi phạm pháp luật;<br/>Các đáp án còn lại là nhiệm vụ, quyền hạn của Tổng Thanh tra chính phủ.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "22",
+                            "correctRespondentCount": "14",
+                            "type": 1,
+                            "createdAt": "2026-01-16T07:57:15.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-30T16:57:55.000Z",
+                            "answers": [
+                                {
+                                    "id": 281007,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Lãnh đạo, chỉ đạo, kiểm tra, giám sát công tác thanh tra trong phạm vi quản lý nhà nước của Chính phủ; lãnh đạo Thanh tra Chính phủ thực hiện nhiệm vụ, quyền hạn theo quy định của Luật này và quy định khác của pháp luật có liên quan</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166625,
+                                    "createdAt": "2026-01-16T07:57:15.000Z",
+                                    "updatedAt": "2026-01-16T07:57:15.000Z"
+                                },
+                                {
+                                    "id": 281008,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Trình Thủ tướng Chính phủ phê duyệt Định hướng chương trình thanh tra; ban hành kế hoạch thanh tra của Thanh tra Chính phủ và tổ chức, chỉ đạo việc thực hiện</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166625,
+                                    "createdAt": "2026-01-16T07:57:15.000Z",
+                                    "updatedAt": "2026-01-16T07:57:15.000Z"
+                                },
+                                {
+                                    "id": 281009,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Thanh tra lại vụ việc đã có kết luận thanh tra của Thanh tra Bộ Quốc phòng, Thanh tra Bộ Công an, Thanh tra Ngân hàng Nhà nước, Thanh tra Cơ yếu, Thanh tra được thành lập theo điều ước quốc tế, Thanh tra tỉnh khi phát hiện có dấu hiệu vi phạm pháp luật</span>",
+                                    "isCorrect": true,
+                                    "questionId": 166625,
+                                    "createdAt": "2026-01-16T07:57:15.000Z",
+                                    "updatedAt": "2026-01-16T07:57:15.000Z"
+                                },
+                                {
+                                    "id": 281010,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Quyết định việc thanh tra đối với vụ việc thuộc thẩm quyền khi phát hiện có dấu hiệu vi phạm pháp luật</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166625,
+                                    "createdAt": "2026-01-16T07:57:15.000Z",
+                                    "updatedAt": "2026-01-16T07:57:15.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 166626,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]: </span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \">Theo Luật Thanh tra số 84/2025/QH15, đâu không phải là căn cứ để tiến hành thanh tra lại?</span>",
+                            "categoryId": 2333,
+                            "note": "<span style=\"font-size:16px;vertical-align:middle;\">Giải thích<br/>Chọn đáp án C. Bởi: Căn cứ khoản 1 Điều 25 Luật Thanh tra số 84/2025/QH15 quy định: <br/><br/>1. Việc thanh tra lại được thực hiện khi có một trong các dấu hiệu vi phạm pháp luật sau đây:<br/>a) Có vi phạm nghiêm trọng về thẩm quyền ban hành quyết định thanh tra, trình tự, thủ tục trong quá trình tiến hành thanh tra;<br/>b) Có sai lầm trong việc áp dụng pháp luật khi kết luận thanh tra;<br/>c) Nội dung trong kết luận thanh tra không phù hợp với những chứng cứ thu thập được trong quá trình tiến hành thanh tra;<br/>d) Người tiến hành thanh tra cố ý làm sai lệch hồ sơ vụ việc hoặc cố ý kết luận trái pháp luật;<br/>đ) Có dấu hiệu vi phạm pháp luật nghiêm trọng của đối tượng thanh tra nhưng chưa được phát hiện đầy đủ qua thanh tra.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "16",
+                            "correctRespondentCount": "15",
+                            "type": 1,
+                            "createdAt": "2026-01-16T07:57:15.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-30T16:58:30.000Z",
+                            "answers": [
+                                {
+                                    "id": 281011,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Có vi phạm nghiêm trọng về thẩm quyền ban hành quyết định thanh tra, trình tự, thủ tục trong quá trình tiến hành thanh tra</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166626,
+                                    "createdAt": "2026-01-16T07:57:15.000Z",
+                                    "updatedAt": "2026-01-16T07:57:15.000Z"
+                                },
+                                {
+                                    "id": 281012,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Có sai lầm trong việc áp dụng pháp luật khi kết luận thanh tra</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166626,
+                                    "createdAt": "2026-01-16T07:57:15.000Z",
+                                    "updatedAt": "2026-01-16T07:57:15.000Z"
+                                },
+                                {
+                                    "id": 281013,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Có ý kiến trình báo của người dân</span>",
+                                    "isCorrect": true,
+                                    "questionId": 166626,
+                                    "createdAt": "2026-01-16T07:57:15.000Z",
+                                    "updatedAt": "2026-01-16T07:57:15.000Z"
+                                },
+                                {
+                                    "id": 281014,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Nội dung trong kết luận thanh tra không phù hợp với những chứng cứ thu thập được trong quá trình tiến hành thanh tra</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166626,
+                                    "createdAt": "2026-01-16T07:57:15.000Z",
+                                    "updatedAt": "2026-01-16T07:57:15.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 166627,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]: </span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \">Theo Luật Thanh tra số 84/2025/QH15, trong trường hợp người tiến hành thanh tra có hành vi vi phạm pháp luật thì bị xử lý như thế nào?</span>",
+                            "categoryId": 2333,
+                            "note": "<span style=\"font-size:16px;vertical-align:middle;\">Giải thích<br/>Chọn đáp án C. Bởi: Căn cứ khoản 1 Điều 24 Luật Thanh tra số 84/2025/QH15 quy định: \"1. Người tiến hành thanh tra không hoàn thành nhiệm vụ thanh tra hoặc có hành vi vi phạm pháp luật mà không xử lý, không kiến nghị xử lý hoặc có hành vi vi phạm pháp luật khác trong thanh tra thì tùy theo tính chất, mức độ vi phạm mà bị xử lý kỷ luật hoặc bị truy cứu trách nhiệm hình sự, nếu gây thiệt hại thì phải bồi thường theo quy định của pháp luật.\" Phân tích: Quy định này nêu rõ 3 hình thức xử lý có thể áp dụng: xử lý kỷ luật, truy cứu trách nhiệm hình sự và bồi thường thiệt hại.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "18",
+                            "correctRespondentCount": "12",
+                            "type": 1,
+                            "createdAt": "2026-01-16T07:57:15.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-30T16:59:05.000Z",
+                            "answers": [
+                                {
+                                    "id": 281015,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Bị xử lý kỷ luật hoặc truy cứu trách nhiệm hình sự.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166627,
+                                    "createdAt": "2026-01-16T07:57:15.000Z",
+                                    "updatedAt": "2026-01-16T07:57:15.000Z"
+                                },
+                                {
+                                    "id": 281016,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Tùy theo tính chất, mức độ vi phạm mà bị xử lý kỷ luật, xử phạt hành chính hoặc truy cứu trách nhiệm hình sự.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166627,
+                                    "createdAt": "2026-01-16T07:57:15.000Z",
+                                    "updatedAt": "2026-01-16T07:57:15.000Z"
+                                },
+                                {
+                                    "id": 281017,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Tùy theo tính chất, mức độ vi phạm mà bị xử lý kỷ luật hoặc truy cứu trách nhiệm hình sự, nếu gây thiệt hại thì phải bồi thường.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 166627,
+                                    "createdAt": "2026-01-16T07:57:15.000Z",
+                                    "updatedAt": "2026-01-16T07:57:15.000Z"
+                                },
+                                {
+                                    "id": 281018,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Bị xử lý theo quy định của pháp luật về cán bộ, công chức và pháp luật hình sự.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166627,
+                                    "createdAt": "2026-01-16T07:57:15.000Z",
+                                    "updatedAt": "2026-01-16T07:57:15.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 166628,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]: </span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \">Theo Luật Thanh tra số 84/2025/QH15, thời hiệu thanh tra lại là bao lâu?</span>",
+                            "categoryId": 2333,
+                            "note": "<span style=\"font-size:16px;vertical-align:middle;\">Giải thích<br/>Chọn đáp án C. Bởi: Căn cứ khoản 2 Điều 25 Luật Thanh tra số 84/2025/QH15 quy định: <br/>Thời hiệu thanh tra lại là 02 năm kể từ ngày ban hành kết luận thanh tra.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "16",
+                            "correctRespondentCount": "15",
+                            "type": 1,
+                            "createdAt": "2026-01-16T07:57:15.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-30T16:59:18.000Z",
+                            "answers": [
+                                {
+                                    "id": 281019,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">30 ngày kể từ ngày ban hành kết luận thanh tra</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166628,
+                                    "createdAt": "2026-01-16T07:57:15.000Z",
+                                    "updatedAt": "2026-01-16T07:57:15.000Z"
+                                },
+                                {
+                                    "id": 281020,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">01 năm kể từ ngày ban hành kết luận thanh tra</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166628,
+                                    "createdAt": "2026-01-16T07:57:15.000Z",
+                                    "updatedAt": "2026-01-16T07:57:15.000Z"
+                                },
+                                {
+                                    "id": 281021,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">02 năm kể từ ngày ban hành kết luận thanh tra</span>",
+                                    "isCorrect": true,
+                                    "questionId": 166628,
+                                    "createdAt": "2026-01-16T07:57:15.000Z",
+                                    "updatedAt": "2026-01-16T07:57:15.000Z"
+                                },
+                                {
+                                    "id": 281022,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">03 năm kể từ ngày ban hành kết luận thanh tra</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166628,
+                                    "createdAt": "2026-01-16T07:57:15.000Z",
+                                    "updatedAt": "2026-01-16T07:57:15.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 166629,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]: </span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \">Theo Luật Thanh tra số 84/2025/QH15, thẩm quyền xem xét, quyết định đối với kết luận thanh tra của Thanh tra chính phủ?</span>",
+                            "categoryId": 2333,
+                            "note": "<span style=\"font-size:16px;vertical-align:middle;\">Giải thích<br/>Chọn đáp án C. Bởi: Căn cứ khoản 3 Điều 25 Luật Thanh tra số 84/2025/QH15 quy định:<br/>Khi có căn cứ quy định, cơ quan thanh tra cấp trên tiến hành thanh tra lại đối với kết luận thanh tra của cơ quan thanh tra cấp dưới; đối với kết luận thanh tra của Thanh tra Chính phủ thì báo cáo Thủ tướng Chính phủ xem xét, quyết định.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "12",
+                            "correctRespondentCount": "9",
+                            "type": 1,
+                            "createdAt": "2026-01-16T07:57:15.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-30T16:59:37.000Z",
+                            "answers": [
+                                {
+                                    "id": 281023,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Người ra quyết định thanh tra</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166629,
+                                    "createdAt": "2026-01-16T07:57:15.000Z",
+                                    "updatedAt": "2026-01-16T07:57:15.000Z"
+                                },
+                                {
+                                    "id": 281024,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Trưởng đoàn thanh tra</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166629,
+                                    "createdAt": "2026-01-16T07:57:15.000Z",
+                                    "updatedAt": "2026-01-16T07:57:15.000Z"
+                                },
+                                {
+                                    "id": 281025,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Thủ tướng Chính phủ</span>",
+                                    "isCorrect": true,
+                                    "questionId": 166629,
+                                    "createdAt": "2026-01-16T07:57:15.000Z",
+                                    "updatedAt": "2026-01-16T07:57:15.000Z"
+                                },
+                                {
+                                    "id": 281026,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Cơ quan quản lý nhà nước cấp trên.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166629,
+                                    "createdAt": "2026-01-16T07:57:15.000Z",
+                                    "updatedAt": "2026-01-16T07:57:15.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 166630,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]: </span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \">Theo Luật Thanh tra số 84/2025/QH15, đâu không phải là nguyên tắc hoạt động thanh tra?</span>",
+                            "categoryId": 2333,
+                            "note": "<span style=\"font-size:16px;vertical-align:middle;\">Giải thích<br/>Chọn đáp án C. Bởi: Đây là một trong những mục đích của hoạt động thanh tra, không phải là nguyên tắc hoạt động thanh tra.<br/>Căn cứ Khoản 1, 2, 3 Điều 4 Luật Thanh tra số 84/2025/QH15 quy định về các nguyên tắc hoạt động thanh tra như sau:<br/>Căn cứ Điều 3 Luật Thanh tra số 84/2025/QH15 quy định về mục đích hoạt động thanh tra như sau:<br/>Do đó, phương án c) là mục đích hoạt động thanh tra, còn các phương án a), b), d) là các nguyên tắc hoạt động thanh tra.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "16",
+                            "correctRespondentCount": "13",
+                            "type": 1,
+                            "createdAt": "2026-01-16T07:57:15.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-30T17:00:34.000Z",
+                            "answers": [
+                                {
+                                    "id": 281027,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Tuân theo pháp luật, dân chủ, công khai, khách quan, kịp thời, chính xác.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166630,
+                                    "createdAt": "2026-01-16T07:57:15.000Z",
+                                    "updatedAt": "2026-01-16T07:57:15.000Z"
+                                },
+                                {
+                                    "id": 281028,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Không làm cản trở hoạt động bình thường của đối tượng thanh tra và cơ quan, tổ chức, cá nhân khác.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166630,
+                                    "createdAt": "2026-01-16T07:57:15.000Z",
+                                    "updatedAt": "2026-01-16T07:57:15.000Z"
+                                },
+                                {
+                                    "id": 281029,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Phòng ngừa, phát hiện và xử lý hành vi vi phạm pháp luật.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 166630,
+                                    "createdAt": "2026-01-16T07:57:15.000Z",
+                                    "updatedAt": "2026-01-16T07:57:15.000Z"
+                                },
+                                {
+                                    "id": 281030,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Không trùng lặp về phạm vi, thời gian giữa các cơ quan thanh tra, giữa cơ quan thanh tra với cơ quan kiểm toán nhà nước; không trùng lặp trong việc thực hiện quyền khi tiến hành thanh tra.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166630,
+                                    "createdAt": "2026-01-16T07:57:15.000Z",
+                                    "updatedAt": "2026-01-16T07:57:15.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 166631,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]: </span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \">Theo Luật Thanh tra số 84/2025/QH15, đâu là hành vi bị nghiêm cấm trong hoạt động thanh tra?</span>",
+                            "categoryId": 2333,
+                            "note": "<span style=\"font-size:16px;vertical-align:middle;\">Giải thích<br/>Chọn đáp án B. Bởi: Đây là một trong những hành vi bị nghiêm cấm được quy định rõ trong Luật Thanh tra.<br/>Căn cứ Khoản 4 Điều 6 Luật Thanh tra số 84/2025/QH15 quy định về các hành vi bị nghiêm cấm trong hoạt động thanh tra như sau:<br/>Phân tích các phương án khác:<br/>Phương án a) là nghĩa vụ của đối tượng thanh tra và các cơ quan, tổ chức, cá nhân có liên quan.<br/>Phương án c) \"Can thiệp trái pháp luật\" mới là hành vi bị cấm theo Khoản 5 Điều 6, còn can thiệp khi có dấu hiệu vi phạm có thể là hành động cần thiết của cơ quan có thẩm quyền.<br/>Phương án d) là một trong những quyền hạn của người ra quyết định thanh tra.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "19",
+                            "correctRespondentCount": "12",
+                            "type": 1,
+                            "createdAt": "2026-01-16T07:57:15.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-30T17:01:15.000Z",
+                            "answers": [
+                                {
+                                    "id": 281031,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Cung cấp thông tin, tài liệu liên quan đến nội dung thanh tra theo yêu cầu của người có thẩm quyền.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166631,
+                                    "createdAt": "2026-01-16T07:57:15.000Z",
+                                    "updatedAt": "2026-01-16T07:57:15.000Z"
+                                },
+                                {
+                                    "id": 281032,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Tiết lộ thông tin, tài liệu liên quan đến cuộc thanh tra khi chưa được công khai.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 166631,
+                                    "createdAt": "2026-01-16T07:57:15.000Z",
+                                    "updatedAt": "2026-01-16T07:57:15.000Z"
+                                },
+                                {
+                                    "id": 281033,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Can thiệp vào hoạt động thanh tra khi có dấu hiệu vi phạm pháp luật của Đoàn thanh tra.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166631,
+                                    "createdAt": "2026-01-16T07:57:15.000Z",
+                                    "updatedAt": "2026-01-16T07:57:15.000Z"
+                                },
+                                {
+                                    "id": 281034,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Kiến nghị khởi tố và chuyển hồ sơ vụ việc có dấu hiệu tội phạm sang cơ quan điều tra.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166631,
+                                    "createdAt": "2026-01-16T07:57:15.000Z",
+                                    "updatedAt": "2026-01-16T07:57:15.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 166632,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]: </span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \">Theo Luật Thanh tra số 84/2025/QH15, việc ban hành quyết định thanh tra không dựa trên căn cứ nào sau đây?</span>",
+                            "categoryId": 2333,
+                            "note": "<span style=\"font-size:16px;vertical-align:middle;\">Giải thích<br/>Chọn đáp án C. Bởi: Căn cứ Điều 26 Luật Thanh tra quy định: <br/>1. Việc ban hành quyết định thanh tra phải dựa trên một trong các căn cứ sau đây:<br/>a) Kế hoạch thanh tra;<br/>b) Yêu cầu, đề nghị của Thủ trưởng cơ quan quản lý nhà nước, cấp có thẩm quyền;<br/>c) Khi phát hiện có dấu hiệu vi phạm pháp luật;<br/>d) Yêu cầu của việc giải quyết khiếu nại, tố cáo, phòng, chống tham nhũng, lãng phí, tiêu cực;<br/>đ) Căn cứ khác có liên quan theo quy định của luật.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "15",
+                            "correctRespondentCount": "12",
+                            "type": 1,
+                            "createdAt": "2026-01-16T07:57:15.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-30T17:01:52.000Z",
+                            "answers": [
+                                {
+                                    "id": 281035,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Kế hoạch thanh tra</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166632,
+                                    "createdAt": "2026-01-16T07:57:15.000Z",
+                                    "updatedAt": "2026-01-16T07:57:15.000Z"
+                                },
+                                {
+                                    "id": 281036,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Yêu cầu, đề nghị của Thủ trưởng cơ quan quản lý nhà nước, cấp có thẩm quyền</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166632,
+                                    "createdAt": "2026-01-16T07:57:15.000Z",
+                                    "updatedAt": "2026-01-16T07:57:15.000Z"
+                                },
+                                {
+                                    "id": 281037,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Khi cá nhân thấy sự việc không hợp lý</span>",
+                                    "isCorrect": true,
+                                    "questionId": 166632,
+                                    "createdAt": "2026-01-16T07:57:15.000Z",
+                                    "updatedAt": "2026-01-16T07:57:15.000Z"
+                                },
+                                {
+                                    "id": 281038,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Khi phát hiện có dấu hiệu vi phạm pháp luật</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166632,
+                                    "createdAt": "2026-01-16T07:57:15.000Z",
+                                    "updatedAt": "2026-01-16T07:57:15.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 166633,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]: </span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \">Theo Luật Thanh tra số 84/2025/QH15, thời gian xây dựng dự thảo kết luận thanh tra đối với cuộc thanh tra do Thanh tra Chính phủ tiến hành?</span>",
+                            "categoryId": 2333,
+                            "note": "<span style=\"font-size:16px;vertical-align:middle;\">Giải thích<br/>Chọn đáp án B. Bởi: căn cứ điểm a, khoản 5, Điều 34 Luật Thanh tra quy định: <br/>5. Thời gian xây dựng dự thảo kết luận thanh tra được tính từ ngày người ra quyết định thanh tra giao xây dựng dự thảo kết luận thanh tra và được quy định như sau:<br/>a) Đối với cuộc thanh tra do Thanh tra Chính phủ tiến hành, thời gian xây dựng dự thảo kết luận thanh tra không quá 30 ngày, trường hợp phức tạp thì có thể kéo dài nhưng không quá 45 ngày;</span>",
+                            "readingContentId": null,
+                            "respondentCount": "17",
+                            "correctRespondentCount": "15",
+                            "type": 1,
+                            "createdAt": "2026-01-16T07:57:15.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-30T17:02:04.000Z",
+                            "answers": [
+                                {
+                                    "id": 281039,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Không quá 20 ngày.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166633,
+                                    "createdAt": "2026-01-16T07:57:15.000Z",
+                                    "updatedAt": "2026-01-16T07:57:15.000Z"
+                                },
+                                {
+                                    "id": 281040,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Không quá 30 ngày</span>",
+                                    "isCorrect": true,
+                                    "questionId": 166633,
+                                    "createdAt": "2026-01-16T07:57:15.000Z",
+                                    "updatedAt": "2026-01-16T07:57:15.000Z"
+                                },
+                                {
+                                    "id": 281041,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Không quá 40 ngày.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166633,
+                                    "createdAt": "2026-01-16T07:57:15.000Z",
+                                    "updatedAt": "2026-01-16T07:57:15.000Z"
+                                },
+                                {
+                                    "id": 281042,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Không quá 60 ngày.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166633,
+                                    "createdAt": "2026-01-16T07:57:15.000Z",
+                                    "updatedAt": "2026-01-16T07:57:15.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 166634,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]: </span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \">Theo Luật Thanh tra số 84/2025/QH15, nội dung nào sau đây là đúng khi nói về một trong những căn cứ để tiến hành thanh tra lại?</span>",
+                            "categoryId": 2333,
+                            "note": "<span style=\"font-size:16px;vertical-align:middle;\">Giải thích<br/>Chọn đáp án C. Bởi: Đây là một trong những căn cứ pháp lý rõ ràng để người có thẩm quyền ra quyết định thanh tra lại một vụ việc đã có kết luận.<br/>Căn cứ điểm d Khoản 1 Điều 25 Luật Thanh tra số 84/2025/QH15 quy định về căn cứ thanh tra lại như sau:<br/>Phân tích các phương án khác:<br/>Phương án a) sai vì Luật yêu cầu phải là \"có vi phạm nghiêm trọng\" về thẩm quyền, trình tự, thủ tục (điểm a Khoản 1 Điều 25).<br/>Phương án b) sai vì Luật yêu cầu \"có sai lầm trong việc áp dụng pháp luật\" mà không quy định mức độ \"không nghiêm trọng\" (điểm b Khoản 1 Điều 25).<br/>Phương án d) sai vì đây là biểu hiện của một kết luận thanh tra đúng đắn, không phải là căn cứ để thanh tra lại. Căn cứ thanh tra lại là khi \"nội dung trong kết luận thanh tra không phù hợp với những chứng cứ thu thập được\" (điểm c Khoản 1 Điều 25).</span>",
+                            "readingContentId": null,
+                            "respondentCount": "23",
+                            "correctRespondentCount": "12",
+                            "type": 1,
+                            "createdAt": "2026-01-16T07:57:15.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-30T17:03:17.000Z",
+                            "answers": [
+                                {
+                                    "id": 281043,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Không có vi phạm về thẩm quyền ban hành quyết định thanh tra, trình tự, thủ tục trong quá trình tiến hành thanh tra.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166634,
+                                    "createdAt": "2026-01-16T07:57:15.000Z",
+                                    "updatedAt": "2026-01-16T07:57:15.000Z"
+                                },
+                                {
+                                    "id": 281044,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Có sai lầm không nghiêm trọng trong việc áp dụng pháp luật khi kết luận thanh tra.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166634,
+                                    "createdAt": "2026-01-16T07:57:15.000Z",
+                                    "updatedAt": "2026-01-16T07:57:15.000Z"
+                                },
+                                {
+                                    "id": 281045,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Người tiến hành thanh tra cố ý làm sai lệch hồ sơ vụ việc hoặc cố ý kết luận trái pháp luật.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 166634,
+                                    "createdAt": "2026-01-16T07:57:15.000Z",
+                                    "updatedAt": "2026-01-16T07:57:15.000Z"
+                                },
+                                {
+                                    "id": 281046,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Nội dung trong kết luận thanh tra phù hợp với những chứng cứ thu thập được trong quá trình tiến hành thanh tra.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166634,
+                                    "createdAt": "2026-01-16T07:57:15.000Z",
+                                    "updatedAt": "2026-01-16T07:57:15.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 166635,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]: </span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \">Theo Luật Thanh tra số 84/2025/QH15, đâu là quyền hạn của Trưởng đoàn thanh tra trong quá trình tiến hành thanh tra?</span>",
+                            "categoryId": 2333,
+                            "note": "<span style=\"font-size:16px;vertical-align:middle;\">Giải thích<br/>Chọn đáp án C. Bởi: Đây là quyền hạn thuộc về Trưởng đoàn thanh tra nhằm đảm bảo hoạt động của đoàn được hiệu quả và đúng mục đích.<br/>Căn cứ điểm b Khoản 1 Điều 39 Luật Thanh tra số 84/2025/QH15 quy định về nhiệm vụ, quyền hạn của Trưởng đoàn thanh tra như sau:<br/>Phân tích các phương án khác:<br/>Phương án a), b), d) là các quyền hạn của Người ra quyết định thanh tra, được quy định tại Điều 38 của Luật Thanh tra, chứ không phải của Trưởng đoàn thanh tra. Cụ thể: \"Quyết định thu hồi tài sản...\" (điểm h Khoản 1 Điều 38), \"Đình chỉ, thay đổi Trưởng đoàn thanh tra, thành viên Đoàn thanh tra\" (điểm n Khoản 1 Điều 38), \"Ban hành kết luận thanh tra\" (điểm o Khoản 1 Điều 38).</span>",
+                            "readingContentId": null,
+                            "respondentCount": "19",
+                            "correctRespondentCount": "12",
+                            "type": 1,
+                            "createdAt": "2026-01-16T07:57:15.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-30T17:03:59.000Z",
+                            "answers": [
+                                {
+                                    "id": 281047,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Quyết định thu hồi tài sản bị chiếm đoạt, chiếm giữ, sử dụng trái pháp luật hoặc bị thất thoát do hành vi vi phạm pháp luật gây ra.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166635,
+                                    "createdAt": "2026-01-16T07:57:15.000Z",
+                                    "updatedAt": "2026-01-16T07:57:15.000Z"
+                                },
+                                {
+                                    "id": 281048,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Đình chỉ, thay đổi Trưởng đoàn thanh tra, thành viên Đoàn thanh tra.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166635,
+                                    "createdAt": "2026-01-16T07:57:15.000Z",
+                                    "updatedAt": "2026-01-16T07:57:15.000Z"
+                                },
+                                {
+                                    "id": 281049,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Yêu cầu người ra quyết định thanh tra áp dụng biện pháp thuộc thẩm quyền theo quy định để bảo đảm thực hiện yêu cầu, mục đích thanh tra.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 166635,
+                                    "createdAt": "2026-01-16T07:57:15.000Z",
+                                    "updatedAt": "2026-01-16T07:57:15.000Z"
+                                },
+                                {
+                                    "id": 281050,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Ban hành kết luận thanh tra.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166635,
+                                    "createdAt": "2026-01-16T07:57:15.000Z",
+                                    "updatedAt": "2026-01-16T07:57:15.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 166636,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]: </span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \">Theo Luật Thanh tra số 84/2025/QH15, đâu không phải là quyền của đối tượng thanh tra?</span>",
+                            "categoryId": 2333,
+                            "note": "<span style=\"font-size:16px;vertical-align:middle;\">Giải thích<br/>Chọn đáp án C. Bởi: Đây là nghĩa vụ của đối tượng thanh tra, không phải là quyền.<br/>Căn cứ điểm b Khoản 2 Điều 50 Luật Thanh tra số 84/2025/QH15 quy định về nghĩa vụ của đối tượng thanh tra như sau:<br/>Các phương án a), b), d) là các quyền của đối tượng thanh tra, được quy định tại Khoản 1 Điều 50 Luật Thanh tra số 84/2025/QH15:</span>",
+                            "readingContentId": null,
+                            "respondentCount": "18",
+                            "correctRespondentCount": "12",
+                            "type": 1,
+                            "createdAt": "2026-01-16T07:57:15.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-30T17:04:17.000Z",
+                            "answers": [
+                                {
+                                    "id": 281051,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Giải trình về vấn đề có liên quan đến nội dung thanh tra.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166636,
+                                    "createdAt": "2026-01-16T07:57:15.000Z",
+                                    "updatedAt": "2026-01-16T07:57:15.000Z"
+                                },
+                                {
+                                    "id": 281052,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Khiếu nại về quyết định, hành vi của người tiến hành thanh tra trong quá trình thanh tra.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166636,
+                                    "createdAt": "2026-01-16T07:57:15.000Z",
+                                    "updatedAt": "2026-01-16T07:57:15.000Z"
+                                },
+                                {
+                                    "id": 281053,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Cung cấp kịp thời, đầy đủ, chính xác thông tin, tài liệu theo yêu cầu của người tiến hành thanh tra.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 166636,
+                                    "createdAt": "2026-01-16T07:57:15.000Z",
+                                    "updatedAt": "2026-01-16T07:57:15.000Z"
+                                },
+                                {
+                                    "id": 281054,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Yêu cầu bồi thường thiệt hại, khôi phục quyền, lợi ích hợp pháp khác theo quy định của pháp luật.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166636,
+                                    "createdAt": "2026-01-16T07:57:15.000Z",
+                                    "updatedAt": "2026-01-16T07:57:15.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 166637,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]: </span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \">Theo Luật Thanh tra số 84/2025/QH15, trong thời hạn bao nhiêu ngày kể từ ngày nhận được kết luận thanh tra, Thủ trưởng cơ quan quản lý nhà nước cùng cấp phải ban hành văn bản chỉ đạo thực hiện kết luận thanh tra?</span>",
+                            "categoryId": 2333,
+                            "note": "<span style=\"font-size:16px;vertical-align:middle;\">Giải thích<br/>Chọn đáp án B. Bởi: Đây là thời hạn pháp luật quy định để Thủ trưởng cơ quan quản lý nhà nước kịp thời chỉ đạo việc thực hiện kết luận thanh tra.<br/>Căn cứ điểm a Khoản 1 Điều 53 Luật Thanh tra số 84/2025/QH15 quy định về trách nhiệm của Thủ trưởng cơ quan quản lý nhà nước như sau:</span>",
+                            "readingContentId": null,
+                            "respondentCount": "16",
+                            "correctRespondentCount": "10",
+                            "type": 1,
+                            "createdAt": "2026-01-16T07:57:15.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-30T17:04:36.000Z",
+                            "answers": [
+                                {
+                                    "id": 281055,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">10 ngày.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166637,
+                                    "createdAt": "2026-01-16T07:57:15.000Z",
+                                    "updatedAt": "2026-01-16T07:57:15.000Z"
+                                },
+                                {
+                                    "id": 281056,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">15 ngày.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 166637,
+                                    "createdAt": "2026-01-16T07:57:15.000Z",
+                                    "updatedAt": "2026-01-16T07:57:15.000Z"
+                                },
+                                {
+                                    "id": 281057,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">20 ngày.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166637,
+                                    "createdAt": "2026-01-16T07:57:15.000Z",
+                                    "updatedAt": "2026-01-16T07:57:15.000Z"
+                                },
+                                {
+                                    "id": 281058,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">30 ngày.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166637,
+                                    "createdAt": "2026-01-16T07:57:15.000Z",
+                                    "updatedAt": "2026-01-16T07:57:15.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        },
+                        {
+                            "id": 166638,
+                            "question": "<span style=\"font-weight: bold; font-size:16px;color: rgba(255, 0, 0, 1); \">[CÔNG CHỨC 247]: </span><span style=\"font-weight: bold; font-size:16px;color: rgba(0, 0, 0, 1); \">Theo Luật Thanh tra số 84/2025/QH15, nội dung nào sau đây là đúng khi nói về việc phối hợp giữa cơ quan thanh tra và Viện kiểm sát trong hoạt động thanh tra, kiểm sát?</span>",
+                            "categoryId": 2333,
+                            "note": "<span style=\"font-size:16px;vertical-align:middle;\">Giải thích<br/>Chọn đáp án B. Bởi: Luật quy định rõ trách nhiệm của Viện kiểm sát trong việc tiếp nhận và xử lý hồ sơ vụ việc có dấu hiệu tội phạm do cơ quan thanh tra chuyển đến.<br/>Căn cứ Khoản 2 Điều 57 Luật Thanh tra số 84/2025/QH15 quy định về phối hợp trong hoạt động thanh tra và kiểm sát như sau:<br/>Phân tích các phương án khác:<br/>Phương án a) sai vì cơ quan thanh tra chuyển hồ sơ sang \"cơ quan điều tra\" chứ không phải Viện kiểm sát để khởi tố.<br/>Phương án c) và d) không được quy định trong Luật Thanh tra về cơ chế phối hợp này.</span>",
+                            "readingContentId": null,
+                            "respondentCount": "14",
+                            "correctRespondentCount": "13",
+                            "type": 1,
+                            "createdAt": "2026-01-16T07:57:15.000Z",
+                            "deletedAt": null,
+                            "updatedAt": "2026-01-30T17:06:10.000Z",
+                            "answers": [
+                                {
+                                    "id": 281059,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Cơ quan thanh tra có trách nhiệm chuyển hồ sơ vụ việc có dấu hiệu tội phạm sang duy nhất Viện kiểm sát để khởi tố theo thẩm quyền.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166638,
+                                    "createdAt": "2026-01-16T07:57:15.000Z",
+                                    "updatedAt": "2026-01-16T07:57:15.000Z"
+                                },
+                                {
+                                    "id": 281060,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Viện kiểm sát có trách nhiệm tiếp nhận văn bản kiến nghị khởi tố, hồ sơ, thông tin về vụ việc do cơ quan thanh tra chuyển đến để xử lý theo quy định của pháp luật về tố tụng hình sự.</span>",
+                                    "isCorrect": true,
+                                    "questionId": 166638,
+                                    "createdAt": "2026-01-16T07:57:15.000Z",
+                                    "updatedAt": "2026-01-16T07:57:15.000Z"
+                                },
+                                {
+                                    "id": 281061,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Cơ quan thanh tra có quyền tham gia các phiên tòa do Viện kiểm sát thực hành quyền công tố.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166638,
+                                    "createdAt": "2026-01-16T07:57:15.000Z",
+                                    "updatedAt": "2026-01-16T07:57:15.000Z"
+                                },
+                                {
+                                    "id": 281062,
+                                    "answer": "<span style=\"font-size:16px;vertical-align:middle;\">Viện kiểm sát có quyền yêu cầu cơ quan thanh tra tiến hành thanh tra khi phát hiện dấu hiệu vi phạm pháp luật.</span>",
+                                    "isCorrect": false,
+                                    "questionId": 166638,
+                                    "createdAt": "2026-01-16T07:57:15.000Z",
+                                    "updatedAt": "2026-01-16T07:57:15.000Z"
+                                }
+                            ],
+                            "readingContent": null
+                        }
+                    ]
+                },
+                "exam": {
+                    "data": {
+                        "id": 2266,
+                        "name": "Đề số 02: Luật Thanh tra 2025",
+                        "duration": 50,
+                        "retry": 3,
+                        "referencePoint": 5,
+                        "type": 1,
+                        "createdAt": "2026-01-16T08:01:07.000Z",
+                        "updatedAt": "2026-01-16T08:02:25.000Z"
+                    }
+                }
+            }
+        },
+        "testSessionAnswers": []
+    }
+}
