@@ -58,6 +58,12 @@
      --------------------------------------------------------- */
   var params = new URLSearchParams(location.search);
   var guest = (params.get('khach') || params.get('to') || '').trim().slice(0, 60);
+
+   // Tự động đổi dấu gạch dưới '_' thành dấu cách nếu có (vd: ?khach=Anh_Tuấn)
+  if (guest.indexOf('_') > -1 && guest.indexOf(' ') === -1) {
+    guest = guest.replace(/_/g, ' ');
+  }
+  
   var nameInput = $('#f-name');
   if (guest) {
     $$('[data-guest]').forEach(function (el) {

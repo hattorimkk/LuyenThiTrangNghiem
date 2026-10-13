@@ -38,9 +38,15 @@ Mặc định (chưa cấu hình) lời chúc chỉ lưu tạm trên máy ngư�
 Mọi lời chúc sẽ vào Google Sheet của bạn và hiện trong nút ☰ cạnh nút gửi.
 
 ## 5. Gửi thiệp có tên khách
-Thêm `?khach=Tên` vào cuối link, ví dụ:
-`https://ten-mien-cua-ban/?khach=Anh%20Nam%20%26%20Chị%20Lan`
-→ Thiệp hiện "Trân trọng kính mời **Anh Nam & Chị Lan**" và tự điền tên vào form.
+Thêm `?khach=Tên` vào cuối link:
+- **Dùng dấu `+` thay khoảng trắng (khuyên dùng nhất khi gửi qua Zalo / Facebook):**
+  `https://ten-mien-cua-ban/?khach=Anh+Tuấn`
+  `https://ten-mien-cua-ban/?khach=Gia+đình+bác+Hùng`
+- **Hoặc dùng dấu gạch dưới `_`:**
+  `https://ten-mien-cua-ban/?khach=Anh_Tuấn`
+- **Hoặc gõ dấu cách bình thường / `%20`:**
+  `https://ten-mien-cua-ban/?khach=Anh Tuấn`
+→ Thiệp sẽ tự động hiển thị: "Trân trọng kính mời **Anh Tuấn**" và tự điền tên vào form RSVP.
 
 ## 6. Xem thử & đưa lên mạng
 - Xem trên máy: chạy `python3 -m http.server 8000` trong thư mục này, mở `http://localhost:8000`.
