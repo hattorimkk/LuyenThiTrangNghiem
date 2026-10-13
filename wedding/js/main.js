@@ -70,7 +70,7 @@
       el.textContent = guest;
       el.classList.add('has-guest');
     });
-    if (nameInput) nameInput.value = "<br>" + guest;
+    if (nameInput) nameInput.value = guest;
   }
 
   /* ---------------------------------------------------------
