@@ -6,13 +6,13 @@
 
 @font-face {
   font-family: "Arcittya Begatri";
-  src: url("https://cdn.taothiep.com/wedding-app-assets/fonts/arcittya-begatri/3949ce73-dd96-4d84-9fa1-31a751c7af70.woff2") format("woff2");
+  src: url("../assets/fonts/arcittya-begatri.woff2") format("woff2");
   font-display: swap;
 }
 
 @font-face {
   font-family: "Hastegi";
-  src: url("https://cdn.taothiep.com/wedding-app-assets/fonts/hastegi/250da5ef-8ff7-4da3-9076-b24c6d713e1f.woff2") format("woff2");
+  src: url("../assets/fonts/hastegi.woff2") format("woff2");
   font-display: swap;
 }
 
