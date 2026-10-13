@@ -217,7 +217,7 @@ a { color: inherit; text-decoration: none; }
 .hero-script {
   top: calc(395 * var(--u));
   font-family: var(--f-script-en);
-  font-size: calc(115 * var(--u));
+  font-size: calc(110 * var(--u));
   line-height: 1.3;
   color: rgba(255, 255, 255, .55);
 }
