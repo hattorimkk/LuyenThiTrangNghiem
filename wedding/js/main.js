@@ -16,10 +16,10 @@
 
     // Link Web App Google Apps Script để lưu lời chúc vào Google Sheets
     // (xem HUONG-DAN.md). Để trống = chỉ lưu tạm trên trình duyệt (dùng thử).
-    sheetEndpoint: '',
+    sheetEndpoint: 'https://script.google.com/macros/s/AKfycbzDrHSN4zSdUruG5qO6sGqQ2bq9Ut_O-5IRnn2y18hPsBOzKOwKMXZ12Clk2WyQoRuf/exec',
 
     // Tự mở cửa sau bao nhiêu ms nếu khách không chạm (0 = không tự mở)
-    autoOpenAfter: 6000
+    autoOpenAfter: 200
   };
 
   var $ = function (s, r) { return (r || document).querySelector(s); };
