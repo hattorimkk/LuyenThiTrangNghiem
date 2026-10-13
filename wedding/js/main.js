@@ -63,14 +63,14 @@
   if (guest.indexOf('_') > -1 && guest.indexOf(' ') === -1) {
     guest = guest.replace(/_/g, ' ');
   }
-  
+
   var nameInput = $('#f-name');
   if (guest) {
     $$('[data-guest]').forEach(function (el) {
       el.textContent = guest;
       el.classList.add('has-guest');
     });
-    if (nameInput) nameInput.value = guest;
+    if (nameInput) nameInput.value = "<br>" + guest;
   }
 
   /* ---------------------------------------------------------
