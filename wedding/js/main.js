@@ -64,10 +64,12 @@
     guest = guest.replace(/_/g, ' ');
   }
 
-  var nameInput = $('#f-name');
+ var nameInput = $('#f-name');
   if (guest) {
     $$('[data-guest]').forEach(function (el) {
       el.textContent = guest;
+    });
+    $$('.invite-text').forEach(function (el) {
       el.classList.add('has-guest');
     });
     if (nameInput) nameInput.value = guest;

@@ -46,7 +46,8 @@ Thêm `?khach=Tên` vào cuối link:
   `https://ten-mien-cua-ban/?khach=Anh_Tuấn`
 - **Hoặc gõ dấu cách bình thường / `%20`:**
   `https://ten-mien-cua-ban/?khach=Anh Tuấn`
-→ Thiệp sẽ tự động hiển thị: "Trân trọng kính mời **Anh Tuấn**" và tự điền tên vào form RSVP.
+→ **Nếu không có tên (link gốc):** Hiển thị câu liền mạch: *"Trân trọng kính mời Quý Khách đến chung vui cùng gia đình chúng tôi"*.
+→ **Nếu có tên khách trong link:** Tên khách sẽ được **xuống riêng 1 dòng lớn với phông chữ uốn lượn nghệ thuật (Calligraphy)** sang trọng, đồng thời tự điền tên vào form RSVP.
 
 ## 6. Xem thử & đưa lên mạng
 - Xem trên máy: chạy `python3 -m http.server 8000` trong thư mục này, mở `http://localhost:8000`.

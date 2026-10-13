@@ -286,12 +286,35 @@ a { color: inherit; text-decoration: none; }
   padding: 0 calc(12 * var(--u));
 }
 .guest-name { color: var(--green-dark); }
-.guest-name.has-guest {
+
+/* Khi có tên khách mời riêng: đưa tên khách xuống riêng 1 dòng nổi bật */
+.invite-text.has-guest .invite-lead {
+  display: block;
+  font-size: calc(15.5 * var(--u));
+  letter-spacing: .05em;
+}
+.invite-text.has-guest .guest-name {
+  display: block;
   font-family: var(--f-script);
   text-transform: none;
   font-weight: 400;
-  font-size: 1.6em;
-  line-height: 1;
+  font-size: calc(34 * var(--u));
+  line-height: 1.25;
+  margin: calc(4 * var(--u)) 0 calc(2 * var(--u));
+  color: var(--green-dark);
+}
+.invite-text.has-guest .invite-to {
+  display: inline;
+  font-size: calc(15.5 * var(--u));
+  letter-spacing: .05em;
+}
+.invite-text.has-guest .br-default {
+  display: none;
+}
+.invite-text.has-guest .invite-tail {
+  display: inline;
+  font-size: calc(15.5 * var(--u));
+  letter-spacing: .05em;
 }
 .trio {
   display: flex;
