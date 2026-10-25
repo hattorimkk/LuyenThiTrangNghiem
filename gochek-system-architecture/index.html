@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kiến Trúc Hệ Thống Data, Workflow & AI Agent — GoChek</title>
+  <title>Kiến Trúc Hệ Thống Data, Workflow & AI Agent — Minh Ký - HattoriMK</title>
   <style>
     :root {
       --bg: #ffffff;
@@ -98,6 +98,28 @@
       white-space: nowrap;
     }
 
+    .slide-header-right {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-shrink: 0;
+    }
+
+    .header-author-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      color: #ffffff;
+      background: #111111;
+      border: 1.5px solid #111111;
+      padding: 6px 14px;
+      border-radius: 99px;
+      white-space: nowrap;
+    }
+
     /* SLIDE BODY */
     .slide-body {
       flex: 1;
@@ -117,9 +139,18 @@
       justify-content: center;
       border: 1.5px solid var(--border-strong);
       border-radius: 14px;
-      padding: 40px 52px;
+      padding: 36px 52px;
       background: var(--bg-subtle);
-      gap: 22px;
+      gap: 20px;
+      position: relative;
+    }
+
+    .cover-top-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
     }
 
     .cover-tag {
@@ -133,6 +164,26 @@
       border-radius: 99px;
       width: fit-content;
       background: #fff;
+    }
+
+    .cover-author-signature {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--text);
+      background: #ffffff;
+      border: 1.5px solid var(--border-strong);
+      padding: 10px 20px;
+      border-radius: 10px;
+      width: fit-content;
+      box-shadow: 3px 3px 0px #111111;
+    }
+
+    .cover-author-signature strong {
+      font-weight: 900;
+      letter-spacing: 0.02em;
     }
 
     .cover-main-title {
@@ -1102,13 +1153,21 @@
          ================================================================= -->
     <section class="slide active" data-index="0">
       <div class="cover-center">
-        <span class="cover-tag">SYSTEM ARCHITECTURE PRESENTATION</span>
+        <div class="cover-top-bar">
+          <span class="cover-tag">SYSTEM ARCHITECTURE PRESENTATION</span>
+          <span class="header-author-badge">✦ Minh Ký - HattoriMK</span>
+        </div>
         <h1 class="cover-main-title">
           GoChek Data, Workflow &amp; AI Agent Architecture
         </h1>
         <p class="cover-sub">
           Kiến trúc vận hành Thương mại Điện tử &amp; Tiếp thị Đa kênh (<code>TikTok Business</code>, <code>TikTok Shop</code>, <code>Shopee</code>, <code>Facebook</code>) theo mô hình <strong>4 Lớp tách biệt</strong>, tập trung hóa dữ liệu và kiểm soát phân quyền qua <strong>MCP / n8n</strong>.
         </p>
+
+        <div class="cover-author-signature">
+          <span>✦ Tác giả &amp; Thiết kế Kiến trúc Hệ thống:</span>
+          <strong>Minh Ký - HattoriMK</strong>
+        </div>
 
         <div class="cover-stack-strip" id="coverStackStrip"></div>
 
@@ -4012,6 +4071,41 @@ pd.DataFrame(results).to_csv("ket_qua_khao_sat_ao.csv", index=False, encoding="u
         el.classList.add("title-with-logo");
         el.innerHTML = `${renderStackLogos(keys, size)}<span>${text}</span>`;
         el.dataset.logoHydrated = "1";
+      });
+
+      // 3. Gắn dấu ấn tác giả "Minh Ký - HattoriMK" lên toàn bộ Header các Slide & Trang Bìa chuyển phần
+      document.querySelectorAll(".slide-header").forEach(header => {
+        if (header.dataset.authorHydrated === "1") return;
+        const badge = document.createElement("span");
+        badge.className = "header-author-badge";
+        badge.textContent = "✦ Minh Ký - HattoriMK";
+
+        const rightChild = header.children[1];
+        if (rightChild) {
+          const wrap = document.createElement("div");
+          wrap.className = "slide-header-right";
+          header.replaceChild(wrap, rightChild);
+          wrap.appendChild(rightChild);
+          wrap.appendChild(badge);
+        } else {
+          header.appendChild(badge);
+        }
+        header.dataset.authorHydrated = "1";
+      });
+
+      document.querySelectorAll(".cover-center").forEach(cover => {
+        if (cover.querySelector(".cover-top-bar")) return;
+        const tag = cover.querySelector(".cover-tag");
+        if (tag) {
+          const topBar = document.createElement("div");
+          topBar.className = "cover-top-bar";
+          const badge = document.createElement("span");
+          badge.className = "header-author-badge";
+          badge.textContent = "✦ Minh Ký - HattoriMK";
+          cover.insertBefore(topBar, tag);
+          topBar.appendChild(tag);
+          topBar.appendChild(badge);
+        }
       });
     }
 
