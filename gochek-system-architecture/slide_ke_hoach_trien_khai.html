@@ -1,0 +1,2265 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kế Hoạch &amp; Timeline Triển Khai Data &amp; MCP Toàn Công Ty (4 Tuần)</title>
+  <style>
+    :root {
+      --bg: #ffffff;
+      --bg-subtle: #f7f7f7;
+      --bg-hover: #efefef;
+      --text: #111111;
+      --text-secondary: #555555;
+      --text-muted: #888888;
+      --border: #d4d4d4;
+      --border-strong: #111111;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+      user-select: none;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* SLIDES VIEWPORT */
+    .slides-container {
+      width: 100vw;
+      height: 100vh;
+      position: relative;
+    }
+
+    .slide {
+      position: absolute;
+      inset: 0;
+      padding: 36px 56px 76px 56px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      opacity: 0;
+      pointer-events: none;
+      transform: translateX(24px);
+      transition: opacity 0.24s ease, transform 0.24s ease;
+      overflow: hidden;
+    }
+
+    .slide.active {
+      opacity: 1;
+      pointer-events: auto;
+      transform: translateX(0);
+    }
+
+    /* SLIDE HEADER */
+    .slide-header {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      border-bottom: 1.5px solid var(--border-strong);
+      padding-bottom: 14px;
+      flex-shrink: 0;
+    }
+
+    .slide-step {
+      font-size: 12.5px;
+      font-weight: 800;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 5px;
+    }
+
+    .slide-title {
+      font-size: 28px;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      color: var(--text);
+      line-height: 1.2;
+    }
+
+    .slide-hint {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text-secondary);
+      border: 1px solid var(--border);
+      padding: 6px 14px;
+      border-radius: 99px;
+      background: var(--bg-subtle);
+      white-space: nowrap;
+    }
+
+    /* SLIDE BODY */
+    .slide-body {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 18px;
+      min-height: 0;
+      padding: 10px 0;
+    }
+
+    /* COVER SLIDE */
+    .cover-center {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      border: 1.5px solid var(--border-strong);
+      border-radius: 14px;
+      padding: 34px 48px;
+      background: var(--bg-subtle);
+      gap: 18px;
+      position: relative;
+    }
+
+    .cover-top-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .cover-tag {
+      display: inline-block;
+      font-size: 12.5px;
+      font-weight: 800;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      border: 1.5px solid var(--border-strong);
+      padding: 6px 16px;
+      border-radius: 99px;
+      width: fit-content;
+      background: #fff;
+    }
+
+    .cover-main-title {
+      font-size: 44px;
+      font-weight: 900;
+      letter-spacing: -0.03em;
+      line-height: 1.12;
+      color: var(--text);
+      max-width: 1020px;
+    }
+
+    .cover-sub {
+      font-size: 17.5px;
+      color: var(--text-secondary);
+      max-width: 960px;
+      line-height: 1.5;
+    }
+
+    /* FLOW BAR */
+    .context-flow-bar {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      padding: 12px 18px;
+      background: var(--bg-subtle);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      flex-shrink: 0;
+      flex-wrap: wrap;
+    }
+
+    .context-pill {
+      padding: 7px 14px;
+      border: 1px solid var(--border);
+      background: #fff;
+      border-radius: 6px;
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--text);
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .context-pill.highlight {
+      border: 1.5px solid var(--border-strong);
+      background: var(--text);
+      color: #fff;
+    }
+
+    .context-arrow {
+      font-size: 16px;
+      color: var(--text-muted);
+      font-weight: 700;
+    }
+
+    /* GRIDS & MINIMAL BOXES */
+    .boxes-grid-2 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+    }
+
+    .boxes-grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+
+    .boxes-grid-4 {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+    }
+
+    .boxes-grid-5 {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 14px;
+    }
+
+    .min-box {
+      background: #ffffff;
+      border: 1.5px solid var(--border);
+      border-radius: 10px;
+      padding: 18px 20px;
+      cursor: pointer;
+      transition: all 0.16s ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 10px;
+      position: relative;
+    }
+
+    .min-box:hover {
+      border-color: var(--border-strong);
+      background: var(--bg-subtle);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    }
+
+    .min-box.dark-accent {
+      border: 2px solid var(--border-strong);
+      background: var(--bg-subtle);
+    }
+
+    .min-box-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+    }
+
+    .min-box-code {
+      font-size: 11.5px;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+    }
+
+    .min-box-open {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--text);
+      border: 1px solid var(--border);
+      padding: 3px 9px;
+      border-radius: 4px;
+      background: var(--bg-subtle);
+      transition: all 0.15s;
+      white-space: nowrap;
+    }
+
+    .min-box:hover .min-box-open {
+      background: var(--text);
+      color: #fff;
+      border-color: var(--text);
+    }
+
+    .min-box-title {
+      font-size: 18px;
+      font-weight: 800;
+      color: var(--text);
+      line-height: 1.3;
+    }
+
+    .min-box-sub {
+      font-size: 14.5px;
+      color: var(--text-secondary);
+      line-height: 1.45;
+    }
+
+    .min-box.compact {
+      padding: 14px 16px;
+      gap: 8px;
+    }
+
+    .min-box.compact .min-box-title {
+      font-size: 15.5px;
+    }
+
+    /* MINI TAG PILLS INSIDE CARDS */
+    .pill-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 2px;
+    }
+
+    .mini-pill {
+      font-size: 12px;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 6px;
+      background: var(--bg-subtle);
+      border: 1px solid var(--border);
+      color: var(--text);
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .mini-pill.solid {
+      background: #111111;
+      color: #ffffff;
+      border-color: #111111;
+    }
+
+    /* TAKEAWAY / MILESTONE BANNER */
+    .milestone-banner {
+      border: 2px solid var(--border-strong);
+      border-radius: 10px;
+      background: var(--bg-subtle);
+      padding: 14px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      cursor: pointer;
+      transition: all 0.16s ease;
+    }
+
+    .milestone-banner:hover {
+      background: var(--bg-hover);
+      transform: translateY(-1px);
+    }
+
+    /* =====================================================================
+       SLIDE 2: INTERACTIVE ROADMAP MIND MAP + ZOOM/PAN
+       ===================================================================== */
+    .mindmap-viewport {
+      flex: 1;
+      width: 100%;
+      background: var(--bg-subtle);
+      border: 1.5px solid var(--border);
+      border-radius: 12px;
+      position: relative;
+      overflow: hidden;
+      cursor: grab;
+    }
+
+    .mindmap-viewport.dragging {
+      cursor: grabbing;
+    }
+
+    .mindmap-canvas {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: flex;
+      align-items: center;
+      gap: 54px;
+      padding: 36px 48px;
+      min-width: max-content;
+      transform-origin: 0 0;
+      will-change: transform;
+    }
+
+    .zoom-toolbar {
+      position: absolute;
+      bottom: 14px;
+      right: 14px;
+      z-index: 20;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(255, 255, 255, 0.94);
+      border: 1px solid var(--border);
+      padding: 4px 8px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    }
+
+    .zoom-btn {
+      background: #fff;
+      border: 1px solid var(--border);
+      color: var(--text);
+      width: 26px;
+      height: 26px;
+      border-radius: 5px;
+      font-size: 14px;
+      font-weight: 700;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .zoom-btn:hover {
+      background: var(--text);
+      color: #fff;
+      border-color: var(--text);
+    }
+
+    .zoom-label {
+      font-size: 11.5px;
+      font-weight: 700;
+      color: var(--text-secondary);
+      min-width: 44px;
+      text-align: center;
+    }
+
+    #archSvgOverlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 1;
+      overflow: visible;
+    }
+
+    .arch-layer-col {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 16px;
+      position: relative;
+      z-index: 2;
+      padding-right: 28px;
+      border-right: 1.5px dashed #cccccc;
+    }
+
+    .arch-layer-col:last-child {
+      border-right: none;
+      padding-right: 0;
+    }
+
+    .layer-col-header {
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      text-align: left;
+      margin-bottom: 4px;
+    }
+
+    .layer-group-frame {
+      border: 1.5px solid var(--border);
+      background: rgba(255, 255, 255, 0.82);
+      border-radius: 10px;
+      padding: 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .layer-group-label {
+      font-size: 11.5px;
+      font-weight: 800;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--text-secondary);
+    }
+
+    .mm-node-row {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      position: relative;
+    }
+
+    .arch-node {
+      background: #ffffff;
+      border: 1.5px solid var(--border-strong);
+      border-radius: 9px;
+      padding: 12px 16px;
+      min-width: 225px;
+      cursor: pointer;
+      transition: background 0.15s ease;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+      flex-shrink: 0;
+    }
+
+    .arch-node:hover {
+      background: var(--bg-hover);
+    }
+
+    .arch-node.expanded {
+      background: var(--text);
+      color: #ffffff;
+    }
+
+    .arch-node-title {
+      font-size: 15px;
+      font-weight: 800;
+      line-height: 1.28;
+    }
+
+    .arch-node-sub {
+      font-size: 12.5px;
+      color: var(--text-secondary);
+      margin-top: 2px;
+    }
+
+    .arch-node.expanded .arch-node-sub {
+      color: #cccccc;
+    }
+
+    .arch-node-badge {
+      width: 23px;
+      height: 23px;
+      border-radius: 50%;
+      border: 1.2px solid var(--border-strong);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 13px;
+      font-weight: 800;
+      flex-shrink: 0;
+    }
+
+    .arch-node.expanded .arch-node-badge {
+      border-color: #ffffff;
+      background: #ffffff;
+      color: var(--text);
+    }
+
+    .mm-children-col {
+      display: none;
+      flex-direction: column;
+      justify-content: center;
+      gap: 8px;
+      position: relative;
+    }
+
+    .mm-children-col.open {
+      display: flex;
+      animation: sproutIn 0.18s ease;
+    }
+
+    .mm-child-row {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+    }
+
+    .mm-child-box {
+      background: #ffffff;
+      border: 1.3px solid #555555;
+      border-radius: 7px;
+      padding: 8px 13px;
+      min-width: 230px;
+      max-width: 310px;
+      cursor: pointer;
+      transition: background 0.15s ease;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+    }
+
+    .mm-child-box:hover {
+      border-color: #000000;
+      background: var(--bg-hover);
+    }
+
+    .mm-child-text {
+      font-size: 13px;
+      font-weight: 600;
+      line-height: 1.35;
+    }
+
+    .mm-child-action {
+      font-size: 11px;
+      font-weight: 700;
+      padding: 2px 6px;
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+
+    @keyframes sproutIn {
+      from { opacity: 0; transform: translateX(-8px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+
+    /* STACK LOGOS */
+    .stack-logo {
+      width: 32px;
+      height: 32px;
+      border-radius: 7px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      border: 1px solid rgba(0, 0, 0, 0.12);
+      background: #ffffff;
+      overflow: hidden;
+    }
+
+    .arch-node.expanded .stack-logo {
+      border-color: rgba(255, 255, 255, 0.32);
+    }
+
+    .stack-logo.lg {
+      width: 38px;
+      height: 38px;
+      border-radius: 8px;
+    }
+
+    .stack-logo svg {
+      width: 20px;
+      height: 20px;
+      display: block;
+    }
+
+    .stack-logo.lg svg {
+      width: 24px;
+      height: 24px;
+    }
+
+    .stack-logo-group {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      flex-shrink: 0;
+    }
+
+    .node-left-wrap {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+    }
+
+    .title-with-logo {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+    }
+
+    /* FLOATING BOTTOM CONTROLS */
+    .bottom-nav {
+      position: fixed;
+      bottom: 18px;
+      left: 56px;
+      right: 56px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      z-index: 40;
+      pointer-events: none;
+    }
+
+    .nav-cluster {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(255, 255, 255, 0.94);
+      border: 1px solid var(--border);
+      padding: 6px 12px;
+      border-radius: 99px;
+      pointer-events: auto;
+      backdrop-filter: blur(8px);
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+    }
+
+    .nav-btn {
+      background: transparent;
+      border: 1px solid transparent;
+      color: var(--text);
+      padding: 6px 12px;
+      border-radius: 99px;
+      font-size: 13px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+
+    .nav-btn:hover {
+      background: var(--bg-hover);
+      border-color: var(--border);
+    }
+
+    .nav-indicator {
+      font-size: 13px;
+      font-weight: 800;
+      color: var(--text-secondary);
+      padding: 0 10px;
+    }
+
+    .progress-dots {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--border);
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .dot.active {
+      width: 24px;
+      border-radius: 99px;
+      background: var(--text);
+    }
+
+    /* POPUP MODAL */
+    .popup-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.45);
+      backdrop-filter: blur(3px);
+      z-index: 100;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 32px;
+    }
+
+    .popup-overlay.open {
+      display: flex;
+      animation: fadePopup 0.18s ease;
+    }
+
+    .popup-card {
+      background: #ffffff;
+      border: 2px solid var(--border-strong);
+      border-radius: 14px;
+      max-width: 980px;
+      width: 100%;
+      max-height: 88vh;
+      overflow-y: auto;
+      padding: 28px 34px;
+      box-shadow: 0 24px 60px rgba(0, 0, 0, 0.22);
+    }
+
+    .popup-top {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 16px;
+      border-bottom: 1.5px solid var(--border);
+      padding-bottom: 14px;
+      margin-bottom: 18px;
+    }
+
+    .popup-tag {
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 4px;
+    }
+
+    .popup-title {
+      font-size: 22px;
+      font-weight: 800;
+      color: var(--text);
+      line-height: 1.3;
+    }
+
+    .popup-close {
+      background: var(--bg-subtle);
+      border: 1px solid var(--border);
+      color: var(--text);
+      padding: 7px 14px;
+      border-radius: 6px;
+      font-size: 13px;
+      font-weight: 700;
+      cursor: pointer;
+      flex-shrink: 0;
+    }
+
+    .popup-close:hover {
+      background: var(--text);
+      color: #fff;
+    }
+
+    .popup-summary {
+      background: var(--bg-subtle);
+      border-left: 4px solid var(--border-strong);
+      padding: 12px 16px;
+      font-size: 15px;
+      color: var(--text);
+      line-height: 1.5;
+      margin-bottom: 16px;
+    }
+
+    .popup-bullets {
+      display: flex;
+      flex-direction: column;
+      gap: 9px;
+    }
+
+    .popup-bullet-item {
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 12px 16px;
+      background: #fff;
+      font-size: 14.5px;
+      line-height: 1.5;
+      color: var(--text);
+    }
+
+    @keyframes fadePopup {
+      from { opacity: 0; transform: scale(0.98); }
+      to { opacity: 1; transform: scale(1); }
+    }
+  </style>
+</head>
+<body>
+
+  <main class="slides-container">
+
+    <!-- =================================================================
+         SLIDE 01: TRANG BÌA — MỤC TIÊU & TIMELINE TRIỂN KHAI 4 TUẦN
+         ================================================================= -->
+    <section class="slide active" data-index="0">
+      <div class="cover-center">
+        <div class="cover-top-bar">
+          <span class="cover-tag">IMPLEMENTATION PLAN • 4 WEEKS</span>
+        </div>
+
+        <h1 class="cover-main-title">
+          Mục Tiêu &amp; Kế Hoạch Triển Khai Data + MCP Toàn Công Ty
+        </h1>
+
+        <p class="cover-sub">
+          Đảm bảo <strong>Hạ tầng n8n</strong> + <strong>Dữ liệu (Google Sheets)</strong> + <strong>Công cụ (MCP &amp; Webhook)</strong> theo yêu cầu thực tế để các phòng ban tự build Agent hoạt động
+        </p>
+
+        <div class="boxes-grid-4" style="margin-top: 8px;">
+          <div class="min-box compact" onclick="openInfoPopup('cover_infra')">
+            <div class="min-box-top">
+              <span class="min-box-code">01 • NỀN TẢNG</span>
+              <span class="min-box-open">+</span>
+            </div>
+            <div class="min-box-title" data-stack-logos="apple,n8n">Hạ Tầng n8n &amp; Kết Nối API</div>
+          </div>
+
+          <div class="min-box compact" onclick="openInfoPopup('cover_data')">
+            <div class="min-box-top">
+              <span class="min-box-code">02 • DỮ LIỆU</span>
+              <span class="min-box-open">+</span>
+            </div>
+            <div class="min-box-title" data-stack-logos="sheets,disk">Google Sheets &amp; Lưu Trữ</div>
+          </div>
+
+          <div class="min-box compact" onclick="openInfoPopup('cover_mcp')">
+            <div class="min-box-top">
+              <span class="min-box-code">03 • CÔNG CỤ</span>
+              <span class="min-box-open">+</span>
+            </div>
+            <div class="min-box-title" data-stack-logos="mcp,n8n">MCP Tools &amp; Webhook</div>
+          </div>
+
+          <div class="min-box compact" onclick="openInfoPopup('cover_pace')">
+            <div class="min-box-top">
+              <span class="min-box-code">04 • LỘ TRÌNH</span>
+              <span class="min-box-open">+</span>
+            </div>
+            <div class="min-box-title" data-stack-logos="claude">Triển Khai Cuốn Chiếu 4 Tuần</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         SLIDE 02: SƠ ĐỒ MASTER TIMELINE 4 TUẦN (INTERACTIVE ROADMAP)
+         ================================================================= -->
+    <section class="slide" data-index="1">
+      <div class="slide-header">
+        <div>
+          <div class="slide-step">SLIDE 02 / 08 — MASTER TIMELINE</div>
+          <h2 class="slide-title">Sơ Đồ Lộ Trình Triển Khai 4 Tuần (Cuốn Chiếu Theo Từng Đợt Phòng Ban)</h2>
+        </div>
+        <div style="display:flex; gap:8px;">
+          <button class="popup-close" onclick="expandAllTreeNodes()">+ Bung toàn bộ</button>
+          <button class="popup-close" onclick="collapseAllTreeNodes()">− Thu gọn</button>
+          <button class="popup-close" onclick="resetZoomAndPan()">Đặt lại khung nhìn</button>
+        </div>
+      </div>
+
+      <div class="slide-body" style="padding: 8px 0;">
+        <div class="mindmap-viewport" id="mmViewport">
+          <div class="mindmap-canvas" id="mmCanvas">
+            <svg id="archSvgOverlay" xmlns="http://www.w3.org/2000/svg"></svg>
+
+            <!-- CỘT 1: TUẦN 1 -->
+            <div class="arch-layer-col" id="col-w1">
+              <div class="layer-col-header">TUẦN 01 • KHỞI TẠO</div>
+              <div class="layer-group-frame">
+                <div class="layer-group-label">HẠ TẦNG &amp; KHẢO SÁT NHU CẦU</div>
+                <div id="mount-w1_infra"></div>
+                <div id="mount-w1_survey"></div>
+              </div>
+            </div>
+
+            <!-- CỘT 2: TUẦN 2 -->
+            <div class="arch-layer-col" id="col-w2">
+              <div class="layer-col-header">TUẦN 02 • ĐỢT 1</div>
+              <div class="layer-group-frame">
+                <div class="layer-group-label">KẾ TOÁN &amp; BRAND</div>
+                <div id="mount-w2_ketoan"></div>
+                <div id="mount-w2_brand"></div>
+              </div>
+            </div>
+
+            <!-- CỘT 3: TUẦN 3 -->
+            <div class="arch-layer-col" id="col-w3">
+              <div class="layer-col-header">TUẦN 03 • ĐỢT 2</div>
+              <div class="layer-group-frame">
+                <div class="layer-group-label">MARKETING &amp; CSKH</div>
+                <div id="mount-w3_mkt"></div>
+                <div id="mount-w3_cskh"></div>
+              </div>
+            </div>
+
+            <!-- CỘT 4: TUẦN 4 -->
+            <div class="arch-layer-col" id="col-w4">
+              <div class="layer-col-header">TUẦN 04 • ĐỢT 3 &amp; BÀN GIAO</div>
+              <div class="layer-group-frame">
+                <div class="layer-group-label">POD, HOÀN THIỆN &amp; BÀN GIAO</div>
+                <div id="mount-w4_pod"></div>
+                <div id="mount-w4_golive"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="zoom-toolbar">
+            <button class="zoom-btn" onclick="stepZoom(-0.15)" title="Thu nhỏ">−</button>
+            <span class="zoom-label" id="zoomLabel">100%</span>
+            <button class="zoom-btn" onclick="stepZoom(0.15)" title="Phóng to">+</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         SLIDE 03: MỤC TIÊU CỐT LÕI & CÁCH THỨC TRIỂN KHAI
+         ================================================================= -->
+    <section class="slide" data-index="2">
+      <div class="slide-header">
+        <div>
+          <div class="slide-step">SLIDE 03 / 08 — MỤC TIÊU &amp; PHƯƠNG PHÁP TRIỂN KHAI</div>
+          <h2 class="slide-title">Mục Tiêu Cốt Lõi &amp; Quy Trình Phối Hợp Giữa Hạ Tầng Và Các Phòng Ban</h2>
+        </div>
+        <span class="slide-hint">Ấn vào từng khối để xem chi tiết</span>
+      </div>
+
+      <div class="slide-body">
+        <div class="context-flow-bar">
+          <span class="context-pill highlight">1. Dựng Hạ Tầng n8n &amp; API</span>
+          <span class="context-arrow">⟶</span>
+          <span class="context-pill highlight">2. Thu Thập Yêu Cầu Từng Phòng</span>
+          <span class="context-arrow">⟶</span>
+          <span class="context-pill highlight">3. Đấu Nối Data (Sheets) &amp; Tool (MCP)</span>
+          <span class="context-arrow">⟶</span>
+          <span class="context-pill">4. Phòng Ban Tự Build Agent</span>
+        </div>
+
+        <div class="boxes-grid-2">
+          <div class="min-box dark-accent" onclick="openInfoPopup('scope_admin')">
+            <div class="min-box-top">
+              <span class="min-box-code">MỤC TIÊU ĐẢM BẢO CỦA DỰ ÁN (TẦNG NỀN TẢNG)</span>
+              <span class="min-box-open">+</span>
+            </div>
+            <div class="min-box-title" data-stack-logos="n8n,sheets,mcp" data-logo-size="lg">Đảm Bảo Sẵn Sàng Data &amp; Tool Cho Các Phòng Ban</div>
+            <div class="min-box-sub">Xây dựng hạ tầng n8n, kết nối nguồn dữ liệu về Google Sheets và cung cấp các bộ công cụ (MCP / Webhook) đúng theo nhu cầu nghiệp vụ để phòng ban sử dụng.</div>
+            <div class="pill-row">
+              <span class="mini-pill solid">Hạ tầng n8n ổn định</span>
+              <span class="mini-pill">Data tự động trên Google Sheets</span>
+              <span class="mini-pill">Bộ Tool MCP &amp; Webhook</span>
+              <span class="mini-pill">Kiểm soát phân quyền &amp; an toàn</span>
+            </div>
+          </div>
+
+          <div class="min-box" onclick="openInfoPopup('scope_dept')">
+            <div class="min-box-top">
+              <span class="min-box-code">VAI TRÒ CỦA CÁC PHÒNG BAN (TẦNG ỨNG DỤNG)</span>
+              <span class="min-box-open">+</span>
+            </div>
+            <div class="min-box-title" data-stack-logos="claude,sheets" data-logo-size="lg">Đưa Yêu Cầu Nghiệp Vụ &amp; Tự Chủ Vận Hành Agent</div>
+            <div class="min-box-sub">Các phòng ban tự xác định các nghiệp vụ cần dữ liệu/công cụ gì qua phiếu khảo sát, sau đó nhận Data &amp; Tool đã đấu nối để tự xây dựng Agent của phòng mình.</div>
+            <div class="pill-row">
+              <span class="mini-pill">Đề xuất nhu cầu Data &amp; Tool</span>
+              <span class="mini-pill">Số lượng bảng/tool linh hoạt theo thực tế</span>
+              <span class="mini-pill solid">Tự chủ build &amp; vận hành Agent</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="boxes-grid-3">
+          <div class="min-box compact" onclick="openInfoPopup('tpl_lookup')">
+            <div class="min-box-top">
+              <span class="min-box-code">NHÓM ĐẢM BẢO 01</span>
+              <span class="min-box-open">+</span>
+            </div>
+            <div class="min-box-title" data-stack-logos="sheets,mcp">Đồng Bộ &amp; Tra Cứu Dữ Liệu</div>
+            <div class="min-box-sub">Đổ số liệu tự động về Google Sheets &amp; cung cấp tool đọc/lọc dữ liệu cho Agent.</div>
+          </div>
+
+          <div class="min-box compact" onclick="openInfoPopup('tpl_extract')">
+            <div class="min-box-top">
+              <span class="min-box-code">NHÓM ĐẢM BẢO 02</span>
+              <span class="min-box-open">+</span>
+            </div>
+            <div class="min-box-title" data-stack-logos="disk,sheets">Đọc &amp; Lưu Trữ Chứng Từ/File</div>
+            <div class="min-box-sub">Xử lý file/hình ảnh (Bill, hóa đơn, lời thoại video...) và ghi nhận vào bảng tính.</div>
+          </div>
+
+          <div class="min-box compact" onclick="openInfoPopup('tpl_action')">
+            <div class="min-box-top">
+              <span class="min-box-code">NHÓM ĐẢM BẢO 03</span>
+              <span class="min-box-open">+</span>
+            </div>
+            <div class="min-box-title" data-stack-logos="n8n,mcp">Webhook Real-time &amp; Thao Tác An Toàn</div>
+            <div class="min-box-sub">Bắt sự kiện tức thì (Chat, Đơn hoàn) &amp; thực thi thao tác có kiểm soát giới hạn an toàn.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         SLIDE 04: ĐỊNH HƯỚNG TRỌNG TÂM ĐẢM BẢO CHO CÁC KHỐI PHÒNG BAN
+         ================================================================= -->
+    <section class="slide" data-index="3">
+      <div class="slide-header">
+        <div>
+          <div class="slide-step">SLIDE 04 / 08 — ĐỊNH HƯỚNG ĐẢM BẢO THEO PHÒNG BAN</div>
+          <h2 class="slide-title">Trọng Tâm Data &amp; Tool Đảm Bảo Cho Từng Khối (Thiết Kế Linh Hoạt Theo Khảo Sát)</h2>
+        </div>
+        <span class="slide-hint">Ấn vào từng phòng ban để xem định hướng</span>
+      </div>
+
+      <div class="slide-body">
+        <div class="boxes-grid-3">
+          <!-- KẾ TOÁN -->
+          <div class="min-box" onclick="openInfoPopup('dept_ketoan')">
+            <div class="min-box-top">
+              <span class="min-box-code">01 • KHỐI KẾ TOÁN (TUẦN 2)</span>
+              <span class="min-box-open">Chi tiết +</span>
+            </div>
+            <div class="min-box-title" data-stack-logos="sheets,disk,mcp">Số Liệu API + Lưu Trữ Sổ/Bill + Đối Soát</div>
+            <div class="min-box-sub">Đảm bảo dữ liệu đơn hàng/doanh thu/phí sàn từ API, lưu trữ chứng từ/bill vào các sổ kế toán &amp; công cụ đối soát tự động.</div>
+            <div class="pill-row">
+              <span class="mini-pill solid">Số liệu tài chính API</span>
+              <span class="mini-pill">Lưu trữ Bill &amp; Sổ sách</span>
+              <span class="mini-pill">Đối soát tự động</span>
+            </div>
+          </div>
+
+          <!-- BRAND -->
+          <div class="min-box" onclick="openInfoPopup('dept_brand')">
+            <div class="min-box-top">
+              <span class="min-box-code">02 • KHỐI BRAND (TUẦN 2)</span>
+              <span class="min-box-open">Chi tiết +</span>
+            </div>
+            <div class="min-box-title" data-stack-logos="tiktok_biz,sheets,mcp">Số Liệu Hiệu Quả Video &amp; Nội Dung</div>
+            <div class="min-box-sub">Đảm bảo dữ liệu đo lường chất lượng video, tỷ lệ giữ chân người xem, bóc tách nội dung &amp; các công cụ theo nghiệp vụ Brand.</div>
+            <div class="pill-row">
+              <span class="mini-pill solid">Chỉ số hiệu quả Video</span>
+              <span class="mini-pill">Phân tích giữ chân</span>
+              <span class="mini-pill">Dữ liệu kịch bản</span>
+            </div>
+          </div>
+
+          <!-- MARKETING -->
+          <div class="min-box" onclick="openInfoPopup('dept_mkt')">
+            <div class="min-box-top">
+              <span class="min-box-code">03 • KHỐI MARKETING (TUẦN 3)</span>
+              <span class="min-box-open">Chi tiết +</span>
+            </div>
+            <div class="min-box-title" data-stack-logos="tiktok_biz,facebook,mcp">Số Liệu Ads + Video In-house + KOL/KOC</div>
+            <div class="min-box-sub">Đảm bảo dữ liệu quảng cáo đa kênh, hiệu suất video in-house, quản lý KOL/KOC, Livestream &amp; các tool thao tác có kiểm soát.</div>
+            <div class="pill-row">
+              <span class="mini-pill solid">Hiệu suất Ads</span>
+              <span class="mini-pill">Video In-house &amp; KOL/KOC</span>
+              <span class="mini-pill">Tool hỗ trợ chiến dịch</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="boxes-grid-2">
+          <!-- CSKH -->
+          <div class="min-box" onclick="openInfoPopup('dept_cskh')">
+            <div class="min-box-top">
+              <span class="min-box-code">04 • KHỐI CSKH (TUẦN 3)</span>
+              <span class="min-box-open">Chi tiết +</span>
+            </div>
+            <div class="min-box-title" data-stack-logos="tiktok_shop,shopee,mcp">Chat &amp; Real-time Chat + Webhook + Đơn Hàng</div>
+            <div class="min-box-sub">Đảm bảo luồng Webhook nhận/phản hồi tin nhắn thời gian thực, công cụ tra cứu nhanh đơn hàng/bảo hành &amp; theo dõi hoàn trả/đánh giá.</div>
+            <div class="pill-row">
+              <span class="mini-pill solid">Real-time Chat &amp; Webhook</span>
+              <span class="mini-pill">Tra cứu đơn &amp; bảo hành</span>
+              <span class="mini-pill">Hoàn trả &amp; Đánh giá</span>
+            </div>
+          </div>
+
+          <!-- POD -->
+          <div class="min-box" onclick="openInfoPopup('dept_pod')">
+            <div class="min-box-top">
+              <span class="min-box-code">05 • KHỐI POD (TUẦN 4)</span>
+              <span class="min-box-open">Chi tiết +</span>
+            </div>
+            <div class="min-box-title" data-stack-logos="shopee,tiktok_shop,mcp">Sản Phẩm, Tồn Kho Đa Sàn &amp; Vận Hành Gian Hàng</div>
+            <div class="min-box-sub">Đảm bảo dữ liệu tồn kho, tốc độ bán, theo dõi chất lượng/lỗi sản phẩm &amp; bộ công cụ đồng bộ thông tin sản phẩm lên sàn.</div>
+            <div class="pill-row">
+              <span class="mini-pill solid">Tồn kho &amp; Sản phẩm</span>
+              <span class="mini-pill">Theo dõi chất lượng SKU</span>
+              <span class="mini-pill">Vận hành gian hàng</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         SLIDE 05: TIMELINE TUẦN 1 — HẠ TẦNG N8N + KHẢO SÁT + KẾT NỐI NỀN TẢNG
+         ================================================================= -->
+    <section class="slide" data-index="4">
+      <div class="slide-header">
+        <div>
+          <div class="slide-step">SLIDE 05 / 08 — TIMELINE TUẦN 01</div>
+          <h2 class="slide-title">Tuần 1: Dựng Hạ Tầng n8n + Gửi Khảo Sát Các Bên + Kết Nối API Gốc</h2>
+        </div>
+      </div>
+
+      <div class="slide-body">
+        <div class="context-flow-bar">
+          <span class="context-pill highlight">Nửa Đầu Tuần 1: Triển Khai Hạ Tầng n8n Chạy Ổn Định</span>
+          <span class="context-arrow">⟶</span>
+          <span class="context-pill highlight">Nửa Cuối Tuần 1: Gửi Yêu Cầu Các Bên Điền Khảo Sát + Kết Nối Token API</span>
+        </div>
+
+        <div class="boxes-grid-2">
+          <!-- NỬA ĐẦU TUẦN 1 -->
+          <div class="min-box" onclick="openInfoPopup('w1_half1')">
+            <div class="min-box-top">
+              <span class="min-box-code">NỬA ĐẦU TUẦN 1 • HẠ TẦNG KỸ THUẬT</span>
+              <span class="min-box-open">Checklist +</span>
+            </div>
+            <div class="min-box-title" data-stack-logos="apple,orbstack,n8n,cloudflare" data-logo-size="lg">1. Triển Khai Hạ Tầng n8n Trên Mac mini</div>
+            <div class="min-box-sub">Thiết lập môi trường máy chủ chạy ngầm 24/7, khởi chạy cụm n8n xử lý dữ liệu &amp; cụm n8n cung cấp MCP, cấu hình tên miền nhận Webhook.</div>
+            <div class="pill-row">
+              <span class="mini-pill">[x] Cài đặt máy chủ &amp; Docker</span>
+              <span class="mini-pill">[x] Khởi chạy hệ thống n8n</span>
+              <span class="mini-pill">[x] Mở cổng HTTPS &amp; Webhook</span>
+            </div>
+          </div>
+
+          <!-- NỬA CUỐI TUẦN 1 -->
+          <div class="min-box" onclick="openInfoPopup('w1_half2')">
+            <div class="min-box-top">
+              <span class="min-box-code">NỬA CUỐI TUẦN 1 • KHẢO SÁT &amp; KẾT NỐI GỐC</span>
+              <span class="min-box-open">Checklist +</span>
+            </div>
+            <div class="min-box-title" data-stack-logos="sheets,shopee,tiktok_shop,facebook" data-logo-size="lg">2. Gửi Phiếu Khảo Sát &amp; Đấu Nối Các Đầu API</div>
+            <div class="min-box-sub">Gửi checklist để các phòng ban đề xuất nhu cầu Data &amp; Tool theo nghiệp vụ; đồng thời cấu hình xác thực Token tự động với các sàn.</div>
+            <div class="pill-row">
+              <span class="mini-pill">[x] Gửi khảo sát nhu cầu cho các phòng</span>
+              <span class="mini-pill">[x] Đấu nối &amp; duy trì Token các nền tảng</span>
+              <span class="mini-pill">[x] Chuẩn bị danh mục sản phẩm gốc</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="milestone-banner" onclick="openInfoPopup('w1_done')">
+          <div class="title-with-logo">
+            <span data-stack-logos="n8n,sheets"></span>
+            <div>
+              <div class="min-box-code">✅ MỐC ĐẠT ĐƯỢC CUỐI TUẦN 1</div>
+              <div style="font-size:16px; font-weight:800;">
+                Hạ tầng n8n và kết nối API các sàn đã thông suốt 24/7 • Tiếp nhận yêu cầu dữ liệu &amp; công cụ từ các phòng ban để bắt đầu đấu nối
+              </div>
+            </div>
+          </div>
+          <span class="min-box-open">Chi tiết +</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         SLIDE 06: TIMELINE TUẦN 2 — ĐẤU NỐI CHO KẾ TOÁN & BRAND
+         ================================================================= -->
+    <section class="slide" data-index="5">
+      <div class="slide-header">
+        <div>
+          <div class="slide-step">SLIDE 06 / 08 — TIMELINE TUẦN 02</div>
+          <h2 class="slide-title">Tuần 2: Đấu Nối Phần Lớn Data &amp; Tool Cho KẾ TOÁN và BRAND</h2>
+        </div>
+      </div>
+
+      <div class="slide-body">
+        <div class="boxes-grid-2">
+          <!-- KẾ TOÁN -->
+          <div class="min-box" onclick="openInfoPopup('w2_ketoan_detail')">
+            <div class="min-box-top">
+              <span class="min-box-code">ĐỢT 1A • KHỐI KẾ TOÁN</span>
+              <span class="min-box-open">Checklist +</span>
+            </div>
+            <div class="min-box-title" data-stack-logos="sheets,disk,mcp" data-logo-size="lg">1. Đấu Nối Data &amp; Tool Cho Phòng Kế Toán</div>
+            <div class="min-box-sub">Triển khai các luồng kéo số liệu đơn hàng/tài chính từ API, thiết lập luồng lưu trữ Bill/sổ sách, công cụ đối soát Bill và bộ MCP cho Kế toán.</div>
+            <div class="pill-row">
+              <span class="mini-pill">[x] Số liệu đơn hàng &amp; phí sàn</span>
+              <span class="mini-pill solid">[x] Lưu trữ Bill &amp; Sổ sách kế toán</span>
+              <span class="mini-pill solid">[x] Công cụ đối soát Bill &amp; MCP</span>
+            </div>
+          </div>
+
+          <!-- BRAND -->
+          <div class="min-box" onclick="openInfoPopup('w2_brand_detail')">
+            <div class="min-box-top">
+              <span class="min-box-code">ĐỢT 1B • KHỐI BRAND</span>
+              <span class="min-box-open">Checklist +</span>
+            </div>
+            <div class="min-box-title" data-stack-logos="tiktok_biz,sheets,mcp" data-logo-size="lg">2. Đấu Nối Data &amp; Tool Cho Phòng Brand</div>
+            <div class="min-box-sub">Triển khai các luồng tự động kéo số liệu hiệu quả video, dữ liệu giữ chân người xem, hỗ trợ bóc tách nội dung và bộ MCP theo yêu cầu của Brand.</div>
+            <div class="pill-row">
+              <span class="mini-pill solid">[x] Tự động kéo số liệu Video</span>
+              <span class="mini-pill">[x] Dữ liệu giữ chân &amp; kịch bản</span>
+              <span class="mini-pill">[x] Đóng gói bộ Tool MCP cho Brand</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="milestone-banner" onclick="openInfoPopup('w2_done')">
+          <div class="title-with-logo">
+            <span data-stack-logos="sheets,mcp"></span>
+            <div>
+              <div class="min-box-code">✅ MỐC ĐẠT ĐƯỢC CUỐI TUẦN 2</div>
+              <div style="font-size:16px; font-weight:800;">
+                Đấu nối xong phần lớn Data (Google Sheets) và bộ Tool (MCP) cốt lõi cho Kế toán &amp; Brand để 2 phòng bắt đầu dựng Agent
+              </div>
+            </div>
+          </div>
+          <span class="min-box-open">Chi tiết +</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         SLIDE 07: TIMELINE TUẦN 3 — ĐẤU NỐI CHO MARKETING & CSKH
+         ================================================================= -->
+    <section class="slide" data-index="6">
+      <div class="slide-header">
+        <div>
+          <div class="slide-step">SLIDE 07 / 08 — TIMELINE TUẦN 03</div>
+          <h2 class="slide-title">Tuần 3: Đấu Nối Data, Webhook &amp; Tool Cho MARKETING và CSKH</h2>
+        </div>
+      </div>
+
+      <div class="slide-body">
+        <div class="boxes-grid-2">
+          <!-- MARKETING -->
+          <div class="min-box" onclick="openInfoPopup('w3_mkt_detail')">
+            <div class="min-box-top">
+              <span class="min-box-code">ĐỢT 2A • KHỐI MARKETING</span>
+              <span class="min-box-open">Checklist +</span>
+            </div>
+            <div class="min-box-title" data-stack-logos="tiktok_biz,facebook,mcp" data-logo-size="lg">1. Đấu Nối Data &amp; Tool Cho Phòng Marketing</div>
+            <div class="min-box-sub">Triển khai dữ liệu quảng cáo đa kênh, theo dõi hiệu quả video in-house, quản lý KOL/KOC, Livestream và các công cụ MCP phục vụ Marketing.</div>
+            <div class="pill-row">
+              <span class="mini-pill">[x] Dữ liệu Ads đa kênh &amp; Livestream</span>
+              <span class="mini-pill solid">[x] Số liệu Video In-house &amp; KOL/KOC</span>
+              <span class="mini-pill">[x] Bộ Tool MCP &amp; kiểm soát ngân sách</span>
+            </div>
+          </div>
+
+          <!-- CSKH -->
+          <div class="min-box" onclick="openInfoPopup('w3_cskh_detail')">
+            <div class="min-box-top">
+              <span class="min-box-code">ĐỢT 2B • KHỐI CSKH</span>
+              <span class="min-box-open">Checklist +</span>
+            </div>
+            <div class="min-box-title" data-stack-logos="tiktok_shop,shopee,mcp" data-logo-size="lg">2. Đấu Nối Webhook Real-time, Data &amp; Tool Cho CSKH</div>
+            <div class="min-box-sub">Tập trung mở luồng Webhook nhận/phản hồi chat real-time từ các kênh, đồng bộ dữ liệu hội thoại/hoàn trả/bảo hành và bộ công cụ MCP cho CSKH.</div>
+            <div class="pill-row">
+              <span class="mini-pill solid">[x] Webhook Chat &amp; Real-time Chat</span>
+              <span class="mini-pill solid">[x] Tra cứu nhanh Đơn hàng &amp; Bảo hành</span>
+              <span class="mini-pill">[x] Theo dõi hoàn trả &amp; Bộ Tool MCP</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="milestone-banner" onclick="openInfoPopup('w3_done')">
+          <div class="title-with-logo">
+            <span data-stack-logos="tiktok_biz,shopee,mcp"></span>
+            <div>
+              <div class="min-box-code">✅ MỐC ĐẠT ĐƯỢC CUỐI TUẦN 3</div>
+              <div style="font-size:16px; font-weight:800;">
+                Hoàn tất đấu nối Data, luồng Webhook Real-time Chat và bộ Tool MCP cho Marketing &amp; CSKH • Liên thông dữ liệu với Kế toán
+              </div>
+            </div>
+          </div>
+          <span class="min-box-open">Chi tiết +</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         SLIDE 08: TIMELINE TUẦN 4 — POD + HOÀN THIỆN MỞ RỘNG + BÀN GIAO
+         ================================================================= -->
+    <section class="slide" data-index="7">
+      <div class="slide-header">
+        <div>
+          <div class="slide-step">SLIDE 08 / 08 — TIMELINE TUẦN 04 &amp; BÀN GIAO</div>
+          <h2 class="slide-title">Tuần 4: Đấu Nối POD + Đáp Ứng Yêu Cầu Bổ Sung + Phân Quyền &amp; Bàn Giao</h2>
+        </div>
+      </div>
+
+      <div class="slide-body">
+        <div class="boxes-grid-3">
+          <div class="min-box" onclick="openInfoPopup('w4_pod_detail')">
+            <div class="min-box-top">
+              <span class="min-box-code">01 • KHỐI POD</span>
+              <span class="min-box-open">Checklist +</span>
+            </div>
+            <div class="min-box-title" data-stack-logos="shopee,tiktok_shop">Data &amp; Tool Phòng POD</div>
+            <div class="min-box-sub">Đấu nối dữ liệu sản phẩm, tồn kho đa sàn, theo dõi lỗi kỹ thuật theo SKU, vận hành gian hàng và đóng gói bộ MCP cho POD.</div>
+            <div class="pill-row">
+              <span class="mini-pill solid">[x] Dữ liệu Tồn kho &amp; Sản phẩm</span>
+              <span class="mini-pill">[x] Bộ Tool MCP cho POD</span>
+            </div>
+          </div>
+
+          <div class="min-box" onclick="openInfoPopup('w4_custom_tools')">
+            <div class="min-box-top">
+              <span class="min-box-code">02 • HOÀN THIỆN &amp; PHÂN QUYỀN</span>
+              <span class="min-box-open">Checklist +</span>
+            </div>
+            <div class="min-box-title" data-stack-logos="mcp,sheets">Bổ Sung Tool &amp; Khóa Phân Quyền</div>
+            <div class="min-box-sub">Đóng gói các bảng dữ liệu &amp; công cụ yêu cầu thêm từ các phòng ban; thiết lập phân quyền truy cập dữ liệu chặt chẽ giữa các bộ phận.</div>
+            <div class="pill-row">
+              <span class="mini-pill solid">[x] Đáp ứng các Tool yêu cầu thêm</span>
+              <span class="mini-pill">[x] Phân quyền bảo mật dữ liệu</span>
+            </div>
+          </div>
+
+          <div class="min-box dark-accent" onclick="openInfoPopup('w4_handover')">
+            <div class="min-box-top">
+              <span class="min-box-code">03 • BÀN GIAO VẬN HÀNH</span>
+              <span class="min-box-open">Checklist +</span>
+            </div>
+            <div class="min-box-title" data-stack-logos="claude,sheets,mcp">Bàn Giao Cho Các Phòng Tự Build Agent</div>
+            <div class="min-box-sub">Bàn giao hệ thống Data (Google Sheets) và các cổng công cụ (MCP) để các phòng ban chủ động xây dựng và mở rộng Agent của mình.</div>
+            <div class="pill-row">
+              <span class="mini-pill solid">[x] Bàn giao toàn bộ 5 khối phòng ban</span>
+              <span class="mini-pill">[x] Sẵn sàng mở rộng giai đoạn tiếp theo</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="milestone-banner" onclick="openInfoPopup('w4_handover')">
+          <div class="title-with-logo">
+            <span data-stack-logos="apple,n8n,sheets,mcp,claude"></span>
+            <div>
+              <div class="min-box-code">🎯 KẾT QUẢ CUỐI TUẦN 4 (ĐẠT MỤC TIÊU DỰ ÁN)</div>
+              <div style="font-size:16px; font-weight:800;">
+                Đảm bảo đầy đủ nền tảng Hạ tầng n8n + Dữ liệu Google Sheets + Bộ công cụ MCP &amp; Webhook để tất cả phòng ban tự chủ build Agent hoạt động!
+              </div>
+            </div>
+          </div>
+          <span class="min-box-open">Tổng kết +</span>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FLOATING BOTTOM NAVIGATION -->
+  <div class="bottom-nav">
+    <div class="nav-cluster">
+      <button class="nav-btn" onclick="goToSlide(0)">Trang Bìa</button>
+      <button class="nav-btn" onclick="goToSlide(1)">Sơ Đồ Timeline</button>
+      <button class="nav-btn" onclick="goToSlide(2)">Mục Tiêu</button>
+      <button class="nav-btn" onclick="goToSlide(3)">5 Phòng Ban</button>
+      <button class="nav-btn" onclick="goToSlide(4)">Tuần 1</button>
+      <button class="nav-btn" onclick="goToSlide(5)">Tuần 2</button>
+      <button class="nav-btn" onclick="goToSlide(6)">Tuần 3</button>
+      <button class="nav-btn" onclick="goToSlide(7)">Tuần 4</button>
+      <button class="nav-btn" onclick="toggleFullScreen()">Toàn màn hình</button>
+    </div>
+
+    <div class="nav-cluster">
+      <div class="progress-dots" id="progressDots"></div>
+    </div>
+
+    <div class="nav-cluster">
+      <button class="nav-btn" onclick="prevSlide()">← Trước</button>
+      <span class="nav-indicator" id="slideCounter">01 / 08</span>
+      <button class="nav-btn" onclick="nextSlide()">Tiếp →</button>
+    </div>
+  </div>
+
+  <!-- UNIVERSAL POPUP MODAL -->
+  <div class="popup-overlay" id="popupOverlay" onclick="if(event.target===this) closePopup()">
+    <div class="popup-card">
+      <div class="popup-top">
+        <div>
+          <div class="popup-tag" id="popupTag">CHI TIẾT TRIỂN KHAI</div>
+          <h3 class="popup-title" id="popupTitle">Tiêu đề</h3>
+        </div>
+        <button class="popup-close" onclick="closePopup()">Đóng (Esc)</button>
+      </div>
+      <div id="popupBody"></div>
+    </div>
+  </div>
+
+  <script>
+    // =========================================================================
+    // 1. BỘ ICON SVG ĐỒNG BỘ VỚI 2 FILE SLIDE TRONG THƯ MỤC
+    // =========================================================================
+    const STACK_LOGOS = {
+      apple: {
+        name: "Mac mini (macOS)",
+        bg: "#111111",
+        svg: `<svg viewBox="0 0 24 24" fill="none">
+          <rect x="3.5" y="7" width="17" height="10" rx="3" stroke="#FFFFFF" stroke-width="1.7"/>
+          <circle cx="17" cy="12" r="1.1" fill="#25F4EE"/>
+          <path d="M8 17h8" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+        </svg>`
+      },
+      orbstack: {
+        name: "OrbStack Docker",
+        bg: "#2563EB",
+        svg: `<svg viewBox="0 0 24 24" fill="none">
+          <path d="M12 3.5L19.5 7.8v8.4L12 20.5 4.5 16.2V7.8L12 3.5z" stroke="#FFFFFF" stroke-width="1.7" stroke-linejoin="round"/>
+          <circle cx="12" cy="12" r="3.2" fill="#FFFFFF"/>
+        </svg>`
+      },
+      n8n: {
+        name: "n8n Automation",
+        bg: "#EA4B71",
+        svg: `<svg viewBox="0 0 24 24" fill="none">
+          <circle cx="5.5" cy="12" r="2.3" fill="#FFFFFF"/>
+          <circle cx="11.8" cy="12" r="2.3" fill="#FFFFFF"/>
+          <circle cx="18.2" cy="7.5" r="2.3" fill="#FFFFFF"/>
+          <circle cx="18.2" cy="16.5" r="2.3" fill="#FFFFFF"/>
+          <path d="M7.5 12h2.3M13.6 10.8l2.9-2.1M13.6 13.2l2.9 2.1" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+        </svg>`
+      },
+      cloudflare: {
+        name: "Cloudflare Tunnel",
+        bg: "#F38020",
+        svg: `<svg viewBox="0 0 24 24" fill="none">
+          <path d="M6.5 17.5h11a3.5 3.5 0 0 0 .4-6.97A5.5 5.5 0 0 0 7.3 9.2 4 4 0 0 0 6.5 17.5z" fill="#FFFFFF"/>
+        </svg>`
+      },
+      sheets: {
+        name: "Google Sheets",
+        bg: "#0F9D58",
+        svg: `<svg viewBox="0 0 24 24" fill="none">
+          <rect x="5" y="3.5" width="14" height="17" rx="2" stroke="#FFFFFF" stroke-width="1.6"/>
+          <path d="M5 9h14M5 13.5h14M10.5 9v11.5" stroke="#FFFFFF" stroke-width="1.6"/>
+        </svg>`
+      },
+      disk: {
+        name: "Kho Lưu File / Bill",
+        bg: "#111111",
+        svg: `<svg viewBox="0 0 24 24" fill="none">
+          <rect x="4" y="5" width="16" height="14" rx="2.5" stroke="#FFFFFF" stroke-width="1.7"/>
+          <path d="M4 14h16" stroke="#FFFFFF" stroke-width="1.5"/>
+          <circle cx="16.5" cy="16.5" r="1.2" fill="#4ADE80"/>
+        </svg>`
+      },
+      mcp: {
+        name: "MCP & Tool Server",
+        bg: "#111111",
+        svg: `<svg viewBox="0 0 24 24" fill="none">
+          <rect x="8.5" y="8.5" width="7" height="7" rx="1.5" stroke="#FFFFFF" stroke-width="1.7"/>
+          <path d="M12 3.5v5M12 15.5v5M3.5 12h5M15.5 12h5" stroke="#25F4EE" stroke-width="1.8" stroke-linecap="round"/>
+        </svg>`
+      },
+      claude: {
+        name: "Claude / Agent Phòng Ban",
+        bg: "#D97757",
+        svg: `<svg viewBox="0 0 24 24" fill="none">
+          <path d="M12 3.2v17.6M3.2 12h17.6M5.8 5.8l12.4 12.4M18.2 5.8L5.8 18.2" stroke="#FFFFFF" stroke-width="2.1" stroke-linecap="round"/>
+          <circle cx="12" cy="12" r="2.3" fill="#D97757" stroke="#FFFFFF" stroke-width="1.5"/>
+        </svg>`
+      },
+      tiktok_biz: {
+        name: "TikTok Business",
+        bg: "#111111",
+        svg: `<svg viewBox="0 0 24 24" fill="none">
+          <path d="M16.6 5.82A4.28 4.28 0 0 1 15.54 3h-3.09v12.4a2.59 2.59 0 0 1-2.59 2.5c-1.42 0-2.6-1.16-2.6-2.6 0-1.72 1.66-3.01 3.37-2.48V9.66c-3.45-.46-6.47 2.22-6.47 5.64 0 3.33 2.76 5.7 5.69 5.7 3.14 0 5.69-2.55 5.69-5.7V9.01a7.35 7.35 0 0 0 4.3 1.38V7.3s-1.88.09-3.24-1.48z" fill="#25F4EE" transform="translate(-0.7, -0.5)"/>
+          <path d="M16.6 5.82A4.28 4.28 0 0 1 15.54 3h-3.09v12.4a2.59 2.59 0 0 1-2.59 2.5c-1.42 0-2.6-1.16-2.6-2.6 0-1.72 1.66-3.01 3.37-2.48V9.66c-3.45-.46-6.47 2.22-6.47 5.64 0 3.33 2.76 5.7 5.69 5.7 3.14 0 5.69-2.55 5.69-5.7V9.01a7.35 7.35 0 0 0 4.3 1.38V7.3s-1.88.09-3.24-1.48z" fill="#FE2C55" transform="translate(0.7, 0.5)"/>
+          <path d="M16.6 5.82A4.28 4.28 0 0 1 15.54 3h-3.09v12.4a2.59 2.59 0 0 1-2.59 2.5c-1.42 0-2.6-1.16-2.6-2.6 0-1.72 1.66-3.01 3.37-2.48V9.66c-3.45-.46-6.47 2.22-6.47 5.64 0 3.33 2.76 5.7 5.69 5.7 3.14 0 5.69-2.55 5.69-5.7V9.01a7.35 7.35 0 0 0 4.3 1.38V7.3s-1.88.09-3.24-1.48z" fill="#FFFFFF"/>
+        </svg>`
+      },
+      tiktok_shop: {
+        name: "TikTok Shop",
+        bg: "#111111",
+        svg: `<svg viewBox="0 0 24 24" fill="none">
+          <path d="M5.5 7.5h13l-1.1 12.2a2 2 0 0 1-2 1.8H8.6a2 2 0 0 1-2-1.8L5.5 7.5z" stroke="#FFFFFF" stroke-width="1.7" fill="#18181B"/>
+          <path d="M9 7.5V6a3 3 0 0 1 6 0v1.5" stroke="#25F4EE" stroke-width="1.7" stroke-linecap="round"/>
+          <path d="M14.2 10.5c.3 1 1.1 1.6 2.1 1.7v1.5c-.8 0-1.5-.3-2.1-.7v3.3c0 1.7-1.4 3.1-3.1 3.1s-3.1-1.4-3.1-3.1 1.4-3.1 3.1-3.1c.2 0 .4 0 .6.1v1.6c-.2-.1-.4-.1-.6-.1-.8 0-1.5.7-1.5 1.5s.7 1.5 1.5 1.5 1.5-.7 1.5-1.5v-5.8h1.6z" fill="#FE2C55"/>
+        </svg>`
+      },
+      shopee: {
+        name: "Shopee",
+        bg: "#EE4D2D",
+        svg: `<svg viewBox="0 0 24 24" fill="none">
+          <path d="M5 7.5h14l-1.1 12.2a1.8 1.8 0 0 1-1.8 1.6H7.9a1.8 1.8 0 0 1-1.8-1.6L5 7.5z" stroke="#FFFFFF" stroke-width="1.7" stroke-linejoin="round"/>
+          <path d="M8.8 7.5V6a3.2 3.2 0 0 1 6.4 0v1.5" stroke="#FFFFFF" stroke-width="1.7" stroke-linecap="round"/>
+          <path d="M14.3 11.6c-.4-.5-1.2-.8-2.2-.8-1.3 0-2.2.6-2.2 1.5 0 .9.8 1.3 2.3 1.7 1.5.4 2.4.9 2.4 2 0 1.2-1.1 2-2.7 2-1.2 0-2.2-.4-2.8-1.1" stroke="#FFFFFF" stroke-width="1.75" stroke-linecap="round"/>
+        </svg>`
+      },
+      facebook: {
+        name: "Facebook",
+        bg: "#1877F2",
+        svg: `<svg viewBox="0 0 24 24" fill="none">
+          <path d="M15.12 5.32H17V2.14A26.11 26.11 0 0 0 14.26 2c-2.72 0-4.58 1.66-4.58 4.7v2.62H6.61v3.56h3.07V22h3.68v-9.12h3.06l.46-3.56h-3.52V6.65c0-1.05.29-1.73 1.76-1.73z" fill="#FFFFFF"/>
+        </svg>`
+      }
+    };
+
+    function renderStackLogos(keys, sizeClass = "") {
+      const list = Array.isArray(keys) ? keys : String(keys || "").split(",").map(s => s.trim()).filter(Boolean);
+      if (!list.length) return "";
+      const items = list.map(k => {
+        const item = STACK_LOGOS[k];
+        if (!item) return "";
+        return `<span class="stack-logo ${sizeClass}" style="background:${item.bg};" title="${item.name}">${item.svg}</span>`;
+      }).join("");
+      return `<span class="stack-logo-group">${items}</span>`;
+    }
+
+    function hydrateStaticLogos() {
+      document.querySelectorAll("[data-stack-logos]").forEach(el => {
+        if (el.dataset.logoHydrated === "1") return;
+        const keys = el.getAttribute("data-stack-logos");
+        const size = el.getAttribute("data-logo-size") || "";
+        const text = el.innerHTML;
+        el.classList.add("title-with-logo");
+        el.innerHTML = `${renderStackLogos(keys, size)}<span>${text}</span>`;
+        el.dataset.logoHydrated = "1";
+      });
+    }
+
+    // =========================================================================
+    // 2. DỮ LIỆU POPUP CHI TIẾT KHI BẤM VÀO TỪNG Ô
+    // =========================================================================
+    const INFO_POPUPS = {
+      cover_infra: {
+        tag: "TRỤ CỘT 01 • NỀN TẢNG HẠ TẦNG",
+        title: "Hạ Tầng n8n & Kết Nối Các Đầu API Nền Tảng",
+        summary: "Xây dựng nền tảng chạy tự động 24/7 ngay trong Tuần 1 để sẵn sàng phục vụ toàn bộ các phòng ban.",
+        bullets: [
+          "Triển khai hệ thống n8n tách biệt giữa luồng xử lý dữ liệu và luồng cung cấp công cụ (MCP) trên Mac mini.",
+          "Thiết lập kết nối API tự động làm mới Token và mở cổng đón sự kiện Webhook thời gian thực từ các nền tảng.",
+          "Đảm bảo tính ổn định, bảo mật truy cập và sao lưu tự động."
+        ]
+      },
+      cover_data: {
+        tag: "TRỤ CỘT 02 • ĐẢM BẢO DỮ LIỆU",
+        title: "Hệ Thống Dữ Liệu Trên Google Sheets & Lưu Trữ Chứng Từ/File",
+        summary: "Số lượng bảng tính và cấu trúc dữ liệu được thiết kế linh hoạt dựa trên yêu cầu nghiệp vụ thực tế của từng phòng ban.",
+        bullets: [
+          "Tự động kéo và làm sạch dữ liệu từ các nguồn về hệ thống Google Sheets phục vụ đúng nhu cầu từng bộ phận.",
+          "Kết hợp lưu trữ các file chứng từ, hóa đơn, hình ảnh/tài liệu phát sinh trong quá trình vận hành.",
+          "Giữ nguyên các vùng dữ liệu do nhân sự tự nhập tay, chỉ cập nhật tự động các chỉ số hệ thống."
+        ]
+      },
+      cover_mcp: {
+        tag: "TRỤ CỘT 03 • ĐẢM BẢO CÔNG CỤ",
+        title: "Cung Cấp Bộ Công Cụ (MCP & Webhook) Theo Yêu Cầu Của Phòng Ban",
+        summary: "Đóng gói các công cụ để Agent của từng phòng ban có thể đọc dữ liệu, xử lý file và thực thi tác vụ an toàn.",
+        bullets: [
+          "Số lượng cổng MCP và số lượng Tool được mở rộng linh hoạt tùy theo các nghiệp vụ mà phòng ban đăng ký.",
+          "Đảm bảo phân quyền truy cập dữ liệu đúng bộ phận (ẩn các số liệu nhạy cảm như giá vốn đối với các phòng ban không liên quan).",
+          "Áp dụng kiểm soát giới hạn an toàn và phê duyệt đối với các công cụ có thao tác chỉnh sửa ngân sách hoặc dữ liệu trên sàn."
+        ]
+      },
+      cover_pace: {
+        tag: "TRỤ CỘT 04 • KẾ HOẠCH TRIỂN KHAI 4 TUẦN",
+        title: "Lộ Trình Cuốn Chiếu Theo Đợt Phòng Ban (Tập Trung Vào Các Buổi Chiều)",
+        summary: "Triển khai từng bước rõ ràng: Dựng hạ tầng trước → Khảo sát nhu cầu → Đấu nối cuốn chiếu từng cụm phòng ban.",
+        bullets: [
+          "Tuần 1: Dựng hạ tầng n8n + Gửi khảo sát nhu cầu Data/Tool cho các bên + Đấu nối các đầu API nền tảng.",
+          "Tuần 2: Đấu nối phần lớn Data và công cụ MCP cho khối Kế Toán và khối Brand.",
+          "Tuần 3: Đấu nối Data, luồng Webhook Real-time và công cụ MCP cho khối Marketing và khối CSKH.",
+          "Tuần 4: Đấu nối cho khối POD, hoàn thiện các công cụ yêu cầu thêm của các bên, phân quyền & bàn giao."
+        ]
+      },
+      scope_admin: {
+        tag: "MỤC TIÊU DỰ ÁN • PHẦN HẠ TẦNG ĐẢM BẢO",
+        title: "Mục Tiêu Cốt Lõi: Đảm Bảo Đầy Đủ Data & Tool Cho Các Phòng Ban",
+        summary: "Dự án tập trung giải quyết bài toán nền tảng (Hạ tầng, Dữ liệu và Công cụ) để các phòng ban có sẵn nguyên liệu xây dựng Agent.",
+        bullets: [
+          "1. Đảm bảo Hạ tầng & Kết nối: Hệ thống n8n vận hành xuyên suốt, kết nối thông suốt với các sàn TMĐT, kênh quảng cáo và cổng Webhook.",
+          "2. Đảm bảo Dữ liệu (Data): Số liệu tự động đổ về các bảng Google Sheets và kho lưu trữ theo đúng nhu cầu nghiệp vụ của từng phòng.",
+          "3. Đảm bảo Công cụ (MCP Tools): Đóng gói các công cụ tra cứu, đọc chứng từ và thao tác hệ thống theo đề xuất từ các bộ phận."
+        ]
+      },
+      scope_dept: {
+        tag: "PHỐI HỢP TRIỂN KHAI • VAI TRÒ CỦA CÁC PHÒNG BAN",
+        title: "Phòng Ban Đề Xuất Nhu Cầu Nghiệp Vụ & Tự Chủ Xây Dựng Agent",
+        summary: "Số lượng bảng biểu và công cụ không chốt cứng từ đầu mà bám sát theo yêu cầu thực tế của từng phòng ban.",
+        bullets: [
+          "1. Gửi yêu cầu Data & Tool: Mỗi phòng ban điền phiếu khảo sát nêu rõ các nghiệp vụ cần dữ liệu gì và cần thêm công cụ hỗ trợ nào.",
+          "2. Tự build Agent hoạt động: Khi đã có sẵn dữ liệu trên Google Sheets và bộ công cụ MCP, từng phòng ban chủ động lắp ghép và vận hành các Agent phục vụ công việc của mình."
+        ]
+      },
+      tpl_lookup: {
+        tag: "NHÓM HẠNG MỤC 01 • DỮ LIỆU & TRA CỨU",
+        title: "Đồng Bộ Số Liệu Về Google Sheets & Công Cụ Tra Cứu",
+        summary: "Đảm bảo các phòng ban luôn có số liệu mới nhất trên Google Sheets và công cụ để Agent truy xuất nhanh.",
+        bullets: [
+          "Tự động hóa việc kéo số liệu định kỳ từ các nền tảng về các bảng Google Sheets của từng bộ phận.",
+          "Cung cấp các công cụ tra cứu, lọc dữ liệu theo yêu cầu để Agent lấy thông tin nhanh chóng."
+        ]
+      },
+      tpl_extract: {
+        tag: "NHÓM HẠNG MỤC 02 • CHỨNG TỪ & FILE",
+        title: "Đọc, Lưu Trữ Chứng Từ/File & Đồng Bộ Sổ Sách",
+        summary: "Hỗ trợ xử lý các dữ liệu không nằm sẵn trên API sàn như hóa đơn, bill chuyển khoản, sổ nội bộ hoặc file media.",
+        bullets: [
+          "Tự động đọc thông tin từ hình ảnh/PDF chứng từ, hóa đơn hoặc nội dung video.",
+          "Lưu trữ file gốc có tổ chức và tự động ghi nhận dữ liệu vào các bảng Google Sheets nghiệp vụ."
+        ]
+      },
+      tpl_action: {
+        tag: "NHÓM HẠNG MỤC 03 • WEBHOOK & THAO TÁC",
+        title: "Lắng Nghe Sự Kiện Real-time (Webhook) & Công Cụ Thao Tác An Toàn",
+        summary: "Phục vụ các nghiệp vụ cần phản ứng tức thì và các thao tác tác động ngược lên hệ thống.",
+        bullets: [
+          "Nhận sự kiện thời gian thực qua Webhook (như tin nhắn khách hàng mới, thông báo đơn hàng/hoàn trả).",
+          "Cung cấp công cụ để Agent thực thi thao tác kèm các lớp kiểm soát an toàn (giới hạn ngưỡng và phê duyệt)."
+        ]
+      },
+      dept_ketoan: {
+        tag: "ĐỊNH HƯỚNG ĐẢM BẢO • KHỐI KẾ TOÁN",
+        title: "Trọng Tâm Đảm Bảo Data & Tool Cho Phòng Kế Toán",
+        summary: "Đảm bảo đầy đủ dữ liệu tài chính từ API kết hợp lưu trữ chứng từ/sổ sách nội bộ và công cụ đối soát.",
+        bullets: [
+          "Số liệu từ API: Tự động đồng bộ dữ liệu đơn hàng, doanh thu, chi tiết các khoản phí sàn và tiền về ví.",
+          "Lưu trữ Bill & Sổ sách: Quản lý các loại hóa đơn, chứng từ, bill thanh toán và hệ thống sổ thu chi, công nợ trên Google Sheets.",
+          "Đối soát & Công cụ: Cung cấp công cụ hỗ trợ bóc tách chứng từ, đối soát giữa bill thực tế với số liệu hệ thống và các nghiệp vụ kế toán khác."
+        ]
+      },
+      dept_brand: {
+        tag: "ĐỊNH HƯỚNG ĐẢM BẢO • KHỐI BRAND",
+        title: "Trọng Tâm Đảm Bảo Data & Tool Cho Phòng Brand",
+        summary: "Tập trung vào hệ thống dữ liệu đo lường hiệu quả video, nội dung sáng tạo và các nghiệp vụ phát triển thương hiệu.",
+        bullets: [
+          "Số liệu Video chuyên sâu: Tự động kéo các chỉ số đánh giá chất lượng và hiệu quả chuyển đổi của video trên các kênh.",
+          "Phân tích nội dung & Giữ chân người xem: Theo dõi tỷ lệ giữ chân người xem, hỗ trợ bóc tách lời thoại và quản lý kho kịch bản.",
+          "Mở rộng linh hoạt: Đáp ứng thêm các bảng dữ liệu và công cụ khác theo nhu cầu thực tế của đội ngũ Brand."
+        ]
+      },
+      dept_mkt: {
+        tag: "ĐỊNH HƯỚNG ĐẢM BẢO • KHỐI MARKETING",
+        title: "Trọng Tâm Đảm Bảo Data & Tool Cho Phòng Marketing",
+        summary: "Tập trung vào dữ liệu hiệu quả quảng cáo, hiệu suất video in-house, hoạt động KOL/KOC và Livestream.",
+        bullets: [
+          "Số liệu Ads & Livestream: Tự động tổng hợp chi phí và hiệu quả quảng cáo đa kênh, số liệu các ca Livestream.",
+          "Dữ liệu Video In-house & KOL/KOC: Theo dõi, đối chiếu hiệu quả chất liệu quảng cáo in-house và quản lý thông tin hợp tác KOL/KOC.",
+          "Công cụ hỗ trợ chiến dịch: Cung cấp các tool tra cứu và hỗ trợ thao tác quảng cáo có kiểm soát an toàn theo yêu cầu của phòng."
+        ]
+      },
+      dept_cskh: {
+        tag: "ĐỊNH HƯỚNG ĐẢM BẢO • KHỐI CSKH",
+        title: "Trọng Tâm Đảm Bảo Data, Webhook & Tool Cho Phòng CSKH",
+        summary: "Tập trung vào luồng tương tác khách hàng thời gian thực (Real-time Chat), Webhook và tra cứu thông tin xử lý đơn.",
+        bullets: [
+          "Chat & Real-time Webhook: Thiết lập luồng đón sự kiện tin nhắn và thông báo mới tức thì từ các sàn/kênh chat để kết nối với Agent CSKH.",
+          "Tra cứu & Phản hồi nhanh: Cung cấp công cụ tra cứu nhanh thông tin đơn hàng, lịch sử mua, bảo hành và hỗ trợ gửi phản hồi.",
+          "Quản lý chất lượng & Sau bán: Đổ dữ liệu theo dõi tốc độ phản hồi, đơn hoàn trả, đánh giá của khách hàng và các nghiệp vụ CSKH khác."
+        ]
+      },
+      dept_pod: {
+        tag: "ĐỊNH HƯỚNG ĐẢM BẢO • KHỐI POD",
+        title: "Trọng Tâm Đảm Bảo Data & Tool Cho Phòng POD",
+        summary: "Tập trung vào dữ liệu sản phẩm, tồn kho đa sàn, chất lượng hàng hóa và vận hành gian hàng.",
+        bullets: [
+          "Dữ liệu Sản phẩm & Tồn kho: Đồng bộ tồn kho khả dụng giữa các sàn, theo dõi tốc độ bán để cảnh báo nhập hàng.",
+          "Chất lượng SKU & Gian hàng: Tổng hợp dữ liệu phản hồi/lỗi sản phẩm theo từng mã hàng và chỉ số sức khỏe gian hàng.",
+          "Công cụ vận hành: Hỗ trợ các tool đồng bộ thông tin, hình ảnh sản phẩm và các công cụ khác theo yêu cầu của POD."
+        ]
+      },
+      w1_half1: {
+        tag: "TUẦN 1 (NỬA ĐẦU TUẦN) • HẠ TẦNG N8N",
+        title: "Checklist Nửa Đầu Tuần 1: Dựng Hạ Tầng n8n Chạy Ổn Định",
+        summary: "Hoàn tất môi trường kỹ thuật nền tảng trước khi đấu nối dữ liệu cho các phòng ban.",
+        bullets: [
+          "[x] Thiết lập máy chủ Mac mini chạy ngầm 24/7, cấu hình mạng nội bộ và bảo mật truy cập.",
+          "[x] Khởi chạy hệ thống n8n (tách cụm xử lý dữ liệu và cụm cung cấp công cụ MCP).",
+          "[x] Mở cổng kết nối HTTPS qua Cloudflare Tunnel để sẵn sàng nhận Webhook và cung cấp đường dẫn MCP."
+        ]
+      },
+      w1_half2: {
+        tag: "TUẦN 1 (NỬA CUỐI TUẦN) • KHẢO SÁT & KẾT NỐI API",
+        title: "Checklist Nửa Cuối Tuần 1: Gửi Khảo Sát Các Bên & Đấu Nối Token Nền Tảng",
+        summary: "Phát phiếu thu thập yêu cầu thực tế từ các phòng ban; đồng thời chuẩn bị sẵn kết nối API gốc.",
+        bullets: [
+          "[x] Gửi phiếu khảo sát yêu cầu Data & MCP cho các phòng ban để các bên liệt kê nhu cầu theo nghiệp vụ của mình.",
+          "[x] Thiết lập kết nối API và luồng tự động duy trì Token xác thực với các sàn TMĐT và kênh quảng cáo.",
+          "[x] Chuẩn bị bộ danh mục mã sản phẩm chuẩn (Master SKU) làm gốc liên kết dữ liệu giữa các bộ phận."
+        ]
+      },
+      w1_done: {
+        tag: "KẾT QUẢ CUỐI TUẦN 1",
+        title: "Những Gì Đạt Được & Đã Chạy Được Sau Tuần 1",
+        summary: "Sẵn sàng toàn bộ hạ tầng kỹ thuật và đầu mối kết nối để bước vào giai đoạn đấu nối cho từng phòng ban.",
+        bullets: [
+          "1. Đã chạy được: Hệ thống n8n và luồng tự động làm mới Token các nền tảng vận hành 24/7.",
+          "2. Đã đạt được: Tiếp nhận danh sách yêu cầu dữ liệu và công cụ từ các phòng ban đợt đầu (Kế toán & Brand)."
+        ]
+      },
+      w2_ketoan_detail: {
+        tag: "TUẦN 2 • ĐẤU NỐI KHỐI KẾ TOÁN",
+        title: "Triển Khai Data & Tool Cho Phòng Kế Toán",
+        summary: "Đảm bảo phần lớn dữ liệu tài chính, lưu trữ chứng từ/bill và công cụ đối soát cho Kế toán.",
+        bullets: [
+          "[x] Đấu nối tự động dữ liệu đơn hàng, doanh thu và bảng kê chi tiết phí sàn về Google Sheets.",
+          "[x] Thiết lập luồng lưu trữ hóa đơn, bill chuyển khoản, sổ sách kế toán và bóc tách thông tin chứng từ.",
+          "[x] Đóng gói các công cụ đối soát bill, tra cứu số liệu và bàn giao cổng MCP cho Kế toán."
+        ]
+      },
+      w2_brand_detail: {
+        tag: "TUẦN 2 • ĐẤU NỐI KHỐI BRAND",
+        title: "Triển Khai Data & Tool Cho Phòng Brand",
+        summary: "Đảm bảo phần lớn dữ liệu đo lường hiệu quả video, nội dung và bộ công cụ cho Brand.",
+        bullets: [
+          "[x] Đấu nối tự động các chỉ số hiệu quả video và dữ liệu phân tích giữ chân người xem về Google Sheets.",
+          "[x] Thiết lập các luồng hỗ trợ bóc tách nội dung/lời thoại video và quản lý dữ liệu kịch bản.",
+          "[x] Đóng gói và bàn giao bộ công cụ MCP phục vụ các nghiệp vụ của phòng Brand."
+        ]
+      },
+      w2_done: {
+        tag: "KẾT QUẢ CUỐI TUẦN 2",
+        title: "Những Gì Đạt Được & Đã Chạy Được Sau Tuần 2",
+        summary: "Hoàn thành đợt đấu nối đầu tiên cho 2 khối Kế toán và Brand.",
+        bullets: [
+          "1. Đã chạy được: Các luồng đổ dữ liệu tự động về Google Sheets và xử lý bill/video cho Kế toán & Brand.",
+          "2. Đã đạt được: Bàn giao bộ công cụ MCP để Kế toán và Brand bắt đầu tự xây dựng Agent của phòng mình."
+        ]
+      },
+      w3_mkt_detail: {
+        tag: "TUẦN 3 • ĐẤU NỐI KHỐI MARKETING",
+        title: "Triển Khai Data & Tool Cho Phòng Marketing",
+        summary: "Đảm bảo dữ liệu quảng cáo, hiệu suất video in-house, KOL/KOC và công cụ cho Marketing.",
+        bullets: [
+          "[x] Đấu nối tự động dữ liệu chi phí và hiệu quả quảng cáo đa kênh, số liệu các ca Livestream.",
+          "[x] Thiết lập các bảng dữ liệu theo dõi hiệu quả video in-house và quản lý hợp tác KOL/KOC, Affiliate, Spark Ads.",
+          "[x] Đóng gói bộ công cụ MCP hỗ trợ tra cứu và thao tác chiến dịch có kiểm soát an toàn cho Marketing."
+        ]
+      },
+      w3_cskh_detail: {
+        tag: "TUẦN 3 • ĐẤU NỐI KHỐI CSKH",
+        title: "Triển Khai Webhook Real-time, Data & Tool Cho Phòng CSKH",
+        summary: "Đảm bảo luồng sự kiện chat thời gian thực, dữ liệu chăm sóc khách hàng và bộ công cụ cho CSKH.",
+        bullets: [
+          "[x] Kích hoạt hệ thống Webhook lắng nghe tin nhắn và sự kiện hoàn trả theo thời gian thực từ các kênh bán hàng.",
+          "[x] Thiết lập cầu nối đẩy dữ liệu chat real-time kèm thông tin đơn hàng và đồng bộ dữ liệu theo dõi phản hồi, bảo hành, đánh giá.",
+          "[x] Đóng gói và bàn giao bộ công cụ MCP phục vụ trực chat và xử lý nghiệp vụ cho CSKH."
+        ]
+      },
+      w3_done: {
+        tag: "KẾT QUẢ CUỐI TUẦN 3",
+        title: "Những Gì Đạt Được & Đã Chạy Được Sau Tuần 3",
+        summary: "Hoàn thành đợt đấu nối thứ hai cho khối Marketing và CSKH, liên thông dữ liệu với Kế toán.",
+        bullets: [
+          "1. Đã chạy được: Dữ liệu Ads, In-house, KOL/KOC của Marketing và luồng Webhook Real-time Chat của CSKH.",
+          "2. Đã đạt được: Bàn giao công cụ MCP cho Marketing & CSKH; dữ liệu chi phí và hoàn trả khớp đồng bộ với Kế toán."
+        ]
+      },
+      w4_pod_detail: {
+        tag: "TUẦN 4 • ĐẤU NỐI KHỐI POD",
+        title: "Triển Khai Data & Tool Cho Phòng POD",
+        summary: "Đảm bảo dữ liệu sản phẩm, tồn kho, chất lượng SKU và bộ công cụ cho phòng POD.",
+        bullets: [
+          "[x] Đấu nối dữ liệu tồn kho đa sàn, tốc độ bán hàng và chỉ số vận hành gian hàng về Google Sheets.",
+          "[x] Tổng hợp dữ liệu theo dõi lỗi kỹ thuật/chất lượng theo từng mã sản phẩm.",
+          "[x] Đóng gói và bàn giao bộ công cụ MCP hỗ trợ quản lý sản phẩm cho POD."
+        ]
+      },
+      w4_custom_tools: {
+        tag: "TUẦN 4 • HOÀN THIỆN CÔNG CỤ BỔ SUNG & PHÂN QUYỀN",
+        title: "Đáp Ứng Các Tool Yêu Cầu Thêm Từ Các Bên & Khóa Phân Quyền",
+        summary: "Hoàn thiện các nhu cầu phát sinh thêm của các phòng ban và đảm bảo an toàn dữ liệu trước khi bàn giao toàn diện.",
+        bullets: [
+          "[x] Triển khai bổ sung các bảng dữ liệu và công cụ chuyên biệt mà các phòng ban đề xuất thêm trong quá trình phối hợp.",
+          "[x] Thiết lập phân quyền truy cập trên Google Sheets và giới hạn quyền truy xuất dữ liệu nhạy cảm trên các cổng MCP."
+        ]
+      },
+      w4_handover: {
+        tag: "TUẦN 4 • BÀN GIAO TOÀN CÔNG TY",
+        title: "Nghiệm Thu & Bàn Giao Nền Tảng Data + MCP Cho Toàn Công Ty",
+        summary: "Hoàn thành mục tiêu cốt lõi sau 4 tuần: Toàn bộ các phòng ban đều có đủ Data và Tool để tự chủ phát triển Agent.",
+        bullets: [
+          "[x] Thiết lập cơ chế giám sát và cảnh báo tự động khi có luồng dữ liệu hoặc Webhook gặp sự cố.",
+          "[x] Bàn giao đầy đủ hệ thống bảng dữ liệu, các cổng MCP và hướng dẫn sử dụng cho đại diện tất cả các phòng ban."
+        ]
+      }
+    };
+
+    // =========================================================================
+    // 3. CẤU TRÚC CÂY MIND MAP TRÊN SLIDE 02 (MASTER TIMELINE 4 TUẦN)
+    // =========================================================================
+    const ARCH_TREE_NODES = {
+      w1_infra: {
+        title: "Nửa Đầu T1: Hạ Tầng n8n",
+        sub: "Thiết lập máy chủ & cụm n8n",
+        logos: ["apple", "n8n", "cloudflare"],
+        children: [
+          { label: "Dựng môi trường máy chủ chạy ngầm 24/7 & bảo mật", infoId: "w1_half1" },
+          { label: "Khởi chạy cụm n8n xử lý Data & cụm n8n MCP", infoId: "w1_half1" },
+          { label: "Cấu hình tên miền HTTPS đón Webhook & cổng MCP", infoId: "w1_half1" }
+        ]
+      },
+      w1_survey: {
+        title: "Nửa Cuối T1: Khảo Sát & API",
+        sub: "Thu thập nhu cầu & Kết nối sàn",
+        logos: ["sheets", "shopee", "tiktok_shop"],
+        children: [
+          { label: "Gửi khảo sát để các phòng đề xuất nhu cầu Data & Tool", infoId: "w1_half2" },
+          { label: "Đấu nối xác thực & tự động làm mới Token các nền tảng", infoId: "w1_half2" },
+          { label: "Chuẩn hóa danh mục sản phẩm gốc (Master SKU)", infoId: "w1_half2" }
+        ]
+      },
+      w2_ketoan: {
+        title: "Đấu Nối Khối Kế Toán",
+        sub: "Số liệu API • Lưu Bill/Sổ • Đối soát",
+        logos: ["sheets", "disk", "mcp"],
+        children: [
+          { label: "Đồng bộ số liệu đơn hàng, doanh thu & phí sàn từ API", infoId: "w2_ketoan_detail" },
+          { label: "Lưu trữ Bill, hóa đơn & hệ thống sổ sách kế toán", infoId: "w2_ketoan_detail" },
+          { label: "Công cụ đối soát chứng từ/bill & bàn giao MCP Kế toán", infoId: "w2_ketoan_detail" }
+        ]
+      },
+      w2_brand: {
+        title: "Đấu Nối Khối Brand",
+        sub: "Số liệu Video • Nội dung & Kịch bản",
+        logos: ["tiktok_biz", "sheets", "mcp"],
+        children: [
+          { label: "Tự động kéo bộ chỉ số đo lường hiệu quả Video", infoId: "w2_brand_detail" },
+          { label: "Dữ liệu giữ chân người xem, bóc tách lời thoại & kịch bản", infoId: "w2_brand_detail" },
+          { label: "Đóng gói và bàn giao bộ công cụ MCP cho Brand", infoId: "w2_brand_detail" }
+        ]
+      },
+      w3_mkt: {
+        title: "Đấu Nối Khối Marketing",
+        sub: "Số liệu Ads • In-house • KOL/KOC",
+        logos: ["tiktok_biz", "facebook", "mcp"],
+        children: [
+          { label: "Dữ liệu quảng cáo đa kênh & hiệu suất Livestream", infoId: "w3_mkt_detail" },
+          { label: "Số liệu hiệu quả Video In-house & quản lý KOL/KOC", infoId: "w3_mkt_detail" },
+          { label: "Các công cụ hỗ trợ chiến dịch & kiểm soát an toàn", infoId: "w3_mkt_detail" }
+        ]
+      },
+      w3_cskh: {
+        title: "Đấu Nối Khối CSKH",
+        sub: "Real-time Chat • Webhook • Đơn hàng",
+        logos: ["tiktok_shop", "shopee", "mcp"],
+        children: [
+          { label: "Hệ thống Webhook lắng nghe & phản hồi Chat Real-time", infoId: "w3_cskh_detail" },
+          { label: "Công cụ tra cứu nhanh đơn hàng, lịch sử mua & bảo hành", infoId: "w3_cskh_detail" },
+          { label: "Đồng bộ dữ liệu theo dõi hoàn trả, đánh giá & bàn giao MCP", infoId: "w3_cskh_detail" }
+        ]
+      },
+      w4_pod: {
+        title: "Đấu Nối Khối POD",
+        sub: "Sản phẩm • Tồn kho • Gian hàng",
+        logos: ["shopee", "tiktok_shop", "mcp"],
+        children: [
+          { label: "Đồng bộ dữ liệu sản phẩm, tồn kho đa sàn & tốc độ bán", infoId: "w4_pod_detail" },
+          { label: "Theo dõi chất lượng/lỗi theo SKU & sức khỏe gian hàng", infoId: "w4_pod_detail" },
+          { label: "Đóng gói và bàn giao bộ công cụ MCP cho POD", infoId: "w4_pod_detail" }
+        ]
+      },
+      w4_golive: {
+        title: "Hoàn Thiện & Bàn Giao",
+        sub: "Tool bổ sung • Phân quyền • Go-Live",
+        logos: ["mcp", "claude", "sheets"],
+        children: [
+          { label: "Đóng gói thêm các bảng/Tool phát sinh theo yêu cầu các bên", infoId: "w4_custom_tools" },
+          { label: "Thiết lập phân quyền truy cập dữ liệu & khóa bảo mật", infoId: "w4_custom_tools" },
+          { label: "Bàn giao toàn diện để các phòng ban tự build Agent", infoId: "w4_handover" }
+        ]
+      }
+    };
+
+    // =========================================================================
+    // 4. LOGIC MIND MAP + ZOOM / PAN + VẼ ĐƯỜNG NỐI SVG TỰ ĐỘNG
+    // =========================================================================
+    let zoomScale = 1;
+    let panX = 24;
+    let panY = 24;
+    let isPanning = false;
+    let startMouseX = 0;
+    let startMouseY = 0;
+    let didDragCanvas = false;
+
+    function updateCanvasTransform() {
+      const canvas = document.getElementById("mmCanvas");
+      const label = document.getElementById("zoomLabel");
+      if (canvas) {
+        canvas.style.transform = `translate(${panX}px, ${panY}px) scale(${zoomScale})`;
+      }
+      if (label) {
+        label.textContent = `${Math.round(zoomScale * 100)}%`;
+      }
+    }
+
+    function stepZoom(delta) {
+      const viewport = document.getElementById("mmViewport");
+      if (!viewport) return;
+      const rect = viewport.getBoundingClientRect();
+      applyZoomAtPoint(zoomScale + delta, rect.width / 2, rect.height / 2);
+    }
+
+    function applyZoomAtPoint(targetScale, mx, my) {
+      const clamped = Math.min(Math.max(targetScale, 0.4), 2.2);
+      const ratio = clamped / zoomScale;
+      panX = mx - (mx - panX) * ratio;
+      panY = my - (my - panY) * ratio;
+      zoomScale = clamped;
+      updateCanvasTransform();
+    }
+
+    function resetZoomAndPan() {
+      const viewport = document.getElementById("mmViewport");
+      const canvas = document.getElementById("mmCanvas");
+      zoomScale = 1;
+      if (viewport && canvas) {
+        const vw = viewport.clientWidth;
+        const vh = viewport.clientHeight;
+        const cw = canvas.scrollWidth;
+        const ch = canvas.scrollHeight;
+        panX = Math.max((vw - cw) / 2, 20);
+        panY = Math.max((vh - ch) / 2, 14);
+      } else {
+        panX = 24;
+        panY = 24;
+      }
+      updateCanvasTransform();
+      requestAnimationFrame(drawAllConnections);
+    }
+
+    function initZoomAndPanEvents() {
+      const viewport = document.getElementById("mmViewport");
+      if (!viewport) return;
+
+      viewport.addEventListener("wheel", (e) => {
+        e.preventDefault();
+        const rect = viewport.getBoundingClientRect();
+        const factor = e.deltaY < 0 ? 1.09 : 0.91;
+        applyZoomAtPoint(zoomScale * factor, e.clientX - rect.left, e.clientY - rect.top);
+      }, { passive: false });
+
+      viewport.addEventListener("mousedown", (e) => {
+        if (e.button !== 0 || e.target.closest(".zoom-toolbar")) return;
+        isPanning = true;
+        didDragCanvas = false;
+        startMouseX = e.clientX - panX;
+        startMouseY = e.clientY - panY;
+        viewport.classList.add("dragging");
+      });
+
+      window.addEventListener("mousemove", (e) => {
+        if (!isPanning) return;
+        const nx = e.clientX - startMouseX;
+        const ny = e.clientY - startMouseY;
+        if (Math.hypot(nx - panX, ny - panY) > 5) didDragCanvas = true;
+        panX = nx;
+        panY = ny;
+        updateCanvasTransform();
+      });
+
+      window.addEventListener("mouseup", () => {
+        if (isPanning) {
+          isPanning = false;
+          viewport.classList.remove("dragging");
+        }
+      });
+    }
+
+    function buildMasterArchitectureTree() {
+      Object.keys(ARCH_TREE_NODES).forEach(key => {
+        const mount = document.getElementById(`mount-${key}`);
+        if (!mount) return;
+        const node = ARCH_TREE_NODES[key];
+
+        const childrenHtml = node.children.map((ch, cIdx) => {
+          const childId = `child-${key}-${cIdx}`;
+          return `
+            <div class="mm-child-row">
+              <div class="mm-child-box" id="cbox-${childId}" onclick="event.stopPropagation(); if(!didDragCanvas) openInfoPopup('${ch.infoId}')">
+                <span class="mm-child-text">${ch.label}</span>
+                <span class="mm-child-action">Chi tiết ↗</span>
+              </div>
+            </div>
+          `;
+        }).join("");
+
+        mount.innerHTML = `
+          <div class="mm-node-row" id="row-${key}">
+            <div class="arch-node" id="box-${key}" onclick="if(!didDragCanvas) toggleNodeChildren('${key}')">
+              <div class="node-left-wrap">
+                ${renderStackLogos(node.logos)}
+                <div>
+                  <div class="arch-node-title">${node.title}</div>
+                  <div class="arch-node-sub">${node.sub}</div>
+                </div>
+              </div>
+              <div class="arch-node-badge" id="badge-${key}">+</div>
+            </div>
+            <div class="mm-children-col" id="children-${key}">
+              ${childrenHtml}
+            </div>
+          </div>
+        `;
+      });
+    }
+
+    function toggleNodeChildren(key) {
+      const box = document.getElementById(`box-${key}`);
+      const col = document.getElementById(`children-${key}`);
+      const badge = document.getElementById(`badge-${key}`);
+      if (!col) return;
+      const isOpen = col.classList.toggle("open");
+      box.classList.toggle("expanded", isOpen);
+      badge.textContent = isOpen ? "−" : "+";
+      requestAnimationFrame(drawAllConnections);
+    }
+
+    function expandAllTreeNodes() {
+      Object.keys(ARCH_TREE_NODES).forEach(key => {
+        const col = document.getElementById(`children-${key}`);
+        const box = document.getElementById(`box-${key}`);
+        const badge = document.getElementById(`badge-${key}`);
+        if (col) col.classList.add("open");
+        if (box) box.classList.add("expanded");
+        if (badge) badge.textContent = "−";
+      });
+      requestAnimationFrame(drawAllConnections);
+    }
+
+    function collapseAllTreeNodes() {
+      document.querySelectorAll(".mm-children-col").forEach(el => el.classList.remove("open"));
+      document.querySelectorAll(".arch-node").forEach(el => el.classList.remove("expanded"));
+      document.querySelectorAll(".arch-node-badge").forEach(el => el.textContent = "+");
+      requestAnimationFrame(drawAllConnections);
+    }
+
+    function getRelativeRect(el, container) {
+      const r1 = el.getBoundingClientRect();
+      const r2 = container.getBoundingClientRect();
+      const s = zoomScale || 1;
+      const left = (r1.left - r2.left) / s;
+      const top = (r1.top - r2.top) / s;
+      const width = r1.width / s;
+      const height = r1.height / s;
+      return {
+        left,
+        right: left + width,
+        top,
+        bottom: top + height,
+        width,
+        height,
+        midY: top + height / 2
+      };
+    }
+
+    function makeBezierPath(x1, y1, x2, y2, stroke = "#111111", width = 1.6, dashed = false, marker = false) {
+      const dx = Math.max(Math.abs(x2 - x1) * 0.48, 18);
+      const d = `M ${x1} ${y1} C ${x1 + dx} ${y1}, ${x2 - dx} ${y2}, ${x2} ${y2}`;
+      return `<path d="${d}" fill="none" stroke="${stroke}" stroke-width="${width}" ${dashed ? 'stroke-dasharray="4,4"' : ''} ${marker ? 'marker-end="url(#mm-arrow)"' : ''} />`;
+    }
+
+    function drawAllConnections() {
+      const canvas = document.getElementById("mmCanvas");
+      const svg = document.getElementById("archSvgOverlay");
+      if (!canvas || !svg) return;
+
+      svg.setAttribute("width", canvas.scrollWidth);
+      svg.setAttribute("height", canvas.scrollHeight);
+
+      let paths = `
+        <defs>
+          <marker id="mm-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+            <path d="M 0 1 L 10 5 L 0 9 z" fill="#111111" />
+          </marker>
+        </defs>
+      `;
+
+      const rW1Infra = document.getElementById("row-w1_infra");
+      const rW1Survey = document.getElementById("row-w1_survey");
+      const bW2Kt = document.getElementById("box-w2_ketoan");
+      const bW2Br = document.getElementById("box-w2_brand");
+      const rW2Kt = document.getElementById("row-w2_ketoan");
+      const rW2Br = document.getElementById("row-w2_brand");
+      const bW3Mkt = document.getElementById("box-w3_mkt");
+      const bW3Cs = document.getElementById("box-w3_cskh");
+      const rW3Mkt = document.getElementById("row-w3_mkt");
+      const rW3Cs = document.getElementById("row-w3_cskh");
+      const bW4Pod = document.getElementById("box-w4_pod");
+      const bW4Go = document.getElementById("box-w4_golive");
+
+      if (rW1Infra && rW1Survey && bW2Kt && bW2Br && bW3Mkt && bW3Cs && bW4Pod && bW4Go) {
+        const w1a = getRelativeRect(rW1Infra, canvas);
+        const w1b = getRelativeRect(rW1Survey, canvas);
+        const w2aBox = getRelativeRect(bW2Kt, canvas);
+        const w2bBox = getRelativeRect(bW2Br, canvas);
+        const w2aRow = getRelativeRect(rW2Kt, canvas);
+        const w2bRow = getRelativeRect(rW2Br, canvas);
+        const w3aBox = getRelativeRect(bW3Mkt, canvas);
+        const w3bBox = getRelativeRect(bW3Cs, canvas);
+        const w3aRow = getRelativeRect(rW3Mkt, canvas);
+        const w3bRow = getRelativeRect(rW3Cs, canvas);
+        const w4aBox = getRelativeRect(bW4Pod, canvas);
+        const w4bBox = getRelativeRect(bW4Go, canvas);
+
+        // Tuần 1 -> Tuần 2
+        paths += makeBezierPath(w1a.right, w1a.midY, w2aBox.left, w2aBox.midY, "#111111", 1.6, false, true);
+        paths += makeBezierPath(w1b.right, w1b.midY, w2bBox.left, w2bBox.midY, "#111111", 1.6, false, true);
+
+        // Tuần 2 -> Tuần 3
+        paths += makeBezierPath(w2aRow.right, w2aBox.midY, w3aBox.left, w3aBox.midY, "#111111", 1.6, false, true);
+        paths += makeBezierPath(w2bRow.right, w2bBox.midY, w3bBox.left, w3bBox.midY, "#111111", 1.6, false, true);
+
+        // Tuần 3 -> Tuần 4
+        paths += makeBezierPath(w3aRow.right, w3aBox.midY, w4aBox.left, w4aBox.midY, "#111111", 1.6, false, true);
+        paths += makeBezierPath(w3bRow.right, w3bBox.midY, w4bBox.left, w4bBox.midY, "#111111", 1.6, false, true);
+      }
+
+      // Nhánh con khi bung từng Node
+      Object.keys(ARCH_TREE_NODES).forEach(key => {
+        const col = document.getElementById(`children-${key}`);
+        const parentBox = document.getElementById(`box-${key}`);
+        if (!col || !col.classList.contains("open") || !parentBox) return;
+        const rParent = getRelativeRect(parentBox, canvas);
+        col.querySelectorAll(":scope > .mm-child-row > .mm-child-box").forEach(cb => {
+          const rChild = getRelativeRect(cb, canvas);
+          paths += makeBezierPath(rParent.right, rParent.midY, rChild.left, rChild.midY, "#111111", 1.4, false, false);
+        });
+      });
+
+      svg.innerHTML = paths;
+    }
+
+    window.addEventListener("resize", () => requestAnimationFrame(drawAllConnections));
+
+    // =========================================================================
+    // 5. LOGIC POPUP & ĐIỀU HƯỚNG SLIDE
+    // =========================================================================
+    function openInfoPopup(infoKey) {
+      const item = INFO_POPUPS[infoKey];
+      if (!item) return;
+      document.getElementById("popupTag").textContent = item.tag;
+      document.getElementById("popupTitle").textContent = item.title;
+
+      const bulletsHtml = (item.bullets || []).map(b => `<div class="popup-bullet-item">• ${b}</div>`).join("");
+
+      document.getElementById("popupBody").innerHTML = `
+        <div class="popup-summary">${item.summary}</div>
+        <div class="popup-bullets">${bulletsHtml}</div>
+      `;
+      document.getElementById("popupOverlay").classList.add("open");
+    }
+
+    function closePopup() {
+      document.getElementById("popupOverlay").classList.remove("open");
+    }
+
+    let currentSlide = 0;
+    const totalSlides = document.querySelectorAll(".slide").length || 8;
+
+    function renderDots() {
+      const dotsEl = document.getElementById("progressDots");
+      dotsEl.innerHTML = Array.from({ length: totalSlides }).map((_, idx) => `
+        <div class="dot ${idx === currentSlide ? 'active' : ''}" onclick="goToSlide(${idx})" title="Slide ${idx + 1}"></div>
+      `).join("");
+    }
+
+    function formatSlideNum(n) {
+      return n < 10 ? `0${n}` : `${n}`;
+    }
+
+    function goToSlide(index) {
+      if (index < 0 || index >= totalSlides) return;
+      currentSlide = index;
+      document.querySelectorAll(".slide").forEach((s, idx) => {
+        s.classList.toggle("active", idx === currentSlide);
+      });
+      document.getElementById("slideCounter").textContent = `${formatSlideNum(currentSlide + 1)} / ${formatSlideNum(totalSlides)}`;
+      renderDots();
+
+      if (currentSlide === 1) {
+        setTimeout(() => {
+          resetZoomAndPan();
+        }, 60);
+      }
+    }
+
+    function nextSlide() {
+      if (currentSlide < totalSlides - 1) goToSlide(currentSlide + 1);
+    }
+
+    function prevSlide() {
+      if (currentSlide > 0) goToSlide(currentSlide - 1);
+    }
+
+    function toggleFullScreen() {
+      if (!document.fullscreenElement) {
+        document.documentElement.requestFullscreen().catch(() => {});
+      } else {
+        document.exitFullscreen();
+      }
+    }
+
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") {
+        closePopup();
+        return;
+      }
+      if (document.getElementById("popupOverlay").classList.contains("open")) return;
+      if (e.key === "ArrowRight") nextSlide();
+      if (e.key === "ArrowLeft") prevSlide();
+    });
+
+    window.addEventListener("DOMContentLoaded", () => {
+      hydrateStaticLogos();
+      buildMasterArchitectureTree();
+      initZoomAndPanEvents();
+      goToSlide(0);
+    });
+  </script>
+</body>
+</html>
+

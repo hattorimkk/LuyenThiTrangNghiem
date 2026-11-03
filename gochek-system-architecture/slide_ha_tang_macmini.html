@@ -1,0 +1,2536 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hạ Tầng Server Mac mini — n8n Queue Mode, Tailscale SSH &amp; Cloudflare</title>
+  <style>
+    :root {
+      --bg: #ffffff;
+      --bg-subtle: #f7f7f7;
+      --bg-hover: #efefef;
+      --text: #111111;
+      --text-secondary: #555555;
+      --text-muted: #888888;
+      --border: #d4d4d4;
+      --border-strong: #111111;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+      user-select: none;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* SLIDES VIEWPORT */
+    .slides-container {
+      width: 100vw;
+      height: 100vh;
+      position: relative;
+    }
+
+    .slide {
+      position: absolute;
+      inset: 0;
+      padding: 36px 56px 76px 56px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      opacity: 0;
+      pointer-events: none;
+      transform: translateX(24px);
+      transition: opacity 0.24s ease, transform 0.24s ease;
+      overflow: hidden;
+    }
+
+    .slide.active {
+      opacity: 1;
+      pointer-events: auto;
+      transform: translateX(0);
+    }
+
+    /* SLIDE HEADER */
+    .slide-header {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      border-bottom: 1.5px solid var(--border-strong);
+      padding-bottom: 14px;
+      flex-shrink: 0;
+    }
+
+    .slide-step {
+      font-size: 12.5px;
+      font-weight: 800;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 5px;
+    }
+
+    .slide-title {
+      font-size: 28px;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      color: var(--text);
+      line-height: 1.2;
+    }
+
+    .slide-hint {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text-secondary);
+      border: 1px solid var(--border);
+      padding: 6px 14px;
+      border-radius: 99px;
+      background: var(--bg-subtle);
+      white-space: nowrap;
+    }
+
+    .slide-header-right {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-shrink: 0;
+    }
+
+    .header-author-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      color: #ffffff;
+      background: #111111;
+      border: 1.5px solid #111111;
+      padding: 6px 14px;
+      border-radius: 99px;
+      white-space: nowrap;
+    }
+
+    /* SLIDE BODY */
+    .slide-body {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 18px;
+      min-height: 0;
+      padding: 10px 0;
+    }
+
+    /* COVER SLIDE */
+    .cover-center {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      border: 1.5px solid var(--border-strong);
+      border-radius: 14px;
+      padding: 34px 48px;
+      background: var(--bg-subtle);
+      gap: 18px;
+      position: relative;
+    }
+
+    .cover-top-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .cover-tag {
+      display: inline-block;
+      font-size: 12.5px;
+      font-weight: 800;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      border: 1.5px solid var(--border-strong);
+      padding: 6px 16px;
+      border-radius: 99px;
+      width: fit-content;
+      background: #fff;
+    }
+
+    .cover-author-signature {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 15.5px;
+      font-weight: 700;
+      color: var(--text);
+      background: #ffffff;
+      border: 1.5px solid var(--border-strong);
+      padding: 9px 18px;
+      border-radius: 10px;
+      width: fit-content;
+      box-shadow: 3px 3px 0px #111111;
+    }
+
+    .cover-main-title {
+      font-size: 44px;
+      font-weight: 900;
+      letter-spacing: -0.03em;
+      line-height: 1.12;
+      color: var(--text);
+      max-width: 980px;
+    }
+
+    .cover-sub {
+      font-size: 17.5px;
+      color: var(--text-secondary);
+      max-width: 920px;
+      line-height: 1.5;
+    }
+
+    /* FLOW BAR */
+    .context-flow-bar {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      padding: 12px 18px;
+      background: var(--bg-subtle);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      flex-shrink: 0;
+      flex-wrap: wrap;
+    }
+
+    .context-pill {
+      padding: 7px 14px;
+      border: 1px solid var(--border);
+      background: #fff;
+      border-radius: 6px;
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--text);
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .context-pill.highlight {
+      border: 1.5px solid var(--border-strong);
+      background: var(--text);
+      color: #fff;
+    }
+
+    .context-arrow {
+      font-size: 16px;
+      color: var(--text-muted);
+      font-weight: 700;
+    }
+
+    /* GRIDS & MINIMAL BOXES */
+    .boxes-grid-2 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+    }
+
+    .boxes-grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+
+    .boxes-grid-4 {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+    }
+
+    .min-box {
+      background: #ffffff;
+      border: 1.5px solid var(--border);
+      border-radius: 10px;
+      padding: 18px 20px;
+      cursor: pointer;
+      transition: all 0.16s ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 10px;
+      position: relative;
+    }
+
+    .min-box:hover {
+      border-color: var(--border-strong);
+      background: var(--bg-subtle);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    }
+
+    .min-box.dark-accent {
+      border: 2px solid var(--border-strong);
+      background: var(--bg-subtle);
+    }
+
+    .min-box-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+    }
+
+    .min-box-code {
+      font-size: 11.5px;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+    }
+
+    .min-box-open {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--text);
+      border: 1px solid var(--border);
+      padding: 3px 9px;
+      border-radius: 4px;
+      background: var(--bg-subtle);
+      transition: all 0.15s;
+      white-space: nowrap;
+    }
+
+    .min-box:hover .min-box-open {
+      background: var(--text);
+      color: #fff;
+      border-color: var(--text);
+    }
+
+    .min-box-title {
+      font-size: 18px;
+      font-weight: 800;
+      color: var(--text);
+      line-height: 1.3;
+    }
+
+    .min-box-sub {
+      font-size: 14.5px;
+      color: var(--text-secondary);
+      line-height: 1.45;
+    }
+
+    .min-box.compact {
+      padding: 14px 16px;
+      gap: 8px;
+    }
+
+    .min-box.compact .min-box-title {
+      font-size: 15.5px;
+    }
+
+    /* MINI TAG PILLS INSIDE CARDS */
+    .pill-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 2px;
+    }
+
+    .mini-pill {
+      font-size: 12px;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 6px;
+      background: var(--bg-subtle);
+      border: 1px solid var(--border);
+      color: var(--text);
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .mini-pill.solid {
+      background: #111111;
+      color: #ffffff;
+      border-color: #111111;
+    }
+
+    /* =====================================================================
+       SLIDE 2: INTERACTIVE INFRASTRUCTURE MIND MAP + ZOOM/PAN
+       ===================================================================== */
+    .mindmap-viewport {
+      flex: 1;
+      width: 100%;
+      background: var(--bg-subtle);
+      border: 1.5px solid var(--border);
+      border-radius: 12px;
+      position: relative;
+      overflow: hidden;
+      cursor: grab;
+    }
+
+    .mindmap-viewport.dragging {
+      cursor: grabbing;
+    }
+
+    .mindmap-canvas {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: flex;
+      align-items: center;
+      gap: 58px;
+      padding: 36px 48px;
+      min-width: max-content;
+      transform-origin: 0 0;
+      will-change: transform;
+    }
+
+    .zoom-toolbar {
+      position: absolute;
+      bottom: 14px;
+      right: 14px;
+      z-index: 20;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(255, 255, 255, 0.94);
+      border: 1px solid var(--border);
+      padding: 4px 8px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    }
+
+    .zoom-btn {
+      background: #fff;
+      border: 1px solid var(--border);
+      color: var(--text);
+      width: 26px;
+      height: 26px;
+      border-radius: 5px;
+      font-size: 14px;
+      font-weight: 700;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .zoom-btn:hover {
+      background: var(--text);
+      color: #fff;
+      border-color: var(--text);
+    }
+
+    .zoom-label {
+      font-size: 11.5px;
+      font-weight: 700;
+      color: var(--text-secondary);
+      min-width: 44px;
+      text-align: center;
+    }
+
+    #archSvgOverlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 1;
+      overflow: visible;
+    }
+
+    .arch-layer-col {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 16px;
+      position: relative;
+      z-index: 2;
+      padding-right: 30px;
+      border-right: 1.5px dashed #cccccc;
+    }
+
+    .arch-layer-col:last-child {
+      border-right: none;
+      padding-right: 0;
+    }
+
+    .layer-col-header {
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      text-align: left;
+      margin-bottom: 4px;
+    }
+
+    .layer-group-frame {
+      border: 1.5px solid var(--border);
+      background: rgba(255, 255, 255, 0.78);
+      border-radius: 10px;
+      padding: 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .layer-group-frame.dashed {
+      border-style: dashed;
+      border-color: #888888;
+    }
+
+    .layer-group-label {
+      font-size: 11.5px;
+      font-weight: 800;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--text-secondary);
+    }
+
+    .mm-node-row {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+      position: relative;
+    }
+
+    .arch-node {
+      background: #ffffff;
+      border: 1.5px solid var(--border-strong);
+      border-radius: 9px;
+      padding: 12px 16px;
+      min-width: 215px;
+      cursor: pointer;
+      transition: background 0.15s ease;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+      flex-shrink: 0;
+    }
+
+    .arch-node:hover {
+      background: var(--bg-hover);
+    }
+
+    .arch-node.expanded {
+      background: var(--text);
+      color: #ffffff;
+    }
+
+    .arch-node-title {
+      font-size: 15px;
+      font-weight: 800;
+      line-height: 1.28;
+    }
+
+    .arch-node-sub {
+      font-size: 12.5px;
+      color: var(--text-secondary);
+      margin-top: 2px;
+    }
+
+    .arch-node.expanded .arch-node-sub {
+      color: #cccccc;
+    }
+
+    .arch-node-badge {
+      width: 23px;
+      height: 23px;
+      border-radius: 50%;
+      border: 1.2px solid var(--border-strong);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 13px;
+      font-weight: 800;
+      flex-shrink: 0;
+    }
+
+    .arch-node.expanded .arch-node-badge {
+      border-color: #ffffff;
+      background: #ffffff;
+      color: var(--text);
+    }
+
+    .mm-children-col {
+      display: none;
+      flex-direction: column;
+      justify-content: center;
+      gap: 9px;
+      position: relative;
+    }
+
+    .mm-children-col.open {
+      display: flex;
+      animation: sproutIn 0.18s ease;
+    }
+
+    .mm-child-row {
+      display: flex;
+      align-items: center;
+      gap: 26px;
+    }
+
+    .mm-child-box {
+      background: #ffffff;
+      border: 1.3px solid #555555;
+      border-radius: 7px;
+      padding: 8px 13px;
+      min-width: 220px;
+      max-width: 295px;
+      cursor: pointer;
+      transition: background 0.15s ease;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+    }
+
+    .mm-child-box:hover {
+      border-color: #000000;
+      background: var(--bg-hover);
+    }
+
+    .mm-child-text {
+      font-size: 13px;
+      font-weight: 600;
+      line-height: 1.35;
+    }
+
+    .mm-child-action {
+      font-size: 11px;
+      font-weight: 700;
+      padding: 2px 6px;
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+
+    @keyframes sproutIn {
+      from { opacity: 0; transform: translateX(-8px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+
+    /* CLUSTER VISUAL DIAGRAM CARDS (SLIDE 5) */
+    .cluster-card {
+      border: 2px solid var(--border-strong);
+      border-radius: 12px;
+      background: var(--bg-subtle);
+      padding: 18px 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      cursor: pointer;
+      transition: all 0.16s ease;
+    }
+
+    .cluster-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.07);
+    }
+
+    .cluster-nodes-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+    }
+
+    .cluster-mini-node {
+      background: #ffffff;
+      border: 1.5px solid var(--border);
+      border-radius: 8px;
+      padding: 10px 12px;
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      font-size: 13.5px;
+      font-weight: 800;
+    }
+
+    .cluster-mini-node.main-node {
+      border-color: #111111;
+      background: #111111;
+      color: #ffffff;
+    }
+
+    /* STACK LOGOS */
+    .stack-logo {
+      width: 32px;
+      height: 32px;
+      border-radius: 7px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      border: 1px solid rgba(0, 0, 0, 0.12);
+      background: #ffffff;
+      overflow: hidden;
+    }
+
+    .arch-node.expanded .stack-logo {
+      border-color: rgba(255, 255, 255, 0.32);
+    }
+
+    .stack-logo.lg {
+      width: 38px;
+      height: 38px;
+      border-radius: 8px;
+    }
+
+    .stack-logo svg {
+      width: 20px;
+      height: 20px;
+      display: block;
+    }
+
+    .stack-logo.lg svg {
+      width: 24px;
+      height: 24px;
+    }
+
+    .stack-logo-group {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      flex-shrink: 0;
+    }
+
+    .node-left-wrap {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+    }
+
+    .title-with-logo {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+    }
+
+    .cover-stack-strip {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 9px;
+    }
+
+    .cover-stack-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #ffffff;
+      border: 1px solid var(--border);
+      padding: 6px 13px;
+      border-radius: 8px;
+      font-size: 13.5px;
+      font-weight: 700;
+      color: var(--text);
+    }
+
+    .cover-stack-badge .stack-logo {
+      width: 24px;
+      height: 24px;
+      border-radius: 5px;
+    }
+
+    .cover-stack-badge .stack-logo svg {
+      width: 15px;
+      height: 15px;
+    }
+
+    /* FLOATING BOTTOM CONTROLS */
+    .bottom-nav {
+      position: fixed;
+      bottom: 18px;
+      left: 56px;
+      right: 56px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      z-index: 40;
+      pointer-events: none;
+    }
+
+    .nav-cluster {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(255, 255, 255, 0.94);
+      border: 1px solid var(--border);
+      padding: 6px 12px;
+      border-radius: 99px;
+      pointer-events: auto;
+      backdrop-filter: blur(8px);
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+    }
+
+    .nav-btn {
+      background: transparent;
+      border: 1px solid transparent;
+      color: var(--text);
+      padding: 6px 12px;
+      border-radius: 99px;
+      font-size: 13px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+
+    .nav-btn:hover {
+      background: var(--bg-hover);
+      border-color: var(--border);
+    }
+
+    .nav-indicator {
+      font-size: 13px;
+      font-weight: 800;
+      color: var(--text-secondary);
+      padding: 0 10px;
+    }
+
+    .progress-dots {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--border);
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .dot.active {
+      width: 24px;
+      border-radius: 99px;
+      background: var(--text);
+    }
+
+    /* POPUP MODAL */
+    .popup-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.45);
+      backdrop-filter: blur(3px);
+      z-index: 100;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 32px;
+    }
+
+    .popup-overlay.open {
+      display: flex;
+      animation: fadePopup 0.18s ease;
+    }
+
+    .popup-card {
+      background: #ffffff;
+      border: 2px solid var(--border-strong);
+      border-radius: 14px;
+      max-width: 1040px;
+      width: 100%;
+      max-height: 88vh;
+      overflow-y: auto;
+      padding: 28px 34px;
+      box-shadow: 0 24px 60px rgba(0, 0, 0, 0.22);
+    }
+
+    .popup-top {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 16px;
+      border-bottom: 1.5px solid var(--border);
+      padding-bottom: 14px;
+      margin-bottom: 18px;
+    }
+
+    .popup-tag {
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 4px;
+    }
+
+    .popup-title {
+      font-size: 22px;
+      font-weight: 800;
+      color: var(--text);
+      line-height: 1.3;
+    }
+
+    .popup-close {
+      background: var(--bg-subtle);
+      border: 1px solid var(--border);
+      color: var(--text);
+      padding: 7px 14px;
+      border-radius: 6px;
+      font-size: 13px;
+      font-weight: 700;
+      cursor: pointer;
+      flex-shrink: 0;
+    }
+
+    .popup-close:hover {
+      background: var(--text);
+      color: #fff;
+    }
+
+    .popup-summary {
+      background: var(--bg-subtle);
+      border-left: 4px solid var(--border-strong);
+      padding: 12px 16px;
+      font-size: 15px;
+      color: var(--text);
+      line-height: 1.5;
+      margin-bottom: 16px;
+    }
+
+    .popup-bullets {
+      display: flex;
+      flex-direction: column;
+      gap: 9px;
+    }
+
+    .popup-bullet-item {
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 12px 16px;
+      background: #fff;
+      font-size: 14.5px;
+      line-height: 1.5;
+      color: var(--text);
+    }
+
+    .popup-code-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 12px;
+      margin-top: 14px;
+    }
+
+    .popup-code-label {
+      font-size: 11.5px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--text-secondary);
+      margin-bottom: 4px;
+    }
+
+    .popup-code-block {
+      font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+      font-size: 13px;
+      line-height: 1.48;
+      background: #141414;
+      color: #f5f5f5;
+      border-radius: 8px;
+      padding: 12px 16px;
+      white-space: pre-wrap;
+      word-break: break-word;
+      overflow-x: auto;
+      border: 1px solid #111111;
+    }
+
+    @keyframes fadePopup {
+      from { opacity: 0; transform: scale(0.98); }
+      to { opacity: 1; transform: scale(1); }
+    }
+  </style>
+</head>
+<body>
+
+  <main class="slides-container">
+
+    <!-- =================================================================
+         SLIDE 01: TRANG BÌA — HẠ TẦNG SERVER MAC MINI ON-PREMISE 24/7
+         ================================================================= -->
+    <section class="slide active" data-index="0">
+      <div class="cover-center">
+        <div class="cover-top-bar">
+          <span class="cover-tag">MAC MINI INFRASTRUCTURE</span>
+        </div>
+
+        <h1 class="cover-main-title">
+          Hạ Tầng Server Mac mini (Chạy Ngầm 24/7)
+        </h1>
+
+        <p class="cover-sub">
+          Tách <strong>2 User độc lập</strong> • Quản trị <strong>Tailscale + SSH</strong> • <strong>2 Cụm n8n Queue Mode</strong> (OrbStack) • Bộ nhớ <strong>Offline</strong> • <strong>Cloudflare Tunnel</strong>
+        </p>
+
+        <div class="boxes-grid-4" style="margin-top: 8px;">
+          <div class="min-box compact" onclick="openInfoPopup('pillar_users')">
+            <div class="min-box-top">
+              <span class="min-box-code">01 • MACOS DAEMON</span>
+              <span class="min-box-open">+</span>
+            </div>
+            <div class="min-box-title" data-stack-logos="apple,user_admin">2 User (Chạy Ngầm 100%)</div>
+          </div>
+
+          <div class="min-box compact" onclick="openInfoPopup('pillar_ssh')">
+            <div class="min-box-top">
+              <span class="min-box-code">02 • REMOTE ACCESS</span>
+              <span class="min-box-open">+</span>
+            </div>
+            <div class="min-box-title" data-stack-logos="tailscale,ssh">Tailscale VPN + SSH Key</div>
+          </div>
+
+          <div class="min-box compact" onclick="openInfoPopup('pillar_n8n')">
+            <div class="min-box-top">
+              <span class="min-box-code">03 • DOCKER QUEUE</span>
+              <span class="min-box-open">+</span>
+            </div>
+            <div class="min-box-title" data-stack-logos="orbstack,n8n">2 Cụm n8n (2–3 Workers)</div>
+          </div>
+
+          <div class="min-box compact" onclick="openInfoPopup('pillar_cf_disk')">
+            <div class="min-box-top">
+              <span class="min-box-code">04 • TUNNEL &amp; STORAGE</span>
+              <span class="min-box-open">+</span>
+            </div>
+            <div class="min-box-title" data-stack-logos="cloudflare,disk">Cloudflare + Đĩa Offline</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         SLIDE 02: SƠ ĐỒ TỔNG THỂ HẠ TẦNG (MIND MAP + ZOOM & KÉO THẢ)
+         ================================================================= -->
+    <section class="slide" data-index="1">
+      <div class="slide-header">
+        <div>
+          <div class="slide-step">SLIDE 02 / 08 — SƠ ĐỒ TỔNG THỂ</div>
+          <h2 class="slide-title">Sơ Đồ Kiến Trúc Hạ Tầng Mac mini</h2>
+        </div>
+        <div style="display:flex; gap:8px;">
+          <button class="popup-close" onclick="expandAllTreeNodes()">+ Bung toàn bộ</button>
+          <button class="popup-close" onclick="collapseAllTreeNodes()">− Thu gọn</button>
+          <button class="popup-close" onclick="resetZoomAndPan()">Đặt lại khung nhìn</button>
+        </div>
+      </div>
+
+      <div class="slide-body" style="padding: 8px 0;">
+        <div class="mindmap-viewport" id="mmViewport">
+          <div class="mindmap-canvas" id="mmCanvas">
+            <svg id="archSvgOverlay" xmlns="http://www.w3.org/2000/svg"></svg>
+
+            <!-- CỘT 1: KẾT NỐI TỪ BÊN NGOÀI -->
+            <div class="arch-layer-col" id="col-ext">
+              <div class="layer-col-header">1. KẾT NỐI &amp; ĐỊNH TUYẾN</div>
+              <div class="layer-group-frame" id="frame-network">
+                <div class="layer-group-label">QUẢN TRỊ &amp; TÊN MIỀN</div>
+                <div id="mount-net_tailscale"></div>
+                <div id="mount-net_cloudflare"></div>
+              </div>
+            </div>
+
+            <!-- CỘT 2: MAC MINI (2 USER) -->
+            <div class="arch-layer-col" id="col-mac">
+              <div class="layer-col-header">2. MAC MINI (2 USERS)</div>
+              <div style="display:flex; flex-direction:column; gap:24px;">
+                <div class="layer-group-frame dashed" id="frame-user1">
+                  <div class="layer-group-label">MÀN HÌNH NGOÀI (STANDARD)</div>
+                  <div id="mount-mac_user_normal"></div>
+                </div>
+                <div class="layer-group-frame" id="frame-user2">
+                  <div class="layer-group-label">CHẠY NGẦM 100% (ADMIN)</div>
+                  <div id="mount-mac_ssh"></div>
+                  <div id="mount-mac_orbstack"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- CỘT 3: 2 INSTANCE N8N QUEUE MODE -->
+            <div class="arch-layer-col" id="col-n8n">
+              <div class="layer-col-header">3. HAI CỤM N8N (QUEUE MODE)</div>
+              <div style="display:flex; flex-direction:column; gap:26px;">
+                <div class="layer-group-frame" id="frame-n8n-data">
+                  <div class="layer-group-label">INSTANCE 1 • PORT 5678</div>
+                  <div id="mount-n8n_data"></div>
+                </div>
+                <div class="layer-group-frame" id="frame-n8n-mcp">
+                  <div class="layer-group-label">INSTANCE 2 • PORT 5679</div>
+                  <div id="mount-n8n_mcp"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- CỘT 4: LƯU TRỮ CLOUD & OFFLINE -->
+            <div class="arch-layer-col" id="col-storage">
+              <div class="layer-col-header">4. LƯU TRỮ DỮ LIỆU</div>
+              <div class="layer-group-frame" id="frame-storage">
+                <div class="layer-group-label">CLOUD + BẢN OFFLINE TRÊN MÁY</div>
+                <div id="mount-store_sheets"></div>
+                <div id="mount-store_offline"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="zoom-toolbar">
+            <button class="zoom-btn" onclick="stepZoom(-0.15)" title="Thu nhỏ">−</button>
+            <span class="zoom-label" id="zoomLabel">100%</span>
+            <button class="zoom-btn" onclick="stepZoom(0.15)" title="Phóng to">+</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         SLIDE 03: MÔ HÌNH 2 USER TRÊN MAC MINI (CHẠY NGẦM 100%)
+         ================================================================= -->
+    <section class="slide" data-index="2">
+      <div class="slide-header">
+        <div>
+          <div class="slide-step">SLIDE 03 / 08 — MÔ HÌNH 2 USER &amp; LAUNCHDAEMON</div>
+          <h2 class="slide-title">Tách 2 User Trên Mac mini</h2>
+        </div>
+      </div>
+
+      <div class="slide-body">
+        <div class="boxes-grid-2">
+          <!-- USER 1 -->
+          <div class="min-box" onclick="openInfoPopup('user_normal_detail')">
+            <div class="min-box-top">
+              <span class="min-box-code">USER 01 • STANDARD</span>
+              <span class="min-box-open">+</span>
+            </div>
+            <div class="min-box-title" data-stack-logos="user_normal,apple" data-logo-size="lg">User Dùng Máy Hàng Ngày</div>
+            <div class="min-box-sub">Sử dụng Desktop macOS bình thường, tách biệt hoàn toàn với hệ thống ngầm.</div>
+            <div class="pill-row">
+              <span class="mini-pill">Không quyền sudo</span>
+              <span class="mini-pill">Không thấy thư mục infra-admin</span>
+              <span class="mini-pill">Giới hạn RAM Docker</span>
+            </div>
+          </div>
+
+          <!-- USER 2 -->
+          <div class="min-box dark-accent" onclick="openInfoPopup('user_admin_detail')">
+            <div class="min-box-top">
+              <span class="min-box-code">USER 02 • INFRA-ADMIN</span>
+              <span class="min-box-open">+</span>
+            </div>
+            <div class="min-box-title" data-stack-logos="user_admin,orbstack" data-logo-size="lg">User Hệ Thống `infra-admin` (Chạy Ngầm)</div>
+            <div class="min-box-sub">Tự khởi chạy toàn bộ dịch vụ ngay khi bật nguồn máy Mac, không cần login màn hình ngoài.</div>
+            <div class="pill-row">
+              <span class="mini-pill solid">/Library/LaunchDaemons</span>
+              <span class="mini-pill">chmod 700 /Users/infra-admin</span>
+              <span class="mini-pill">Quản trị qua SSH</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="boxes-grid-3">
+          <div class="min-box compact" onclick="openInfoPopup('mac_pmset')">
+            <div class="min-box-top">
+              <span class="min-box-code">01 • NGUỒN ĐIỆN</span>
+              <span class="min-box-open">+</span>
+            </div>
+            <div class="min-box-title" data-stack-logos="apple">Chống Ngủ Máy &amp; Tự Bật</div>
+            <div class="min-box-sub"><code>sleep 0</code> • <code>autorestart 1</code></div>
+          </div>
+
+          <div class="min-box compact" onclick="openInfoPopup('mac_orb_daemon')">
+            <div class="min-box-top">
+              <span class="min-box-code">02 • DOCKER ENGINE</span>
+              <span class="min-box-open">+</span>
+            </div>
+            <div class="min-box-title" data-stack-logos="orbstack">OrbStack Tự Chạy Ngầm</div>
+            <div class="min-box-sub">Giới hạn <code>8GB RAM / 4 CPU</code></div>
+          </div>
+
+          <div class="min-box compact" onclick="openInfoPopup('mac_ntp')">
+            <div class="min-box-top">
+              <span class="min-box-code">03 • ĐỒNG BỘ GIỜ</span>
+              <span class="min-box-open">+</span>
+            </div>
+            <div class="min-box-title" data-stack-logos="apple">Chuẩn Giờ NTP</div>
+            <div class="min-box-sub"><code>Asia/Ho_Chi_Minh</code></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         SLIDE 04: TAILSCALE + SSH & CLOUDFLARE TUNNEL (2 SUBDOMAINS)
+         ================================================================= -->
+    <section class="slide" data-index="3">
+      <div class="slide-header">
+        <div>
+          <div class="slide-step">SLIDE 04 / 08 — KẾT NỐI &amp; ĐỊNH TUYẾN</div>
+          <h2 class="slide-title">Tailscale + SSH &amp; Cloudflare Tunnel</h2>
+        </div>
+      </div>
+
+      <div class="slide-body">
+        <div class="boxes-grid-2">
+          <!-- TAILSCALE + SSH -->
+          <div class="min-box" onclick="openInfoPopup('net_tailscale_ssh')">
+            <div class="min-box-top">
+              <span class="min-box-code">01 • QUẢN TRỊ NỘI BỘ</span>
+              <span class="min-box-open">+</span>
+            </div>
+            <div class="min-box-title" data-stack-logos="tailscale,ssh" data-logo-size="lg">Tailscale VPN + OpenSSH</div>
+            <div class="min-box-sub">Chạy <code>tailscaled</code> cấp hệ thống, xác thực bằng khóa <code>Ed25519</code> (tắt mật khẩu thường).</div>
+            <div class="pill-row">
+              <span class="mini-pill solid">ssh infra-admin@100.x.y.z</span>
+              <span class="mini-pill">Disable Key Expiry</span>
+              <span class="mini-pill">AllowUsers infra-admin</span>
+            </div>
+          </div>
+
+          <!-- CLOUDFLARE TUNNEL -->
+          <div class="min-box" onclick="openInfoPopup('net_cf_tunnel')">
+            <div class="min-box-top">
+              <span class="min-box-code">02 • PUBLIC HTTPS</span>
+              <span class="min-box-open">+</span>
+            </div>
+            <div class="min-box-title" data-stack-logos="cloudflare" data-logo-size="lg">Cloudflare Tunnel (1 Tên Miền → 2 Subdomains)</div>
+            <div class="min-box-sub">Chạy <code>cloudflared</code> trực tiếp trên macOS dưới dạng <code>LaunchDaemon</code>.</div>
+            <div class="pill-row">
+              <span class="mini-pill solid">data-n8n.domain.com → :5678</span>
+              <span class="mini-pill solid">mcp-n8n.domain.com → :5679</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         SLIDE 05: KIẾN TRÚC 2 INSTANCE N8N QUEUE MODE ĐỘC LẬP HOÀN TOÀN
+         ================================================================= -->
+    <section class="slide" data-index="4">
+      <div class="slide-header">
+        <div>
+          <div class="slide-step">SLIDE 05 / 08 — DOCKER QUEUE MODE</div>
+          <h2 class="slide-title">2 Cụm n8n Queue Mode Độc Lập</h2>
+        </div>
+      </div>
+
+      <div class="slide-body">
+        <div class="boxes-grid-2">
+          <!-- INSTANCE 1: N8N-DATA -->
+          <div class="cluster-card" onclick="openInfoPopup('stack_n8n_data')">
+            <div class="min-box-top">
+              <span class="min-box-code">INSTANCE 01 • PORT 5678</span>
+              <span class="min-box-open">+</span>
+            </div>
+            <div class="min-box-title" data-stack-logos="n8n,sheets,disk" data-logo-size="lg">Cụm 1: `n8n-data` (Lấy &amp; Lưu Data Sheet)</div>
+            <div class="min-box-sub">Kéo dữ liệu, hứng Webhook và lưu vào Google Sheets + ổ cứng Mac mini.</div>
+
+            <div class="cluster-nodes-grid">
+              <div class="cluster-mini-node main-node">
+                <span>⚡ 1 Main (:5678)</span>
+              </div>
+              <div class="cluster-mini-node">
+                <span>👷 Worker 1 (x10)</span>
+              </div>
+              <div class="cluster-mini-node">
+                <span>👷 Worker 2 (x10)</span>
+              </div>
+              <div class="cluster-mini-node">
+                <span>👷 Worker 3 (x10)</span>
+              </div>
+              <div class="cluster-mini-node">
+                <span>🟥 Redis riêng</span>
+              </div>
+              <div class="cluster-mini-node">
+                <span>🐘 Postgres riêng</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- INSTANCE 2: N8N-MCP -->
+          <div class="cluster-card" onclick="openInfoPopup('stack_n8n_mcp')">
+            <div class="min-box-top">
+              <span class="min-box-code">INSTANCE 02 • PORT 5679</span>
+              <span class="min-box-open">+</span>
+            </div>
+            <div class="min-box-title" data-stack-logos="n8n,mcp" data-logo-size="lg">Cụm 2: `n8n-mcp` (Setup Tool &amp; MCP)</div>
+            <div class="min-box-sub">Đóng gói Tools, chạy MCP Server Trigger và xử lý tác vụ cho Agent.</div>
+
+            <div class="cluster-nodes-grid">
+              <div class="cluster-mini-node main-node">
+                <span>🛠️ 1 Main (:5679)</span>
+              </div>
+              <div class="cluster-mini-node">
+                <span>👷 Worker 1 (x10)</span>
+              </div>
+              <div class="cluster-mini-node">
+                <span>👷 Worker 2 (x10)</span>
+              </div>
+              <div class="cluster-mini-node">
+                <span>👷 Worker 3 (x10)</span>
+              </div>
+              <div class="cluster-mini-node">
+                <span>🟥 Redis riêng</span>
+              </div>
+              <div class="cluster-mini-node">
+                <span>🐘 Postgres riêng</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         SLIDE 06: MAP BỘ NHỚ OFFLINE (/data/offline-storage) TRÊN MAC MINI
+         ================================================================= -->
+    <section class="slide" data-index="5">
+      <div class="slide-header">
+        <div>
+          <div class="slide-step">SLIDE 06 / 08 — BỘ NHỚ OFFLINE TRÊN MÁY</div>
+          <h2 class="slide-title">Map Bộ Nhớ Offline (`/data/offline-storage`)</h2>
+        </div>
+      </div>
+
+      <div class="slide-body">
+        <div class="boxes-grid-3">
+          <div class="min-box" onclick="openInfoPopup('offline_mount')">
+            <div class="min-box-top">
+              <span class="min-box-code">01 • BIND MOUNT</span>
+              <span class="min-box-open">+</span>
+            </div>
+            <div class="min-box-title" data-stack-logos="orbstack,disk">Mount Thư Mục Chung</div>
+            <div class="min-box-sub">Ánh xạ <code>/Users/infra-admin/n8n-infra/offline-storage</code> vào cả Main &amp; 3 Workers.</div>
+            <div class="pill-row">
+              <span class="mini-pill solid">BINARY_DATA_MODE=filesystem</span>
+            </div>
+          </div>
+
+          <div class="min-box" onclick="openInfoPopup('offline_folders')">
+            <div class="min-box-top">
+              <span class="min-box-code">02 • CẤU TRÚC THƯ MỤC</span>
+              <span class="min-box-open">+</span>
+            </div>
+            <div class="min-box-title" data-stack-logos="disk,sheets">4 Ngăn Lưu Offline</div>
+            <div class="min-box-sub">Tổ chức gọn trên ổ cứng Mac mini để đối chiếu với Google Sheets / Drive.</div>
+            <div class="pill-row">
+              <span class="mini-pill">sheets-mirror</span>
+              <span class="mini-pill">drive-mirror</span>
+              <span class="mini-pill">raw-json</span>
+              <span class="mini-pill">exports</span>
+            </div>
+          </div>
+
+          <div class="min-box" onclick="openInfoPopup('offline_nodes')">
+            <div class="min-box-top">
+              <span class="min-box-code">03 • WORKFLOW NODE</span>
+              <span class="min-box-open">+</span>
+            </div>
+            <div class="min-box-title" data-stack-logos="n8n,disk">Ghi File Tự Động</div>
+            <div class="min-box-sub">Nối <code>Convert to File</code> → <code>Read/Write Files from Disk</code> song song Google Sheets.</div>
+            <div class="pill-row">
+              <span class="mini-pill solid">/data/offline-storage/...</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         SLIDE 07: QUY TRÌNH STRESS TEST BẰNG @n8n/benchmark CHÍNH HÃNG
+         ================================================================= -->
+    <section class="slide" data-index="6">
+      <div class="slide-header">
+        <div>
+          <div class="slide-step">SLIDE 07 / 08 — STRESS TEST</div>
+          <h2 class="slide-title">Stress Test Bằng `@n8n/benchmark`</h2>
+        </div>
+      </div>
+
+      <div class="slide-body">
+        <div class="boxes-grid-4">
+          <div class="min-box" onclick="openInfoPopup('stress_step1')">
+            <div class="min-box-top">
+              <span class="min-box-code">BƯỚC 01 • IMAGE</span>
+              <span class="min-box-open">+</span>
+            </div>
+            <div class="min-box-title" data-stack-logos="orbstack,n8n">Pull `n8n-benchmark`</div>
+            <div class="min-box-sub">Dùng Docker image chính thức của n8n, tự nạp kịch bản và bắn tải <code>k6</code>.</div>
+          </div>
+
+          <div class="min-box dark-accent" onclick="openInfoPopup('stress_step2')">
+            <div class="min-box-top">
+              <span class="min-box-code">BƯỚC 02 • WEBHOOK</span>
+              <span class="min-box-open">+</span>
+            </div>
+            <div class="min-box-title" data-stack-logos="k6,n8n">Test `single-webhook`</div>
+            <div class="min-box-sub">Chạy <code>--vus=30 --duration=1m</code> vào <code>:5678</code>, <code>:5679</code> và Cloudflare.</div>
+          </div>
+
+          <div class="min-box" onclick="openInfoPopup('stress_step3')">
+            <div class="min-box-top">
+              <span class="min-box-code">BƯỚC 03 • BINARY</span>
+              <span class="min-box-open">+</span>
+            </div>
+            <div class="min-box-title" data-stack-logos="disk,redis">Test `binary-data`</div>
+            <div class="min-box-sub">Đo tốc độ đọc/ghi file trên ổ cứng Mac mini &amp; chia tải 3 Workers.</div>
+          </div>
+
+          <div class="min-box" onclick="openInfoPopup('stress_step4')">
+            <div class="min-box-top">
+              <span class="min-box-code">BƯỚC 04 • FAILOVER</span>
+              <span class="min-box-open">+</span>
+            </div>
+            <div class="min-box-title" data-stack-logos="orbstack,redis">Tắt Thử 1 Worker</div>
+            <div class="min-box-sub">Dừng nóng <code>worker-2</code> khi đang chạy tải → 2 Worker còn lại tự gánh <code>0% lỗi</code>.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         SLIDE 08: VẬN HÀNH, BACKUP TỰ ĐỘNG & CHECKLIST GO-LIVE
+         ================================================================= -->
+    <section class="slide" data-index="7">
+      <div class="slide-header">
+        <div>
+          <div class="slide-step">SLIDE 08 / 08 — VẬN HÀNH &amp; BÀN GIAO</div>
+          <h2 class="slide-title">Backup Tự Động &amp; Checklist Nghiệm Thu</h2>
+        </div>
+      </div>
+
+      <div class="slide-body">
+        <div class="boxes-grid-3">
+          <div class="min-box" onclick="openInfoPopup('ops_backup')">
+            <div class="min-box-top">
+              <span class="min-box-code">01 • BACKUP 03:00 AM</span>
+              <span class="min-box-open">+</span>
+            </div>
+            <div class="min-box-title" data-stack-logos="postgres,disk">Sao Lưu Hàng Đêm</div>
+            <div class="min-box-sub">Dump Postgres + file <code>.env</code> của cả 2 cụm, giữ 14 ngày gần nhất.</div>
+          </div>
+
+          <div class="min-box" onclick="openInfoPopup('ops_commands')">
+            <div class="min-box-top">
+              <span class="min-box-code">02 • QUẢN TRỊ SSH</span>
+              <span class="min-box-open">+</span>
+            </div>
+            <div class="min-box-title" data-stack-logos="ssh,orbstack">Scale 2–3 Workers</div>
+            <div class="min-box-sub">Tăng/giảm nóng số lượng Worker bằng <code>--scale</code> không gián đoạn.</div>
+          </div>
+
+          <div class="min-box dark-accent" onclick="openInfoPopup('ops_checklist')">
+            <div class="min-box-top">
+              <span class="min-box-code">03 • CHECKLIST</span>
+              <span class="min-box-open">+</span>
+            </div>
+            <div class="min-box-title" data-stack-logos="apple,n8n,cloudflare">8 Bước Nghiệm Thu</div>
+            <div class="min-box-sub">Kiểm tra Nguồn, SSH, 12 Containers, Đĩa Offline, Cloudflare &amp; Benchmark.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FLOATING BOTTOM NAVIGATION -->
+  <div class="bottom-nav">
+    <div class="nav-cluster">
+      <button class="nav-btn" onclick="goToSlide(0)">Trang Bìa</button>
+      <button class="nav-btn" onclick="goToSlide(1)">Sơ Đồ Hạ Tầng</button>
+      <button class="nav-btn" onclick="goToSlide(2)">2 Users</button>
+      <button class="nav-btn" onclick="goToSlide(3)">SSH &amp; Tunnel</button>
+      <button class="nav-btn" onclick="goToSlide(4)">2 Cụm n8n</button>
+      <button class="nav-btn" onclick="goToSlide(5)">Đĩa Offline</button>
+      <button class="nav-btn" onclick="goToSlide(6)">Stress Test</button>
+      <button class="nav-btn" onclick="toggleFullScreen()">Toàn màn hình</button>
+    </div>
+
+    <div class="nav-cluster">
+      <div class="progress-dots" id="progressDots"></div>
+    </div>
+
+    <div class="nav-cluster">
+      <button class="nav-btn" onclick="prevSlide()">← Trước</button>
+      <span class="nav-indicator" id="slideCounter">01 / 08</span>
+      <button class="nav-btn" onclick="nextSlide()">Tiếp →</button>
+    </div>
+  </div>
+
+  <!-- UNIVERSAL POPUP MODAL -->
+  <div class="popup-overlay" id="popupOverlay" onclick="if(event.target===this) closePopup()">
+    <div class="popup-card">
+      <div class="popup-top">
+        <div>
+          <div class="popup-tag" id="popupTag">CHI TIẾT HẠ TẦNG</div>
+          <h3 class="popup-title" id="popupTitle">Tiêu đề</h3>
+        </div>
+        <button class="popup-close" onclick="closePopup()">Đóng (Esc)</button>
+      </div>
+      <div id="popupBody"></div>
+    </div>
+  </div>
+
+  <script>
+    // =========================================================================
+    // 1. BỘ ICON SVG ĐẶC TRƯNG CHO HẠ TẦNG MAC MINI
+    // =========================================================================
+    const STACK_LOGOS = {
+      apple: {
+        name: "Mac mini (macOS)",
+        bg: "#111111",
+        svg: `<svg viewBox="0 0 24 24" fill="none">
+          <rect x="3.5" y="7" width="17" height="10" rx="3" stroke="#FFFFFF" stroke-width="1.7"/>
+          <circle cx="17" cy="12" r="1.1" fill="#25F4EE"/>
+          <path d="M8 17h8" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+        </svg>`
+      },
+      user_normal: {
+        name: "User Thường (GUI)",
+        bg: "#4B5563",
+        svg: `<svg viewBox="0 0 24 24" fill="none">
+          <circle cx="12" cy="8.5" r="3.5" stroke="#FFFFFF" stroke-width="1.7"/>
+          <path d="M5.5 19.5c0-3.3 2.9-6 6.5-6s6.5 2.7 6.5 6" stroke="#FFFFFF" stroke-width="1.7" stroke-linecap="round"/>
+        </svg>`
+      },
+      user_admin: {
+        name: "infra-admin (Chạy Ngầm)",
+        bg: "#111111",
+        svg: `<svg viewBox="0 0 24 24" fill="none">
+          <path d="M12 3l7 3v6c0 4.5-3 7.8-7 9-4-1.2-7-4.5-7-9V6l7-3z" stroke="#FFFFFF" stroke-width="1.7"/>
+          <path d="M9.5 12l1.8 1.8 3.5-3.6" stroke="#22C55E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>`
+      },
+      tailscale: {
+        name: "Tailscale VPN",
+        bg: "#1E293B",
+        svg: `<svg viewBox="0 0 24 24" fill="none">
+          <circle cx="7" cy="7" r="2" fill="#FFFFFF"/>
+          <circle cx="12" cy="7" r="2" fill="#94A3B8"/>
+          <circle cx="17" cy="7" r="2" fill="#FFFFFF"/>
+          <circle cx="7" cy="12" r="2" fill="#94A3B8"/>
+          <circle cx="12" cy="12" r="2.2" fill="#38BDF8"/>
+          <circle cx="17" cy="12" r="2" fill="#94A3B8"/>
+          <circle cx="12" cy="17" r="2" fill="#FFFFFF"/>
+        </svg>`
+      },
+      ssh: {
+        name: "OpenSSH (Port 22)",
+        bg: "#0F172A",
+        svg: `<svg viewBox="0 0 24 24" fill="none">
+          <rect x="3.5" y="4.5" width="17" height="15" rx="2.5" stroke="#FFFFFF" stroke-width="1.6"/>
+          <path d="M7.5 9.5L10.5 12l-3 2.5M12.5 14.5h4" stroke="#4ADE80" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>`
+      },
+      orbstack: {
+        name: "OrbStack Docker",
+        bg: "#2563EB",
+        svg: `<svg viewBox="0 0 24 24" fill="none">
+          <path d="M12 3.5L19.5 7.8v8.4L12 20.5 4.5 16.2V7.8L12 3.5z" stroke="#FFFFFF" stroke-width="1.7" stroke-linejoin="round"/>
+          <circle cx="12" cy="12" r="3.2" fill="#FFFFFF"/>
+        </svg>`
+      },
+      n8n: {
+        name: "n8n Queue Mode",
+        bg: "#EA4B71",
+        svg: `<svg viewBox="0 0 24 24" fill="none">
+          <circle cx="5.5" cy="12" r="2.3" fill="#FFFFFF"/>
+          <circle cx="11.8" cy="12" r="2.3" fill="#FFFFFF"/>
+          <circle cx="18.2" cy="7.5" r="2.3" fill="#FFFFFF"/>
+          <circle cx="18.2" cy="16.5" r="2.3" fill="#FFFFFF"/>
+          <path d="M7.5 12h2.3M13.6 10.8l2.9-2.1M13.6 13.2l2.9 2.1" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+        </svg>`
+      },
+      redis: {
+        name: "Redis Queue",
+        bg: "#DC2626",
+        svg: `<svg viewBox="0 0 24 24" fill="none">
+          <path d="M12 4L4.5 8l7.5 4 7.5-4L12 4z" fill="#FFFFFF"/>
+          <path d="M4.5 12l7.5 4 7.5-4M4.5 16l7.5 4 7.5-4" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>`
+      },
+      postgres: {
+        name: "PostgreSQL",
+        bg: "#336791",
+        svg: `<svg viewBox="0 0 24 24" fill="none">
+          <ellipse cx="12" cy="6.5" rx="6.5" ry="2.8" stroke="#FFFFFF" stroke-width="1.7"/>
+          <path d="M5.5 6.5v5.5c0 1.55 2.9 2.8 6.5 2.8s6.5-1.25 6.5-2.8V6.5" stroke="#FFFFFF" stroke-width="1.7"/>
+          <path d="M5.5 12v5.5c0 1.55 2.9 2.8 6.5 2.8s6.5-1.25 6.5-2.8V12" stroke="#FFFFFF" stroke-width="1.7"/>
+        </svg>`
+      },
+      cloudflare: {
+        name: "Cloudflare Tunnel",
+        bg: "#F38020",
+        svg: `<svg viewBox="0 0 24 24" fill="none">
+          <path d="M6.5 17.5h11a3.5 3.5 0 0 0 .4-6.97A5.5 5.5 0 0 0 7.3 9.2 4 4 0 0 0 6.5 17.5z" fill="#FFFFFF"/>
+        </svg>`
+      },
+      disk: {
+        name: "Ổ Cứng Offline (/data/offline-storage)",
+        bg: "#111111",
+        svg: `<svg viewBox="0 0 24 24" fill="none">
+          <rect x="4" y="5" width="16" height="14" rx="2.5" stroke="#FFFFFF" stroke-width="1.7"/>
+          <path d="M4 14h16" stroke="#FFFFFF" stroke-width="1.5"/>
+          <circle cx="16.5" cy="16.5" r="1.2" fill="#4ADE80"/>
+        </svg>`
+      },
+      sheets: {
+        name: "Google Sheets / Drive",
+        bg: "#0F9D58",
+        svg: `<svg viewBox="0 0 24 24" fill="none">
+          <rect x="5" y="3.5" width="14" height="17" rx="2" stroke="#FFFFFF" stroke-width="1.6"/>
+          <path d="M5 9h14M5 13.5h14M10.5 9v11.5" stroke="#FFFFFF" stroke-width="1.6"/>
+        </svg>`
+      },
+      mcp: {
+        name: "MCP & Tool Server",
+        bg: "#111111",
+        svg: `<svg viewBox="0 0 24 24" fill="none">
+          <rect x="8.5" y="8.5" width="7" height="7" rx="1.5" stroke="#FFFFFF" stroke-width="1.7"/>
+          <path d="M12 3.5v5M12 15.5v5M3.5 12h5M15.5 12h5" stroke="#25F4EE" stroke-width="1.8" stroke-linecap="round"/>
+        </svg>`
+      },
+      k6: {
+        name: "@n8n/benchmark",
+        bg: "#7C3AED",
+        svg: `<svg viewBox="0 0 24 24" fill="none">
+          <path d="M13 3L5.5 13.5h5.5L10 21l8.5-10.5H13L13 3z" fill="#FFFFFF"/>
+        </svg>`
+      }
+    };
+
+    function renderStackLogos(keys, sizeClass = "") {
+      const list = Array.isArray(keys) ? keys : String(keys || "").split(",").map(s => s.trim()).filter(Boolean);
+      if (!list.length) return "";
+      const items = list.map(k => {
+        const item = STACK_LOGOS[k];
+        if (!item) return "";
+        return `<span class="stack-logo ${sizeClass}" style="background:${item.bg};" title="${item.name}">${item.svg}</span>`;
+      }).join("");
+      return `<span class="stack-logo-group">${items}</span>`;
+    }
+
+    function hydrateStaticLogos() {
+      document.querySelectorAll("[data-stack-logos]").forEach(el => {
+        if (el.dataset.logoHydrated === "1") return;
+        const keys = el.getAttribute("data-stack-logos");
+        const size = el.getAttribute("data-logo-size") || "";
+        const text = el.innerHTML;
+        el.classList.add("title-with-logo");
+        el.innerHTML = `${renderStackLogos(keys, size)}<span>${text}</span>`;
+        el.dataset.logoHydrated = "1";
+      });
+    }
+
+    // =========================================================================
+    // 2. DỮ LIỆU POPUP CHI TIẾT (NGẮN GỌN, KÈM LỆNH COPY-PASTE)
+    // =========================================================================
+    const INFO_POPUPS = {
+      pillar_users: {
+        tag: "TRỤ CỘT 01 • MÔ HÌNH 2 USER CHẠY NGẦM",
+        title: "Tách 2 User Trên Mac mini — Chạy Ngầm 100% Bằng LaunchDaemons",
+        summary: "Người dùng thường vẫn ngồi làm việc bình thường trên màn hình Mac mini, trong khi toàn bộ hạ tầng chạy ngầm dưới tài khoản infra-admin.",
+        bullets: [
+          "User 1 (Standard): Dùng giao diện macOS hàng ngày, không có quyền sudo, không truy cập được thư mục /Users/infra-admin.",
+          "User 2 (infra-admin): Toàn bộ dịch vụ (Tailscale, SSH, cloudflared, OrbStack Docker) được đăng ký vào /Library/LaunchDaemons/ nên tự động chạy ngầm ngay từ lúc bật nút nguồn Mac mini."
+        ]
+      },
+      pillar_ssh: {
+        tag: "TRỤ CỘT 02 • QUẢN TRỊ TỪ XA",
+        title: "Tailscale Mesh VPN + OpenSSH (Khóa Ed25519)",
+        summary: "SSH vào thẳng user infra-admin từ bất kỳ đâu qua IP nội bộ 100.x.y.z mà không cần mở port trên Router công ty.",
+        bullets: [
+          "Tailscale chạy dưới dạng System Daemon (sudo brew services start tailscale) và đã bật Disable Key Expiry.",
+          "OpenSSH chỉ cho phép tài khoản infra-admin đăng nhập bằng SSH Key (AllowUsers infra-admin, PasswordAuthentication no)."
+        ]
+      },
+      pillar_n8n: {
+        tag: "TRỤ CỘT 03 • 2 CỤM N8N QUEUE MODE ĐỘC LẬP",
+        title: "2 Instance n8n Chạy Queue Mode (Mỗi Cụm 1 Main + 2–3 Workers)",
+        summary: "Tách biệt hoàn toàn 2 cụm Docker Compose để khi bảo trì hoặc nâng cấp cụm này thì cụm kia vẫn chạy 100%.",
+        bullets: [
+          "Instance 1 (n8n-data - Port 5678): Chuyên lấy dữ liệu và lưu vào Google Sheets + bản Offline trên ổ cứng.",
+          "Instance 2 (n8n-mcp - Port 5679): Chuyên setup các Tools và chạy MCP Server.",
+          "Mỗi cụm có 1 Main + 3 Workers (--concurrency=10) + 1 Redis riêng + 1 Postgres nội bộ riêng."
+        ]
+      },
+      pillar_cf_disk: {
+        tag: "TRỤ CỘT 04 • CLOUDFLARE TUNNEL & MAP BỘ NHỚ OFFLINE",
+        title: "1 Tên Miền (2 Subdomains) & Map Ổ Cứng Offline (/data/offline-storage)",
+        summary: "Định tuyến an toàn qua Cloudflare Tunnel và lưu bản sao dữ liệu Offline ngay trên ổ cứng Mac mini.",
+        bullets: [
+          "Subdomain 1 (data-n8n.domain.com) → 127.0.0.1:5678 | Subdomain 2 (mcp-n8n.domain.com) → 127.0.0.1:5679.",
+          "Thư mục /Users/infra-admin/n8n-infra/offline-storage trên Mac mini được mount vào /data/offline-storage của tất cả Main & Workers ở cả 2 cụm."
+        ]
+      },
+      user_normal_detail: {
+        tag: "USER 01 • NGƯỜI DÙNG BÌNH THƯỜNG",
+        title: "Tài Khoản Standard Cho Nhân Sự Ngồi Dùng Máy",
+        summary: "Đảm bảo trải nghiệm mượt mà cho người dùng máy và an toàn tuyệt đối cho hệ thống chạy ngầm.",
+        bullets: [
+          "Loại tài khoản: Standard User (không có quyền cài xóa dịch vụ hệ thống).",
+          "Không bị lag máy vì OrbStack đã được khóa trần RAM (8GB) và CPU (4 cores).",
+          "Không thể mở xem thư mục /Users/infra-admin do đã phân quyền chmod 700."
+        ]
+      },
+      user_admin_detail: {
+        tag: "USER 02 • INFRA-ADMIN (CHẠY NGẦM)",
+        title: "Thiết Lập User infra-admin & Khóa Quyền Thư Mục",
+        summary: "Tài khoản Administrator chuyên chứa Docker Volumes, file cấu hình .env và thư mục dữ liệu Offline.",
+        bullets: [
+          "Tạo user infra-admin trong System Settings → Users & Groups (chọn Administrator).",
+          "Khóa quyền thư mục nhà để chỉ infra-admin mới đọc/ghi được."
+        ],
+        codeBlocks: [
+          {
+            label: "LỆNH KHÓA QUYỀN THƯ MỤC INFRA-ADMIN",
+            code: `su - infra-admin\nchmod 700 /Users/infra-admin`
+          }
+        ]
+      },
+      mac_pmset: {
+        tag: "CẤU HÌNH NGUỒN MAC MINI 24/7",
+        title: "Tắt Chế Độ Ngủ (Anti-Sleep) & Tự Khởi Động Khi Có Điện",
+        summary: "Giúp Mac mini luôn thức 24/7 ngay cả khi tắt màn hình hoặc sau khi cúp điện.",
+        bullets: [
+          "Tắt hoàn toàn sleep hệ thống và sleep ổ cứng, chỉ cho phép tắt màn hình sau 15 phút.",
+          "Bật autorestart 1 để máy tự bật nguồn lại khi có điện."
+        ],
+        codeBlocks: [
+          {
+            label: "LỆNH PMSET TRÊN MAC MINI",
+            code: `sudo pmset -a sleep 0 disksleep 0 displaysleep 15 powernap 0 standby 0 autopoweroff 0\nsudo pmset -a autorestart 1 womp 1`
+          }
+        ]
+      },
+      mac_orb_daemon: {
+        tag: "CHẠY NGẦM ORBSTACK DOCKER",
+        title: "LaunchDaemon Tự Khởi Chạy OrbStack Khi Bật Máy (Không Cần Login GUI)",
+        summary: "File cấu hình giúp macOS tự bật Docker dưới tên user infra-admin ngay từ lúc khởi động máy.",
+        bullets: [
+          "Giới hạn tài nguyên OrbStack: orb config set memory_mib 8192 && orb config set cpu 4.",
+          "Đăng ký file /Library/LaunchDaemons/com.gochek.orbstack-headless.plist với UserName = infra-admin."
+        ],
+        codeBlocks: [
+          {
+            label: "/Library/LaunchDaemons/com.gochek.orbstack-headless.plist",
+            code: `sudo tee /Library/LaunchDaemons/com.gochek.orbstack-headless.plist > /dev/null << 'EOF'
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key><string>com.gochek.orbstack-headless</string>
+    <key>UserName</key><string>infra-admin</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/Applications/OrbStack.app/Contents/MacOS/bin/orbctl</string>
+        <string>start</string>
+    </array>
+    <key>RunAtLoad</key><true/>
+</dict>
+</plist>
+EOF
+sudo chown root:wheel /Library/LaunchDaemons/com.gochek.orbstack-headless.plist
+sudo launchctl load -w /Library/LaunchDaemons/com.gochek.orbstack-headless.plist`
+          }
+        ]
+      },
+      mac_ntp: {
+        tag: "ĐỒNG BỘ GIỜ CHUẨN NTP",
+        title: "Đồng Bộ Giờ Quốc Tế Tự Động",
+        summary: "Đảm bảo đồng hồ hệ thống luôn chính xác tuyệt đối cho các tác vụ Cron và gọi API.",
+        bullets: [
+          "Đặt múi giờ chuẩn Asia/Ho_Chi_Minh và đồng bộ với máy chủ time.apple.com."
+        ],
+        codeBlocks: [
+          {
+            label: "LỆNH ĐỒNG BỘ GIỜ",
+            code: `sudo systemsetup -setusingnetworktime on\nsudo systemsetup -settimezone Asia/Ho_Chi_Minh\nsudo sntp -sS time.apple.com`
+          }
+        ]
+      },
+      net_tailscale_ssh: {
+        tag: "TAILSCALE VPN & OPENSSH SERVER",
+        title: "Cài Đặt Tailscale & Khóa Bảo Mật SSH Vào User infra-admin",
+        summary: "Kết nối SSH an toàn từ xa qua dải IP 100.x.y.z bằng khóa Ed25519.",
+        bullets: [
+          "1. Cài Tailscale CLI chạy ở cấp System Daemon và bật Disable Key Expiry trên trang Admin.",
+          "2. Bật Remote Login (sshd) và chỉ cho phép user infra-admin đăng nhập bằng SSH Key."
+        ],
+        codeBlocks: [
+          {
+            label: "CÀI TAILSCALE & CẤU HÌNH SSHD",
+            code: `# 1. Cài & bật Tailscale System Daemon
+brew install tailscale
+sudo brew services start tailscale
+sudo tailscale up --ssh --accept-routes
+
+# 2. Bật SSH & giới hạn chỉ cho phép infra-admin dùng SSH Key
+sudo systemsetup -setremotelogin on
+sudo tee /etc/ssh/sshd_config.d/99-infra-security.conf > /dev/null << 'EOF'
+AllowUsers infra-admin
+PasswordAuthentication no
+PubkeyAuthentication yes
+PermitRootLogin no
+EOF
+sudo launchctl stop com.openssh.sshd && sudo launchctl start com.openssh.sshd`
+          }
+        ]
+      },
+      net_cf_tunnel: {
+        tag: "CLOUDFLARE TUNNEL • 1 TÊN MIỀN — 2 SUBDOMAINS",
+        title: "Cấu Hình cloudflared Chạy Ngầm Trên macOS",
+        summary: "Định tuyến 2 Subdomain trên cùng 1 tên miền về 2 cổng 5678 (n8n-data) và 5679 (n8n-mcp).",
+        bullets: [
+          "data-n8n.tenmien.com → http://127.0.0.1:5678 (Instance 1: Lấy & lưu data vào Sheet).",
+          "mcp-n8n.tenmien.com → http://127.0.0.1:5679 (Instance 2: Setup Tool & MCP)."
+        ],
+        codeBlocks: [
+          {
+            label: "/etc/cloudflared/config.yml & LỆNH CÀI DỊCH VỤ",
+            code: `tunnel: <TUNNEL_UUID>
+credentials-file: /etc/cloudflared/<TUNNEL_UUID>.json
+protocol: http2
+
+ingress:
+  - hostname: data-n8n.tenmien.com
+    service: http://127.0.0.1:5678
+  - hostname: mcp-n8n.tenmien.com
+    service: http://127.0.0.1:5679
+  - service: http_status:404
+
+# Cài đặt chạy ngầm vĩnh viễn trên macOS:
+# sudo cloudflared --config /etc/cloudflared/config.yml service install
+# sudo launchctl start com.cloudflare.cloudflared`
+          }
+        ]
+      },
+      stack_n8n_data: {
+        tag: "INSTANCE 01 • N8N-DATA (PORT 5678)",
+        title: "Cấu Hình Cụm 1: n8n-data (Queue Mode: 1 Main + 3 Workers + Map Đĩa Offline)",
+        summary: "Chuyên lấy dữ liệu và lưu vào Google Sheets kèm 1 bản Offline tại /data/offline-storage.",
+        bullets: [
+          "Thư mục: /Users/infra-admin/n8n-infra/n8n-data | Cổng: 127.0.0.1:5678.",
+          "Image nguyên bản: n8nio/n8n:latest | Chế độ: EXECUTIONS_MODE=queue với 3 Workers (--concurrency=10).",
+          "Map bộ nhớ Offline: /Users/infra-admin/n8n-infra/offline-storage:/data/offline-storage."
+        ],
+        codeBlocks: [
+          {
+            label: "docker-compose.yml (CỤM 1: n8n-data)",
+            code: `x-n8n-common: &n8n-common
+  image: n8nio/n8n:latest
+  restart: unless-stopped
+  env_file: [ .env ]
+  volumes:
+    - n8n_data_main_vol:/home/node/.n8n
+    - ./local-files:/files
+    - /Users/infra-admin/n8n-infra/offline-storage:/data/offline-storage
+  networks: [ n8n_data_net ]
+
+services:
+  postgres-data:
+    image: postgres:16-alpine
+  redis-data:
+    image: redis:7-alpine
+  n8n-data-main:
+    <<: *n8n-common
+    ports: [ "127.0.0.1:5678:5678" ]
+  n8n-data-worker:
+    <<: *n8n-common
+    command: worker --concurrency=10
+    deploy:
+      mode: replicated
+      replicas: 3`
+          }
+        ]
+      },
+      stack_n8n_mcp: {
+        tag: "INSTANCE 02 • N8N-MCP (PORT 5679)",
+        title: "Cấu Hình Cụm 2: n8n-mcp (Queue Mode: 1 Main + 3 Workers + MCP Server)",
+        summary: "Chuyên setup các Tools và chạy MCP Server, tách biệt hoàn toàn Database & Redis với Cụm 1.",
+        bullets: [
+          "Thư mục: /Users/infra-admin/n8n-infra/n8n-mcp | Cổng: 127.0.0.1:5679.",
+          "Dùng chung thư mục mount /data/offline-storage để đọc nhanh các file Offline do Cụm 1 lưu xuống."
+        ],
+        codeBlocks: [
+          {
+            label: "docker-compose.yml (CỤM 2: n8n-mcp)",
+            code: `x-n8n-common: &n8n-common
+  image: n8nio/n8n:latest
+  restart: unless-stopped
+  env_file: [ .env ]
+  volumes:
+    - n8n_mcp_main_vol:/home/node/.n8n
+    - ./local-files:/files
+    - /Users/infra-admin/n8n-infra/offline-storage:/data/offline-storage
+  networks: [ n8n_mcp_net ]
+
+services:
+  postgres-mcp:
+    image: postgres:16-alpine
+  redis-mcp:
+    image: redis:7-alpine
+  n8n-mcp-main:
+    <<: *n8n-common
+    ports: [ "127.0.0.1:5679:5678" ]
+  n8n-mcp-worker:
+    <<: *n8n-common
+    command: worker --concurrency=10
+    deploy:
+      mode: replicated
+      replicas: 3`
+          }
+        ]
+      },
+      offline_mount: {
+        tag: "MAP BỘ NHỚ OFFLINE • BIND MOUNT",
+        title: "Ánh Xạ Thư Mục Ổ Cứng Mac mini Vào Mọi Container n8n",
+        summary: "Đảm bảo dù Worker 1, Worker 2 hay Worker 3 xử lý job thì file vẫn ghi vào đúng 1 thư mục trên Mac mini.",
+        bullets: [
+          "Đường dẫn trên Mac mini: /Users/infra-admin/n8n-infra/offline-storage",
+          "Đường dẫn bên trong n8n: /data/offline-storage",
+          "Bật N8N_DEFAULT_BINARY_DATA_MODE=filesystem và N8N_RESTRICT_FILE_ACCESS_TO=/data/offline-storage;/files trong file .env."
+        ],
+        codeBlocks: [
+          {
+            label: "KHAI BÁO TRONG .env CỦA CẢ 2 CỤM N8N",
+            code: `N8N_DEFAULT_BINARY_DATA_MODE=filesystem\nN8N_RESTRICT_FILE_ACCESS_TO=/data/offline-storage;/files`
+          }
+        ]
+      },
+      offline_folders: {
+        tag: "CẤU TRÚC THƯ MỤC OFFLINE TRÊN MÁY",
+        title: "4 Ngăn Lưu Trữ Offline Trên Ổ Cứng Mac mini",
+        summary: "Giúp lưu trữ bản sao tại chỗ song song với Google Sheets và Google Drive.",
+        bullets: [
+          "1. /data/offline-storage/sheets-mirror/ → Lưu các file .xlsx / .csv đối chiếu với Google Sheets.",
+          "2. /data/offline-storage/drive-mirror/  → Lưu các file tài liệu, ảnh, media đối chiếu với Google Drive.",
+          "3. /data/offline-storage/raw-json/      → Lưu dữ liệu JSON gốc kéo về theo từng ngày.",
+          "4. /data/offline-storage/exports/       → Lưu các file báo cáo tổng hợp."
+        ],
+        codeBlocks: [
+          {
+            label: "LỆNH TẠO THƯ MỤC TRÊN MAC MINI",
+            code: `mkdir -p /Users/infra-admin/n8n-infra/offline-storage/{sheets-mirror,drive-mirror,raw-json,exports}\nchmod -R 775 /Users/infra-admin/n8n-infra/offline-storage`
+          }
+        ]
+      },
+      offline_nodes: {
+        tag: "CÁCH LƯU FILE TRONG WORKFLOW N8N",
+        title: "Thiết Lập 2 Node Lưu Bản Offline Song Song Với Google Sheets",
+        summary: "Từ nguồn dữ liệu kéo về, rẽ làm 2 nhánh: 1 nhánh lên Google Sheets/Drive, 1 nhánh ghi thẳng xuống ổ cứng Mac mini.",
+        bullets: [
+          "Node 1 (Convert to File): Chọn Convert to XLSX / CSV / JSON → Xuất ra trường binary 'data'.",
+          "Node 2 (Read/Write Files from Disk): Chọn Write File to Disk → Điền đường dẫn /data/offline-storage/sheets-mirror/..."
+        ],
+        codeBlocks: [
+          {
+            label: "BIỂU THỨC ĐƯỜNG DẪN FILE TRONG NODE READ/WRITE FILES FROM DISK",
+            code: `=/data/offline-storage/sheets-mirror/data_{{ $now.format('yyyy-MM-dd') }}.xlsx`
+          }
+        ]
+      },
+      stress_step1: {
+        tag: "STRESS TEST • BƯỚC 01 (@N8N/BENCHMARK)",
+        title: "Tải Bộ Công Cụ Chính Hãng ghcr.io/n8n-io/n8n-benchmark:latest",
+        summary: "Gói benchmark chính thức của n8n tự động đăng nhập API, nạp workflow mẫu, bắn tải k6 và dọn dẹp sau khi chạy xong.",
+        bullets: [
+          "Không cần dựng workflow test thủ công trên giao diện.",
+          "Chạy lệnh list-scenarios để xem các kịch bản chuẩn: single-webhook, multi-webhook, binary-data..."
+        ],
+        codeBlocks: [
+          {
+            label: "TẢI IMAGE & XEM DANH SÁCH KỊCH BẢN",
+            code: `docker pull ghcr.io/n8n-io/n8n-benchmark:latest\ndocker run --rm ghcr.io/n8n-io/n8n-benchmark:latest list-scenarios`
+          }
+        ]
+      },
+      stress_step2: {
+        tag: "STRESS TEST • BƯỚC 02 (SINGLE & MULTI WEBHOOK)",
+        title: "Chạy Benchmark 30 Luồng Đồng Thời (--vus=30) Cho Cả 2 Cụm n8n",
+        summary: "Kiểm tra thông lượng xử lý (RPS) và độ trễ p95 của 3 Workers trên cổng 5678, 5679 và qua Cloudflare Tunnel.",
+        bullets: [
+          "Dùng http://host.docker.internal:5678 (Cụm 1) và :5679 (Cụm 2) khi chạy trên OrbStack Mac mini.",
+          "Hoặc dùng https://data-n8n.tenmien.com để test băng thông đi qua Cloudflare Tunnel."
+        ],
+        codeBlocks: [
+          {
+            label: "LỆNH CHẠY @N8N/BENCHMARK CHO CỤM 1 (:5678) & CỤM 2 (:5679)",
+            code: `# Test Cụm 1 (n8n-data - Port 5678):
+docker run --rm ghcr.io/n8n-io/n8n-benchmark:latest run \\
+  --n8nBaseUrl=http://host.docker.internal:5678 \\
+  --n8nUserEmail=admin@tenmien.com \\
+  --n8nUserPassword='MatKhauOwnerCum1' \\
+  --vus=30 --duration=1m --scenarioFilter=single-webhook
+
+# Test Cụm 2 (n8n-mcp - Port 5679):
+docker run --rm ghcr.io/n8n-io/n8n-benchmark:latest run \\
+  --n8nBaseUrl=http://host.docker.internal:5679 \\
+  --n8nUserEmail=admin@tenmien.com \\
+  --n8nUserPassword='MatKhauOwnerCum2' \\
+  --vus=30 --duration=1m --scenarioFilter=multi-webhook`
+          }
+        ]
+      },
+      stress_step3: {
+        tag: "STRESS TEST • BƯỚC 03 (KỊCH BẢN BINARY-DATA)",
+        title: "Kiểm Thử Tải Đọc/Ghi File Nhị Phân (--scenarioFilter=binary-data)",
+        summary: "Kiểm chứng hiệu năng thực tế của cấu hình N8N_DEFAULT_BINARY_DATA_MODE=filesystem và ổ cứng Mac mini.",
+        bullets: [
+          "Đo tốc độ xử lý file nhị phân giữa Main và 3 Workers trong chế độ Queue Mode.",
+          "Mở cửa sổ SSH thứ 2 chạy docker stats để xem cả 3 Workers chia đều CPU (~40–80%)."
+        ],
+        codeBlocks: [
+          {
+            label: "LỆNH TEST KỊCH BẢN BINARY-DATA & GIÁM SÁT WORKER",
+            code: `docker run --rm ghcr.io/n8n-io/n8n-benchmark:latest run \\
+  --n8nBaseUrl=http://host.docker.internal:5678 \\
+  --n8nUserEmail=admin@tenmien.com \\
+  --n8nUserPassword='MatKhauOwnerCum1' \\
+  --vus=15 --duration=1m --scenarioFilter=binary-data`
+          }
+        ]
+      },
+      stress_step4: {
+        tag: "STRESS TEST • BƯỚC 04 (FAILOVER)",
+        title: "Kiểm Thử Đánh Sập 1 Worker Khi Đang Chạy n8n-benchmark",
+        summary: "Chứng minh tính sẵn sàng cao của chế độ Queue Mode với 2–3 Workers.",
+        bullets: [
+          "Khi n8n-benchmark đang chạy ở giây thứ 20–30, chạy lệnh tắt đột ngột worker-2.",
+          "Redis Queue tự động phân phối toàn bộ job sang worker-1 và worker-3, báo cáo cuối cùng vẫn đạt 0.00% http_req_failed."
+        ],
+        codeBlocks: [
+          {
+            label: "LỆNH TEST FAILOVER",
+            code: `docker stop n8n_data_stack-n8n-data-worker-2\n# Sau khi test xong, bật lại worker-2:\ncd ~/n8n-infra/n8n-data && docker compose up -d`
+          }
+        ]
+      },
+      ops_backup: {
+        tag: "VẬN HÀNH • BACKUP TỰ ĐỘNG 03:00 SÁNG",
+        title: "Script Sao Lưu Toàn Bộ Workflows, Credentials & Database",
+        summary: "Tự động chạy lúc 03:00 sáng mỗi ngày qua crontab và xóa bản cũ quá 14 ngày.",
+        bullets: [
+          "Sao lưu file dump PostgreSQL (chứa toàn bộ Workflows & Credentials đã mã hóa) của cả 2 cụm.",
+          "Sao lưu kèm file .env chứa khóa N8N_ENCRYPTION_KEY."
+        ],
+        codeBlocks: [
+          {
+            label: "ĐẶT LỊCH CRONTAB TRÊN MAC MINI",
+            code: `0 3 * * * /bin/zsh /Users/infra-admin/n8n-infra/scripts/backup.sh`
+          }
+        ]
+      },
+      ops_commands: {
+        tag: "VẬN HÀNH • LỆNH QUẢN TRỊ NHANH",
+        title: "Các Lệnh Điều Khiển & Scale Worker Qua SSH",
+        summary: "Thao tác nhanh gọn sau khi ssh infra-admin@<IP_TAILSCALE>.",
+        bullets: [
+          "Tăng/giảm nóng giữa 2 hoặc 3 Workers bất kỳ lúc nào mà không làm gián đoạn hệ thống."
+        ],
+        codeBlocks: [
+          {
+            label: "LỆNH SCALE WORKER & XEM TRẠNG THÁI",
+            code: `# Đổi số lượng Worker Cụm 1 (2 hoặc 3 workers):
+cd ~/n8n-infra/n8n-data && docker compose up -d --scale n8n-data-worker=3
+
+# Đổi số lượng Worker Cụm 2 (2 hoặc 3 workers):
+cd ~/n8n-infra/n8n-mcp && docker compose up -d --scale n8n-mcp-worker=3
+
+# Xem trạng thái 12 containers & RAM/CPU:
+docker ps
+docker stats --no-stream`
+          }
+        ]
+      },
+      ops_checklist: {
+        tag: "GO-LIVE CHECKLIST • 8 BƯỚC NGHIỆM THU",
+        title: "Checklist Nghiệm Thu Hạ Tầng Trước Khi Bàn Giao",
+        summary: "8 bước kiểm tra nhanh để đảm bảo hệ thống chạy ổn định 24/7.",
+        bullets: [
+          "1. Đã chạy pmset sleep 0 autorestart 1 & đồng bộ giờ NTP.",
+          "2. Đã tách 2 User (User thường & infra-admin) và khóa chmod 700 /Users/infra-admin.",
+          "3. Đã bật Tailscale System Daemon (Disable key expiry) & SSH bằng khóa Ed25519.",
+          "4. Đã tạo LaunchDaemon tự khởi chạy ngầm OrbStack dưới quyền infra-admin.",
+          "5. Cụm 1 (n8n-data :5678) & Cụm 2 (n8n-mcp :5679) đều báo Healthy đủ 12 containers.",
+          "6. Đã mount /data/offline-storage và ghi thử file .xlsx/.csv xuống ổ cứng Mac mini thành công.",
+          "7. Cloudflare Tunnel (cloudflared LaunchDaemon) mở thông suốt cả 2 Subdomain HTTPS.",
+          "8. Đã chạy thử Stress Test bằng bộ công cụ chính thức (@n8n/benchmark) đạt 0% lỗi và đặt lịch Backup 03:00 sáng."
+        ]
+      }
+    };
+
+    // =========================================================================
+    // 3. CẤU TRÚC CÂY MIND MAP TRÊN SLIDE 02 (SƠ ĐỒ HẠ TẦNG TỔNG THỂ)
+    // =========================================================================
+    const ARCH_TREE_NODES = {
+      net_tailscale: {
+        title: "Tailscale VPN",
+        sub: "IP Nội bộ: 100.x.y.z",
+        logos: ["tailscale"],
+        children: [
+          { label: "Chạy ngầm System Daemon (tailscaled)", infoId: "net_tailscale_ssh" },
+          { label: "Tắt hết hạn khóa (Disable Key Expiry)", infoId: "net_tailscale_ssh" }
+        ]
+      },
+      net_cloudflare: {
+        title: "Cloudflare Tunnel",
+        sub: "1 Tên Miền → 2 Subdomains",
+        logos: ["cloudflare"],
+        children: [
+          { label: "Subdomain 1: data-n8n.domain.com → :5678", infoId: "net_cf_tunnel" },
+          { label: "Subdomain 2: mcp-n8n.domain.com → :5679", infoId: "net_cf_tunnel" },
+          { label: "Chạy dịch vụ macOS LaunchDaemon", infoId: "net_cf_tunnel" }
+        ]
+      },
+      mac_user_normal: {
+        title: "User 1: Dùng Máy",
+        sub: "Standard User (Desktop GUI)",
+        logos: ["user_normal"],
+        children: [
+          { label: "Làm việc bình thường trên màn hình Mac mini", infoId: "user_normal_detail" },
+          { label: "Không thấy & không chạm được vào hạ tầng ngầm", infoId: "user_normal_detail" }
+        ]
+      },
+      mac_ssh: {
+        title: "OpenSSH Server",
+        sub: "Port 22 • Chỉ mở cho infra-admin",
+        logos: ["ssh", "user_admin"],
+        children: [
+          { label: "Xác thực bằng khóa Ed25519 (Tắt mật khẩu thường)", infoId: "net_tailscale_ssh" },
+          { label: "Khóa quyền thư mục chmod 700 /Users/infra-admin", infoId: "user_admin_detail" }
+        ]
+      },
+      mac_orbstack: {
+        title: "OrbStack Docker",
+        sub: "Chạy ngầm qua LaunchDaemon",
+        logos: ["orbstack", "apple"],
+        children: [
+          { label: "Tự bật khi khởi động máy (Không cần Login GUI)", infoId: "mac_orb_daemon" },
+          { label: "Giới hạn 8GB RAM / 4 CPU (Chống lag máy)", infoId: "mac_orb_daemon" },
+          { label: "Chống ngủ máy (pmset sleep 0 autorestart 1)", infoId: "mac_pmset" }
+        ]
+      },
+      n8n_data: {
+        title: "Cụm 1: n8n-data",
+        sub: "Lấy & Lưu Data Sheet (Port 5678)",
+        logos: ["n8n", "redis", "postgres"],
+        children: [
+          { label: "1 Main (:5678) + 3 Workers (--concurrency=10)", infoId: "stack_n8n_data" },
+          { label: "1 Redis Queue riêng + 1 Postgres nội bộ riêng", infoId: "stack_n8n_data" },
+          { label: "Đã vượt qua Stress Test (@n8n/benchmark)", infoId: "stress_step3" }
+        ]
+      },
+      n8n_mcp: {
+        title: "Cụm 2: n8n-mcp",
+        sub: "Setup Tool & MCP (Port 5679)",
+        logos: ["n8n", "mcp", "redis"],
+        children: [
+          { label: "1 Main (:5679) + 3 Workers (--concurrency=10)", infoId: "stack_n8n_mcp" },
+          { label: "1 Redis Queue riêng + 1 Postgres nội bộ riêng", infoId: "stack_n8n_mcp" },
+          { label: "Độc lập 100% với Cụm 1", infoId: "stack_n8n_mcp" }
+        ]
+      },
+      store_sheets: {
+        title: "Google Sheets / Drive",
+        sub: "Lưu trữ dữ liệu trên Cloud",
+        logos: ["sheets"],
+        children: [
+          { label: "Đồng bộ dữ liệu trực tuyến cho các phòng ban", infoId: "stack_n8n_data" },
+          { label: "Truy xuất qua các luồng Tool & MCP", infoId: "stack_n8n_mcp" }
+        ]
+      },
+      store_offline: {
+        title: "Ổ Cứng Offline Mac mini",
+        sub: "Mount: /data/offline-storage",
+        logos: ["disk"],
+        children: [
+          { label: "Host: /Users/infra-admin/n8n-infra/offline-storage", infoId: "offline_mount" },
+          { label: "4 Ngăn: sheets-mirror, drive-mirror, raw-json, exports", infoId: "offline_folders" },
+          { label: "Ghi file tự động bằng Convert to File + Write to Disk", infoId: "offline_nodes" }
+        ]
+      }
+    };
+
+    // =========================================================================
+    // 4. LOGIC MIND MAP + ZOOM / PAN + VẼ ĐƯỜNG NỐI SVG TỰ ĐỘNG
+    // =========================================================================
+    let zoomScale = 1;
+    let panX = 24;
+    let panY = 24;
+    let isPanning = false;
+    let startMouseX = 0;
+    let startMouseY = 0;
+    let didDragCanvas = false;
+
+    function updateCanvasTransform() {
+      const canvas = document.getElementById("mmCanvas");
+      const label = document.getElementById("zoomLabel");
+      if (canvas) {
+        canvas.style.transform = `translate(${panX}px, ${panY}px) scale(${zoomScale})`;
+      }
+      if (label) {
+        label.textContent = `${Math.round(zoomScale * 100)}%`;
+      }
+    }
+
+    function stepZoom(delta) {
+      const viewport = document.getElementById("mmViewport");
+      if (!viewport) return;
+      const rect = viewport.getBoundingClientRect();
+      applyZoomAtPoint(zoomScale + delta, rect.width / 2, rect.height / 2);
+    }
+
+    function applyZoomAtPoint(targetScale, mx, my) {
+      const clamped = Math.min(Math.max(targetScale, 0.4), 2.2);
+      const ratio = clamped / zoomScale;
+      panX = mx - (mx - panX) * ratio;
+      panY = my - (my - panY) * ratio;
+      zoomScale = clamped;
+      updateCanvasTransform();
+    }
+
+    function resetZoomAndPan() {
+      const viewport = document.getElementById("mmViewport");
+      const canvas = document.getElementById("mmCanvas");
+      zoomScale = 1;
+      if (viewport && canvas) {
+        const vw = viewport.clientWidth;
+        const vh = viewport.clientHeight;
+        const cw = canvas.scrollWidth;
+        const ch = canvas.scrollHeight;
+        panX = Math.max((vw - cw) / 2, 20);
+        panY = Math.max((vh - ch) / 2, 14);
+      } else {
+        panX = 24;
+        panY = 24;
+      }
+      updateCanvasTransform();
+      requestAnimationFrame(drawAllConnections);
+    }
+
+    function initZoomAndPanEvents() {
+      const viewport = document.getElementById("mmViewport");
+      if (!viewport) return;
+
+      viewport.addEventListener("wheel", (e) => {
+        e.preventDefault();
+        const rect = viewport.getBoundingClientRect();
+        const factor = e.deltaY < 0 ? 1.09 : 0.91;
+        applyZoomAtPoint(zoomScale * factor, e.clientX - rect.left, e.clientY - rect.top);
+      }, { passive: false });
+
+      viewport.addEventListener("mousedown", (e) => {
+        if (e.button !== 0 || e.target.closest(".zoom-toolbar")) return;
+        isPanning = true;
+        didDragCanvas = false;
+        startMouseX = e.clientX - panX;
+        startMouseY = e.clientY - panY;
+        viewport.classList.add("dragging");
+      });
+
+      window.addEventListener("mousemove", (e) => {
+        if (!isPanning) return;
+        const nx = e.clientX - startMouseX;
+        const ny = e.clientY - startMouseY;
+        if (Math.hypot(nx - panX, ny - panY) > 5) didDragCanvas = true;
+        panX = nx;
+        panY = ny;
+        updateCanvasTransform();
+      });
+
+      window.addEventListener("mouseup", () => {
+        if (isPanning) {
+          isPanning = false;
+          viewport.classList.remove("dragging");
+        }
+      });
+    }
+
+    function buildMasterArchitectureTree() {
+      Object.keys(ARCH_TREE_NODES).forEach(key => {
+        const mount = document.getElementById(`mount-${key}`);
+        if (!mount) return;
+        const node = ARCH_TREE_NODES[key];
+
+        const childrenHtml = node.children.map((ch, cIdx) => {
+          const childId = `child-${key}-${cIdx}`;
+          return `
+            <div class="mm-child-row">
+              <div class="mm-child-box" id="cbox-${childId}" onclick="event.stopPropagation(); if(!didDragCanvas) openInfoPopup('${ch.infoId}')">
+                <span class="mm-child-text">${ch.label}</span>
+                <span class="mm-child-action">Chi tiết ↗</span>
+              </div>
+            </div>
+          `;
+        }).join("");
+
+        mount.innerHTML = `
+          <div class="mm-node-row" id="row-${key}">
+            <div class="arch-node" id="box-${key}" onclick="if(!didDragCanvas) toggleNodeChildren('${key}')">
+              <div class="node-left-wrap">
+                ${renderStackLogos(node.logos)}
+                <div>
+                  <div class="arch-node-title">${node.title}</div>
+                  <div class="arch-node-sub">${node.sub}</div>
+                </div>
+              </div>
+              <div class="arch-node-badge" id="badge-${key}">+</div>
+            </div>
+            <div class="mm-children-col" id="children-${key}">
+              ${childrenHtml}
+            </div>
+          </div>
+        `;
+      });
+    }
+
+    function toggleNodeChildren(key) {
+      const box = document.getElementById(`box-${key}`);
+      const col = document.getElementById(`children-${key}`);
+      const badge = document.getElementById(`badge-${key}`);
+      if (!col) return;
+      const isOpen = col.classList.toggle("open");
+      box.classList.toggle("expanded", isOpen);
+      badge.textContent = isOpen ? "−" : "+";
+      requestAnimationFrame(drawAllConnections);
+    }
+
+    function expandAllTreeNodes() {
+      Object.keys(ARCH_TREE_NODES).forEach(key => {
+        const col = document.getElementById(`children-${key}`);
+        const box = document.getElementById(`box-${key}`);
+        const badge = document.getElementById(`badge-${key}`);
+        if (col) col.classList.add("open");
+        if (box) box.classList.add("expanded");
+        if (badge) badge.textContent = "−";
+      });
+      requestAnimationFrame(drawAllConnections);
+    }
+
+    function collapseAllTreeNodes() {
+      document.querySelectorAll(".mm-children-col").forEach(el => el.classList.remove("open"));
+      document.querySelectorAll(".arch-node").forEach(el => el.classList.remove("expanded"));
+      document.querySelectorAll(".arch-node-badge").forEach(el => el.textContent = "+");
+      requestAnimationFrame(drawAllConnections);
+    }
+
+    function getRelativeRect(el, container) {
+      const r1 = el.getBoundingClientRect();
+      const r2 = container.getBoundingClientRect();
+      const s = zoomScale || 1;
+      const left = (r1.left - r2.left) / s;
+      const top = (r1.top - r2.top) / s;
+      const width = r1.width / s;
+      const height = r1.height / s;
+      return {
+        left,
+        right: left + width,
+        top,
+        bottom: top + height,
+        width,
+        height,
+        midY: top + height / 2
+      };
+    }
+
+    function makeBezierPath(x1, y1, x2, y2, stroke = "#111111", width = 1.6, dashed = false, marker = false) {
+      const dx = Math.max(Math.abs(x2 - x1) * 0.48, 18);
+      const d = `M ${x1} ${y1} C ${x1 + dx} ${y1}, ${x2 - dx} ${y2}, ${x2} ${y2}`;
+      return `<path d="${d}" fill="none" stroke="${stroke}" stroke-width="${width}" ${dashed ? 'stroke-dasharray="4,4"' : ''} ${marker ? 'marker-end="url(#mm-arrow)"' : ''} />`;
+    }
+
+    function drawAllConnections() {
+      const canvas = document.getElementById("mmCanvas");
+      const svg = document.getElementById("archSvgOverlay");
+      if (!canvas || !svg) return;
+
+      svg.setAttribute("width", canvas.scrollWidth);
+      svg.setAttribute("height", canvas.scrollHeight);
+
+      let paths = `
+        <defs>
+          <marker id="mm-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+            <path d="M 0 1 L 10 5 L 0 9 z" fill="#111111" />
+          </marker>
+        </defs>
+      `;
+
+      const rowTailscale = document.getElementById("row-net_tailscale");
+      const rowCf = document.getElementById("row-net_cloudflare");
+      const boxSsh = document.getElementById("box-mac_ssh");
+      const boxOrb = document.getElementById("box-mac_orbstack");
+      const rowOrb = document.getElementById("row-mac_orbstack");
+      const boxN8nData = document.getElementById("box-n8n_data");
+      const boxN8nMcp = document.getElementById("box-n8n_mcp");
+      const rowN8nData = document.getElementById("row-n8n_data");
+      const rowN8nMcp = document.getElementById("row-n8n_mcp");
+      const boxSheets = document.getElementById("box-store_sheets");
+      const boxOffline = document.getElementById("box-store_offline");
+
+      if (rowTailscale && rowCf && boxSsh && boxOrb && boxN8nData && boxN8nMcp && boxSheets && boxOffline) {
+        const rTs = getRelativeRect(rowTailscale, canvas);
+        const rCf = getRelativeRect(rowCf, canvas);
+        const rSsh = getRelativeRect(boxSsh, canvas);
+        const rOrb = getRelativeRect(boxOrb, canvas);
+        const rOrbRow = getRelativeRect(rowOrb, canvas);
+        const rN1 = getRelativeRect(boxN8nData, canvas);
+        const rN2 = getRelativeRect(boxN8nMcp, canvas);
+        const rN1Row = getRelativeRect(rowN8nData, canvas);
+        const rN2Row = getRelativeRect(rowN8nMcp, canvas);
+        const rSheets = getRelativeRect(boxSheets, canvas);
+        const rOffline = getRelativeRect(boxOffline, canvas);
+
+        // 1. Tailscale -> OpenSSH Server
+        paths += makeBezierPath(rTs.right, rTs.midY, rSsh.left, rSsh.midY, "#555555", 1.6, false, true);
+
+        // 2. Cloudflare Tunnel -> Cụm 1 (n8n-data) & Cụm 2 (n8n-mcp)
+        paths += makeBezierPath(rCf.right, rCf.midY - 4, rN1.left, rN1.midY - 8, "#F38020", 1.6, true, true);
+        paths += makeBezierPath(rCf.right, rCf.midY + 4, rN2.left, rN2.midY + 8, "#F38020", 1.6, true, true);
+
+        // 3. OrbStack Docker -> Cụm 1 & Cụm 2
+        paths += makeBezierPath(rOrbRow.right, rOrb.midY - 6, rN1.left, rN1.midY + 6, "#111111", 1.6, false, true);
+        paths += makeBezierPath(rOrbRow.right, rOrb.midY + 6, rN2.left, rN2.midY - 6, "#111111", 1.6, false, true);
+
+        // 4. Cụm 1 & Cụm 2 -> Google Sheets & Ổ Cứng Offline
+        paths += makeBezierPath(rN1Row.right, rN1.midY - 6, rSheets.left, rSheets.midY - 4, "#0F9D58", 1.6, false, true);
+        paths += makeBezierPath(rN1Row.right, rN1.midY + 6, rOffline.left, rOffline.midY - 6, "#111111", 1.6, false, true);
+        paths += makeBezierPath(rN2Row.right, rN2.midY - 6, rSheets.left, rSheets.midY + 6, "#555555", 1.4, true, true);
+        paths += makeBezierPath(rN2Row.right, rN2.midY + 6, rOffline.left, rOffline.midY + 6, "#111111", 1.6, false, true);
+      }
+
+      // Vẽ nhánh con khi bung từng Node
+      Object.keys(ARCH_TREE_NODES).forEach(key => {
+        const col = document.getElementById(`children-${key}`);
+        const parentBox = document.getElementById(`box-${key}`);
+        if (!col || !col.classList.contains("open") || !parentBox) return;
+        const rParent = getRelativeRect(parentBox, canvas);
+        col.querySelectorAll(":scope > .mm-child-row > .mm-child-box").forEach(cb => {
+          const rChild = getRelativeRect(cb, canvas);
+          paths += makeBezierPath(rParent.right, rParent.midY, rChild.left, rChild.midY, "#111111", 1.4, false, false);
+        });
+      });
+
+      svg.innerHTML = paths;
+    }
+
+    window.addEventListener("resize", () => requestAnimationFrame(drawAllConnections));
+
+    // =========================================================================
+    // 5. LOGIC POPUP & ĐIỀU HƯỚNG SLIDE
+    // =========================================================================
+    function escapeHtml(str) {
+      return String(str).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+    }
+
+    function openInfoPopup(infoKey) {
+      const item = INFO_POPUPS[infoKey];
+      if (!item) return;
+      document.getElementById("popupTag").textContent = item.tag;
+      document.getElementById("popupTitle").textContent = item.title;
+
+      const bulletsHtml = (item.bullets || []).map(b => `<div class="popup-bullet-item">• ${b}</div>`).join("");
+      const codeBlocksHtml = item.codeBlocks && item.codeBlocks.length
+        ? `<div class="popup-code-grid">
+            ${item.codeBlocks.map(cb => `
+              <div>
+                <div class="popup-code-label">${cb.label}</div>
+                <pre class="popup-code-block">${escapeHtml(cb.code)}</pre>
+              </div>
+            `).join("")}
+          </div>`
+        : "";
+
+      document.getElementById("popupBody").innerHTML = `
+        <div class="popup-summary">${item.summary}</div>
+        <div class="popup-bullets">${bulletsHtml}</div>
+        ${codeBlocksHtml}
+      `;
+      document.getElementById("popupOverlay").classList.add("open");
+    }
+
+    function closePopup() {
+      document.getElementById("popupOverlay").classList.remove("open");
+    }
+
+    let currentSlide = 0;
+    const totalSlides = document.querySelectorAll(".slide").length || 8;
+
+    function renderDots() {
+      const dotsEl = document.getElementById("progressDots");
+      dotsEl.innerHTML = Array.from({ length: totalSlides }).map((_, idx) => `
+        <div class="dot ${idx === currentSlide ? 'active' : ''}" onclick="goToSlide(${idx})" title="Slide ${idx + 1}"></div>
+      `).join("");
+    }
+
+    function formatSlideNum(n) {
+      return n < 10 ? `0${n}` : `${n}`;
+    }
+
+    function goToSlide(index) {
+      if (index < 0 || index >= totalSlides) return;
+      currentSlide = index;
+      document.querySelectorAll(".slide").forEach((s, idx) => {
+        s.classList.toggle("active", idx === currentSlide);
+      });
+      document.getElementById("slideCounter").textContent = `${formatSlideNum(currentSlide + 1)} / ${formatSlideNum(totalSlides)}`;
+      renderDots();
+
+      if (currentSlide === 1) {
+        setTimeout(() => {
+          resetZoomAndPan();
+        }, 60);
+      }
+    }
+
+    function nextSlide() {
+      if (currentSlide < totalSlides - 1) goToSlide(currentSlide + 1);
+    }
+
+    function prevSlide() {
+      if (currentSlide > 0) goToSlide(currentSlide - 1);
+    }
+
+    function toggleFullScreen() {
+      if (!document.fullscreenElement) {
+        document.documentElement.requestFullscreen().catch(() => {});
+      } else {
+        document.exitFullscreen();
+      }
+    }
+
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") {
+        closePopup();
+        return;
+      }
+      if (document.getElementById("popupOverlay").classList.contains("open")) return;
+      if (e.key === "ArrowRight") nextSlide();
+      if (e.key === "ArrowLeft") prevSlide();
+    });
+
+    window.addEventListener("DOMContentLoaded", () => {
+      hydrateStaticLogos();
+      buildMasterArchitectureTree();
+      initZoomAndPanEvents();
+      goToSlide(0);
+    });
+  </script>
+</body>
+</html>
+

@@ -1,0 +1,2394 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Checklist Yêu Cầu Data &amp; MCP Cho Các Phòng Ban</title>
+  <style>
+    :root {
+      --bg: #ffffff;
+      --bg-subtle: #f7f7f7;
+      --bg-hover: #efefef;
+      --text: #111111;
+      --text-secondary: #555555;
+      --text-muted: #888888;
+      --border: #d4d4d4;
+      --border-strong: #111111;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+      user-select: none;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* SLIDES VIEWPORT */
+    .slides-container {
+      width: 100vw;
+      height: 100vh;
+      position: relative;
+    }
+
+    .slide {
+      position: absolute;
+      inset: 0;
+      padding: 36px 56px 76px 56px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      opacity: 0;
+      pointer-events: none;
+      transform: translateX(24px);
+      transition: opacity 0.24s ease, transform 0.24s ease;
+      overflow: hidden;
+    }
+
+    .slide.active {
+      opacity: 1;
+      pointer-events: auto;
+      transform: translateX(0);
+    }
+
+    /* SLIDE HEADER */
+    .slide-header {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      border-bottom: 1.5px solid var(--border-strong);
+      padding-bottom: 14px;
+      flex-shrink: 0;
+    }
+
+    .slide-step {
+      font-size: 12.5px;
+      font-weight: 800;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 5px;
+    }
+
+    .slide-title {
+      font-size: 28px;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      color: var(--text);
+      line-height: 1.2;
+    }
+
+    .slide-hint {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text-secondary);
+      border: 1px solid var(--border);
+      padding: 6px 14px;
+      border-radius: 99px;
+      background: var(--bg-subtle);
+      white-space: nowrap;
+    }
+
+    /* SLIDE BODY */
+    .slide-body {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 16px;
+      min-height: 0;
+      padding: 10px 0;
+    }
+
+    /* COVER SLIDE */
+    .cover-center {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      border: 1.5px solid var(--border-strong);
+      border-radius: 14px;
+      padding: 34px 48px;
+      background: var(--bg-subtle);
+      gap: 18px;
+      position: relative;
+    }
+
+    .cover-top-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .cover-tag {
+      display: inline-block;
+      font-size: 12.5px;
+      font-weight: 800;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      border: 1.5px solid var(--border-strong);
+      padding: 6px 16px;
+      border-radius: 99px;
+      width: fit-content;
+      background: #fff;
+    }
+
+    .cover-main-title {
+      font-size: 42px;
+      font-weight: 900;
+      letter-spacing: -0.03em;
+      line-height: 1.14;
+      color: var(--text);
+      max-width: 980px;
+    }
+
+    .cover-sub {
+      font-size: 17px;
+      color: var(--text-secondary);
+      max-width: 940px;
+      line-height: 1.5;
+    }
+
+    /* FLOW BAR */
+    .context-flow-bar {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 10px 16px;
+      background: var(--bg-subtle);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      flex-shrink: 0;
+      flex-wrap: wrap;
+    }
+
+    .context-pill {
+      padding: 6px 13px;
+      border: 1px solid var(--border);
+      background: #fff;
+      border-radius: 6px;
+      font-size: 13.5px;
+      font-weight: 700;
+      color: var(--text);
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .context-pill.highlight {
+      border: 1.5px solid var(--border-strong);
+      background: var(--text);
+      color: #fff;
+    }
+
+    .context-arrow {
+      font-size: 15px;
+      color: var(--text-muted);
+      font-weight: 700;
+    }
+
+    /* GRIDS & MINIMAL BOXES */
+    .boxes-grid-2 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+    }
+
+    .boxes-grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+
+    .boxes-grid-4 {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+    }
+
+    .min-box {
+      background: #ffffff;
+      border: 1.5px solid var(--border);
+      border-radius: 10px;
+      padding: 16px 20px;
+      cursor: pointer;
+      transition: all 0.16s ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 9px;
+      position: relative;
+    }
+
+    .min-box:hover {
+      border-color: var(--border-strong);
+      background: var(--bg-subtle);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    }
+
+    .min-box.dark-accent {
+      border: 2px solid var(--border-strong);
+      background: var(--bg-subtle);
+    }
+
+    .min-box-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+    }
+
+    .min-box-code {
+      font-size: 11.5px;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+    }
+
+    .min-box-open {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--text);
+      border: 1px solid var(--border);
+      padding: 3px 9px;
+      border-radius: 4px;
+      background: var(--bg-subtle);
+      transition: all 0.15s;
+      white-space: nowrap;
+    }
+
+    .min-box:hover .min-box-open,
+    .cluster-card:hover .min-box-open {
+      background: var(--text);
+      color: #fff;
+      border-color: var(--text);
+    }
+
+    .min-box-title {
+      font-size: 17.5px;
+      font-weight: 800;
+      color: var(--text);
+      line-height: 1.3;
+    }
+
+    .min-box-sub {
+      font-size: 14px;
+      color: var(--text-secondary);
+      line-height: 1.45;
+    }
+
+    .min-box.compact {
+      padding: 14px 16px;
+      gap: 8px;
+    }
+
+    .min-box.compact .min-box-title {
+      font-size: 15.5px;
+    }
+
+    /* MINI TAG PILLS INSIDE CARDS */
+    .pill-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 2px;
+    }
+
+    .mini-pill {
+      font-size: 12px;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 6px;
+      background: var(--bg-subtle);
+      border: 1px solid var(--border);
+      color: var(--text);
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .mini-pill.solid {
+      background: #111111;
+      color: #ffffff;
+      border-color: #111111;
+    }
+
+    /* =====================================================================
+       SLIDE 2: INTERACTIVE MIND MAP + ZOOM/PAN
+       ===================================================================== */
+    .mindmap-viewport {
+      flex: 1;
+      width: 100%;
+      background: var(--bg-subtle);
+      border: 1.5px solid var(--border);
+      border-radius: 12px;
+      position: relative;
+      overflow: hidden;
+      cursor: grab;
+    }
+
+    .mindmap-viewport.dragging {
+      cursor: grabbing;
+    }
+
+    .mindmap-canvas {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: flex;
+      align-items: center;
+      gap: 54px;
+      padding: 34px 44px;
+      min-width: max-content;
+      transform-origin: 0 0;
+      will-change: transform;
+    }
+
+    .zoom-toolbar {
+      position: absolute;
+      bottom: 14px;
+      right: 14px;
+      z-index: 20;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(255, 255, 255, 0.94);
+      border: 1px solid var(--border);
+      padding: 4px 8px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    }
+
+    .zoom-btn {
+      background: #fff;
+      border: 1px solid var(--border);
+      color: var(--text);
+      width: 26px;
+      height: 26px;
+      border-radius: 5px;
+      font-size: 14px;
+      font-weight: 700;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .zoom-btn:hover {
+      background: var(--text);
+      color: #fff;
+      border-color: var(--text);
+    }
+
+    .zoom-label {
+      font-size: 11.5px;
+      font-weight: 700;
+      color: var(--text-secondary);
+      min-width: 44px;
+      text-align: center;
+    }
+
+    #archSvgOverlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 1;
+      overflow: visible;
+    }
+
+    .arch-layer-col {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 16px;
+      position: relative;
+      z-index: 2;
+      padding-right: 28px;
+      border-right: 1.5px dashed #cccccc;
+    }
+
+    .arch-layer-col:last-child {
+      border-right: none;
+      padding-right: 0;
+    }
+
+    .layer-col-header {
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      text-align: left;
+      margin-bottom: 4px;
+    }
+
+    .layer-group-frame {
+      border: 1.5px solid var(--border);
+      background: rgba(255, 255, 255, 0.82);
+      border-radius: 10px;
+      padding: 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .layer-group-frame.dashed {
+      border-style: dashed;
+      border-color: #888888;
+    }
+
+    .layer-group-label {
+      font-size: 11.5px;
+      font-weight: 800;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--text-secondary);
+    }
+
+    .mm-node-row {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      position: relative;
+    }
+
+    .arch-node {
+      background: #ffffff;
+      border: 1.5px solid var(--border-strong);
+      border-radius: 9px;
+      padding: 12px 16px;
+      min-width: 220px;
+      cursor: pointer;
+      transition: background 0.15s ease;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+      flex-shrink: 0;
+    }
+
+    .arch-node:hover {
+      background: var(--bg-hover);
+    }
+
+    .arch-node.expanded {
+      background: var(--text);
+      color: #ffffff;
+    }
+
+    .arch-node-title {
+      font-size: 15px;
+      font-weight: 800;
+      line-height: 1.28;
+    }
+
+    .arch-node-sub {
+      font-size: 12.5px;
+      color: var(--text-secondary);
+      margin-top: 2px;
+    }
+
+    .arch-node.expanded .arch-node-sub {
+      color: #cccccc;
+    }
+
+    .arch-node-badge {
+      width: 23px;
+      height: 23px;
+      border-radius: 50%;
+      border: 1.2px solid var(--border-strong);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 13px;
+      font-weight: 800;
+      flex-shrink: 0;
+    }
+
+    .arch-node.expanded .arch-node-badge {
+      border-color: #ffffff;
+      background: #ffffff;
+      color: var(--text);
+    }
+
+    .mm-children-col {
+      display: none;
+      flex-direction: column;
+      justify-content: center;
+      gap: 8px;
+      position: relative;
+    }
+
+    .mm-children-col.open {
+      display: flex;
+      animation: sproutIn 0.18s ease;
+    }
+
+    .mm-child-row {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+    }
+
+    .mm-child-box {
+      background: #ffffff;
+      border: 1.3px solid #555555;
+      border-radius: 7px;
+      padding: 8px 13px;
+      min-width: 225px;
+      max-width: 300px;
+      cursor: pointer;
+      transition: background 0.15s ease;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+    }
+
+    .mm-child-box:hover {
+      border-color: #000000;
+      background: var(--bg-hover);
+    }
+
+    .mm-child-text {
+      font-size: 13px;
+      font-weight: 600;
+      line-height: 1.35;
+    }
+
+    .mm-child-action {
+      font-size: 11px;
+      font-weight: 700;
+      padding: 2px 6px;
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+
+    @keyframes sproutIn {
+      from { opacity: 0; transform: translateX(-8px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+
+    /* CLUSTER VISUAL DIAGRAM CARDS (SLIDE 5) */
+    .cluster-card {
+      border: 2px solid var(--border-strong);
+      border-radius: 12px;
+      background: var(--bg-subtle);
+      padding: 18px 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 13px;
+      cursor: pointer;
+      transition: all 0.16s ease;
+    }
+
+    .cluster-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.07);
+    }
+
+    .cluster-nodes-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 9px;
+    }
+
+    .cluster-mini-node {
+      background: #ffffff;
+      border: 1.5px solid var(--border);
+      border-radius: 8px;
+      padding: 9px 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 1.3;
+    }
+
+    .cluster-mini-node.main-node {
+      border-color: #111111;
+      background: #111111;
+      color: #ffffff;
+    }
+
+    /* STACK LOGOS */
+    .stack-logo {
+      width: 32px;
+      height: 32px;
+      border-radius: 7px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      border: 1px solid rgba(0, 0, 0, 0.12);
+      background: #ffffff;
+      overflow: hidden;
+    }
+
+    .arch-node.expanded .stack-logo {
+      border-color: rgba(255, 255, 255, 0.32);
+    }
+
+    .stack-logo.lg {
+      width: 38px;
+      height: 38px;
+      border-radius: 8px;
+    }
+
+    .stack-logo svg {
+      width: 20px;
+      height: 20px;
+      display: block;
+    }
+
+    .stack-logo.lg svg {
+      width: 24px;
+      height: 24px;
+    }
+
+    .stack-logo-group {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      flex-shrink: 0;
+    }
+
+    .node-left-wrap {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+    }
+
+    .title-with-logo {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+    }
+
+    /* FLOATING BOTTOM CONTROLS */
+    .bottom-nav {
+      position: fixed;
+      bottom: 18px;
+      left: 56px;
+      right: 56px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      z-index: 40;
+      pointer-events: none;
+    }
+
+    .nav-cluster {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(255, 255, 255, 0.94);
+      border: 1px solid var(--border);
+      padding: 6px 12px;
+      border-radius: 99px;
+      pointer-events: auto;
+      backdrop-filter: blur(8px);
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+    }
+
+    .nav-btn {
+      background: transparent;
+      border: 1px solid transparent;
+      color: var(--text);
+      padding: 6px 12px;
+      border-radius: 99px;
+      font-size: 13px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+
+    .nav-btn:hover {
+      background: var(--bg-hover);
+      border-color: var(--border);
+    }
+
+    .nav-indicator {
+      font-size: 13px;
+      font-weight: 800;
+      color: var(--text-secondary);
+      padding: 0 10px;
+    }
+
+    .progress-dots {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--border);
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .dot.active {
+      width: 24px;
+      border-radius: 99px;
+      background: var(--text);
+    }
+
+    /* POPUP MODAL */
+    .popup-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.45);
+      backdrop-filter: blur(3px);
+      z-index: 100;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 32px;
+    }
+
+    .popup-overlay.open {
+      display: flex;
+      animation: fadePopup 0.18s ease;
+    }
+
+    .popup-card {
+      background: #ffffff;
+      border: 2px solid var(--border-strong);
+      border-radius: 14px;
+      max-width: 1040px;
+      width: 100%;
+      max-height: 88vh;
+      overflow-y: auto;
+      padding: 28px 34px;
+      box-shadow: 0 24px 60px rgba(0, 0, 0, 0.22);
+    }
+
+    .popup-top {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 16px;
+      border-bottom: 1.5px solid var(--border);
+      padding-bottom: 14px;
+      margin-bottom: 18px;
+    }
+
+    .popup-tag {
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 4px;
+    }
+
+    .popup-title {
+      font-size: 22px;
+      font-weight: 800;
+      color: var(--text);
+      line-height: 1.3;
+    }
+
+    .popup-close {
+      background: var(--bg-subtle);
+      border: 1px solid var(--border);
+      color: var(--text);
+      padding: 7px 14px;
+      border-radius: 6px;
+      font-size: 13px;
+      font-weight: 700;
+      cursor: pointer;
+      flex-shrink: 0;
+    }
+
+    .popup-close:hover {
+      background: var(--text);
+      color: #fff;
+    }
+
+    .popup-summary {
+      background: var(--bg-subtle);
+      border-left: 4px solid var(--border-strong);
+      padding: 12px 16px;
+      font-size: 15px;
+      color: var(--text);
+      line-height: 1.5;
+      margin-bottom: 16px;
+    }
+
+    .popup-bullets {
+      display: flex;
+      flex-direction: column;
+      gap: 9px;
+    }
+
+    .popup-bullet-item {
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 12px 16px;
+      background: #fff;
+      font-size: 14.5px;
+      line-height: 1.5;
+      color: var(--text);
+    }
+
+    .popup-code-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 12px;
+      margin-top: 14px;
+    }
+
+    .popup-code-label {
+      font-size: 11.5px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--text-secondary);
+      margin-bottom: 4px;
+    }
+
+    .popup-code-block {
+      font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+      font-size: 13px;
+      line-height: 1.5;
+      background: #141414;
+      color: #f5f5f5;
+      border-radius: 8px;
+      padding: 12px 16px;
+      white-space: pre-wrap;
+      word-break: break-word;
+      overflow-x: auto;
+      border: 1px solid #111111;
+    }
+
+    @keyframes fadePopup {
+      from { opacity: 0; transform: scale(0.98); }
+      to { opacity: 1; transform: scale(1); }
+    }
+  </style>
+</head>
+<body>
+
+  <main class="slides-container">
+
+    <!-- =================================================================
+         SLIDE 01: TRANG BÌA — BỘ CHECKLIST YÊU CẦU DATA & MCP
+         ================================================================= -->
+    <section class="slide active" data-index="0">
+      <div class="cover-center">
+        <div class="cover-top-bar">
+          <span class="cover-tag">DEPARTMENT DATA &amp; MCP CHECKLIST</span>
+        </div>
+
+        <h1 class="cover-main-title">
+          Checklist Yêu Cầu Data &amp; MCP Cho Các Phòng Ban
+        </h1>
+
+        <p class="cover-sub">
+          Phòng ban chỉ cần nêu <strong>Nhu cầu &amp; Workflow nghiệp vụ</strong> • Admin tự đối chiếu API, thiết kế <strong>Bảng dữ liệu</strong> &amp; mở cổng <strong>MCP</strong>
+        </p>
+
+        <div class="boxes-grid-4" style="margin-top: 8px;">
+          <div class="min-box compact" onclick="openInfoPopup('pillar_rule')">
+            <div class="min-box-top">
+              <span class="min-box-code">01 • NGUYÊN TẮC PHỐI HỢP</span>
+              <span class="min-box-open">+</span>
+            </div>
+            <div class="min-box-title" data-stack-logos="dept,n8n">Không Cần Biết Kỹ Thuật API</div>
+            <div class="min-box-sub">Phòng ban nêu bài toán → Admin thiết kế bảng &amp; MCP.</div>
+          </div>
+
+          <div class="min-box compact" onclick="openInfoPopup('pillar_chk1')">
+            <div class="min-box-top">
+              <span class="min-box-code">02 • CHECKLIST 1 (DATA)</span>
+              <span class="min-box-open">+</span>
+            </div>
+            <div class="min-box-title" data-stack-logos="sheets,mcp">6 Mục Xin Data &amp; MCP Đọc</div>
+            <div class="min-box-sub">Mục đích, Workflow 4 bước, Dòng, Cột, Độ tươi, Quyền xem.</div>
+          </div>
+
+          <div class="min-box compact" onclick="openInfoPopup('pillar_chk2')">
+            <div class="min-box-top">
+              <span class="min-box-code">03 • CHECKLIST 2 (MCP GHI)</span>
+              <span class="min-box-open">+</span>
+            </div>
+            <div class="min-box-title" data-stack-logos="mcp,guard">6 Mục Xin Công Cụ &amp; Quyền Ghi</div>
+            <div class="min-box-sub">Cấp độ ghi, Workflow, Tiêu chí chấm, 3 Chốt chặn, Phê duyệt.</div>
+          </div>
+
+          <div class="min-box compact" onclick="openInfoPopup('pillar_examples')">
+            <div class="min-box-top">
+              <span class="min-box-code">04 • VÍ DỤ THỰC TẾ</span>
+              <span class="min-box-open">+</span>
+            </div>
+            <div class="min-box-title" data-stack-logos="tiktok,shopee">5 Ví Dụ Mẫu Các Phòng Ban</div>
+            <div class="min-box-sub">Content, Live Ads, CSKH, Booking KOC &amp; Vận hành Sàn.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         SLIDE 02: SƠ ĐỒ TỔNG THỂ LUỒNG PHỐI HỢP & CHECKLIST (MIND MAP)
+         ================================================================= -->
+    <section class="slide" data-index="1">
+      <div class="slide-header">
+        <div>
+          <div class="slide-step">SLIDE 02 / 07 — SƠ ĐỒ TỔNG THỂ</div>
+          <h2 class="slide-title">Sơ Đồ Phối Hợp Giữa Phòng Ban &amp; Admin Qua Bộ Checklist</h2>
+        </div>
+        <div style="display:flex; gap:8px;">
+          <button class="popup-close" onclick="expandAllTreeNodes()">+ Bung toàn bộ</button>
+          <button class="popup-close" onclick="collapseAllTreeNodes()">− Thu gọn</button>
+          <button class="popup-close" onclick="resetZoomAndPan()">Đặt lại khung nhìn</button>
+        </div>
+      </div>
+
+      <div class="slide-body" style="padding: 8px 0;">
+        <div class="mindmap-viewport" id="mmViewport">
+          <div class="mindmap-canvas" id="mmCanvas">
+            <svg id="archSvgOverlay" xmlns="http://www.w3.org/2000/svg"></svg>
+
+            <!-- CỘT 1: NHU CẦU PHÒNG BAN -->
+            <div class="arch-layer-col" id="col-dept">
+              <div class="layer-col-header">1. CÁC PHÒNG BAN (LỚP 4)</div>
+              <div class="layer-group-frame" id="frame-dept">
+                <div class="layer-group-label">NGƯỜI YÊU CẦU SỬ DỤNG</div>
+                <div id="mount-node_dept"></div>
+              </div>
+            </div>
+
+            <!-- CỘT 2: BỘ 2 CHECKLIST -->
+            <div class="arch-layer-col" id="col-chk">
+              <div class="layer-col-header">2. BỘ CHECKLIST CHUẨN</div>
+              <div style="display:flex; flex-direction:column; gap:24px;">
+                <div class="layer-group-frame" id="frame-chk1">
+                  <div class="layer-group-label">NHU CẦU DỮ LIỆU &amp; BÁO CÁO</div>
+                  <div id="mount-node_chk1"></div>
+                </div>
+                <div class="layer-group-frame" id="frame-chk2">
+                  <div class="layer-group-label">NHU CẦU THAO TÁC &amp; QUYỀN GHI</div>
+                  <div id="mount-node_chk2"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- CỘT 3: ADMIN THIẾT KẾ & ĐẤU NỐI -->
+            <div class="arch-layer-col" id="col-admin">
+              <div class="layer-col-header">3. ADMIN THIẾT KẾ (LỚP 1–3)</div>
+              <div style="display:flex; flex-direction:column; gap:24px;">
+                <div class="layer-group-frame" id="frame-adm-data">
+                  <div class="layer-group-label">CỤM 1 (N8N-DATA) &amp; BẢNG DATA</div>
+                  <div id="mount-node_adm_data"></div>
+                </div>
+                <div class="layer-group-frame" id="frame-adm-mcp">
+                  <div class="layer-group-label">CỤM 2 (N8N-MCP) &amp; QUYỀN GHI</div>
+                  <div id="mount-node_adm_mcp"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- CỘT 4: VÍ DỤ ÁP DỤNG THỰC TẾ -->
+            <div class="arch-layer-col" id="col-examples">
+              <div class="layer-col-header">4. VÍ DỤ ÁP DỤNG THỰC TẾ</div>
+              <div class="layer-group-frame" id="frame-ex">
+                <div class="layer-group-label">5 VÍ DỤ MẪU CÁC PHÒNG BAN</div>
+                <div id="mount-node_ex_12"></div>
+                <div id="mount-node_ex_345"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="zoom-toolbar">
+            <button class="zoom-btn" onclick="stepZoom(-0.15)" title="Thu nhỏ">−</button>
+            <span class="zoom-label" id="zoomLabel">100%</span>
+            <button class="zoom-btn" onclick="stepZoom(0.15)" title="Phóng to">+</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         SLIDE 03: CHECKLIST 1 — YÊU CẦU DỮ LIỆU (DATA & MCP ĐỌC)
+         ================================================================= -->
+    <section class="slide" data-index="2">
+      <div class="slide-header">
+        <div>
+          <div class="slide-step">SLIDE 03 / 07 — CHECKLIST 1 (DỮ LIỆU)</div>
+          <h2 class="slide-title">Checklist 1: Yêu Cầu Dữ Liệu (`Data` &amp; `MCP Đọc Dữ Liệu`)</h2>
+        </div>
+        <span class="slide-hint">Ấn vào từng mục để xem câu hỏi chi tiết</span>
+      </div>
+
+      <div class="slide-body">
+        <div class="context-flow-bar">
+          <span class="context-pill">1. Nêu mục đích</span>
+          <span class="context-arrow">→</span>
+          <span class="context-pill highlight">2. Kể Workflow 4 bước</span>
+          <span class="context-arrow">→</span>
+          <span class="context-pill">3. Đơn vị dòng &amp; Cột</span>
+          <span class="context-arrow">→</span>
+          <span class="context-pill">4. Độ tươi &amp; Quét lùi</span>
+          <span class="context-arrow">→</span>
+          <span class="context-pill highlight">Admin tạo Bảng + Mở MCP Đọc</span>
+        </div>
+
+        <div class="boxes-grid-3">
+          <!-- MỤC 1 -->
+          <div class="min-box" onclick="openInfoPopup('c1_purpose')">
+            <div class="min-box-top">
+              <span class="min-box-code">MỤC 01 • MỤC ĐÍCH</span>
+              <span class="min-box-open">Chi tiết +</span>
+            </div>
+            <div class="min-box-title" data-stack-logos="sheets,claude">1. Dữ Liệu Này Để Làm Gì?</div>
+            <div class="min-box-sub">Xác định rõ đầu ra sử dụng của tập dữ liệu trong phòng ban.</div>
+            <div class="pill-row">
+              <span class="mini-pill">Điền báo cáo mẫu</span>
+              <span class="mini-pill">Hỏi đáp số liệu</span>
+              <span class="mini-pill">Đầu vào cho Agent</span>
+            </div>
+          </div>
+
+          <!-- MỤC 2 -->
+          <div class="min-box dark-accent" onclick="openInfoPopup('c1_workflow')">
+            <div class="min-box-top">
+              <span class="min-box-code">MỤC 02 • WORKFLOW CỤ THỂ (QUAN TRỌNG)</span>
+              <span class="min-box-open">Chi tiết +</span>
+            </div>
+            <div class="min-box-title" data-stack-logos="workflow,n8n">2. Luồng Nghiệp Vụ 4 Bước</div>
+            <div class="min-box-sub">Kể lại trình tự công việc thực tế xoay quanh bảng dữ liệu này.</div>
+            <div class="pill-row">
+              <span class="mini-pill solid">B1: Khởi nguồn</span>
+              <span class="mini-pill solid">B2: Ghép nối</span>
+              <span class="mini-pill solid">B3: Khai thác</span>
+              <span class="mini-pill solid">B4: Hành động</span>
+            </div>
+          </div>
+
+          <!-- MỤC 3 -->
+          <div class="min-box" onclick="openInfoPopup('c1_grain')">
+            <div class="min-box-top">
+              <span class="min-box-code">MỤC 03 • ĐƠN VỊ THEO DÕI</span>
+              <span class="min-box-open">Chi tiết +</span>
+            </div>
+            <div class="min-box-title" data-stack-logos="sheets">3. Mỗi Dòng Là Gì &amp; Cách Ghép?</div>
+            <div class="min-box-sub">Định nghĩa 1 dòng dữ liệu và cách nhận diện mã sản phẩm.</div>
+            <div class="pill-row">
+              <span class="mini-pill">1 Đơn / 1 Video / 1 Ca Live</span>
+              <span class="mini-pill">Ghép mã S24, S25, G1</span>
+            </div>
+          </div>
+
+          <!-- MỤC 4 -->
+          <div class="min-box" onclick="openInfoPopup('c1_fields')">
+            <div class="min-box-top">
+              <span class="min-box-code">MỤC 04 • CÁC TRƯỜNG CẦN CÓ</span>
+              <span class="min-box-open">Chi tiết +</span>
+            </div>
+            <div class="min-box-title" data-stack-logos="tiktok,shopee">4. Ba Nhóm Cột Thông Tin</div>
+            <div class="min-box-sub">Liệt kê các cột muốn có để Admin lấy từ API và khóa bảo vệ.</div>
+            <div class="pill-row">
+              <span class="mini-pill">1. Lấy từ kênh</span>
+              <span class="mini-pill">2. Công thức tính sẵn</span>
+              <span class="mini-pill solid">3. Cột điền tay (Cấm đè)</span>
+            </div>
+          </div>
+
+          <!-- MỤC 5 -->
+          <div class="min-box" onclick="openInfoPopup('c1_freshness')">
+            <div class="min-box-top">
+              <span class="min-box-code">MỤC 05 • MỨC ĐỘ LÀM TƯƠI</span>
+              <span class="min-box-open">Chi tiết +</span>
+            </div>
+            <div class="min-box-title" data-stack-logos="clock,n8n">5. Độ Tươi &amp; Quét Lùi Số Cũ</div>
+            <div class="min-box-sub">Tần suất cập nhật mới và số ngày cần quét lại do đơn hoàn/trễ.</div>
+            <div class="pill-row">
+              <span class="mini-pill">Realtime / 15p / Theo giờ</span>
+              <span class="mini-pill">Quét lùi 3 / 7 / 30 ngày</span>
+            </div>
+          </div>
+
+          <!-- MỤC 6 -->
+          <div class="min-box" onclick="openInfoPopup('c1_security')">
+            <div class="min-box-top">
+              <span class="min-box-code">MỤC 06 • PHÂN QUYỀN &amp; BẢO MẬT</span>
+              <span class="min-box-open">Chi tiết +</span>
+            </div>
+            <div class="min-box-title" data-stack-logos="guard,mcp">6. Quyền Xem &amp; Ẩn Cột Nhạy Cảm</div>
+            <div class="min-box-sub">Ai được gọi MCP đọc bảng này và cột nào cần che ẩn.</div>
+            <div class="pill-row">
+              <span class="mini-pill">Theo phòng ban / Quản lý</span>
+              <span class="mini-pill">Ẩn Giá vốn, Lãi ròng, SĐT</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         SLIDE 04: CHECKLIST 2 — YÊU CẦU CÔNG CỤ & QUYỀN GHI (MCP THAO TÁC)
+         ================================================================= -->
+    <section class="slide" data-index="3">
+      <div class="slide-header">
+        <div>
+          <div class="slide-step">SLIDE 04 / 07 — CHECKLIST 2 (CÔNG CỤ &amp; QUYỀN GHI)</div>
+          <h2 class="slide-title">Checklist 2: Yêu Cầu Công Cụ &amp; Quyền Ghi (`MCP Thao Tác / Ghi API`)</h2>
+        </div>
+        <span class="slide-hint">Ấn vào từng mục để xem câu hỏi chi tiết</span>
+      </div>
+
+      <div class="slide-body">
+        <div class="context-flow-bar">
+          <span class="context-pill">1. Chọn cấp độ Ghi</span>
+          <span class="context-arrow">→</span>
+          <span class="context-pill highlight">2. Kể Workflow 4 bước</span>
+          <span class="context-arrow">→</span>
+          <span class="context-pill">3. Bộ tiêu chí chấm</span>
+          <span class="context-arrow">→</span>
+          <span class="context-pill highlight">4. Đặt 3 chốt chặn an toàn</span>
+          <span class="context-arrow">→</span>
+          <span class="context-pill">5. Tự động / Chờ duyệt</span>
+        </div>
+
+        <div class="boxes-grid-3">
+          <!-- MỤC 1 -->
+          <div class="min-box" onclick="openInfoPopup('c2_scope')">
+            <div class="min-box-top">
+              <span class="min-box-code">MỤC 01 • CẤP ĐỘ QUYỀN GHI</span>
+              <span class="min-box-open">Chi tiết +</span>
+            </div>
+            <div class="min-box-title" data-stack-logos="mcp,tiktok">1. Mục Đích &amp; 3 Cấp Độ Ghi</div>
+            <div class="min-box-sub">Xác định rõ công cụ chỉ chấm điểm hay sửa trực tiếp trên Sàn/Ads.</div>
+            <div class="pill-row">
+              <span class="mini-pill">Cấp 1: Chấm điểm</span>
+              <span class="mini-pill">Cấp 2: Ghi Bảng</span>
+              <span class="mini-pill solid">Cấp 3: Ghi API Sàn/Ads</span>
+            </div>
+          </div>
+
+          <!-- MỤC 2 -->
+          <div class="min-box dark-accent" onclick="openInfoPopup('c2_workflow')">
+            <div class="min-box-top">
+              <span class="min-box-code">MỤC 02 • WORKFLOW MCP (QUAN TRỌNG)</span>
+              <span class="min-box-open">Chi tiết +</span>
+            </div>
+            <div class="min-box-title" data-stack-logos="workflow,n8n">2. Luồng Hoạt Động 4 Bước</div>
+            <div class="min-box-sub">Trình tự từ lúc kích hoạt công cụ đến lúc thực thi lệnh ghi.</div>
+            <div class="pill-row">
+              <span class="mini-pill solid">B1: Kích hoạt</span>
+              <span class="mini-pill solid">B2: Đọc kiểm tra</span>
+              <span class="mini-pill solid">B3: Rẽ nhánh</span>
+              <span class="mini-pill solid">B4: Ghi &amp; Báo</span>
+            </div>
+          </div>
+
+          <!-- MỤC 3 -->
+          <div class="min-box" onclick="openInfoPopup('c2_io')">
+            <div class="min-box-top">
+              <span class="min-box-code">MỤC 03 • ĐẦU VÀO &amp; ĐẦU RA</span>
+              <span class="min-box-open">Chi tiết +</span>
+            </div>
+            <div class="min-box-title" data-stack-logos="mcp,lark">3. Truyền Gì Vào &amp; Nhận Gì Ra?</div>
+            <div class="min-box-sub">Thông tin cần đưa vào khi gọi MCP và kết quả trả về.</div>
+            <div class="pill-row">
+              <span class="mini-pill">Input: Mã SP / Mã Camp / Link</span>
+              <span class="mini-pill">Output: Ghi bảng / Báo Lark</span>
+            </div>
+          </div>
+
+          <!-- MỤC 4 -->
+          <div class="min-box" onclick="openInfoPopup('c2_criteria')">
+            <div class="min-box-top">
+              <span class="min-box-code">MỤC 04 • BỘ TIÊU CHÍ ĐÁNH GIÁ</span>
+              <span class="min-box-open">Chi tiết +</span>
+            </div>
+            <div class="min-box-title" data-stack-logos="mcp,claude">4. Thang Điểm 1–4 &amp; Ngưỡng Bật/Tắt</div>
+            <div class="min-box-sub">Chuẩn hóa tiêu chí chấm điểm hoặc công thức số liệu kích hoạt.</div>
+            <div class="pill-row">
+              <span class="mini-pill">Các nhóm phân loại</span>
+              <span class="mini-pill">Thang điểm 1–4</span>
+              <span class="mini-pill">Công thức ROI / Cost</span>
+            </div>
+          </div>
+
+          <!-- MỤC 5 -->
+          <div class="min-box dark-accent" onclick="openInfoPopup('c2_guardrails')">
+            <div class="min-box-top">
+              <span class="min-box-code">MỤC 05 • CHỐT CHẶN AN TOÀN BẮT BUỘC</span>
+              <span class="min-box-open">Chi tiết +</span>
+            </div>
+            <div class="min-box-title" data-stack-logos="guard">5. Ba Giới Hạn Chống Rủi Ro</div>
+            <div class="min-box-sub">Bắt buộc kê khai với mọi MCP có quyền Ghi lên Sàn hoặc Ads.</div>
+            <div class="pill-row">
+              <span class="mini-pill solid">Biên độ 1 lần (% / tiền)</span>
+              <span class="mini-pill solid">Mức trần cứng</span>
+              <span class="mini-pill solid">Thời gian nghỉ</span>
+            </div>
+          </div>
+
+          <!-- MỤC 6 -->
+          <div class="min-box" onclick="openInfoPopup('c2_approval')">
+            <div class="min-box-top">
+              <span class="min-box-code">MỤC 06 • CƠ CHẾ PHÊ DUYỆT</span>
+              <span class="min-box-open">Chi tiết +</span>
+            </div>
+            <div class="min-box-title" data-stack-logos="lark,guard">6. Tự Động 100% vs Chờ Người Duyệt</div>
+            <div class="min-box-sub">Phân định rõ khi nào tự chạy, khi nào dừng chờ bấm nút Duyệt.</div>
+            <div class="pill-row">
+              <span class="mini-pill">Dưới trần: Tự chạy 100%</span>
+              <span class="mini-pill">Vượt trần: Bấm Approve Lark</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         SLIDE 05: VÍ DỤ MẪU 1 & 2 (PHÒNG CONTENT & PHÒNG LIVESTREAM/ADS)
+         ================================================================= -->
+    <section class="slide" data-index="4">
+      <div class="slide-header">
+        <div>
+          <div class="slide-step">SLIDE 05 / 07 — VÍ DỤ ÁP DỤNG THỰC TẾ (1 &amp; 2)</div>
+          <h2 class="slide-title">Ví Dụ Mẫu: Phòng Content (Checklist 1) &amp; Phòng Live Ads (Checklist 2)</h2>
+        </div>
+        <span class="slide-hint">Ấn vào từng khung để xem toàn bộ Checklist mẫu &amp; Workflow 4 bước</span>
+      </div>
+
+      <div class="slide-body">
+        <div class="boxes-grid-2">
+          <!-- VÍ DỤ 1: CHECKLIST 1 (CONTENT PERFORMANCE) -->
+          <div class="cluster-card" onclick="openInfoPopup('ex1_content_data')">
+            <div class="min-box-top">
+              <span class="min-box-code">VÍ DỤ 01 • ÁP DỤNG CHECKLIST 1 (DATA &amp; MCP ĐỌC)</span>
+              <span class="min-box-open">Xem đầy đủ +</span>
+            </div>
+            <div class="min-box-title" data-stack-logos="tiktok,sheets,mcp" data-logo-size="lg">Phòng Content: Dữ Liệu Hiệu Quả Video Content</div>
+            <div class="min-box-sub">Mỗi dòng = <strong>1 Video</strong> (cộng gộp tiền nếu chạy nhiều nhóm Ads) • Ghép mã <code>S24, S25, G1</code>.</div>
+
+            <div class="cluster-nodes-grid">
+              <div class="cluster-mini-node main-node">
+                <span>B1: Viết Kịch bản → Quay &amp; Đăng</span>
+              </div>
+              <div class="cluster-mini-node main-node">
+                <span>B2: Khớp lời thoại → Điền Mã KB</span>
+              </div>
+              <div class="cluster-mini-node">
+                <span>B3: 06h00 kéo Cost, GMV, tính VE%</span>
+              </div>
+              <div class="cluster-mini-node">
+                <span>B4: 06h30 gửi báo cáo Lark</span>
+              </div>
+              <div class="cluster-mini-node">
+                <span>🔒 Cấm đè: Hướng test &amp; Nhân sự</span>
+              </div>
+              <div class="cluster-mini-node">
+                <span>🔄 Làm tươi: 6h &amp; 14h (Quét lùi 7 ngày)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- VÍ DỤ 2: CHECKLIST 2 (LIVE GMV MAX WRITE MCP) -->
+          <div class="cluster-card" onclick="openInfoPopup('ex2_live_write')">
+            <div class="min-box-top">
+              <span class="min-box-code">VÍ DỤ 02 • ÁP DỤNG CHECKLIST 2 (MCP QUYỀN GHI)</span>
+              <span class="min-box-open">Xem đầy đủ +</span>
+            </div>
+            <div class="min-box-title" data-stack-logos="tiktok,mcp,guard" data-logo-size="lg">Phòng Ads / Live: Tự Động Chỉnh Ngân Sách Live</div>
+            <div class="min-box-sub">Quyền Ghi <strong>Cấp độ 3</strong> (Sửa ngân sách &amp; tắt camp trên TikTok Ads) + <strong>Cấp độ 2</strong> (Chốt sổ ca Live).</div>
+
+            <div class="cluster-nodes-grid">
+              <div class="cluster-mini-node main-node">
+                <span>B1: Quét định kỳ mỗi 15 phút khi Live</span>
+              </div>
+              <div class="cluster-mini-node main-node">
+                <span>B2: Đọc mắt xem, đơn nổ &amp; ROI</span>
+              </div>
+              <div class="cluster-mini-node">
+                <span>B3: Nóng (+20%) / Lạnh (-30%)</span>
+              </div>
+              <div class="cluster-mini-node">
+                <span>B4: Tắt Live → Khóa camp &amp; Chốt sổ</span>
+              </div>
+              <div class="cluster-mini-node">
+                <span>🛡️ Trần cứng: 5.000.000đ / ca Live</span>
+              </div>
+              <div class="cluster-mini-node">
+                <span>✋ Chạm trần: Nhắn Lark chờ Duyệt</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         SLIDE 06: VÍ DỤ MẪU 3, 4 & 5 (CSKH, BOOKING KOC & VẬN HÀNH SÀN)
+         ================================================================= -->
+    <section class="slide" data-index="5">
+      <div class="slide-header">
+        <div>
+          <div class="slide-step">SLIDE 06 / 07 — VÍ DỤ ÁP DỤNG THỰC TẾ (3, 4 &amp; 5)</div>
+          <h2 class="slide-title">Ví Dụ Mẫu: Phòng CSKH, Phòng Booking KOC &amp; Phòng Vận Hành Sàn</h2>
+        </div>
+        <span class="slide-hint">Ấn vào từng ví dụ để xem Checklist &amp; Workflow chi tiết</span>
+      </div>
+
+      <div class="slide-body">
+        <div class="boxes-grid-3">
+          <!-- VÍ DỤ 3: CSKH & SẢN PHẨM -->
+          <div class="min-box dark-accent" onclick="openInfoPopup('ex3_cskh')">
+            <div class="min-box-top">
+              <span class="min-box-code">VÍ DỤ 03 • PHÒNG CSKH &amp; SẢN PHẨM</span>
+              <span class="min-box-open">Xem đầy đủ +</span>
+            </div>
+            <div class="min-box-title" data-stack-logos="shopee,mcp,lark">Chấm Điểm Chat CSKH &amp; Phân Loại Hoàn Hàng</div>
+            <div class="min-box-sub">
+              Gom đánh giá 1–3 sao &amp; đơn hoàn trả về bảng, đồng thời chấm điểm hội thoại CSKH ngay khi đóng phiên chat.
+            </div>
+            <div class="pill-row">
+              <span class="mini-pill solid">Workflow 4 bước</span>
+              <span class="mini-pill">Mỗi dòng = 1 Phiên chat / 1 Đơn hoàn</span>
+              <span class="mini-pill">Thang điểm 1–4</span>
+              <span class="mini-pill">Đơn hoàn &gt; 500k chờ Duyệt</span>
+            </div>
+          </div>
+
+          <!-- VÍ DỤ 4: BOOKING KOC -->
+          <div class="min-box" onclick="openInfoPopup('ex4_koc')">
+            <div class="min-box-top">
+              <span class="min-box-code">VÍ DỤ 04 • PHÒNG BOOKING KOC</span>
+              <span class="min-box-open">Xem đầy đủ +</span>
+            </div>
+            <div class="min-box-title" data-stack-logos="tiktok,mcp,sheets">Hồ Sơ KOC &amp; MCP Chấm Điểm Phân Hạng Kênh</div>
+            <div class="min-box-sub">
+              Nhân sự dán link kênh TikTok vào bảng → MCP tự quét 10 video gần nhất, chấm điểm phân hạng <code>S / A / B / C</code>.
+            </div>
+            <div class="pill-row">
+              <span class="mini-pill solid">Quyền Ghi Cấp độ 2</span>
+              <span class="mini-pill">Mỗi dòng = 1 KOC</span>
+              <span class="mini-pill">Cấm đè cột Giá cát-xê</span>
+              <span class="mini-pill">Gợi ý câu mở lời</span>
+            </div>
+          </div>
+
+          <!-- VÍ DỤ 5: VẬN HÀNH SÀN & KẾ TOÁN -->
+          <div class="min-box dark-accent" onclick="openInfoPopup('ex5_shop_ops')">
+            <div class="min-box-top">
+              <span class="min-box-code">VÍ DỤ 05 • VẬN HÀNH SÀN &amp; KẾ TOÁN</span>
+              <span class="min-box-open">Xem đầy đủ +</span>
+            </div>
+            <div class="min-box-title" data-stack-logos="shopee,tiktok,guard">Đối Soát Lãi/Lỗ (PnL) &amp; MCP Đồng Bộ Tồn Kho</div>
+            <div class="min-box-sub">
+              Bảng lãi ròng hàng ngày (ẩn Giá vốn với nhân viên) + MCP Quyền Ghi tự khóa tồn kho và thay ảnh bìa đa sàn.
+            </div>
+            <div class="pill-row">
+              <span class="mini-pill solid">Quét lùi 30 ngày</span>
+              <span class="mini-pill">Ẩn cột Giá vốn &amp; Lãi ròng</span>
+              <span class="mini-pill solid">Cấp độ 3: Sửa tồn kho &amp; Ảnh bìa</span>
+              <span class="mini-pill">Đổi giá bán phải Duyệt</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         SLIDE 07: GHI CHÚ CHO ADMIN — QUY ĐỔI TỪ CHECKLIST SANG THIẾT KẾ
+         ================================================================= -->
+    <section class="slide" data-index="6">
+      <div class="slide-header">
+        <div>
+          <div class="slide-step">SLIDE 07 / 07 — GHI CHÚ DÀNH CHO ADMIN</div>
+          <h2 class="slide-title">Cách Admin Quy Đổi Từ Checklist Phòng Ban Sang Thiết Kế Bảng &amp; MCP</h2>
+        </div>
+        <span class="slide-hint">Ấn vào từng bước để xem quy tắc thiết kế ở Lớp 1–2–3</span>
+      </div>
+
+      <div class="slide-body">
+        <div class="boxes-grid-4">
+          <div class="min-box" onclick="openInfoPopup('adm_rule_1')">
+            <div class="min-box-top">
+              <span class="min-box-code">QUY TẮC 01 • TỪ WORKFLOW</span>
+              <span class="min-box-open">+</span>
+            </div>
+            <div class="min-box-title" data-stack-logos="workflow,sheets">Tách Bảng Cha – Bảng Con</div>
+            <div class="min-box-sub">Nhìn <strong>Bước 1 &amp; Bước 2</strong> để biết dữ liệu nào tạo trước (Master), dữ liệu nào đổ về sau (Transaction).</div>
+            <div class="pill-row">
+              <span class="mini-pill solid">Xác định Khóa chính (ID)</span>
+            </div>
+          </div>
+
+          <div class="min-box" onclick="openInfoPopup('adm_rule_2')">
+            <div class="min-box-top">
+              <span class="min-box-code">QUY TẮC 02 • TỪ 3 NHÓM CỘT</span>
+              <span class="min-box-open">+</span>
+            </div>
+            <div class="min-box-title" data-stack-logos="n8n,sheets">Tính Sẵn &amp; Bảo Vệ Cột Điền Tay</div>
+            <div class="min-box-sub">Cho <code>n8n-data</code> tính sẵn các cột công thức và <strong>bỏ qua không ghi đè</strong> các cột thuộc Nhóm 3.</div>
+            <div class="pill-row">
+              <span class="mini-pill solid">Chống mất dữ liệu phòng ban</span>
+            </div>
+          </div>
+
+          <div class="min-box" onclick="openInfoPopup('adm_rule_3')">
+            <div class="min-box-top">
+              <span class="min-box-code">QUY TẮC 03 • TỪ ĐỘ TƯƠI &amp; QUYỀN</span>
+              <span class="min-box-open">+</span>
+            </div>
+            <div class="min-box-title" data-stack-logos="clock,mcp">Đặt Cron Quét Lùi &amp; Mở MCP Đọc</div>
+            <div class="min-box-sub">Đặt lịch quét lùi <code>7–30 ngày</code> trên <code>n8n-data</code> và mở <code>MCP Đọc</code> ẩn các cột nhạy cảm.</div>
+            <div class="pill-row">
+              <span class="mini-pill solid">Bắt buộc có bộ lọc Ngày/SP</span>
+            </div>
+          </div>
+
+          <div class="min-box dark-accent" onclick="openInfoPopup('adm_rule_4')">
+            <div class="min-box-top">
+              <span class="min-box-code">QUY TẮC 04 • TỪ CHỐT CHẶN GHI</span>
+              <span class="min-box-open">+</span>
+            </div>
+            <div class="min-box-title" data-stack-logos="guard,lark">Dựng Node Kiểm Soát Quyền Ghi</div>
+            <div class="min-box-sub">Đặt cụm node kiểm tra <strong>Biên độ %</strong>, <strong>Trần tiền</strong>, <strong>Thời gian nghỉ</strong> trước khi gọi API thật.</div>
+            <div class="pill-row">
+              <span class="mini-pill solid">Vượt ngưỡng → Lark Approval</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FLOATING BOTTOM NAVIGATION -->
+  <div class="bottom-nav">
+    <div class="nav-cluster">
+      <button class="nav-btn" onclick="goToSlide(0)">Trang Bìa</button>
+      <button class="nav-btn" onclick="goToSlide(1)">Sơ Đồ Tổng</button>
+      <button class="nav-btn" onclick="goToSlide(2)">Checklist 1 (Data)</button>
+      <button class="nav-btn" onclick="goToSlide(3)">Checklist 2 (MCP Ghi)</button>
+      <button class="nav-btn" onclick="goToSlide(4)">Ví Dụ 1 &amp; 2</button>
+      <button class="nav-btn" onclick="goToSlide(5)">Ví Dụ 3, 4 &amp; 5</button>
+      <button class="nav-btn" onclick="goToSlide(6)">Ghi Chú Admin</button>
+      <button class="nav-btn" onclick="toggleFullScreen()">Toàn màn hình</button>
+    </div>
+
+    <div class="nav-cluster">
+      <div class="progress-dots" id="progressDots"></div>
+    </div>
+
+    <div class="nav-cluster">
+      <button class="nav-btn" onclick="prevSlide()">← Trước</button>
+      <span class="nav-indicator" id="slideCounter">01 / 07</span>
+      <button class="nav-btn" onclick="nextSlide()">Tiếp →</button>
+    </div>
+  </div>
+
+  <!-- UNIVERSAL POPUP MODAL -->
+  <div class="popup-overlay" id="popupOverlay" onclick="if(event.target===this) closePopup()">
+    <div class="popup-card">
+      <div class="popup-top">
+        <div>
+          <div class="popup-tag" id="popupTag">CHI TIẾT CHECKLIST</div>
+          <h3 class="popup-title" id="popupTitle">Tiêu đề</h3>
+        </div>
+        <button class="popup-close" onclick="closePopup()">Đóng (Esc)</button>
+      </div>
+      <div id="popupBody"></div>
+    </div>
+  </div>
+
+  <script>
+    // =========================================================================
+    // 1. BỘ ICON SVG
+    // =========================================================================
+    const STACK_LOGOS = {
+      dept: {
+        name: "Các Phòng Ban",
+        bg: "#111111",
+        svg: `<svg viewBox="0 0 24 24" fill="none">
+          <circle cx="9" cy="8.5" r="3" stroke="#FFFFFF" stroke-width="1.7"/>
+          <circle cx="16" cy="9.5" r="2.5" stroke="#25F4EE" stroke-width="1.6"/>
+          <path d="M3.5 19c0-3 2.5-5.2 5.5-5.2s5.5 2.2 5.5 5.2" stroke="#FFFFFF" stroke-width="1.7" stroke-linecap="round"/>
+          <path d="M14.5 19c.3-2.2 2-3.8 4.2-3.8 1.2 0 2.3.5 3 1.4" stroke="#25F4EE" stroke-width="1.6" stroke-linecap="round"/>
+        </svg>`
+      },
+      sheets: {
+        name: "Bảng Dữ Liệu (Google Sheets / DB)",
+        bg: "#0F9D58",
+        svg: `<svg viewBox="0 0 24 24" fill="none">
+          <rect x="5" y="3.5" width="14" height="17" rx="2" stroke="#FFFFFF" stroke-width="1.6"/>
+          <path d="M5 9h14M5 13.5h14M10.5 9v11.5" stroke="#FFFFFF" stroke-width="1.6"/>
+        </svg>`
+      },
+      mcp: {
+        name: "Cổng MCP (Đọc Data & Ghi API)",
+        bg: "#111111",
+        svg: `<svg viewBox="0 0 24 24" fill="none">
+          <rect x="8.5" y="8.5" width="7" height="7" rx="1.5" stroke="#FFFFFF" stroke-width="1.7"/>
+          <path d="M12 3.5v5M12 15.5v5M3.5 12h5M15.5 12h5" stroke="#25F4EE" stroke-width="1.8" stroke-linecap="round"/>
+        </svg>`
+      },
+      n8n: {
+        name: "Điều phối n8n",
+        bg: "#EA4B71",
+        svg: `<svg viewBox="0 0 24 24" fill="none">
+          <circle cx="5.5" cy="12" r="2.3" fill="#FFFFFF"/>
+          <circle cx="11.8" cy="12" r="2.3" fill="#FFFFFF"/>
+          <circle cx="18.2" cy="7.5" r="2.3" fill="#FFFFFF"/>
+          <circle cx="18.2" cy="16.5" r="2.3" fill="#FFFFFF"/>
+          <path d="M7.5 12h2.3M13.6 10.8l2.9-2.1M13.6 13.2l2.9 2.1" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+        </svg>`
+      },
+      guard: {
+        name: "Chốt chặn An toàn & Phân quyền",
+        bg: "#111111",
+        svg: `<svg viewBox="0 0 24 24" fill="none">
+          <path d="M12 3l7 3v6c0 4.5-3 7.8-7 9-4-1.2-7-4.5-7-9V6l7-3z" stroke="#FFFFFF" stroke-width="1.7"/>
+          <path d="M9.5 12l1.8 1.8 3.5-3.6" stroke="#4ADE80" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>`
+      },
+      workflow: {
+        name: "Luồng Nghiệp Vụ (Workflow 4 Bước)",
+        bg: "#2563EB",
+        svg: `<svg viewBox="0 0 24 24" fill="none">
+          <rect x="3.5" y="4.5" width="6" height="5" rx="1.2" stroke="#FFFFFF" stroke-width="1.7"/>
+          <rect x="14.5" y="4.5" width="6" height="5" rx="1.2" stroke="#FFFFFF" stroke-width="1.7"/>
+          <rect x="9" y="14.5" width="6" height="5" rx="1.2" stroke="#FFFFFF" stroke-width="1.7"/>
+          <path d="M9.5 7h5M17.5 9.5v2.5a2 2 0 0 1-2 2H12v.5" stroke="#FFFFFF" stroke-width="1.7" stroke-linecap="round"/>
+        </svg>`
+      },
+      clock: {
+        name: "Tần suất làm tươi & Quét lùi",
+        bg: "#0F172A",
+        svg: `<svg viewBox="0 0 24 24" fill="none">
+          <circle cx="12" cy="12" r="8" stroke="#FFFFFF" stroke-width="1.7"/>
+          <path d="M12 7.5V12l3 2" stroke="#38BDF8" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>`
+      },
+      tiktok: {
+        name: "TikTok Ads & TikTok Shop",
+        bg: "#111111",
+        svg: `<svg viewBox="0 0 24 24" fill="none">
+          <path d="M14 4v10.2a3.3 3.3 0 1 1-2.3-3.15" stroke="#25F4EE" stroke-width="2" stroke-linecap="round"/>
+          <path d="M14 4c.7 2.2 2.3 3.6 4.5 3.8" stroke="#FE2C55" stroke-width="2" stroke-linecap="round"/>
+        </svg>`
+      },
+      shopee: {
+        name: "Shopee Open Platform",
+        bg: "#EE4D2D",
+        svg: `<svg viewBox="0 0 24 24" fill="none">
+          <path d="M6 8h12l-1 11.5H7L6 8z" stroke="#FFFFFF" stroke-width="1.7" stroke-linejoin="round"/>
+          <path d="M9 8V6.5a3 3 0 0 1 6 0V8" stroke="#FFFFFF" stroke-width="1.7" stroke-linecap="round"/>
+        </svg>`
+      },
+      claude: {
+        name: "Claude AI / Agent",
+        bg: "#D97757",
+        svg: `<svg viewBox="0 0 24 24" fill="none">
+          <path d="M12 3.5l2.2 6.3 6.3 2.2-6.3 2.2-2.2 6.3-2.2-6.3-6.3-2.2 6.3-2.2L12 3.5z" fill="#FFFFFF"/>
+        </svg>`
+      },
+      lark: {
+        name: "Lark / Telegram Approval",
+        bg: "#3370FF",
+        svg: `<svg viewBox="0 0 24 24" fill="none">
+          <path d="M4.5 11.5L19 5l-6.5 14.5-2.2-5.8-5.8-2.2z" stroke="#FFFFFF" stroke-width="1.7" stroke-linejoin="round"/>
+        </svg>`
+      }
+    };
+
+    function renderStackLogos(keys, sizeClass = "") {
+      const list = Array.isArray(keys) ? keys : String(keys || "").split(",").map(s => s.trim()).filter(Boolean);
+      if (!list.length) return "";
+      const items = list.map(k => {
+        const item = STACK_LOGOS[k];
+        if (!item) return "";
+        return `<span class="stack-logo ${sizeClass}" style="background:${item.bg};" title="${item.name}">${item.svg}</span>`;
+      }).join("");
+      return `<span class="stack-logo-group">${items}</span>`;
+    }
+
+    function hydrateStaticLogos() {
+      document.querySelectorAll("[data-stack-logos]").forEach(el => {
+        if (el.dataset.logoHydrated === "1") return;
+        const keys = el.getAttribute("data-stack-logos");
+        const size = el.getAttribute("data-logo-size") || "";
+        const text = el.innerHTML;
+        el.classList.add("title-with-logo");
+        el.innerHTML = `${renderStackLogos(keys, size)}<span>${text}</span>`;
+        el.dataset.logoHydrated = "1";
+      });
+    }
+
+    // =========================================================================
+    // 2. DỮ LIỆU POPUP CHI TIẾT (ĐẦY ĐỦ CHECKLIST 1, CHECKLIST 2 & 5 VÍ DỤ)
+    // =========================================================================
+    const INFO_POPUPS = {
+      pillar_rule: {
+        tag: "TRỤ CỘT 01 • NGUYÊN TẮC PHỐI HỢP",
+        title: "Phòng Ban Nêu Nhu Cầu & Workflow → Admin Thiết Kế Bảng & Đấu Nối MCP",
+        summary: "Các phòng ban không cần biết bên trong API của TikTok, Shopee, Facebook có gì hay kỹ thuật chạy thế nào.",
+        bullets: [
+          "1. Phòng ban chỉ cần dựa vào Checklist để kể rõ luồng công việc hàng ngày (Workflow) và liệt kê những thông tin / thao tác mình cần.",
+          "2. Với nhu cầu Dữ liệu (Checklist 1): Admin tự đối chiếu với API các sàn để kéo dữ liệu về thiết kế thành Bảng dữ liệu chuẩn, đồng thời mở luôn cổng 'MCP Đọc dữ liệu' cho phòng ban.",
+          "3. Với nhu cầu Thao tác & Quyền Ghi (Checklist 2): Admin đấu nối vào API các bên, cài đặt chốt chặn giới hạn an toàn (biên độ %, trần tiền, thời gian nghỉ) rồi cấp MCP cho phòng ban sử dụng."
+        ]
+      },
+      pillar_chk1: {
+        tag: "TRỤ CỘT 02 • TỔNG QUAN CHECKLIST 1",
+        title: "Checklist 1: Áp Dụng Cho Mỗi Yêu Cầu Về Dữ Liệu (Data & MCP Đọc)",
+        summary: "Gồm 6 mục câu hỏi ngắn gọn trả lời cho câu hỏi: 'Phòng ban cần bảng dữ liệu gì để làm việc?'",
+        bullets: [
+          "Mục 1 (Mục đích): Dùng để điền báo cáo mẫu, để nhân sự tra cứu nhanh, hay để Agent đọc tự động?",
+          "Mục 2 (Workflow 4 bước): Dữ liệu khởi nguồn từ đâu -> Ghép nối thêm gì -> Hàng ngày đọc lúc nào -> Đọc xong làm hành động gì tiếp?",
+          "Mục 3 (Đơn vị mỗi dòng): Mỗi dòng là 1 Đơn hàng, 1 Video, 1 KOC hay 1 Ca Live? Ghép vào mã sản phẩm (S24, S25, G1) bằng cách nào?",
+          "Mục 4 (Danh sách trường): Chia làm 3 nhóm (1. Trường lấy từ kênh về | 2. Trường công thức tính sẵn | 3. Trường nhân sự/AI điền thêm không được ghi đè).",
+          "Mục 5 (Độ tươi & Quét lùi): Cần cập nhật Realtime, 15 phút, 1 tiếng hay cố định theo ngày? Mỗi lần làm tươi cần quét cập nhật lại số liệu bao nhiêu ngày cũ?",
+          "Mục 6 (Phân quyền & Bảo mật): Ai được xem và có cột nhạy cảm nào (Giá vốn, Biên lãi, SĐT) cần ẩn đi không?"
+        ]
+      },
+      pillar_chk2: {
+        tag: "TRỤ CỘT 03 • TỔNG QUAN CHECKLIST 2",
+        title: "Checklist 2: Áp Dụng Cho Mỗi Yêu Cầu Về Công Cụ & Quyền Ghi (MCP Thao Tác)",
+        summary: "Gồm 6 mục câu hỏi để Admin thiết kế công cụ chấm điểm hoặc cấp quyền Ghi an toàn lên Sàn TMĐT / Tài khoản Quảng cáo.",
+        bullets: [
+          "Mục 1 (Mục đích & 3 Cấp độ Ghi): Cấp 1 (Chỉ bóc tách/chấm điểm) | Cấp 2 (Ghi vào Bảng nội bộ) | Cấp 3 (Ghi trực tiếp lên TikTok/Shopee/Facebook).",
+          "Mục 2 (Workflow 4 bước): Điểm kích hoạt -> Đọc dữ liệu gì để kiểm tra -> Logic chấm điểm/rẽ nhánh -> Thực thi lệnh Ghi & báo cáo.",
+          "Mục 3 (Đầu vào & Đầu ra): Khi gọi MCP cần truyền vào thông tin gì và nhận kết quả ra ở đâu?",
+          "Mục 4 (Tiêu chí đánh giá): Các nhóm phân loại, thang điểm 1–4 hoặc công thức điều kiện số liệu để kích hoạt lệnh.",
+          "Mục 5 (3 Chốt chặn an toàn bắt buộc): Giới hạn biên độ 1 lần chỉnh (% hoặc số tiền) + Mức trần cứng tối đa + Thời gian nghỉ tối thiểu giữa 2 lần ghi.",
+          "Mục 6 (Cơ chế Phê duyệt): Khi nào được Tự động ghi 100%, khi nào phải tạm dừng bắn tin nhắn Lark chờ Quản lý bấm nút Duyệt (Approve/Reject)."
+        ]
+      },
+      pillar_examples: {
+        tag: "TRỤ CỘT 04 • 5 VÍ DỤ MẪU CÁC PHÒNG BAN",
+        title: "5 Ví Dụ Áp Dụng Checklist Thực Tế (Kèm Workflow 4 Bước)",
+        summary: "Mẫu tham khảo trực quan để các phòng ban nhìn vào là điền được ngay nhu cầu của phòng mình.",
+        bullets: [
+          "Ví dụ 1 (Phòng Content - Checklist 1): Bảng & MCP Theo dõi Hiệu quả Video Content (tự ghép lời thoại với Kho kịch bản, tính VE%, IE%, CQS).",
+          "Ví dụ 2 (Phòng Ads/Livestream - Checklist 2): MCP Quyền Ghi tự động canh chỉnh ngân sách quảng cáo Live GMV Max mỗi 15 phút & chốt sổ ca Live.",
+          "Ví dụ 3 (Phòng CSKH & Sản phẩm - Checklist 1 & 2): Bảng lý do hoàn hàng/đánh giá sao + MCP chấm điểm chất lượng đoạn chat CSKH theo thang 1–4.",
+          "Ví dụ 4 (Phòng Booking KOC - Checklist 1 & 2): Bảng Hồ sơ KOC + MCP tự quét kênh TikTok, chấm điểm phân hạng S/A/B/C và ghi vào bảng.",
+          "Ví dụ 5 (Vận hành Sàn & Kế toán - Checklist 1 & 2): Bảng Đối soát Lãi/Lỗ hàng ngày (Daily PnL) + MCP Quyền Ghi đồng bộ tồn kho & thay ảnh bìa đa sàn."
+        ]
+      },
+
+      // CHI TIẾT CHECKLIST 1 (6 MỤC)
+      c1_purpose: {
+        tag: "CHECKLIST 1 • MỤC 01",
+        title: "1. Mục Đích Sử Dụng Dữ Liệu (Để Làm Gì?)",
+        summary: "Phòng ban đánh dấu rõ mục đích sử dụng chính để Admin thiết kế định dạng bảng và cổng MCP phù hợp.",
+        bullets: [
+          "[ ] Tên gọi dữ liệu cần có: (VD: Dữ liệu hiệu quả Video Content / Dữ liệu Lãi lỗ hàng ngày / Dữ liệu Đơn hàng & Đổi trả...).",
+          "[ ] Phòng ban sử dụng: (Content / Marketing Ads / Livestream / Vận hành Sàn / Booking KOC / CSKH / Kế toán).",
+          "[ ] Mục đích 1: Dùng để tự động điền vào mẫu báo cáo cố định hàng ngày / hàng tuần.",
+          "[ ] Mục đích 2: Dùng để nhân sự / quản lý mở bảng theo dõi hoặc gõ câu hỏi tra cứu số liệu tức thì qua AI.",
+          "[ ] Mục đích 3: Dùng làm dữ liệu đầu vào để Agent đọc và tự động chạy các công việc tiếp theo."
+        ]
+      },
+      c1_workflow: {
+        tag: "CHECKLIST 1 • MỤC 02 (QUAN TRỌNG NHẤT)",
+        title: "2. Mô Tả Luồng Nghiệp Vụ & Workflow 4 Bước Xoay Quanh Dữ Liệu",
+        summary: "Kể lại trình tự công việc thực tế từ lúc dữ liệu bắt đầu hình thành cho đến lúc lấy ra sử dụng để Admin thiết kế bảng sát nhất.",
+        bullets: [
+          "[ ] Bước 1 — Khởi nguồn (Dữ liệu bắt đầu xuất hiện khi nào? Ai làm gì trước?): VD: Nhân sự viết kịch bản vào bảng Kịch bản trước rồi mới đi quay và đăng video? Hay khách đặt đơn trên sàn trước rồi đơn mới đổ về?",
+          "[ ] Bước 2 — Ghép nối & Bổ sung thông tin (Khi số liệu đổ về bảng, cần ghép thêm gì?): VD: Đối chiếu lời thoại video với bảng Kịch bản để điền xem video đó thuộc 'Hướng thử nghiệm' nào và của 'Nhân sự' nào làm.",
+          "[ ] Bước 3 — Khai thác & Đọc dữ liệu (Hàng ngày Nhân sự hoặc Agent dùng bảng này theo trình tự nào?): VD: Đúng 6h30 sáng, Agent đọc bảng -> Lọc theo từng sản phẩm S24, S25, G1 -> Gom nhóm theo từng Hướng thử nghiệm để tính trung bình VE%, IE%, CQS -> Gửi nhận xét vào nhóm Lark.",
+          "[ ] Bước 4 — Hành động tiếp theo dựa trên dữ liệu (Đọc xong số liệu thì làm gì tiếp?): VD: Video nào tiêu > 300k mà VE% thấp -> Chuyển sang luồng phân tích sâu từng giây để sửa kịch bản; Hướng thử nghiệm nào CQS & GMV cao -> Sản xuất thêm 5 video cùng hướng đó.",
+          "[ ] Các trường hợp đặc biệt / Ngoại lệ thường gặp: VD: 1 video chạy ở 3 nhóm quảng cáo khác nhau thì cộng dồn tiền thành 1 dòng hay tách 3 dòng? Hoặc 1 đơn mua gộp cả S24 lẫn G1 thì tính doanh thu về mã nào?"
+        ]
+      },
+      c1_grain: {
+        tag: "CHECKLIST 1 • MỤC 03",
+        title: "3. Đơn Vị Theo Dõi Của Dữ Liệu (Mỗi Dòng Là Gì & Ghép Nối Thế Nào?)",
+        summary: "Giúp Admin xác định khóa chính của bảng và cách nối dữ liệu giữa các phòng ban.",
+        bullets: [
+          "[ ] Mỗi dòng (bản ghi) trong bảng đại diện cho 1 đối tượng gì? (VD: Mỗi dòng là 1 Đơn hàng / 1 Video đã đăng / 1 Chiến dịch quảng cáo trong 1 ngày / 1 KOC / 1 Ca Livestream / 1 Cuộc hội thoại chat...).",
+          "[ ] Làm sao để biết dòng dữ liệu đó thuộc về Sản phẩm nào (S24, S25, G1...), Kênh nào hay Nhân sự nào?",
+          "   • Cách 1: Nhìn theo mã hàng (SKU) cài đặt trên sàn.",
+          "   • Cách 2: Nhìn theo quy tắc đặt tên chiến dịch / tên video / mã kịch bản (Ghi rõ quy tắc đang đặt).",
+          "   • Cách 3: Do nhân sự hoặc AI đọc nội dung rồi tự phân loại và gắn nhãn vào bảng."
+        ]
+      },
+      c1_fields: {
+        tag: "CHECKLIST 1 • MỤC 04",
+        title: "4. Danh Sách Các Trường Thông Tin Cần Có (Chia Làm 3 Nhóm Cột)",
+        summary: "Phòng ban liệt kê toàn bộ các cột thông tin muốn có bằng ngôn ngữ nghiệp vụ bình thường.",
+        bullets: [
+          "[ ] Nhóm trường 1 — Thông tin & con số cần lấy từ các kênh (TikTok, Shopee, Facebook...) về: (VD: Mã đơn, trạng thái đơn, tiền hàng, phí sàn, tiền thực về, chi phí quảng cáo, lượt hiển thị, lượt xem 6s, lượt click, doanh thu GMV, điểm chất lượng video CQS, lời thoại video, nội dung đánh giá sao...).",
+          "[ ] Nhóm trường 2 — Các chỉ số cần tính toán sẵn từ các con số trên (Ghi kèm công thức): (VD: VE% = Lượt xem 6s / Lượt hiển thị; Lãi ròng = Tiền thực về - Giá vốn - Chi phí Ads - Chi phí KOC...).",
+          "[ ] Nhóm trường 3 — Các cột do nhân sự tự điền tay hoặc do Agent/AI đánh giá điền thêm vào bảng: (VD: Hướng thử nghiệm kịch bản, Tên nhân sự phụ trách, Ghi chú nguyên nhân lỗi, Điểm chấm chất lượng...).",
+          "⚠️ Lưu ý bảo vệ dữ liệu: Đánh dấu rõ các cột thuộc Nhóm 3 để khi hệ thống tự động làm mới số liệu từ sàn về sẽ KHÔNG XÓA ĐÈ làm mất thông tin phòng ban đã điền."
+        ]
+      },
+      c1_freshness: {
+        tag: "CHECKLIST 1 • MỤC 05",
+        title: "5. Mức Độ Làm Tươi & Khoảng Thời Gian Quét Cập Nhật Lại Số Liệu Cũ",
+        summary: "Đảm bảo số liệu luôn khớp thực tế khi đơn hàng giao trễ, hoàn trả hoặc tiền đối soát về sau nhiều ngày.",
+        bullets: [
+          "[ ] Tần suất làm tươi dữ liệu mới:",
+          "   • Ngay lập tức (Realtime): Vừa phát sinh trên sàn là cập nhật ngay (đơn mới, tin nhắn mới, yêu cầu hoàn trả...).",
+          "   • Mỗi 10 – 15 phút / lần: Phục vụ theo dõi nóng theo thời gian thực (như đang phát Livestream).",
+          "   • Mỗi 1 – 2 tiếng / lần: Phục vụ theo dõi biến động trong ngày (như canh chi phí quảng cáo).",
+          "   • Cố định theo ngày: Chốt số liệu định kỳ vào khung giờ cố định (VD: 06:00 sáng & 14:00 chiều).",
+          "[ ] Khoảng thời gian cần quét cập nhật lại số liệu cũ: Mỗi lần làm tươi cần rà soát lại số liệu của bao nhiêu ngày gần nhất? (Chỉ lấy mới | 3 ngày | 7 ngày | 14 ngày | 30 ngày qua).",
+          "[ ] Phạm vi dữ liệu thường xuyên tra cứu: Hàng ngày mở bảng hoặc gọi MCP thường lấy trong khoảng bao lâu? (7 ngày, 30 ngày, 60 ngày hay 90 ngày? Lọc theo ngày, mã sản phẩm hay nhân viên?)."
+        ]
+      },
+      c1_security: {
+        tag: "CHECKLIST 1 • MỤC 06",
+        title: "6. Phân Quyền Xem & Bảo Mật Các Cột Nhạy Cảm",
+        summary: "Kiểm soát chặt chẽ ai được xem bảng và thông tin nào không được lộ ra cho các Agent chung.",
+        bullets: [
+          "[ ] Ai được quyền xem bảng và gọi MCP đọc dữ liệu này? (Toàn bộ nhân sự trong phòng | Chỉ Quản lý / Trưởng bộ phận & Ban Giám đốc | Các phòng ban khác được xem chung).",
+          "[ ] Kiểm tra thông tin nhạy cảm: Dữ liệu có chứa các cột nhạy cảm (như Giá vốn sản phẩm, Biên lợi nhuận ròng, Chi phí thuê KOC, Lương thưởng, SĐT khách hàng) cần ẩn đi đối với các Agent chung không?"
+        ]
+      },
+
+      // CHI TIẾT CHECKLIST 2 (6 MỤC)
+      c2_scope: {
+        tag: "CHECKLIST 2 • MỤC 01",
+        title: "1. Mục Đích & 3 Cấp Độ Quyền Ghi Của Công Cụ MCP",
+        summary: "Phân loại rõ mức độ tác động của MCP để Admin thiết kế cơ chế bảo vệ tương ứng.",
+        bullets: [
+          "[ ] Tên công cụ MCP đề xuất & Phòng ban yêu cầu: Mô tả rõ thao tác mà bình thường nhân sự phải bấm tay, nay muốn Agent / hệ thống thực hiện qua MCP.",
+          "[ ] Cấp độ 1 — Chỉ bóc tách sâu / Chấm điểm & Phản hồi kết quả: Không sửa dữ liệu trên sàn, chỉ tải dữ liệu chi tiết tức thời (lời thoại video, biểu đồ giữ chân từng giây, chi tiết đoạn chat) hoặc chạy chấm điểm / phân loại rồi trả kết quả về.",
+          "[ ] Cấp độ 2 — Quyền Ghi nội bộ (Ghi vào Bảng dữ liệu công ty): Cho phép Agent thêm dòng mới hoặc sửa nội dung các cột được chỉ định trên bảng Google Sheets / Database nội bộ (Ghi rõ tên bảng và tên cột được phép ghi).",
+          "[ ] Cấp độ 3 — Quyền Ghi ra bên ngoài (Đấu nối API sửa trực tiếp trên Sàn TMĐT / Tài khoản Quảng cáo): Tác động vào TikTok Ads, TikTok Shop, Shopee, Facebook Ads (Bật/Tắt camp, Tăng/Giảm ngân sách, Đăng/Sửa sản phẩm & Ảnh bìa, Cập nhật tồn kho/giá, Duyệt hoàn trả, Gửi tin nhắn...)."
+        ]
+      },
+      c2_workflow: {
+        tag: "CHECKLIST 2 • MỤC 02 (QUAN TRỌNG NHẤT)",
+        title: "2. Mô Tả Workflow Hoạt Động 4 Bước Của Công Cụ MCP",
+        summary: "Mô tả trình tự từ lúc kích hoạt công cụ cho đến lúc hoàn tất thao tác ghi để Admin dựng đúng luồng xử lý trên Cụm 2 (n8n-mcp).",
+        bullets: [
+          "[ ] Bước 1 — Điểm kích hoạt (Khi nào thì Agent hoặc nhân sự gọi MCP này?): VD: Chạy tự động theo lịch mỗi 15 phút khi có phiên Livestream; hoặc kích hoạt ngay khi nhân sự dán link video mới vào cột A; hoặc khi nhân sự gõ lệnh trên Claude.",
+          "[ ] Bước 2 — Thu thập & Kiểm tra dữ liệu trước khi làm (MCP cần đọc thông tin gì để ra quyết định?): VD: Trước khi chỉnh ngân sách, phải đọc xem 15 phút qua phòng Live có bao nhiêu mắt xem, bao nhiêu đơn, ROI hiện tại là bao nhiêu, và lần chỉnh gần nhất cách đây bao nhiêu phút.",
+          "[ ] Bước 3 — Xử lý logic / Chấm điểm & Rẽ nhánh hành động (Nếu trường hợp A thì làm gì, trường hợp B thì làm gì?): VD: Nếu điểm kịch bản >= 3.0 -> Ghi trạng thái 'Đạt chuẩn' vào bảng; Nếu điểm < 3.0 -> Viết nhận xét đoạn cần sửa rồi gửi Lark cho nhân sự.",
+          "[ ] Bước 4 — Thực thi lệnh Ghi & Thông báo kết quả: VD: Gọi API tăng ngân sách thêm 20% -> Ghi lịch sử vừa tăng từ 1.000.000đ lên 1.200.000đ vào bảng theo dõi -> Bắn tin nhắn báo về nhóm Lark của team."
+        ]
+      },
+      c2_io: {
+        tag: "CHECKLIST 2 • MỤC 03",
+        title: "3. Thông Tin Đầu Vào & Kết Quả Đầu Ra Của MCP",
+        summary: "Xác định rõ tham số truyền vào và nơi nhận kết quả sau khi công cụ chạy xong.",
+        bullets: [
+          "[ ] Thông tin đầu vào (Khi gọi MCP này cần truyền vào những gì?): VD: Truyền vào Mã sản phẩm + Link ảnh bìa mới; hoặc Mã chiến dịch + Mức ngân sách mới; hoặc Link video cần chấm điểm...",
+          "[ ] Kết quả đầu ra mong muốn sau khi MCP chạy xong: VD: Trả trạng thái Thành công/Thất bại cho Agent; tự động điền điểm số vào bảng; hoặc bắn thông báo kết quả vào nhóm Lark/Telegram..."
+        ]
+      },
+      c2_criteria: {
+        tag: "CHECKLIST 2 • MỤC 04",
+        title: "4. Điều Kiện Kích Hoạt & Bộ Tiêu Chí Đánh Giá Chi Tiết",
+        summary: "Cung cấp bộ tiêu chí rõ ràng để Admin thiết lập quy tắc đánh giá hoặc điều kiện rẽ nhánh.",
+        bullets: [
+          "[ ] Nếu là MCP Chấm điểm / Phân loại / Kiểm duyệt (Kịch bản, Video, KOC, Chat CSKH, Lý do hoàn hàng):",
+          "   • Các nhóm phân loại: Có bao nhiêu nhóm? Tên từng nhóm và dấu hiệu nhận biết rõ ràng là gì?",
+          "   • Thang điểm đánh giá (Từ 1 đến 4): Mô tả rõ tiêu chuẩn thế nào là Mức 1 (Kém), Mức 2 (Trung bình), Mức 3 (Đạt), Mức 4 (Xuất sắc)?",
+          "   • Ngưỡng quyết định: Từ mấy điểm trở lên thì tự động thông qua? Khi kết quả lưng chừng thì chuyển cho ai xử lý?",
+          "[ ] Nếu là MCP Tự động điều chỉnh trên Sàn / Tài khoản Quảng cáo:",
+          "   • Dựa vào công thức hay điều kiện số liệu nào để kích hoạt lệnh ghi? (VD: Khi Cost > 300.000đ và Đơn hàng = 0 thì gọi lệnh Tắt; hoặc khi ROI >= 3.5 và phòng Live đang nổ đơn thì gọi lệnh Tăng ngân sách...)."
+        ]
+      },
+      c2_guardrails: {
+        tag: "CHECKLIST 2 • MỤC 05 (CHỐT CHẶN BẮT BUỘC)",
+        title: "5. Ba Giới Hạn An Toàn Bắt Buộc Đối Với Quyền Ghi",
+        summary: "Chốt chặn kỹ thuật cứng trên n8n để đảm bảo Agent không bao giờ tiêu lố ngân sách hay thao tác sai hàng loạt.",
+        bullets: [
+          "[ ] 1. Giới hạn biên độ cho 1 lần gọi lệnh: Mỗi lần gọi MCP chỉ được phép tăng/giảm tối đa bao nhiêu % hoặc tối đa bao nhiêu tiền / số lượng? (VD: Mỗi lần chỉ tăng ngân sách tối đa +20% hoặc không quá 500.000đ).",
+          "[ ] 2. Mức trần tối đa không được vượt qua (Trần cứng): Tổng ngân sách tối đa của 1 chiến dịch / 1 ngày / 1 ca Live là bao nhiêu? Hoặc giá trị đơn hàng tối đa được phép tự động duyệt hoàn là bao nhiêu? (VD: Trần tối đa 5.000.000đ / ca Live; không tự duyệt đơn hoàn > 500.000đ).",
+          "[ ] 3. Thời gian nghỉ tối thiểu giữa 2 lần ghi liên tiếp (Cooldown): Trên cùng một chiến dịch / một sản phẩm / một phòng Live, sau khi vừa ghi xong phải khóa lại đợi tối thiểu bao lâu mới được ghi lần tiếp theo? (VD: Tối thiểu 15 phút đối với Live Ads, 60 phút đối với Ads thường)."
+        ]
+      },
+      c2_approval: {
+        tag: "CHECKLIST 2 • MỤC 06",
+        title: "6. Cơ Chế Phê Duyệt (Tự Động vs Chờ Duyệt) & Mẫu Kiểm Thử",
+        summary: "Kết hợp tự động hóa tốc độ cao với quyền kiểm soát của Quản lý đối với các quyết định nhạy cảm.",
+        bullets: [
+          "[ ] Khi nào MCP được phép TỰ ĐỘNG GHI 100%? (VD: Khi thao tác nằm hoàn toàn trong biên độ và dưới mức trần cứng ở Mục 5).",
+          "[ ] Khi nào MCP bắt buộc phải TẠM DỪNG chờ người bấm nút Duyệt (Approve / Reject)? (VD: Khi muốn tăng ngân sách vượt mức trần, khi tạo chiến dịch mới ngân sách lớn, hoặc khi đổi giá bán sản phẩm).",
+          "[ ] Người nhận tin nhắn và có thẩm quyền bấm nút Duyệt trên Lark / Telegram: (Ghi rõ vị trí / tên quản lý).",
+          "[ ] Lưu lịch sử & Mẫu kiểm thử: Hệ thống mặc định lưu lại lịch sử mọi lần gọi lệnh ghi (Ai gọi, lúc mấy giờ, giá trị trước & sau khi sửa) và phòng ban gửi kèm 3–5 trường hợp mẫu thực tế để Admin test trước khi mở quyền ghi thật."
+        ]
+      },
+
+      // 5 VÍ DỤ THỰC TẾ ĐẦY ĐỦ
+      ex1_content_data: {
+        tag: "VÍ DỤ MẪU 01 • PHÒNG CONTENT (ÁP DỤNG CHECKLIST 1)",
+        title: "Yêu Cầu Dữ Liệu & MCP Theo Dõi Hiệu Quả Video Content",
+        summary: "Tự động lập báo cáo Content Performance lúc 06:30 sáng hàng ngày, cho phép Sếp & Leader hỏi đáp nhanh xem hướng nội dung nào đang thắng, và phát hiện các video cắn tiền nhưng không ra đơn.",
+        bullets: [
+          "1. Workflow 4 bước cụ thể: (B1) Leader lên danh sách Hướng thử nghiệm cho S24, S25, G1 và nhân sự viết kịch bản vào Bảng Kho Kịch Bản rồi quay/đăng video -> (B2) Khi video lên kênh & chạy Ads, hệ thống tự bóc lời thoại (Transcript) đối chiếu với Bảng Kho Kịch Bản để tự điền Mã kịch bản, Hướng thử nghiệm & Tên nhân sự vào Bảng Content Performance -> (B3) Đúng 06:00 sáng, kéo Cost, Impressions, CQS, GMV về bảng và tính sẵn VE%, IE%, PE%; 06:30 sáng Agent đọc qua MCP gửi báo cáo Lark -> (B4) Hướng nào VE% & CQS cao thì làm thêm biến thể; video nào tiêu > 300k mà VE% thấp thì phân tích sâu từng giây.",
+          "2. Xử lý ngoại lệ & Đơn vị dòng: Mỗi dòng là 1 Video đã đăng. Nếu 1 video chạy ở nhiều nhóm quảng cáo (Ad Group) khác nhau thì cộng gộp tổng Cost, Impressions, Clicks, GMV theo ID Video.",
+          "3. Ba nhóm trường thông tin: (Nhóm 1 - Lấy từ kênh): ID Video, Link Video, Ngày đăng, Mục tiêu (GMV/C-ads), Cost, Impressions, Điểm chất lượng (CQS), Lượt cân nhắc mới, Clicks, GMV, Lời thoại | (Nhóm 2 - Tính sẵn): VE% = Xem 6s / Hiển thị; IE% = Tương tác / Hiển thị; PE% = Lượt phát / Hiển thị | (Nhóm 3 - Cấm ghi đè): Tên nhân sự, Mã kịch bản gốc, Hướng thử nghiệm.",
+          "4. Độ tươi & Phân quyền: Làm tươi 2 lần/ngày lúc 06:00 và 14:00, mỗi lần quét cập nhật lại các video đăng trong 7 ngày gần nhất. Mở quyền xem cho phòng Content, phòng Ads và Ban Giám đốc."
+        ],
+        codeBlocks: [
+          {
+            label: "TÓM TẮT CẤU HÌNH ADMIN SẼ THIẾT KẾ CHO PHÒNG CONTENT",
+            code: `• Tách 2 bảng liên kết: [Bảng 1: Kho Kịch Bản Gốc (script_id)] 1 ---> N [Bảng 2: Hiệu Suất Video (video_id)]
+• Lịch chạy trên Cụm 1 (n8n-data): Cron 06:00 & 14:00 (cửa sổ quét lùi 7 ngày, cộng gộp theo video_id)
+• Bảo vệ cột khi Update: Giữ nguyên 3 cột [Tên nhân sự, Mã kịch bản gốc, Hướng thử nghiệm]
+• Cổng MCP Đọc trên Cụm 2 (n8n-mcp): Cho phép lọc theo Ngày, Mã SP (S24/S25/G1), Hướng thử nghiệm, Nhân sự`
+          }
+        ]
+      },
+      ex2_live_write: {
+        tag: "VÍ DỤ MẪU 02 • PHÒNG ADS / LIVESTREAM (ÁP DỤNG CHECKLIST 2)",
+        title: "Yêu Cầu MCP Quyền Ghi — Tự Động Canh Chỉnh Ngân Sách Quảng Cáo Livestream",
+        summary: "Đánh giá sức mua phòng Live mỗi 15 phút để tự động tăng/giảm ngân sách chiến dịch Live GMV Max trên TikTok Ads và tự khóa camp + chốt sổ ngay khi Host tắt Live.",
+        bullets: [
+          "1. Cấp độ quyền Ghi: Cấp độ 3 (Đấu nối API sửa trực tiếp ngân sách & trạng thái chiến dịch trên TikTok Ads) + Cấp độ 2 (Ghi báo cáo chốt ca vào Bảng Theo dõi Ca Live).",
+          "2. Workflow 4 bước cụ thể: (B1) Cứ mỗi 15 phút kiểm tra xem kênh có đang phát Livestream không -> (B2) Đọc đồng thời sức mua trong phòng Live (mắt xem, lượt bấm giỏ, đơn nổ 15 phút qua) và tốc độ tiêu tiền Ads + ROI thực tế -> (B3) Rẽ 4 nhánh: Phòng nóng (ROI >= 3.5, đơn nổ đều) => Tăng +20% ngân sách | Phòng ổn định => Giữ nguyên | Phòng lạnh (15 phút không ra đơn) => Giảm -30% ngân sách | Host vừa tắt Live => Khóa/tắt chiến dịch ngay -> (B4) Thực thi lệnh ghi, lưu lịch sử và gửi phiếu chốt sổ ca Live về nhóm Lark.",
+          "3. Ba chốt chặn an toàn bắt buộc: (Biên độ 1 lần): Tăng tối đa +20% (không quá +500.000đ/lần), Giảm tối đa -30%/lần | (Mức trần cứng): Tổng ngân sách không vượt quá 5.000.000đ / ca Live | (Thời gian nghỉ): Tối thiểu 15 phút giữa 2 lần chỉnh liên tiếp.",
+          "4. Cơ chế Phê duyệt: Tự động 100% khi nằm dưới trần 5.000.000đ. Khi phòng Live đang bán rất tốt (ROI >= 4.0) nhưng đã chạm trần 5.000.000đ -> Bắn tin nhắn Lark tag @Trưởng_nhóm_Ads kèm nút bấm [Approve tăng thêm 2.000.000đ] / [Giữ nguyên]."
+        ],
+        codeBlocks: [
+          {
+            label: "LUỒNG CHỐT CHẶN AN TOÀN TRÊN CỤM 2 (N8N-MCP)",
+            code: `[Cron 15p khi đang Live] -> [Đọc Metrics Live + Ads] -> [Xét điều kiện 4 nhánh]
+  ├── Dưới trần 5.000.000đ & Cooldown >= 15p  --> [Gọi API TikTok Ads sửa ngân sách (+20% / -30%)] -> [Ghi Log]
+  └── Chạm trần 5.000.000đ nhưng ROI >= 4.0   --> [Tạm dừng -> Gửi nút Approve/Reject qua Lark cho Leader Ads]`
+          }
+        ]
+      },
+      ex3_cskh: {
+        tag: "VÍ DỤ MẪU 03 • PHÒNG CSKH & SẢN PHẨM (KẾT HỢP CHECKLIST 1 & 2)",
+        title: "Chấm Điểm Hội Thoại CSKH & Phân Loại Lý Do Hoàn Hàng / Đánh Giá Sao",
+        summary: "Vừa tự động chấm điểm chất lượng trả lời khách của nhân viên CSKH ngay khi đóng phiên chat, vừa gom toàn bộ lý do hoàn hàng & đánh giá 1–3 sao để báo lỗi về từng mã sản phẩm (S24, S25, G1).",
+        bullets: [
+          "1. Yêu cầu Data (Checklist 1): Bảng 'Chất lượng CSKH & Phản hồi Sản phẩm' — Mỗi dòng là 1 Phiên chat hoặc 1 Đơn hoàn trả / Đánh giá 1–3 sao. Làm tươi Realtime ngay khi khách gửi yêu cầu hoàn hoặc khi kết thúc phiên chat.",
+          "2. Workflow 4 bước của MCP (Checklist 2): (B1) Ngay khi phiên chat kết thúc hoặc có đơn yêu cầu trả hàng hoàn tiền -> (B2) MCP đọc toàn bộ nội dung đoạn chat, thời gian phản hồi đầu tiên và lý do hoàn + hình ảnh khách gửi -> (B3) Chấm điểm CSKH theo thang 1–4 (Tốc độ phản hồi, Thái độ, Đúng quy trình, Khả năng thuyết phục giữ đơn) và phân loại lý do hoàn vào 4 nhóm (Lỗi chất lượng SP / Giao sai-thiếu / Đóng gói móp méo / Khách đổi ý) -> (B4) Ghi điểm & nhãn lỗi vào bảng; nếu Điểm CSKH = 1 (Kém) hoặc Đơn hoàn > 500.000đ thì bắn cảnh báo Lark ngay.",
+          "3. Chốt chặn & Phê duyệt: Tự động ghi điểm vào bảng nội bộ (Cấp độ 2). Đối với thao tác Duyệt hoàn tiền trên sàn (Cấp độ 3): Chỉ tự động duyệt với đơn < 200.000đ có đủ video đồng kiểm; mọi đơn hoàn > 500.000đ hoặc nghi ngờ tráo hàng bắt buộc gửi Trưởng phòng CSKH bấm nút Duyệt."
+        ]
+      },
+      ex4_koc: {
+        tag: "VÍ DỤ MẪU 04 • PHÒNG BOOKING KOC (KẾT HỢP CHECKLIST 1 & 2)",
+        title: "Bảng Hồ Sơ KOC & MCP Tự Động Quét Kênh Chấm Điểm Phân Hạng",
+        summary: "Thay vì nhân sự phải mở từng kênh TikTok xem bằng mắt, chỉ cần dán link kênh vào bảng là MCP tự quét số liệu 10 video gần nhất, chấm điểm phân hạng S/A/B/C và gợi ý câu mở lời mời hợp tác.",
+        bullets: [
+          "1. Yêu cầu Data (Checklist 1): Bảng 'Hồ sơ & Hiệu suất KOC' — Mỗi dòng là 1 KOC. Các cột lấy tự động: Link kênh, Lượt Follow, View trung bình 10 video gần nhất, Tỷ lệ tương tác, Tệp khán giả chính. Các cột do nhân sự điền tay (Cấm ghi đè): SĐT/Zalo liên hệ, Giá cát-xê báo giá, Trạng thái gửi mẫu (Sample), Mã vận đơn gửi hàng.",
+          "2. Workflow 4 bước của MCP (Checklist 2): (B1) Nhân sự Booking dán danh sách Link kênh TikTok của các KOC mới tìm được vào cột A trên bảng -> (B2) MCP tự động quét thông tin kênh và chỉ số của 10 video gần nhất -> (B3) Chấm điểm theo thang 1–4 dựa trên: Độ khớp tệp khách hàng của sản phẩm S24/S25/G1, Độ ổn định lượt xem, Tỷ lệ bình luận hỏi mua thật (lọc bỏ kênh buff view ảo) -> Xếp hạng Tier S / A / B / C -> (B4) Ghi thẳng Điểm số, Hạng KOC và Câu mở lời cá nhân hóa vào bảng.",
+          "3. Phân quyền & Bảo mật: Ẩn cột 'Giá cát-xê thỏa thuận' và 'SĐT riêng của KOC' đối với các phòng ban khác."
+        ]
+      },
+      ex5_shop_ops: {
+        tag: "VÍ DỤ MẪU 05 • PHÒNG VẬN HÀNH SÀN & KẾ TOÁN (KẾT HỢP CHECKLIST 1 & 2)",
+        title: "Bảng Đối Soát Lãi/Lỗ Hàng Ngày (Daily PnL) & MCP Đồng Bộ Tồn Kho / Ảnh Bìa Đa Sàn",
+        summary: "Tự động khớp tiền thực về sau khi trừ phí sàn + phí Ads để tính lãi ròng từng mã sản phẩm, đồng thời cung cấp MCP Quyền Ghi giúp đồng bộ tồn kho và thay ảnh bìa hàng loạt trên Shopee & TikTok Shop.",
+        bullets: [
+          "1. Yêu cầu Data (Checklist 1 - Bảng Daily PnL): Mỗi dòng là 1 Mã sản phẩm (S24, S25, G1...) trong 1 ngày trên 1 sàn. Công thức tính sẵn: Lãi ròng (Net Profit) = Tiền quyết toán thực về - Giá vốn hàng bán - Tổng chi phí Ads - Phí hoa hồng KOC. Làm tươi lúc 06:00 sáng hàng ngày và QUÉT CẬP NHẬT LẠI 30 NGÀY GẦN NHẤT (vì đơn hoàn trả và tiền sàn đối soát về chậm). Bảo mật: Chỉ Ban Giám đốc & Kế toán trưởng được xem cột Giá vốn và Lãi ròng.",
+          "2. Workflow 4 bước của MCP Quyền Ghi (Checklist 2 - Đồng bộ Tồn kho & Ảnh bìa): (B1) Khi kho báo sắp hết hàng hoặc đến giờ lên chương trình Flash Sale / Ngày đôi -> (B2) MCP đọc số lượng tồn kho thực tế và kiểm tra giá bán hiện tại trên cả TikTok Shop & Shopee -> (B3) Nếu tồn kho thực tế < 10 sản phẩm => Tự động khóa/hạ tồn kho dự phòng trên sàn để tránh phạt hủy đơn; nếu đến giờ chiến dịch => Thay bộ khung ảnh bìa (Thumbnail) khuyến mãi cho danh sách mã SP chỉ định -> (B4) Gọi API cập nhật đồng loạt trên cả 2 sàn và báo kết quả về Lark.",
+          "3. Chốt chặn an toàn: Cho phép tự động cập nhật tồn kho và thay ảnh bìa theo lịch. Riêng thao tác THAY ĐỔI GIÁ BÁN hoặc TẠO MÃ GIẢM GIÁ > 15% bắt buộc phải gửi Quản lý Sàn bấm nút Approve trên Lark trước khi ghi lên sàn."
+        ]
+      },
+
+      // GHI CHÚ CHO ADMIN (SLIDE 7)
+      adm_rule_1: {
+        tag: "GHI CHÚ ADMIN • QUY TẮC 01",
+        title: "Dựa Vào Workflow (Mục 2) Để Quyết Định Tách Bảng Hay Gộp Bảng",
+        summary: "Giải quyết triệt để câu hỏi: 'Khi nào cần tách thành 2 bảng, khi nào gộp chung vào 1 bảng?'",
+        bullets: [
+          "Nhìn vào Bước 1 (Khởi nguồn) & Bước 2 (Ghép nối) của phòng ban, Admin sẽ thấy ngay mối quan hệ dữ liệu:",
+          "• Dữ liệu nào được nhân sự khởi tạo trước (VD: Kịch bản gốc, Danh mục Sản phẩm & Giá vốn, Hồ sơ KOC) -> Thiết kế thành BẢNG DANH MỤC GỐC (Master Table).",
+          "• Dữ liệu nào phát sinh liên tục hàng ngày từ sàn/Ads đổ về (VD: Hiệu suất từng Video, Đơn hàng & Đối soát, Lịch sử Ca Live) -> Thiết kế thành BẢNG GIAO DỊCH / HIỆU SUẤT (Transaction Table) và nối về Bảng gốc qua Mã định danh (ID).",
+          "• Nhìn vào mục 'Trường hợp đặc biệt' để biết quy tắc gom nhóm (Group By): Ví dụ cộng dồn tiền của nhiều nhóm quảng cáo về cùng 1 video_id."
+        ]
+      },
+      adm_rule_2: {
+        tag: "GHI CHÚ ADMIN • QUY TẮC 02",
+        title: "Dựa Vào 3 Nhóm Trường (Mục 4) Để Cấu Hình Cụm 1 (n8n-data)",
+        summary: "Đảm bảo số liệu tính toán luôn chuẩn xác và không bao giờ xóa nhầm dữ liệu nhân sự điền tay.",
+        bullets: [
+          "• Nhóm trường 1 (Lấy từ kênh): Admin đối chiếu với tài liệu 4 API (tiktok-business-api, tiktok-shop-api, shoppe-api, facebook-ads-api) để cấu hình HTTP Request kéo về.",
+          "• Nhóm trường 2 (Trường tính toán sẵn): Đặt công thức tính trực tiếp trong Code Node của n8n-data trước khi ghi vào bảng (tránh đặt công thức mảng nặng trên Google Sheets làm đơ file).",
+          "• Nhóm trường 3 (Trường nhân sự/AI điền thêm): Khi cấu hình node Update Row trên n8n-data, chỉ map cập nhật các cột thuộc Nhóm 1 & Nhóm 2, tuyệt đối bỏ trống không ghi đè vào các cột thuộc Nhóm 3."
+        ]
+      },
+      adm_rule_3: {
+        tag: "GHI CHÚ ADMIN • QUY TẮC 03",
+        title: "Dựa Vào Độ Tươi & Phân Quyền (Mục 5 & 6) Để Đặt Lịch Cron & Mở MCP Đọc",
+        summary: "Chống sai lệch số liệu lịch sử và bảo vệ dữ liệu nhạy cảm của công ty.",
+        bullets: [
+          "• Thiết lập cửa sổ quét lùi (Lookback Window): Nếu phòng ban chọn 'Cập nhật lại 7 ngày' (với Ads/Content) hoặc '30 ngày' (với Đơn hàng/Đối soát), Admin đặt biến start_date = today - 7 (hoặc 30) trong Cron Job rồi Upsert đè theo ID.",
+          "• Mở cổng MCP Đọc trên Cụm 2 (n8n-mcp): Tạo workflow có MCP Server Trigger nối vào bảng dữ liệu, bắt buộc có tham số lọc (start_date, end_date, product_code) để Agent không kéo tràn bộ nhớ, đồng thời loại bỏ các cột nhạy cảm (Giá vốn, Lãi ròng, SĐT) khỏi kết quả trả về cho các Agent chung."
+        ]
+      },
+      adm_rule_4: {
+        tag: "GHI CHÚ ADMIN • QUY TẮC 04",
+        title: "Dựa Vào Checklist 2 Để Dựng Luồng MCP Quyền Ghi Có Kiểm Soát An Toàn",
+        summary: "Mọi MCP Quyền Ghi trên Cụm 2 (n8n-mcp) đều tuân theo mẫu kiến trúc 4 bước chuẩn.",
+        bullets: [
+          "• Bước 2 của Workflow phòng ban -> Trở thành các node Đọc dữ liệu kiểm tra điều kiện đầu vào.",
+          "• Bước 3 + Mục 4 (Bộ tiêu chí) -> Trở thành node kiểm tra quy tắc chấm điểm thang 1–4 hoặc Switch Node rẽ nhánh.",
+          "• Mục 5 (3 Chốt chặn an toàn) -> Trở thành cụm node Kiểm tra giới hạn an toàn (so sánh biên độ %, kiểm tra trần tiền, kiểm tra thời gian nghỉ giữa 2 lần chỉnh từ bảng Log).",
+          "• Mục 6 (Cơ chế Phê duyệt) -> Nếu đạt chuẩn an toàn thì gọi HTTP Request ghi thẳng lên API Sàn/Ads; nếu chạm trần hoặc vượt ngưỡng thì đẩy sang node Gửi tin nhắn Lark/Telegram chờ Quản lý bấm Approve."
+        ]
+      }
+    };
+
+    // =========================================================================
+    // 3. CẤU TRÚC CÂY MIND MAP TRÊN SLIDE 02
+    // =========================================================================
+    const ARCH_TREE_NODES = {
+      node_dept: {
+        title: "Các Phòng Ban",
+        sub: "Content, Ads, Live, Sàn, KOC, CSKH",
+        logos: ["dept"],
+        children: [
+          { label: "Không cần biết kỹ thuật hay cấu trúc API", infoId: "pillar_rule" },
+          { label: "Chỉ cần mô tả Nhu cầu & Workflow hàng ngày", infoId: "pillar_rule" }
+        ]
+      },
+      node_chk1: {
+        title: "Checklist 1: Data & MCP Đọc",
+        sub: "6 Mục yêu cầu Bảng dữ liệu",
+        logos: ["sheets", "workflow"],
+        children: [
+          { label: "1. Mục đích & 2. Workflow 4 bước của Data", infoId: "c1_workflow" },
+          { label: "3. Đơn vị mỗi dòng & 4. Ba nhóm cột cần có", infoId: "c1_fields" },
+          { label: "5. Độ tươi, Quét lùi & 6. Phân quyền bảo mật", infoId: "c1_freshness" }
+        ]
+      },
+      node_chk2: {
+        title: "Checklist 2: MCP Quyền Ghi",
+        sub: "6 Mục yêu cầu Công cụ thao tác",
+        logos: ["mcp", "guard"],
+        children: [
+          { label: "1. Ba cấp độ Ghi & 2. Workflow 4 bước của MCP", infoId: "c2_workflow" },
+          { label: "3. Đầu vào/Đầu ra & 4. Thang điểm 1–4 / Ngưỡng", infoId: "c2_criteria" },
+          { label: "5. Ba chốt chặn an toàn & 6. Tự động / Chờ duyệt", infoId: "c2_guardrails" }
+        ]
+      },
+      node_adm_data: {
+        title: "Cụm 1 (n8n-data) & Bảng",
+        sub: "Thiết kế Bảng + Mở MCP Đọc",
+        logos: ["n8n", "sheets"],
+        children: [
+          { label: "Tách bảng Cha/Con theo Workflow phòng ban", infoId: "adm_rule_1" },
+          { label: "Tính sẵn cột công thức & cấm ghi đè cột điền tay", infoId: "adm_rule_2" },
+          { label: "Đặt Cron quét lùi 7–30 ngày & mở MCP Đọc", infoId: "adm_rule_3" }
+        ]
+      },
+      node_adm_mcp: {
+        title: "Cụm 2 (n8n-mcp) & Quyền Ghi",
+        sub: "Đấu nối API + Kiểm soát an toàn",
+        logos: ["n8n", "mcp", "guard"],
+        children: [
+          { label: "Thiết lập bộ quy tắc chấm điểm & điều kiện rẽ nhánh", infoId: "adm_rule_4" },
+          { label: "Khóa biên độ %, trần cứng & thời gian nghỉ", infoId: "adm_rule_4" },
+          { label: "Tự chạy dưới trần / Vượt trần bắn Lark chờ Duyệt", infoId: "c2_approval" }
+        ]
+      },
+      node_ex_12: {
+        title: "Ví dụ 1 & 2: Content & Live Ads",
+        sub: "Hiệu quả Video & Chỉnh tiền Live",
+        logos: ["tiktok", "mcp"],
+        children: [
+          { label: "VD 1 (Checklist 1): Bảng Hiệu quả Video Content", infoId: "ex1_content_data" },
+          { label: "VD 2 (Checklist 2): MCP Chỉnh ngân sách Live 15p/lần", infoId: "ex2_live_write" }
+        ]
+      },
+      node_ex_345: {
+        title: "Ví dụ 3, 4, 5: CSKH, KOC & Sàn",
+        sub: "Chấm chat, KOC & Đối soát PnL",
+        logos: ["shopee", "mcp"],
+        children: [
+          { label: "VD 3: Chấm điểm Chat CSKH & Lý do hoàn hàng", infoId: "ex3_cskh" },
+          { label: "VD 4: Hồ sơ KOC & MCP quét kênh phân hạng S/A/B/C", infoId: "ex4_koc" },
+          { label: "VD 5: Bảng Lãi/Lỗ (PnL) & MCP đồng bộ Tồn kho", infoId: "ex5_shop_ops" }
+        ]
+      }
+    };
+
+    // =========================================================================
+    // 4. LOGIC MIND MAP + ZOOM / PAN + VẼ ĐƯỜNG NỐI SVG TỰ ĐỘNG
+    // =========================================================================
+    let zoomScale = 1;
+    let panX = 24;
+    let panY = 24;
+    let isPanning = false;
+    let startMouseX = 0;
+    let startMouseY = 0;
+    let didDragCanvas = false;
+
+    function updateCanvasTransform() {
+      const canvas = document.getElementById("mmCanvas");
+      const label = document.getElementById("zoomLabel");
+      if (canvas) {
+        canvas.style.transform = `translate(${panX}px, ${panY}px) scale(${zoomScale})`;
+      }
+      if (label) {
+        label.textContent = `${Math.round(zoomScale * 100)}%`;
+      }
+    }
+
+    function stepZoom(delta) {
+      const viewport = document.getElementById("mmViewport");
+      if (!viewport) return;
+      const rect = viewport.getBoundingClientRect();
+      applyZoomAtPoint(zoomScale + delta, rect.width / 2, rect.height / 2);
+    }
+
+    function applyZoomAtPoint(targetScale, mx, my) {
+      const clamped = Math.min(Math.max(targetScale, 0.4), 2.2);
+      const ratio = clamped / zoomScale;
+      panX = mx - (mx - panX) * ratio;
+      panY = my - (my - panY) * ratio;
+      zoomScale = clamped;
+      updateCanvasTransform();
+    }
+
+    function resetZoomAndPan() {
+      const viewport = document.getElementById("mmViewport");
+      const canvas = document.getElementById("mmCanvas");
+      zoomScale = 1;
+      if (viewport && canvas) {
+        const vw = viewport.clientWidth;
+        const vh = viewport.clientHeight;
+        const cw = canvas.scrollWidth;
+        const ch = canvas.scrollHeight;
+        panX = Math.max((vw - cw) / 2, 18);
+        panY = Math.max((vh - ch) / 2, 14);
+      } else {
+        panX = 24;
+        panY = 24;
+      }
+      updateCanvasTransform();
+      requestAnimationFrame(drawAllConnections);
+    }
+
+    function initZoomAndPanEvents() {
+      const viewport = document.getElementById("mmViewport");
+      if (!viewport) return;
+
+      viewport.addEventListener("wheel", (e) => {
+        e.preventDefault();
+        const rect = viewport.getBoundingClientRect();
+        const factor = e.deltaY < 0 ? 1.09 : 0.91;
+        applyZoomAtPoint(zoomScale * factor, e.clientX - rect.left, e.clientY - rect.top);
+      }, { passive: false });
+
+      viewport.addEventListener("mousedown", (e) => {
+        if (e.button !== 0 || e.target.closest(".zoom-toolbar")) return;
+        isPanning = true;
+        didDragCanvas = false;
+        startMouseX = e.clientX - panX;
+        startMouseY = e.clientY - panY;
+        viewport.classList.add("dragging");
+      });
+
+      window.addEventListener("mousemove", (e) => {
+        if (!isPanning) return;
+        const nx = e.clientX - startMouseX;
+        const ny = e.clientY - startMouseY;
+        if (Math.hypot(nx - panX, ny - panY) > 5) didDragCanvas = true;
+        panX = nx;
+        panY = ny;
+        updateCanvasTransform();
+      });
+
+      window.addEventListener("mouseup", () => {
+        if (isPanning) {
+          isPanning = false;
+          viewport.classList.remove("dragging");
+        }
+      });
+    }
+
+    function buildMasterArchitectureTree() {
+      Object.keys(ARCH_TREE_NODES).forEach(key => {
+        const mount = document.getElementById(`mount-${key}`);
+        if (!mount) return;
+        const node = ARCH_TREE_NODES[key];
+
+        const childrenHtml = node.children.map((ch, cIdx) => {
+          const childId = `child-${key}-${cIdx}`;
+          return `
+            <div class="mm-child-row">
+              <div class="mm-child-box" id="cbox-${childId}" onclick="event.stopPropagation(); if(!didDragCanvas) openInfoPopup('${ch.infoId}')">
+                <span class="mm-child-text">${ch.label}</span>
+                <span class="mm-child-action">Chi tiết ↗</span>
+              </div>
+            </div>
+          `;
+        }).join("");
+
+        mount.innerHTML = `
+          <div class="mm-node-row" id="row-${key}">
+            <div class="arch-node" id="box-${key}" onclick="if(!didDragCanvas) toggleNodeChildren('${key}')">
+              <div class="node-left-wrap">
+                ${renderStackLogos(node.logos)}
+                <div>
+                  <div class="arch-node-title">${node.title}</div>
+                  <div class="arch-node-sub">${node.sub}</div>
+                </div>
+              </div>
+              <div class="arch-node-badge" id="badge-${key}">+</div>
+            </div>
+            <div class="mm-children-col" id="children-${key}">
+              ${childrenHtml}
+            </div>
+          </div>
+        `;
+      });
+    }
+
+    function toggleNodeChildren(key) {
+      const box = document.getElementById(`box-${key}`);
+      const col = document.getElementById(`children-${key}`);
+      const badge = document.getElementById(`badge-${key}`);
+      if (!col) return;
+      const isOpen = col.classList.toggle("open");
+      box.classList.toggle("expanded", isOpen);
+      badge.textContent = isOpen ? "−" : "+";
+      requestAnimationFrame(drawAllConnections);
+    }
+
+    function expandAllTreeNodes() {
+      Object.keys(ARCH_TREE_NODES).forEach(key => {
+        const col = document.getElementById(`children-${key}`);
+        const box = document.getElementById(`box-${key}`);
+        const badge = document.getElementById(`badge-${key}`);
+        if (col) col.classList.add("open");
+        if (box) box.classList.add("expanded");
+        if (badge) badge.textContent = "−";
+      });
+      requestAnimationFrame(drawAllConnections);
+    }
+
+    function collapseAllTreeNodes() {
+      document.querySelectorAll(".mm-children-col").forEach(el => el.classList.remove("open"));
+      document.querySelectorAll(".arch-node").forEach(el => el.classList.remove("expanded"));
+      document.querySelectorAll(".arch-node-badge").forEach(el => el.textContent = "+");
+      requestAnimationFrame(drawAllConnections);
+    }
+
+    function getRelativeRect(el, container) {
+      const r1 = el.getBoundingClientRect();
+      const r2 = container.getBoundingClientRect();
+      const s = zoomScale || 1;
+      const left = (r1.left - r2.left) / s;
+      const top = (r1.top - r2.top) / s;
+      const width = r1.width / s;
+      const height = r1.height / s;
+      return {
+        left,
+        right: left + width,
+        top,
+        bottom: top + height,
+        width,
+        height,
+        midY: top + height / 2
+      };
+    }
+
+    function makeBezierPath(x1, y1, x2, y2, stroke = "#111111", width = 1.6, dashed = false, marker = false) {
+      const dx = Math.max(Math.abs(x2 - x1) * 0.48, 18);
+      const d = `M ${x1} ${y1} C ${x1 + dx} ${y1}, ${x2 - dx} ${y2}, ${x2} ${y2}`;
+      return `<path d="${d}" fill="none" stroke="${stroke}" stroke-width="${width}" ${dashed ? 'stroke-dasharray="4,4"' : ''} ${marker ? 'marker-end="url(#mm-arrow)"' : ''} />`;
+    }
+
+    function drawAllConnections() {
+      const canvas = document.getElementById("mmCanvas");
+      const svg = document.getElementById("archSvgOverlay");
+      if (!canvas || !svg) return;
+
+      svg.setAttribute("width", canvas.scrollWidth);
+      svg.setAttribute("height", canvas.scrollHeight);
+
+      let paths = `
+        <defs>
+          <marker id="mm-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+            <path d="M 0 1 L 10 5 L 0 9 z" fill="#111111" />
+          </marker>
+        </defs>
+      `;
+
+      const rowDept = document.getElementById("row-node_dept");
+      const boxChk1 = document.getElementById("box-node_chk1");
+      const boxChk2 = document.getElementById("box-node_chk2");
+      const rowChk1 = document.getElementById("row-node_chk1");
+      const rowChk2 = document.getElementById("row-node_chk2");
+      const boxAdmData = document.getElementById("box-node_adm_data");
+      const boxAdmMcp = document.getElementById("box-node_adm_mcp");
+      const rowAdmData = document.getElementById("row-node_adm_data");
+      const rowAdmMcp = document.getElementById("row-node_adm_mcp");
+      const boxEx12 = document.getElementById("box-node_ex_12");
+      const boxEx345 = document.getElementById("box-node_ex_345");
+
+      if (rowDept && boxChk1 && boxChk2 && boxAdmData && boxAdmMcp && boxEx12 && boxEx345) {
+        const rDept = getRelativeRect(rowDept, canvas);
+        const rC1 = getRelativeRect(boxChk1, canvas);
+        const rC2 = getRelativeRect(boxChk2, canvas);
+        const rC1Row = getRelativeRect(rowChk1, canvas);
+        const rC2Row = getRelativeRect(rowChk2, canvas);
+        const rA1 = getRelativeRect(boxAdmData, canvas);
+        const rA2 = getRelativeRect(boxAdmMcp, canvas);
+        const rA1Row = getRelativeRect(rowAdmData, canvas);
+        const rA2Row = getRelativeRect(rowAdmMcp, canvas);
+        const rE12 = getRelativeRect(boxEx12, canvas);
+        const rE345 = getRelativeRect(boxEx345, canvas);
+
+        // 1. Phòng ban -> Checklist 1 & Checklist 2
+        paths += makeBezierPath(rDept.right, rDept.midY - 6, rC1.left, rC1.midY, "#111111", 1.6, false, true);
+        paths += makeBezierPath(rDept.right, rDept.midY + 6, rC2.left, rC2.midY, "#111111", 1.6, false, true);
+
+        // 2. Checklist 1 -> Cụm 1 (n8n-data) & Checklist 2 -> Cụm 2 (n8n-mcp)
+        paths += makeBezierPath(rC1Row.right, rC1.midY, rA1.left, rA1.midY, "#0F9D58", 1.6, false, true);
+        paths += makeBezierPath(rC2Row.right, rC2.midY, rA2.left, rA2.midY, "#2563EB", 1.6, false, true);
+
+        // 3. Cụm 1 & Cụm 2 -> Các Ví dụ thực tế
+        paths += makeBezierPath(rA1Row.right, rA1.midY - 4, rE12.left, rE12.midY - 4, "#111111", 1.5, false, true);
+        paths += makeBezierPath(rA1Row.right, rA1.midY + 6, rE345.left, rE345.midY - 6, "#555555", 1.4, true, true);
+        paths += makeBezierPath(rA2Row.right, rA2.midY - 6, rE12.left, rE12.midY + 6, "#555555", 1.4, true, true);
+        paths += makeBezierPath(rA2Row.right, rA2.midY + 4, rE345.left, rE345.midY + 4, "#111111", 1.5, false, true);
+      }
+
+      // Vẽ nhánh con khi bung từng Node
+      Object.keys(ARCH_TREE_NODES).forEach(key => {
+        const col = document.getElementById(`children-${key}`);
+        const parentBox = document.getElementById(`box-${key}`);
+        if (!col || !col.classList.contains("open") || !parentBox) return;
+        const rParent = getRelativeRect(parentBox, canvas);
+        col.querySelectorAll(":scope > .mm-child-row > .mm-child-box").forEach(cb => {
+          const rChild = getRelativeRect(cb, canvas);
+          paths += makeBezierPath(rParent.right, rParent.midY, rChild.left, rChild.midY, "#111111", 1.4, false, false);
+        });
+      });
+
+      svg.innerHTML = paths;
+    }
+
+    window.addEventListener("resize", () => requestAnimationFrame(drawAllConnections));
+
+    // =========================================================================
+    // 5. LOGIC POPUP & ĐIỀU HƯỚNG SLIDE
+    // =========================================================================
+    function escapeHtml(str) {
+      return String(str).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+    }
+
+    function openInfoPopup(infoKey) {
+      const item = INFO_POPUPS[infoKey];
+      if (!item) return;
+      document.getElementById("popupTag").textContent = item.tag;
+      document.getElementById("popupTitle").textContent = item.title;
+
+      const bulletsHtml = (item.bullets || []).map(b => `<div class="popup-bullet-item">${b}</div>`).join("");
+      const codeBlocksHtml = item.codeBlocks && item.codeBlocks.length
+        ? `<div class="popup-code-grid">
+            ${item.codeBlocks.map(cb => `
+              <div>
+                <div class="popup-code-label">${cb.label}</div>
+                <pre class="popup-code-block">${escapeHtml(cb.code)}</pre>
+              </div>
+            `).join("")}
+          </div>`
+        : "";
+
+      document.getElementById("popupBody").innerHTML = `
+        <div class="popup-summary">${item.summary}</div>
+        <div class="popup-bullets">${bulletsHtml}</div>
+        ${codeBlocksHtml}
+      `;
+      document.getElementById("popupOverlay").classList.add("open");
+    }
+
+    function closePopup() {
+      document.getElementById("popupOverlay").classList.remove("open");
+    }
+
+    let currentSlide = 0;
+    const totalSlides = document.querySelectorAll(".slide").length || 7;
+
+    function renderDots() {
+      const dotsEl = document.getElementById("progressDots");
+      dotsEl.innerHTML = Array.from({ length: totalSlides }).map((_, idx) => `
+        <div class="dot ${idx === currentSlide ? 'active' : ''}" onclick="goToSlide(${idx})" title="Slide ${idx + 1}"></div>
+      `).join("");
+    }
+
+    function formatSlideNum(n) {
+      return n < 10 ? `0${n}` : `${n}`;
+    }
+
+    function goToSlide(index) {
+      if (index < 0 || index >= totalSlides) return;
+      currentSlide = index;
+      document.querySelectorAll(".slide").forEach((s, idx) => {
+        s.classList.toggle("active", idx === currentSlide);
+      });
+      document.getElementById("slideCounter").textContent = `${formatSlideNum(currentSlide + 1)} / ${formatSlideNum(totalSlides)}`;
+      renderDots();
+
+      if (currentSlide === 1) {
+        setTimeout(() => {
+          resetZoomAndPan();
+        }, 60);
+      }
+    }
+
+    function nextSlide() {
+      if (currentSlide < totalSlides - 1) goToSlide(currentSlide + 1);
+    }
+
+    function prevSlide() {
+      if (currentSlide > 0) goToSlide(currentSlide - 1);
+    }
+
+    function toggleFullScreen() {
+      if (!document.fullscreenElement) {
+        document.documentElement.requestFullscreen().catch(() => {});
+      } else {
+        document.exitFullscreen();
+      }
+    }
+
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") {
+        closePopup();
+        return;
+      }
+      if (document.getElementById("popupOverlay").classList.contains("open")) return;
+      if (e.key === "ArrowRight") nextSlide();
+      if (e.key === "ArrowLeft") prevSlide();
+    });
+
+    window.addEventListener("DOMContentLoaded", () => {
+      hydrateStaticLogos();
+      buildMasterArchitectureTree();
+      initZoomAndPanEvents();
+      goToSlide(0);
+    });
+  </script>
+</body>
+</html>
+
